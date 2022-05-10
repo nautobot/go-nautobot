@@ -23,10 +23,11 @@ echo "Go Nautobot Bindings generated"
 
 echo "Starting Nautobot client tests..."
 
-export NAUTOBOT_URL=http://localhost:8080/api/
+export NAUTOBOT_URL=http://nautobot:8080/api/
 export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
 cd /client
+go mod tidy
 go test -v
 
 echo "Nautobot client tests completed"
