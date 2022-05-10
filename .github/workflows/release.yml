@@ -1,0 +1,68 @@
+---
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch
+name: "Release a new go-nautobot version"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag version to release"
+        type: string
+        required: true
+
+jobs:
+  release-go-nautobot:
+    runs-on: "ubuntu-20.04"
+    env:
+      NAUTOBOT_VER: "${{ github.event.inputs.tag }}"
+      PYTHON_VER: "3.9"
+    steps:
+      - name: "Get go-nautobot generator code"
+        uses: actions/checkout@v3
+      - name: "Start Nautobot and Generator"
+        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit"
+      - name: "Commit Changes"
+        run: |
+          git config --global user.name 'GitHub CI'
+          git config --global user.email 'networktocode@users.noreply.github.com'
+          git add pkg/nautobot/nautobot.go pkg/nautobot/tag.md
+          git remote set-url origin https://${{ secrets.BOT_GITHUB_USERNAME }}:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git checkout
+          git commit -am "Release ${{ github.event.inputs.tag }}"
+          git tag "v${{ github.event.inputs.tag }}"
+          git push
+          git push --tags
+  slack-notify:
+    needs:
+      - "release-go-nautobot"
+    runs-on: "ubuntu-20.04"
+    env:
+      SLACK_WEBHOOK_URL: "${{ secrets.SLACK_WEBHOOK_URL }}"
+      SLACK_MESSAGE: >-
+        *NOTIFICATION: NEW-RELEASE-PUBLISHED*\n
+        Repository: <${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>\n
+        Release: <${{ github.server_url }}/${{ github.repository }}/releases/tag/v${{ github.event.inputs.tag }}}|v${{ github.event.inputs.tag }}>\n
+        Published by: <${{ github.server_url }}/${{ github.actor }}|${{ github.actor }}>
+    steps:
+      - name: "Send a notification to Slack"
+        # ENVs cannot be used directly in job.if. This is a workaround to check
+        # if SLACK_WEBHOOK_URL is present.
+        if: "${{ env.SLACK_WEBHOOK_URL != '' }}"
+        uses: "slackapi/slack-github-action@v1.17.0"
+        with:
+          payload: |
+            {
+              "text": "${{ env.SLACK_MESSAGE }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ env.SLACK_MESSAGE }}"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: "${{ secrets.SLACK_WEBHOOK_URL }}"
+          SLACK_WEBHOOK_TYPE: "INCOMING_WEBHOOK"
