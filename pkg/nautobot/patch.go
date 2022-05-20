@@ -6,14 +6,14 @@ import (
 	"net/http"
 )
 
+type SecurityProviderNautobotToken struct {
+	token string
+}
+
 func NewSecurityProviderNautobotToken(t string) (*SecurityProviderNautobotToken, error) {
 	return &SecurityProviderNautobotToken{
 		token: t,
 	}, nil
-}
-
-type SecurityProviderNautobotToken struct {
-	token string
 }
 
 func (s *SecurityProviderNautobotToken) Intercept(ctx context.Context, req *http.Request) error {

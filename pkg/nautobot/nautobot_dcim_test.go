@@ -1,10 +1,9 @@
-package nautobot_test
+package nautobot
 
 import (
 	"context"
 	"testing"
 
-	nb "github.com/nautobot/go-nautobot/pkg/nautobot"
 	"github.com/tidwall/gjson"
 )
 
@@ -13,7 +12,10 @@ const (
 )
 
 func TestDcimManufacturersCreateWithResponse(t *testing.T) {
-	nb = get_nb_session(t)
+	c, err := CreateNautobotSession()
+	if err != nil {
+		t.Fatal("Failed to create Nautobot Session", err.Error())
+	}
 
 	// Test table
 	tt := []struct {
@@ -28,12 +30,12 @@ func TestDcimManufacturersCreateWithResponse(t *testing.T) {
 	for _, tc := range tt {
 		t.Run(tc.name, func(t *testing.T) {
 
-			var m nb.Manufacturer
+			var m Manufacturer
 			m.Name = tc.vendor
 
 			rsp, err := c.DcimManufacturersCreateWithResponse(
 				context.Background(),
-				nb.DcimManufacturersCreateJSONRequestBody(m))
+				DcimManufacturersCreateJSONRequestBody(m))
 
 			data := string(rsp.Body)
 			dataName := gjson.Get(data, "name.0")
@@ -43,7 +45,7 @@ func TestDcimManufacturersCreateWithResponse(t *testing.T) {
 			}
 
 			if err != nil {
-				t.Fatalf("failed to create manufacturer %s on %s: %s", tc.vendor, server, err.Error())
+				t.Fatalf("failed to create manufacturer %s: %s", tc.vendor, err.Error())
 			}
 		})
 	}
