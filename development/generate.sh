@@ -11,8 +11,7 @@ MAJOR_MINOR_VER=${NAUTOBOT_VER%.*}
 
 wget --tries=5  http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER} -O swagger.yaml
 
-oapi-codegen -generate client -o nautobot.go -package nautobot swagger.yaml
-oapi-codegen -generate types -o types.go -package nautobot swagger.yaml
+oapi-codegen --config oapi-config.yml swagger.yaml
 
 echo $NAUTOBOT_VER > tag.md
 
