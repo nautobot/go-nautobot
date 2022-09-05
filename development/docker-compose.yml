@@ -2,7 +2,7 @@
 x-nautobot-base: &nautobot-base
   image: "ghcr.io/nautobot/nautobot:${NAUTOBOT_VER}-py${PYTHON_VER}"
   env_file:
-    - "dev.env"
+    - "nautobot_dev.env"
   tty: true
   volumes:
     - "./nautobot_config.py:/opt/nautobot/nautobot_config.py"
@@ -59,9 +59,9 @@ services:
       - "nautobot-server celery worker -B -l $$NAUTOBOT_LOG_LEVEL"  # $$ because of docker-compose
     <<: *nautobot-base
   db:
-    image: "postgres:14-alpine"
+    image: "postgres:13-alpine"
     env_file:
-      - "dev.env"
+      - "nautobot_dev.env"
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
     # ports:
@@ -78,7 +78,7 @@ services:
       - "-c"  # this is to evaluate the $REDIS_PASSWORD from the env
       - "redis-server --appendonly yes --requirepass $$NAUTOBOT_REDIS_PASSWORD"
     env_file:
-      - "dev.env"
+      - "nautobot_dev.env"
 
 volumes:
   postgres_data: {}
