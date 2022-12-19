@@ -8,104 +8,61 @@ import (
 	"github.com/tidwall/gjson"
 )
 
-const (
-	deviceExist    = "manufacturer with this name already exists."
-	deviceNotExist = "manufacturer with this id doesn't exist."
-)
-
-func TestDcimManufacturersDestroyWithResponse(t *testing.T) {
+func TestManufacturerBasicOperations(t *testing.T) {
 	nautobotSession, err := CreateNautobotSession()
 	if err != nil {
 		t.Fatalf("Failed to create Nautobot Session: %s", err.Error())
 	}
 
-	// Prepare Manufacturer to delete
+	// Prepare Manufacturer record to create
 	var manufacturer Manufacturer
-	manufacturer.Name = "Existing-Manufacturer"
-	response, err := nautobotSession.DcimManufacturersCreateWithResponse(
+	manufacturer.Name = "Nautobot Technologies Inc."
+
+	// Create Manufacturer record
+	creation_response, creation_err := nautobotSession.DcimManufacturersCreateWithResponse(
 		context.Background(),
 		DcimManufacturersCreateJSONRequestBody(manufacturer))
-	if err != nil {
-		t.Fatalf("Failed to create a manufacturer %s: %s", manufacturer.Name, err.Error())
+
+	// Check creation for errors
+	if creation_err != nil {
+		t.Fatalf("Failed to create a manufacturer %s: %s", manufacturer.Name, creation_err.Error())
 	}
-	if response.StatusCode() != 201 {
-		t.Fatalf("Failed to create a manufacturer, got status code %s", response.Status())
+	if creation_response.StatusCode() / 100 != 2 {
+		t.Fatalf("Failed to create a manufacturer, got status code %s and error %s", creation_response.Status(), creation_response.Body)
 	}
-	responseData := string(response.Body)
 
 	// Extract the UUID of the created manufacturer for later use
+	responseData := string(creation_response.Body)
 	dataUUID := openapi_types.UUID(gjson.Get(responseData, "id").String())
 
-	testArray := []struct {
-		name       string
-		uuid       openapi_types.UUID
-		statusCode int
-	}{
-		{name: "Delete an existing Manufacturer", uuid: dataUUID, statusCode: 204},
-		{name: "Try to delete a non-existing Manufacturer", uuid: "1234", statusCode: 404},
+	// Prepare Manufacturer record for updating
+	updated_description := "This is a testing manufacturer."
+	manufacturer.Description = &updated_description
+
+	// Update Manufacturer record
+    update_response, update_err := nautobotSession.DcimManufacturersUpdateWithResponse(
+        context.Background(),
+        dataUUID,
+        DcimManufacturersUpdateJSONRequestBody(manufacturer))
+
+    // Check update for errors
+	if update_err != nil {
+		t.Fatalf("Failed to update a manufacturer %s: %s", manufacturer.Name, update_err.Error())
+	}
+	if update_response.StatusCode() / 100 != 2 {
+		t.Fatalf("Failed to update a manufacturer, got status code %s and error %s", update_response.Status(), update_response.Body)
 	}
 
-	for _, testCase := range testArray {
-		t.Run(testCase.name, func(t *testing.T) {
-			response, err := nautobotSession.DcimManufacturersDestroyWithResponse(
-				context.Background(),
-				testCase.uuid)
+	// Delete Manufacturer record
+    delete_response, delete_err := nautobotSession.DcimManufacturersDestroyWithResponse(
+        context.Background(),
+        dataUUID)
 
-			if err != nil {
-				t.Fatalf("Failed to delete manufacturer %s: %s", testCase.name, err.Error())
-			}
-
-			if response.StatusCode() == testCase.statusCode {
-				return
-			} else {
-				responseData := string(response.Body)
-				t.Fatalf("Expected %d, got %d: Failed to delete manufacturer '%s': %s", testCase.statusCode, response.StatusCode(), testCase.name, responseData)
-			}
-
-		})
+    // Check deletion for errors
+	if delete_err != nil {
+		t.Fatalf("Failed to delete a manufacturer %s: %s", manufacturer.Name, delete_err.Error())
 	}
-}
-
-func TestDcimManufacturersCreateWithResponse(t *testing.T) {
-	nautobotSession, err := CreateNautobotSession()
-	if err != nil {
-		t.Fatal("Failed to create Nautobot Session", err.Error())
+	if delete_response.StatusCode() / 100 != 2 {
+		t.Fatalf("Failed to delete a manufacturer, got status code %s and error %s", delete_response.Status(), delete_response.Body)
 	}
-
-	testArray := []struct {
-		name   string
-		vendor string
-		err    string
-	}{
-		{name: "New Vendor", vendor: "new vendor 1"},
-		{name: "Existing Vendor", vendor: "Cisco", err: deviceExist},
-	}
-
-	for _, testCase := range testArray {
-		t.Run(testCase.name, func(t *testing.T) {
-
-			var manufacturer Manufacturer
-			manufacturer.Name = testCase.vendor
-
-			response, err := nautobotSession.DcimManufacturersCreateWithResponse(
-				context.Background(),
-				DcimManufacturersCreateJSONRequestBody(manufacturer))
-
-			responseData := string(response.Body)
-			dataName := gjson.Get(responseData, "name.0")
-
-			if dataName.String() == deviceExist && testCase.err == deviceExist {
-				return
-			}
-
-			if response.StatusCode() != 201 {
-				t.Fatalf("Failed to create a manufacturer %s: %s", testCase.vendor, response.Status())
-			}
-
-			if err != nil {
-				t.Fatalf("Failed to create manufacturer %s: %s", testCase.vendor, err.Error())
-			}
-		})
-	}
-
 }
