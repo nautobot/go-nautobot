@@ -22,7 +22,7 @@ jobs:
       - name: "Get go-nautobot code"
         uses: actions/checkout@v3
       - name: "Run tests"
-        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit"
+        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit --exit-code-from oapi"
         env:
           NAUTOBOT_URL: "http://nautobot:8080/api/"
           NAUTOBOT_TOKEN: "0123456789abcdef0123456789abcdef01234567"
