@@ -21,14 +21,11 @@ jobs:
     steps:
       - name: "Get go-nautobot code"
         uses: actions/checkout@v3
-      - name: "Start Nautobot"
-        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --detach --build nautobot celery_worker db redis"
       - name: "Run tests"
-        run: "go test -v"
+        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit"
         env:
-          NAUTOBOT_URL: "http://localhost:8080/api/"
+          NAUTOBOT_URL: "http://nautobot:8080/api/"
           NAUTOBOT_TOKEN: "0123456789abcdef0123456789abcdef01234567"
-        working-directory: "./pkg/nautobot"
       - name: "Tear down Nautobot"
         run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml down -v"
         if: always()
