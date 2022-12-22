@@ -39,8 +39,8 @@ namespace.configure(
     {
         "go_nautobot": {
             "project_name": "go_nautobot",
-            "nautobot_ver": "1.4.1",
-            "python_ver": "3.7",
+            "nautobot_ver": "1.5.0",
+            "python_ver": "3.9",
             "local": False,
             "compose_dir": os.path.join(os.path.dirname(__file__), "development"),
             "compose_files": [
