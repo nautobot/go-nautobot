@@ -32,8 +32,11 @@ func TestManufacturerBulkOperations(t *testing.T) {
         creation_response, creation_error := nautobotSession.DcimManufacturersCreateWithResponse(
             context.Background(),
             DcimManufacturersCreateJSONRequestBody(manufacturer_object))
-        if err != nil {
+        if creation_error != nil {
             t.Fatalf("failed to create manufacturer: %s", creation_error.Error())
+        }
+        if creation_response.StatusCode() / 100 != 2 {
+            t.Fatalf("Failed to create manufacturer, got status code %s and error %s", creation_response.Status(), creation_response.Body)
         }
         data := string(creation_response.Body)
         manufacturers[index].Id = openapi_types.UUID(gjson.Get(data, "id").String())

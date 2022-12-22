@@ -1,6 +1,6 @@
 ---
 x-nautobot-base: &nautobot-base
-  image: "ghcr.io/nautobot/nautobot:1.5.5-py3.9"
+  image: "ghcr.io/nautobot/nautobot:${NAUTOBOT_VER}-py${PYTHON_VER}"
   env_file:
     - "nautobot_dev.env"
   tty: true
@@ -18,7 +18,7 @@ services:
       nautobot:
         condition: "service_healthy"
     environment:
-      - NAUTOBOT_VER=1.5.5
+      - NAUTOBOT_VER=${NAUTOBOT_VER}
     volumes:
       - "../pkg/nautobot:/client"
   nautobot:
