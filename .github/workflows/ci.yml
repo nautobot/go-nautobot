@@ -1,0 +1,31 @@
+---
+name: "CI"
+on: # yamllint disable-line rule:truthy rule:comments
+  push:
+    branches:
+      - "main"
+      - "develop"
+    tags:
+      - "v*"
+  pull_request: ~
+concurrency:  # Cancel any existing runs of this workflow for this same PR
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: "ubuntu-20.04"
+    env:
+      NAUTOBOT_VER: "1.5.0"
+      PYTHON_VER: "3.9"
+    steps:
+      - name: "Get go-nautobot code"
+        uses: actions/checkout@v3
+      - name: "Run tests"
+        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit --exit-code-from oapi"
+        env:
+          NAUTOBOT_URL: "http://nautobot:8080/api/"
+          NAUTOBOT_TOKEN: "0123456789abcdef0123456789abcdef01234567"
+      - name: "Tear down Nautobot"
+        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml down -v"
+        if: always()
