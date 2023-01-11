@@ -3,7 +3,7 @@ set -euxo pipefail
 
 echo "Starting generation of Go Nautobot Bindings"
 
-VERSION_FILE="tag.md"
+VERSION_FILE="/client/tag.md"
 CURRENT_VERSION=$(head -n 1 $VERSION_FILE)
 CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 
