@@ -3,6 +3,16 @@ set -euxo pipefail
 
 echo "Starting generation of Go Nautobot Bindings"
 
+BETA_TAG="beta"
+ALPHA_TAG="alpha"
+RC_TAG="rc"
+
+# TODO: eventually we would like to generate for experimental Nautobot versions
+if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"* ]] || [[" $NAUTOBOT_VER" == *"$RC_TAG"* ]]; then
+  echo "${NAUTOBOT_VER} is not an official Nautobot version, no new bindings are generated."
+  exit 0
+fi
+
 VERSION_FILE="/client/tag.md"
 CURRENT_VERSION=$(head -n 1 $VERSION_FILE)
 CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
