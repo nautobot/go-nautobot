@@ -45,7 +45,7 @@ FINAL_NEW_TAG=${NEW_TAG}-beta
 echo $FINAL_NEW_TAG > tag.md
 
 cp tag.md /client
-cp *.go /client
+cp nautobot.go /client/pkg/nautobot
 
 echo "Go Nautobot Bindings generated"
 
@@ -54,7 +54,7 @@ echo "Starting Nautobot client tests..."
 export NAUTOBOT_URL=http://nautobot:8080/api/
 export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
-cd /client
+cd /client/pkg/nautobot
 go mod tidy
 go test -v
 
