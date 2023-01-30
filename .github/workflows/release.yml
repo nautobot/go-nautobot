@@ -23,10 +23,10 @@ jobs:
         run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit"
       - name: "Commit Changes"
         run: |
-          TAG=v$( cat pkg/nautobot/tag.md )
+          TAG=v$( cat tag.md )
           git config --global user.name 'GitHub CI'
           git config --global user.email 'networktocode@users.noreply.github.com'
-          git add pkg/nautobot/nautobot.go pkg/nautobot/tag.md
+          git add pkg/nautobot/nautobot.go tag.md
           git remote set-url origin https://${{ secrets.BOT_GITHUB_USERNAME }}:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git checkout
           git commit -am "Release $TAG"
