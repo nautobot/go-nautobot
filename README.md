@@ -108,10 +108,10 @@ func main() {
 
 ## Local Development
 
-### Run it locally
+### Run tests locally
 
 ```
-docker-compose --project-name go_nautobot -f development/docker-compose.yml --env-file development/local_dev.env up --build --abort-on-container-exit
+inv tests
 ```
 
 > Hint: If you get a build fail during testing, check that you are not limiting container memory to 2GB. Upgrade to 4GB.
