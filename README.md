@@ -2,17 +2,17 @@
 
 > This project is in `beta` stage. It should not be taken as a recommended for production environments.
 
-`go-nautobot` package provides the Go Bindings to interact with [Nautobot Source of Truth](https://nautobot.readthedocs.io/en/stable/) API. Nautobot provides OpenAPI 3.0 specs, and an `api_version` query parameter to specify the major.minor version to generate the schema from.
+The `go-nautobot` package provides [Go](https://go.dev/) Bindings to interact with the [Nautobot Source of Truth](https://nautobot.readthedocs.io/en/stable/) API. Nautobot provides OpenAPI 3.0 specs and an `api_version` query parameter to specify the `major.minor` version to generate the schema from.
 
 This package is auto-generated from Nautobot, and it comes with its own versioning schema, independent of Nautobot. For more details about versioning, check the [Release Versioning](#release-versioning) section.
 
 ## Customization
 
-This package only generates the bindings for the Nautobot Core application, and not for the rich [apps ecosystem](https://docs.nautobot.com/projects/core/en/stable/apps/) around it. It's likely that the bindings in this package are not 100% corresponding to your Nautobot environment, as you may have installed some public apps, or your own homegrown ones.
+This package only generates the bindings for the Nautobot Core application, and not for the rich [apps ecosystem](https://docs.nautobot.com/projects/core/en/stable/apps/) around it. It's likely that the bindings in this package are not 100% corresponding to your Nautobot environment, as you may have installed some public App(s), or your own homegrown ones.
 
 Being aware of it, most often than not, you would need to generate your own bindings using the OpenAPI schema provided by your Nautobot deployment (with the installed apps). These are the steps to reproduce it:
 
-1. Install `oapi-codegen`
+1. Install `oapi-codegen`.
 
    ```bash
    $ go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
@@ -23,7 +23,7 @@ Being aware of it, most often than not, you would need to generate your own bind
 3. Download the `swagger.yaml` from the API, using the proper minor version:
 
    ```bash
-   $ wget  http://<your_nautobot>/api/swagger.yaml?api_version=<major.minor_version> -O swagger.yaml
+   $ wget http://<your_nautobot>/api/swagger.yaml?api_version=<major.minor_version> -O swagger.yaml
    ```
 
 4. Generate the Go bindings
@@ -111,7 +111,7 @@ func main() {
 ### Run tests locally
 
 ```
-inv tests
+invoke tests
 ```
 
 > Hint: If you get a build fail during testing, check that you are not limiting container memory to 2GB. Upgrade to 4GB.
