@@ -1,14 +1,18 @@
 # go-nautobot
 
-> This project is in `beta` stage. It should not be taken as a recommended for production environments.
+## :warning: Disclaimer :warning:
 
-`go-nautobot` package provides the Go Bindings to interact with [Nautobot Source of Truth](https://nautobot.readthedocs.io/en/stable/) API. Nautobot provides OpenAPI 3.0 specs, and an `api_version` query parameter to specify the major.minor version to generate the schema from.
+This project is in **beta** development stage, and it's suitable to change before being released as generally available. Use it at your own discretion.
+
+## Introduction
+
+`go-nautobot` package provides the Go Bindings to interact with [Nautobot Source of Truth](https://nautobot.readthedocs.io/en/stable/) API. Nautobot provides OpenAPI 3.0 specs and an `api_version` query parameter to specify the `major.minor` version to generate the schema from.
 
 This package is auto-generated from Nautobot, and it comes with its own versioning schema, independent of Nautobot. For more details about versioning, check the [Release Versioning](#release-versioning) section.
 
 ## Customization
 
-This package only generates the bindings for the Nautobot Core application, and not for the rich [apps ecosystem](https://docs.nautobot.com/projects/core/en/stable/apps/) around it. It's likely that the bindings in this package are not 100% corresponding to your Nautobot environment, as you may have installed some public apps, or your own homegrown ones.
+This package only generates the bindings for the Nautobot Core application, and not for the rich [apps ecosystem](https://docs.nautobot.com/projects/core/en/stable/apps/) around it. It's likely that the bindings in this package are not 100% correspond to your Nautobot environment, as you may have installed some public apps or your own homegrown ones.
 
 Being aware of it, most often than not, you would need to generate your own bindings using the OpenAPI schema provided by your Nautobot deployment (with the installed apps). These are the steps to reproduce it:
 
@@ -49,7 +53,7 @@ For example, a fictitious release process would be:
 
 > the "\*" case shows that when regenerating the bindings for the same Nautobot version, a increment on the patch release of `go-nautobot` occurs.
 
-This way the project versioning will keep relationship with the original minor Nautobot version while it also enables its own release lifecycle.
+This way the project versioning will keep a relationship with the original minor Nautobot version while it also enables its own release lifecycle.
 
 ## How to use `go-nautobot` package
 
@@ -108,28 +112,20 @@ func main() {
 
 ## Local Development
 
+> This repository uses Python ìnvoke`package to run development tasks. You can install it with`pip`.
+
 ### Run tests locally
 
 ```
-inv tests
+invoke tests
 ```
 
 > Hint: If you get a build fail during testing, check that you are not limiting container memory to 2GB. Upgrade to 4GB.
 
 ### Trigger the release manually
 
-The release process can be triggered manually from GitHub Actions CLI:
+The release process can be triggered manually from GitHub Actions CLI (with the proper permissions):
 
 ```
 gh workflow run release.yml -f tag=1.3.2
-```
-
-### How to use while being a private repository
-
-```bash
-export GOPRIVATE=github.com/nautobot/go-nautobot
-
-vi ~/.gitconfig
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
 ```
