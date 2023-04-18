@@ -112,7 +112,13 @@ func main() {
 
 ## Local Development
 
+<<<<<<< HEAD
+
 > This repository uses Python ìnvoke`package to run development tasks. You can install it with`pip`.
+
+=======
+
+> > > > > > > origin/main
 
 ### Run tests locally
 
