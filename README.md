@@ -16,7 +16,7 @@ This package only generates the bindings for the Nautobot Core application, and 
 
 Being aware of it, most often than not, you would need to generate your own bindings using the OpenAPI schema provided by your Nautobot deployment (with the installed apps). These are the steps to reproduce it:
 
-1. Install `oapi-codegen`
+1. Install `oapi-codegen`.
 
    ```bash
    $ go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
@@ -27,7 +27,7 @@ Being aware of it, most often than not, you would need to generate your own bind
 3. Download the `swagger.yaml` from the API, using the proper minor version:
 
    ```bash
-   $ wget  http://<your_nautobot>/api/swagger.yaml?api_version=<major.minor_version> -O swagger.yaml
+   $ wget http://<your_nautobot>/api/swagger.yaml?api_version=<major.minor_version> -O swagger.yaml
    ```
 
 4. Generate the Go bindings
