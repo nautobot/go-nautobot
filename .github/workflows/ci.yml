@@ -8,7 +8,7 @@ on: # yamllint disable-line rule:truthy rule:comments
     tags:
       - "v*"
   pull_request: ~
-concurrency:  # Cancel any existing runs of this workflow for this same PR
+concurrency: # Cancel any existing runs of this workflow for this same PR
   group: "${{ github.workflow }}-${{ github.ref }}"
   cancel-in-progress: true
 
@@ -16,7 +16,7 @@ jobs:
   test:
     runs-on: "ubuntu-20.04"
     env:
-      NAUTOBOT_VER: "1.5.0"
+      NAUTOBOT_VER: "2.1.1"
       PYTHON_VER: "3.9"
     steps:
       - name: "Get go-nautobot code"
