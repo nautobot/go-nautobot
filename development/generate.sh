@@ -56,6 +56,6 @@ export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
 cd /client/pkg/nautobot
 go mod tidy
-go test -v
+go test -v -gcflags="-e"
 
 echo "Nautobot client tests completed"
