@@ -51,3 +51,5 @@ fabric.properties
 ### vscode ###
 .vscode/*
 *.code-workspace
+
+venv

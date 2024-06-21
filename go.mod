@@ -3,7 +3,7 @@ module github.com/nautobot/go-nautobot
 go 1.18
 
 require (
-	github.com/deepmap/oapi-codegen v1.10.1
+	github.com/oapi-codegen/oapi-codegen v1.10.1
 	github.com/tidwall/gjson v1.14.1
 )
 
