@@ -23,8 +23,6 @@ CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 # 1.4.0 -> 1.4
 MAJOR_MINOR_VER=${NAUTOBOT_VER%.*}
 
-#wget --tries=5  http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER} -O swagger.yaml
-
 NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
      -O swagger.yaml \
