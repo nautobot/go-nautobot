@@ -8,7 +8,7 @@ ALPHA_TAG="alpha"
 RC_TAG="rc"
 
 # TODO: eventually we would like to generate for experimental Nautobot versions
-if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"* ]] || [[" $NAUTOBOT_VER" == *"$RC_TAG"* ]]; then
+if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$RC_TAG"* ]]; then
   echo "${NAUTOBOT_VER} is not an official Nautobot version, no new bindings are generated."
   exit 0
 fi
@@ -23,7 +23,15 @@ CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 # 1.4.0 -> 1.4
 MAJOR_MINOR_VER=${NAUTOBOT_VER%.*}
 
-wget --tries=5  http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER} -O swagger.yaml
+#wget --tries=5  http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER} -O swagger.yaml
+
+NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
+wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
+     -O swagger.yaml \
+     "http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER}" || {
+  echo "Failed to download swagger.yaml"
+  exit 1
+}
 
 oapi-codegen --config oapi-config.yml swagger.yaml
 
