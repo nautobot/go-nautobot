@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -euxo pipefail
 
 echo "Starting generation of Go Nautobot Bindings"
@@ -30,8 +30,12 @@ wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
   echo "Failed to download swagger.yaml"
   exit 1
 }
-
-oapi-codegen --config oapi-config.yml swagger.yaml
+export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
+openapi-generator-cli generate --config ./oapi-config.yaml \
+    --input-spec ./swagger.yaml \
+    --output /local \
+    --inline-schema-options RESOLVE_INLINE_ENUMS=true \
+    --skip-validate-spec
 
 if [ "$CURRENT_MAJOR_MINOR_VER" = "$MAJOR_MINOR_VER" ]; then
     # Get the Patch version string
@@ -51,7 +55,8 @@ FINAL_NEW_TAG=${NEW_TAG}-beta
 echo $FINAL_NEW_TAG > tag.md
 
 cp tag.md /client
-cp nautobot.go /client/pkg/nautobot
+cp swagger.yaml /client
+cp -ra /local/. /client/pkg/nautobot
 
 echo "Go Nautobot Bindings generated"
 
