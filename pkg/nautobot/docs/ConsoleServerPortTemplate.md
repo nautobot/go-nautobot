@@ -1,0 +1,364 @@
+# ConsoleServerPortTemplate
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [readonly] 
+**ObjectType** | **string** |  | [readonly] 
+**Display** | **string** | Human friendly display value | [readonly] 
+**Url** | **string** |  | [readonly] 
+**NaturalSlug** | **string** |  | [readonly] 
+**NotesUrl** | **string** |  | [readonly] 
+**Type** | Pointer to [**ConsolePortType**](ConsolePortType.md) |  | [optional] 
+**Name** | **string** |  | 
+**Label** | Pointer to **string** | Physical label | [optional] 
+**Description** | Pointer to **string** |  | [optional] 
+**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Created** | **NullableTime** |  | [readonly] 
+**LastUpdated** | **NullableTime** |  | [readonly] 
+**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+
+## Methods
+
+### NewConsoleServerPortTemplate
+
+`func NewConsoleServerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, deviceType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *ConsoleServerPortTemplate`
+
+NewConsoleServerPortTemplate instantiates a new ConsoleServerPortTemplate object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewConsoleServerPortTemplateWithDefaults
+
+`func NewConsoleServerPortTemplateWithDefaults() *ConsoleServerPortTemplate`
+
+NewConsoleServerPortTemplateWithDefaults instantiates a new ConsoleServerPortTemplate object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *ConsoleServerPortTemplate) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *ConsoleServerPortTemplate) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *ConsoleServerPortTemplate) SetId(v string)`
+
+SetId sets Id field to given value.
+
+
+### GetObjectType
+
+`func (o *ConsoleServerPortTemplate) GetObjectType() string`
+
+GetObjectType returns the ObjectType field if non-nil, zero value otherwise.
+
+### GetObjectTypeOk
+
+`func (o *ConsoleServerPortTemplate) GetObjectTypeOk() (*string, bool)`
+
+GetObjectTypeOk returns a tuple with the ObjectType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetObjectType
+
+`func (o *ConsoleServerPortTemplate) SetObjectType(v string)`
+
+SetObjectType sets ObjectType field to given value.
+
+
+### GetDisplay
+
+`func (o *ConsoleServerPortTemplate) GetDisplay() string`
+
+GetDisplay returns the Display field if non-nil, zero value otherwise.
+
+### GetDisplayOk
+
+`func (o *ConsoleServerPortTemplate) GetDisplayOk() (*string, bool)`
+
+GetDisplayOk returns a tuple with the Display field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDisplay
+
+`func (o *ConsoleServerPortTemplate) SetDisplay(v string)`
+
+SetDisplay sets Display field to given value.
+
+
+### GetUrl
+
+`func (o *ConsoleServerPortTemplate) GetUrl() string`
+
+GetUrl returns the Url field if non-nil, zero value otherwise.
+
+### GetUrlOk
+
+`func (o *ConsoleServerPortTemplate) GetUrlOk() (*string, bool)`
+
+GetUrlOk returns a tuple with the Url field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUrl
+
+`func (o *ConsoleServerPortTemplate) SetUrl(v string)`
+
+SetUrl sets Url field to given value.
+
+
+### GetNaturalSlug
+
+`func (o *ConsoleServerPortTemplate) GetNaturalSlug() string`
+
+GetNaturalSlug returns the NaturalSlug field if non-nil, zero value otherwise.
+
+### GetNaturalSlugOk
+
+`func (o *ConsoleServerPortTemplate) GetNaturalSlugOk() (*string, bool)`
+
+GetNaturalSlugOk returns a tuple with the NaturalSlug field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNaturalSlug
+
+`func (o *ConsoleServerPortTemplate) SetNaturalSlug(v string)`
+
+SetNaturalSlug sets NaturalSlug field to given value.
+
+
+### GetNotesUrl
+
+`func (o *ConsoleServerPortTemplate) GetNotesUrl() string`
+
+GetNotesUrl returns the NotesUrl field if non-nil, zero value otherwise.
+
+### GetNotesUrlOk
+
+`func (o *ConsoleServerPortTemplate) GetNotesUrlOk() (*string, bool)`
+
+GetNotesUrlOk returns a tuple with the NotesUrl field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNotesUrl
+
+`func (o *ConsoleServerPortTemplate) SetNotesUrl(v string)`
+
+SetNotesUrl sets NotesUrl field to given value.
+
+
+### GetType
+
+`func (o *ConsoleServerPortTemplate) GetType() ConsolePortType`
+
+GetType returns the Type field if non-nil, zero value otherwise.
+
+### GetTypeOk
+
+`func (o *ConsoleServerPortTemplate) GetTypeOk() (*ConsolePortType, bool)`
+
+GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetType
+
+`func (o *ConsoleServerPortTemplate) SetType(v ConsolePortType)`
+
+SetType sets Type field to given value.
+
+### HasType
+
+`func (o *ConsoleServerPortTemplate) HasType() bool`
+
+HasType returns a boolean if a field has been set.
+
+### GetName
+
+`func (o *ConsoleServerPortTemplate) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *ConsoleServerPortTemplate) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *ConsoleServerPortTemplate) SetName(v string)`
+
+SetName sets Name field to given value.
+
+
+### GetLabel
+
+`func (o *ConsoleServerPortTemplate) GetLabel() string`
+
+GetLabel returns the Label field if non-nil, zero value otherwise.
+
+### GetLabelOk
+
+`func (o *ConsoleServerPortTemplate) GetLabelOk() (*string, bool)`
+
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLabel
+
+`func (o *ConsoleServerPortTemplate) SetLabel(v string)`
+
+SetLabel sets Label field to given value.
+
+### HasLabel
+
+`func (o *ConsoleServerPortTemplate) HasLabel() bool`
+
+HasLabel returns a boolean if a field has been set.
+
+### GetDescription
+
+`func (o *ConsoleServerPortTemplate) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *ConsoleServerPortTemplate) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *ConsoleServerPortTemplate) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *ConsoleServerPortTemplate) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
+
+### GetDeviceType
+
+`func (o *ConsoleServerPortTemplate) GetDeviceType() BulkWritableCableRequestStatus`
+
+GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
+
+### GetDeviceTypeOk
+
+`func (o *ConsoleServerPortTemplate) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+
+GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDeviceType
+
+`func (o *ConsoleServerPortTemplate) SetDeviceType(v BulkWritableCableRequestStatus)`
+
+SetDeviceType sets DeviceType field to given value.
+
+
+### GetCreated
+
+`func (o *ConsoleServerPortTemplate) GetCreated() time.Time`
+
+GetCreated returns the Created field if non-nil, zero value otherwise.
+
+### GetCreatedOk
+
+`func (o *ConsoleServerPortTemplate) GetCreatedOk() (*time.Time, bool)`
+
+GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCreated
+
+`func (o *ConsoleServerPortTemplate) SetCreated(v time.Time)`
+
+SetCreated sets Created field to given value.
+
+
+### SetCreatedNil
+
+`func (o *ConsoleServerPortTemplate) SetCreatedNil(b bool)`
+
+ SetCreatedNil sets the value for Created to be an explicit nil
+
+### UnsetCreated
+`func (o *ConsoleServerPortTemplate) UnsetCreated()`
+
+UnsetCreated ensures that no value is present for Created, not even an explicit nil
+### GetLastUpdated
+
+`func (o *ConsoleServerPortTemplate) GetLastUpdated() time.Time`
+
+GetLastUpdated returns the LastUpdated field if non-nil, zero value otherwise.
+
+### GetLastUpdatedOk
+
+`func (o *ConsoleServerPortTemplate) GetLastUpdatedOk() (*time.Time, bool)`
+
+GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLastUpdated
+
+`func (o *ConsoleServerPortTemplate) SetLastUpdated(v time.Time)`
+
+SetLastUpdated sets LastUpdated field to given value.
+
+
+### SetLastUpdatedNil
+
+`func (o *ConsoleServerPortTemplate) SetLastUpdatedNil(b bool)`
+
+ SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
+
+### UnsetLastUpdated
+`func (o *ConsoleServerPortTemplate) UnsetLastUpdated()`
+
+UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
+### GetCustomFields
+
+`func (o *ConsoleServerPortTemplate) GetCustomFields() map[string]interface{}`
+
+GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
+
+### GetCustomFieldsOk
+
+`func (o *ConsoleServerPortTemplate) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+
+GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCustomFields
+
+`func (o *ConsoleServerPortTemplate) SetCustomFields(v map[string]interface{})`
+
+SetCustomFields sets CustomFields field to given value.
+
+### HasCustomFields
+
+`func (o *ConsoleServerPortTemplate) HasCustomFields() bool`
+
+HasCustomFields returns a boolean if a field has been set.
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
