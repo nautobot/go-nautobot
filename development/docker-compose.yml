@@ -11,8 +11,8 @@ version: "3.4"
 services:
   oapi:
     build:
-      context: ../
-      dockerfile: development/Dockerfile
+      context: ./
+      dockerfile: Dockerfile
     image: "networktocode/oapi:local"
     depends_on:
       nautobot:
@@ -20,7 +20,7 @@ services:
     environment:
       - NAUTOBOT_VER=${NAUTOBOT_VER}
     volumes:
-      - "../:/client"
+      - "./:/client"
   nautobot:
     healthcheck:
       interval: 30s
