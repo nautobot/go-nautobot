@@ -1,0 +1,46 @@
+# Job
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [default to null]
+**ObjectType** | **string** |  | [default to null]
+**Display** | **string** | Human friendly display value | [default to null]
+**Url** | **string** |  | [default to null]
+**NaturalSlug** | **string** |  | [default to null]
+**ModuleName** | **string** | Dotted name of the Python module providing this job | [default to null]
+**JobClassName** | **string** | Name of the Python class providing this job | [default to null]
+**Grouping** | **string** | Human-readable grouping that this job belongs to | [default to null]
+**Name** | **string** | Human-readable name of this job | [default to null]
+**Description** | **string** | Markdown formatting and a limited subset of HTML are supported | [optional] [default to null]
+**Installed** | **bool** | Whether the Python module and class providing this job are presently installed and loadable | [default to null]
+**Enabled** | **bool** | Whether this job can be executed by users | [optional] [default to null]
+**IsJobHookReceiver** | **bool** | Whether this job is a job hook receiver | [default to null]
+**IsJobButtonReceiver** | **bool** | Whether this job is a job button receiver | [default to null]
+**HasSensitiveVariables** | **bool** | Whether this job contains sensitive variables | [optional] [default to null]
+**ApprovalRequired** | **bool** | Whether the job requires approval from another user before running | [optional] [default to null]
+**Hidden** | **bool** | Whether the job defaults to not being shown in the UI | [optional] [default to null]
+**DryrunDefault** | **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] [default to null]
+**ReadOnly** | **bool** | Set to true if the job does not make any changes to the environment | [default to null]
+**SoftTimeLimit** | **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] [default to null]
+**TimeLimit** | **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] [default to null]
+**TaskQueues** | [**map[string]Object**](.md) | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] [default to null]
+**SupportsDryrun** | **bool** | If supported, allows the job to bypass approval when running with dryrun argument set to true | [default to null]
+**GroupingOverride** | **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] [default to null]
+**NameOverride** | **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] [default to null]
+**DescriptionOverride** | **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] [default to null]
+**ApprovalRequiredOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**DryrunDefaultOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**HiddenOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**SoftTimeLimitOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**TimeLimitOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**HasSensitiveVariablesOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**TaskQueuesOverride** | **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] [default to null]
+**Created** | [**time.Time**](time.Time.md) |  | [default to null]
+**LastUpdated** | [**time.Time**](time.Time.md) |  | [default to null]
+**Tags** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**NotesUrl** | **string** |  | [default to null]
+**CustomFields** | [**map[string]Object**](.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

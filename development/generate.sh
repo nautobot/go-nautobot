@@ -49,6 +49,6 @@ FINAL_NEW_TAG=${NEW_TAG}-beta
 echo $FINAL_NEW_TAG > tag.md
 
 cp tag.md /client
-cp swagger.yaml /client/swagger-codegen/
+cp swagger.yaml /client/swagger-codegen/swagger.yaml
 
 echo "openAPI spec parsed"

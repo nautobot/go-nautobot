@@ -1,0 +1,12 @@
+# DynamicGroupMembershipRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Operator** | [***OperatorEnum**](OperatorEnum.md) |  | [default to null]
+**Weight** | **int32** |  | [default to null]
+**Group** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [default to null]
+**ParentGroup** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

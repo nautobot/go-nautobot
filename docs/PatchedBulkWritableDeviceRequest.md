@@ -1,0 +1,42 @@
+# PatchedBulkWritableDeviceRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [default to null]
+**Face** | [***FaceEnum**](FaceEnum.md) |  | [optional] [default to null]
+**LocalConfigContextData** | [**map[string]Object**](.md) |  | [optional] [default to null]
+**LocalConfigContextDataOwnerObjectId** | **string** |  | [optional] [default to null]
+**Name** | **string** |  | [optional] [default to null]
+**Serial** | **string** |  | [optional] [default to null]
+**AssetTag** | **string** | A unique tag used to identify this device | [optional] [default to null]
+**Position** | **int32** | The lowest-numbered unit occupied by the device | [optional] [default to null]
+**DeviceRedundancyGroupPriority** | **int32** | The priority the device has in the device redundancy group. | [optional] [default to null]
+**VcPosition** | **int32** |  | [optional] [default to null]
+**VcPriority** | **int32** |  | [optional] [default to null]
+**Comments** | **string** |  | [optional] [default to null]
+**LocalConfigContextSchema** | [***BulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequest_config_context_schema.md) |  | [optional] [default to null]
+**LocalConfigContextDataOwnerContentType** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**DeviceType** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**Status** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**Role** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**Tenant** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**Platform** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**Location** | [***BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**Rack** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**PrimaryIp4** | [***PrimaryIpv4**](Primary IPv4.md) |  | [optional] [default to null]
+**PrimaryIp6** | [***PrimaryIpv6**](Primary IPv6.md) |  | [optional] [default to null]
+**Cluster** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**VirtualChassis** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**DeviceRedundancyGroup** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**SoftwareVersion** | [***BulkWritableDeviceRequestSoftwareVersion**](BulkWritableDeviceRequest_software_version.md) |  | [optional] [default to null]
+**SecretsGroup** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**ControllerManagedDeviceGroup** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+**SoftwareImageFiles** | [**[]SoftwareImageFiles**](Software Image Files.md) | Override the software image files associated with the software version for this device | [optional] [default to null]
+**Tags** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequest_status.md) |  | [optional] [default to null]
+**CustomFields** | [**map[string]Object**](.md) |  | [optional] [default to null]
+**Relationships** | [**map[string]BulkWritableCableRequestRelationships**](BulkWritableCableRequest_relationships.md) |  | [optional] [default to null]
+**ParentBay** | [***BulkWritableCircuitRequestTenant**](BulkWritableCircuitRequest_tenant.md) |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
