@@ -18,7 +18,7 @@ cd ..
 
 echo "Starting Nautobot instance"
 
-docker-compose --project-name go_nautobot -f docker-compose.yml --env-file local_dev.env up --build --abort-on-container-exit
+docker-compose --project-name go_nautobot -f docker-compose.yml --env-file local_dev.env up --build --abort-on-container-exit --exit-code-from oapi
 
 echo "Generating Go Bindings"
 cd swagger-codegen
