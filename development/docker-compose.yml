@@ -20,7 +20,7 @@ services:
     environment:
       - NAUTOBOT_VER=${NAUTOBOT_VER}
     volumes:
-      - "./:/client"
+      - "../:/client"
   nautobot:
     healthcheck:
       interval: 30s

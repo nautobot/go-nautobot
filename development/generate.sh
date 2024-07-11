@@ -31,6 +31,15 @@ wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
   exit 1
 }
 
+echo "Creating GO bindings"
+
+wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.58/swagger-codegen-cli-3.0.58.jar -O swagger-codegen-cli.jar
+
+#yaml file is too long
+export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
+java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l go -o /client -DpackageName=nautobot
+
+
 if [ "$CURRENT_MAJOR_MINOR_VER" = "$MAJOR_MINOR_VER" ]; then
     # Get the Patch version string
     NEW_PATCH_VERSION=$(echo $CURRENT_VERSION | awk -F '.' '{ print $3;}')
@@ -49,6 +58,14 @@ FINAL_NEW_TAG=${NEW_TAG}-beta
 echo $FINAL_NEW_TAG > tag.md
 
 cp tag.md /client
-cp swagger.yaml /client/swagger-codegen/swagger.yaml
 
-echo "openAPI spec parsed"
+echo "Starting Nautobot client tests..."
+
+export NAUTOBOT_URL=http://nautobot:8080/api/
+export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
+
+cd /client/test
+go mod tidy
+go test -v -gcflags="-e"
+
+echo "Nautobot client tests completed"
