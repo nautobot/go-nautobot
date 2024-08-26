@@ -1,10 +1,82 @@
 # JobResultStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | **string** |  | [optional] [default to null]
-**Label** | **string** |  | [optional] [default to null]
+**Value** | Pointer to [**JobResultStatusValue**](JobResultStatusValue.md) |  | [optional] 
+**Label** | Pointer to [**JobResultStatusValue**](JobResultStatusValue.md) |  | [optional] 
+
+## Methods
+
+### NewJobResultStatus
+
+`func NewJobResultStatus() *JobResultStatus`
+
+NewJobResultStatus instantiates a new JobResultStatus object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewJobResultStatusWithDefaults
+
+`func NewJobResultStatusWithDefaults() *JobResultStatus`
+
+NewJobResultStatusWithDefaults instantiates a new JobResultStatus object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetValue
+
+`func (o *JobResultStatus) GetValue() JobResultStatusValue`
+
+GetValue returns the Value field if non-nil, zero value otherwise.
+
+### GetValueOk
+
+`func (o *JobResultStatus) GetValueOk() (*JobResultStatusValue, bool)`
+
+GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetValue
+
+`func (o *JobResultStatus) SetValue(v JobResultStatusValue)`
+
+SetValue sets Value field to given value.
+
+### HasValue
+
+`func (o *JobResultStatus) HasValue() bool`
+
+HasValue returns a boolean if a field has been set.
+
+### GetLabel
+
+`func (o *JobResultStatus) GetLabel() JobResultStatusValue`
+
+GetLabel returns the Label field if non-nil, zero value otherwise.
+
+### GetLabelOk
+
+`func (o *JobResultStatus) GetLabelOk() (*JobResultStatusValue, bool)`
+
+GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLabel
+
+`func (o *JobResultStatus) SetLabel(v JobResultStatusValue)`
+
+SetLabel sets Label field to given value.
+
+### HasLabel
+
+`func (o *JobResultStatus) HasLabel() bool`
+
+HasLabel returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 

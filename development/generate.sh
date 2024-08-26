@@ -13,7 +13,7 @@ if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"
   exit 0
 fi
 
-VERSION_FILE="/client/tag.md"
+VERSION_FILE="/client/api/nautobot_version"
 CURRENT_VERSION=$(head -n 1 $VERSION_FILE)
 CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 
@@ -23,21 +23,22 @@ CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 # 1.4.0 -> 1.4
 MAJOR_MINOR_VER=${NAUTOBOT_VER%.*}
 
+# Remove generated files
+for F in $(cat /client/.openapi-generator/FILES) ; do
+    rm -f /client/"${F}"
+done
+
 NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
-     -O swagger.yaml \
+     -O /client/api/openapi.yaml \
      "http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER}" || {
   echo "Failed to download swagger.yaml"
   exit 1
 }
 
+cp /client/api/openapi.yaml /client/api/openapi-original.yaml
+
 echo "Creating GO bindings"
-
-wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.58/swagger-codegen-cli-3.0.58.jar -O swagger-codegen-cli.jar
-
-#yaml file is too long
-export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
-java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l go -o /client -DpackageName=nautobot
 
 
 if [ "$CURRENT_MAJOR_MINOR_VER" = "$MAJOR_MINOR_VER" ]; then
@@ -55,17 +56,28 @@ fi
 # TODO: remove beta when it's in production
 FINAL_NEW_TAG=${NEW_TAG}-beta
 
-echo $FINAL_NEW_TAG > tag.md
+echo $FINAL_NEW_TAG > /client/api/nautobot_version
 
-cp tag.md /client
+#Fix openapi spec file
+/client/development/fix-spec.py
+
+#yaml file is too long
+export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
+openapi-generator-cli generate --config /client/development/oapi-config.yaml \
+    --input-spec /client/api/openapi.yaml \
+    --output /client \
+    --inline-schema-options RESOLVE_INLINE_ENUMS=true \
+    --skip-validate-spec \
+    --http-user-agent go-nautobot/$(cat /client/api/nautobot_version)
 
 echo "Starting Nautobot client tests..."
 
 export NAUTOBOT_URL=http://nautobot:8080/api/
 export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
-cd /client/test
+cd /client
 go mod tidy
+go build -v -gcflags="-e"
 go test -v -gcflags="-e"
 
 echo "Nautobot client tests completed"

@@ -1,15 +1,197 @@
 # BulkWritableTagRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [default to null]
-**ContentTypes** | **[]string** |  | [default to null]
-**Name** | **string** |  | [default to null]
-**Color** | **string** | RGB color in hexadecimal (e.g. 00ff00) | [optional] [default to null]
-**Description** | **string** |  | [optional] [default to null]
-**CustomFields** | [**map[string]Object**](.md) |  | [optional] [default to null]
-**Relationships** | [**map[string]BulkWritableCableRequestRelationships**](BulkWritableCableRequest_relationships.md) |  | [optional] [default to null]
+**Id** | **string** |  | 
+**ContentTypes** | **[]string** |  | 
+**Name** | **string** |  | 
+**Color** | Pointer to **string** | RGB color in hexadecimal (e.g. 00ff00) | [optional] 
+**Description** | Pointer to **string** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+
+## Methods
+
+### NewBulkWritableTagRequest
+
+`func NewBulkWritableTagRequest(id string, contentTypes []string, name string, ) *BulkWritableTagRequest`
+
+NewBulkWritableTagRequest instantiates a new BulkWritableTagRequest object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewBulkWritableTagRequestWithDefaults
+
+`func NewBulkWritableTagRequestWithDefaults() *BulkWritableTagRequest`
+
+NewBulkWritableTagRequestWithDefaults instantiates a new BulkWritableTagRequest object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *BulkWritableTagRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *BulkWritableTagRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *BulkWritableTagRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+
+### GetContentTypes
+
+`func (o *BulkWritableTagRequest) GetContentTypes() []string`
+
+GetContentTypes returns the ContentTypes field if non-nil, zero value otherwise.
+
+### GetContentTypesOk
+
+`func (o *BulkWritableTagRequest) GetContentTypesOk() (*[]string, bool)`
+
+GetContentTypesOk returns a tuple with the ContentTypes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContentTypes
+
+`func (o *BulkWritableTagRequest) SetContentTypes(v []string)`
+
+SetContentTypes sets ContentTypes field to given value.
+
+
+### GetName
+
+`func (o *BulkWritableTagRequest) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *BulkWritableTagRequest) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *BulkWritableTagRequest) SetName(v string)`
+
+SetName sets Name field to given value.
+
+
+### GetColor
+
+`func (o *BulkWritableTagRequest) GetColor() string`
+
+GetColor returns the Color field if non-nil, zero value otherwise.
+
+### GetColorOk
+
+`func (o *BulkWritableTagRequest) GetColorOk() (*string, bool)`
+
+GetColorOk returns a tuple with the Color field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetColor
+
+`func (o *BulkWritableTagRequest) SetColor(v string)`
+
+SetColor sets Color field to given value.
+
+### HasColor
+
+`func (o *BulkWritableTagRequest) HasColor() bool`
+
+HasColor returns a boolean if a field has been set.
+
+### GetDescription
+
+`func (o *BulkWritableTagRequest) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *BulkWritableTagRequest) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *BulkWritableTagRequest) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *BulkWritableTagRequest) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
+
+### GetCustomFields
+
+`func (o *BulkWritableTagRequest) GetCustomFields() map[string]interface{}`
+
+GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
+
+### GetCustomFieldsOk
+
+`func (o *BulkWritableTagRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+
+GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCustomFields
+
+`func (o *BulkWritableTagRequest) SetCustomFields(v map[string]interface{})`
+
+SetCustomFields sets CustomFields field to given value.
+
+### HasCustomFields
+
+`func (o *BulkWritableTagRequest) HasCustomFields() bool`
+
+HasCustomFields returns a boolean if a field has been set.
+
+### GetRelationships
+
+`func (o *BulkWritableTagRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+
+GetRelationships returns the Relationships field if non-nil, zero value otherwise.
+
+### GetRelationshipsOk
+
+`func (o *BulkWritableTagRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+
+GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRelationships
+
+`func (o *BulkWritableTagRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+
+SetRelationships sets Relationships field to given value.
+
+### HasRelationships
+
+`func (o *BulkWritableTagRequest) HasRelationships() bool`
+
+HasRelationships returns a boolean if a field has been set.
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
 
