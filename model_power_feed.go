@@ -72,11 +72,11 @@ func NewPowerFeed(id string, objectType string, display string, url string, natu
 	this.ConnectedEndpointType = connectedEndpointType
 	this.ConnectedEndpoint = connectedEndpoint
 	this.ConnectedEndpointReachable = connectedEndpointReachable
-	var type_ PowerFeedType = {"value":"primary","label":"Primary"}
+	var type_ PowerFeedType = POWERFEEDTYPE_PRIMARY
 	this.Type = &type_
-	var supply PowerFeedSupply = {"value":"ac","label":"AC"}
+	var supply PowerFeedSupply = POWERFEEDSUPPLY_AC
 	this.Supply = &supply
-	var phase PowerFeedPhase = {"value":"single-phase","label":"Single phase"}
+	var phase PowerFeedPhase = POWERFEEDPHASE_SINGLE_PHASE
 	this.Phase = &phase
 	this.Name = name
 	this.AvailablePower = availablePower
@@ -93,11 +93,11 @@ func NewPowerFeed(id string, objectType string, display string, url string, natu
 // but it doesn't guarantee that properties required by API are set
 func NewPowerFeedWithDefaults() *PowerFeed {
 	this := PowerFeed{}
-	var type_ PowerFeedType = {"value":"primary","label":"Primary"}
+	var type_ PowerFeedType = POWERFEEDTYPE_PRIMARY
 	this.Type = &type_
-	var supply PowerFeedSupply = {"value":"ac","label":"AC"}
+	var supply PowerFeedSupply = POWERFEEDSUPPLY_AC
 	this.Supply = &supply
-	var phase PowerFeedPhase = {"value":"single-phase","label":"Single phase"}
+	var phase PowerFeedPhase = POWERFEEDPHASE_SINGLE_PHASE
 	this.Phase = &phase
 	return &this
 }

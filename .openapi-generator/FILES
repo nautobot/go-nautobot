@@ -722,7 +722,6 @@ docs/PatchedWritableConsoleServerPortRequest.md
 docs/PatchedWritableConsoleServerPortTemplateRequest.md
 docs/PatchedWritableCustomFieldRequest.md
 docs/PatchedWritableDeviceRedundancyGroupRequest.md
-docs/PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy.md
 docs/PatchedWritableDeviceRequest.md
 docs/PatchedWritableDeviceTypeRequest.md
 docs/PatchedWritableFrontPortRequest.md
@@ -756,15 +755,9 @@ docs/PlatformRequest.md
 docs/PortTypeChoices.md
 docs/PowerFeed.md
 docs/PowerFeedPhase.md
-docs/PowerFeedPhaseLabel.md
-docs/PowerFeedPhaseValue.md
 docs/PowerFeedSupply.md
-docs/PowerFeedSupplyLabel.md
-docs/PowerFeedSupplyValue.md
 docs/PowerFeedType.md
 docs/PowerFeedTypeChoices.md
-docs/PowerFeedTypeLabel.md
-docs/PowerFeedTypeValue.md
 docs/PowerOutlet.md
 docs/PowerOutletFeedLeg.md
 docs/PowerOutletFeedLegValue.md
@@ -787,8 +780,6 @@ docs/PrefixLocationAssignment.md
 docs/PrefixLocationAssignmentRequest.md
 docs/PrefixType.md
 docs/PrefixTypeChoices.md
-docs/PrefixTypeLabel.md
-docs/PrefixTypeValue.md
 docs/PrimaryIPv4.md
 docs/PrimaryIPv6.md
 docs/ProvidedContentsEnum.md
@@ -1627,7 +1618,6 @@ model_patched_writable_console_server_port_request.go
 model_patched_writable_console_server_port_template_request.go
 model_patched_writable_custom_field_request.go
 model_patched_writable_device_redundancy_group_request.go
-model_patched_writable_device_redundancy_group_request_failover_strategy.go
 model_patched_writable_device_request.go
 model_patched_writable_device_type_request.go
 model_patched_writable_front_port_request.go
@@ -1661,15 +1651,9 @@ model_platform_request.go
 model_port_type_choices.go
 model_power_feed.go
 model_power_feed_phase.go
-model_power_feed_phase_label.go
-model_power_feed_phase_value.go
 model_power_feed_supply.go
-model_power_feed_supply_label.go
-model_power_feed_supply_value.go
 model_power_feed_type.go
 model_power_feed_type_choices.go
-model_power_feed_type_label.go
-model_power_feed_type_value.go
 model_power_outlet.go
 model_power_outlet_feed_leg.go
 model_power_outlet_feed_leg_value.go
@@ -1692,8 +1676,6 @@ model_prefix_location_assignment.go
 model_prefix_location_assignment_request.go
 model_prefix_type.go
 model_prefix_type_choices.go
-model_prefix_type_label.go
-model_prefix_type_value.go
 model_primary_ipv4.go
 model_primary_ipv6.go
 model_provided_contents_enum.go

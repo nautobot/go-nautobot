@@ -21,7 +21,7 @@ var _ MappedNullable = &PatchedWritableDeviceRedundancyGroupRequest{}
 type PatchedWritableDeviceRedundancyGroupRequest struct {
 	Name *string `json:"name,omitempty"`
 	Description *string `json:"description,omitempty"`
-	FailoverStrategy *PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy `json:"failover_strategy,omitempty"`
+	FailoverStrategy *BulkWritableDeviceRedundancyGroupRequestFailoverStrategy `json:"failover_strategy,omitempty"`
 	Comments *string `json:"comments,omitempty"`
 	Status *BulkWritableCableRequestStatus `json:"status,omitempty"`
 	SecretsGroup NullableBulkWritableCircuitRequestTenant `json:"secrets_group,omitempty"`
@@ -115,9 +115,9 @@ func (o *PatchedWritableDeviceRedundancyGroupRequest) SetDescription(v string) {
 }
 
 // GetFailoverStrategy returns the FailoverStrategy field value if set, zero value otherwise.
-func (o *PatchedWritableDeviceRedundancyGroupRequest) GetFailoverStrategy() PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy {
+func (o *PatchedWritableDeviceRedundancyGroupRequest) GetFailoverStrategy() BulkWritableDeviceRedundancyGroupRequestFailoverStrategy {
 	if o == nil || IsNil(o.FailoverStrategy) {
-		var ret PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy
+		var ret BulkWritableDeviceRedundancyGroupRequestFailoverStrategy
 		return ret
 	}
 	return *o.FailoverStrategy
@@ -125,7 +125,7 @@ func (o *PatchedWritableDeviceRedundancyGroupRequest) GetFailoverStrategy() Patc
 
 // GetFailoverStrategyOk returns a tuple with the FailoverStrategy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *PatchedWritableDeviceRedundancyGroupRequest) GetFailoverStrategyOk() (*PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy, bool) {
+func (o *PatchedWritableDeviceRedundancyGroupRequest) GetFailoverStrategyOk() (*BulkWritableDeviceRedundancyGroupRequestFailoverStrategy, bool) {
 	if o == nil || IsNil(o.FailoverStrategy) {
 		return nil, false
 	}
@@ -141,8 +141,8 @@ func (o *PatchedWritableDeviceRedundancyGroupRequest) HasFailoverStrategy() bool
 	return false
 }
 
-// SetFailoverStrategy gets a reference to the given PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy and assigns it to the FailoverStrategy field.
-func (o *PatchedWritableDeviceRedundancyGroupRequest) SetFailoverStrategy(v PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy) {
+// SetFailoverStrategy gets a reference to the given BulkWritableDeviceRedundancyGroupRequestFailoverStrategy and assigns it to the FailoverStrategy field.
+func (o *PatchedWritableDeviceRedundancyGroupRequest) SetFailoverStrategy(v BulkWritableDeviceRedundancyGroupRequestFailoverStrategy) {
 	o.FailoverStrategy = &v
 }
 

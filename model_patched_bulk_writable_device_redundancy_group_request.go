@@ -42,8 +42,6 @@ type _PatchedBulkWritableDeviceRedundancyGroupRequest PatchedBulkWritableDeviceR
 func NewPatchedBulkWritableDeviceRedundancyGroupRequest(id string) *PatchedBulkWritableDeviceRedundancyGroupRequest {
 	this := PatchedBulkWritableDeviceRedundancyGroupRequest{}
 	this.Id = id
-	var failoverStrategy BulkWritableDeviceRedundancyGroupRequestFailoverStrategy = null
-	this.FailoverStrategy = &failoverStrategy
 	return &this
 }
 
@@ -52,8 +50,6 @@ func NewPatchedBulkWritableDeviceRedundancyGroupRequest(id string) *PatchedBulkW
 // but it doesn't guarantee that properties required by API are set
 func NewPatchedBulkWritableDeviceRedundancyGroupRequestWithDefaults() *PatchedBulkWritableDeviceRedundancyGroupRequest {
 	this := PatchedBulkWritableDeviceRedundancyGroupRequest{}
-	var failoverStrategy BulkWritableDeviceRedundancyGroupRequestFailoverStrategy = null
-	this.FailoverStrategy = &failoverStrategy
 	return &this
 }
 

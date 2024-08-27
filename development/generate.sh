@@ -59,7 +59,7 @@ FINAL_NEW_TAG=${NEW_TAG}-beta
 echo $FINAL_NEW_TAG > /client/api/nautobot_version
 
 #Fix openapi spec file
-/client/development/fix-spec.py
+/client/development/scripts/fix-spec.py
 
 #yaml file is too long
 export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
@@ -70,6 +70,7 @@ openapi-generator-cli generate --config /client/development/oapi-config.yaml \
     --skip-validate-spec \
     --http-user-agent go-nautobot/$(cat /client/api/nautobot_version)
 
+/client/development/scripts/add-missing-imports.sh
 echo "Starting Nautobot client tests..."
 
 export NAUTOBOT_URL=http://nautobot:8080/api/
@@ -77,7 +78,6 @@ export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
 cd /client
 go mod tidy
-go build -v -gcflags="-e"
 go test -v -gcflags="-e"
 
 echo "Nautobot client tests completed"

@@ -12,145 +12,65 @@ package nautobot
 
 import (
 	"encoding/json"
+	"fmt"
 )
 
-// checks if the PowerFeedSupply type satisfies the MappedNullable interface at compile time
-var _ MappedNullable = &PowerFeedSupply{}
+// PowerFeedSupply the model 'PowerFeedSupply'
+type PowerFeedSupply string
 
-// PowerFeedSupply struct for PowerFeedSupply
-type PowerFeedSupply struct {
-	Value *PowerFeedSupplyValue `json:"value,omitempty"`
-	Label *PowerFeedSupplyLabel `json:"label,omitempty"`
-	AdditionalProperties map[string]interface{}
+// List of PowerFeed_supply
+const (
+	POWERFEEDSUPPLY_AC PowerFeedSupply = "ac"
+	POWERFEEDSUPPLY_DC PowerFeedSupply = "dc"
+)
+
+// All allowed values of PowerFeedSupply enum
+var AllowedPowerFeedSupplyEnumValues = []PowerFeedSupply{
+	"ac",
+	"dc",
 }
 
-type _PowerFeedSupply PowerFeedSupply
-
-// NewPowerFeedSupply instantiates a new PowerFeedSupply object
-// This constructor will assign default values to properties that have it defined,
-// and makes sure properties required by API are set, but the set of arguments
-// will change when the set of required properties is changed
-func NewPowerFeedSupply() *PowerFeedSupply {
-	this := PowerFeedSupply{}
-	return &this
-}
-
-// NewPowerFeedSupplyWithDefaults instantiates a new PowerFeedSupply object
-// This constructor will only assign default values to properties that have it defined,
-// but it doesn't guarantee that properties required by API are set
-func NewPowerFeedSupplyWithDefaults() *PowerFeedSupply {
-	this := PowerFeedSupply{}
-	return &this
-}
-
-// GetValue returns the Value field value if set, zero value otherwise.
-func (o *PowerFeedSupply) GetValue() PowerFeedSupplyValue {
-	if o == nil || IsNil(o.Value) {
-		var ret PowerFeedSupplyValue
-		return ret
-	}
-	return *o.Value
-}
-
-// GetValueOk returns a tuple with the Value field value if set, nil otherwise
-// and a boolean to check if the value has been set.
-func (o *PowerFeedSupply) GetValueOk() (*PowerFeedSupplyValue, bool) {
-	if o == nil || IsNil(o.Value) {
-		return nil, false
-	}
-	return o.Value, true
-}
-
-// HasValue returns a boolean if a field has been set.
-func (o *PowerFeedSupply) HasValue() bool {
-	if o != nil && !IsNil(o.Value) {
-		return true
-	}
-
-	return false
-}
-
-// SetValue gets a reference to the given PowerFeedSupplyValue and assigns it to the Value field.
-func (o *PowerFeedSupply) SetValue(v PowerFeedSupplyValue) {
-	o.Value = &v
-}
-
-// GetLabel returns the Label field value if set, zero value otherwise.
-func (o *PowerFeedSupply) GetLabel() PowerFeedSupplyLabel {
-	if o == nil || IsNil(o.Label) {
-		var ret PowerFeedSupplyLabel
-		return ret
-	}
-	return *o.Label
-}
-
-// GetLabelOk returns a tuple with the Label field value if set, nil otherwise
-// and a boolean to check if the value has been set.
-func (o *PowerFeedSupply) GetLabelOk() (*PowerFeedSupplyLabel, bool) {
-	if o == nil || IsNil(o.Label) {
-		return nil, false
-	}
-	return o.Label, true
-}
-
-// HasLabel returns a boolean if a field has been set.
-func (o *PowerFeedSupply) HasLabel() bool {
-	if o != nil && !IsNil(o.Label) {
-		return true
-	}
-
-	return false
-}
-
-// SetLabel gets a reference to the given PowerFeedSupplyLabel and assigns it to the Label field.
-func (o *PowerFeedSupply) SetLabel(v PowerFeedSupplyLabel) {
-	o.Label = &v
-}
-
-func (o PowerFeedSupply) MarshalJSON() ([]byte, error) {
-	toSerialize,err := o.ToMap()
-	if err != nil {
-		return []byte{}, err
-	}
-	return json.Marshal(toSerialize)
-}
-
-func (o PowerFeedSupply) ToMap() (map[string]interface{}, error) {
-	toSerialize := map[string]interface{}{}
-	if !IsNil(o.Value) {
-		toSerialize["value"] = o.Value
-	}
-	if !IsNil(o.Label) {
-		toSerialize["label"] = o.Label
-	}
-
-	for key, value := range o.AdditionalProperties {
-		toSerialize[key] = value
-	}
-
-	return toSerialize, nil
-}
-
-func (o *PowerFeedSupply) UnmarshalJSON(data []byte) (err error) {
-	varPowerFeedSupply := _PowerFeedSupply{}
-
-	err = json.Unmarshal(data, &varPowerFeedSupply)
-
+func (v *PowerFeedSupply) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
 	if err != nil {
 		return err
 	}
-
-	*o = PowerFeedSupply(varPowerFeedSupply)
-
-	additionalProperties := make(map[string]interface{})
-
-	if err = json.Unmarshal(data, &additionalProperties); err == nil {
-		delete(additionalProperties, "value")
-		delete(additionalProperties, "label")
-		o.AdditionalProperties = additionalProperties
+	enumTypeValue := PowerFeedSupply(value)
+	for _, existing := range AllowedPowerFeedSupplyEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
+		}
 	}
 
-	return err
+	return fmt.Errorf("%+v is not a valid PowerFeedSupply", value)
+}
+
+// NewPowerFeedSupplyFromValue returns a pointer to a valid PowerFeedSupply
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPowerFeedSupplyFromValue(v string) (*PowerFeedSupply, error) {
+	ev := PowerFeedSupply(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PowerFeedSupply: valid values are %v", v, AllowedPowerFeedSupplyEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PowerFeedSupply) IsValid() bool {
+	for _, existing := range AllowedPowerFeedSupplyEnumValues {
+		if existing == v {
+			return true
+		}
+	}
+	return false
+}
+
+// Ptr returns reference to PowerFeed_supply value
+func (v PowerFeedSupply) Ptr() *PowerFeedSupply {
+	return &v
 }
 
 type NullablePowerFeedSupply struct {
@@ -188,5 +108,4 @@ func (v *NullablePowerFeedSupply) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 
