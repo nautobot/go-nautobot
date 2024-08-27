@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**LocalConfigContextData** | Pointer to **map[string]interface{}** |  | [optional] 
+**LocalConfigContextData** | Pointer to **interface{}** |  | [optional] 
 **LocalConfigContextDataOwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Vcpus** | Pointer to **NullableInt32** |  | [optional] 
@@ -154,20 +154,20 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetLocalConfigContextData
 
-`func (o *VirtualMachine) GetLocalConfigContextData() map[string]interface{}`
+`func (o *VirtualMachine) GetLocalConfigContextData() interface{}`
 
 GetLocalConfigContextData returns the LocalConfigContextData field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOk
 
-`func (o *VirtualMachine) GetLocalConfigContextDataOk() (*map[string]interface{}, bool)`
+`func (o *VirtualMachine) GetLocalConfigContextDataOk() (*interface{}, bool)`
 
 GetLocalConfigContextDataOk returns a tuple with the LocalConfigContextData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextData
 
-`func (o *VirtualMachine) SetLocalConfigContextData(v map[string]interface{})`
+`func (o *VirtualMachine) SetLocalConfigContextData(v interface{})`
 
 SetLocalConfigContextData sets LocalConfigContextData field to given value.
 

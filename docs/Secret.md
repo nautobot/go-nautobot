@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Provider** | **string** |  | 
-**Parameters** | Pointer to **map[string]interface{}** |  | [optional] 
+**Parameters** | Pointer to **interface{}** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -205,20 +205,20 @@ SetProvider sets Provider field to given value.
 
 ### GetParameters
 
-`func (o *Secret) GetParameters() map[string]interface{}`
+`func (o *Secret) GetParameters() interface{}`
 
 GetParameters returns the Parameters field if non-nil, zero value otherwise.
 
 ### GetParametersOk
 
-`func (o *Secret) GetParametersOk() (*map[string]interface{}, bool)`
+`func (o *Secret) GetParametersOk() (*interface{}, bool)`
 
 GetParametersOk returns a tuple with the Parameters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParameters
 
-`func (o *Secret) SetParameters(v map[string]interface{})`
+`func (o *Secret) SetParameters(v interface{})`
 
 SetParameters sets Parameters field to given value.
 
@@ -228,6 +228,16 @@ SetParameters sets Parameters field to given value.
 
 HasParameters returns a boolean if a field has been set.
 
+### SetParametersNil
+
+`func (o *Secret) SetParametersNil(b bool)`
+
+ SetParametersNil sets the value for Parameters to be an explicit nil
+
+### UnsetParameters
+`func (o *Secret) UnsetParameters()`
+
+UnsetParameters ensures that no value is present for Parameters, not even an explicit nil
 ### GetCreated
 
 `func (o *Secret) GetCreated() time.Time`

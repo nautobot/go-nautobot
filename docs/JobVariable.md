@@ -8,20 +8,20 @@ Name | Type | Description | Notes
 **Type** | **string** |  | [readonly] 
 **Label** | **string** |  | [readonly] 
 **HelpText** | **string** |  | [readonly] 
-**Default** | **map[string]interface{}** |  | [readonly] 
+**Default** | **interface{}** |  | [readonly] 
 **Required** | **bool** |  | [readonly] 
 **MinLength** | **int32** |  | [readonly] 
 **MaxLength** | **int32** |  | [readonly] 
 **MinValue** | **int32** |  | [readonly] 
 **MaxValue** | **int32** |  | [readonly] 
-**Choices** | **map[string]interface{}** |  | [readonly] 
+**Choices** | **interface{}** |  | [readonly] 
 **Model** | **string** |  | [readonly] 
 
 ## Methods
 
 ### NewJobVariable
 
-`func NewJobVariable(name string, type_ string, label string, helpText string, default_ map[string]interface{}, required bool, minLength int32, maxLength int32, minValue int32, maxValue int32, choices map[string]interface{}, model string, ) *JobVariable`
+`func NewJobVariable(name string, type_ string, label string, helpText string, default_ interface{}, required bool, minLength int32, maxLength int32, minValue int32, maxValue int32, choices interface{}, model string, ) *JobVariable`
 
 NewJobVariable instantiates a new JobVariable object
 This constructor will assign default values to properties that have it defined,
@@ -118,24 +118,34 @@ SetHelpText sets HelpText field to given value.
 
 ### GetDefault
 
-`func (o *JobVariable) GetDefault() map[string]interface{}`
+`func (o *JobVariable) GetDefault() interface{}`
 
 GetDefault returns the Default field if non-nil, zero value otherwise.
 
 ### GetDefaultOk
 
-`func (o *JobVariable) GetDefaultOk() (*map[string]interface{}, bool)`
+`func (o *JobVariable) GetDefaultOk() (*interface{}, bool)`
 
 GetDefaultOk returns a tuple with the Default field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDefault
 
-`func (o *JobVariable) SetDefault(v map[string]interface{})`
+`func (o *JobVariable) SetDefault(v interface{})`
 
 SetDefault sets Default field to given value.
 
 
+### SetDefaultNil
+
+`func (o *JobVariable) SetDefaultNil(b bool)`
+
+ SetDefaultNil sets the value for Default to be an explicit nil
+
+### UnsetDefault
+`func (o *JobVariable) UnsetDefault()`
+
+UnsetDefault ensures that no value is present for Default, not even an explicit nil
 ### GetRequired
 
 `func (o *JobVariable) GetRequired() bool`
@@ -238,24 +248,34 @@ SetMaxValue sets MaxValue field to given value.
 
 ### GetChoices
 
-`func (o *JobVariable) GetChoices() map[string]interface{}`
+`func (o *JobVariable) GetChoices() interface{}`
 
 GetChoices returns the Choices field if non-nil, zero value otherwise.
 
 ### GetChoicesOk
 
-`func (o *JobVariable) GetChoicesOk() (*map[string]interface{}, bool)`
+`func (o *JobVariable) GetChoicesOk() (*interface{}, bool)`
 
 GetChoicesOk returns a tuple with the Choices field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetChoices
 
-`func (o *JobVariable) SetChoices(v map[string]interface{})`
+`func (o *JobVariable) SetChoices(v interface{})`
 
 SetChoices sets Choices field to given value.
 
 
+### SetChoicesNil
+
+`func (o *JobVariable) SetChoicesNil(b bool)`
+
+ SetChoicesNil sets the value for Choices to be an explicit nil
+
+### UnsetChoices
+`func (o *JobVariable) UnsetChoices()`
+
+UnsetChoices ensures that no value is present for Choices, not even an explicit nil
 ### GetModel
 
 `func (o *JobVariable) GetModel() string`

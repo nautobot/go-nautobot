@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DataSchema** | Pointer to **map[string]interface{}** | A JSON Schema document which is used to validate a config context object. | [optional] 
+**DataSchema** | Pointer to **interface{}** | A JSON Schema document which is used to validate a config context object. | [optional] 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -118,20 +118,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDataSchema
 
-`func (o *PatchedConfigContextSchemaRequest) GetDataSchema() map[string]interface{}`
+`func (o *PatchedConfigContextSchemaRequest) GetDataSchema() interface{}`
 
 GetDataSchema returns the DataSchema field if non-nil, zero value otherwise.
 
 ### GetDataSchemaOk
 
-`func (o *PatchedConfigContextSchemaRequest) GetDataSchemaOk() (*map[string]interface{}, bool)`
+`func (o *PatchedConfigContextSchemaRequest) GetDataSchemaOk() (*interface{}, bool)`
 
 GetDataSchemaOk returns a tuple with the DataSchema field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDataSchema
 
-`func (o *PatchedConfigContextSchemaRequest) SetDataSchema(v map[string]interface{})`
+`func (o *PatchedConfigContextSchemaRequest) SetDataSchema(v interface{})`
 
 SetDataSchema sets DataSchema field to given value.
 
@@ -141,6 +141,16 @@ SetDataSchema sets DataSchema field to given value.
 
 HasDataSchema returns a boolean if a field has been set.
 
+### SetDataSchemaNil
+
+`func (o *PatchedConfigContextSchemaRequest) SetDataSchemaNil(b bool)`
+
+ SetDataSchemaNil sets the value for DataSchema to be an explicit nil
+
+### UnsetDataSchema
+`func (o *PatchedConfigContextSchemaRequest) UnsetDataSchema()`
+
+UnsetDataSchema ensures that no value is present for DataSchema, not even an explicit nil
 ### GetOwnerObjectId
 
 `func (o *PatchedConfigContextSchemaRequest) GetOwnerObjectId() string`

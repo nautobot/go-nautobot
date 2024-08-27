@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **Weight** | Pointer to **int32** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **IsActive** | Pointer to **bool** |  | [optional] 
-**Data** | **map[string]interface{}** |  | 
+**Data** | **interface{}** |  | 
 **ConfigContextSchema** | Pointer to [**NullableBulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequestConfigContextSchema.md) |  | [optional] 
 **Locations** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Roles** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableConfigContextRequest
 
-`func NewBulkWritableConfigContextRequest(id string, name string, data map[string]interface{}, ) *BulkWritableConfigContextRequest`
+`func NewBulkWritableConfigContextRequest(id string, name string, data interface{}, ) *BulkWritableConfigContextRequest`
 
 NewBulkWritableConfigContextRequest instantiates a new BulkWritableConfigContextRequest object
 This constructor will assign default values to properties that have it defined,
@@ -230,24 +230,34 @@ HasIsActive returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *BulkWritableConfigContextRequest) GetData() map[string]interface{}`
+`func (o *BulkWritableConfigContextRequest) GetData() interface{}`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *BulkWritableConfigContextRequest) GetDataOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableConfigContextRequest) GetDataOk() (*interface{}, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *BulkWritableConfigContextRequest) SetData(v map[string]interface{})`
+`func (o *BulkWritableConfigContextRequest) SetData(v interface{})`
 
 SetData sets Data field to given value.
 
 
+### SetDataNil
+
+`func (o *BulkWritableConfigContextRequest) SetDataNil(b bool)`
+
+ SetDataNil sets the value for Data to be an explicit nil
+
+### UnsetData
+`func (o *BulkWritableConfigContextRequest) UnsetData()`
+
+UnsetData ensures that no value is present for Data, not even an explicit nil
 ### GetConfigContextSchema
 
 `func (o *BulkWritableConfigContextRequest) GetConfigContextSchema() BulkWritableConfigContextRequestConfigContextSchema`

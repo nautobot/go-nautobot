@@ -11,7 +11,8 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
-**DeviceType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -226,20 +227,20 @@ HasAllocatedDraw returns a boolean if a field has been set.
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
 ### GetDeviceType
 
-`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedBulkWritablePowerPortTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -249,6 +250,51 @@ SetDeviceType sets DeviceType field to given value.
 
 HasDeviceType returns a boolean if a field has been set.
 
+### SetDeviceTypeNil
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *PatchedBulkWritablePowerPortTemplateRequest) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedBulkWritablePowerPortTemplateRequest) GetCustomFields() map[string]interface{}`

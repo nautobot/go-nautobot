@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | Pointer to **map[string]interface{}** |  | [optional] 
+**Data** | Pointer to **interface{}** |  | [optional] 
 **Schedule** | Pointer to [**JobCreationRequest**](JobCreationRequest.md) |  | [optional] 
 **TaskQueue** | Pointer to **string** |  | [optional] 
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetData
 
-`func (o *JobInputRequest) GetData() map[string]interface{}`
+`func (o *JobInputRequest) GetData() interface{}`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *JobInputRequest) GetDataOk() (*map[string]interface{}, bool)`
+`func (o *JobInputRequest) GetDataOk() (*interface{}, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *JobInputRequest) SetData(v map[string]interface{})`
+`func (o *JobInputRequest) SetData(v interface{})`
 
 SetData sets Data field to given value.
 
@@ -52,6 +52,16 @@ SetData sets Data field to given value.
 
 HasData returns a boolean if a field has been set.
 
+### SetDataNil
+
+`func (o *JobInputRequest) SetDataNil(b bool)`
+
+ SetDataNil sets the value for Data to be an explicit nil
+
+### UnsetData
+`func (o *JobInputRequest) UnsetData()`
+
+UnsetData ensures that no value is present for Data, not even an explicit nil
 ### GetSchedule
 
 `func (o *JobInputRequest) GetSchedule() JobCreationRequest`

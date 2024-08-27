@@ -14,7 +14,8 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -23,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewConsoleServerPortTemplate
 
-`func NewConsoleServerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, deviceType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *ConsoleServerPortTemplate`
+`func NewConsoleServerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, created NullableTime, lastUpdated NullableTime, ) *ConsoleServerPortTemplate`
 
 NewConsoleServerPortTemplate instantiates a new ConsoleServerPortTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -255,24 +256,74 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *ConsoleServerPortTemplate) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *ConsoleServerPortTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *ConsoleServerPortTemplate) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *ConsoleServerPortTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *ConsoleServerPortTemplate) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *ConsoleServerPortTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *ConsoleServerPortTemplate) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *ConsoleServerPortTemplate) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *ConsoleServerPortTemplate) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *ConsoleServerPortTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *ConsoleServerPortTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *ConsoleServerPortTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *ConsoleServerPortTemplate) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *ConsoleServerPortTemplate) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *ConsoleServerPortTemplate) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCreated
 
 `func (o *ConsoleServerPortTemplate) GetCreated() time.Time`

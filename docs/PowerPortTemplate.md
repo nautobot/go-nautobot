@@ -16,7 +16,8 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -25,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewPowerPortTemplate
 
-`func NewPowerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, deviceType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *PowerPortTemplate`
+`func NewPowerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, created NullableTime, lastUpdated NullableTime, ) *PowerPortTemplate`
 
 NewPowerPortTemplate instantiates a new PowerPortTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -327,24 +328,74 @@ HasAllocatedDraw returns a boolean if a field has been set.
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
 ### GetDeviceType
 
-`func (o *PowerPortTemplate) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *PowerPortTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PowerPortTemplate) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PowerPortTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PowerPortTemplate) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *PowerPortTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *PowerPortTemplate) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *PowerPortTemplate) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *PowerPortTemplate) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *PowerPortTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *PowerPortTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *PowerPortTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *PowerPortTemplate) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *PowerPortTemplate) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *PowerPortTemplate) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCreated
 
 `func (o *PowerPortTemplate) GetCreated() time.Time`

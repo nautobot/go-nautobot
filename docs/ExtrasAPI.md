@@ -220,6 +220,26 @@ Method | HTTP request | Description
 [**ExtrasJobsUpdateByName**](ExtrasAPI.md#ExtrasJobsUpdateByName) | **Put** /extras/jobs/{name}/ | 
 [**ExtrasJobsVariablesList**](ExtrasAPI.md#ExtrasJobsVariablesList) | **Get** /extras/jobs/{id}/variables/ | 
 [**ExtrasJobsVariablesListByName**](ExtrasAPI.md#ExtrasJobsVariablesListByName) | **Get** /extras/jobs/{name}/variables/ | 
+[**ExtrasMetadataChoicesBulkDestroy**](ExtrasAPI.md#ExtrasMetadataChoicesBulkDestroy) | **Delete** /extras/metadata-choices/ | 
+[**ExtrasMetadataChoicesBulkPartialUpdate**](ExtrasAPI.md#ExtrasMetadataChoicesBulkPartialUpdate) | **Patch** /extras/metadata-choices/ | 
+[**ExtrasMetadataChoicesBulkUpdate**](ExtrasAPI.md#ExtrasMetadataChoicesBulkUpdate) | **Put** /extras/metadata-choices/ | 
+[**ExtrasMetadataChoicesCreate**](ExtrasAPI.md#ExtrasMetadataChoicesCreate) | **Post** /extras/metadata-choices/ | 
+[**ExtrasMetadataChoicesDestroy**](ExtrasAPI.md#ExtrasMetadataChoicesDestroy) | **Delete** /extras/metadata-choices/{id}/ | 
+[**ExtrasMetadataChoicesList**](ExtrasAPI.md#ExtrasMetadataChoicesList) | **Get** /extras/metadata-choices/ | 
+[**ExtrasMetadataChoicesPartialUpdate**](ExtrasAPI.md#ExtrasMetadataChoicesPartialUpdate) | **Patch** /extras/metadata-choices/{id}/ | 
+[**ExtrasMetadataChoicesRetrieve**](ExtrasAPI.md#ExtrasMetadataChoicesRetrieve) | **Get** /extras/metadata-choices/{id}/ | 
+[**ExtrasMetadataChoicesUpdate**](ExtrasAPI.md#ExtrasMetadataChoicesUpdate) | **Put** /extras/metadata-choices/{id}/ | 
+[**ExtrasMetadataTypesBulkDestroy**](ExtrasAPI.md#ExtrasMetadataTypesBulkDestroy) | **Delete** /extras/metadata-types/ | 
+[**ExtrasMetadataTypesBulkPartialUpdate**](ExtrasAPI.md#ExtrasMetadataTypesBulkPartialUpdate) | **Patch** /extras/metadata-types/ | 
+[**ExtrasMetadataTypesBulkUpdate**](ExtrasAPI.md#ExtrasMetadataTypesBulkUpdate) | **Put** /extras/metadata-types/ | 
+[**ExtrasMetadataTypesCreate**](ExtrasAPI.md#ExtrasMetadataTypesCreate) | **Post** /extras/metadata-types/ | 
+[**ExtrasMetadataTypesDestroy**](ExtrasAPI.md#ExtrasMetadataTypesDestroy) | **Delete** /extras/metadata-types/{id}/ | 
+[**ExtrasMetadataTypesList**](ExtrasAPI.md#ExtrasMetadataTypesList) | **Get** /extras/metadata-types/ | 
+[**ExtrasMetadataTypesNotesCreate**](ExtrasAPI.md#ExtrasMetadataTypesNotesCreate) | **Post** /extras/metadata-types/{id}/notes/ | 
+[**ExtrasMetadataTypesNotesList**](ExtrasAPI.md#ExtrasMetadataTypesNotesList) | **Get** /extras/metadata-types/{id}/notes/ | 
+[**ExtrasMetadataTypesPartialUpdate**](ExtrasAPI.md#ExtrasMetadataTypesPartialUpdate) | **Patch** /extras/metadata-types/{id}/ | 
+[**ExtrasMetadataTypesRetrieve**](ExtrasAPI.md#ExtrasMetadataTypesRetrieve) | **Get** /extras/metadata-types/{id}/ | 
+[**ExtrasMetadataTypesUpdate**](ExtrasAPI.md#ExtrasMetadataTypesUpdate) | **Put** /extras/metadata-types/{id}/ | 
 [**ExtrasNotesBulkDestroy**](ExtrasAPI.md#ExtrasNotesBulkDestroy) | **Delete** /extras/notes/ | 
 [**ExtrasNotesBulkPartialUpdate**](ExtrasAPI.md#ExtrasNotesBulkPartialUpdate) | **Patch** /extras/notes/ | 
 [**ExtrasNotesBulkUpdate**](ExtrasAPI.md#ExtrasNotesBulkUpdate) | **Put** /extras/notes/ | 
@@ -231,6 +251,17 @@ Method | HTTP request | Description
 [**ExtrasNotesUpdate**](ExtrasAPI.md#ExtrasNotesUpdate) | **Put** /extras/notes/{id}/ | 
 [**ExtrasObjectChangesList**](ExtrasAPI.md#ExtrasObjectChangesList) | **Get** /extras/object-changes/ | 
 [**ExtrasObjectChangesRetrieve**](ExtrasAPI.md#ExtrasObjectChangesRetrieve) | **Get** /extras/object-changes/{id}/ | 
+[**ExtrasObjectMetadataBulkDestroy**](ExtrasAPI.md#ExtrasObjectMetadataBulkDestroy) | **Delete** /extras/object-metadata/ | 
+[**ExtrasObjectMetadataBulkPartialUpdate**](ExtrasAPI.md#ExtrasObjectMetadataBulkPartialUpdate) | **Patch** /extras/object-metadata/ | 
+[**ExtrasObjectMetadataBulkUpdate**](ExtrasAPI.md#ExtrasObjectMetadataBulkUpdate) | **Put** /extras/object-metadata/ | 
+[**ExtrasObjectMetadataCreate**](ExtrasAPI.md#ExtrasObjectMetadataCreate) | **Post** /extras/object-metadata/ | 
+[**ExtrasObjectMetadataDestroy**](ExtrasAPI.md#ExtrasObjectMetadataDestroy) | **Delete** /extras/object-metadata/{id}/ | 
+[**ExtrasObjectMetadataList**](ExtrasAPI.md#ExtrasObjectMetadataList) | **Get** /extras/object-metadata/ | 
+[**ExtrasObjectMetadataNotesCreate**](ExtrasAPI.md#ExtrasObjectMetadataNotesCreate) | **Post** /extras/object-metadata/{id}/notes/ | 
+[**ExtrasObjectMetadataNotesList**](ExtrasAPI.md#ExtrasObjectMetadataNotesList) | **Get** /extras/object-metadata/{id}/notes/ | 
+[**ExtrasObjectMetadataPartialUpdate**](ExtrasAPI.md#ExtrasObjectMetadataPartialUpdate) | **Patch** /extras/object-metadata/{id}/ | 
+[**ExtrasObjectMetadataRetrieve**](ExtrasAPI.md#ExtrasObjectMetadataRetrieve) | **Get** /extras/object-metadata/{id}/ | 
+[**ExtrasObjectMetadataUpdate**](ExtrasAPI.md#ExtrasObjectMetadataUpdate) | **Put** /extras/object-metadata/{id}/ | 
 [**ExtrasRelationshipAssociationsBulkDestroy**](ExtrasAPI.md#ExtrasRelationshipAssociationsBulkDestroy) | **Delete** /extras/relationship-associations/ | 
 [**ExtrasRelationshipAssociationsBulkPartialUpdate**](ExtrasAPI.md#ExtrasRelationshipAssociationsBulkPartialUpdate) | **Patch** /extras/relationship-associations/ | 
 [**ExtrasRelationshipAssociationsBulkUpdate**](ExtrasAPI.md#ExtrasRelationshipAssociationsBulkUpdate) | **Put** /extras/relationship-associations/ | 
@@ -262,6 +293,15 @@ Method | HTTP request | Description
 [**ExtrasRolesPartialUpdate**](ExtrasAPI.md#ExtrasRolesPartialUpdate) | **Patch** /extras/roles/{id}/ | 
 [**ExtrasRolesRetrieve**](ExtrasAPI.md#ExtrasRolesRetrieve) | **Get** /extras/roles/{id}/ | 
 [**ExtrasRolesUpdate**](ExtrasAPI.md#ExtrasRolesUpdate) | **Put** /extras/roles/{id}/ | 
+[**ExtrasSavedViewsBulkDestroy**](ExtrasAPI.md#ExtrasSavedViewsBulkDestroy) | **Delete** /extras/saved-views/ | 
+[**ExtrasSavedViewsBulkPartialUpdate**](ExtrasAPI.md#ExtrasSavedViewsBulkPartialUpdate) | **Patch** /extras/saved-views/ | 
+[**ExtrasSavedViewsBulkUpdate**](ExtrasAPI.md#ExtrasSavedViewsBulkUpdate) | **Put** /extras/saved-views/ | 
+[**ExtrasSavedViewsCreate**](ExtrasAPI.md#ExtrasSavedViewsCreate) | **Post** /extras/saved-views/ | 
+[**ExtrasSavedViewsDestroy**](ExtrasAPI.md#ExtrasSavedViewsDestroy) | **Delete** /extras/saved-views/{id}/ | 
+[**ExtrasSavedViewsList**](ExtrasAPI.md#ExtrasSavedViewsList) | **Get** /extras/saved-views/ | 
+[**ExtrasSavedViewsPartialUpdate**](ExtrasAPI.md#ExtrasSavedViewsPartialUpdate) | **Patch** /extras/saved-views/{id}/ | 
+[**ExtrasSavedViewsRetrieve**](ExtrasAPI.md#ExtrasSavedViewsRetrieve) | **Get** /extras/saved-views/{id}/ | 
+[**ExtrasSavedViewsUpdate**](ExtrasAPI.md#ExtrasSavedViewsUpdate) | **Put** /extras/saved-views/{id}/ | 
 [**ExtrasScheduledJobsApproveCreate**](ExtrasAPI.md#ExtrasScheduledJobsApproveCreate) | **Post** /extras/scheduled-jobs/{id}/approve/ | 
 [**ExtrasScheduledJobsDenyCreate**](ExtrasAPI.md#ExtrasScheduledJobsDenyCreate) | **Post** /extras/scheduled-jobs/{id}/deny/ | 
 [**ExtrasScheduledJobsDryRunCreate**](ExtrasAPI.md#ExtrasScheduledJobsDryRunCreate) | **Post** /extras/scheduled-jobs/{id}/dry-run/ | 
@@ -299,6 +339,17 @@ Method | HTTP request | Description
 [**ExtrasSecretsPartialUpdate**](ExtrasAPI.md#ExtrasSecretsPartialUpdate) | **Patch** /extras/secrets/{id}/ | 
 [**ExtrasSecretsRetrieve**](ExtrasAPI.md#ExtrasSecretsRetrieve) | **Get** /extras/secrets/{id}/ | 
 [**ExtrasSecretsUpdate**](ExtrasAPI.md#ExtrasSecretsUpdate) | **Put** /extras/secrets/{id}/ | 
+[**ExtrasStaticGroupAssociationsBulkDestroy**](ExtrasAPI.md#ExtrasStaticGroupAssociationsBulkDestroy) | **Delete** /extras/static-group-associations/ | 
+[**ExtrasStaticGroupAssociationsBulkPartialUpdate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsBulkPartialUpdate) | **Patch** /extras/static-group-associations/ | 
+[**ExtrasStaticGroupAssociationsBulkUpdate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsBulkUpdate) | **Put** /extras/static-group-associations/ | 
+[**ExtrasStaticGroupAssociationsCreate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsCreate) | **Post** /extras/static-group-associations/ | 
+[**ExtrasStaticGroupAssociationsDestroy**](ExtrasAPI.md#ExtrasStaticGroupAssociationsDestroy) | **Delete** /extras/static-group-associations/{id}/ | 
+[**ExtrasStaticGroupAssociationsList**](ExtrasAPI.md#ExtrasStaticGroupAssociationsList) | **Get** /extras/static-group-associations/ | 
+[**ExtrasStaticGroupAssociationsNotesCreate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsNotesCreate) | **Post** /extras/static-group-associations/{id}/notes/ | 
+[**ExtrasStaticGroupAssociationsNotesList**](ExtrasAPI.md#ExtrasStaticGroupAssociationsNotesList) | **Get** /extras/static-group-associations/{id}/notes/ | 
+[**ExtrasStaticGroupAssociationsPartialUpdate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsPartialUpdate) | **Patch** /extras/static-group-associations/{id}/ | 
+[**ExtrasStaticGroupAssociationsRetrieve**](ExtrasAPI.md#ExtrasStaticGroupAssociationsRetrieve) | **Get** /extras/static-group-associations/{id}/ | 
+[**ExtrasStaticGroupAssociationsUpdate**](ExtrasAPI.md#ExtrasStaticGroupAssociationsUpdate) | **Put** /extras/static-group-associations/{id}/ | 
 [**ExtrasStatusesBulkDestroy**](ExtrasAPI.md#ExtrasStatusesBulkDestroy) | **Delete** /extras/statuses/ | 
 [**ExtrasStatusesBulkPartialUpdate**](ExtrasAPI.md#ExtrasStatusesBulkPartialUpdate) | **Patch** /extras/statuses/ | 
 [**ExtrasStatusesBulkUpdate**](ExtrasAPI.md#ExtrasStatusesBulkUpdate) | **Put** /extras/statuses/ | 
@@ -332,6 +383,15 @@ Method | HTTP request | Description
 [**ExtrasTeamsPartialUpdate**](ExtrasAPI.md#ExtrasTeamsPartialUpdate) | **Patch** /extras/teams/{id}/ | 
 [**ExtrasTeamsRetrieve**](ExtrasAPI.md#ExtrasTeamsRetrieve) | **Get** /extras/teams/{id}/ | 
 [**ExtrasTeamsUpdate**](ExtrasAPI.md#ExtrasTeamsUpdate) | **Put** /extras/teams/{id}/ | 
+[**ExtrasUserSavedViewAssociationsBulkDestroy**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsBulkDestroy) | **Delete** /extras/user-saved-view-associations/ | 
+[**ExtrasUserSavedViewAssociationsBulkPartialUpdate**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsBulkPartialUpdate) | **Patch** /extras/user-saved-view-associations/ | 
+[**ExtrasUserSavedViewAssociationsBulkUpdate**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsBulkUpdate) | **Put** /extras/user-saved-view-associations/ | 
+[**ExtrasUserSavedViewAssociationsCreate**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsCreate) | **Post** /extras/user-saved-view-associations/ | 
+[**ExtrasUserSavedViewAssociationsDestroy**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsDestroy) | **Delete** /extras/user-saved-view-associations/{id}/ | 
+[**ExtrasUserSavedViewAssociationsList**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsList) | **Get** /extras/user-saved-view-associations/ | 
+[**ExtrasUserSavedViewAssociationsPartialUpdate**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsPartialUpdate) | **Patch** /extras/user-saved-view-associations/{id}/ | 
+[**ExtrasUserSavedViewAssociationsRetrieve**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsRetrieve) | **Get** /extras/user-saved-view-associations/{id}/ | 
+[**ExtrasUserSavedViewAssociationsUpdate**](ExtrasAPI.md#ExtrasUserSavedViewAssociationsUpdate) | **Put** /extras/user-saved-view-associations/{id}/ | 
 [**ExtrasWebhooksBulkDestroy**](ExtrasAPI.md#ExtrasWebhooksBulkDestroy) | **Delete** /extras/webhooks/ | 
 [**ExtrasWebhooksBulkPartialUpdate**](ExtrasAPI.md#ExtrasWebhooksBulkPartialUpdate) | **Patch** /extras/webhooks/ | 
 [**ExtrasWebhooksBulkUpdate**](ExtrasAPI.md#ExtrasWebhooksBulkUpdate) | **Put** /extras/webhooks/ | 
@@ -688,7 +748,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasComputedFieldsList
 
-> PaginatedComputedFieldList ExtrasComputedFieldsList(ctx).ContentType(contentType).ContentTypeN(contentTypeN).FallbackValue(fallbackValue).FallbackValueIc(fallbackValueIc).FallbackValueIe(fallbackValueIe).FallbackValueIew(fallbackValueIew).FallbackValueIre(fallbackValueIre).FallbackValueIsw(fallbackValueIsw).FallbackValueN(fallbackValueN).FallbackValueNic(fallbackValueNic).FallbackValueNie(fallbackValueNie).FallbackValueNiew(fallbackValueNiew).FallbackValueNire(fallbackValueNire).FallbackValueNisw(fallbackValueNisw).FallbackValueNre(fallbackValueNre).FallbackValueRe(fallbackValueRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Template(template).TemplateIc(templateIc).TemplateIe(templateIe).TemplateIew(templateIew).TemplateIre(templateIre).TemplateIsw(templateIsw).TemplateN(templateN).TemplateNic(templateNic).TemplateNie(templateNie).TemplateNiew(templateNiew).TemplateNire(templateNire).TemplateNisw(templateNisw).TemplateNre(templateNre).TemplateRe(templateRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedComputedFieldList ExtrasComputedFieldsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FallbackValue(fallbackValue).FallbackValueIc(fallbackValueIc).FallbackValueIe(fallbackValueIe).FallbackValueIew(fallbackValueIew).FallbackValueIre(fallbackValueIre).FallbackValueIsw(fallbackValueIsw).FallbackValueN(fallbackValueN).FallbackValueNic(fallbackValueNic).FallbackValueNie(fallbackValueNie).FallbackValueNiew(fallbackValueNiew).FallbackValueNire(fallbackValueNire).FallbackValueNisw(fallbackValueNisw).FallbackValueNre(fallbackValueNre).FallbackValueRe(fallbackValueRe).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Template(template).TemplateIc(templateIc).TemplateIe(templateIe).TemplateIew(templateIew).TemplateIre(templateIre).TemplateIsw(templateIsw).TemplateN(templateN).TemplateNic(templateNic).TemplateNie(templateNie).TemplateNiew(templateNiew).TemplateNire(templateNire).TemplateNisw(templateNisw).TemplateNre(templateNre).TemplateRe(templateRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -707,8 +767,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentType := "contentType_example" // string |  (optional)
 	contentTypeN := "contentTypeN_example" // string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	fallbackValue := []string{"Inner_example"} // []string |  (optional)
 	fallbackValueIc := []string{"Inner_example"} // []string |  (optional)
 	fallbackValueIe := []string{"Inner_example"} // []string |  (optional)
@@ -724,6 +789,20 @@ func main() {
 	fallbackValueNre := []string{"Inner_example"} // []string |  (optional)
 	fallbackValueRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	grouping := []string{"Inner_example"} // []string |  (optional)
+	groupingIc := []string{"Inner_example"} // []string |  (optional)
+	groupingIe := []string{"Inner_example"} // []string |  (optional)
+	groupingIew := []string{"Inner_example"} // []string |  (optional)
+	groupingIre := []string{"Inner_example"} // []string |  (optional)
+	groupingIsw := []string{"Inner_example"} // []string |  (optional)
+	groupingN := []string{"Inner_example"} // []string |  (optional)
+	groupingNic := []string{"Inner_example"} // []string |  (optional)
+	groupingNie := []string{"Inner_example"} // []string |  (optional)
+	groupingNiew := []string{"Inner_example"} // []string |  (optional)
+	groupingNire := []string{"Inner_example"} // []string |  (optional)
+	groupingNisw := []string{"Inner_example"} // []string |  (optional)
+	groupingNre := []string{"Inner_example"} // []string |  (optional)
+	groupingRe := []string{"Inner_example"} // []string |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
 	idIe := []string{"Inner_example"} // []string |  (optional)
@@ -756,6 +835,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	template := []string{"Inner_example"} // []string |  (optional)
 	templateIc := []string{"Inner_example"} // []string |  (optional)
 	templateIe := []string{"Inner_example"} // []string |  (optional)
@@ -780,7 +862,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasComputedFieldsList(context.Background()).ContentType(contentType).ContentTypeN(contentTypeN).FallbackValue(fallbackValue).FallbackValueIc(fallbackValueIc).FallbackValueIe(fallbackValueIe).FallbackValueIew(fallbackValueIew).FallbackValueIre(fallbackValueIre).FallbackValueIsw(fallbackValueIsw).FallbackValueN(fallbackValueN).FallbackValueNic(fallbackValueNic).FallbackValueNie(fallbackValueNie).FallbackValueNiew(fallbackValueNiew).FallbackValueNire(fallbackValueNire).FallbackValueNisw(fallbackValueNisw).FallbackValueNre(fallbackValueNre).FallbackValueRe(fallbackValueRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Template(template).TemplateIc(templateIc).TemplateIe(templateIe).TemplateIew(templateIew).TemplateIre(templateIre).TemplateIsw(templateIsw).TemplateN(templateN).TemplateNic(templateNic).TemplateNie(templateNie).TemplateNiew(templateNiew).TemplateNire(templateNire).TemplateNisw(templateNisw).TemplateNre(templateNre).TemplateRe(templateRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasComputedFieldsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FallbackValue(fallbackValue).FallbackValueIc(fallbackValueIc).FallbackValueIe(fallbackValueIe).FallbackValueIew(fallbackValueIew).FallbackValueIre(fallbackValueIre).FallbackValueIsw(fallbackValueIsw).FallbackValueN(fallbackValueN).FallbackValueNic(fallbackValueNic).FallbackValueNie(fallbackValueNie).FallbackValueNiew(fallbackValueNiew).FallbackValueNire(fallbackValueNire).FallbackValueNisw(fallbackValueNisw).FallbackValueNre(fallbackValueNre).FallbackValueRe(fallbackValueRe).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Template(template).TemplateIc(templateIc).TemplateIe(templateIe).TemplateIew(templateIew).TemplateIre(templateIre).TemplateIsw(templateIsw).TemplateN(templateN).TemplateNic(templateNic).TemplateNie(templateNie).TemplateNiew(templateNiew).TemplateNire(templateNire).TemplateNisw(templateNisw).TemplateNre(templateNre).TemplateRe(templateRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasComputedFieldsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -801,8 +883,13 @@ Other parameters are passed through a pointer to a apiExtrasComputedFieldsListRe
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentType** | **string** |  | 
  **contentTypeN** | **string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **fallbackValue** | **[]string** |  | 
  **fallbackValueIc** | **[]string** |  | 
  **fallbackValueIe** | **[]string** |  | 
@@ -818,6 +905,20 @@ Name | Type | Description  | Notes
  **fallbackValueNre** | **[]string** |  | 
  **fallbackValueRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **grouping** | **[]string** |  | 
+ **groupingIc** | **[]string** |  | 
+ **groupingIe** | **[]string** |  | 
+ **groupingIew** | **[]string** |  | 
+ **groupingIre** | **[]string** |  | 
+ **groupingIsw** | **[]string** |  | 
+ **groupingN** | **[]string** |  | 
+ **groupingNic** | **[]string** |  | 
+ **groupingNie** | **[]string** |  | 
+ **groupingNiew** | **[]string** |  | 
+ **groupingNire** | **[]string** |  | 
+ **groupingNisw** | **[]string** |  | 
+ **groupingNre** | **[]string** |  | 
+ **groupingRe** | **[]string** |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
  **idIe** | **[]string** |  | 
@@ -850,6 +951,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **template** | **[]string** |  | 
  **templateIc** | **[]string** |  | 
  **templateIe** | **[]string** |  | 
@@ -1419,7 +1523,7 @@ import (
 )
 
 func main() {
-	bulkWritableConfigContextSchemaRequest := []openapiclient.BulkWritableConfigContextSchemaRequest{*openapiclient.NewBulkWritableConfigContextSchemaRequest("Id_example", "Name_example", map[string]interface{}{"key": interface{}(123)})} // []BulkWritableConfigContextSchemaRequest | 
+	bulkWritableConfigContextSchemaRequest := []openapiclient.BulkWritableConfigContextSchemaRequest{*openapiclient.NewBulkWritableConfigContextSchemaRequest("Id_example", "Name_example", interface{}(123))} // []BulkWritableConfigContextSchemaRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1487,7 +1591,7 @@ import (
 )
 
 func main() {
-	configContextSchemaRequest := *openapiclient.NewConfigContextSchemaRequest("Name_example", map[string]interface{}{"key": interface{}(123)}) // ConfigContextSchemaRequest | 
+	configContextSchemaRequest := *openapiclient.NewConfigContextSchemaRequest("Name_example", interface{}(123)) // ConfigContextSchemaRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1606,7 +1710,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasConfigContextSchemasList
 
-> PaginatedConfigContextSchemaList ExtrasConfigContextSchemasList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedConfigContextSchemaList ExtrasConfigContextSchemasList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -1625,6 +1729,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -1639,6 +1746,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -1675,11 +1784,14 @@ func main() {
 	ownerContentTypeN := "ownerContentTypeN_example" // string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextSchemasList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextSchemasList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasConfigContextSchemasList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1700,6 +1812,9 @@ Other parameters are passed through a pointer to a apiExtrasConfigContextSchemas
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -1714,6 +1829,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -1750,6 +1867,9 @@ Name | Type | Description  | Notes
  **ownerContentTypeN** | **string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -2092,7 +2212,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this config context schema.
-	configContextSchemaRequest := *openapiclient.NewConfigContextSchemaRequest("Name_example", map[string]interface{}{"key": interface{}(123)}) // ConfigContextSchemaRequest | 
+	configContextSchemaRequest := *openapiclient.NewConfigContextSchemaRequest("Name_example", interface{}(123)) // ConfigContextSchemaRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2299,7 +2419,7 @@ import (
 )
 
 func main() {
-	bulkWritableConfigContextRequest := []openapiclient.BulkWritableConfigContextRequest{*openapiclient.NewBulkWritableConfigContextRequest("Id_example", "Name_example", map[string]interface{}{"key": interface{}(123)})} // []BulkWritableConfigContextRequest | 
+	bulkWritableConfigContextRequest := []openapiclient.BulkWritableConfigContextRequest{*openapiclient.NewBulkWritableConfigContextRequest("Id_example", "Name_example", interface{}(123))} // []BulkWritableConfigContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2367,7 +2487,7 @@ import (
 )
 
 func main() {
-	configContextRequest := *openapiclient.NewConfigContextRequest("Name_example", map[string]interface{}{"key": interface{}(123)}) // ConfigContextRequest | 
+	configContextRequest := *openapiclient.NewConfigContextRequest("Name_example", interface{}(123)) // ConfigContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2486,7 +2606,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasConfigContextsList
 
-> PaginatedConfigContextList ExtrasConfigContextsList(ctx).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).Execute()
+> PaginatedConfigContextList ExtrasConfigContextsList(ctx).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).Execute()
 
 
 
@@ -2508,15 +2628,18 @@ func main() {
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupId := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
-	clusterGroupIdN := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
+	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
 	clusterId := []string{"Inner_example"} // []string | Cluster (ID) (optional)
-	clusterIdN := []string{"Inner_example"} // []string | Cluster (ID) (optional)
+	clusterIdN := []string{"Inner_example"} // []string | Exclude Cluster (ID) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	deviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
 	deviceTypeId := []string{"Inner_example"} // []string | Device Type (ID) - Deprecated (use device_type filter) (optional)
-	deviceTypeIdN := []string{"Inner_example"} // []string | Device Type (ID) - Deprecated (use device_type filter) (optional)
+	deviceTypeIdN := []string{"Inner_example"} // []string | Exclude Device Type (ID) - Deprecated (use device_type filter) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -2537,7 +2660,7 @@ func main() {
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	locationId := []string{"Inner_example"} // []string | Location (ID) - Deprecated (use location filter) (optional)
-	locationIdN := []string{"Inner_example"} // []string | Location (ID) - Deprecated (use location filter) (optional)
+	locationIdN := []string{"Inner_example"} // []string | Exclude Location (ID) - Deprecated (use location filter) (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -2574,29 +2697,32 @@ func main() {
 	platform := []string{"Inner_example"} // []string |  (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	platformId := []string{"Inner_example"} // []string | Platform (ID) - Deprecated (use platform filter) (optional)
-	platformIdN := []string{"Inner_example"} // []string | Platform (ID) - Deprecated (use platform filter) (optional)
+	platformIdN := []string{"Inner_example"} // []string | Exclude Platform (ID) - Deprecated (use platform filter) (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleN := []string{"Inner_example"} // []string |  (optional)
 	schema := []string{"Inner_example"} // []string |  (optional)
-	schemaIsnull := true // bool |  (optional)
+	schemaIsnull := true // bool | Schema (name or PK) is null (optional)
 	schemaN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tag := []string{"Inner_example"} // []string | Tag (name) (optional)
-	tagN := []string{"Inner_example"} // []string | Tag (name) (optional)
+	tagN := []string{"Inner_example"} // []string | Exclude Tag (name) (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroupId := []string{"Inner_example"} // []string | Tenant group (ID) - Deprecated (use tenant_group filter) (optional)
-	tenantGroupIdN := []string{"Inner_example"} // []string | Tenant group (ID) - Deprecated (use tenant_group filter) (optional)
+	tenantGroupIdN := []string{"Inner_example"} // []string | Exclude Tenant group (ID) - Deprecated (use tenant_group filter) (optional)
 	tenantId := []string{"Inner_example"} // []string | Tenant (ID) - Deprecated (use tenant filter) (optional)
-	tenantIdN := []string{"Inner_example"} // []string | Tenant (ID) - Deprecated (use tenant filter) (optional)
+	tenantIdN := []string{"Inner_example"} // []string | Exclude Tenant (ID) - Deprecated (use tenant filter) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextsList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextsList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasConfigContextsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2620,15 +2746,18 @@ Name | Type | Description  | Notes
  **clusterGroup** | **[]string** |  | 
  **clusterGroupN** | **[]string** |  | 
  **clusterGroupId** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
- **clusterGroupIdN** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
+ **clusterGroupIdN** | **[]string** | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) | 
  **clusterId** | **[]string** | Cluster (ID) | 
- **clusterIdN** | **[]string** | Cluster (ID) | 
+ **clusterIdN** | **[]string** | Exclude Cluster (ID) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **deviceRedundancyGroup** | **[]string** |  | 
  **deviceRedundancyGroupN** | **[]string** |  | 
  **deviceType** | **[]string** |  | 
  **deviceTypeN** | **[]string** |  | 
  **deviceTypeId** | **[]string** | Device Type (ID) - Deprecated (use device_type filter) | 
- **deviceTypeIdN** | **[]string** | Device Type (ID) - Deprecated (use device_type filter) | 
+ **deviceTypeIdN** | **[]string** | Exclude Device Type (ID) - Deprecated (use device_type filter) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -2649,7 +2778,7 @@ Name | Type | Description  | Notes
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **locationId** | **[]string** | Location (ID) - Deprecated (use location filter) | 
- **locationIdN** | **[]string** | Location (ID) - Deprecated (use location filter) | 
+ **locationIdN** | **[]string** | Exclude Location (ID) - Deprecated (use location filter) | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -2686,24 +2815,27 @@ Name | Type | Description  | Notes
  **platform** | **[]string** |  | 
  **platformN** | **[]string** |  | 
  **platformId** | **[]string** | Platform (ID) - Deprecated (use platform filter) | 
- **platformIdN** | **[]string** | Platform (ID) - Deprecated (use platform filter) | 
+ **platformIdN** | **[]string** | Exclude Platform (ID) - Deprecated (use platform filter) | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
  **roleN** | **[]string** |  | 
  **schema** | **[]string** |  | 
- **schemaIsnull** | **bool** |  | 
+ **schemaIsnull** | **bool** | Schema (name or PK) is null | 
  **schemaN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tag** | **[]string** | Tag (name) | 
- **tagN** | **[]string** | Tag (name) | 
+ **tagN** | **[]string** | Exclude Tag (name) | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
  **tenantGroupN** | **[]string** |  | 
  **tenantGroupId** | **[]string** | Tenant group (ID) - Deprecated (use tenant_group filter) | 
- **tenantGroupIdN** | **[]string** | Tenant group (ID) - Deprecated (use tenant_group filter) | 
+ **tenantGroupIdN** | **[]string** | Exclude Tenant group (ID) - Deprecated (use tenant_group filter) | 
  **tenantId** | **[]string** | Tenant (ID) - Deprecated (use tenant filter) | 
- **tenantIdN** | **[]string** | Tenant (ID) - Deprecated (use tenant filter) | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) - Deprecated (use tenant filter) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -3046,7 +3178,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this config context.
-	configContextRequest := *openapiclient.NewConfigContextRequest("Name_example", map[string]interface{}{"key": interface{}(123)}) // ConfigContextRequest | 
+	configContextRequest := *openapiclient.NewConfigContextRequest("Name_example", interface{}(123)) // ConfigContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3253,7 +3385,7 @@ import (
 )
 
 func main() {
-	bulkWritableContactAssociationRequest := []openapiclient.BulkWritableContactAssociationRequest{*openapiclient.NewBulkWritableContactAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableContactAssociationRequest | 
+	bulkWritableContactAssociationRequest := []openapiclient.BulkWritableContactAssociationRequest{*openapiclient.NewBulkWritableContactAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3321,7 +3453,7 @@ import (
 )
 
 func main() {
-	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
+	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3478,7 +3610,7 @@ func main() {
 	associatedObjectTypeIsnull := true // bool |  (optional)
 	associatedObjectTypeN := "associatedObjectTypeN_example" // string |  (optional)
 	contact := []string{"Inner_example"} // []string |  (optional)
-	contactIsnull := true // bool |  (optional)
+	contactIsnull := true // bool | Contact (name or ID) is null (optional)
 	contactN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -3513,12 +3645,12 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
-	roleN := []string{"Inner_example"} // []string |  (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	team := []string{"Inner_example"} // []string |  (optional)
-	teamIsnull := true // bool |  (optional)
+	teamIsnull := true // bool | Team (name or ID) is null (optional)
 	teamN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
@@ -3563,7 +3695,7 @@ Name | Type | Description  | Notes
  **associatedObjectTypeIsnull** | **bool** |  | 
  **associatedObjectTypeN** | **string** |  | 
  **contact** | **[]string** |  | 
- **contactIsnull** | **bool** |  | 
+ **contactIsnull** | **bool** | Contact (name or ID) is null | 
  **contactN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -3598,12 +3730,12 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
- **roleN** | **[]string** |  | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **team** | **[]string** |  | 
- **teamIsnull** | **bool** |  | 
+ **teamIsnull** | **bool** | Team (name or ID) is null | 
  **teamN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -3947,7 +4079,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this contact association.
-	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
+	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4341,7 +4473,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasContactsList
 
-> PaginatedContactList ExtrasContactsList(ctx).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedContactList ExtrasContactsList(ctx).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
 
 
 
@@ -4396,6 +4528,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	email := []string{"Inner_example"} // []string |  (optional)
 	emailIc := []string{"Inner_example"} // []string |  (optional)
 	emailIe := []string{"Inner_example"} // []string |  (optional)
@@ -4472,7 +4606,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasContactsList(context.Background()).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasContactsList(context.Background()).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasContactsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4528,6 +4662,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **email** | **[]string** |  | 
  **emailIc** | **[]string** |  | 
  **emailIe** | **[]string** |  | 
@@ -4996,7 +5132,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasContentTypesList
 
-> PaginatedContentTypeList ExtrasContentTypesList(ctx).AppLabel(appLabel).AppLabelIc(appLabelIc).AppLabelIe(appLabelIe).AppLabelIew(appLabelIew).AppLabelIre(appLabelIre).AppLabelIsw(appLabelIsw).AppLabelN(appLabelN).AppLabelNic(appLabelNic).AppLabelNie(appLabelNie).AppLabelNiew(appLabelNiew).AppLabelNire(appLabelNire).AppLabelNisw(appLabelNisw).AppLabelNre(appLabelNre).AppLabelRe(appLabelRe).CanAdd(canAdd).CanChange(canChange).CanDelete(canDelete).CanView(canView).Format(format).HasSerializer(hasSerializer).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedContentTypeList ExtrasContentTypesList(ctx).AppLabel(appLabel).AppLabelIc(appLabelIc).AppLabelIe(appLabelIe).AppLabelIew(appLabelIew).AppLabelIre(appLabelIre).AppLabelIsw(appLabelIsw).AppLabelN(appLabelN).AppLabelNic(appLabelNic).AppLabelNie(appLabelNie).AppLabelNiew(appLabelNiew).AppLabelNire(appLabelNire).AppLabelNisw(appLabelNisw).AppLabelNre(appLabelNre).AppLabelRe(appLabelRe).CanAdd(canAdd).CanChange(canChange).CanDelete(canDelete).CanView(canView).Feature(feature).Format(format).HasSerializer(hasSerializer).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
 
 
 
@@ -5033,6 +5169,7 @@ func main() {
 	canChange := true // bool | User can change objects of this type (optional)
 	canDelete := true // bool | User can delete objects of this type (optional)
 	canView := true // bool | User can view objects of this type (optional)
+	feature := "feature_example" // string | Objects of this type support the named feature (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasSerializer := true // bool | A REST API serializer exists for this type (optional)
 	id := []int32{int32(123)} // []int32 | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -5063,7 +5200,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasContentTypesList(context.Background()).AppLabel(appLabel).AppLabelIc(appLabelIc).AppLabelIe(appLabelIe).AppLabelIew(appLabelIew).AppLabelIre(appLabelIre).AppLabelIsw(appLabelIsw).AppLabelN(appLabelN).AppLabelNic(appLabelNic).AppLabelNie(appLabelNie).AppLabelNiew(appLabelNiew).AppLabelNire(appLabelNire).AppLabelNisw(appLabelNisw).AppLabelNre(appLabelNre).AppLabelRe(appLabelRe).CanAdd(canAdd).CanChange(canChange).CanDelete(canDelete).CanView(canView).Format(format).HasSerializer(hasSerializer).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasContentTypesList(context.Background()).AppLabel(appLabel).AppLabelIc(appLabelIc).AppLabelIe(appLabelIe).AppLabelIew(appLabelIew).AppLabelIre(appLabelIre).AppLabelIsw(appLabelIsw).AppLabelN(appLabelN).AppLabelNic(appLabelNic).AppLabelNie(appLabelNie).AppLabelNiew(appLabelNiew).AppLabelNire(appLabelNire).AppLabelNisw(appLabelNisw).AppLabelNre(appLabelNre).AppLabelRe(appLabelRe).CanAdd(canAdd).CanChange(canChange).CanDelete(canDelete).CanView(canView).Feature(feature).Format(format).HasSerializer(hasSerializer).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasContentTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5102,6 +5239,7 @@ Name | Type | Description  | Notes
  **canChange** | **bool** | User can change objects of this type | 
  **canDelete** | **bool** | User can delete objects of this type | 
  **canView** | **bool** | User can view objects of this type | 
+ **feature** | **string** | Objects of this type support the named feature | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasSerializer** | **bool** | A REST API serializer exists for this type | 
  **id** | **[]int32** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -6274,7 +6412,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasCustomFieldsList
 
-> PaginatedCustomFieldList ExtrasCustomFieldsList(ctx).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).FilterLogic(filterLogic).FilterLogicIc(filterLogicIc).FilterLogicIe(filterLogicIe).FilterLogicIew(filterLogicIew).FilterLogicIre(filterLogicIre).FilterLogicIsw(filterLogicIsw).FilterLogicN(filterLogicN).FilterLogicNic(filterLogicNic).FilterLogicNie(filterLogicNie).FilterLogicNiew(filterLogicNiew).FilterLogicNire(filterLogicNire).FilterLogicNisw(filterLogicNisw).FilterLogicNre(filterLogicNre).FilterLogicRe(filterLogicRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Required(required).Sort(sort).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedCustomFieldList ExtrasCustomFieldsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FilterLogic(filterLogic).FilterLogicIc(filterLogicIc).FilterLogicIe(filterLogicIe).FilterLogicIew(filterLogicIew).FilterLogicIre(filterLogicIre).FilterLogicIsw(filterLogicIsw).FilterLogicN(filterLogicN).FilterLogicNic(filterLogicNic).FilterLogicNie(filterLogicNie).FilterLogicNiew(filterLogicNiew).FilterLogicNire(filterLogicNire).FilterLogicNisw(filterLogicNisw).FilterLogicNre(filterLogicNre).FilterLogicRe(filterLogicRe).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Required(required).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -6293,6 +6431,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -6307,6 +6448,8 @@ func main() {
 	contentTypesNisw := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesNre := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesRe := []int32{int32(123)} // []int32 |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	filterLogic := []string{"Inner_example"} // []string | Loose matches any instance of a given string; Exact matches the entire field. (optional)
 	filterLogicIc := []string{"Inner_example"} // []string |  (optional)
 	filterLogicIe := []string{"Inner_example"} // []string |  (optional)
@@ -6322,6 +6465,20 @@ func main() {
 	filterLogicNre := []string{"Inner_example"} // []string |  (optional)
 	filterLogicRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	grouping := []string{"Inner_example"} // []string |  (optional)
+	groupingIc := []string{"Inner_example"} // []string |  (optional)
+	groupingIe := []string{"Inner_example"} // []string |  (optional)
+	groupingIew := []string{"Inner_example"} // []string |  (optional)
+	groupingIre := []string{"Inner_example"} // []string |  (optional)
+	groupingIsw := []string{"Inner_example"} // []string |  (optional)
+	groupingN := []string{"Inner_example"} // []string |  (optional)
+	groupingNic := []string{"Inner_example"} // []string |  (optional)
+	groupingNie := []string{"Inner_example"} // []string |  (optional)
+	groupingNiew := []string{"Inner_example"} // []string |  (optional)
+	groupingNire := []string{"Inner_example"} // []string |  (optional)
+	groupingNisw := []string{"Inner_example"} // []string |  (optional)
+	groupingNre := []string{"Inner_example"} // []string |  (optional)
+	groupingRe := []string{"Inner_example"} // []string |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
 	idIe := []string{"Inner_example"} // []string |  (optional)
@@ -6355,6 +6512,9 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	required := true // bool |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	weight := []int32{int32(123)} // []int32 |  (optional)
 	weightGt := []int32{int32(123)} // []int32 |  (optional)
 	weightGte := []int32{int32(123)} // []int32 |  (optional)
@@ -6365,7 +6525,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasCustomFieldsList(context.Background()).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).FilterLogic(filterLogic).FilterLogicIc(filterLogicIc).FilterLogicIe(filterLogicIe).FilterLogicIew(filterLogicIew).FilterLogicIre(filterLogicIre).FilterLogicIsw(filterLogicIsw).FilterLogicN(filterLogicN).FilterLogicNic(filterLogicNic).FilterLogicNie(filterLogicNie).FilterLogicNiew(filterLogicNiew).FilterLogicNire(filterLogicNire).FilterLogicNisw(filterLogicNisw).FilterLogicNre(filterLogicNre).FilterLogicRe(filterLogicRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Required(required).Sort(sort).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasCustomFieldsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FilterLogic(filterLogic).FilterLogicIc(filterLogicIc).FilterLogicIe(filterLogicIe).FilterLogicIew(filterLogicIew).FilterLogicIre(filterLogicIre).FilterLogicIsw(filterLogicIsw).FilterLogicN(filterLogicN).FilterLogicNic(filterLogicNic).FilterLogicNie(filterLogicNie).FilterLogicNiew(filterLogicNiew).FilterLogicNire(filterLogicNire).FilterLogicNisw(filterLogicNisw).FilterLogicNre(filterLogicNre).FilterLogicRe(filterLogicRe).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Required(required).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasCustomFieldsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6386,6 +6546,9 @@ Other parameters are passed through a pointer to a apiExtrasCustomFieldsListRequ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -6400,6 +6563,8 @@ Name | Type | Description  | Notes
  **contentTypesNisw** | **[]int32** |  | 
  **contentTypesNre** | **[]int32** |  | 
  **contentTypesRe** | **[]int32** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **filterLogic** | **[]string** | Loose matches any instance of a given string; Exact matches the entire field. | 
  **filterLogicIc** | **[]string** |  | 
  **filterLogicIe** | **[]string** |  | 
@@ -6415,6 +6580,20 @@ Name | Type | Description  | Notes
  **filterLogicNre** | **[]string** |  | 
  **filterLogicRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **grouping** | **[]string** |  | 
+ **groupingIc** | **[]string** |  | 
+ **groupingIe** | **[]string** |  | 
+ **groupingIew** | **[]string** |  | 
+ **groupingIre** | **[]string** |  | 
+ **groupingIsw** | **[]string** |  | 
+ **groupingN** | **[]string** |  | 
+ **groupingNic** | **[]string** |  | 
+ **groupingNie** | **[]string** |  | 
+ **groupingNiew** | **[]string** |  | 
+ **groupingNire** | **[]string** |  | 
+ **groupingNisw** | **[]string** |  | 
+ **groupingNre** | **[]string** |  | 
+ **groupingRe** | **[]string** |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
  **idIe** | **[]string** |  | 
@@ -6448,6 +6627,9 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **required** | **bool** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **weight** | **[]int32** |  | 
  **weightGt** | **[]int32** |  | 
  **weightGte** | **[]int32** |  | 
@@ -7190,7 +7372,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasCustomLinksList
 
-> PaginatedCustomLinkList ExtrasCustomLinksList(ctx).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).ContentType(contentType).ContentTypeN(contentTypeN).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NewWindow(newWindow).Offset(offset).Q(q).Sort(sort).TargetUrl(targetUrl).TargetUrlIc(targetUrlIc).TargetUrlIe(targetUrlIe).TargetUrlIew(targetUrlIew).TargetUrlIre(targetUrlIre).TargetUrlIsw(targetUrlIsw).TargetUrlN(targetUrlN).TargetUrlNic(targetUrlNic).TargetUrlNie(targetUrlNie).TargetUrlNiew(targetUrlNiew).TargetUrlNire(targetUrlNire).TargetUrlNisw(targetUrlNisw).TargetUrlNre(targetUrlNre).TargetUrlRe(targetUrlRe).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedCustomLinkList ExtrasCustomLinksList(ctx).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NewWindow(newWindow).Offset(offset).Q(q).Sort(sort).TargetUrl(targetUrl).TargetUrlIc(targetUrlIc).TargetUrlIe(targetUrlIe).TargetUrlIew(targetUrlIew).TargetUrlIre(targetUrlIre).TargetUrlIsw(targetUrlIsw).TargetUrlN(targetUrlN).TargetUrlNic(targetUrlNic).TargetUrlNie(targetUrlNie).TargetUrlNiew(targetUrlNiew).TargetUrlNire(targetUrlNire).TargetUrlNisw(targetUrlNisw).TargetUrlNre(targetUrlNre).TargetUrlRe(targetUrlRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -7223,8 +7405,13 @@ func main() {
 	buttonClassNisw := []string{"Inner_example"} // []string |  (optional)
 	buttonClassNre := []string{"Inner_example"} // []string |  (optional)
 	buttonClassRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentType := "contentType_example" // string |  (optional)
 	contentTypeN := "contentTypeN_example" // string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	groupName := []string{"Inner_example"} // []string |  (optional)
 	groupNameIc := []string{"Inner_example"} // []string |  (optional)
@@ -7287,6 +7474,9 @@ func main() {
 	targetUrlNisw := []string{"Inner_example"} // []string |  (optional)
 	targetUrlNre := []string{"Inner_example"} // []string |  (optional)
 	targetUrlRe := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	text := []string{"Inner_example"} // []string |  (optional)
 	textIc := []string{"Inner_example"} // []string |  (optional)
 	textIe := []string{"Inner_example"} // []string |  (optional)
@@ -7311,7 +7501,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasCustomLinksList(context.Background()).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).ContentType(contentType).ContentTypeN(contentTypeN).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NewWindow(newWindow).Offset(offset).Q(q).Sort(sort).TargetUrl(targetUrl).TargetUrlIc(targetUrlIc).TargetUrlIe(targetUrlIe).TargetUrlIew(targetUrlIew).TargetUrlIre(targetUrlIre).TargetUrlIsw(targetUrlIsw).TargetUrlN(targetUrlN).TargetUrlNic(targetUrlNic).TargetUrlNie(targetUrlNie).TargetUrlNiew(targetUrlNiew).TargetUrlNire(targetUrlNire).TargetUrlNisw(targetUrlNisw).TargetUrlNre(targetUrlNre).TargetUrlRe(targetUrlRe).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasCustomLinksList(context.Background()).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NewWindow(newWindow).Offset(offset).Q(q).Sort(sort).TargetUrl(targetUrl).TargetUrlIc(targetUrlIc).TargetUrlIe(targetUrlIe).TargetUrlIew(targetUrlIew).TargetUrlIre(targetUrlIre).TargetUrlIsw(targetUrlIsw).TargetUrlN(targetUrlN).TargetUrlNic(targetUrlNic).TargetUrlNie(targetUrlNie).TargetUrlNiew(targetUrlNiew).TargetUrlNire(targetUrlNire).TargetUrlNisw(targetUrlNisw).TargetUrlNre(targetUrlNre).TargetUrlRe(targetUrlRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasCustomLinksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7346,8 +7536,13 @@ Name | Type | Description  | Notes
  **buttonClassNisw** | **[]string** |  | 
  **buttonClassNre** | **[]string** |  | 
  **buttonClassRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentType** | **string** |  | 
  **contentTypeN** | **string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **groupName** | **[]string** |  | 
  **groupNameIc** | **[]string** |  | 
@@ -7410,6 +7605,9 @@ Name | Type | Description  | Notes
  **targetUrlNisw** | **[]string** |  | 
  **targetUrlNre** | **[]string** |  | 
  **targetUrlRe** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **text** | **[]string** |  | 
  **textIc** | **[]string** |  | 
  **textIe** | **[]string** |  | 
@@ -8698,7 +8896,7 @@ import (
 )
 
 func main() {
-	bulkWritableDynamicGroupRequest := []openapiclient.BulkWritableDynamicGroupRequest{*openapiclient.NewBulkWritableDynamicGroupRequest("Id_example", "ContentType_example", "Name_example", map[string]interface{}{"key": interface{}(123)})} // []BulkWritableDynamicGroupRequest | 
+	bulkWritableDynamicGroupRequest := []openapiclient.BulkWritableDynamicGroupRequest{*openapiclient.NewBulkWritableDynamicGroupRequest("Id_example", "ContentType_example", "Name_example")} // []BulkWritableDynamicGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8766,7 +8964,7 @@ import (
 )
 
 func main() {
-	dynamicGroupRequest := *openapiclient.NewDynamicGroupRequest("ContentType_example", "Name_example", map[string]interface{}{"key": interface{}(123)}) // DynamicGroupRequest | 
+	dynamicGroupRequest := *openapiclient.NewDynamicGroupRequest("ContentType_example", "Name_example") // DynamicGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8885,7 +9083,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasDynamicGroupsList
 
-> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdIc(memberIdIc).MemberIdIe(memberIdIe).MemberIdIew(memberIdIew).MemberIdIre(memberIdIre).MemberIdIsw(memberIdIsw).MemberIdN(memberIdN).MemberIdNic(memberIdNic).MemberIdNie(memberIdNie).MemberIdNiew(memberIdNiew).MemberIdNire(memberIdNire).MemberIdNisw(memberIdNisw).MemberIdNre(memberIdNre).MemberIdRe(memberIdRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 
 
 
@@ -8905,6 +9103,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentType := []int32{int32(123)} // []int32 |  (optional)
 	contentTypeN := []int32{int32(123)} // []int32 |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -8929,6 +9130,20 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	groupType := []openapiclient.ExtrasDynamicGroupsListGroupTypeParameterInner{openapiclient.extras_dynamic_groups_list_group_type_parameter_inner("dynamic-filter")} // []ExtrasDynamicGroupsListGroupTypeParameterInner |  (optional)
+	groupTypeIc := []string{"Inner_example"} // []string |  (optional)
+	groupTypeIe := []string{"Inner_example"} // []string |  (optional)
+	groupTypeIew := []string{"Inner_example"} // []string |  (optional)
+	groupTypeIre := []string{"Inner_example"} // []string |  (optional)
+	groupTypeIsw := []string{"Inner_example"} // []string |  (optional)
+	groupTypeN := []openapiclient.ExtrasDynamicGroupsListGroupTypeParameterInner{openapiclient.extras_dynamic_groups_list_group_type_parameter_inner("dynamic-filter")} // []ExtrasDynamicGroupsListGroupTypeParameterInner |  (optional)
+	groupTypeNic := []string{"Inner_example"} // []string |  (optional)
+	groupTypeNie := []string{"Inner_example"} // []string |  (optional)
+	groupTypeNiew := []string{"Inner_example"} // []string |  (optional)
+	groupTypeNire := []string{"Inner_example"} // []string |  (optional)
+	groupTypeNisw := []string{"Inner_example"} // []string |  (optional)
+	groupTypeNre := []string{"Inner_example"} // []string |  (optional)
+	groupTypeRe := []string{"Inner_example"} // []string |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
 	idIe := []string{"Inner_example"} // []string |  (optional)
@@ -8951,6 +9166,20 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	memberId := []string{"Inner_example"} // []string | Group member ID (optional)
+	memberIdIc := []string{"Inner_example"} // []string | Group member ID contains (optional)
+	memberIdIe := []string{"Inner_example"} // []string | Group member ID (optional)
+	memberIdIew := []string{"Inner_example"} // []string | Group member ID ends with (optional)
+	memberIdIre := []string{"Inner_example"} // []string | Group member ID matches regex (optional)
+	memberIdIsw := []string{"Inner_example"} // []string | Group member ID starts with (optional)
+	memberIdN := []string{"Inner_example"} // []string | Exclude Group member ID (optional)
+	memberIdNic := []string{"Inner_example"} // []string | Exclude Group member ID contains (optional)
+	memberIdNie := []string{"Inner_example"} // []string | Exclude Group member ID (optional)
+	memberIdNiew := []string{"Inner_example"} // []string | Exclude Group member ID ends with (optional)
+	memberIdNire := []string{"Inner_example"} // []string | Exclude Group member ID matches regex (optional)
+	memberIdNisw := []string{"Inner_example"} // []string | Exclude Group member ID starts with (optional)
+	memberIdNre := []string{"Inner_example"} // []string | Exclude Group member ID matches regex (optional)
+	memberIdRe := []string{"Inner_example"} // []string | Group member ID matches regex (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -8968,11 +9197,26 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	tenant := []string{"Inner_example"} // []string |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
+	tenantN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdIc(memberIdIc).MemberIdIe(memberIdIe).MemberIdIew(memberIdIew).MemberIdIre(memberIdIre).MemberIdIsw(memberIdIsw).MemberIdN(memberIdN).MemberIdNic(memberIdNic).MemberIdNie(memberIdNie).MemberIdNiew(memberIdNiew).MemberIdNire(memberIdNire).MemberIdNisw(memberIdNisw).MemberIdNre(memberIdNre).MemberIdRe(memberIdRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasDynamicGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8993,6 +9237,9 @@ Other parameters are passed through a pointer to a apiExtrasDynamicGroupsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentType** | **[]int32** |  | 
  **contentTypeN** | **[]int32** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -9017,6 +9264,20 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **groupType** | [**[]ExtrasDynamicGroupsListGroupTypeParameterInner**](ExtrasDynamicGroupsListGroupTypeParameterInner.md) |  | 
+ **groupTypeIc** | **[]string** |  | 
+ **groupTypeIe** | **[]string** |  | 
+ **groupTypeIew** | **[]string** |  | 
+ **groupTypeIre** | **[]string** |  | 
+ **groupTypeIsw** | **[]string** |  | 
+ **groupTypeN** | [**[]ExtrasDynamicGroupsListGroupTypeParameterInner**](ExtrasDynamicGroupsListGroupTypeParameterInner.md) |  | 
+ **groupTypeNic** | **[]string** |  | 
+ **groupTypeNie** | **[]string** |  | 
+ **groupTypeNiew** | **[]string** |  | 
+ **groupTypeNire** | **[]string** |  | 
+ **groupTypeNisw** | **[]string** |  | 
+ **groupTypeNre** | **[]string** |  | 
+ **groupTypeRe** | **[]string** |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
  **idIe** | **[]string** |  | 
@@ -9039,6 +9300,20 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
+ **memberId** | **[]string** | Group member ID | 
+ **memberIdIc** | **[]string** | Group member ID contains | 
+ **memberIdIe** | **[]string** | Group member ID | 
+ **memberIdIew** | **[]string** | Group member ID ends with | 
+ **memberIdIre** | **[]string** | Group member ID matches regex | 
+ **memberIdIsw** | **[]string** | Group member ID starts with | 
+ **memberIdN** | **[]string** | Exclude Group member ID | 
+ **memberIdNic** | **[]string** | Exclude Group member ID contains | 
+ **memberIdNie** | **[]string** | Exclude Group member ID | 
+ **memberIdNiew** | **[]string** | Exclude Group member ID ends with | 
+ **memberIdNire** | **[]string** | Exclude Group member ID matches regex | 
+ **memberIdNisw** | **[]string** | Exclude Group member ID starts with | 
+ **memberIdNre** | **[]string** | Exclude Group member ID matches regex | 
+ **memberIdRe** | **[]string** | Group member ID matches regex | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -9056,6 +9331,21 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **tenant** | **[]string** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
+ **tenantN** | **[]string** |  | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -9472,7 +9762,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this dynamic group.
-	dynamicGroupRequest := *openapiclient.NewDynamicGroupRequest("ContentType_example", "Name_example", map[string]interface{}{"key": interface{}(123)}) // DynamicGroupRequest | 
+	dynamicGroupRequest := *openapiclient.NewDynamicGroupRequest("ContentType_example", "Name_example") // DynamicGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9866,7 +10156,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasExportTemplatesList
 
-> PaginatedExportTemplateList ExtrasExportTemplatesList(ctx).ContentType(contentType).ContentTypeN(contentTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedExportTemplateList ExtrasExportTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -9885,8 +10175,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentType := "contentType_example" // string |  (optional)
 	contentTypeN := "contentTypeN_example" // string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -9938,11 +10233,14 @@ func main() {
 	ownerObjectIdRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasExportTemplatesList(context.Background()).ContentType(contentType).ContentTypeN(contentTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasExportTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIc(ownerObjectIdIc).OwnerObjectIdIe(ownerObjectIdIe).OwnerObjectIdIew(ownerObjectIdIew).OwnerObjectIdIre(ownerObjectIdIre).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdIsw(ownerObjectIdIsw).OwnerObjectIdN(ownerObjectIdN).OwnerObjectIdNic(ownerObjectIdNic).OwnerObjectIdNie(ownerObjectIdNie).OwnerObjectIdNiew(ownerObjectIdNiew).OwnerObjectIdNire(ownerObjectIdNire).OwnerObjectIdNisw(ownerObjectIdNisw).OwnerObjectIdNre(ownerObjectIdNre).OwnerObjectIdRe(ownerObjectIdRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasExportTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9963,8 +10261,13 @@ Other parameters are passed through a pointer to a apiExtrasExportTemplatesListR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentType** | **string** |  | 
  **contentTypeN** | **string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -10016,6 +10319,9 @@ Name | Type | Description  | Notes
  **ownerObjectIdRe** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -10752,7 +11058,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasExternalIntegrationsList
 
-> PaginatedExternalIntegrationList ExtrasExternalIntegrationsList(ctx).CaFilePath(caFilePath).CaFilePathIc(caFilePathIc).CaFilePathIe(caFilePathIe).CaFilePathIew(caFilePathIew).CaFilePathIre(caFilePathIre).CaFilePathIsw(caFilePathIsw).CaFilePathN(caFilePathN).CaFilePathNic(caFilePathNic).CaFilePathNie(caFilePathNie).CaFilePathNiew(caFilePathNiew).CaFilePathNire(caFilePathNire).CaFilePathNisw(caFilePathNisw).CaFilePathNre(caFilePathNre).CaFilePathRe(caFilePathRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).ExtraConfig(extraConfig).Format(format).HasSecretsGroup(hasSecretsGroup).Headers(headers).HttpMethod(httpMethod).HttpMethodIc(httpMethodIc).HttpMethodIe(httpMethodIe).HttpMethodIew(httpMethodIew).HttpMethodIre(httpMethodIre).HttpMethodIsw(httpMethodIsw).HttpMethodN(httpMethodN).HttpMethodNic(httpMethodNic).HttpMethodNie(httpMethodNie).HttpMethodNiew(httpMethodNiew).HttpMethodNire(httpMethodNire).HttpMethodNisw(httpMethodNisw).HttpMethodNre(httpMethodNre).HttpMethodRe(httpMethodRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Timeout(timeout).TimeoutGt(timeoutGt).TimeoutGte(timeoutGte).TimeoutLt(timeoutLt).TimeoutLte(timeoutLte).TimeoutN(timeoutN).VerifySsl(verifySsl).Depth(depth).Execute()
+> PaginatedExternalIntegrationList ExtrasExternalIntegrationsList(ctx).CaFilePath(caFilePath).CaFilePathIc(caFilePathIc).CaFilePathIe(caFilePathIe).CaFilePathIew(caFilePathIew).CaFilePathIre(caFilePathIre).CaFilePathIsw(caFilePathIsw).CaFilePathN(caFilePathN).CaFilePathNic(caFilePathNic).CaFilePathNie(caFilePathNie).CaFilePathNiew(caFilePathNiew).CaFilePathNire(caFilePathNire).CaFilePathNisw(caFilePathNisw).CaFilePathNre(caFilePathNre).CaFilePathRe(caFilePathRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExtraConfig(extraConfig).Format(format).HasSecretsGroup(hasSecretsGroup).Headers(headers).HttpMethod(httpMethod).HttpMethodIc(httpMethodIc).HttpMethodIe(httpMethodIe).HttpMethodIew(httpMethodIew).HttpMethodIre(httpMethodIre).HttpMethodIsw(httpMethodIsw).HttpMethodN(httpMethodN).HttpMethodNic(httpMethodNic).HttpMethodNie(httpMethodNie).HttpMethodNiew(httpMethodNiew).HttpMethodNire(httpMethodNire).HttpMethodNisw(httpMethodNisw).HttpMethodNre(httpMethodNre).HttpMethodRe(httpMethodRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Timeout(timeout).TimeoutGt(timeoutGt).TimeoutGte(timeoutGte).TimeoutLt(timeoutLt).TimeoutLte(timeoutLte).TimeoutN(timeoutN).VerifySsl(verifySsl).Depth(depth).Execute()
 
 
 
@@ -10786,6 +11092,9 @@ func main() {
 	caFilePathNisw := []string{"Inner_example"} // []string |  (optional)
 	caFilePathNre := []string{"Inner_example"} // []string |  (optional)
 	caFilePathRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -10793,6 +11102,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	extraConfig := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasSecretsGroup := true // bool | Has secrets group (optional)
@@ -10864,12 +11175,15 @@ func main() {
 	remoteUrlNre := []string{"Inner_example"} // []string |  (optional)
 	remoteUrlRe := []string{"Inner_example"} // []string |  (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool |  (optional)
+	secretsGroupIsnull := true // bool | Secrets group (ID or name) is null (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	timeout := []int32{int32(123)} // []int32 |  (optional)
 	timeoutGt := []int32{int32(123)} // []int32 |  (optional)
 	timeoutGte := []int32{int32(123)} // []int32 |  (optional)
@@ -10881,7 +11195,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasExternalIntegrationsList(context.Background()).CaFilePath(caFilePath).CaFilePathIc(caFilePathIc).CaFilePathIe(caFilePathIe).CaFilePathIew(caFilePathIew).CaFilePathIre(caFilePathIre).CaFilePathIsw(caFilePathIsw).CaFilePathN(caFilePathN).CaFilePathNic(caFilePathNic).CaFilePathNie(caFilePathNie).CaFilePathNiew(caFilePathNiew).CaFilePathNire(caFilePathNire).CaFilePathNisw(caFilePathNisw).CaFilePathNre(caFilePathNre).CaFilePathRe(caFilePathRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).ExtraConfig(extraConfig).Format(format).HasSecretsGroup(hasSecretsGroup).Headers(headers).HttpMethod(httpMethod).HttpMethodIc(httpMethodIc).HttpMethodIe(httpMethodIe).HttpMethodIew(httpMethodIew).HttpMethodIre(httpMethodIre).HttpMethodIsw(httpMethodIsw).HttpMethodN(httpMethodN).HttpMethodNic(httpMethodNic).HttpMethodNie(httpMethodNie).HttpMethodNiew(httpMethodNiew).HttpMethodNire(httpMethodNire).HttpMethodNisw(httpMethodNisw).HttpMethodNre(httpMethodNre).HttpMethodRe(httpMethodRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Timeout(timeout).TimeoutGt(timeoutGt).TimeoutGte(timeoutGte).TimeoutLt(timeoutLt).TimeoutLte(timeoutLte).TimeoutN(timeoutN).VerifySsl(verifySsl).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasExternalIntegrationsList(context.Background()).CaFilePath(caFilePath).CaFilePathIc(caFilePathIc).CaFilePathIe(caFilePathIe).CaFilePathIew(caFilePathIew).CaFilePathIre(caFilePathIre).CaFilePathIsw(caFilePathIsw).CaFilePathN(caFilePathN).CaFilePathNic(caFilePathNic).CaFilePathNie(caFilePathNie).CaFilePathNiew(caFilePathNiew).CaFilePathNire(caFilePathNire).CaFilePathNisw(caFilePathNisw).CaFilePathNre(caFilePathNre).CaFilePathRe(caFilePathRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExtraConfig(extraConfig).Format(format).HasSecretsGroup(hasSecretsGroup).Headers(headers).HttpMethod(httpMethod).HttpMethodIc(httpMethodIc).HttpMethodIe(httpMethodIe).HttpMethodIew(httpMethodIew).HttpMethodIre(httpMethodIre).HttpMethodIsw(httpMethodIsw).HttpMethodN(httpMethodN).HttpMethodNic(httpMethodNic).HttpMethodNie(httpMethodNie).HttpMethodNiew(httpMethodNiew).HttpMethodNire(httpMethodNire).HttpMethodNisw(httpMethodNisw).HttpMethodNre(httpMethodNre).HttpMethodRe(httpMethodRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Timeout(timeout).TimeoutGt(timeoutGt).TimeoutGte(timeoutGte).TimeoutLt(timeoutLt).TimeoutLte(timeoutLte).TimeoutN(timeoutN).VerifySsl(verifySsl).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasExternalIntegrationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10916,6 +11230,9 @@ Name | Type | Description  | Notes
  **caFilePathNisw** | **[]string** |  | 
  **caFilePathNre** | **[]string** |  | 
  **caFilePathRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -10923,6 +11240,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **extraConfig** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasSecretsGroup** | **bool** | Has secrets group | 
@@ -10994,12 +11313,15 @@ Name | Type | Description  | Notes
  **remoteUrlNre** | **[]string** |  | 
  **remoteUrlRe** | **[]string** |  | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** |  | 
+ **secretsGroupIsnull** | **bool** | Secrets group (ID or name) is null | 
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **timeout** | **[]int32** |  | 
  **timeoutGt** | **[]int32** |  | 
  **timeoutGte** | **[]int32** |  | 
@@ -11513,11 +11835,11 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	job := []string{"Inner_example"} // []string |  (optional)
-	jobIsnull := true // bool |  (optional)
+	jobIsnull := true // bool | Job (name or ID) is null (optional)
 	jobN := []string{"Inner_example"} // []string |  (optional)
 	jobResultId := []*string{"Inner_example"} // []*string | Job Result (ID) (optional)
-	jobResultIdIsnull := true // bool |  (optional)
-	jobResultIdN := []*string{"Inner_example"} // []*string | Job Result (ID) (optional)
+	jobResultIdIsnull := true // bool | Job Result (ID) is null (optional)
+	jobResultIdN := []*string{"Inner_example"} // []*string | Exclude Job Result (ID) (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -11583,11 +11905,11 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **job** | **[]string** |  | 
- **jobIsnull** | **bool** |  | 
+ **jobIsnull** | **bool** | Job (name or ID) is null | 
  **jobN** | **[]string** |  | 
  **jobResultId** | **[]string** | Job Result (ID) | 
- **jobResultIdIsnull** | **bool** |  | 
- **jobResultIdN** | **[]string** | Job Result (ID) | 
+ **jobResultIdIsnull** | **bool** | Job Result (ID) is null | 
+ **jobResultIdN** | **[]string** | Exclude Job Result (ID) | 
  **limit** | **int32** | Number of results to return per page. | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -12048,7 +12370,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasGitRepositoriesList
 
-> PaginatedGitRepositoryList ExtrasGitRepositoriesList(ctx).Branch(branch).BranchIc(branchIc).BranchIe(branchIe).BranchIew(branchIew).BranchIre(branchIre).BranchIsw(branchIsw).BranchN(branchN).BranchNic(branchNic).BranchNie(branchNie).BranchNiew(branchNiew).BranchNire(branchNire).BranchNisw(branchNisw).BranchNre(branchNre).BranchRe(branchRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ProvidedContents(providedContents).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).SecretsGroupId(secretsGroupId).SecretsGroupIdIsnull(secretsGroupIdIsnull).SecretsGroupIdN(secretsGroupIdN).Slug(slug).SlugIc(slugIc).SlugIe(slugIe).SlugIew(slugIew).SlugIre(slugIre).SlugIsw(slugIsw).SlugN(slugN).SlugNic(slugNic).SlugNie(slugNie).SlugNiew(slugNiew).SlugNire(slugNire).SlugNisw(slugNisw).SlugNre(slugNre).SlugRe(slugRe).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedGitRepositoryList ExtrasGitRepositoriesList(ctx).Branch(branch).BranchIc(branchIc).BranchIe(branchIe).BranchIew(branchIew).BranchIre(branchIre).BranchIsw(branchIsw).BranchN(branchN).BranchNic(branchNic).BranchNie(branchNie).BranchNiew(branchNiew).BranchNire(branchNire).BranchNisw(branchNisw).BranchNre(branchNre).BranchRe(branchRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ProvidedContents(providedContents).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).SecretsGroupId(secretsGroupId).SecretsGroupIdIsnull(secretsGroupIdIsnull).SecretsGroupIdN(secretsGroupIdN).Slug(slug).SlugIc(slugIc).SlugIe(slugIe).SlugIew(slugIew).SlugIre(slugIre).SlugIsw(slugIsw).SlugN(slugN).SlugNic(slugNic).SlugNie(slugNie).SlugNiew(slugNiew).SlugNire(slugNire).SlugNisw(slugNisw).SlugNre(slugNre).SlugRe(slugRe).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -12082,6 +12404,9 @@ func main() {
 	branchNisw := []string{"Inner_example"} // []string |  (optional)
 	branchNre := []string{"Inner_example"} // []string |  (optional)
 	branchRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -12089,6 +12414,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -12144,11 +12471,11 @@ func main() {
 	remoteUrlNre := []string{"Inner_example"} // []string |  (optional)
 	remoteUrlRe := []string{"Inner_example"} // []string |  (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool |  (optional)
+	secretsGroupIsnull := true // bool | Secrets group (ID or name) is null (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	secretsGroupId := []string{"Inner_example"} // []string | Secrets group (ID) - Deprecated (use secrets_group filter) (optional)
-	secretsGroupIdIsnull := true // bool |  (optional)
-	secretsGroupIdN := []string{"Inner_example"} // []string | Secrets group (ID) - Deprecated (use secrets_group filter) (optional)
+	secretsGroupIdIsnull := true // bool | Secrets group (ID) - Deprecated (use secrets_group filter) is null (optional)
+	secretsGroupIdN := []string{"Inner_example"} // []string | Exclude Secrets group (ID) - Deprecated (use secrets_group filter) (optional)
 	slug := []string{"Inner_example"} // []string |  (optional)
 	slugIc := []string{"Inner_example"} // []string |  (optional)
 	slugIe := []string{"Inner_example"} // []string |  (optional)
@@ -12167,11 +12494,14 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasGitRepositoriesList(context.Background()).Branch(branch).BranchIc(branchIc).BranchIe(branchIe).BranchIew(branchIew).BranchIre(branchIre).BranchIsw(branchIsw).BranchN(branchN).BranchNic(branchNic).BranchNie(branchNie).BranchNiew(branchNiew).BranchNire(branchNire).BranchNisw(branchNisw).BranchNre(branchNre).BranchRe(branchRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ProvidedContents(providedContents).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).SecretsGroupId(secretsGroupId).SecretsGroupIdIsnull(secretsGroupIdIsnull).SecretsGroupIdN(secretsGroupIdN).Slug(slug).SlugIc(slugIc).SlugIe(slugIe).SlugIew(slugIew).SlugIre(slugIre).SlugIsw(slugIsw).SlugN(slugN).SlugNic(slugNic).SlugNie(slugNie).SlugNiew(slugNiew).SlugNire(slugNire).SlugNisw(slugNisw).SlugNre(slugNre).SlugRe(slugRe).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasGitRepositoriesList(context.Background()).Branch(branch).BranchIc(branchIc).BranchIe(branchIe).BranchIew(branchIew).BranchIre(branchIre).BranchIsw(branchIsw).BranchN(branchN).BranchNic(branchNic).BranchNie(branchNie).BranchNiew(branchNiew).BranchNire(branchNire).BranchNisw(branchNisw).BranchNre(branchNre).BranchRe(branchRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ProvidedContents(providedContents).Q(q).RemoteUrl(remoteUrl).RemoteUrlIc(remoteUrlIc).RemoteUrlIe(remoteUrlIe).RemoteUrlIew(remoteUrlIew).RemoteUrlIre(remoteUrlIre).RemoteUrlIsw(remoteUrlIsw).RemoteUrlN(remoteUrlN).RemoteUrlNic(remoteUrlNic).RemoteUrlNie(remoteUrlNie).RemoteUrlNiew(remoteUrlNiew).RemoteUrlNire(remoteUrlNire).RemoteUrlNisw(remoteUrlNisw).RemoteUrlNre(remoteUrlNre).RemoteUrlRe(remoteUrlRe).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).SecretsGroupId(secretsGroupId).SecretsGroupIdIsnull(secretsGroupIdIsnull).SecretsGroupIdN(secretsGroupIdN).Slug(slug).SlugIc(slugIc).SlugIe(slugIe).SlugIew(slugIew).SlugIre(slugIre).SlugIsw(slugIsw).SlugN(slugN).SlugNic(slugNic).SlugNie(slugNie).SlugNiew(slugNiew).SlugNire(slugNire).SlugNisw(slugNisw).SlugNre(slugNre).SlugRe(slugRe).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasGitRepositoriesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -12206,6 +12536,9 @@ Name | Type | Description  | Notes
  **branchNisw** | **[]string** |  | 
  **branchNre** | **[]string** |  | 
  **branchRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -12213,6 +12546,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -12268,11 +12603,11 @@ Name | Type | Description  | Notes
  **remoteUrlNre** | **[]string** |  | 
  **remoteUrlRe** | **[]string** |  | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** |  | 
+ **secretsGroupIsnull** | **bool** | Secrets group (ID or name) is null | 
  **secretsGroupN** | **[]string** |  | 
  **secretsGroupId** | **[]string** | Secrets group (ID) - Deprecated (use secrets_group filter) | 
- **secretsGroupIdIsnull** | **bool** |  | 
- **secretsGroupIdN** | **[]string** | Secrets group (ID) - Deprecated (use secrets_group filter) | 
+ **secretsGroupIdIsnull** | **bool** | Secrets group (ID) - Deprecated (use secrets_group filter) is null | 
+ **secretsGroupIdN** | **[]string** | Exclude Secrets group (ID) - Deprecated (use secrets_group filter) | 
  **slug** | **[]string** |  | 
  **slugIc** | **[]string** |  | 
  **slugIe** | **[]string** |  | 
@@ -12291,6 +12626,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -13101,7 +13439,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasGraphqlQueriesList
 
-> PaginatedGraphQLQueryList ExtrasGraphqlQueriesList(ctx).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedGraphQLQueryList ExtrasGraphqlQueriesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -13120,6 +13458,11 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -13153,11 +13496,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasGraphqlQueriesList(context.Background()).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasGraphqlQueriesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasGraphqlQueriesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13178,6 +13524,11 @@ Other parameters are passed through a pointer to a apiExtrasGraphqlQueriesListRe
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -13211,6 +13562,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -14751,7 +15105,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobButtonsList
 
-> PaginatedJobButtonList ExtrasJobButtonsList(ctx).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Confirmation(confirmation).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedJobButtonList ExtrasJobButtonsList(ctx).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Confirmation(confirmation).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -14785,6 +15139,9 @@ func main() {
 	buttonClassNre := []string{"Inner_example"} // []string |  (optional)
 	buttonClassRe := []string{"Inner_example"} // []string |  (optional)
 	confirmation := true // bool |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := "contentTypes_example" // string |  (optional)
 	contentTypesIc := "contentTypesIc_example" // string |  (optional)
 	contentTypesIe := "contentTypesIe_example" // string |  (optional)
@@ -14799,6 +15156,9 @@ func main() {
 	contentTypesNisw := "contentTypesNisw_example" // string |  (optional)
 	contentTypesNre := "contentTypesNre_example" // string |  (optional)
 	contentTypesRe := "contentTypesRe_example" // string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	groupName := []string{"Inner_example"} // []string |  (optional)
 	groupNameIc := []string{"Inner_example"} // []string |  (optional)
@@ -14848,6 +15208,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	text := []string{"Inner_example"} // []string |  (optional)
 	textIc := []string{"Inner_example"} // []string |  (optional)
 	textIe := []string{"Inner_example"} // []string |  (optional)
@@ -14872,7 +15235,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobButtonsList(context.Background()).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Confirmation(confirmation).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobButtonsList(context.Background()).ButtonClass(buttonClass).ButtonClassIc(buttonClassIc).ButtonClassIe(buttonClassIe).ButtonClassIew(buttonClassIew).ButtonClassIre(buttonClassIre).ButtonClassIsw(buttonClassIsw).ButtonClassN(buttonClassN).ButtonClassNic(buttonClassNic).ButtonClassNie(buttonClassNie).ButtonClassNiew(buttonClassNiew).ButtonClassNire(buttonClassNire).ButtonClassNisw(buttonClassNisw).ButtonClassNre(buttonClassNre).ButtonClassRe(buttonClassRe).Confirmation(confirmation).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).GroupName(groupName).GroupNameIc(groupNameIc).GroupNameIe(groupNameIe).GroupNameIew(groupNameIew).GroupNameIre(groupNameIre).GroupNameIsw(groupNameIsw).GroupNameN(groupNameN).GroupNameNic(groupNameNic).GroupNameNie(groupNameNie).GroupNameNiew(groupNameNiew).GroupNameNire(groupNameNire).GroupNameNisw(groupNameNisw).GroupNameNre(groupNameNre).GroupNameRe(groupNameRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Text(text).TextIc(textIc).TextIe(textIe).TextIew(textIew).TextIre(textIre).TextIsw(textIsw).TextN(textN).TextNic(textNic).TextNie(textNie).TextNiew(textNiew).TextNire(textNire).TextNisw(textNisw).TextNre(textNre).TextRe(textRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobButtonsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -14908,6 +15271,9 @@ Name | Type | Description  | Notes
  **buttonClassNre** | **[]string** |  | 
  **buttonClassRe** | **[]string** |  | 
  **confirmation** | **bool** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **string** |  | 
  **contentTypesIc** | **string** |  | 
  **contentTypesIe** | **string** |  | 
@@ -14922,6 +15288,9 @@ Name | Type | Description  | Notes
  **contentTypesNisw** | **string** |  | 
  **contentTypesNre** | **string** |  | 
  **contentTypesRe** | **string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **groupName** | **[]string** |  | 
  **groupNameIc** | **[]string** |  | 
@@ -14971,6 +15340,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **text** | **[]string** |  | 
  **textIc** | **[]string** |  | 
  **textIe** | **[]string** |  | 
@@ -15727,7 +16099,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobHooksList
 
-> PaginatedJobHookList ExtrasJobHooksList(ctx).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
+> PaginatedJobHookList ExtrasJobHooksList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
 
 
 
@@ -15746,6 +16118,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -15760,6 +16135,8 @@ func main() {
 	contentTypesNisw := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesNre := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesRe := []int32{int32(123)} // []int32 |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -15796,6 +16173,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	typeCreate := true // bool |  (optional)
 	typeDelete := true // bool |  (optional)
 	typeUpdate := true // bool |  (optional)
@@ -15803,7 +16183,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobHooksList(context.Background()).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobHooksList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Job(job).JobN(jobN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobHooksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -15824,6 +16204,9 @@ Other parameters are passed through a pointer to a apiExtrasJobHooksListRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -15838,6 +16221,8 @@ Name | Type | Description  | Notes
  **contentTypesNisw** | **[]int32** |  | 
  **contentTypesNre** | **[]int32** |  | 
  **contentTypesRe** | **[]int32** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -15874,6 +16259,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **typeCreate** | **bool** |  | 
  **typeDelete** | **bool** |  | 
  **typeUpdate** | **bool** |  | 
@@ -16793,11 +17181,11 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	jobModel := []string{"Inner_example"} // []string |  (optional)
-	jobModelIsnull := true // bool |  (optional)
+	jobModelIsnull := true // bool | Job (name or ID) is null (optional)
 	jobModelN := []string{"Inner_example"} // []string |  (optional)
 	jobModelId := []*string{"Inner_example"} // []*string | Job (ID) - Deprecated (use job_model filter) (optional)
-	jobModelIdIsnull := true // bool |  (optional)
-	jobModelIdN := []*string{"Inner_example"} // []*string | Job (ID) - Deprecated (use job_model filter) (optional)
+	jobModelIdIsnull := true // bool | Job (ID) - Deprecated (use job_model filter) is null (optional)
+	jobModelIdN := []*string{"Inner_example"} // []*string | Exclude Job (ID) - Deprecated (use job_model filter) (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -16887,11 +17275,11 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **jobModel** | **[]string** |  | 
- **jobModelIsnull** | **bool** |  | 
+ **jobModelIsnull** | **bool** | Job (name or ID) is null | 
  **jobModelN** | **[]string** |  | 
  **jobModelId** | **[]string** | Job (ID) - Deprecated (use job_model filter) | 
- **jobModelIdIsnull** | **bool** |  | 
- **jobModelIdN** | **[]string** | Job (ID) - Deprecated (use job_model filter) | 
+ **jobModelIdIsnull** | **bool** | Job (ID) - Deprecated (use job_model filter) is null | 
+ **jobModelIdN** | **[]string** | Exclude Job (ID) - Deprecated (use job_model filter) | 
  **limit** | **int32** | Number of results to return per page. | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -17439,7 +17827,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobsList
 
-> PaginatedJobList ExtrasJobsList(ctx).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).Execute()
+> PaginatedJobList ExtrasJobsList(ctx).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).Execute()
 
 
 
@@ -17460,9 +17848,14 @@ import (
 func main() {
 	approvalRequired := true // bool |  (optional)
 	approvalRequiredOverride := true // bool |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	descriptionOverride := true // bool |  (optional)
 	dryrunDefault := true // bool |  (optional)
 	dryrunDefaultOverride := true // bool |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	grouping := []string{"Inner_example"} // []string |  (optional)
@@ -17559,6 +17952,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	timeLimit := []float32{float32(123)} // []float32 |  (optional)
 	timeLimitGt := []float32{float32(123)} // []float32 |  (optional)
 	timeLimitGte := []float32{float32(123)} // []float32 |  (optional)
@@ -17570,7 +17966,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -17593,9 +17989,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **approvalRequired** | **bool** |  | 
  **approvalRequiredOverride** | **bool** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **descriptionOverride** | **bool** |  | 
  **dryrunDefault** | **bool** |  | 
  **dryrunDefaultOverride** | **bool** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **grouping** | **[]string** |  | 
@@ -17692,6 +18093,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **timeLimit** | **[]float32** |  | 
  **timeLimitGt** | **[]float32** |  | 
  **timeLimitGte** | **[]float32** |  | 
@@ -18775,6 +19179,1726 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## ExtrasMetadataChoicesBulkDestroy
+
+> ExtrasMetadataChoicesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesBulkPartialUpdate
+
+> []MetadataChoice ExtrasMetadataChoicesBulkPartialUpdate(ctx).PatchedBulkWritableMetadataChoiceRequest(patchedBulkWritableMetadataChoiceRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableMetadataChoiceRequest := []openapiclient.PatchedBulkWritableMetadataChoiceRequest{*openapiclient.NewPatchedBulkWritableMetadataChoiceRequest("Id_example")} // []PatchedBulkWritableMetadataChoiceRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesBulkPartialUpdate(context.Background()).PatchedBulkWritableMetadataChoiceRequest(patchedBulkWritableMetadataChoiceRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesBulkPartialUpdate`: []MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableMetadataChoiceRequest** | [**[]PatchedBulkWritableMetadataChoiceRequest**](PatchedBulkWritableMetadataChoiceRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesBulkUpdate
+
+> []MetadataChoice ExtrasMetadataChoicesBulkUpdate(ctx).BulkWritableMetadataChoiceRequest(bulkWritableMetadataChoiceRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableMetadataChoiceRequest := []openapiclient.BulkWritableMetadataChoiceRequest{*openapiclient.NewBulkWritableMetadataChoiceRequest("Id_example", "Value_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableMetadataChoiceRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesBulkUpdate(context.Background()).BulkWritableMetadataChoiceRequest(bulkWritableMetadataChoiceRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesBulkUpdate`: []MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableMetadataChoiceRequest** | [**[]BulkWritableMetadataChoiceRequest**](BulkWritableMetadataChoiceRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesCreate
+
+> MetadataChoice ExtrasMetadataChoicesCreate(ctx).MetadataChoiceRequest(metadataChoiceRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // MetadataChoiceRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesCreate(context.Background()).MetadataChoiceRequest(metadataChoiceRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesCreate`: MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **metadataChoiceRequest** | [**MetadataChoiceRequest**](MetadataChoiceRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesDestroy
+
+> ExtrasMetadataChoicesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata choice. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesList
+
+> PaginatedMetadataChoiceList ExtrasMetadataChoicesList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MetadataType(metadataType).MetadataTypeN(metadataTypeN).Offset(offset).Q(q).Sort(sort).Value(value).ValueIc(valueIc).ValueIe(valueIe).ValueIew(valueIew).ValueIre(valueIre).ValueIsw(valueIsw).ValueN(valueN).ValueNic(valueNic).ValueNie(valueNie).ValueNiew(valueNiew).ValueNire(valueNire).ValueNisw(valueNisw).ValueNre(valueNre).ValueRe(valueRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	metadataType := []string{"Inner_example"} // []string |  (optional)
+	metadataTypeN := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	value := []string{"Inner_example"} // []string |  (optional)
+	valueIc := []string{"Inner_example"} // []string |  (optional)
+	valueIe := []string{"Inner_example"} // []string |  (optional)
+	valueIew := []string{"Inner_example"} // []string |  (optional)
+	valueIre := []string{"Inner_example"} // []string |  (optional)
+	valueIsw := []string{"Inner_example"} // []string |  (optional)
+	valueN := []string{"Inner_example"} // []string |  (optional)
+	valueNic := []string{"Inner_example"} // []string |  (optional)
+	valueNie := []string{"Inner_example"} // []string |  (optional)
+	valueNiew := []string{"Inner_example"} // []string |  (optional)
+	valueNire := []string{"Inner_example"} // []string |  (optional)
+	valueNisw := []string{"Inner_example"} // []string |  (optional)
+	valueNre := []string{"Inner_example"} // []string |  (optional)
+	valueRe := []string{"Inner_example"} // []string |  (optional)
+	weight := []int32{int32(123)} // []int32 |  (optional)
+	weightGt := []int32{int32(123)} // []int32 |  (optional)
+	weightGte := []int32{int32(123)} // []int32 |  (optional)
+	weightLt := []int32{int32(123)} // []int32 |  (optional)
+	weightLte := []int32{int32(123)} // []int32 |  (optional)
+	weightN := []int32{int32(123)} // []int32 |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MetadataType(metadataType).MetadataTypeN(metadataTypeN).Offset(offset).Q(q).Sort(sort).Value(value).ValueIc(valueIc).ValueIe(valueIe).ValueIew(valueIew).ValueIre(valueIre).ValueIsw(valueIsw).ValueN(valueN).ValueNic(valueNic).ValueNie(valueNie).ValueNiew(valueNiew).ValueNire(valueNire).ValueNisw(valueNisw).ValueNre(valueNre).ValueRe(valueRe).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesList`: PaginatedMetadataChoiceList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **metadataType** | **[]string** |  | 
+ **metadataTypeN** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **value** | **[]string** |  | 
+ **valueIc** | **[]string** |  | 
+ **valueIe** | **[]string** |  | 
+ **valueIew** | **[]string** |  | 
+ **valueIre** | **[]string** |  | 
+ **valueIsw** | **[]string** |  | 
+ **valueN** | **[]string** |  | 
+ **valueNic** | **[]string** |  | 
+ **valueNie** | **[]string** |  | 
+ **valueNiew** | **[]string** |  | 
+ **valueNire** | **[]string** |  | 
+ **valueNisw** | **[]string** |  | 
+ **valueNre** | **[]string** |  | 
+ **valueRe** | **[]string** |  | 
+ **weight** | **[]int32** |  | 
+ **weightGt** | **[]int32** |  | 
+ **weightGte** | **[]int32** |  | 
+ **weightLt** | **[]int32** |  | 
+ **weightLte** | **[]int32** |  | 
+ **weightN** | **[]int32** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedMetadataChoiceList**](PaginatedMetadataChoiceList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesPartialUpdate
+
+> MetadataChoice ExtrasMetadataChoicesPartialUpdate(ctx, id).Format(format).PatchedMetadataChoiceRequest(patchedMetadataChoiceRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedMetadataChoiceRequest := *openapiclient.NewPatchedMetadataChoiceRequest() // PatchedMetadataChoiceRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesPartialUpdate(context.Background(), id).Format(format).PatchedMetadataChoiceRequest(patchedMetadataChoiceRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesPartialUpdate`: MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata choice. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedMetadataChoiceRequest** | [**PatchedMetadataChoiceRequest**](PatchedMetadataChoiceRequest.md) |  | 
+
+### Return type
+
+[**MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesRetrieve
+
+> MetadataChoice ExtrasMetadataChoicesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesRetrieve`: MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata choice. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataChoicesUpdate
+
+> MetadataChoice ExtrasMetadataChoicesUpdate(ctx, id).MetadataChoiceRequest(metadataChoiceRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
+	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // MetadataChoiceRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataChoicesUpdate(context.Background(), id).MetadataChoiceRequest(metadataChoiceRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataChoicesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataChoicesUpdate`: MetadataChoice
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataChoicesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata choice. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataChoicesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **metadataChoiceRequest** | [**MetadataChoiceRequest**](MetadataChoiceRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**MetadataChoice**](MetadataChoice.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesBulkDestroy
+
+> ExtrasMetadataTypesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesBulkPartialUpdate
+
+> []MetadataType ExtrasMetadataTypesBulkPartialUpdate(ctx).PatchedBulkWritableMetadataTypeRequest(patchedBulkWritableMetadataTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableMetadataTypeRequest := []openapiclient.PatchedBulkWritableMetadataTypeRequest{*openapiclient.NewPatchedBulkWritableMetadataTypeRequest("Id_example")} // []PatchedBulkWritableMetadataTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesBulkPartialUpdate(context.Background()).PatchedBulkWritableMetadataTypeRequest(patchedBulkWritableMetadataTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesBulkPartialUpdate`: []MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableMetadataTypeRequest** | [**[]PatchedBulkWritableMetadataTypeRequest**](PatchedBulkWritableMetadataTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesBulkUpdate
+
+> []MetadataType ExtrasMetadataTypesBulkUpdate(ctx).BulkWritableMetadataTypeRequest(bulkWritableMetadataTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableMetadataTypeRequest := []openapiclient.BulkWritableMetadataTypeRequest{*openapiclient.NewBulkWritableMetadataTypeRequest("Id_example", []string{"ContentTypes_example"}, "Name_example", openapiclient.DataTypeEnum("text"))} // []BulkWritableMetadataTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesBulkUpdate(context.Background()).BulkWritableMetadataTypeRequest(bulkWritableMetadataTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesBulkUpdate`: []MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableMetadataTypeRequest** | [**[]BulkWritableMetadataTypeRequest**](BulkWritableMetadataTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesCreate
+
+> MetadataType ExtrasMetadataTypesCreate(ctx).MetadataTypeRequest(metadataTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	metadataTypeRequest := *openapiclient.NewMetadataTypeRequest([]string{"ContentTypes_example"}, "Name_example", openapiclient.DataTypeEnum("text")) // MetadataTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesCreate(context.Background()).MetadataTypeRequest(metadataTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesCreate`: MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **metadataTypeRequest** | [**MetadataTypeRequest**](MetadataTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesDestroy
+
+> ExtrasMetadataTypesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesList
+
+> PaginatedMetadataTypeList ExtrasMetadataTypesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DataType(dataType).DataTypeIc(dataTypeIc).DataTypeIe(dataTypeIe).DataTypeIew(dataTypeIew).DataTypeIre(dataTypeIre).DataTypeIsw(dataTypeIsw).DataTypeN(dataTypeN).DataTypeNic(dataTypeNic).DataTypeNie(dataTypeNie).DataTypeNiew(dataTypeNiew).DataTypeNire(dataTypeNire).DataTypeNisw(dataTypeNisw).DataTypeNre(dataTypeNre).DataTypeRe(dataTypeRe).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contentTypes := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesIew := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesIre := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesIsw := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesN := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNic := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNie := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNiew := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNire := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNisw := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesNre := []int32{int32(123)} // []int32 |  (optional)
+	contentTypesRe := []int32{int32(123)} // []int32 |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dataType := []string{"Inner_example"} // []string | The type of data allowed for any Metadata of this type. (optional)
+	dataTypeIc := []string{"Inner_example"} // []string |  (optional)
+	dataTypeIe := []string{"Inner_example"} // []string |  (optional)
+	dataTypeIew := []string{"Inner_example"} // []string |  (optional)
+	dataTypeIre := []string{"Inner_example"} // []string |  (optional)
+	dataTypeIsw := []string{"Inner_example"} // []string |  (optional)
+	dataTypeN := []string{"Inner_example"} // []string | The type of data allowed for any Metadata of this type. (optional)
+	dataTypeNic := []string{"Inner_example"} // []string |  (optional)
+	dataTypeNie := []string{"Inner_example"} // []string |  (optional)
+	dataTypeNiew := []string{"Inner_example"} // []string |  (optional)
+	dataTypeNire := []string{"Inner_example"} // []string |  (optional)
+	dataTypeNisw := []string{"Inner_example"} // []string |  (optional)
+	dataTypeNre := []string{"Inner_example"} // []string |  (optional)
+	dataTypeRe := []string{"Inner_example"} // []string |  (optional)
+	description := []string{"Inner_example"} // []string |  (optional)
+	descriptionIc := []string{"Inner_example"} // []string |  (optional)
+	descriptionIe := []string{"Inner_example"} // []string |  (optional)
+	descriptionIew := []string{"Inner_example"} // []string |  (optional)
+	descriptionIre := []string{"Inner_example"} // []string |  (optional)
+	descriptionIsw := []string{"Inner_example"} // []string |  (optional)
+	descriptionN := []string{"Inner_example"} // []string |  (optional)
+	descriptionNic := []string{"Inner_example"} // []string |  (optional)
+	descriptionNie := []string{"Inner_example"} // []string |  (optional)
+	descriptionNiew := []string{"Inner_example"} // []string |  (optional)
+	descriptionNire := []string{"Inner_example"} // []string |  (optional)
+	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
+	descriptionNre := []string{"Inner_example"} // []string |  (optional)
+	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DataType(dataType).DataTypeIc(dataTypeIc).DataTypeIe(dataTypeIe).DataTypeIew(dataTypeIew).DataTypeIre(dataTypeIre).DataTypeIsw(dataTypeIsw).DataTypeN(dataTypeN).DataTypeNic(dataTypeNic).DataTypeNie(dataTypeNie).DataTypeNiew(dataTypeNiew).DataTypeNire(dataTypeNire).DataTypeNisw(dataTypeNisw).DataTypeNre(dataTypeNre).DataTypeRe(dataTypeRe).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesList`: PaginatedMetadataTypeList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contentTypes** | **[]int32** |  | 
+ **contentTypesIc** | **[]int32** |  | 
+ **contentTypesIe** | **[]int32** |  | 
+ **contentTypesIew** | **[]int32** |  | 
+ **contentTypesIre** | **[]int32** |  | 
+ **contentTypesIsw** | **[]int32** |  | 
+ **contentTypesN** | **[]int32** |  | 
+ **contentTypesNic** | **[]int32** |  | 
+ **contentTypesNie** | **[]int32** |  | 
+ **contentTypesNiew** | **[]int32** |  | 
+ **contentTypesNire** | **[]int32** |  | 
+ **contentTypesNisw** | **[]int32** |  | 
+ **contentTypesNre** | **[]int32** |  | 
+ **contentTypesRe** | **[]int32** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dataType** | **[]string** | The type of data allowed for any Metadata of this type. | 
+ **dataTypeIc** | **[]string** |  | 
+ **dataTypeIe** | **[]string** |  | 
+ **dataTypeIew** | **[]string** |  | 
+ **dataTypeIre** | **[]string** |  | 
+ **dataTypeIsw** | **[]string** |  | 
+ **dataTypeN** | **[]string** | The type of data allowed for any Metadata of this type. | 
+ **dataTypeNic** | **[]string** |  | 
+ **dataTypeNie** | **[]string** |  | 
+ **dataTypeNiew** | **[]string** |  | 
+ **dataTypeNire** | **[]string** |  | 
+ **dataTypeNisw** | **[]string** |  | 
+ **dataTypeNre** | **[]string** |  | 
+ **dataTypeRe** | **[]string** |  | 
+ **description** | **[]string** |  | 
+ **descriptionIc** | **[]string** |  | 
+ **descriptionIe** | **[]string** |  | 
+ **descriptionIew** | **[]string** |  | 
+ **descriptionIre** | **[]string** |  | 
+ **descriptionIsw** | **[]string** |  | 
+ **descriptionN** | **[]string** |  | 
+ **descriptionNic** | **[]string** |  | 
+ **descriptionNie** | **[]string** |  | 
+ **descriptionNiew** | **[]string** |  | 
+ **descriptionNire** | **[]string** |  | 
+ **descriptionNisw** | **[]string** |  | 
+ **descriptionNre** | **[]string** |  | 
+ **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedMetadataTypeList**](PaginatedMetadataTypeList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesNotesCreate
+
+> Note ExtrasMetadataTypesNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesNotesList
+
+> PaginatedNoteList ExtrasMetadataTypesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesPartialUpdate
+
+> MetadataType ExtrasMetadataTypesPartialUpdate(ctx, id).Format(format).PatchedMetadataTypeRequest(patchedMetadataTypeRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedMetadataTypeRequest := *openapiclient.NewPatchedMetadataTypeRequest() // PatchedMetadataTypeRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesPartialUpdate(context.Background(), id).Format(format).PatchedMetadataTypeRequest(patchedMetadataTypeRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesPartialUpdate`: MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedMetadataTypeRequest** | [**PatchedMetadataTypeRequest**](PatchedMetadataTypeRequest.md) |  | 
+
+### Return type
+
+[**MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesRetrieve
+
+> MetadataType ExtrasMetadataTypesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesRetrieve`: MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasMetadataTypesUpdate
+
+> MetadataType ExtrasMetadataTypesUpdate(ctx, id).MetadataTypeRequest(metadataTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
+	metadataTypeRequest := *openapiclient.NewMetadataTypeRequest([]string{"ContentTypes_example"}, "Name_example", openapiclient.DataTypeEnum("text")) // MetadataTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasMetadataTypesUpdate(context.Background(), id).MetadataTypeRequest(metadataTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasMetadataTypesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasMetadataTypesUpdate`: MetadataType
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasMetadataTypesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this metadata type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasMetadataTypesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **metadataTypeRequest** | [**MetadataTypeRequest**](MetadataTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**MetadataType**](MetadataType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ExtrasNotesBulkDestroy
 
 > ExtrasNotesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -19188,7 +21312,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	user := []string{"Inner_example"} // []string |  (optional)
-	userIsnull := true // bool |  (optional)
+	userIsnull := true // bool | User (username or ID) is null (optional)
 	userN := []string{"Inner_example"} // []string |  (optional)
 	userName := []string{"Inner_example"} // []string |  (optional)
 	userNameIc := []string{"Inner_example"} // []string |  (optional)
@@ -19281,7 +21405,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **user** | **[]string** |  | 
- **userIsnull** | **bool** |  | 
+ **userIsnull** | **bool** | User (username or ID) is null | 
  **userN** | **[]string** |  | 
  **userName** | **[]string** |  | 
  **userNameIc** | **[]string** |  | 
@@ -19649,11 +21773,11 @@ func main() {
 	timeLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	timeN := []time.Time{time.Now()} // []time.Time |  (optional)
 	user := []string{"Inner_example"} // []string |  (optional)
-	userIsnull := true // bool |  (optional)
+	userIsnull := true // bool | User name (ID or username) is null (optional)
 	userN := []string{"Inner_example"} // []string |  (optional)
 	userId := []*string{"Inner_example"} // []*string | User (ID) - Deprecated (use user filter) (optional)
-	userIdIsnull := true // bool |  (optional)
-	userIdN := []*string{"Inner_example"} // []*string | User (ID) - Deprecated (use user filter) (optional)
+	userIdIsnull := true // bool | User (ID) - Deprecated (use user filter) is null (optional)
+	userIdN := []*string{"Inner_example"} // []*string | Exclude User (ID) - Deprecated (use user filter) (optional)
 	userName := []string{"Inner_example"} // []string |  (optional)
 	userNameIc := []string{"Inner_example"} // []string |  (optional)
 	userNameIe := []string{"Inner_example"} // []string |  (optional)
@@ -19781,11 +21905,11 @@ Name | Type | Description  | Notes
  **timeLte** | [**[]time.Time**](time.Time.md) |  | 
  **timeN** | [**[]time.Time**](time.Time.md) |  | 
  **user** | **[]string** |  | 
- **userIsnull** | **bool** |  | 
+ **userIsnull** | **bool** | User name (ID or username) is null | 
  **userN** | **[]string** |  | 
  **userId** | **[]string** | User (ID) - Deprecated (use user filter) | 
- **userIdIsnull** | **bool** |  | 
- **userIdN** | **[]string** | User (ID) - Deprecated (use user filter) | 
+ **userIdIsnull** | **bool** | User (ID) - Deprecated (use user filter) is null | 
+ **userIdN** | **[]string** | Exclude User (ID) - Deprecated (use user filter) | 
  **userName** | **[]string** |  | 
  **userNameIc** | **[]string** |  | 
  **userNameIe** | **[]string** |  | 
@@ -19887,6 +22011,907 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataBulkDestroy
+
+> ExtrasObjectMetadataBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataBulkPartialUpdate
+
+> []ObjectMetadata ExtrasObjectMetadataBulkPartialUpdate(ctx).PatchedBulkWritableObjectMetadataRequest(patchedBulkWritableObjectMetadataRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableObjectMetadataRequest := []openapiclient.PatchedBulkWritableObjectMetadataRequest{*openapiclient.NewPatchedBulkWritableObjectMetadataRequest("Id_example")} // []PatchedBulkWritableObjectMetadataRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataBulkPartialUpdate(context.Background()).PatchedBulkWritableObjectMetadataRequest(patchedBulkWritableObjectMetadataRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataBulkPartialUpdate`: []ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableObjectMetadataRequest** | [**[]PatchedBulkWritableObjectMetadataRequest**](PatchedBulkWritableObjectMetadataRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataBulkUpdate
+
+> []ObjectMetadata ExtrasObjectMetadataBulkUpdate(ctx).BulkWritableObjectMetadataRequest(bulkWritableObjectMetadataRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableObjectMetadataRequest := []openapiclient.BulkWritableObjectMetadataRequest{*openapiclient.NewBulkWritableObjectMetadataRequest("Id_example", "AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableObjectMetadataRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataBulkUpdate(context.Background()).BulkWritableObjectMetadataRequest(bulkWritableObjectMetadataRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataBulkUpdate`: []ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableObjectMetadataRequest** | [**[]BulkWritableObjectMetadataRequest**](BulkWritableObjectMetadataRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataCreate
+
+> ObjectMetadata ExtrasObjectMetadataCreate(ctx).ObjectMetadataRequest(objectMetadataRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ObjectMetadataRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataCreate(context.Background()).ObjectMetadataRequest(objectMetadataRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataCreate`: ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **objectMetadataRequest** | [**ObjectMetadataRequest**](ObjectMetadataRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataDestroy
+
+> ExtrasObjectMetadataDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataList
+
+> PaginatedObjectMetadataList ExtrasObjectMetadataList(ctx).AssignedObjectId(assignedObjectId).AssignedObjectIdIc(assignedObjectIdIc).AssignedObjectIdIe(assignedObjectIdIe).AssignedObjectIdIew(assignedObjectIdIew).AssignedObjectIdIre(assignedObjectIdIre).AssignedObjectIdIsw(assignedObjectIdIsw).AssignedObjectIdN(assignedObjectIdN).AssignedObjectIdNic(assignedObjectIdNic).AssignedObjectIdNie(assignedObjectIdNie).AssignedObjectIdNiew(assignedObjectIdNiew).AssignedObjectIdNire(assignedObjectIdNire).AssignedObjectIdNisw(assignedObjectIdNisw).AssignedObjectIdNre(assignedObjectIdNre).AssignedObjectIdRe(assignedObjectIdRe).AssignedObjectType(assignedObjectType).AssignedObjectTypeIsnull(assignedObjectTypeIsnull).AssignedObjectTypeN(assignedObjectTypeN).Contact(contact).ContactIsnull(contactIsnull).ContactN(contactN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MetadataType(metadataType).MetadataTypeN(metadataTypeN).Offset(offset).Q(q).ScopedFields(scopedFields).Sort(sort).Team(team).TeamIsnull(teamIsnull).TeamN(teamN).Value(value).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	assignedObjectId := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdIc := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdIe := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdIew := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdIre := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdIsw := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdN := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNic := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNie := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNiew := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNire := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNisw := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdNre := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectIdRe := []string{"Inner_example"} // []string |  (optional)
+	assignedObjectType := []int32{int32(123)} // []int32 |  (optional)
+	assignedObjectTypeIsnull := true // bool |  (optional)
+	assignedObjectTypeN := []int32{int32(123)} // []int32 |  (optional)
+	contact := []string{"Inner_example"} // []string |  (optional)
+	contactIsnull := true // bool | Contact (name or ID) is null (optional)
+	contactN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	metadataType := []string{"Inner_example"} // []string |  (optional)
+	metadataTypeN := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	scopedFields := []string{"Inner_example"} // []string |  (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	team := []string{"Inner_example"} // []string |  (optional)
+	teamIsnull := true // bool | Team (name or ID) is null (optional)
+	teamN := []string{"Inner_example"} // []string |  (optional)
+	value := TODO // interface{} | Relevant data value to an object field or a set of object fields (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataList(context.Background()).AssignedObjectId(assignedObjectId).AssignedObjectIdIc(assignedObjectIdIc).AssignedObjectIdIe(assignedObjectIdIe).AssignedObjectIdIew(assignedObjectIdIew).AssignedObjectIdIre(assignedObjectIdIre).AssignedObjectIdIsw(assignedObjectIdIsw).AssignedObjectIdN(assignedObjectIdN).AssignedObjectIdNic(assignedObjectIdNic).AssignedObjectIdNie(assignedObjectIdNie).AssignedObjectIdNiew(assignedObjectIdNiew).AssignedObjectIdNire(assignedObjectIdNire).AssignedObjectIdNisw(assignedObjectIdNisw).AssignedObjectIdNre(assignedObjectIdNre).AssignedObjectIdRe(assignedObjectIdRe).AssignedObjectType(assignedObjectType).AssignedObjectTypeIsnull(assignedObjectTypeIsnull).AssignedObjectTypeN(assignedObjectTypeN).Contact(contact).ContactIsnull(contactIsnull).ContactN(contactN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MetadataType(metadataType).MetadataTypeN(metadataTypeN).Offset(offset).Q(q).ScopedFields(scopedFields).Sort(sort).Team(team).TeamIsnull(teamIsnull).TeamN(teamN).Value(value).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataList`: PaginatedObjectMetadataList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **assignedObjectId** | **[]string** |  | 
+ **assignedObjectIdIc** | **[]string** |  | 
+ **assignedObjectIdIe** | **[]string** |  | 
+ **assignedObjectIdIew** | **[]string** |  | 
+ **assignedObjectIdIre** | **[]string** |  | 
+ **assignedObjectIdIsw** | **[]string** |  | 
+ **assignedObjectIdN** | **[]string** |  | 
+ **assignedObjectIdNic** | **[]string** |  | 
+ **assignedObjectIdNie** | **[]string** |  | 
+ **assignedObjectIdNiew** | **[]string** |  | 
+ **assignedObjectIdNire** | **[]string** |  | 
+ **assignedObjectIdNisw** | **[]string** |  | 
+ **assignedObjectIdNre** | **[]string** |  | 
+ **assignedObjectIdRe** | **[]string** |  | 
+ **assignedObjectType** | **[]int32** |  | 
+ **assignedObjectTypeIsnull** | **bool** |  | 
+ **assignedObjectTypeN** | **[]int32** |  | 
+ **contact** | **[]string** |  | 
+ **contactIsnull** | **bool** | Contact (name or ID) is null | 
+ **contactN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **metadataType** | **[]string** |  | 
+ **metadataTypeN** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **scopedFields** | **[]string** |  | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **team** | **[]string** |  | 
+ **teamIsnull** | **bool** | Team (name or ID) is null | 
+ **teamN** | **[]string** |  | 
+ **value** | [**interface{}**](interface{}.md) | Relevant data value to an object field or a set of object fields | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedObjectMetadataList**](PaginatedObjectMetadataList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataNotesCreate
+
+> Note ExtrasObjectMetadataNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataNotesList
+
+> PaginatedNoteList ExtrasObjectMetadataNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataPartialUpdate
+
+> ObjectMetadata ExtrasObjectMetadataPartialUpdate(ctx, id).Format(format).PatchedObjectMetadataRequest(patchedObjectMetadataRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedObjectMetadataRequest := *openapiclient.NewPatchedObjectMetadataRequest() // PatchedObjectMetadataRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataPartialUpdate(context.Background(), id).Format(format).PatchedObjectMetadataRequest(patchedObjectMetadataRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataPartialUpdate`: ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedObjectMetadataRequest** | [**PatchedObjectMetadataRequest**](PatchedObjectMetadataRequest.md) |  | 
+
+### Return type
+
+[**ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataRetrieve
+
+> ObjectMetadata ExtrasObjectMetadataRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataRetrieve`: ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasObjectMetadataUpdate
+
+> ObjectMetadata ExtrasObjectMetadataUpdate(ctx, id).ObjectMetadataRequest(objectMetadataRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
+	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ObjectMetadataRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectMetadataUpdate(context.Background(), id).ObjectMetadataRequest(objectMetadataRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectMetadataUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasObjectMetadataUpdate`: ObjectMetadata
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasObjectMetadataUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this object metadata. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasObjectMetadataUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **objectMetadataRequest** | [**ObjectMetadataRequest**](ObjectMetadataRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ObjectMetadata**](ObjectMetadata.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
 - **Accept**: application/json, text/csv
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
@@ -20291,7 +23316,7 @@ func main() {
 	peerId := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	relationship := []string{"Inner_example"} // []string | Relationship (key) (optional)
-	relationshipN := []string{"Inner_example"} // []string | Relationship (key) (optional)
+	relationshipN := []string{"Inner_example"} // []string | Exclude Relationship (key) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	sourceId := []string{"Inner_example"} // []string |  (optional)
 	sourceIdIc := []string{"Inner_example"} // []string |  (optional)
@@ -20370,7 +23395,7 @@ Name | Type | Description  | Notes
  **peerId** | **[]string** |  | 
  **q** | **string** | Search | 
  **relationship** | **[]string** | Relationship (key) | 
- **relationshipN** | **[]string** | Relationship (key) | 
+ **relationshipN** | **[]string** | Exclude Relationship (key) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **sourceId** | **[]string** |  | 
  **sourceIdIc** | **[]string** |  | 
@@ -20972,7 +23997,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasRelationshipsList
 
-> PaginatedRelationshipList ExtrasRelationshipsList(ctx).DestinationType(destinationType).DestinationTypeN(destinationTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Sort(sort).SourceType(sourceType).SourceTypeN(sourceTypeN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedRelationshipList ExtrasRelationshipsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DestinationType(destinationType).DestinationTypeN(destinationTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Sort(sort).SourceType(sourceType).SourceTypeN(sourceTypeN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -20991,8 +24016,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	destinationType := []int32{int32(123)} // []int32 |  (optional)
 	destinationTypeN := []int32{int32(123)} // []int32 |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -21042,6 +24072,9 @@ func main() {
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	sourceType := []int32{int32(123)} // []int32 |  (optional)
 	sourceTypeN := []int32{int32(123)} // []int32 |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string | Cardinality of this relationship (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -21060,7 +24093,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasRelationshipsList(context.Background()).DestinationType(destinationType).DestinationTypeN(destinationTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Sort(sort).SourceType(sourceType).SourceTypeN(sourceTypeN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasRelationshipsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DestinationType(destinationType).DestinationTypeN(destinationTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Offset(offset).Q(q).Sort(sort).SourceType(sourceType).SourceTypeN(sourceTypeN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasRelationshipsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -21081,8 +24114,13 @@ Other parameters are passed through a pointer to a apiExtrasRelationshipsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **destinationType** | **[]int32** |  | 
  **destinationTypeN** | **[]int32** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -21132,6 +24170,9 @@ Name | Type | Description  | Notes
  **sort** | **string** | Which field to use when ordering the results. | 
  **sourceType** | **[]int32** |  | 
  **sourceTypeN** | **[]int32** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** | Cardinality of this relationship | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -21882,7 +24923,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasRolesList
 
-> PaginatedRoleList ExtrasRolesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightIsnull(weightIsnull).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedRoleList ExtrasRolesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightIsnull(weightIsnull).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -21916,6 +24957,9 @@ func main() {
 	colorNisw := []string{"Inner_example"} // []string |  (optional)
 	colorNre := []string{"Inner_example"} // []string |  (optional)
 	colorRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -21937,6 +24981,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -21977,6 +25023,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	weight := []int32{int32(123)} // []int32 |  (optional)
 	weightGt := []int32{int32(123)} // []int32 |  (optional)
 	weightGte := []int32{int32(123)} // []int32 |  (optional)
@@ -21988,7 +25037,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasRolesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightIsnull(weightIsnull).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasRolesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightIsnull(weightIsnull).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasRolesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -22023,6 +25072,9 @@ Name | Type | Description  | Notes
  **colorNisw** | **[]string** |  | 
  **colorNre** | **[]string** |  | 
  **colorRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -22044,6 +25096,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -22084,6 +25138,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **weight** | **[]int32** |  | 
  **weightGt** | **[]int32** |  | 
  **weightGte** | **[]int32** |  | 
@@ -22485,6 +25542,736 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## ExtrasSavedViewsBulkDestroy
+
+> ExtrasSavedViewsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasSavedViewsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsBulkPartialUpdate
+
+> []SavedView ExtrasSavedViewsBulkPartialUpdate(ctx).PatchedBulkWritableSavedViewRequest(patchedBulkWritableSavedViewRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableSavedViewRequest := []openapiclient.PatchedBulkWritableSavedViewRequest{*openapiclient.NewPatchedBulkWritableSavedViewRequest("Id_example")} // []PatchedBulkWritableSavedViewRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsBulkPartialUpdate(context.Background()).PatchedBulkWritableSavedViewRequest(patchedBulkWritableSavedViewRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsBulkPartialUpdate`: []SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableSavedViewRequest** | [**[]PatchedBulkWritableSavedViewRequest**](PatchedBulkWritableSavedViewRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsBulkUpdate
+
+> []SavedView ExtrasSavedViewsBulkUpdate(ctx).BulkWritableSavedViewRequest(bulkWritableSavedViewRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableSavedViewRequest := []openapiclient.BulkWritableSavedViewRequest{*openapiclient.NewBulkWritableSavedViewRequest("Id_example", "Name_example", "View_example", *openapiclient.NewBulkWritableSavedViewRequestOwner())} // []BulkWritableSavedViewRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsBulkUpdate(context.Background()).BulkWritableSavedViewRequest(bulkWritableSavedViewRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsBulkUpdate`: []SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableSavedViewRequest** | [**[]BulkWritableSavedViewRequest**](BulkWritableSavedViewRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsCreate
+
+> SavedView ExtrasSavedViewsCreate(ctx).SavedViewRequest(savedViewRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	savedViewRequest := *openapiclient.NewSavedViewRequest("Name_example", "View_example", *openapiclient.NewBulkWritableSavedViewRequestOwner()) // SavedViewRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsCreate(context.Background()).SavedViewRequest(savedViewRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsCreate`: SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **savedViewRequest** | [**SavedViewRequest**](SavedViewRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsDestroy
+
+> ExtrasSavedViewsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this saved view.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasSavedViewsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this saved view. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsList
+
+> PaginatedSavedViewList ExtrasSavedViewsList(ctx).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsGlobalDefault(isGlobalDefault).IsShared(isShared).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Owner(owner).OwnerN(ownerN).Q(q).Sort(sort).View(view).ViewIc(viewIc).ViewIe(viewIe).ViewIew(viewIew).ViewIre(viewIre).ViewIsw(viewIsw).ViewN(viewN).ViewNic(viewNic).ViewNie(viewNie).ViewNiew(viewNiew).ViewNire(viewNire).ViewNisw(viewNisw).ViewNre(viewNre).ViewRe(viewRe).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	isGlobalDefault := true // bool |  (optional)
+	isShared := true // bool |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	owner := []string{"Inner_example"} // []string |  (optional)
+	ownerN := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	view := []string{"Inner_example"} // []string |  (optional)
+	viewIc := []string{"Inner_example"} // []string |  (optional)
+	viewIe := []string{"Inner_example"} // []string |  (optional)
+	viewIew := []string{"Inner_example"} // []string |  (optional)
+	viewIre := []string{"Inner_example"} // []string |  (optional)
+	viewIsw := []string{"Inner_example"} // []string |  (optional)
+	viewN := []string{"Inner_example"} // []string |  (optional)
+	viewNic := []string{"Inner_example"} // []string |  (optional)
+	viewNie := []string{"Inner_example"} // []string |  (optional)
+	viewNiew := []string{"Inner_example"} // []string |  (optional)
+	viewNire := []string{"Inner_example"} // []string |  (optional)
+	viewNisw := []string{"Inner_example"} // []string |  (optional)
+	viewNre := []string{"Inner_example"} // []string |  (optional)
+	viewRe := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsList(context.Background()).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsGlobalDefault(isGlobalDefault).IsShared(isShared).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Owner(owner).OwnerN(ownerN).Q(q).Sort(sort).View(view).ViewIc(viewIc).ViewIe(viewIe).ViewIew(viewIew).ViewIre(viewIre).ViewIsw(viewIsw).ViewN(viewN).ViewNic(viewNic).ViewNie(viewNie).ViewNiew(viewNiew).ViewNire(viewNire).ViewNisw(viewNisw).ViewNre(viewNre).ViewRe(viewRe).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsList`: PaginatedSavedViewList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **isGlobalDefault** | **bool** |  | 
+ **isShared** | **bool** |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **owner** | **[]string** |  | 
+ **ownerN** | **[]string** |  | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **view** | **[]string** |  | 
+ **viewIc** | **[]string** |  | 
+ **viewIe** | **[]string** |  | 
+ **viewIew** | **[]string** |  | 
+ **viewIre** | **[]string** |  | 
+ **viewIsw** | **[]string** |  | 
+ **viewN** | **[]string** |  | 
+ **viewNic** | **[]string** |  | 
+ **viewNie** | **[]string** |  | 
+ **viewNiew** | **[]string** |  | 
+ **viewNire** | **[]string** |  | 
+ **viewNisw** | **[]string** |  | 
+ **viewNre** | **[]string** |  | 
+ **viewRe** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedSavedViewList**](PaginatedSavedViewList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsPartialUpdate
+
+> SavedView ExtrasSavedViewsPartialUpdate(ctx, id).Format(format).PatchedSavedViewRequest(patchedSavedViewRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this saved view.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedSavedViewRequest := *openapiclient.NewPatchedSavedViewRequest() // PatchedSavedViewRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsPartialUpdate(context.Background(), id).Format(format).PatchedSavedViewRequest(patchedSavedViewRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsPartialUpdate`: SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this saved view. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedSavedViewRequest** | [**PatchedSavedViewRequest**](PatchedSavedViewRequest.md) |  | 
+
+### Return type
+
+[**SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsRetrieve
+
+> SavedView ExtrasSavedViewsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this saved view.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsRetrieve`: SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this saved view. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasSavedViewsUpdate
+
+> SavedView ExtrasSavedViewsUpdate(ctx, id).SavedViewRequest(savedViewRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this saved view.
+	savedViewRequest := *openapiclient.NewSavedViewRequest("Name_example", "View_example", *openapiclient.NewBulkWritableSavedViewRequestOwner()) // SavedViewRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSavedViewsUpdate(context.Background(), id).SavedViewRequest(savedViewRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSavedViewsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasSavedViewsUpdate`: SavedView
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasSavedViewsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this saved view. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasSavedViewsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **savedViewRequest** | [**SavedViewRequest**](SavedViewRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**SavedView**](SavedView.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ExtrasScheduledJobsApproveCreate
 
 > ScheduledJob ExtrasScheduledJobsApproveCreate(ctx, id).Force(force).Format(format).Execute()
@@ -22741,11 +26528,11 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	jobModel := []string{"Inner_example"} // []string |  (optional)
-	jobModelIsnull := true // bool |  (optional)
+	jobModelIsnull := true // bool | Job (name or ID) is null (optional)
 	jobModelN := []string{"Inner_example"} // []string |  (optional)
 	jobModelId := []*string{"Inner_example"} // []*string | Job (ID) - Deprecated (use job_model filter) (optional)
-	jobModelIdIsnull := true // bool |  (optional)
-	jobModelIdN := []*string{"Inner_example"} // []*string | Job (ID) - Deprecated (use job_model filter) (optional)
+	jobModelIdIsnull := true // bool | Job (ID) - Deprecated (use job_model filter) is null (optional)
+	jobModelIdN := []*string{"Inner_example"} // []*string | Exclude Job (ID) - Deprecated (use job_model filter) (optional)
 	lastRunAt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastRunAtGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastRunAtGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -22824,11 +26611,11 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **jobModel** | **[]string** |  | 
- **jobModelIsnull** | **bool** |  | 
+ **jobModelIsnull** | **bool** | Job (name or ID) is null | 
  **jobModelN** | **[]string** |  | 
  **jobModelId** | **[]string** | Job (ID) - Deprecated (use job_model filter) | 
- **jobModelIdIsnull** | **bool** |  | 
- **jobModelIdN** | **[]string** | Job (ID) - Deprecated (use job_model filter) | 
+ **jobModelIdIsnull** | **bool** | Job (ID) - Deprecated (use job_model filter) is null | 
+ **jobModelIdN** | **[]string** | Exclude Job (ID) - Deprecated (use job_model filter) | 
  **lastRunAt** | [**[]time.Time**](time.Time.md) |  | 
  **lastRunAtGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastRunAtGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -23770,7 +27557,7 @@ func main() {
 	secret := []string{"Inner_example"} // []string |  (optional)
 	secretN := []string{"Inner_example"} // []string |  (optional)
 	secretId := []string{"Inner_example"} // []string | Secret (ID) - Deprecated (use secret filter) (optional)
-	secretIdN := []string{"Inner_example"} // []string | Secret (ID) - Deprecated (use secret filter) (optional)
+	secretIdN := []string{"Inner_example"} // []string | Exclude Secret (ID) - Deprecated (use secret filter) (optional)
 	secretType := []string{"Inner_example"} // []string |  (optional)
 	secretTypeIc := []string{"Inner_example"} // []string |  (optional)
 	secretTypeIe := []string{"Inner_example"} // []string |  (optional)
@@ -23848,7 +27635,7 @@ Name | Type | Description  | Notes
  **secret** | **[]string** |  | 
  **secretN** | **[]string** |  | 
  **secretId** | **[]string** | Secret (ID) - Deprecated (use secret filter) | 
- **secretIdN** | **[]string** | Secret (ID) - Deprecated (use secret filter) | 
+ **secretIdN** | **[]string** | Exclude Secret (ID) - Deprecated (use secret filter) | 
  **secretType** | **[]string** |  | 
  **secretTypeIc** | **[]string** |  | 
  **secretTypeIe** | **[]string** |  | 
@@ -24450,7 +28237,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasSecretsGroupsList
 
-> PaginatedSecretsGroupList ExtrasSecretsGroupsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedSecretsGroupList ExtrasSecretsGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -24470,6 +28257,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -24477,6 +28267,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -24517,11 +28309,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsGroupsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSecretsGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -24542,6 +28337,9 @@ Other parameters are passed through a pointer to a apiExtrasSecretsGroupsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -24549,6 +28347,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -24589,6 +28389,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -24985,7 +28788,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasSecretsList
 
-> PaginatedSecretList ExtrasSecretsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedSecretList ExtrasSecretsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -25005,6 +28808,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -25012,6 +28818,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -25069,11 +28877,14 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSecretsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -25094,6 +28905,9 @@ Other parameters are passed through a pointer to a apiExtrasSecretsListRequest s
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -25101,6 +28915,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -25158,6 +28974,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -25552,6 +29371,889 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## ExtrasStaticGroupAssociationsBulkDestroy
+
+> ExtrasStaticGroupAssociationsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsBulkPartialUpdate
+
+> []StaticGroupAssociation ExtrasStaticGroupAssociationsBulkPartialUpdate(ctx).PatchedBulkWritableStaticGroupAssociationRequest(patchedBulkWritableStaticGroupAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableStaticGroupAssociationRequest := []openapiclient.PatchedBulkWritableStaticGroupAssociationRequest{*openapiclient.NewPatchedBulkWritableStaticGroupAssociationRequest("Id_example")} // []PatchedBulkWritableStaticGroupAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsBulkPartialUpdate(context.Background()).PatchedBulkWritableStaticGroupAssociationRequest(patchedBulkWritableStaticGroupAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsBulkPartialUpdate`: []StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableStaticGroupAssociationRequest** | [**[]PatchedBulkWritableStaticGroupAssociationRequest**](PatchedBulkWritableStaticGroupAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsBulkUpdate
+
+> []StaticGroupAssociation ExtrasStaticGroupAssociationsBulkUpdate(ctx).BulkWritableStaticGroupAssociationRequest(bulkWritableStaticGroupAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableStaticGroupAssociationRequest := []openapiclient.BulkWritableStaticGroupAssociationRequest{*openapiclient.NewBulkWritableStaticGroupAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableStaticGroupAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsBulkUpdate(context.Background()).BulkWritableStaticGroupAssociationRequest(bulkWritableStaticGroupAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsBulkUpdate`: []StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableStaticGroupAssociationRequest** | [**[]BulkWritableStaticGroupAssociationRequest**](BulkWritableStaticGroupAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsCreate
+
+> StaticGroupAssociation ExtrasStaticGroupAssociationsCreate(ctx).StaticGroupAssociationRequest(staticGroupAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // StaticGroupAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsCreate(context.Background()).StaticGroupAssociationRequest(staticGroupAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsCreate`: StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **staticGroupAssociationRequest** | [**StaticGroupAssociationRequest**](StaticGroupAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsDestroy
+
+> ExtrasStaticGroupAssociationsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsList
+
+> PaginatedStaticGroupAssociationList ExtrasStaticGroupAssociationsList(ctx).AssociatedObjectId(associatedObjectId).AssociatedObjectIdIc(associatedObjectIdIc).AssociatedObjectIdIe(associatedObjectIdIe).AssociatedObjectIdIew(associatedObjectIdIew).AssociatedObjectIdIre(associatedObjectIdIre).AssociatedObjectIdIsw(associatedObjectIdIsw).AssociatedObjectIdN(associatedObjectIdN).AssociatedObjectIdNic(associatedObjectIdNic).AssociatedObjectIdNie(associatedObjectIdNie).AssociatedObjectIdNiew(associatedObjectIdNiew).AssociatedObjectIdNire(associatedObjectIdNire).AssociatedObjectIdNisw(associatedObjectIdNisw).AssociatedObjectIdNre(associatedObjectIdNre).AssociatedObjectIdRe(associatedObjectIdRe).AssociatedObjectType(associatedObjectType).AssociatedObjectTypeN(associatedObjectTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroup(dynamicGroup).DynamicGroupN(dynamicGroupN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	associatedObjectId := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdIc := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdIe := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdIew := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdIre := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdIsw := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdN := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNic := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNie := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNiew := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNire := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNisw := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdNre := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectIdRe := []string{"Inner_example"} // []string |  (optional)
+	associatedObjectType := []int32{int32(123)} // []int32 |  (optional)
+	associatedObjectTypeN := []int32{int32(123)} // []int32 |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroup := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsList(context.Background()).AssociatedObjectId(associatedObjectId).AssociatedObjectIdIc(associatedObjectIdIc).AssociatedObjectIdIe(associatedObjectIdIe).AssociatedObjectIdIew(associatedObjectIdIew).AssociatedObjectIdIre(associatedObjectIdIre).AssociatedObjectIdIsw(associatedObjectIdIsw).AssociatedObjectIdN(associatedObjectIdN).AssociatedObjectIdNic(associatedObjectIdNic).AssociatedObjectIdNie(associatedObjectIdNie).AssociatedObjectIdNiew(associatedObjectIdNiew).AssociatedObjectIdNire(associatedObjectIdNire).AssociatedObjectIdNisw(associatedObjectIdNisw).AssociatedObjectIdNre(associatedObjectIdNre).AssociatedObjectIdRe(associatedObjectIdRe).AssociatedObjectType(associatedObjectType).AssociatedObjectTypeN(associatedObjectTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroup(dynamicGroup).DynamicGroupN(dynamicGroupN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsList`: PaginatedStaticGroupAssociationList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **associatedObjectId** | **[]string** |  | 
+ **associatedObjectIdIc** | **[]string** |  | 
+ **associatedObjectIdIe** | **[]string** |  | 
+ **associatedObjectIdIew** | **[]string** |  | 
+ **associatedObjectIdIre** | **[]string** |  | 
+ **associatedObjectIdIsw** | **[]string** |  | 
+ **associatedObjectIdN** | **[]string** |  | 
+ **associatedObjectIdNic** | **[]string** |  | 
+ **associatedObjectIdNie** | **[]string** |  | 
+ **associatedObjectIdNiew** | **[]string** |  | 
+ **associatedObjectIdNire** | **[]string** |  | 
+ **associatedObjectIdNisw** | **[]string** |  | 
+ **associatedObjectIdNre** | **[]string** |  | 
+ **associatedObjectIdRe** | **[]string** |  | 
+ **associatedObjectType** | **[]int32** |  | 
+ **associatedObjectTypeN** | **[]int32** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroup** | **[]string** |  | 
+ **dynamicGroupN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedStaticGroupAssociationList**](PaginatedStaticGroupAssociationList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsNotesCreate
+
+> Note ExtrasStaticGroupAssociationsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsNotesList
+
+> PaginatedNoteList ExtrasStaticGroupAssociationsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsPartialUpdate
+
+> StaticGroupAssociation ExtrasStaticGroupAssociationsPartialUpdate(ctx, id).Format(format).PatchedStaticGroupAssociationRequest(patchedStaticGroupAssociationRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedStaticGroupAssociationRequest := *openapiclient.NewPatchedStaticGroupAssociationRequest() // PatchedStaticGroupAssociationRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsPartialUpdate(context.Background(), id).Format(format).PatchedStaticGroupAssociationRequest(patchedStaticGroupAssociationRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsPartialUpdate`: StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedStaticGroupAssociationRequest** | [**PatchedStaticGroupAssociationRequest**](PatchedStaticGroupAssociationRequest.md) |  | 
+
+### Return type
+
+[**StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsRetrieve
+
+> StaticGroupAssociation ExtrasStaticGroupAssociationsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsRetrieve`: StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasStaticGroupAssociationsUpdate
+
+> StaticGroupAssociation ExtrasStaticGroupAssociationsUpdate(ctx, id).StaticGroupAssociationRequest(staticGroupAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
+	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // StaticGroupAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStaticGroupAssociationsUpdate(context.Background(), id).StaticGroupAssociationRequest(staticGroupAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStaticGroupAssociationsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasStaticGroupAssociationsUpdate`: StaticGroupAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasStaticGroupAssociationsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this static group association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasStaticGroupAssociationsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **staticGroupAssociationRequest** | [**StaticGroupAssociationRequest**](StaticGroupAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**StaticGroupAssociation**](StaticGroupAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ExtrasStatusesBulkDestroy
 
 > ExtrasStatusesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -25894,7 +30596,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasStatusesList
 
-> PaginatedStatusList ExtrasStatusesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedStatusList ExtrasStatusesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -25928,6 +30630,9 @@ func main() {
 	colorNisw := []string{"Inner_example"} // []string |  (optional)
 	colorNre := []string{"Inner_example"} // []string |  (optional)
 	colorRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -25949,6 +30654,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -25989,11 +30696,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasStatusesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasStatusesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasStatusesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -26028,6 +30738,9 @@ Name | Type | Description  | Notes
  **colorNisw** | **[]string** |  | 
  **colorNre** | **[]string** |  | 
  **colorRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -26049,6 +30762,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -26089,6 +30804,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -26825,7 +31543,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasTagsList
 
-> PaginatedTagList ExtrasTagsList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedTagList ExtrasTagsList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -26859,6 +31577,9 @@ func main() {
 	colorNisw := []string{"Inner_example"} // []string |  (optional)
 	colorNre := []string{"Inner_example"} // []string |  (optional)
 	colorRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -26880,6 +31601,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -26920,11 +31643,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasTagsList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasTagsList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasTagsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -26959,6 +31685,9 @@ Name | Type | Description  | Notes
  **colorNisw** | **[]string** |  | 
  **colorNre** | **[]string** |  | 
  **colorRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -26980,6 +31709,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -27020,6 +31751,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -27756,7 +32490,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasTeamsList
 
-> PaginatedTeamList ExtrasTeamsList(ctx).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedTeamList ExtrasTeamsList(ctx).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
 
 
 
@@ -27813,6 +32547,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	email := []string{"Inner_example"} // []string |  (optional)
 	emailIc := []string{"Inner_example"} // []string |  (optional)
 	emailIe := []string{"Inner_example"} // []string |  (optional)
@@ -27889,7 +32625,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasTeamsList(context.Background()).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasTeamsList(context.Background()).Address(address).AddressIc(addressIc).AddressIe(addressIe).AddressIew(addressIew).AddressIre(addressIre).AddressIsw(addressIsw).AddressN(addressN).AddressNic(addressNic).AddressNie(addressNie).AddressNiew(addressNiew).AddressNire(addressNire).AddressNisw(addressNisw).AddressNre(addressNre).AddressRe(addressRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phone(phone).PhoneIc(phoneIc).PhoneIe(phoneIe).PhoneIew(phoneIew).PhoneIre(phoneIre).PhoneIsw(phoneIsw).PhoneN(phoneN).PhoneNic(phoneNic).PhoneNie(phoneNie).PhoneNiew(phoneNiew).PhoneNire(phoneNire).PhoneNisw(phoneNisw).PhoneNre(phoneNre).PhoneRe(phoneRe).Q(q).SimilarToLocationData(similarToLocationData).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasTeamsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -27947,6 +32683,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **email** | **[]string** |  | 
  **emailIc** | **[]string** |  | 
  **emailIe** | **[]string** |  | 
@@ -28413,6 +33151,711 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## ExtrasUserSavedViewAssociationsBulkDestroy
+
+> ExtrasUserSavedViewAssociationsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsBulkPartialUpdate
+
+> []UserSavedViewAssociation ExtrasUserSavedViewAssociationsBulkPartialUpdate(ctx).PatchedBulkWritableUserSavedViewAssociationRequest(patchedBulkWritableUserSavedViewAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableUserSavedViewAssociationRequest := []openapiclient.PatchedBulkWritableUserSavedViewAssociationRequest{*openapiclient.NewPatchedBulkWritableUserSavedViewAssociationRequest("Id_example")} // []PatchedBulkWritableUserSavedViewAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsBulkPartialUpdate(context.Background()).PatchedBulkWritableUserSavedViewAssociationRequest(patchedBulkWritableUserSavedViewAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsBulkPartialUpdate`: []UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableUserSavedViewAssociationRequest** | [**[]PatchedBulkWritableUserSavedViewAssociationRequest**](PatchedBulkWritableUserSavedViewAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsBulkUpdate
+
+> []UserSavedViewAssociation ExtrasUserSavedViewAssociationsBulkUpdate(ctx).BulkWritableUserSavedViewAssociationRequest(bulkWritableUserSavedViewAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableUserSavedViewAssociationRequest := []openapiclient.BulkWritableUserSavedViewAssociationRequest{*openapiclient.NewBulkWritableUserSavedViewAssociationRequest("Id_example", "ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableUserSavedViewAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsBulkUpdate(context.Background()).BulkWritableUserSavedViewAssociationRequest(bulkWritableUserSavedViewAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsBulkUpdate`: []UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableUserSavedViewAssociationRequest** | [**[]BulkWritableUserSavedViewAssociationRequest**](BulkWritableUserSavedViewAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsCreate
+
+> UserSavedViewAssociation ExtrasUserSavedViewAssociationsCreate(ctx).UserSavedViewAssociationRequest(userSavedViewAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // UserSavedViewAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsCreate(context.Background()).UserSavedViewAssociationRequest(userSavedViewAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsCreate`: UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userSavedViewAssociationRequest** | [**UserSavedViewAssociationRequest**](UserSavedViewAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsDestroy
+
+> ExtrasUserSavedViewAssociationsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this user saved view association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsList
+
+> PaginatedUserSavedViewAssociationList ExtrasUserSavedViewAssociationsList(ctx).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).SavedView(savedView).SavedViewN(savedViewN).Sort(sort).User(user).UserN(userN).ViewName(viewName).ViewNameIc(viewNameIc).ViewNameIe(viewNameIe).ViewNameIew(viewNameIew).ViewNameIre(viewNameIre).ViewNameIsw(viewNameIsw).ViewNameN(viewNameN).ViewNameNic(viewNameNic).ViewNameNie(viewNameNie).ViewNameNiew(viewNameNiew).ViewNameNire(viewNameNire).ViewNameNisw(viewNameNisw).ViewNameNre(viewNameNre).ViewNameRe(viewNameRe).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	savedView := []string{"Inner_example"} // []string |  (optional)
+	savedViewN := []string{"Inner_example"} // []string |  (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	user := []string{"Inner_example"} // []string |  (optional)
+	userN := []string{"Inner_example"} // []string |  (optional)
+	viewName := []string{"Inner_example"} // []string |  (optional)
+	viewNameIc := []string{"Inner_example"} // []string |  (optional)
+	viewNameIe := []string{"Inner_example"} // []string |  (optional)
+	viewNameIew := []string{"Inner_example"} // []string |  (optional)
+	viewNameIre := []string{"Inner_example"} // []string |  (optional)
+	viewNameIsw := []string{"Inner_example"} // []string |  (optional)
+	viewNameN := []string{"Inner_example"} // []string |  (optional)
+	viewNameNic := []string{"Inner_example"} // []string |  (optional)
+	viewNameNie := []string{"Inner_example"} // []string |  (optional)
+	viewNameNiew := []string{"Inner_example"} // []string |  (optional)
+	viewNameNire := []string{"Inner_example"} // []string |  (optional)
+	viewNameNisw := []string{"Inner_example"} // []string |  (optional)
+	viewNameNre := []string{"Inner_example"} // []string |  (optional)
+	viewNameRe := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsList(context.Background()).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).SavedView(savedView).SavedViewN(savedViewN).Sort(sort).User(user).UserN(userN).ViewName(viewName).ViewNameIc(viewNameIc).ViewNameIe(viewNameIe).ViewNameIew(viewNameIew).ViewNameIre(viewNameIre).ViewNameIsw(viewNameIsw).ViewNameN(viewNameN).ViewNameNic(viewNameNic).ViewNameNie(viewNameNie).ViewNameNiew(viewNameNiew).ViewNameNire(viewNameNire).ViewNameNisw(viewNameNisw).ViewNameNre(viewNameNre).ViewNameRe(viewNameRe).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsList`: PaginatedUserSavedViewAssociationList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **savedView** | **[]string** |  | 
+ **savedViewN** | **[]string** |  | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **user** | **[]string** |  | 
+ **userN** | **[]string** |  | 
+ **viewName** | **[]string** |  | 
+ **viewNameIc** | **[]string** |  | 
+ **viewNameIe** | **[]string** |  | 
+ **viewNameIew** | **[]string** |  | 
+ **viewNameIre** | **[]string** |  | 
+ **viewNameIsw** | **[]string** |  | 
+ **viewNameN** | **[]string** |  | 
+ **viewNameNic** | **[]string** |  | 
+ **viewNameNie** | **[]string** |  | 
+ **viewNameNiew** | **[]string** |  | 
+ **viewNameNire** | **[]string** |  | 
+ **viewNameNisw** | **[]string** |  | 
+ **viewNameNre** | **[]string** |  | 
+ **viewNameRe** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedUserSavedViewAssociationList**](PaginatedUserSavedViewAssociationList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsPartialUpdate
+
+> UserSavedViewAssociation ExtrasUserSavedViewAssociationsPartialUpdate(ctx, id).Format(format).PatchedUserSavedViewAssociationRequest(patchedUserSavedViewAssociationRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedUserSavedViewAssociationRequest := *openapiclient.NewPatchedUserSavedViewAssociationRequest() // PatchedUserSavedViewAssociationRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsPartialUpdate(context.Background(), id).Format(format).PatchedUserSavedViewAssociationRequest(patchedUserSavedViewAssociationRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsPartialUpdate`: UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this user saved view association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedUserSavedViewAssociationRequest** | [**PatchedUserSavedViewAssociationRequest**](PatchedUserSavedViewAssociationRequest.md) |  | 
+
+### Return type
+
+[**UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsRetrieve
+
+> UserSavedViewAssociation ExtrasUserSavedViewAssociationsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsRetrieve`: UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this user saved view association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasUserSavedViewAssociationsUpdate
+
+> UserSavedViewAssociation ExtrasUserSavedViewAssociationsUpdate(ctx, id).UserSavedViewAssociationRequest(userSavedViewAssociationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
+	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // UserSavedViewAssociationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasUserSavedViewAssociationsUpdate(context.Background(), id).UserSavedViewAssociationRequest(userSavedViewAssociationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasUserSavedViewAssociationsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasUserSavedViewAssociationsUpdate`: UserSavedViewAssociation
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasUserSavedViewAssociationsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this user saved view association. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasUserSavedViewAssociationsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **userSavedViewAssociationRequest** | [**UserSavedViewAssociationRequest**](UserSavedViewAssociationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**UserSavedViewAssociation**](UserSavedViewAssociation.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ExtrasWebhooksBulkDestroy
 
 > ExtrasWebhooksBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -28755,7 +34198,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasWebhooksList
 
-> PaginatedWebhookList ExtrasWebhooksList(ctx).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PayloadUrl(payloadUrl).PayloadUrlIc(payloadUrlIc).PayloadUrlIe(payloadUrlIe).PayloadUrlIew(payloadUrlIew).PayloadUrlIre(payloadUrlIre).PayloadUrlIsw(payloadUrlIsw).PayloadUrlN(payloadUrlN).PayloadUrlNic(payloadUrlNic).PayloadUrlNie(payloadUrlNie).PayloadUrlNiew(payloadUrlNiew).PayloadUrlNire(payloadUrlNire).PayloadUrlNisw(payloadUrlNisw).PayloadUrlNre(payloadUrlNre).PayloadUrlRe(payloadUrlRe).Q(q).Sort(sort).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
+> PaginatedWebhookList ExtrasWebhooksList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PayloadUrl(payloadUrl).PayloadUrlIc(payloadUrlIc).PayloadUrlIe(payloadUrlIe).PayloadUrlIew(payloadUrlIew).PayloadUrlIre(payloadUrlIre).PayloadUrlIsw(payloadUrlIsw).PayloadUrlN(payloadUrlN).PayloadUrlNic(payloadUrlNic).PayloadUrlNie(payloadUrlNie).PayloadUrlNiew(payloadUrlNiew).PayloadUrlNire(payloadUrlNire).PayloadUrlNisw(payloadUrlNisw).PayloadUrlNre(payloadUrlNre).PayloadUrlRe(payloadUrlRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
 
 
 
@@ -28774,6 +34217,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -28788,6 +34234,8 @@ func main() {
 	contentTypesNisw := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesNre := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesRe := []int32{int32(123)} // []int32 |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -28836,6 +34284,9 @@ func main() {
 	payloadUrlRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	typeCreate := true // bool |  (optional)
 	typeDelete := true // bool |  (optional)
 	typeUpdate := true // bool |  (optional)
@@ -28843,7 +34294,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasWebhooksList(context.Background()).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PayloadUrl(payloadUrl).PayloadUrlIc(payloadUrlIc).PayloadUrlIe(payloadUrlIe).PayloadUrlIew(payloadUrlIew).PayloadUrlIre(payloadUrlIre).PayloadUrlIsw(payloadUrlIsw).PayloadUrlN(payloadUrlN).PayloadUrlNic(payloadUrlNic).PayloadUrlNie(payloadUrlNie).PayloadUrlNiew(payloadUrlNiew).PayloadUrlNire(payloadUrlNire).PayloadUrlNisw(payloadUrlNisw).PayloadUrlNre(payloadUrlNre).PayloadUrlRe(payloadUrlRe).Q(q).Sort(sort).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasWebhooksList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PayloadUrl(payloadUrl).PayloadUrlIc(payloadUrlIc).PayloadUrlIe(payloadUrlIe).PayloadUrlIew(payloadUrlIew).PayloadUrlIre(payloadUrlIre).PayloadUrlIsw(payloadUrlIsw).PayloadUrlN(payloadUrlN).PayloadUrlNic(payloadUrlNic).PayloadUrlNie(payloadUrlNie).PayloadUrlNiew(payloadUrlNiew).PayloadUrlNire(payloadUrlNire).PayloadUrlNisw(payloadUrlNisw).PayloadUrlNre(payloadUrlNre).PayloadUrlRe(payloadUrlRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TypeCreate(typeCreate).TypeDelete(typeDelete).TypeUpdate(typeUpdate).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasWebhooksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -28864,6 +34315,9 @@ Other parameters are passed through a pointer to a apiExtrasWebhooksListRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -28878,6 +34332,8 @@ Name | Type | Description  | Notes
  **contentTypesNisw** | **[]int32** |  | 
  **contentTypesNre** | **[]int32** |  | 
  **contentTypesRe** | **[]int32** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -28926,6 +34382,9 @@ Name | Type | Description  | Notes
  **payloadUrlRe** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **typeCreate** | **bool** |  | 
  **typeDelete** | **bool** |  | 
  **typeUpdate** | **bool** |  | 

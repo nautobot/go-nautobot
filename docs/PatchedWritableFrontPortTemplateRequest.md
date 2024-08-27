@@ -8,8 +8,9 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | Pointer to [**PortTypeChoices**](PortTypeChoices.md) |  | [optional] 
-**RearPortPosition** | Pointer to **int32** |  | [optional] [default to 1]
-**DeviceType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**RearPortPosition** | Pointer to **int32** |  | [optional] 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **RearPortTemplate** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -160,20 +161,20 @@ HasRearPortPosition returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *PatchedWritableFrontPortTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableFrontPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedWritableFrontPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableFrontPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedWritableFrontPortTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableFrontPortTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -183,6 +184,51 @@ SetDeviceType sets DeviceType field to given value.
 
 HasDeviceType returns a boolean if a field has been set.
 
+### SetDeviceTypeNil
+
+`func (o *PatchedWritableFrontPortTemplateRequest) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *PatchedWritableFrontPortTemplateRequest) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *PatchedWritableFrontPortTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *PatchedWritableFrontPortTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *PatchedWritableFrontPortTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *PatchedWritableFrontPortTemplateRequest) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *PatchedWritableFrontPortTemplateRequest) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *PatchedWritableFrontPortTemplateRequest) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetRearPortTemplate
 
 `func (o *PatchedWritableFrontPortTemplateRequest) GetRearPortTemplate() BulkWritableCableRequestStatus`

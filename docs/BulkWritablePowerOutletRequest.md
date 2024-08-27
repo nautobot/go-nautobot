@@ -10,17 +10,18 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **PowerPort** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritablePowerOutletRequest
 
-`func NewBulkWritablePowerOutletRequest(id string, name string, device BulkWritableCableRequestStatus, ) *BulkWritablePowerOutletRequest`
+`func NewBulkWritablePowerOutletRequest(id string, name string, ) *BulkWritablePowerOutletRequest`
 
 NewBulkWritablePowerOutletRequest instantiates a new BulkWritablePowerOutletRequest object
 This constructor will assign default values to properties that have it defined,
@@ -177,24 +178,74 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *BulkWritablePowerOutletRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *BulkWritablePowerOutletRequest) GetDevice() BulkWritableCircuitRequestTenant`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *BulkWritablePowerOutletRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritablePowerOutletRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *BulkWritablePowerOutletRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritablePowerOutletRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
 
 SetDevice sets Device field to given value.
 
+### HasDevice
 
+`func (o *BulkWritablePowerOutletRequest) HasDevice() bool`
+
+HasDevice returns a boolean if a field has been set.
+
+### SetDeviceNil
+
+`func (o *BulkWritablePowerOutletRequest) SetDeviceNil(b bool)`
+
+ SetDeviceNil sets the value for Device to be an explicit nil
+
+### UnsetDevice
+`func (o *BulkWritablePowerOutletRequest) UnsetDevice()`
+
+UnsetDevice ensures that no value is present for Device, not even an explicit nil
+### GetModule
+
+`func (o *BulkWritablePowerOutletRequest) GetModule() BulkWritableCircuitRequestTenant`
+
+GetModule returns the Module field if non-nil, zero value otherwise.
+
+### GetModuleOk
+
+`func (o *BulkWritablePowerOutletRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModule
+
+`func (o *BulkWritablePowerOutletRequest) SetModule(v BulkWritableCircuitRequestTenant)`
+
+SetModule sets Module field to given value.
+
+### HasModule
+
+`func (o *BulkWritablePowerOutletRequest) HasModule() bool`
+
+HasModule returns a boolean if a field has been set.
+
+### SetModuleNil
+
+`func (o *BulkWritablePowerOutletRequest) SetModuleNil(b bool)`
+
+ SetModuleNil sets the value for Module to be an explicit nil
+
+### UnsetModule
+`func (o *BulkWritablePowerOutletRequest) UnsetModule()`
+
+UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetPowerPort
 
 `func (o *BulkWritablePowerOutletRequest) GetPowerPort() BulkWritableCircuitRequestTenant`
@@ -230,31 +281,6 @@ HasPowerPort returns a boolean if a field has been set.
 `func (o *BulkWritablePowerOutletRequest) UnsetPowerPort()`
 
 UnsetPowerPort ensures that no value is present for PowerPort, not even an explicit nil
-### GetTags
-
-`func (o *BulkWritablePowerOutletRequest) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *BulkWritablePowerOutletRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *BulkWritablePowerOutletRequest) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *BulkWritablePowerOutletRequest) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetCustomFields
 
 `func (o *BulkWritablePowerOutletRequest) GetCustomFields() map[string]interface{}`
@@ -304,6 +330,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *BulkWritablePowerOutletRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *BulkWritablePowerOutletRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *BulkWritablePowerOutletRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *BulkWritablePowerOutletRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *BulkWritablePowerOutletRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

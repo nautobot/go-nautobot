@@ -6,11 +6,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **ContentType** | Pointer to **string** |  | [optional] 
-**Name** | Pointer to **string** | Dynamic Group name | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Filter** | Pointer to **map[string]interface{}** | A JSON-encoded dictionary of filter parameters for group membership | [optional] 
+**GroupType** | Pointer to [**GroupTypeEnum**](GroupTypeEnum.md) |  | [optional] 
+**Filter** | Pointer to **interface{}** | A JSON-encoded dictionary of filter parameters defining membership of this group | [optional] 
+**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -126,22 +129,47 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetGroupType
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetGroupType() GroupTypeEnum`
+
+GetGroupType returns the GroupType field if non-nil, zero value otherwise.
+
+### GetGroupTypeOk
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetGroupTypeOk() (*GroupTypeEnum, bool)`
+
+GetGroupTypeOk returns a tuple with the GroupType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGroupType
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetGroupType(v GroupTypeEnum)`
+
+SetGroupType sets GroupType field to given value.
+
+### HasGroupType
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) HasGroupType() bool`
+
+HasGroupType returns a boolean if a field has been set.
+
 ### GetFilter
 
-`func (o *PatchedBulkWritableDynamicGroupRequest) GetFilter() map[string]interface{}`
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetFilter() interface{}`
 
 GetFilter returns the Filter field if non-nil, zero value otherwise.
 
 ### GetFilterOk
 
-`func (o *PatchedBulkWritableDynamicGroupRequest) GetFilterOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetFilterOk() (*interface{}, bool)`
 
 GetFilterOk returns a tuple with the Filter field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFilter
 
-`func (o *PatchedBulkWritableDynamicGroupRequest) SetFilter(v map[string]interface{})`
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetFilter(v interface{})`
 
 SetFilter sets Filter field to given value.
 
@@ -151,6 +179,51 @@ SetFilter sets Filter field to given value.
 
 HasFilter returns a boolean if a field has been set.
 
+### SetFilterNil
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetFilterNil(b bool)`
+
+ SetFilterNil sets the value for Filter to be an explicit nil
+
+### UnsetFilter
+`func (o *PatchedBulkWritableDynamicGroupRequest) UnsetFilter()`
+
+UnsetFilter ensures that no value is present for Filter, not even an explicit nil
+### GetTenant
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetTenant() BulkWritableCircuitRequestTenant`
+
+GetTenant returns the Tenant field if non-nil, zero value otherwise.
+
+### GetTenantOk
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTenant
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+
+SetTenant sets Tenant field to given value.
+
+### HasTenant
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) HasTenant() bool`
+
+HasTenant returns a boolean if a field has been set.
+
+### SetTenantNil
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetTenantNil(b bool)`
+
+ SetTenantNil sets the value for Tenant to be an explicit nil
+
+### UnsetTenant
+`func (o *PatchedBulkWritableDynamicGroupRequest) UnsetTenant()`
+
+UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedBulkWritableDynamicGroupRequest) GetCustomFields() map[string]interface{}`
@@ -200,6 +273,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *PatchedBulkWritableDynamicGroupRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedBulkWritableDynamicGroupRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** | A helpful description for this field. | [optional] 
 **Required** | Pointer to **bool** | If true, this field is required when creating new objects or editing an existing object. | [optional] 
 **FilterLogic** | Pointer to [**FilterLogicEnum**](FilterLogicEnum.md) | Loose matches any instance of a given string; Exact matches the entire field. | [optional] 
-**Default** | Pointer to **map[string]interface{}** | Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. \&quot;Foo\&quot;). | [optional] 
+**Default** | Pointer to **interface{}** | Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. \&quot;Foo\&quot;). | [optional] 
 **Weight** | Pointer to **int32** | Fields with higher weights appear lower in a form. | [optional] 
 **ValidationMinimum** | Pointer to **NullableInt64** | Minimum allowed value (for numeric fields) or length (for text fields). | [optional] 
 **ValidationMaximum** | Pointer to **NullableInt64** | Maximum allowed value (for numeric fields) or length (for text fields). | [optional] 
@@ -230,20 +230,20 @@ HasFilterLogic returns a boolean if a field has been set.
 
 ### GetDefault
 
-`func (o *WritableCustomFieldRequest) GetDefault() map[string]interface{}`
+`func (o *WritableCustomFieldRequest) GetDefault() interface{}`
 
 GetDefault returns the Default field if non-nil, zero value otherwise.
 
 ### GetDefaultOk
 
-`func (o *WritableCustomFieldRequest) GetDefaultOk() (*map[string]interface{}, bool)`
+`func (o *WritableCustomFieldRequest) GetDefaultOk() (*interface{}, bool)`
 
 GetDefaultOk returns a tuple with the Default field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDefault
 
-`func (o *WritableCustomFieldRequest) SetDefault(v map[string]interface{})`
+`func (o *WritableCustomFieldRequest) SetDefault(v interface{})`
 
 SetDefault sets Default field to given value.
 

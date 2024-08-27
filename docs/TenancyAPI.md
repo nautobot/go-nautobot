@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ## TenancyTenantGroupsList
 
-> PaginatedTenantGroupList TenancyTenantGroupsList(ctx).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasChildren(hasChildren).HasTenants(hasTenants).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Tenants(tenants).TenantsIsnull(tenantsIsnull).TenantsN(tenantsN).Depth(depth).Execute()
+> PaginatedTenantGroupList TenancyTenantGroupsList(ctx).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasTenants(hasTenants).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenants(tenants).TenantsIsnull(tenantsIsnull).TenantsN(tenantsN).Depth(depth).Execute()
 
 
 
@@ -392,8 +392,11 @@ import (
 
 func main() {
 	children := []string{"Inner_example"} // []string |  (optional)
-	childrenIsnull := true // bool |  (optional)
+	childrenIsnull := true // bool | Children (name or ID) is null (optional)
 	childrenN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -415,6 +418,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasChildren := true // bool | Has children (optional)
 	hasTenants := true // bool | Has tenants (optional)
@@ -456,18 +461,21 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent tenant group (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenants := []string{"Inner_example"} // []string |  (optional)
-	tenantsIsnull := true // bool |  (optional)
+	tenantsIsnull := true // bool | Tenants (name or ID) is null (optional)
 	tenantsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.TenancyAPI.TenancyTenantGroupsList(context.Background()).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasChildren(hasChildren).HasTenants(hasTenants).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Tenants(tenants).TenantsIsnull(tenantsIsnull).TenantsN(tenantsN).Depth(depth).Execute()
+	resp, r, err := apiClient.TenancyAPI.TenancyTenantGroupsList(context.Background()).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasTenants(hasTenants).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenants(tenants).TenantsIsnull(tenantsIsnull).TenantsN(tenantsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `TenancyAPI.TenancyTenantGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -489,8 +497,11 @@ Other parameters are passed through a pointer to a apiTenancyTenantGroupsListReq
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **children** | **[]string** |  | 
- **childrenIsnull** | **bool** |  | 
+ **childrenIsnull** | **bool** | Children (name or ID) is null | 
  **childrenN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -512,6 +523,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasChildren** | **bool** | Has children | 
  **hasTenants** | **bool** | Has tenants | 
@@ -553,12 +566,15 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent tenant group (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenants** | **[]string** |  | 
- **tenantsIsnull** | **bool** |  | 
+ **tenantsIsnull** | **bool** | Tenants (name or ID) is null | 
  **tenantsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -1296,7 +1312,7 @@ Name | Type | Description  | Notes
 
 ## TenancyTenantsList
 
-> PaginatedTenantList TenancyTenantsList(ctx).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasCircuits(hasCircuits).HasClusters(hasClusters).HasDevices(hasDevices).HasIpAddresses(hasIpAddresses).HasLocations(hasLocations).HasPrefixes(hasPrefixes).HasRackReservations(hasRackReservations).HasRacks(hasRacks).HasRouteTargets(hasRouteTargets).HasVirtualMachines(hasVirtualMachines).HasVlans(hasVlans).HasVrfs(hasVrfs).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).IpAddressesIsnull(ipAddressesIsnull).IpAddressesN(ipAddressesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Locations(locations).LocationsIsnull(locationsIsnull).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).RouteTargets(routeTargets).RouteTargetsIsnull(routeTargetsIsnull).RouteTargetsN(routeTargetsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
+> PaginatedTenantList TenancyTenantsList(ctx).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuits(hasCircuits).HasClusters(hasClusters).HasDevices(hasDevices).HasIpAddresses(hasIpAddresses).HasLocations(hasLocations).HasPrefixes(hasPrefixes).HasRackReservations(hasRackReservations).HasRacks(hasRacks).HasRouteTargets(hasRouteTargets).HasVirtualMachines(hasVirtualMachines).HasVlans(hasVlans).HasVrfs(hasVrfs).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).IpAddressesIsnull(ipAddressesIsnull).IpAddressesN(ipAddressesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Locations(locations).LocationsIsnull(locationsIsnull).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).RouteTargets(routeTargets).RouteTargetsIsnull(routeTargetsIsnull).RouteTargetsN(routeTargetsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
 
 
 
@@ -1317,10 +1333,10 @@ import (
 
 func main() {
 	circuits := []string{"Inner_example"} // []string | Circuits (ID) (optional)
-	circuitsIsnull := true // bool |  (optional)
-	circuitsN := []string{"Inner_example"} // []string | Circuits (ID) (optional)
+	circuitsIsnull := true // bool | Circuits (ID) is null (optional)
+	circuitsN := []string{"Inner_example"} // []string | Exclude Circuits (ID) (optional)
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool |  (optional)
+	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
@@ -1336,6 +1352,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -1358,8 +1377,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool |  (optional)
+	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCircuits := true // bool | Has circuits (optional)
 	hasClusters := true // bool | Has clusters (optional)
@@ -1388,8 +1409,8 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	ipAddresses := []string{"Inner_example"} // []string | IP addresses (ID) (optional)
-	ipAddressesIsnull := true // bool |  (optional)
-	ipAddressesN := []string{"Inner_example"} // []string | IP addresses (ID) (optional)
+	ipAddressesIsnull := true // bool | IP addresses (ID) is null (optional)
+	ipAddressesN := []string{"Inner_example"} // []string | Exclude IP addresses (ID) (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -1399,7 +1420,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	locations := []string{"Inner_example"} // []string |  (optional)
-	locationsIsnull := true // bool |  (optional)
+	locationsIsnull := true // bool | Locations (names and/or IDs) is null (optional)
 	locationsN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -1417,39 +1438,42 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	prefixes := []string{"Inner_example"} // []string | Prefixes (ID) (optional)
-	prefixesIsnull := true // bool |  (optional)
-	prefixesN := []string{"Inner_example"} // []string | Prefixes (ID) (optional)
+	prefixesIsnull := true // bool | Prefixes (ID) is null (optional)
+	prefixesN := []string{"Inner_example"} // []string | Exclude Prefixes (ID) (optional)
 	q := "q_example" // string | Search (optional)
 	rackReservations := []string{"Inner_example"} // []string | Rack reservations (ID) (optional)
-	rackReservationsIsnull := true // bool |  (optional)
-	rackReservationsN := []string{"Inner_example"} // []string | Rack reservations (ID) (optional)
+	rackReservationsIsnull := true // bool | Rack reservations (ID) is null (optional)
+	rackReservationsN := []string{"Inner_example"} // []string | Exclude Rack reservations (ID) (optional)
 	racks := []string{"Inner_example"} // []string |  (optional)
-	racksIsnull := true // bool |  (optional)
+	racksIsnull := true // bool | Racks (name or ID) is null (optional)
 	racksN := []string{"Inner_example"} // []string |  (optional)
 	routeTargets := []string{"Inner_example"} // []string |  (optional)
-	routeTargetsIsnull := true // bool |  (optional)
+	routeTargetsIsnull := true // bool | Route targets (name or ID) is null (optional)
 	routeTargetsN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
-	virtualMachinesIsnull := true // bool |  (optional)
+	virtualMachinesIsnull := true // bool | Virtual machines (name or ID) is null (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	vlans := []string{"Inner_example"} // []string | VLANs (ID) (optional)
-	vlansIsnull := true // bool |  (optional)
-	vlansN := []string{"Inner_example"} // []string | VLANs (ID) (optional)
+	vlansIsnull := true // bool | VLANs (ID) is null (optional)
+	vlansN := []string{"Inner_example"} // []string | Exclude VLANs (ID) (optional)
 	vrfs := []string{"Inner_example"} // []string |  (optional)
-	vrfsIsnull := true // bool |  (optional)
+	vrfsIsnull := true // bool | VRFs (name or ID) is null (optional)
 	vrfsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.TenancyAPI.TenancyTenantsList(context.Background()).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasCircuits(hasCircuits).HasClusters(hasClusters).HasDevices(hasDevices).HasIpAddresses(hasIpAddresses).HasLocations(hasLocations).HasPrefixes(hasPrefixes).HasRackReservations(hasRackReservations).HasRacks(hasRacks).HasRouteTargets(hasRouteTargets).HasVirtualMachines(hasVirtualMachines).HasVlans(hasVlans).HasVrfs(hasVrfs).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).IpAddressesIsnull(ipAddressesIsnull).IpAddressesN(ipAddressesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Locations(locations).LocationsIsnull(locationsIsnull).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).RouteTargets(routeTargets).RouteTargetsIsnull(routeTargetsIsnull).RouteTargetsN(routeTargetsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
+	resp, r, err := apiClient.TenancyAPI.TenancyTenantsList(context.Background()).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuits(hasCircuits).HasClusters(hasClusters).HasDevices(hasDevices).HasIpAddresses(hasIpAddresses).HasLocations(hasLocations).HasPrefixes(hasPrefixes).HasRackReservations(hasRackReservations).HasRacks(hasRacks).HasRouteTargets(hasRouteTargets).HasVirtualMachines(hasVirtualMachines).HasVlans(hasVlans).HasVrfs(hasVrfs).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).IpAddressesIsnull(ipAddressesIsnull).IpAddressesN(ipAddressesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Locations(locations).LocationsIsnull(locationsIsnull).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).RouteTargets(routeTargets).RouteTargetsIsnull(routeTargetsIsnull).RouteTargetsN(routeTargetsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `TenancyAPI.TenancyTenantsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1471,10 +1495,10 @@ Other parameters are passed through a pointer to a apiTenancyTenantsListRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **circuits** | **[]string** | Circuits (ID) | 
- **circuitsIsnull** | **bool** |  | 
- **circuitsN** | **[]string** | Circuits (ID) | 
+ **circuitsIsnull** | **bool** | Circuits (ID) is null | 
+ **circuitsN** | **[]string** | Exclude Circuits (ID) | 
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** |  | 
+ **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
  **clustersN** | **[]string** |  | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
@@ -1490,6 +1514,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1512,8 +1539,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** |  | 
+ **devicesIsnull** | **bool** | Devices (name or ID) is null | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCircuits** | **bool** | Has circuits | 
  **hasClusters** | **bool** | Has clusters | 
@@ -1542,8 +1571,8 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **ipAddresses** | **[]string** | IP addresses (ID) | 
- **ipAddressesIsnull** | **bool** |  | 
- **ipAddressesN** | **[]string** | IP addresses (ID) | 
+ **ipAddressesIsnull** | **bool** | IP addresses (ID) is null | 
+ **ipAddressesN** | **[]string** | Exclude IP addresses (ID) | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1553,7 +1582,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **locations** | **[]string** |  | 
- **locationsIsnull** | **bool** |  | 
+ **locationsIsnull** | **bool** | Locations (names and/or IDs) is null | 
  **locationsN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -1571,33 +1600,36 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **prefixes** | **[]string** | Prefixes (ID) | 
- **prefixesIsnull** | **bool** |  | 
- **prefixesN** | **[]string** | Prefixes (ID) | 
+ **prefixesIsnull** | **bool** | Prefixes (ID) is null | 
+ **prefixesN** | **[]string** | Exclude Prefixes (ID) | 
  **q** | **string** | Search | 
  **rackReservations** | **[]string** | Rack reservations (ID) | 
- **rackReservationsIsnull** | **bool** |  | 
- **rackReservationsN** | **[]string** | Rack reservations (ID) | 
+ **rackReservationsIsnull** | **bool** | Rack reservations (ID) is null | 
+ **rackReservationsN** | **[]string** | Exclude Rack reservations (ID) | 
  **racks** | **[]string** |  | 
- **racksIsnull** | **bool** |  | 
+ **racksIsnull** | **bool** | Racks (name or ID) is null | 
  **racksN** | **[]string** |  | 
  **routeTargets** | **[]string** |  | 
- **routeTargetsIsnull** | **bool** |  | 
+ **routeTargetsIsnull** | **bool** | Route targets (name or ID) is null | 
  **routeTargetsN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **virtualMachines** | **[]string** |  | 
- **virtualMachinesIsnull** | **bool** |  | 
+ **virtualMachinesIsnull** | **bool** | Virtual machines (name or ID) is null | 
  **virtualMachinesN** | **[]string** |  | 
  **vlans** | **[]string** | VLANs (ID) | 
- **vlansIsnull** | **bool** |  | 
- **vlansN** | **[]string** | VLANs (ID) | 
+ **vlansIsnull** | **bool** | VLANs (ID) is null | 
+ **vlansN** | **[]string** | Exclude VLANs (ID) | 
  **vrfs** | **[]string** |  | 
- **vrfsIsnull** | **bool** |  | 
+ **vrfsIsnull** | **bool** | VRFs (name or ID) is null | 
  **vrfsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 

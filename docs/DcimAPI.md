@@ -274,6 +274,50 @@ Method | HTTP request | Description
 [**DcimManufacturersPartialUpdate**](DcimAPI.md#DcimManufacturersPartialUpdate) | **Patch** /dcim/manufacturers/{id}/ | 
 [**DcimManufacturersRetrieve**](DcimAPI.md#DcimManufacturersRetrieve) | **Get** /dcim/manufacturers/{id}/ | 
 [**DcimManufacturersUpdate**](DcimAPI.md#DcimManufacturersUpdate) | **Put** /dcim/manufacturers/{id}/ | 
+[**DcimModuleBayTemplatesBulkDestroy**](DcimAPI.md#DcimModuleBayTemplatesBulkDestroy) | **Delete** /dcim/module-bay-templates/ | 
+[**DcimModuleBayTemplatesBulkPartialUpdate**](DcimAPI.md#DcimModuleBayTemplatesBulkPartialUpdate) | **Patch** /dcim/module-bay-templates/ | 
+[**DcimModuleBayTemplatesBulkUpdate**](DcimAPI.md#DcimModuleBayTemplatesBulkUpdate) | **Put** /dcim/module-bay-templates/ | 
+[**DcimModuleBayTemplatesCreate**](DcimAPI.md#DcimModuleBayTemplatesCreate) | **Post** /dcim/module-bay-templates/ | 
+[**DcimModuleBayTemplatesDestroy**](DcimAPI.md#DcimModuleBayTemplatesDestroy) | **Delete** /dcim/module-bay-templates/{id}/ | 
+[**DcimModuleBayTemplatesList**](DcimAPI.md#DcimModuleBayTemplatesList) | **Get** /dcim/module-bay-templates/ | 
+[**DcimModuleBayTemplatesNotesCreate**](DcimAPI.md#DcimModuleBayTemplatesNotesCreate) | **Post** /dcim/module-bay-templates/{id}/notes/ | 
+[**DcimModuleBayTemplatesNotesList**](DcimAPI.md#DcimModuleBayTemplatesNotesList) | **Get** /dcim/module-bay-templates/{id}/notes/ | 
+[**DcimModuleBayTemplatesPartialUpdate**](DcimAPI.md#DcimModuleBayTemplatesPartialUpdate) | **Patch** /dcim/module-bay-templates/{id}/ | 
+[**DcimModuleBayTemplatesRetrieve**](DcimAPI.md#DcimModuleBayTemplatesRetrieve) | **Get** /dcim/module-bay-templates/{id}/ | 
+[**DcimModuleBayTemplatesUpdate**](DcimAPI.md#DcimModuleBayTemplatesUpdate) | **Put** /dcim/module-bay-templates/{id}/ | 
+[**DcimModuleBaysBulkDestroy**](DcimAPI.md#DcimModuleBaysBulkDestroy) | **Delete** /dcim/module-bays/ | 
+[**DcimModuleBaysBulkPartialUpdate**](DcimAPI.md#DcimModuleBaysBulkPartialUpdate) | **Patch** /dcim/module-bays/ | 
+[**DcimModuleBaysBulkUpdate**](DcimAPI.md#DcimModuleBaysBulkUpdate) | **Put** /dcim/module-bays/ | 
+[**DcimModuleBaysCreate**](DcimAPI.md#DcimModuleBaysCreate) | **Post** /dcim/module-bays/ | 
+[**DcimModuleBaysDestroy**](DcimAPI.md#DcimModuleBaysDestroy) | **Delete** /dcim/module-bays/{id}/ | 
+[**DcimModuleBaysList**](DcimAPI.md#DcimModuleBaysList) | **Get** /dcim/module-bays/ | 
+[**DcimModuleBaysNotesCreate**](DcimAPI.md#DcimModuleBaysNotesCreate) | **Post** /dcim/module-bays/{id}/notes/ | 
+[**DcimModuleBaysNotesList**](DcimAPI.md#DcimModuleBaysNotesList) | **Get** /dcim/module-bays/{id}/notes/ | 
+[**DcimModuleBaysPartialUpdate**](DcimAPI.md#DcimModuleBaysPartialUpdate) | **Patch** /dcim/module-bays/{id}/ | 
+[**DcimModuleBaysRetrieve**](DcimAPI.md#DcimModuleBaysRetrieve) | **Get** /dcim/module-bays/{id}/ | 
+[**DcimModuleBaysUpdate**](DcimAPI.md#DcimModuleBaysUpdate) | **Put** /dcim/module-bays/{id}/ | 
+[**DcimModuleTypesBulkDestroy**](DcimAPI.md#DcimModuleTypesBulkDestroy) | **Delete** /dcim/module-types/ | 
+[**DcimModuleTypesBulkPartialUpdate**](DcimAPI.md#DcimModuleTypesBulkPartialUpdate) | **Patch** /dcim/module-types/ | 
+[**DcimModuleTypesBulkUpdate**](DcimAPI.md#DcimModuleTypesBulkUpdate) | **Put** /dcim/module-types/ | 
+[**DcimModuleTypesCreate**](DcimAPI.md#DcimModuleTypesCreate) | **Post** /dcim/module-types/ | 
+[**DcimModuleTypesDestroy**](DcimAPI.md#DcimModuleTypesDestroy) | **Delete** /dcim/module-types/{id}/ | 
+[**DcimModuleTypesList**](DcimAPI.md#DcimModuleTypesList) | **Get** /dcim/module-types/ | 
+[**DcimModuleTypesNotesCreate**](DcimAPI.md#DcimModuleTypesNotesCreate) | **Post** /dcim/module-types/{id}/notes/ | 
+[**DcimModuleTypesNotesList**](DcimAPI.md#DcimModuleTypesNotesList) | **Get** /dcim/module-types/{id}/notes/ | 
+[**DcimModuleTypesPartialUpdate**](DcimAPI.md#DcimModuleTypesPartialUpdate) | **Patch** /dcim/module-types/{id}/ | 
+[**DcimModuleTypesRetrieve**](DcimAPI.md#DcimModuleTypesRetrieve) | **Get** /dcim/module-types/{id}/ | 
+[**DcimModuleTypesUpdate**](DcimAPI.md#DcimModuleTypesUpdate) | **Put** /dcim/module-types/{id}/ | 
+[**DcimModulesBulkDestroy**](DcimAPI.md#DcimModulesBulkDestroy) | **Delete** /dcim/modules/ | 
+[**DcimModulesBulkPartialUpdate**](DcimAPI.md#DcimModulesBulkPartialUpdate) | **Patch** /dcim/modules/ | 
+[**DcimModulesBulkUpdate**](DcimAPI.md#DcimModulesBulkUpdate) | **Put** /dcim/modules/ | 
+[**DcimModulesCreate**](DcimAPI.md#DcimModulesCreate) | **Post** /dcim/modules/ | 
+[**DcimModulesDestroy**](DcimAPI.md#DcimModulesDestroy) | **Delete** /dcim/modules/{id}/ | 
+[**DcimModulesList**](DcimAPI.md#DcimModulesList) | **Get** /dcim/modules/ | 
+[**DcimModulesNotesCreate**](DcimAPI.md#DcimModulesNotesCreate) | **Post** /dcim/modules/{id}/notes/ | 
+[**DcimModulesNotesList**](DcimAPI.md#DcimModulesNotesList) | **Get** /dcim/modules/{id}/notes/ | 
+[**DcimModulesPartialUpdate**](DcimAPI.md#DcimModulesPartialUpdate) | **Patch** /dcim/modules/{id}/ | 
+[**DcimModulesRetrieve**](DcimAPI.md#DcimModulesRetrieve) | **Get** /dcim/modules/{id}/ | 
+[**DcimModulesUpdate**](DcimAPI.md#DcimModulesUpdate) | **Put** /dcim/modules/{id}/ | 
 [**DcimPlatformsBulkDestroy**](DcimAPI.md#DcimPlatformsBulkDestroy) | **Delete** /dcim/platforms/ | 
 [**DcimPlatformsBulkPartialUpdate**](DcimAPI.md#DcimPlatformsBulkPartialUpdate) | **Patch** /dcim/platforms/ | 
 [**DcimPlatformsBulkUpdate**](DcimAPI.md#DcimPlatformsBulkUpdate) | **Put** /dcim/platforms/ | 
@@ -790,7 +834,7 @@ Name | Type | Description  | Notes
 
 ## DcimCablesList
 
-> PaginatedCableList DcimCablesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Length(length).LengthGt(lengthGt).LengthGte(lengthGte).LengthIsnull(lengthIsnull).LengthLt(lengthLt).LengthLte(lengthLte).LengthN(lengthN).LengthUnit(lengthUnit).LengthUnitIc(lengthUnitIc).LengthUnitIe(lengthUnitIe).LengthUnitIew(lengthUnitIew).LengthUnitIre(lengthUnitIre).LengthUnitIsw(lengthUnitIsw).LengthUnitN(lengthUnitN).LengthUnitNic(lengthUnitNic).LengthUnitNie(lengthUnitNie).LengthUnitNiew(lengthUnitNiew).LengthUnitNire(lengthUnitNire).LengthUnitNisw(lengthUnitNisw).LengthUnitNre(lengthUnitNre).LengthUnitRe(lengthUnitRe).Limit(limit).Location(location).LocationId(locationId).Offset(offset).Q(q).Rack(rack).RackId(rackId).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantId(tenantId).TerminationAId(terminationAId).TerminationAIdIc(terminationAIdIc).TerminationAIdIe(terminationAIdIe).TerminationAIdIew(terminationAIdIew).TerminationAIdIre(terminationAIdIre).TerminationAIdIsw(terminationAIdIsw).TerminationAIdN(terminationAIdN).TerminationAIdNic(terminationAIdNic).TerminationAIdNie(terminationAIdNie).TerminationAIdNiew(terminationAIdNiew).TerminationAIdNire(terminationAIdNire).TerminationAIdNisw(terminationAIdNisw).TerminationAIdNre(terminationAIdNre).TerminationAIdRe(terminationAIdRe).TerminationAType(terminationAType).TerminationATypeN(terminationATypeN).TerminationBId(terminationBId).TerminationBIdIc(terminationBIdIc).TerminationBIdIe(terminationBIdIe).TerminationBIdIew(terminationBIdIew).TerminationBIdIre(terminationBIdIre).TerminationBIdIsw(terminationBIdIsw).TerminationBIdN(terminationBIdN).TerminationBIdNic(terminationBIdNic).TerminationBIdNie(terminationBIdNie).TerminationBIdNiew(terminationBIdNiew).TerminationBIdNire(terminationBIdNire).TerminationBIdNisw(terminationBIdNisw).TerminationBIdNre(terminationBIdNre).TerminationBIdRe(terminationBIdRe).TerminationBType(terminationBType).TerminationBTypeN(terminationBTypeN).TerminationType(terminationType).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedCableList DcimCablesList(ctx).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Length(length).LengthGt(lengthGt).LengthGte(lengthGte).LengthIsnull(lengthIsnull).LengthLt(lengthLt).LengthLte(lengthLte).LengthN(lengthN).LengthUnit(lengthUnit).LengthUnitIc(lengthUnitIc).LengthUnitIe(lengthUnitIe).LengthUnitIew(lengthUnitIew).LengthUnitIre(lengthUnitIre).LengthUnitIsw(lengthUnitIsw).LengthUnitN(lengthUnitN).LengthUnitNic(lengthUnitNic).LengthUnitNie(lengthUnitNie).LengthUnitNiew(lengthUnitNiew).LengthUnitNire(lengthUnitNire).LengthUnitNisw(lengthUnitNisw).LengthUnitNre(lengthUnitNre).LengthUnitRe(lengthUnitRe).Limit(limit).Location(location).LocationId(locationId).Offset(offset).Q(q).Rack(rack).RackId(rackId).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantId(tenantId).TerminationAId(terminationAId).TerminationAIdIc(terminationAIdIc).TerminationAIdIe(terminationAIdIe).TerminationAIdIew(terminationAIdIew).TerminationAIdIre(terminationAIdIre).TerminationAIdIsw(terminationAIdIsw).TerminationAIdN(terminationAIdN).TerminationAIdNic(terminationAIdNic).TerminationAIdNie(terminationAIdNie).TerminationAIdNiew(terminationAIdNiew).TerminationAIdNire(terminationAIdNire).TerminationAIdNisw(terminationAIdNisw).TerminationAIdNre(terminationAIdNre).TerminationAIdRe(terminationAIdRe).TerminationAType(terminationAType).TerminationATypeN(terminationATypeN).TerminationBId(terminationBId).TerminationBIdIc(terminationBIdIc).TerminationBIdIe(terminationBIdIe).TerminationBIdIew(terminationBIdIew).TerminationBIdIre(terminationBIdIre).TerminationBIdIsw(terminationBIdIsw).TerminationBIdN(terminationBIdN).TerminationBIdNic(terminationBIdNic).TerminationBIdNie(terminationBIdNie).TerminationBIdNiew(terminationBIdNiew).TerminationBIdNire(terminationBIdNire).TerminationBIdNisw(terminationBIdNisw).TerminationBIdNre(terminationBIdNre).TerminationBIdRe(terminationBIdRe).TerminationBType(terminationBType).TerminationBTypeN(terminationBTypeN).TerminationType(terminationType).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -824,6 +868,9 @@ func main() {
 	colorNisw := []string{"Inner_example"} // []string |  (optional)
 	colorNre := []string{"Inner_example"} // []string |  (optional)
 	colorRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -832,7 +879,9 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	device := []string{"Inner_example"} // []string | Device (name) (optional)
-	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
+	deviceId := []*string{"Inner_example"} // []*string | Device (ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -899,10 +948,13 @@ func main() {
 	rackId := []string{"Inner_example"} // []string | Rack (ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string | Tenant (name) (optional)
 	tenantId := []string{"Inner_example"} // []string | Tenant (ID) (optional)
 	terminationAId := []string{"Inner_example"} // []string |  (optional)
@@ -956,7 +1008,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimCablesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Length(length).LengthGt(lengthGt).LengthGte(lengthGte).LengthIsnull(lengthIsnull).LengthLt(lengthLt).LengthLte(lengthLte).LengthN(lengthN).LengthUnit(lengthUnit).LengthUnitIc(lengthUnitIc).LengthUnitIe(lengthUnitIe).LengthUnitIew(lengthUnitIew).LengthUnitIre(lengthUnitIre).LengthUnitIsw(lengthUnitIsw).LengthUnitN(lengthUnitN).LengthUnitNic(lengthUnitNic).LengthUnitNie(lengthUnitNie).LengthUnitNiew(lengthUnitNiew).LengthUnitNire(lengthUnitNire).LengthUnitNisw(lengthUnitNisw).LengthUnitNre(lengthUnitNre).LengthUnitRe(lengthUnitRe).Limit(limit).Location(location).LocationId(locationId).Offset(offset).Q(q).Rack(rack).RackId(rackId).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantId(tenantId).TerminationAId(terminationAId).TerminationAIdIc(terminationAIdIc).TerminationAIdIe(terminationAIdIe).TerminationAIdIew(terminationAIdIew).TerminationAIdIre(terminationAIdIre).TerminationAIdIsw(terminationAIdIsw).TerminationAIdN(terminationAIdN).TerminationAIdNic(terminationAIdNic).TerminationAIdNie(terminationAIdNie).TerminationAIdNiew(terminationAIdNiew).TerminationAIdNire(terminationAIdNire).TerminationAIdNisw(terminationAIdNisw).TerminationAIdNre(terminationAIdNre).TerminationAIdRe(terminationAIdRe).TerminationAType(terminationAType).TerminationATypeN(terminationATypeN).TerminationBId(terminationBId).TerminationBIdIc(terminationBIdIc).TerminationBIdIe(terminationBIdIe).TerminationBIdIew(terminationBIdIew).TerminationBIdIre(terminationBIdIre).TerminationBIdIsw(terminationBIdIsw).TerminationBIdN(terminationBIdN).TerminationBIdNic(terminationBIdNic).TerminationBIdNie(terminationBIdNie).TerminationBIdNiew(terminationBIdNiew).TerminationBIdNire(terminationBIdNire).TerminationBIdNisw(terminationBIdNisw).TerminationBIdNre(terminationBIdNre).TerminationBIdRe(terminationBIdRe).TerminationBType(terminationBType).TerminationBTypeN(terminationBTypeN).TerminationType(terminationType).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimCablesList(context.Background()).Color(color).ColorIc(colorIc).ColorIe(colorIe).ColorIew(colorIew).ColorIre(colorIre).ColorIsw(colorIsw).ColorN(colorN).ColorNic(colorNic).ColorNie(colorNie).ColorNiew(colorNiew).ColorNire(colorNire).ColorNisw(colorNisw).ColorNre(colorNre).ColorRe(colorRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Length(length).LengthGt(lengthGt).LengthGte(lengthGte).LengthIsnull(lengthIsnull).LengthLt(lengthLt).LengthLte(lengthLte).LengthN(lengthN).LengthUnit(lengthUnit).LengthUnitIc(lengthUnitIc).LengthUnitIe(lengthUnitIe).LengthUnitIew(lengthUnitIew).LengthUnitIre(lengthUnitIre).LengthUnitIsw(lengthUnitIsw).LengthUnitN(lengthUnitN).LengthUnitNic(lengthUnitNic).LengthUnitNie(lengthUnitNie).LengthUnitNiew(lengthUnitNiew).LengthUnitNire(lengthUnitNire).LengthUnitNisw(lengthUnitNisw).LengthUnitNre(lengthUnitNre).LengthUnitRe(lengthUnitRe).Limit(limit).Location(location).LocationId(locationId).Offset(offset).Q(q).Rack(rack).RackId(rackId).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantId(tenantId).TerminationAId(terminationAId).TerminationAIdIc(terminationAIdIc).TerminationAIdIe(terminationAIdIe).TerminationAIdIew(terminationAIdIew).TerminationAIdIre(terminationAIdIre).TerminationAIdIsw(terminationAIdIsw).TerminationAIdN(terminationAIdN).TerminationAIdNic(terminationAIdNic).TerminationAIdNie(terminationAIdNie).TerminationAIdNiew(terminationAIdNiew).TerminationAIdNire(terminationAIdNire).TerminationAIdNisw(terminationAIdNisw).TerminationAIdNre(terminationAIdNre).TerminationAIdRe(terminationAIdRe).TerminationAType(terminationAType).TerminationATypeN(terminationATypeN).TerminationBId(terminationBId).TerminationBIdIc(terminationBIdIc).TerminationBIdIe(terminationBIdIe).TerminationBIdIew(terminationBIdIew).TerminationBIdIre(terminationBIdIre).TerminationBIdIsw(terminationBIdIsw).TerminationBIdN(terminationBIdN).TerminationBIdNic(terminationBIdNic).TerminationBIdNie(terminationBIdNie).TerminationBIdNiew(terminationBIdNiew).TerminationBIdNire(terminationBIdNire).TerminationBIdNisw(terminationBIdNisw).TerminationBIdNre(terminationBIdNre).TerminationBIdRe(terminationBIdRe).TerminationBType(terminationBType).TerminationBTypeN(terminationBTypeN).TerminationType(terminationType).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimCablesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -991,6 +1043,9 @@ Name | Type | Description  | Notes
  **colorNisw** | **[]string** |  | 
  **colorNre** | **[]string** |  | 
  **colorRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1000,6 +1055,8 @@ Name | Type | Description  | Notes
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **device** | **[]string** | Device (name) | 
  **deviceId** | **[]string** | Device (ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -1066,10 +1123,13 @@ Name | Type | Description  | Notes
  **rackId** | **[]string** | Rack (ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** | Tenant (name) | 
  **tenantId** | **[]string** | Tenant (ID) | 
  **terminationAId** | **[]string** |  | 
@@ -1587,7 +1647,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsoleConnectionsList
 
-> PaginatedConsolePortList DcimConsoleConnectionsList(ctx).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Depth(depth).Execute()
+> PaginatedConsolePortList DcimConsoleConnectionsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -1606,8 +1666,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	device := []string{"Inner_example"} // []string | Device (name) (optional)
 	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -1641,11 +1706,14 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsoleConnectionsList(context.Background()).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsoleConnectionsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsoleConnectionsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1666,8 +1734,13 @@ Other parameters are passed through a pointer to a apiDcimConsoleConnectionsList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **device** | **[]string** | Device (name) | 
  **deviceId** | **[]string** | Device (ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -1701,6 +1774,9 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -1876,7 +1952,7 @@ import (
 )
 
 func main() {
-	bulkWritableConsolePortTemplateRequest := []openapiclient.BulkWritableConsolePortTemplateRequest{*openapiclient.NewBulkWritableConsolePortTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableConsolePortTemplateRequest | 
+	bulkWritableConsolePortTemplateRequest := []openapiclient.BulkWritableConsolePortTemplateRequest{*openapiclient.NewBulkWritableConsolePortTemplateRequest("Id_example", "Name_example")} // []BulkWritableConsolePortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1944,7 +2020,7 @@ import (
 )
 
 func main() {
-	writableConsolePortTemplateRequest := *openapiclient.NewWritableConsolePortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsolePortTemplateRequest | 
+	writableConsolePortTemplateRequest := *openapiclient.NewWritableConsolePortTemplateRequest("Name_example") // WritableConsolePortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2063,7 +2139,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsolePortTemplatesList
 
-> PaginatedConsolePortTemplateList DcimConsolePortTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedConsolePortTemplateList DcimConsolePortTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -2082,6 +2158,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -2097,22 +2176,27 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -2128,6 +2212,9 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string | Label (optional)
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -2145,6 +2232,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -2163,7 +2253,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsolePortTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsolePortTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsolePortTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2184,6 +2274,9 @@ Other parameters are passed through a pointer to a apiDcimConsolePortTemplatesLi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -2199,22 +2292,27 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -2230,6 +2328,9 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** | Label | 
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -2247,6 +2348,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -2603,7 +2707,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console port template.
-	writableConsolePortTemplateRequest := *openapiclient.NewWritableConsolePortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsolePortTemplateRequest | 
+	writableConsolePortTemplateRequest := *openapiclient.NewWritableConsolePortTemplateRequest("Name_example") // WritableConsolePortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2810,7 +2914,7 @@ import (
 )
 
 func main() {
-	bulkWritableConsolePortRequest := []openapiclient.BulkWritableConsolePortRequest{*openapiclient.NewBulkWritableConsolePortRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableConsolePortRequest | 
+	bulkWritableConsolePortRequest := []openapiclient.BulkWritableConsolePortRequest{*openapiclient.NewBulkWritableConsolePortRequest("Id_example", "Name_example")} // []BulkWritableConsolePortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2878,7 +2982,7 @@ import (
 )
 
 func main() {
-	writableConsolePortRequest := *openapiclient.NewWritableConsolePortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsolePortRequest | 
+	writableConsolePortRequest := *openapiclient.NewWritableConsolePortRequest("Name_example") // WritableConsolePortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2997,7 +3101,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsolePortsList
 
-> PaginatedConsolePortList DcimConsolePortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedConsolePortList DcimConsolePortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -3020,6 +3124,9 @@ func main() {
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -3035,7 +3142,8 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -3069,6 +3177,9 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -3089,6 +3200,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIc := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIe := []string{"Inner_example"} // []string | Physical port type (optional)
@@ -3107,7 +3221,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsolePortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsolePortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsolePortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3132,6 +3246,9 @@ Name | Type | Description  | Notes
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -3147,7 +3264,8 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -3181,6 +3299,9 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -3201,6 +3322,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** | Physical port type | 
  **typeIc** | **[]string** | Physical port type | 
  **typeIe** | **[]string** | Physical port type | 
@@ -3631,7 +3755,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console port.
-	writableConsolePortRequest := *openapiclient.NewWritableConsolePortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsolePortRequest | 
+	writableConsolePortRequest := *openapiclient.NewWritableConsolePortRequest("Name_example") // WritableConsolePortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3838,7 +3962,7 @@ import (
 )
 
 func main() {
-	bulkWritableConsoleServerPortTemplateRequest := []openapiclient.BulkWritableConsoleServerPortTemplateRequest{*openapiclient.NewBulkWritableConsoleServerPortTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableConsoleServerPortTemplateRequest | 
+	bulkWritableConsoleServerPortTemplateRequest := []openapiclient.BulkWritableConsoleServerPortTemplateRequest{*openapiclient.NewBulkWritableConsoleServerPortTemplateRequest("Id_example", "Name_example")} // []BulkWritableConsoleServerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3906,7 +4030,7 @@ import (
 )
 
 func main() {
-	writableConsoleServerPortTemplateRequest := *openapiclient.NewWritableConsoleServerPortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsoleServerPortTemplateRequest | 
+	writableConsoleServerPortTemplateRequest := *openapiclient.NewWritableConsoleServerPortTemplateRequest("Name_example") // WritableConsoleServerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4025,7 +4149,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsoleServerPortTemplatesList
 
-> PaginatedConsoleServerPortTemplateList DcimConsoleServerPortTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedConsoleServerPortTemplateList DcimConsoleServerPortTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -4044,6 +4168,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -4059,22 +4186,27 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -4090,6 +4222,9 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string | Label (optional)
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -4107,6 +4242,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -4125,7 +4263,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsoleServerPortTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4146,6 +4284,9 @@ Other parameters are passed through a pointer to a apiDcimConsoleServerPortTempl
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -4161,22 +4302,27 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -4192,6 +4338,9 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** | Label | 
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -4209,6 +4358,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -4565,7 +4717,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console server port template.
-	writableConsoleServerPortTemplateRequest := *openapiclient.NewWritableConsoleServerPortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsoleServerPortTemplateRequest | 
+	writableConsoleServerPortTemplateRequest := *openapiclient.NewWritableConsoleServerPortTemplateRequest("Name_example") // WritableConsoleServerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4772,7 +4924,7 @@ import (
 )
 
 func main() {
-	bulkWritableConsoleServerPortRequest := []openapiclient.BulkWritableConsoleServerPortRequest{*openapiclient.NewBulkWritableConsoleServerPortRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableConsoleServerPortRequest | 
+	bulkWritableConsoleServerPortRequest := []openapiclient.BulkWritableConsoleServerPortRequest{*openapiclient.NewBulkWritableConsoleServerPortRequest("Id_example", "Name_example")} // []BulkWritableConsoleServerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4840,7 +4992,7 @@ import (
 )
 
 func main() {
-	writableConsoleServerPortRequest := *openapiclient.NewWritableConsoleServerPortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsoleServerPortRequest | 
+	writableConsoleServerPortRequest := *openapiclient.NewWritableConsoleServerPortRequest("Name_example") // WritableConsoleServerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4959,7 +5111,7 @@ Name | Type | Description  | Notes
 
 ## DcimConsoleServerPortsList
 
-> PaginatedConsoleServerPortList DcimConsoleServerPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedConsoleServerPortList DcimConsoleServerPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -4982,6 +5134,9 @@ func main() {
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -4997,7 +5152,8 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -5031,6 +5187,9 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -5051,6 +5210,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIc := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIe := []string{"Inner_example"} // []string | Physical port type (optional)
@@ -5069,7 +5231,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimConsoleServerPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimConsoleServerPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5094,6 +5256,9 @@ Name | Type | Description  | Notes
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -5109,7 +5274,8 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -5143,6 +5309,9 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -5163,6 +5332,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** | Physical port type | 
  **typeIc** | **[]string** | Physical port type | 
  **typeIe** | **[]string** | Physical port type | 
@@ -5593,7 +5765,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console server port.
-	writableConsoleServerPortRequest := *openapiclient.NewWritableConsoleServerPortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableConsoleServerPortRequest | 
+	writableConsoleServerPortRequest := *openapiclient.NewWritableConsoleServerPortRequest("Name_example") // WritableConsoleServerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5987,7 +6159,7 @@ Name | Type | Description  | Notes
 
 ## DcimControllerManagedDeviceGroupsList
 
-> PaginatedControllerManagedDeviceGroupList DcimControllerManagedDeviceGroupsList(ctx).Controller(controller).ControllerN(controllerN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+> PaginatedControllerManagedDeviceGroupList DcimControllerManagedDeviceGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 
 
 
@@ -6007,6 +6179,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	controller := []string{"Inner_example"} // []string |  (optional)
 	controllerN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -6016,6 +6191,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -6055,7 +6232,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent group (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
@@ -6063,6 +6240,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	weight := []int32{int32(123)} // []int32 |  (optional)
 	weightGt := []int32{int32(123)} // []int32 |  (optional)
 	weightGte := []int32{int32(123)} // []int32 |  (optional)
@@ -6073,7 +6253,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimControllerManagedDeviceGroupsList(context.Background()).Controller(controller).ControllerN(controllerN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimControllerManagedDeviceGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimControllerManagedDeviceGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6094,6 +6274,9 @@ Other parameters are passed through a pointer to a apiDcimControllerManagedDevic
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **controller** | **[]string** |  | 
  **controllerN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
@@ -6103,6 +6286,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -6142,7 +6327,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent group (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
@@ -6150,6 +6335,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **weight** | **[]int32** |  | 
  **weightGt** | **[]int32** |  | 
  **weightGte** | **[]int32** |  | 
@@ -6892,7 +7080,7 @@ Name | Type | Description  | Notes
 
 ## DcimControllersList
 
-> PaginatedControllerList DcimControllersList(ctx).ControllerDevice(controllerDevice).ControllerDeviceIsnull(controllerDeviceIsnull).ControllerDeviceN(controllerDeviceN).ControllerDeviceRedundancyGroup(controllerDeviceRedundancyGroup).ControllerDeviceRedundancyGroupIsnull(controllerDeviceRedundancyGroupIsnull).ControllerDeviceRedundancyGroupN(controllerDeviceRedundancyGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+> PaginatedControllerList DcimControllersList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ControllerDevice(controllerDevice).ControllerDeviceIsnull(controllerDeviceIsnull).ControllerDeviceN(controllerDeviceN).ControllerDeviceRedundancyGroup(controllerDeviceRedundancyGroup).ControllerDeviceRedundancyGroupIsnull(controllerDeviceRedundancyGroupIsnull).ControllerDeviceRedundancyGroupN(controllerDeviceRedundancyGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 
 
 
@@ -6912,11 +7100,14 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	controllerDevice := []string{"Inner_example"} // []string |  (optional)
-	controllerDeviceIsnull := true // bool |  (optional)
+	controllerDeviceIsnull := true // bool | Controller device (name or ID) is null (optional)
 	controllerDeviceN := []string{"Inner_example"} // []string |  (optional)
 	controllerDeviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
-	controllerDeviceRedundancyGroupIsnull := true // bool |  (optional)
+	controllerDeviceRedundancyGroupIsnull := true // bool | Controller device redundancy group (name or ID) is null (optional)
 	controllerDeviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -6939,8 +7130,10 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	externalIntegration := []string{"Inner_example"} // []string |  (optional)
-	externalIntegrationIsnull := true // bool |  (optional)
+	externalIntegrationIsnull := true // bool | External integration (name or ID) is null (optional)
 	externalIntegrationN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -6983,32 +7176,35 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool |  (optional)
+	platformIsnull := true // bool | Platform (name or ID) is null (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
-	roleIsnull := true // bool |  (optional)
-	roleN := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimControllersList(context.Background()).ControllerDevice(controllerDevice).ControllerDeviceIsnull(controllerDeviceIsnull).ControllerDeviceN(controllerDeviceN).ControllerDeviceRedundancyGroup(controllerDeviceRedundancyGroup).ControllerDeviceRedundancyGroupIsnull(controllerDeviceRedundancyGroupIsnull).ControllerDeviceRedundancyGroupN(controllerDeviceRedundancyGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimControllersList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ControllerDevice(controllerDevice).ControllerDeviceIsnull(controllerDeviceIsnull).ControllerDeviceN(controllerDeviceN).ControllerDeviceRedundancyGroup(controllerDeviceRedundancyGroup).ControllerDeviceRedundancyGroupIsnull(controllerDeviceRedundancyGroupIsnull).ControllerDeviceRedundancyGroupN(controllerDeviceRedundancyGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimControllersList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7029,11 +7225,14 @@ Other parameters are passed through a pointer to a apiDcimControllersListRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **controllerDevice** | **[]string** |  | 
- **controllerDeviceIsnull** | **bool** |  | 
+ **controllerDeviceIsnull** | **bool** | Controller device (name or ID) is null | 
  **controllerDeviceN** | **[]string** |  | 
  **controllerDeviceRedundancyGroup** | **[]string** |  | 
- **controllerDeviceRedundancyGroupIsnull** | **bool** |  | 
+ **controllerDeviceRedundancyGroupIsnull** | **bool** | Controller device redundancy group (name or ID) is null | 
  **controllerDeviceRedundancyGroupN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -7056,8 +7255,10 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **externalIntegration** | **[]string** |  | 
- **externalIntegrationIsnull** | **bool** |  | 
+ **externalIntegrationIsnull** | **bool** | External integration (name or ID) is null | 
  **externalIntegrationN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -7100,27 +7301,30 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** |  | 
+ **platformIsnull** | **bool** | Platform (name or ID) is null | 
  **platformN** | **[]string** |  | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
- **roleIsnull** | **bool** |  | 
- **roleN** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -7857,7 +8061,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceBayTemplatesList
 
-> PaginatedDeviceBayTemplateList DcimDeviceBayTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedDeviceBayTemplateList DcimDeviceBayTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -7876,6 +8080,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -7892,21 +8099,23 @@ func main() {
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -7939,11 +8148,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceBayTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceBayTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceBayTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7964,6 +8176,9 @@ Other parameters are passed through a pointer to a apiDcimDeviceBayTemplatesList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -7980,21 +8195,23 @@ Name | Type | Description  | Notes
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -8027,6 +8244,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -8763,7 +8983,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceBaysList
 
-> PaginatedDeviceBayList DcimDeviceBaysList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledDevice(installedDevice).InstalledDeviceIsnull(installedDeviceIsnull).InstalledDeviceN(installedDeviceN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedDeviceBayList DcimDeviceBaysList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledDevice(installedDevice).InstalledDeviceIsnull(installedDeviceIsnull).InstalledDeviceN(installedDeviceN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -8782,6 +9002,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -8798,6 +9021,8 @@ func main() {
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
 	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -8814,7 +9039,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	installedDevice := []string{"Inner_example"} // []string |  (optional)
-	installedDeviceIsnull := true // bool |  (optional)
+	installedDeviceIsnull := true // bool | Installed device (name or ID) is null (optional)
 	installedDeviceN := []string{"Inner_example"} // []string |  (optional)
 	label := []string{"Inner_example"} // []string |  (optional)
 	labelIc := []string{"Inner_example"} // []string |  (optional)
@@ -8853,11 +9078,14 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceBaysList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledDevice(installedDevice).InstalledDeviceIsnull(installedDeviceIsnull).InstalledDeviceN(installedDeviceN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceBaysList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledDevice(installedDevice).InstalledDeviceIsnull(installedDeviceIsnull).InstalledDeviceN(installedDeviceN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceBaysList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8878,6 +9106,9 @@ Other parameters are passed through a pointer to a apiDcimDeviceBaysListRequest 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -8894,6 +9125,8 @@ Name | Type | Description  | Notes
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
  **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -8910,7 +9143,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **installedDevice** | **[]string** |  | 
- **installedDeviceIsnull** | **bool** |  | 
+ **installedDeviceIsnull** | **bool** | Installed device (name or ID) is null | 
  **installedDeviceN** | **[]string** |  | 
  **label** | **[]string** |  | 
  **labelIc** | **[]string** |  | 
@@ -8949,6 +9182,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -9685,7 +9921,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceFamiliesList
 
-> PaginatedDeviceFamilyList DcimDeviceFamiliesList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Format(format).HasDeviceTypes(hasDeviceTypes).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedDeviceFamilyList DcimDeviceFamiliesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -9705,6 +9941,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -9727,8 +9966,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool |  (optional)
+	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDeviceTypes := true // bool | Has device types (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -9773,11 +10014,14 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceFamiliesList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Format(format).HasDeviceTypes(hasDeviceTypes).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceFamiliesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceFamiliesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9798,6 +10042,9 @@ Other parameters are passed through a pointer to a apiDcimDeviceFamiliesListRequ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -9820,8 +10067,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** |  | 
+ **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
  **deviceTypesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDeviceTypes** | **bool** | Has device types | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -9866,6 +10115,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -10602,7 +10854,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceRedundancyGroupsList
 
-> PaginatedDeviceRedundancyGroupList DcimDeviceRedundancyGroupsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).FailoverStrategy(failoverStrategy).FailoverStrategyIc(failoverStrategyIc).FailoverStrategyIe(failoverStrategyIe).FailoverStrategyIew(failoverStrategyIew).FailoverStrategyIre(failoverStrategyIre).FailoverStrategyIsw(failoverStrategyIsw).FailoverStrategyN(failoverStrategyN).FailoverStrategyNic(failoverStrategyNic).FailoverStrategyNie(failoverStrategyNie).FailoverStrategyNiew(failoverStrategyNiew).FailoverStrategyNire(failoverStrategyNire).FailoverStrategyNisw(failoverStrategyNisw).FailoverStrategyNre(failoverStrategyNre).FailoverStrategyRe(failoverStrategyRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedDeviceRedundancyGroupList DcimDeviceRedundancyGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FailoverStrategy(failoverStrategy).FailoverStrategyIc(failoverStrategyIc).FailoverStrategyIe(failoverStrategyIe).FailoverStrategyIew(failoverStrategyIew).FailoverStrategyIre(failoverStrategyIre).FailoverStrategyIsw(failoverStrategyIsw).FailoverStrategyN(failoverStrategyN).FailoverStrategyNic(failoverStrategyNic).FailoverStrategyNie(failoverStrategyNie).FailoverStrategyNiew(failoverStrategyNiew).FailoverStrategyNire(failoverStrategyNire).FailoverStrategyNisw(failoverStrategyNisw).FailoverStrategyNre(failoverStrategyNre).FailoverStrategyRe(failoverStrategyRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -10622,6 +10874,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -10629,6 +10884,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	failoverStrategy := []string{"Inner_example"} // []string |  (optional)
 	failoverStrategyIc := []string{"Inner_example"} // []string |  (optional)
 	failoverStrategyIe := []string{"Inner_example"} // []string |  (optional)
@@ -10683,19 +10940,22 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool |  (optional)
+	secretsGroupIsnull := true // bool | Secrets group (name or ID) is null (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceRedundancyGroupsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).FailoverStrategy(failoverStrategy).FailoverStrategyIc(failoverStrategyIc).FailoverStrategyIe(failoverStrategyIe).FailoverStrategyIew(failoverStrategyIew).FailoverStrategyIre(failoverStrategyIre).FailoverStrategyIsw(failoverStrategyIsw).FailoverStrategyN(failoverStrategyN).FailoverStrategyNic(failoverStrategyNic).FailoverStrategyNie(failoverStrategyNie).FailoverStrategyNiew(failoverStrategyNiew).FailoverStrategyNire(failoverStrategyNire).FailoverStrategyNisw(failoverStrategyNisw).FailoverStrategyNre(failoverStrategyNre).FailoverStrategyRe(failoverStrategyRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceRedundancyGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FailoverStrategy(failoverStrategy).FailoverStrategyIc(failoverStrategyIc).FailoverStrategyIe(failoverStrategyIe).FailoverStrategyIew(failoverStrategyIew).FailoverStrategyIre(failoverStrategyIre).FailoverStrategyIsw(failoverStrategyIsw).FailoverStrategyN(failoverStrategyN).FailoverStrategyNic(failoverStrategyNic).FailoverStrategyNie(failoverStrategyNie).FailoverStrategyNiew(failoverStrategyNiew).FailoverStrategyNire(failoverStrategyNire).FailoverStrategyNisw(failoverStrategyNisw).FailoverStrategyNre(failoverStrategyNre).FailoverStrategyRe(failoverStrategyRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceRedundancyGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10716,6 +10976,9 @@ Other parameters are passed through a pointer to a apiDcimDeviceRedundancyGroups
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -10723,6 +10986,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **failoverStrategy** | **[]string** |  | 
  **failoverStrategyIc** | **[]string** |  | 
  **failoverStrategyIe** | **[]string** |  | 
@@ -10777,14 +11042,17 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** |  | 
+ **secretsGroupIsnull** | **bool** | Secrets group (name or ID) is null | 
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -11521,7 +11789,7 @@ Name | Type | Description  | Notes
 
 ## DcimDeviceTypesList
 
-> PaginatedDeviceTypeList DcimDeviceTypesList(ctx).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsolePorts(consolePorts).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).ConsoleServerPorts(consoleServerPorts).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBayTemplates(deviceBayTemplates).DeviceBayTemplatesIsnull(deviceBayTemplatesIsnull).DeviceBayTemplatesN(deviceBayTemplatesN).DeviceBays(deviceBays).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasDeviceBayTemplates(hasDeviceBayTemplates).HasDevices(hasDevices).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).HasSoftwareImageFiles(hasSoftwareImageFiles).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).Interfaces(interfaces).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PassThroughPorts(passThroughPorts).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerOutlets(powerOutlets).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).PowerPorts(powerPorts).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).SubdeviceRole(subdeviceRole).SubdeviceRoleIc(subdeviceRoleIc).SubdeviceRoleIe(subdeviceRoleIe).SubdeviceRoleIew(subdeviceRoleIew).SubdeviceRoleIre(subdeviceRoleIre).SubdeviceRoleIsw(subdeviceRoleIsw).SubdeviceRoleN(subdeviceRoleN).SubdeviceRoleNic(subdeviceRoleNic).SubdeviceRoleNie(subdeviceRoleNie).SubdeviceRoleNiew(subdeviceRoleNiew).SubdeviceRoleNire(subdeviceRoleNire).SubdeviceRoleNisw(subdeviceRoleNisw).SubdeviceRoleNre(subdeviceRoleNre).SubdeviceRoleRe(subdeviceRoleRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Depth(depth).Execute()
+> PaginatedDeviceTypeList DcimDeviceTypesList(ctx).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsolePorts(consolePorts).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).ConsoleServerPorts(consoleServerPorts).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBayTemplates(deviceBayTemplates).DeviceBayTemplatesIsnull(deviceBayTemplatesIsnull).DeviceBayTemplatesN(deviceBayTemplatesN).DeviceBays(deviceBays).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasDeviceBayTemplates(hasDeviceBayTemplates).HasDevices(hasDevices).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasModuleBayTemplates(hasModuleBayTemplates).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).HasSoftwareImageFiles(hasSoftwareImageFiles).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).Interfaces(interfaces).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).ModuleBayTemplates(moduleBayTemplates).ModuleBayTemplatesIsnull(moduleBayTemplatesIsnull).ModuleBayTemplatesN(moduleBayTemplatesN).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PassThroughPorts(passThroughPorts).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerOutlets(powerOutlets).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).PowerPorts(powerPorts).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).SubdeviceRole(subdeviceRole).SubdeviceRoleIc(subdeviceRoleIc).SubdeviceRoleIe(subdeviceRoleIe).SubdeviceRoleIew(subdeviceRoleIew).SubdeviceRoleIre(subdeviceRoleIre).SubdeviceRoleIsw(subdeviceRoleIsw).SubdeviceRoleN(subdeviceRoleN).SubdeviceRoleNic(subdeviceRoleNic).SubdeviceRoleNie(subdeviceRoleNie).SubdeviceRoleNiew(subdeviceRoleNiew).SubdeviceRoleNire(subdeviceRoleNire).SubdeviceRoleNisw(subdeviceRoleNisw).SubdeviceRoleNre(subdeviceRoleNre).SubdeviceRoleRe(subdeviceRoleRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Depth(depth).Execute()
 
 
 
@@ -11556,13 +11824,16 @@ func main() {
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
 	consolePortTemplates := []string{"Inner_example"} // []string |  (optional)
-	consolePortTemplatesIsnull := true // bool |  (optional)
+	consolePortTemplatesIsnull := true // bool | Console port templates (name or ID) is null (optional)
 	consolePortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	consolePorts := true // bool | Has console ports (optional)
 	consoleServerPortTemplates := []string{"Inner_example"} // []string |  (optional)
-	consoleServerPortTemplatesIsnull := true // bool |  (optional)
+	consoleServerPortTemplatesIsnull := true // bool | Console server port templates (name or ID) is null (optional)
 	consoleServerPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	consoleServerPorts := true // bool | Has console server ports (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -11571,18 +11842,20 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	deviceBayTemplates := []string{"Inner_example"} // []string |  (optional)
-	deviceBayTemplatesIsnull := true // bool |  (optional)
+	deviceBayTemplatesIsnull := true // bool | Device bay templates (name or ID) is null (optional)
 	deviceBayTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	deviceBays := true // bool | Has device bays (optional)
 	deviceFamily := []string{"Inner_example"} // []string |  (optional)
-	deviceFamilyIsnull := true // bool |  (optional)
+	deviceFamilyIsnull := true // bool | Device family (name or ID) is null (optional)
 	deviceFamilyN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
 	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	frontPortTemplates := []string{"Inner_example"} // []string |  (optional)
-	frontPortTemplatesIsnull := true // bool |  (optional)
+	frontPortTemplatesIsnull := true // bool | Front port templates (name or ID) is null (optional)
 	frontPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	hasConsolePortTemplates := true // bool | Has console port templates (optional)
 	hasConsoleServerPortTemplates := true // bool | Has console server port templates (optional)
@@ -11590,6 +11863,7 @@ func main() {
 	hasDevices := true // bool | Has device instances (optional)
 	hasFrontPortTemplates := true // bool | Has front port templates (optional)
 	hasInterfaceTemplates := true // bool | Has interface templates (optional)
+	hasModuleBayTemplates := true // bool | Has module bay templates (optional)
 	hasPowerOutletTemplates := true // bool | Has power outlet templates (optional)
 	hasPowerPortTemplates := true // bool | Has power port templates (optional)
 	hasRearPortTemplates := true // bool | Has rear port templates (optional)
@@ -11609,7 +11883,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	interfaceTemplates := []string{"Inner_example"} // []string |  (optional)
-	interfaceTemplatesIsnull := true // bool |  (optional)
+	interfaceTemplatesIsnull := true // bool | Interface templates (name or ID) is null (optional)
 	interfaceTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	interfaces := true // bool | Has interfaces (optional)
 	isFullDepth := true // bool |  (optional)
@@ -11637,6 +11911,9 @@ func main() {
 	modelNisw := []string{"Inner_example"} // []string |  (optional)
 	modelNre := []string{"Inner_example"} // []string |  (optional)
 	modelRe := []string{"Inner_example"} // []string |  (optional)
+	moduleBayTemplates := []string{"Inner_example"} // []string |  (optional)
+	moduleBayTemplatesIsnull := true // bool |  (optional)
+	moduleBayTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	partNumber := []string{"Inner_example"} // []string |  (optional)
 	partNumberIc := []string{"Inner_example"} // []string |  (optional)
@@ -11654,16 +11931,16 @@ func main() {
 	partNumberRe := []string{"Inner_example"} // []string |  (optional)
 	passThroughPorts := true // bool | Has pass-through ports (optional)
 	powerOutletTemplates := []string{"Inner_example"} // []string |  (optional)
-	powerOutletTemplatesIsnull := true // bool |  (optional)
+	powerOutletTemplatesIsnull := true // bool | Power outlet templates (name or ID) is null (optional)
 	powerOutletTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	powerOutlets := true // bool | Has power outlets (optional)
 	powerPortTemplates := []string{"Inner_example"} // []string |  (optional)
-	powerPortTemplatesIsnull := true // bool |  (optional)
+	powerPortTemplatesIsnull := true // bool | Power port templates (name or ID) is null (optional)
 	powerPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	powerPorts := true // bool | Has power ports (optional)
 	q := "q_example" // string | Search (optional)
 	rearPortTemplates := []string{"Inner_example"} // []string |  (optional)
-	rearPortTemplatesIsnull := true // bool |  (optional)
+	rearPortTemplatesIsnull := true // bool | Rear port templates (name or ID) is null (optional)
 	rearPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
@@ -11685,6 +11962,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	uHeight := []int32{int32(123)} // []int32 |  (optional)
 	uHeightGt := []int32{int32(123)} // []int32 |  (optional)
 	uHeightGte := []int32{int32(123)} // []int32 |  (optional)
@@ -11695,7 +11975,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDeviceTypesList(context.Background()).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsolePorts(consolePorts).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).ConsoleServerPorts(consoleServerPorts).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBayTemplates(deviceBayTemplates).DeviceBayTemplatesIsnull(deviceBayTemplatesIsnull).DeviceBayTemplatesN(deviceBayTemplatesN).DeviceBays(deviceBays).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasDeviceBayTemplates(hasDeviceBayTemplates).HasDevices(hasDevices).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).HasSoftwareImageFiles(hasSoftwareImageFiles).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).Interfaces(interfaces).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PassThroughPorts(passThroughPorts).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerOutlets(powerOutlets).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).PowerPorts(powerPorts).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).SubdeviceRole(subdeviceRole).SubdeviceRoleIc(subdeviceRoleIc).SubdeviceRoleIe(subdeviceRoleIe).SubdeviceRoleIew(subdeviceRoleIew).SubdeviceRoleIre(subdeviceRoleIre).SubdeviceRoleIsw(subdeviceRoleIsw).SubdeviceRoleN(subdeviceRoleN).SubdeviceRoleNic(subdeviceRoleNic).SubdeviceRoleNie(subdeviceRoleNie).SubdeviceRoleNiew(subdeviceRoleNiew).SubdeviceRoleNire(subdeviceRoleNire).SubdeviceRoleNisw(subdeviceRoleNisw).SubdeviceRoleNre(subdeviceRoleNre).SubdeviceRoleRe(subdeviceRoleRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDeviceTypesList(context.Background()).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsolePorts(consolePorts).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).ConsoleServerPorts(consoleServerPorts).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBayTemplates(deviceBayTemplates).DeviceBayTemplatesIsnull(deviceBayTemplatesIsnull).DeviceBayTemplatesN(deviceBayTemplatesN).DeviceBays(deviceBays).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasDeviceBayTemplates(hasDeviceBayTemplates).HasDevices(hasDevices).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasModuleBayTemplates(hasModuleBayTemplates).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).HasSoftwareImageFiles(hasSoftwareImageFiles).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).Interfaces(interfaces).IsFullDepth(isFullDepth).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).ModuleBayTemplates(moduleBayTemplates).ModuleBayTemplatesIsnull(moduleBayTemplatesIsnull).ModuleBayTemplatesN(moduleBayTemplatesN).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PassThroughPorts(passThroughPorts).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerOutlets(powerOutlets).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).PowerPorts(powerPorts).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).SubdeviceRole(subdeviceRole).SubdeviceRoleIc(subdeviceRoleIc).SubdeviceRoleIe(subdeviceRoleIe).SubdeviceRoleIew(subdeviceRoleIew).SubdeviceRoleIre(subdeviceRoleIre).SubdeviceRoleIsw(subdeviceRoleIsw).SubdeviceRoleN(subdeviceRoleN).SubdeviceRoleNic(subdeviceRoleNic).SubdeviceRoleNie(subdeviceRoleNie).SubdeviceRoleNiew(subdeviceRoleNiew).SubdeviceRoleNire(subdeviceRoleNire).SubdeviceRoleNisw(subdeviceRoleNisw).SubdeviceRoleNre(subdeviceRoleNre).SubdeviceRoleRe(subdeviceRoleRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -11731,13 +12011,16 @@ Name | Type | Description  | Notes
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
  **consolePortTemplates** | **[]string** |  | 
- **consolePortTemplatesIsnull** | **bool** |  | 
+ **consolePortTemplatesIsnull** | **bool** | Console port templates (name or ID) is null | 
  **consolePortTemplatesN** | **[]string** |  | 
  **consolePorts** | **bool** | Has console ports | 
  **consoleServerPortTemplates** | **[]string** |  | 
- **consoleServerPortTemplatesIsnull** | **bool** |  | 
+ **consoleServerPortTemplatesIsnull** | **bool** | Console server port templates (name or ID) is null | 
  **consoleServerPortTemplatesN** | **[]string** |  | 
  **consoleServerPorts** | **bool** | Has console server ports | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -11746,18 +12029,20 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **deviceBayTemplates** | **[]string** |  | 
- **deviceBayTemplatesIsnull** | **bool** |  | 
+ **deviceBayTemplatesIsnull** | **bool** | Device bay templates (name or ID) is null | 
  **deviceBayTemplatesN** | **[]string** |  | 
  **deviceBays** | **bool** | Has device bays | 
  **deviceFamily** | **[]string** |  | 
- **deviceFamilyIsnull** | **bool** |  | 
+ **deviceFamilyIsnull** | **bool** | Device family (name or ID) is null | 
  **deviceFamilyN** | **[]string** |  | 
  **devices** | **[]string** |  | 
  **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **frontPortTemplates** | **[]string** |  | 
- **frontPortTemplatesIsnull** | **bool** |  | 
+ **frontPortTemplatesIsnull** | **bool** | Front port templates (name or ID) is null | 
  **frontPortTemplatesN** | **[]string** |  | 
  **hasConsolePortTemplates** | **bool** | Has console port templates | 
  **hasConsoleServerPortTemplates** | **bool** | Has console server port templates | 
@@ -11765,6 +12050,7 @@ Name | Type | Description  | Notes
  **hasDevices** | **bool** | Has device instances | 
  **hasFrontPortTemplates** | **bool** | Has front port templates | 
  **hasInterfaceTemplates** | **bool** | Has interface templates | 
+ **hasModuleBayTemplates** | **bool** | Has module bay templates | 
  **hasPowerOutletTemplates** | **bool** | Has power outlet templates | 
  **hasPowerPortTemplates** | **bool** | Has power port templates | 
  **hasRearPortTemplates** | **bool** | Has rear port templates | 
@@ -11784,7 +12070,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **interfaceTemplates** | **[]string** |  | 
- **interfaceTemplatesIsnull** | **bool** |  | 
+ **interfaceTemplatesIsnull** | **bool** | Interface templates (name or ID) is null | 
  **interfaceTemplatesN** | **[]string** |  | 
  **interfaces** | **bool** | Has interfaces | 
  **isFullDepth** | **bool** |  | 
@@ -11812,6 +12098,9 @@ Name | Type | Description  | Notes
  **modelNisw** | **[]string** |  | 
  **modelNre** | **[]string** |  | 
  **modelRe** | **[]string** |  | 
+ **moduleBayTemplates** | **[]string** |  | 
+ **moduleBayTemplatesIsnull** | **bool** |  | 
+ **moduleBayTemplatesN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **partNumber** | **[]string** |  | 
  **partNumberIc** | **[]string** |  | 
@@ -11829,16 +12118,16 @@ Name | Type | Description  | Notes
  **partNumberRe** | **[]string** |  | 
  **passThroughPorts** | **bool** | Has pass-through ports | 
  **powerOutletTemplates** | **[]string** |  | 
- **powerOutletTemplatesIsnull** | **bool** |  | 
+ **powerOutletTemplatesIsnull** | **bool** | Power outlet templates (name or ID) is null | 
  **powerOutletTemplatesN** | **[]string** |  | 
  **powerOutlets** | **bool** | Has power outlets | 
  **powerPortTemplates** | **[]string** |  | 
- **powerPortTemplatesIsnull** | **bool** |  | 
+ **powerPortTemplatesIsnull** | **bool** | Power port templates (name or ID) is null | 
  **powerPortTemplatesN** | **[]string** |  | 
  **powerPorts** | **bool** | Has power ports | 
  **q** | **string** | Search | 
  **rearPortTemplates** | **[]string** |  | 
- **rearPortTemplatesIsnull** | **bool** |  | 
+ **rearPortTemplatesIsnull** | **bool** | Rear port templates (name or ID) is null | 
  **rearPortTemplatesN** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
@@ -11860,6 +12149,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **uHeight** | **[]int32** |  | 
  **uHeightGt** | **[]int32** |  | 
  **uHeightGte** | **[]int32** |  | 
@@ -13305,7 +13597,7 @@ Name | Type | Description  | Notes
 
 ## DcimDevicesList
 
-> PaginatedDeviceList DcimDevicesList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Depth(depth).Execute()
+> PaginatedDeviceList DcimDevicesList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Depth(depth).Execute()
 
 
 
@@ -13341,16 +13633,19 @@ func main() {
 	assetTagNre := []string{"Inner_example"} // []string |  (optional)
 	assetTagRe := []string{"Inner_example"} // []string |  (optional)
 	cluster := []string{"Inner_example"} // []string |  (optional)
-	clusterIsnull := true // bool |  (optional)
+	clusterIsnull := true // bool | VM cluster (name or ID) is null (optional)
 	clusterN := []string{"Inner_example"} // []string |  (optional)
-	consolePorts := []string{"Inner_example"} // []string | Console Ports (optional)
-	consolePortsIsnull := true // bool |  (optional)
-	consolePortsN := []string{"Inner_example"} // []string | Console Ports (optional)
-	consoleServerPorts := []string{"Inner_example"} // []string | Console Server Ports (optional)
-	consoleServerPortsIsnull := true // bool |  (optional)
-	consoleServerPortsN := []string{"Inner_example"} // []string | Console Server Ports (optional)
+	consolePorts := []string{"Inner_example"} // []string |  (optional)
+	consolePortsIsnull := true // bool | Console Ports (name or ID) is null (optional)
+	consolePortsN := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPorts := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPortsIsnull := true // bool | Console Server Ports (name or ID) is null (optional)
+	consoleServerPortsN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	controllerManagedDeviceGroup := []string{"Inner_example"} // []string |  (optional)
-	controllerManagedDeviceGroupIsnull := true // bool |  (optional)
+	controllerManagedDeviceGroupIsnull := true // bool | Controller Managed Device Groups (name or ID) is null (optional)
 	controllerManagedDeviceGroupN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -13360,13 +13655,13 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	deviceBays := []string{"Inner_example"} // []string | Device Bays (optional)
-	deviceBaysIsnull := true // bool |  (optional)
-	deviceBaysN := []string{"Inner_example"} // []string | Device Bays (optional)
+	deviceBaysIsnull := true // bool | Device Bays is null (optional)
+	deviceBaysN := []string{"Inner_example"} // []string | Exclude Device Bays (optional)
 	deviceFamily := []string{"Inner_example"} // []string |  (optional)
-	deviceFamilyIsnull := true // bool |  (optional)
+	deviceFamilyIsnull := true // bool | Device family (name or ID) is null (optional)
 	deviceFamilyN := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
-	deviceRedundancyGroupIsnull := true // bool |  (optional)
+	deviceRedundancyGroupIsnull := true // bool | Device Redundancy Groups (name or ID) is null (optional)
 	deviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroupPriority := []int32{int32(123)} // []int32 |  (optional)
 	deviceRedundancyGroupPriorityGt := []int32{int32(123)} // []int32 |  (optional)
@@ -13377,6 +13672,8 @@ func main() {
 	deviceRedundancyGroupPriorityN := []int32{int32(123)} // []int32 |  (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	face := []string{"Inner_example"} // []string |  (optional)
 	faceIc := []string{"Inner_example"} // []string |  (optional)
 	faceIe := []string{"Inner_example"} // []string |  (optional)
@@ -13392,14 +13689,17 @@ func main() {
 	faceNre := []string{"Inner_example"} // []string |  (optional)
 	faceRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	frontPorts := []string{"Inner_example"} // []string | Front Port (optional)
-	frontPortsIsnull := true // bool |  (optional)
-	frontPortsN := []string{"Inner_example"} // []string | Front Port (optional)
+	frontPorts := []string{"Inner_example"} // []string |  (optional)
+	frontPortsIsnull := true // bool | Front Ports (name or ID) is null (optional)
+	frontPortsN := []string{"Inner_example"} // []string |  (optional)
 	hasConsolePorts := true // bool | Has console ports (optional)
 	hasConsoleServerPorts := true // bool | Has console server ports (optional)
 	hasDeviceBays := true // bool | Has device bays (optional)
+	hasEmptyModuleBays := true // bool | Has empty module bays (optional)
 	hasFrontPorts := true // bool | Has front ports (optional)
 	hasInterfaces := true // bool | Has interfaces (optional)
+	hasModuleBays := true // bool | Has module bays (optional)
+	hasModules := true // bool | Has modules (optional)
 	hasPowerOutlets := true // bool | Has power outlets (optional)
 	hasPowerPorts := true // bool | Has power ports (optional)
 	hasPrimaryIp := true // bool | Has a primary IP (optional)
@@ -13421,7 +13721,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	interfaces := []string{"Inner_example"} // []string |  (optional)
-	interfacesIsnull := true // bool |  (optional)
+	interfacesIsnull := true // bool | Interfaces (name or ID) is null (optional)
 	interfacesN := []string{"Inner_example"} // []string |  (optional)
 	isFullDepth := true // bool | Is full depth (optional)
 	isVirtualChassisMember := true // bool | Is a virtual chassis member (optional)
@@ -13435,29 +13735,32 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	localConfigContextData := true // bool | Has local config context data (optional)
 	localConfigContextSchema := []string{"Inner_example"} // []string |  (optional)
-	localConfigContextSchemaIsnull := true // bool |  (optional)
+	localConfigContextSchemaIsnull := true // bool | Schema (ID or name) is null (optional)
 	localConfigContextSchemaN := []string{"Inner_example"} // []string |  (optional)
 	localConfigContextSchemaId := []*string{"Inner_example"} // []*string | Schema (ID) - Deprecated (use local_context_schema filter) (optional)
-	localConfigContextSchemaIdIsnull := true // bool |  (optional)
-	localConfigContextSchemaIdN := []*string{"Inner_example"} // []*string | Schema (ID) - Deprecated (use local_context_schema filter) (optional)
+	localConfigContextSchemaIdIsnull := true // bool | Schema (ID) - Deprecated (use local_context_schema filter) is null (optional)
+	localConfigContextSchemaIdN := []*string{"Inner_example"} // []*string | Exclude Schema (ID) - Deprecated (use local_context_schema filter) (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	macAddress := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIc := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIc := []string{"Inner_example"} // []string | MAC address contains (optional)
 	macAddressIe := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIsw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressN := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNic := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNie := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNiew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNire := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNisw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressRe := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIew := []string{"Inner_example"} // []string | MAC address ends with (optional)
+	macAddressIre := []string{"Inner_example"} // []string | MAC address matches regex (optional)
+	macAddressIsw := []string{"Inner_example"} // []string | MAC address starts with (optional)
+	macAddressN := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNic := []string{"Inner_example"} // []string | Exclude MAC address contains (optional)
+	macAddressNie := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNiew := []string{"Inner_example"} // []string | Exclude MAC address ends with (optional)
+	macAddressNire := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
+	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
 	manufacturer := []string{"Inner_example"} // []string |  (optional)
 	manufacturerN := []string{"Inner_example"} // []string |  (optional)
+	moduleBays := []string{"Inner_example"} // []string | Module Bays (optional)
+	moduleBaysIsnull := true // bool | Module Bays is null (optional)
+	moduleBaysN := []string{"Inner_example"} // []string | Exclude Module Bays (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -13475,7 +13778,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool |  (optional)
+	platformIsnull := true // bool | Platform (name or ID) is null (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	position := []int32{int32(123)} // []int32 |  (optional)
 	positionGt := []int32{int32(123)} // []int32 |  (optional)
@@ -13484,48 +13787,51 @@ func main() {
 	positionLt := []int32{int32(123)} // []int32 |  (optional)
 	positionLte := []int32{int32(123)} // []int32 |  (optional)
 	positionN := []int32{int32(123)} // []int32 |  (optional)
-	powerOutlets := []string{"Inner_example"} // []string | Power Outlets (optional)
-	powerOutletsIsnull := true // bool |  (optional)
-	powerOutletsN := []string{"Inner_example"} // []string | Power Outlets (optional)
-	powerPorts := []string{"Inner_example"} // []string | Power Ports (optional)
-	powerPortsIsnull := true // bool |  (optional)
-	powerPortsN := []string{"Inner_example"} // []string | Power Ports (optional)
+	powerOutlets := []string{"Inner_example"} // []string |  (optional)
+	powerOutletsIsnull := true // bool | Power Outlets (name or ID) is null (optional)
+	powerOutletsN := []string{"Inner_example"} // []string |  (optional)
+	powerPorts := []string{"Inner_example"} // []string |  (optional)
+	powerPortsIsnull := true // bool | Power Ports (name or ID) is null (optional)
+	powerPortsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rack := []string{"Inner_example"} // []string |  (optional)
-	rackIsnull := true // bool |  (optional)
+	rackIsnull := true // bool | Rack (name or ID) is null (optional)
 	rackN := []string{"Inner_example"} // []string |  (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
-	rackGroupIsnull := true // bool |  (optional)
+	rackGroupIsnull := true // bool | Rack group (name or ID) is null (optional)
 	rackGroupN := []string{"Inner_example"} // []string |  (optional)
-	rearPorts := []string{"Inner_example"} // []string | Rear Port (optional)
-	rearPortsIsnull := true // bool |  (optional)
-	rearPortsN := []string{"Inner_example"} // []string | Rear Port (optional)
+	rearPorts := []string{"Inner_example"} // []string |  (optional)
+	rearPortsIsnull := true // bool | Rear Ports (name or ID) is null (optional)
+	rearPortsN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
-	roleN := []string{"Inner_example"} // []string |  (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool |  (optional)
+	secretsGroupIsnull := true // bool | Secrets group (name or ID) is null (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	serial := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool |  (optional)
+	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	vcPosition := []int32{int32(123)} // []int32 |  (optional)
 	vcPositionGt := []int32{int32(123)} // []int32 |  (optional)
 	vcPositionGte := []int32{int32(123)} // []int32 |  (optional)
@@ -13541,14 +13847,14 @@ func main() {
 	vcPriorityLte := []int32{int32(123)} // []int32 |  (optional)
 	vcPriorityN := []int32{int32(123)} // []int32 |  (optional)
 	virtualChassis := []string{"Inner_example"} // []string |  (optional)
-	virtualChassisIsnull := true // bool |  (optional)
+	virtualChassisIsnull := true // bool | Virtual chassis (name or ID) is null (optional)
 	virtualChassisN := []string{"Inner_example"} // []string |  (optional)
 	virtualChassisMember := true // bool | Is a virtual chassis member (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDevicesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13585,16 +13891,19 @@ Name | Type | Description  | Notes
  **assetTagNre** | **[]string** |  | 
  **assetTagRe** | **[]string** |  | 
  **cluster** | **[]string** |  | 
- **clusterIsnull** | **bool** |  | 
+ **clusterIsnull** | **bool** | VM cluster (name or ID) is null | 
  **clusterN** | **[]string** |  | 
- **consolePorts** | **[]string** | Console Ports | 
- **consolePortsIsnull** | **bool** |  | 
- **consolePortsN** | **[]string** | Console Ports | 
- **consoleServerPorts** | **[]string** | Console Server Ports | 
- **consoleServerPortsIsnull** | **bool** |  | 
- **consoleServerPortsN** | **[]string** | Console Server Ports | 
+ **consolePorts** | **[]string** |  | 
+ **consolePortsIsnull** | **bool** | Console Ports (name or ID) is null | 
+ **consolePortsN** | **[]string** |  | 
+ **consoleServerPorts** | **[]string** |  | 
+ **consoleServerPortsIsnull** | **bool** | Console Server Ports (name or ID) is null | 
+ **consoleServerPortsN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **controllerManagedDeviceGroup** | **[]string** |  | 
- **controllerManagedDeviceGroupIsnull** | **bool** |  | 
+ **controllerManagedDeviceGroupIsnull** | **bool** | Controller Managed Device Groups (name or ID) is null | 
  **controllerManagedDeviceGroupN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -13604,13 +13913,13 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **deviceBays** | **[]string** | Device Bays | 
- **deviceBaysIsnull** | **bool** |  | 
- **deviceBaysN** | **[]string** | Device Bays | 
+ **deviceBaysIsnull** | **bool** | Device Bays is null | 
+ **deviceBaysN** | **[]string** | Exclude Device Bays | 
  **deviceFamily** | **[]string** |  | 
- **deviceFamilyIsnull** | **bool** |  | 
+ **deviceFamilyIsnull** | **bool** | Device family (name or ID) is null | 
  **deviceFamilyN** | **[]string** |  | 
  **deviceRedundancyGroup** | **[]string** |  | 
- **deviceRedundancyGroupIsnull** | **bool** |  | 
+ **deviceRedundancyGroupIsnull** | **bool** | Device Redundancy Groups (name or ID) is null | 
  **deviceRedundancyGroupN** | **[]string** |  | 
  **deviceRedundancyGroupPriority** | **[]int32** |  | 
  **deviceRedundancyGroupPriorityGt** | **[]int32** |  | 
@@ -13621,6 +13930,8 @@ Name | Type | Description  | Notes
  **deviceRedundancyGroupPriorityN** | **[]int32** |  | 
  **deviceType** | **[]string** |  | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **face** | **[]string** |  | 
  **faceIc** | **[]string** |  | 
  **faceIe** | **[]string** |  | 
@@ -13636,14 +13947,17 @@ Name | Type | Description  | Notes
  **faceNre** | **[]string** |  | 
  **faceRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **frontPorts** | **[]string** | Front Port | 
- **frontPortsIsnull** | **bool** |  | 
- **frontPortsN** | **[]string** | Front Port | 
+ **frontPorts** | **[]string** |  | 
+ **frontPortsIsnull** | **bool** | Front Ports (name or ID) is null | 
+ **frontPortsN** | **[]string** |  | 
  **hasConsolePorts** | **bool** | Has console ports | 
  **hasConsoleServerPorts** | **bool** | Has console server ports | 
  **hasDeviceBays** | **bool** | Has device bays | 
+ **hasEmptyModuleBays** | **bool** | Has empty module bays | 
  **hasFrontPorts** | **bool** | Has front ports | 
  **hasInterfaces** | **bool** | Has interfaces | 
+ **hasModuleBays** | **bool** | Has module bays | 
+ **hasModules** | **bool** | Has modules | 
  **hasPowerOutlets** | **bool** | Has power outlets | 
  **hasPowerPorts** | **bool** | Has power ports | 
  **hasPrimaryIp** | **bool** | Has a primary IP | 
@@ -13665,7 +13979,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **interfaces** | **[]string** |  | 
- **interfacesIsnull** | **bool** |  | 
+ **interfacesIsnull** | **bool** | Interfaces (name or ID) is null | 
  **interfacesN** | **[]string** |  | 
  **isFullDepth** | **bool** | Is full depth | 
  **isVirtualChassisMember** | **bool** | Is a virtual chassis member | 
@@ -13679,29 +13993,32 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **localConfigContextData** | **bool** | Has local config context data | 
  **localConfigContextSchema** | **[]string** |  | 
- **localConfigContextSchemaIsnull** | **bool** |  | 
+ **localConfigContextSchemaIsnull** | **bool** | Schema (ID or name) is null | 
  **localConfigContextSchemaN** | **[]string** |  | 
  **localConfigContextSchemaId** | **[]string** | Schema (ID) - Deprecated (use local_context_schema filter) | 
- **localConfigContextSchemaIdIsnull** | **bool** |  | 
- **localConfigContextSchemaIdN** | **[]string** | Schema (ID) - Deprecated (use local_context_schema filter) | 
+ **localConfigContextSchemaIdIsnull** | **bool** | Schema (ID) - Deprecated (use local_context_schema filter) is null | 
+ **localConfigContextSchemaIdN** | **[]string** | Exclude Schema (ID) - Deprecated (use local_context_schema filter) | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **macAddress** | **[]string** | MAC address | 
- **macAddressIc** | **[]string** | MAC address | 
+ **macAddressIc** | **[]string** | MAC address contains | 
  **macAddressIe** | **[]string** | MAC address | 
- **macAddressIew** | **[]string** | MAC address | 
- **macAddressIre** | **[]string** | MAC address | 
- **macAddressIsw** | **[]string** | MAC address | 
- **macAddressN** | **[]string** | MAC address | 
- **macAddressNic** | **[]string** | MAC address | 
- **macAddressNie** | **[]string** | MAC address | 
- **macAddressNiew** | **[]string** | MAC address | 
- **macAddressNire** | **[]string** | MAC address | 
- **macAddressNisw** | **[]string** | MAC address | 
- **macAddressNre** | **[]string** | MAC address | 
- **macAddressRe** | **[]string** | MAC address | 
+ **macAddressIew** | **[]string** | MAC address ends with | 
+ **macAddressIre** | **[]string** | MAC address matches regex | 
+ **macAddressIsw** | **[]string** | MAC address starts with | 
+ **macAddressN** | **[]string** | Exclude MAC address | 
+ **macAddressNic** | **[]string** | Exclude MAC address contains | 
+ **macAddressNie** | **[]string** | Exclude MAC address | 
+ **macAddressNiew** | **[]string** | Exclude MAC address ends with | 
+ **macAddressNire** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
+ **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressRe** | **[]string** | MAC address matches regex | 
  **manufacturer** | **[]string** |  | 
  **manufacturerN** | **[]string** |  | 
+ **moduleBays** | **[]string** | Module Bays | 
+ **moduleBaysIsnull** | **bool** | Module Bays is null | 
+ **moduleBaysN** | **[]string** | Exclude Module Bays | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -13719,7 +14036,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** |  | 
+ **platformIsnull** | **bool** | Platform (name or ID) is null | 
  **platformN** | **[]string** |  | 
  **position** | **[]int32** |  | 
  **positionGt** | **[]int32** |  | 
@@ -13728,48 +14045,51 @@ Name | Type | Description  | Notes
  **positionLt** | **[]int32** |  | 
  **positionLte** | **[]int32** |  | 
  **positionN** | **[]int32** |  | 
- **powerOutlets** | **[]string** | Power Outlets | 
- **powerOutletsIsnull** | **bool** |  | 
- **powerOutletsN** | **[]string** | Power Outlets | 
- **powerPorts** | **[]string** | Power Ports | 
- **powerPortsIsnull** | **bool** |  | 
- **powerPortsN** | **[]string** | Power Ports | 
+ **powerOutlets** | **[]string** |  | 
+ **powerOutletsIsnull** | **bool** | Power Outlets (name or ID) is null | 
+ **powerOutletsN** | **[]string** |  | 
+ **powerPorts** | **[]string** |  | 
+ **powerPortsIsnull** | **bool** | Power Ports (name or ID) is null | 
+ **powerPortsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rack** | **[]string** |  | 
- **rackIsnull** | **bool** |  | 
+ **rackIsnull** | **bool** | Rack (name or ID) is null | 
  **rackN** | **[]string** |  | 
  **rackGroup** | **[]string** |  | 
- **rackGroupIsnull** | **bool** |  | 
+ **rackGroupIsnull** | **bool** | Rack group (name or ID) is null | 
  **rackGroupN** | **[]string** |  | 
- **rearPorts** | **[]string** | Rear Port | 
- **rearPortsIsnull** | **bool** |  | 
- **rearPortsN** | **[]string** | Rear Port | 
+ **rearPorts** | **[]string** |  | 
+ **rearPortsIsnull** | **bool** | Rear Ports (name or ID) is null | 
+ **rearPortsN** | **[]string** |  | 
  **role** | **[]string** |  | 
- **roleN** | **[]string** |  | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** |  | 
+ **secretsGroupIsnull** | **bool** | Secrets group (name or ID) is null | 
  **secretsGroupN** | **[]string** |  | 
  **serial** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** |  | 
+ **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **vcPosition** | **[]int32** |  | 
  **vcPositionGt** | **[]int32** |  | 
  **vcPositionGte** | **[]int32** |  | 
@@ -13785,7 +14105,7 @@ Name | Type | Description  | Notes
  **vcPriorityLte** | **[]int32** |  | 
  **vcPriorityN** | **[]int32** |  | 
  **virtualChassis** | **[]string** |  | 
- **virtualChassisIsnull** | **bool** |  | 
+ **virtualChassisIsnull** | **bool** | Virtual chassis (name or ID) is null | 
  **virtualChassisN** | **[]string** |  | 
  **virtualChassisMember** | **bool** | Is a virtual chassis member | 
  **depth** | **int32** | Serializer Depth | [default to 1]
@@ -14413,7 +14733,7 @@ import (
 )
 
 func main() {
-	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortTemplateRequest | 
+	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14481,7 +14801,7 @@ import (
 )
 
 func main() {
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14600,7 +14920,7 @@ Name | Type | Description  | Notes
 
 ## DcimFrontPortTemplatesList
 
-> PaginatedFrontPortTemplateList DcimFrontPortTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).RearPortTemplate(rearPortTemplate).RearPortTemplateN(rearPortTemplateN).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedFrontPortTemplateList DcimFrontPortTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).RearPortTemplate(rearPortTemplate).RearPortTemplateN(rearPortTemplateN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -14619,6 +14939,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -14634,22 +14957,27 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -14665,6 +14993,9 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string | Label (optional)
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -14690,6 +15021,9 @@ func main() {
 	rearPortTemplate := []string{"Inner_example"} // []string | Rear port template (optional)
 	rearPortTemplateN := []string{"Inner_example"} // []string | Rear port template (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -14708,7 +15042,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimFrontPortTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).RearPortTemplate(rearPortTemplate).RearPortTemplateN(rearPortTemplateN).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimFrontPortTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).RearPortTemplate(rearPortTemplate).RearPortTemplateN(rearPortTemplateN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimFrontPortTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -14729,6 +15063,9 @@ Other parameters are passed through a pointer to a apiDcimFrontPortTemplatesList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -14744,22 +15081,27 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -14775,6 +15117,9 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** | Label | 
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -14800,6 +15145,9 @@ Name | Type | Description  | Notes
  **rearPortTemplate** | **[]string** | Rear port template | 
  **rearPortTemplateN** | **[]string** | Rear port template | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -15156,7 +15504,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port template.
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15363,7 +15711,7 @@ import (
 )
 
 func main() {
-	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortRequest | 
+	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15431,7 +15779,7 @@ import (
 )
 
 func main() {
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15550,7 +15898,7 @@ Name | Type | Description  | Notes
 
 ## DcimFrontPortsList
 
-> PaginatedFrontPortList DcimFrontPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPort(rearPort).RearPortN(rearPortN).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedFrontPortList DcimFrontPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPort(rearPort).RearPortN(rearPortN).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -15572,6 +15920,9 @@ func main() {
 	cable := []string{"Inner_example"} // []string | Cable (optional)
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -15587,7 +15938,8 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -15621,6 +15973,9 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -15649,6 +16004,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -15667,7 +16025,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimFrontPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPort(rearPort).RearPortN(rearPortN).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimFrontPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).RearPort(rearPort).RearPortN(rearPortN).RearPortPosition(rearPortPosition).RearPortPositionGt(rearPortPositionGt).RearPortPositionGte(rearPortPositionGte).RearPortPositionLt(rearPortPositionLt).RearPortPositionLte(rearPortPositionLte).RearPortPositionN(rearPortPositionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimFrontPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -15691,6 +16049,9 @@ Name | Type | Description  | Notes
  **cable** | **[]string** | Cable | 
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -15706,7 +16067,8 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -15740,6 +16102,9 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -15768,6 +16133,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -16202,7 +16570,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port.
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16256,7 +16624,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfaceConnectionsList
 
-> PaginatedInterfaceConnectionList DcimInterfaceConnectionsList(ctx).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Offset(offset).Sort(sort).Depth(depth).Execute()
+> PaginatedInterfaceConnectionList DcimInterfaceConnectionsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -16275,8 +16643,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	device := []string{"Inner_example"} // []string | Device (name) (optional)
 	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -16296,11 +16669,14 @@ func main() {
 	location := "location_example" // string | Location (name) (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfaceConnectionsList(context.Background()).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Offset(offset).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfaceConnectionsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfaceConnectionsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -16321,8 +16697,13 @@ Other parameters are passed through a pointer to a apiDcimInterfaceConnectionsLi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **device** | **[]string** | Device (name) | 
  **deviceId** | **[]string** | Device (ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -16342,6 +16723,9 @@ Name | Type | Description  | Notes
  **location** | **string** | Location (name) | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -17542,7 +17926,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfaceRedundancyGroupsList
 
-> PaginatedInterfaceRedundancyGroupList DcimInterfaceRedundancyGroupsList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).VirtualIp(virtualIp).Depth(depth).Execute()
+> PaginatedInterfaceRedundancyGroupList DcimInterfaceRedundancyGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).Execute()
 
 
 
@@ -17561,6 +17945,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -17575,6 +17962,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -17642,12 +18031,15 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	virtualIp := []string{"Inner_example"} // []string | Virtual IP Address (address or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfaceRedundancyGroupsList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).VirtualIp(virtualIp).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfaceRedundancyGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfaceRedundancyGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -17668,6 +18060,9 @@ Other parameters are passed through a pointer to a apiDcimInterfaceRedundancyGro
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -17682,6 +18077,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -17749,6 +18146,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **virtualIp** | **[]string** | Virtual IP Address (address or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -18299,7 +18699,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceTemplateRequest := []openapiclient.BulkWritableInterfaceTemplateRequest{*openapiclient.NewBulkWritableInterfaceTemplateRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceTemplateRequest | 
+	bulkWritableInterfaceTemplateRequest := []openapiclient.BulkWritableInterfaceTemplateRequest{*openapiclient.NewBulkWritableInterfaceTemplateRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example")} // []BulkWritableInterfaceTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18367,7 +18767,7 @@ import (
 )
 
 func main() {
-	writableInterfaceTemplateRequest := *openapiclient.NewWritableInterfaceTemplateRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceTemplateRequest | 
+	writableInterfaceTemplateRequest := *openapiclient.NewWritableInterfaceTemplateRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual")) // WritableInterfaceTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18486,7 +18886,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfaceTemplatesList
 
-> PaginatedInterfaceTemplateList DcimInterfaceTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedInterfaceTemplateList DcimInterfaceTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -18505,6 +18905,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -18520,22 +18923,27 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -18552,6 +18960,9 @@ func main() {
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	mgmtOnly := true // bool |  (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -18569,6 +18980,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -18587,7 +19001,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfaceTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfaceTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfaceTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -18608,6 +19022,9 @@ Other parameters are passed through a pointer to a apiDcimInterfaceTemplatesList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -18623,22 +19040,27 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -18655,6 +19077,9 @@ Name | Type | Description  | Notes
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
  **mgmtOnly** | **bool** |  | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -18672,6 +19097,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -19028,7 +19456,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface template.
-	writableInterfaceTemplateRequest := *openapiclient.NewWritableInterfaceTemplateRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceTemplateRequest | 
+	writableInterfaceTemplateRequest := *openapiclient.NewWritableInterfaceTemplateRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual")) // WritableInterfaceTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19235,7 +19663,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRequest | 
+	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19303,7 +19731,7 @@ import (
 )
 
 func main() {
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19422,7 +19850,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfacesList
 
-> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).Vlan(vlan).VlanId(vlanId).Depth(depth).Execute()
+> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).Vlan(vlan).VlanId(vlanId).Depth(depth).Execute()
 
 
 
@@ -19442,18 +19870,21 @@ import (
 
 func main() {
 	bridge := []string{"Inner_example"} // []string |  (optional)
-	bridgeIsnull := true // bool |  (optional)
+	bridgeIsnull := true // bool | Bridge interface (name or ID) is null (optional)
 	bridgeN := []string{"Inner_example"} // []string |  (optional)
 	bridgedInterfaces := []string{"Inner_example"} // []string |  (optional)
-	bridgedInterfacesIsnull := true // bool |  (optional)
+	bridgedInterfacesIsnull := true // bool | Bridged interfaces (name or ID) is null (optional)
 	bridgedInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	cable := []string{"Inner_example"} // []string | Cable (optional)
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	childInterfaces := []string{"Inner_example"} // []string |  (optional)
-	childInterfacesIsnull := true // bool |  (optional)
+	childInterfacesIsnull := true // bool | Child interfaces (name or ID) is null (optional)
 	childInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -19468,9 +19899,11 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
-	device := []string{"Inner_example"} // []string | Device (name) (optional)
-	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
+	device := []string{"Inner_example"} // []string |  (optional)
+	deviceId := []string{"Inner_example"} // []string | Device (ID)  (deprecated, use \"device\" filter instead) (optional)
 	deviceWithCommonVc := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Virtual Chassis member Device (ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasBridgedInterfaces := true // bool | Has bridged interfaces (optional)
@@ -19511,7 +19944,7 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string |  (optional)
 	labelRe := []string{"Inner_example"} // []string |  (optional)
 	lag := []string{"Inner_example"} // []string |  (optional)
-	lagIsnull := true // bool |  (optional)
+	lagIsnull := true // bool | LAG interface (name or ID) is null (optional)
 	lagN := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
@@ -19531,7 +19964,7 @@ func main() {
 	macAddressNre := []string{"Inner_example"} // []string |  (optional)
 	macAddressRe := []string{"Inner_example"} // []string |  (optional)
 	memberInterfaces := []string{"Inner_example"} // []string |  (optional)
-	memberInterfacesIsnull := true // bool |  (optional)
+	memberInterfacesIsnull := true // bool | Member interfaces (name or ID) is null (optional)
 	memberInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	mgmtOnly := true // bool |  (optional)
 	mode := []string{"Inner_example"} // []string |  (optional)
@@ -19548,6 +19981,9 @@ func main() {
 	modeNisw := []string{"Inner_example"} // []string |  (optional)
 	modeNre := []string{"Inner_example"} // []string |  (optional)
 	modeRe := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	mtu := []int32{int32(123)} // []int32 |  (optional)
 	mtuGt := []int32{int32(123)} // []int32 |  (optional)
 	mtuGte := []int32{int32(123)} // []int32 |  (optional)
@@ -19571,17 +20007,23 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parentInterface := []string{"Inner_example"} // []string |  (optional)
-	parentInterfaceIsnull := true // bool |  (optional)
+	parentInterfaceIsnull := true // bool | Parent interface (name or ID) is null (optional)
 	parentInterfaceN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
+	role := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	taggedVlans := []string{"Inner_example"} // []string |  (optional)
 	taggedVlansN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -19597,7 +20039,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	untaggedVlan := []string{"Inner_example"} // []string |  (optional)
-	untaggedVlanIsnull := true // bool |  (optional)
+	untaggedVlanIsnull := true // bool | Untagged VLAN (VID or ID) is null (optional)
 	untaggedVlanN := []string{"Inner_example"} // []string |  (optional)
 	vlan := float32(8.14) // float32 | Assigned VID (optional)
 	vlanId := "vlanId_example" // string | Assigned VLAN (optional)
@@ -19605,7 +20047,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).Vlan(vlan).VlanId(vlanId).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).Vlan(vlan).VlanId(vlanId).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -19627,18 +20069,21 @@ Other parameters are passed through a pointer to a apiDcimInterfacesListRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **bridge** | **[]string** |  | 
- **bridgeIsnull** | **bool** |  | 
+ **bridgeIsnull** | **bool** | Bridge interface (name or ID) is null | 
  **bridgeN** | **[]string** |  | 
  **bridgedInterfaces** | **[]string** |  | 
- **bridgedInterfacesIsnull** | **bool** |  | 
+ **bridgedInterfacesIsnull** | **bool** | Bridged interfaces (name or ID) is null | 
  **bridgedInterfacesN** | **[]string** |  | 
  **cable** | **[]string** | Cable | 
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **childInterfaces** | **[]string** |  | 
- **childInterfacesIsnull** | **bool** |  | 
+ **childInterfacesIsnull** | **bool** | Child interfaces (name or ID) is null | 
  **childInterfacesN** | **[]string** |  | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -19653,9 +20098,11 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
- **device** | **[]string** | Device (name) | 
- **deviceId** | **[]string** | Device (ID) | 
+ **device** | **[]string** |  | 
+ **deviceId** | **[]string** | Device (ID)  (deprecated, use \&quot;device\&quot; filter instead) | 
  **deviceWithCommonVc** | **string** | Virtual Chassis member Device (ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasBridgedInterfaces** | **bool** | Has bridged interfaces | 
@@ -19696,7 +20143,7 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** |  | 
  **labelRe** | **[]string** |  | 
  **lag** | **[]string** |  | 
- **lagIsnull** | **bool** |  | 
+ **lagIsnull** | **bool** | LAG interface (name or ID) is null | 
  **lagN** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
@@ -19716,7 +20163,7 @@ Name | Type | Description  | Notes
  **macAddressNre** | **[]string** |  | 
  **macAddressRe** | **[]string** |  | 
  **memberInterfaces** | **[]string** |  | 
- **memberInterfacesIsnull** | **bool** |  | 
+ **memberInterfacesIsnull** | **bool** | Member interfaces (name or ID) is null | 
  **memberInterfacesN** | **[]string** |  | 
  **mgmtOnly** | **bool** |  | 
  **mode** | **[]string** |  | 
@@ -19733,6 +20180,9 @@ Name | Type | Description  | Notes
  **modeNisw** | **[]string** |  | 
  **modeNre** | **[]string** |  | 
  **modeRe** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **mtu** | **[]int32** |  | 
  **mtuGt** | **[]int32** |  | 
  **mtuGte** | **[]int32** |  | 
@@ -19756,17 +20206,23 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parentInterface** | **[]string** |  | 
- **parentInterfaceIsnull** | **bool** |  | 
+ **parentInterfaceIsnull** | **bool** | Parent interface (name or ID) is null | 
  **parentInterfaceN** | **[]string** |  | 
  **q** | **string** | Search | 
+ **role** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **taggedVlans** | **[]string** |  | 
  **taggedVlansN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -19782,7 +20238,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **untaggedVlan** | **[]string** |  | 
- **untaggedVlanIsnull** | **bool** |  | 
+ **untaggedVlanIsnull** | **bool** | Untagged VLAN (VID or ID) is null | 
  **untaggedVlanN** | **[]string** |  | 
  **vlan** | **float32** | Assigned VID | 
  **vlanId** | **string** | Assigned VLAN | 
@@ -20202,7 +20658,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface.
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20596,7 +21052,7 @@ Name | Type | Description  | Notes
 
 ## DcimInventoryItemsList
 
-> PaginatedInventoryItemList DcimInventoryItemsList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Discovered(discovered).Format(format).HasChildren(hasChildren).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PartId(partId).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIre(partIdIre).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNire(partIdNire).PartIdNisw(partIdNisw).PartIdNre(partIdNre).PartIdRe(partIdRe).Q(q).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedInventoryItemList DcimInventoryItemsList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Discovered(discovered).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PartId(partId).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIre(partIdIre).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNire(partIdNire).PartIdNisw(partIdNisw).PartIdNre(partIdNre).PartIdRe(partIdRe).Q(q).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -20631,8 +21087,11 @@ func main() {
 	assetTagNre := []string{"Inner_example"} // []string |  (optional)
 	assetTagRe := []string{"Inner_example"} // []string |  (optional)
 	children := []string{"Inner_example"} // []string |  (optional)
-	childrenIsnull := true // bool |  (optional)
+	childrenIsnull := true // bool | Child items (name or ID) is null (optional)
 	childrenN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -20650,6 +21109,8 @@ func main() {
 	device := []string{"Inner_example"} // []string |  (optional)
 	deviceN := []string{"Inner_example"} // []string |  (optional)
 	discovered := true // bool |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasChildren := true // bool | Has child items (optional)
 	hasSoftwareImageFiles := true // bool | Has software image files (optional)
@@ -20686,7 +21147,7 @@ func main() {
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	manufacturer := []string{"Inner_example"} // []string |  (optional)
-	manufacturerIsnull := true // bool |  (optional)
+	manufacturerIsnull := true // bool | Manufacturer (name or ID) is null (optional)
 	manufacturerN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -20704,7 +21165,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent items (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	partId := []string{"Inner_example"} // []string |  (optional)
 	partIdIc := []string{"Inner_example"} // []string |  (optional)
@@ -20725,17 +21186,20 @@ func main() {
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool |  (optional)
+	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInventoryItemsList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Discovered(discovered).Format(format).HasChildren(hasChildren).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PartId(partId).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIre(partIdIre).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNire(partIdNire).PartIdNisw(partIdNisw).PartIdNre(partIdNre).PartIdRe(partIdRe).Q(q).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInventoryItemsList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Discovered(discovered).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PartId(partId).PartIdIc(partIdIc).PartIdIe(partIdIe).PartIdIew(partIdIew).PartIdIre(partIdIre).PartIdIsw(partIdIsw).PartIdN(partIdN).PartIdNic(partIdNic).PartIdNie(partIdNie).PartIdNiew(partIdNiew).PartIdNire(partIdNire).PartIdNisw(partIdNisw).PartIdNre(partIdNre).PartIdRe(partIdRe).Q(q).Serial(serial).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInventoryItemsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -20772,8 +21236,11 @@ Name | Type | Description  | Notes
  **assetTagNre** | **[]string** |  | 
  **assetTagRe** | **[]string** |  | 
  **children** | **[]string** |  | 
- **childrenIsnull** | **bool** |  | 
+ **childrenIsnull** | **bool** | Child items (name or ID) is null | 
  **childrenN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -20791,6 +21258,8 @@ Name | Type | Description  | Notes
  **device** | **[]string** |  | 
  **deviceN** | **[]string** |  | 
  **discovered** | **bool** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasChildren** | **bool** | Has child items | 
  **hasSoftwareImageFiles** | **bool** | Has software image files | 
@@ -20827,7 +21296,7 @@ Name | Type | Description  | Notes
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **manufacturer** | **[]string** |  | 
- **manufacturerIsnull** | **bool** |  | 
+ **manufacturerIsnull** | **bool** | Manufacturer (name or ID) is null | 
  **manufacturerN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -20845,7 +21314,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent items (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **partId** | **[]string** |  | 
  **partIdIc** | **[]string** |  | 
@@ -20866,12 +21335,15 @@ Name | Type | Description  | Notes
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** |  | 
+ **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -21608,7 +22080,7 @@ Name | Type | Description  | Notes
 
 ## DcimLocationTypesList
 
-> PaginatedLocationTypeList DcimLocationTypesList(ctx).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Nestable(nestable).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedLocationTypeList DcimLocationTypesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Nestable(nestable).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -21628,6 +22100,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
@@ -21663,6 +22138,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -21703,15 +22180,18 @@ func main() {
 	nestable := true // bool |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent location type (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimLocationTypesList(context.Background()).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Nestable(nestable).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimLocationTypesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Nestable(nestable).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimLocationTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -21732,6 +22212,9 @@ Other parameters are passed through a pointer to a apiDcimLocationTypesListReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentTypes** | **[]int32** |  | 
  **contentTypesIc** | **[]int32** |  | 
  **contentTypesIe** | **[]int32** |  | 
@@ -21767,6 +22250,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -21807,10 +22292,13 @@ Name | Type | Description  | Notes
  **nestable** | **bool** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent location type (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -22547,7 +23035,7 @@ Name | Type | Description  | Notes
 
 ## DcimLocationsList
 
-> PaginatedLocationList DcimLocationsList(ctx).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).ContentType(contentType).ContentTypeIc(contentTypeIc).ContentTypeIe(contentTypeIe).ContentTypeIew(contentTypeIew).ContentTypeIre(contentTypeIre).ContentTypeIsw(contentTypeIsw).ContentTypeN(contentTypeN).ContentTypeNic(contentTypeNic).ContentTypeNie(contentTypeNie).ContentTypeNiew(contentTypeNiew).ContentTypeNire(contentTypeNire).ContentTypeNisw(contentTypeNisw).ContentTypeNre(contentTypeNre).ContentTypeRe(contentTypeRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).Execute()
+> PaginatedLocationList DcimLocationsList(ctx).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeIc(contentTypeIc).ContentTypeIe(contentTypeIe).ContentTypeIew(contentTypeIew).ContentTypeIre(contentTypeIre).ContentTypeIsw(contentTypeIsw).ContentTypeN(contentTypeN).ContentTypeNic(contentTypeNic).ContentTypeNie(contentTypeNie).ContentTypeNiew(contentTypeNiew).ContentTypeNire(contentTypeNire).ContentTypeNisw(contentTypeNisw).ContentTypeNre(contentTypeNre).ContentTypeRe(contentTypeRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).Execute()
 
 
 
@@ -22579,7 +23067,7 @@ func main() {
 	circuitTerminationsIsnull := true // bool |  (optional)
 	circuitTerminationsN := []string{"Inner_example"} // []string |  (optional)
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool |  (optional)
+	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
@@ -22637,20 +23125,23 @@ func main() {
 	contactPhoneNisw := []string{"Inner_example"} // []string |  (optional)
 	contactPhoneNre := []string{"Inner_example"} // []string |  (optional)
 	contactPhoneRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	contentType := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeIc := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
+	contentTypeIc := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type contains (optional)
 	contentTypeIe := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeIew := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeIre := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeIsw := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeN := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNic := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNie := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNiew := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNire := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNisw := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeNre := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
-	contentTypeRe := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type (optional)
+	contentTypeIew := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type ends with (optional)
+	contentTypeIre := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type matches regex (optional)
+	contentTypeIsw := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type starts with (optional)
+	contentTypeN := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type (optional)
+	contentTypeNic := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type contains (optional)
+	contentTypeNie := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type (optional)
+	contentTypeNiew := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type ends with (optional)
+	contentTypeNire := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type matches regex (optional)
+	contentTypeNisw := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type starts with (optional)
+	contentTypeNre := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Location Type matches regex (optional)
+	contentTypeRe := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Location Type matches regex (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -22673,8 +23164,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool |  (optional)
+	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	facility := []string{"Inner_example"} // []string |  (optional)
 	facilityIc := []string{"Inner_example"} // []string |  (optional)
 	facilityIe := []string{"Inner_example"} // []string |  (optional)
@@ -22753,7 +23246,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent location (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	physicalAddress := []string{"Inner_example"} // []string |  (optional)
 	physicalAddressIc := []string{"Inner_example"} // []string |  (optional)
@@ -22770,17 +23263,17 @@ func main() {
 	physicalAddressNre := []string{"Inner_example"} // []string |  (optional)
 	physicalAddressRe := []string{"Inner_example"} // []string |  (optional)
 	powerPanels := []string{"Inner_example"} // []string |  (optional)
-	powerPanelsIsnull := true // bool |  (optional)
+	powerPanelsIsnull := true // bool | Power panels (name or ID) is null (optional)
 	powerPanelsN := []string{"Inner_example"} // []string |  (optional)
 	prefixes := []string{"Inner_example"} // []string |  (optional)
 	prefixesIsnull := true // bool |  (optional)
 	prefixesN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rackGroups := []string{"Inner_example"} // []string |  (optional)
-	rackGroupsIsnull := true // bool |  (optional)
+	rackGroupsIsnull := true // bool | Rack groups (name or ID) is null (optional)
 	rackGroupsN := []string{"Inner_example"} // []string |  (optional)
 	racks := []string{"Inner_example"} // []string |  (optional)
-	racksIsnull := true // bool |  (optional)
+	racksIsnull := true // bool | Rack (name or ID) is null (optional)
 	racksN := []string{"Inner_example"} // []string |  (optional)
 	shippingAddress := []string{"Inner_example"} // []string |  (optional)
 	shippingAddressIc := []string{"Inner_example"} // []string |  (optional)
@@ -22798,20 +23291,23 @@ func main() {
 	shippingAddressRe := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	subtree := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	timeZone := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	timeZoneIc := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	timeZoneIe := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
@@ -22827,16 +23323,16 @@ func main() {
 	timeZoneNre := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	timeZoneRe := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	vlanGroups := []string{"Inner_example"} // []string |  (optional)
-	vlanGroupsIsnull := true // bool |  (optional)
+	vlanGroupsIsnull := true // bool | VLAN groups (name or ID) is null (optional)
 	vlanGroupsN := []string{"Inner_example"} // []string |  (optional)
 	vlans := []string{"Inner_example"} // []string |  (optional)
-	vlansIsnull := true // bool |  (optional)
+	vlansIsnull := true // bool | Tagged VLANs (VID or ID) is null (optional)
 	vlansN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimLocationsList(context.Background()).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).ContentType(contentType).ContentTypeIc(contentTypeIc).ContentTypeIe(contentTypeIe).ContentTypeIew(contentTypeIew).ContentTypeIre(contentTypeIre).ContentTypeIsw(contentTypeIsw).ContentTypeN(contentTypeN).ContentTypeNic(contentTypeNic).ContentTypeNie(contentTypeNie).ContentTypeNiew(contentTypeNiew).ContentTypeNire(contentTypeNire).ContentTypeNisw(contentTypeNisw).ContentTypeNre(contentTypeNre).ContentTypeRe(contentTypeRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimLocationsList(context.Background()).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeIc(contentTypeIc).ContentTypeIe(contentTypeIe).ContentTypeIew(contentTypeIew).ContentTypeIre(contentTypeIre).ContentTypeIsw(contentTypeIsw).ContentTypeN(contentTypeN).ContentTypeNic(contentTypeNic).ContentTypeNie(contentTypeNie).ContentTypeNiew(contentTypeNiew).ContentTypeNire(contentTypeNire).ContentTypeNisw(contentTypeNisw).ContentTypeNre(contentTypeNre).ContentTypeRe(contentTypeRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimLocationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -22869,7 +23365,7 @@ Name | Type | Description  | Notes
  **circuitTerminationsIsnull** | **bool** |  | 
  **circuitTerminationsN** | **[]string** |  | 
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** |  | 
+ **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
  **clustersN** | **[]string** |  | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
@@ -22927,20 +23423,23 @@ Name | Type | Description  | Notes
  **contactPhoneNisw** | **[]string** |  | 
  **contactPhoneNre** | **[]string** |  | 
  **contactPhoneRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **contentType** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeIc** | **[]int32** | Object types allowed to be associated with this Location Type | 
+ **contentTypeIc** | **[]int32** | Object types allowed to be associated with this Location Type contains | 
  **contentTypeIe** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeIew** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeIre** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeIsw** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeN** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNic** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNie** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNiew** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNire** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNisw** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeNre** | **[]int32** | Object types allowed to be associated with this Location Type | 
- **contentTypeRe** | **[]int32** | Object types allowed to be associated with this Location Type | 
+ **contentTypeIew** | **[]int32** | Object types allowed to be associated with this Location Type ends with | 
+ **contentTypeIre** | **[]int32** | Object types allowed to be associated with this Location Type matches regex | 
+ **contentTypeIsw** | **[]int32** | Object types allowed to be associated with this Location Type starts with | 
+ **contentTypeN** | **[]int32** | Exclude Object types allowed to be associated with this Location Type | 
+ **contentTypeNic** | **[]int32** | Exclude Object types allowed to be associated with this Location Type contains | 
+ **contentTypeNie** | **[]int32** | Exclude Object types allowed to be associated with this Location Type | 
+ **contentTypeNiew** | **[]int32** | Exclude Object types allowed to be associated with this Location Type ends with | 
+ **contentTypeNire** | **[]int32** | Exclude Object types allowed to be associated with this Location Type matches regex | 
+ **contentTypeNisw** | **[]int32** | Exclude Object types allowed to be associated with this Location Type starts with | 
+ **contentTypeNre** | **[]int32** | Exclude Object types allowed to be associated with this Location Type matches regex | 
+ **contentTypeRe** | **[]int32** | Object types allowed to be associated with this Location Type matches regex | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -22963,8 +23462,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** |  | 
+ **devicesIsnull** | **bool** | Devices (name or ID) is null | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **facility** | **[]string** |  | 
  **facilityIc** | **[]string** |  | 
  **facilityIe** | **[]string** |  | 
@@ -23043,7 +23544,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent location (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **physicalAddress** | **[]string** |  | 
  **physicalAddressIc** | **[]string** |  | 
@@ -23060,17 +23561,17 @@ Name | Type | Description  | Notes
  **physicalAddressNre** | **[]string** |  | 
  **physicalAddressRe** | **[]string** |  | 
  **powerPanels** | **[]string** |  | 
- **powerPanelsIsnull** | **bool** |  | 
+ **powerPanelsIsnull** | **bool** | Power panels (name or ID) is null | 
  **powerPanelsN** | **[]string** |  | 
  **prefixes** | **[]string** |  | 
  **prefixesIsnull** | **bool** |  | 
  **prefixesN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rackGroups** | **[]string** |  | 
- **rackGroupsIsnull** | **bool** |  | 
+ **rackGroupsIsnull** | **bool** | Rack groups (name or ID) is null | 
  **rackGroupsN** | **[]string** |  | 
  **racks** | **[]string** |  | 
- **racksIsnull** | **bool** |  | 
+ **racksIsnull** | **bool** | Rack (name or ID) is null | 
  **racksN** | **[]string** |  | 
  **shippingAddress** | **[]string** |  | 
  **shippingAddressIc** | **[]string** |  | 
@@ -23088,20 +23589,23 @@ Name | Type | Description  | Notes
  **shippingAddressRe** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **subtree** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **timeZone** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **timeZoneIc** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **timeZoneIe** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
@@ -23117,10 +23621,10 @@ Name | Type | Description  | Notes
  **timeZoneNre** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **timeZoneRe** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **vlanGroups** | **[]string** |  | 
- **vlanGroupsIsnull** | **bool** |  | 
+ **vlanGroupsIsnull** | **bool** | VLAN groups (name or ID) is null | 
  **vlanGroupsN** | **[]string** |  | 
  **vlans** | **[]string** |  | 
- **vlansIsnull** | **bool** |  | 
+ **vlansIsnull** | **bool** | Tagged VLANs (VID or ID) is null | 
  **vlansN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -23858,7 +24362,7 @@ Name | Type | Description  | Notes
 
 ## DcimManufacturersList
 
-> PaginatedManufacturerList DcimManufacturersList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Format(format).HasDeviceTypes(hasDeviceTypes).HasInventoryItems(hasInventoryItems).HasPlatforms(hasPlatforms).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platforms(platforms).PlatformsIsnull(platformsIsnull).PlatformsN(platformsN).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedManufacturerList DcimManufacturersList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).HasInventoryItems(hasInventoryItems).HasPlatforms(hasPlatforms).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platforms(platforms).PlatformsIsnull(platformsIsnull).PlatformsN(platformsN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -23878,6 +24382,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -23900,8 +24407,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool |  (optional)
+	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDeviceTypes := true // bool | Has device types (optional)
 	hasInventoryItems := true // bool | Has inventory items (optional)
@@ -23921,7 +24430,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	inventoryItems := []string{"Inner_example"} // []string |  (optional)
-	inventoryItemsIsnull := true // bool |  (optional)
+	inventoryItemsIsnull := true // bool | Inventory items (name or ID) is null (optional)
 	inventoryItemsN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -23947,15 +24456,18 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platforms := []string{"Inner_example"} // []string |  (optional)
-	platformsIsnull := true // bool |  (optional)
+	platformsIsnull := true // bool | Platforms (name or ID) is null (optional)
 	platformsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimManufacturersList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Format(format).HasDeviceTypes(hasDeviceTypes).HasInventoryItems(hasInventoryItems).HasPlatforms(hasPlatforms).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platforms(platforms).PlatformsIsnull(platformsIsnull).PlatformsN(platformsN).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimManufacturersList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).HasInventoryItems(hasInventoryItems).HasPlatforms(hasPlatforms).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platforms(platforms).PlatformsIsnull(platformsIsnull).PlatformsN(platformsN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimManufacturersList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -23976,6 +24488,9 @@ Other parameters are passed through a pointer to a apiDcimManufacturersListReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -23998,8 +24513,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** |  | 
+ **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
  **deviceTypesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDeviceTypes** | **bool** | Has device types | 
  **hasInventoryItems** | **bool** | Has inventory items | 
@@ -24019,7 +24536,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **inventoryItems** | **[]string** |  | 
- **inventoryItemsIsnull** | **bool** |  | 
+ **inventoryItemsIsnull** | **bool** | Inventory items (name or ID) is null | 
  **inventoryItemsN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -24045,10 +24562,13 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platforms** | **[]string** |  | 
- **platformsIsnull** | **bool** |  | 
+ **platformsIsnull** | **bool** | Platforms (name or ID) is null | 
  **platformsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -24443,6 +24963,4102 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## DcimModuleBayTemplatesBulkDestroy
+
+> DcimModuleBayTemplatesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleBayTemplatesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesBulkPartialUpdate
+
+> []ModuleBayTemplate DcimModuleBayTemplatesBulkPartialUpdate(ctx).PatchedBulkWritableModuleBayTemplateRequest(patchedBulkWritableModuleBayTemplateRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableModuleBayTemplateRequest := []openapiclient.PatchedBulkWritableModuleBayTemplateRequest{*openapiclient.NewPatchedBulkWritableModuleBayTemplateRequest("Id_example")} // []PatchedBulkWritableModuleBayTemplateRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesBulkPartialUpdate(context.Background()).PatchedBulkWritableModuleBayTemplateRequest(patchedBulkWritableModuleBayTemplateRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesBulkPartialUpdate`: []ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableModuleBayTemplateRequest** | [**[]PatchedBulkWritableModuleBayTemplateRequest**](PatchedBulkWritableModuleBayTemplateRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesBulkUpdate
+
+> []ModuleBayTemplate DcimModuleBayTemplatesBulkUpdate(ctx).BulkWritableModuleBayTemplateRequest(bulkWritableModuleBayTemplateRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableModuleBayTemplateRequest := []openapiclient.BulkWritableModuleBayTemplateRequest{*openapiclient.NewBulkWritableModuleBayTemplateRequest("Id_example", "Name_example")} // []BulkWritableModuleBayTemplateRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesBulkUpdate(context.Background()).BulkWritableModuleBayTemplateRequest(bulkWritableModuleBayTemplateRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesBulkUpdate`: []ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableModuleBayTemplateRequest** | [**[]BulkWritableModuleBayTemplateRequest**](BulkWritableModuleBayTemplateRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesCreate
+
+> ModuleBayTemplate DcimModuleBayTemplatesCreate(ctx).ModuleBayTemplateRequest(moduleBayTemplateRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	moduleBayTemplateRequest := *openapiclient.NewModuleBayTemplateRequest("Name_example") // ModuleBayTemplateRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesCreate(context.Background()).ModuleBayTemplateRequest(moduleBayTemplateRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesCreate`: ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **moduleBayTemplateRequest** | [**ModuleBayTemplateRequest**](ModuleBayTemplateRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesDestroy
+
+> DcimModuleBayTemplatesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleBayTemplatesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesList
+
+> PaginatedModuleBayTemplateList DcimModuleBayTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Position(position).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIre(positionIre).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNire(positionNire).PositionNisw(positionNisw).PositionNre(positionNre).PositionRe(positionRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	description := []string{"Inner_example"} // []string | Description (optional)
+	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
+	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
+	descriptionIew := []string{"Inner_example"} // []string | Description (optional)
+	descriptionIre := []string{"Inner_example"} // []string | Description (optional)
+	descriptionIsw := []string{"Inner_example"} // []string | Description (optional)
+	descriptionN := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNic := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNie := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNiew := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNire := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNisw := []string{"Inner_example"} // []string | Description (optional)
+	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
+	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
+	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
+	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
+	id := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
+	idIe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
+	label := []string{"Inner_example"} // []string | Label (optional)
+	labelIc := []string{"Inner_example"} // []string | Label (optional)
+	labelIe := []string{"Inner_example"} // []string | Label (optional)
+	labelIew := []string{"Inner_example"} // []string | Label (optional)
+	labelIre := []string{"Inner_example"} // []string | Label (optional)
+	labelIsw := []string{"Inner_example"} // []string | Label (optional)
+	labelN := []string{"Inner_example"} // []string | Label (optional)
+	labelNic := []string{"Inner_example"} // []string | Label (optional)
+	labelNie := []string{"Inner_example"} // []string | Label (optional)
+	labelNiew := []string{"Inner_example"} // []string | Label (optional)
+	labelNire := []string{"Inner_example"} // []string | Label (optional)
+	labelNisw := []string{"Inner_example"} // []string | Label (optional)
+	labelNre := []string{"Inner_example"} // []string | Label (optional)
+	labelRe := []string{"Inner_example"} // []string | Label (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
+	name := []string{"Inner_example"} // []string | Name (optional)
+	nameIc := []string{"Inner_example"} // []string | Name (optional)
+	nameIe := []string{"Inner_example"} // []string | Name (optional)
+	nameIew := []string{"Inner_example"} // []string | Name (optional)
+	nameIre := []string{"Inner_example"} // []string | Name (optional)
+	nameIsw := []string{"Inner_example"} // []string | Name (optional)
+	nameN := []string{"Inner_example"} // []string | Name (optional)
+	nameNic := []string{"Inner_example"} // []string | Name (optional)
+	nameNie := []string{"Inner_example"} // []string | Name (optional)
+	nameNiew := []string{"Inner_example"} // []string | Name (optional)
+	nameNire := []string{"Inner_example"} // []string | Name (optional)
+	nameNisw := []string{"Inner_example"} // []string | Name (optional)
+	nameNre := []string{"Inner_example"} // []string | Name (optional)
+	nameRe := []string{"Inner_example"} // []string | Name (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	position := []string{"Inner_example"} // []string |  (optional)
+	positionIc := []string{"Inner_example"} // []string |  (optional)
+	positionIe := []string{"Inner_example"} // []string |  (optional)
+	positionIew := []string{"Inner_example"} // []string |  (optional)
+	positionIre := []string{"Inner_example"} // []string |  (optional)
+	positionIsw := []string{"Inner_example"} // []string |  (optional)
+	positionN := []string{"Inner_example"} // []string |  (optional)
+	positionNic := []string{"Inner_example"} // []string |  (optional)
+	positionNie := []string{"Inner_example"} // []string |  (optional)
+	positionNiew := []string{"Inner_example"} // []string |  (optional)
+	positionNire := []string{"Inner_example"} // []string |  (optional)
+	positionNisw := []string{"Inner_example"} // []string |  (optional)
+	positionNre := []string{"Inner_example"} // []string |  (optional)
+	positionRe := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Position(position).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIre(positionIre).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNire(positionNire).PositionNisw(positionNisw).PositionNre(positionNre).PositionRe(positionRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesList`: PaginatedModuleBayTemplateList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **description** | **[]string** | Description | 
+ **descriptionIc** | **[]string** | Description | 
+ **descriptionIe** | **[]string** | Description | 
+ **descriptionIew** | **[]string** | Description | 
+ **descriptionIre** | **[]string** | Description | 
+ **descriptionIsw** | **[]string** | Description | 
+ **descriptionN** | **[]string** | Description | 
+ **descriptionNic** | **[]string** | Description | 
+ **descriptionNie** | **[]string** | Description | 
+ **descriptionNiew** | **[]string** | Description | 
+ **descriptionNire** | **[]string** | Description | 
+ **descriptionNisw** | **[]string** | Description | 
+ **descriptionNre** | **[]string** | Description | 
+ **descriptionRe** | **[]string** | Description | 
+ **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
+ **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
+ **id** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
+ **idIe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
+ **label** | **[]string** | Label | 
+ **labelIc** | **[]string** | Label | 
+ **labelIe** | **[]string** | Label | 
+ **labelIew** | **[]string** | Label | 
+ **labelIre** | **[]string** | Label | 
+ **labelIsw** | **[]string** | Label | 
+ **labelN** | **[]string** | Label | 
+ **labelNic** | **[]string** | Label | 
+ **labelNie** | **[]string** | Label | 
+ **labelNiew** | **[]string** | Label | 
+ **labelNire** | **[]string** | Label | 
+ **labelNisw** | **[]string** | Label | 
+ **labelNre** | **[]string** | Label | 
+ **labelRe** | **[]string** | Label | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
+ **name** | **[]string** | Name | 
+ **nameIc** | **[]string** | Name | 
+ **nameIe** | **[]string** | Name | 
+ **nameIew** | **[]string** | Name | 
+ **nameIre** | **[]string** | Name | 
+ **nameIsw** | **[]string** | Name | 
+ **nameN** | **[]string** | Name | 
+ **nameNic** | **[]string** | Name | 
+ **nameNie** | **[]string** | Name | 
+ **nameNiew** | **[]string** | Name | 
+ **nameNire** | **[]string** | Name | 
+ **nameNisw** | **[]string** | Name | 
+ **nameNre** | **[]string** | Name | 
+ **nameRe** | **[]string** | Name | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **position** | **[]string** |  | 
+ **positionIc** | **[]string** |  | 
+ **positionIe** | **[]string** |  | 
+ **positionIew** | **[]string** |  | 
+ **positionIre** | **[]string** |  | 
+ **positionIsw** | **[]string** |  | 
+ **positionN** | **[]string** |  | 
+ **positionNic** | **[]string** |  | 
+ **positionNie** | **[]string** |  | 
+ **positionNiew** | **[]string** |  | 
+ **positionNire** | **[]string** |  | 
+ **positionNisw** | **[]string** |  | 
+ **positionNre** | **[]string** |  | 
+ **positionRe** | **[]string** |  | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedModuleBayTemplateList**](PaginatedModuleBayTemplateList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesNotesCreate
+
+> Note DcimModuleBayTemplatesNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesNotesList
+
+> PaginatedNoteList DcimModuleBayTemplatesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesPartialUpdate
+
+> ModuleBayTemplate DcimModuleBayTemplatesPartialUpdate(ctx, id).Format(format).PatchedModuleBayTemplateRequest(patchedModuleBayTemplateRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedModuleBayTemplateRequest := *openapiclient.NewPatchedModuleBayTemplateRequest() // PatchedModuleBayTemplateRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesPartialUpdate(context.Background(), id).Format(format).PatchedModuleBayTemplateRequest(patchedModuleBayTemplateRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesPartialUpdate`: ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedModuleBayTemplateRequest** | [**PatchedModuleBayTemplateRequest**](PatchedModuleBayTemplateRequest.md) |  | 
+
+### Return type
+
+[**ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesRetrieve
+
+> ModuleBayTemplate DcimModuleBayTemplatesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesRetrieve`: ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBayTemplatesUpdate
+
+> ModuleBayTemplate DcimModuleBayTemplatesUpdate(ctx, id).ModuleBayTemplateRequest(moduleBayTemplateRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
+	moduleBayTemplateRequest := *openapiclient.NewModuleBayTemplateRequest("Name_example") // ModuleBayTemplateRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBayTemplatesUpdate(context.Background(), id).ModuleBayTemplateRequest(moduleBayTemplateRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBayTemplatesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBayTemplatesUpdate`: ModuleBayTemplate
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBayTemplatesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay template. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBayTemplatesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **moduleBayTemplateRequest** | [**ModuleBayTemplateRequest**](ModuleBayTemplateRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleBayTemplate**](ModuleBayTemplate.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysBulkDestroy
+
+> DcimModuleBaysBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleBaysBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysBulkPartialUpdate
+
+> []ModuleBay DcimModuleBaysBulkPartialUpdate(ctx).PatchedBulkWritableModuleBayRequest(patchedBulkWritableModuleBayRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableModuleBayRequest := []openapiclient.PatchedBulkWritableModuleBayRequest{*openapiclient.NewPatchedBulkWritableModuleBayRequest("Id_example")} // []PatchedBulkWritableModuleBayRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysBulkPartialUpdate(context.Background()).PatchedBulkWritableModuleBayRequest(patchedBulkWritableModuleBayRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysBulkPartialUpdate`: []ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableModuleBayRequest** | [**[]PatchedBulkWritableModuleBayRequest**](PatchedBulkWritableModuleBayRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysBulkUpdate
+
+> []ModuleBay DcimModuleBaysBulkUpdate(ctx).BulkWritableModuleBayRequest(bulkWritableModuleBayRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableModuleBayRequest := []openapiclient.BulkWritableModuleBayRequest{*openapiclient.NewBulkWritableModuleBayRequest("Id_example", "Name_example")} // []BulkWritableModuleBayRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysBulkUpdate(context.Background()).BulkWritableModuleBayRequest(bulkWritableModuleBayRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysBulkUpdate`: []ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableModuleBayRequest** | [**[]BulkWritableModuleBayRequest**](BulkWritableModuleBayRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysCreate
+
+> ModuleBay DcimModuleBaysCreate(ctx).ModuleBayRequest(moduleBayRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	moduleBayRequest := *openapiclient.NewModuleBayRequest("Name_example") // ModuleBayRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysCreate(context.Background()).ModuleBayRequest(moduleBayRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysCreate`: ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **moduleBayRequest** | [**ModuleBayRequest**](ModuleBayRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysDestroy
+
+> DcimModuleBaysDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleBaysDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysList
+
+> PaginatedModuleBayList DcimModuleBaysList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInstalledModule(hasInstalledModule).HasParentDevice(hasParentDevice).HasParentModule(hasParentModule).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledModule(installedModule).InstalledModuleIsnull(installedModuleIsnull).InstalledModuleN(installedModuleN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentDevice(parentDevice).ParentDeviceIsnull(parentDeviceIsnull).ParentDeviceN(parentDeviceN).ParentModule(parentModule).ParentModuleIsnull(parentModuleIsnull).ParentModuleN(parentModuleN).Position(position).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIre(positionIre).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNire(positionNire).PositionNisw(positionNisw).PositionNre(positionNre).PositionRe(positionRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	description := []string{"Inner_example"} // []string |  (optional)
+	descriptionIc := []string{"Inner_example"} // []string |  (optional)
+	descriptionIe := []string{"Inner_example"} // []string |  (optional)
+	descriptionIew := []string{"Inner_example"} // []string |  (optional)
+	descriptionIre := []string{"Inner_example"} // []string |  (optional)
+	descriptionIsw := []string{"Inner_example"} // []string |  (optional)
+	descriptionN := []string{"Inner_example"} // []string |  (optional)
+	descriptionNic := []string{"Inner_example"} // []string |  (optional)
+	descriptionNie := []string{"Inner_example"} // []string |  (optional)
+	descriptionNiew := []string{"Inner_example"} // []string |  (optional)
+	descriptionNire := []string{"Inner_example"} // []string |  (optional)
+	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
+	descriptionNre := []string{"Inner_example"} // []string |  (optional)
+	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasInstalledModule := true // bool | Has installed module (optional)
+	hasParentDevice := true // bool | Has parent device (optional)
+	hasParentModule := true // bool | Has parent module (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	installedModule := []string{"Inner_example"} // []string | Installed module (ID) (optional)
+	installedModuleIsnull := true // bool | Installed module (ID) is null (optional)
+	installedModuleN := []string{"Inner_example"} // []string | Exclude Installed module (ID) (optional)
+	label := []string{"Inner_example"} // []string |  (optional)
+	labelIc := []string{"Inner_example"} // []string |  (optional)
+	labelIe := []string{"Inner_example"} // []string |  (optional)
+	labelIew := []string{"Inner_example"} // []string |  (optional)
+	labelIre := []string{"Inner_example"} // []string |  (optional)
+	labelIsw := []string{"Inner_example"} // []string |  (optional)
+	labelN := []string{"Inner_example"} // []string |  (optional)
+	labelNic := []string{"Inner_example"} // []string |  (optional)
+	labelNie := []string{"Inner_example"} // []string |  (optional)
+	labelNiew := []string{"Inner_example"} // []string |  (optional)
+	labelNire := []string{"Inner_example"} // []string |  (optional)
+	labelNisw := []string{"Inner_example"} // []string |  (optional)
+	labelNre := []string{"Inner_example"} // []string |  (optional)
+	labelRe := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	parentDevice := []string{"Inner_example"} // []string |  (optional)
+	parentDeviceIsnull := true // bool | Parent device (name or ID) is null (optional)
+	parentDeviceN := []string{"Inner_example"} // []string |  (optional)
+	parentModule := []string{"Inner_example"} // []string | Parent module (ID) (optional)
+	parentModuleIsnull := true // bool | Parent module (ID) is null (optional)
+	parentModuleN := []string{"Inner_example"} // []string | Exclude Parent module (ID) (optional)
+	position := []string{"Inner_example"} // []string |  (optional)
+	positionIc := []string{"Inner_example"} // []string |  (optional)
+	positionIe := []string{"Inner_example"} // []string |  (optional)
+	positionIew := []string{"Inner_example"} // []string |  (optional)
+	positionIre := []string{"Inner_example"} // []string |  (optional)
+	positionIsw := []string{"Inner_example"} // []string |  (optional)
+	positionN := []string{"Inner_example"} // []string |  (optional)
+	positionNic := []string{"Inner_example"} // []string |  (optional)
+	positionNie := []string{"Inner_example"} // []string |  (optional)
+	positionNiew := []string{"Inner_example"} // []string |  (optional)
+	positionNire := []string{"Inner_example"} // []string |  (optional)
+	positionNisw := []string{"Inner_example"} // []string |  (optional)
+	positionNre := []string{"Inner_example"} // []string |  (optional)
+	positionRe := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInstalledModule(hasInstalledModule).HasParentDevice(hasParentDevice).HasParentModule(hasParentModule).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstalledModule(installedModule).InstalledModuleIsnull(installedModuleIsnull).InstalledModuleN(installedModuleN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentDevice(parentDevice).ParentDeviceIsnull(parentDeviceIsnull).ParentDeviceN(parentDeviceN).ParentModule(parentModule).ParentModuleIsnull(parentModuleIsnull).ParentModuleN(parentModuleN).Position(position).PositionIc(positionIc).PositionIe(positionIe).PositionIew(positionIew).PositionIre(positionIre).PositionIsw(positionIsw).PositionN(positionN).PositionNic(positionNic).PositionNie(positionNie).PositionNiew(positionNiew).PositionNire(positionNire).PositionNisw(positionNisw).PositionNre(positionNre).PositionRe(positionRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysList`: PaginatedModuleBayList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **description** | **[]string** |  | 
+ **descriptionIc** | **[]string** |  | 
+ **descriptionIe** | **[]string** |  | 
+ **descriptionIew** | **[]string** |  | 
+ **descriptionIre** | **[]string** |  | 
+ **descriptionIsw** | **[]string** |  | 
+ **descriptionN** | **[]string** |  | 
+ **descriptionNic** | **[]string** |  | 
+ **descriptionNie** | **[]string** |  | 
+ **descriptionNiew** | **[]string** |  | 
+ **descriptionNire** | **[]string** |  | 
+ **descriptionNisw** | **[]string** |  | 
+ **descriptionNre** | **[]string** |  | 
+ **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasInstalledModule** | **bool** | Has installed module | 
+ **hasParentDevice** | **bool** | Has parent device | 
+ **hasParentModule** | **bool** | Has parent module | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **installedModule** | **[]string** | Installed module (ID) | 
+ **installedModuleIsnull** | **bool** | Installed module (ID) is null | 
+ **installedModuleN** | **[]string** | Exclude Installed module (ID) | 
+ **label** | **[]string** |  | 
+ **labelIc** | **[]string** |  | 
+ **labelIe** | **[]string** |  | 
+ **labelIew** | **[]string** |  | 
+ **labelIre** | **[]string** |  | 
+ **labelIsw** | **[]string** |  | 
+ **labelN** | **[]string** |  | 
+ **labelNic** | **[]string** |  | 
+ **labelNie** | **[]string** |  | 
+ **labelNiew** | **[]string** |  | 
+ **labelNire** | **[]string** |  | 
+ **labelNisw** | **[]string** |  | 
+ **labelNre** | **[]string** |  | 
+ **labelRe** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **parentDevice** | **[]string** |  | 
+ **parentDeviceIsnull** | **bool** | Parent device (name or ID) is null | 
+ **parentDeviceN** | **[]string** |  | 
+ **parentModule** | **[]string** | Parent module (ID) | 
+ **parentModuleIsnull** | **bool** | Parent module (ID) is null | 
+ **parentModuleN** | **[]string** | Exclude Parent module (ID) | 
+ **position** | **[]string** |  | 
+ **positionIc** | **[]string** |  | 
+ **positionIe** | **[]string** |  | 
+ **positionIew** | **[]string** |  | 
+ **positionIre** | **[]string** |  | 
+ **positionIsw** | **[]string** |  | 
+ **positionN** | **[]string** |  | 
+ **positionNic** | **[]string** |  | 
+ **positionNie** | **[]string** |  | 
+ **positionNiew** | **[]string** |  | 
+ **positionNire** | **[]string** |  | 
+ **positionNisw** | **[]string** |  | 
+ **positionNre** | **[]string** |  | 
+ **positionRe** | **[]string** |  | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedModuleBayList**](PaginatedModuleBayList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysNotesCreate
+
+> Note DcimModuleBaysNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysNotesList
+
+> PaginatedNoteList DcimModuleBaysNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysPartialUpdate
+
+> ModuleBay DcimModuleBaysPartialUpdate(ctx, id).Format(format).PatchedModuleBayRequest(patchedModuleBayRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedModuleBayRequest := *openapiclient.NewPatchedModuleBayRequest() // PatchedModuleBayRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysPartialUpdate(context.Background(), id).Format(format).PatchedModuleBayRequest(patchedModuleBayRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysPartialUpdate`: ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedModuleBayRequest** | [**PatchedModuleBayRequest**](PatchedModuleBayRequest.md) |  | 
+
+### Return type
+
+[**ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysRetrieve
+
+> ModuleBay DcimModuleBaysRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysRetrieve`: ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleBaysUpdate
+
+> ModuleBay DcimModuleBaysUpdate(ctx, id).ModuleBayRequest(moduleBayRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
+	moduleBayRequest := *openapiclient.NewModuleBayRequest("Name_example") // ModuleBayRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleBaysUpdate(context.Background(), id).ModuleBayRequest(moduleBayRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleBaysUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleBaysUpdate`: ModuleBay
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleBaysUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module bay. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleBaysUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **moduleBayRequest** | [**ModuleBayRequest**](ModuleBayRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleBay**](ModuleBay.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesBulkDestroy
+
+> DcimModuleTypesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleTypesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesBulkPartialUpdate
+
+> []ModuleType DcimModuleTypesBulkPartialUpdate(ctx).PatchedBulkWritableModuleTypeRequest(patchedBulkWritableModuleTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableModuleTypeRequest := []openapiclient.PatchedBulkWritableModuleTypeRequest{*openapiclient.NewPatchedBulkWritableModuleTypeRequest("Id_example")} // []PatchedBulkWritableModuleTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesBulkPartialUpdate(context.Background()).PatchedBulkWritableModuleTypeRequest(patchedBulkWritableModuleTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesBulkPartialUpdate`: []ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableModuleTypeRequest** | [**[]PatchedBulkWritableModuleTypeRequest**](PatchedBulkWritableModuleTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesBulkUpdate
+
+> []ModuleType DcimModuleTypesBulkUpdate(ctx).BulkWritableModuleTypeRequest(bulkWritableModuleTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableModuleTypeRequest := []openapiclient.BulkWritableModuleTypeRequest{*openapiclient.NewBulkWritableModuleTypeRequest("Id_example", "Model_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesBulkUpdate(context.Background()).BulkWritableModuleTypeRequest(bulkWritableModuleTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesBulkUpdate`: []ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableModuleTypeRequest** | [**[]BulkWritableModuleTypeRequest**](BulkWritableModuleTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesCreate
+
+> ModuleType DcimModuleTypesCreate(ctx).ModuleTypeRequest(moduleTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesCreate(context.Background()).ModuleTypeRequest(moduleTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesCreate`: ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **moduleTypeRequest** | [**ModuleTypeRequest**](ModuleTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesDestroy
+
+> DcimModuleTypesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModuleTypesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesList
+
+> PaginatedModuleTypeList DcimModuleTypesList(ctx).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasModuleBayTemplates(hasModuleBayTemplates).HasModules(hasModules).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).ModuleBayTemplates(moduleBayTemplates).ModuleBayTemplatesIsnull(moduleBayTemplatesIsnull).ModuleBayTemplatesN(moduleBayTemplatesN).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	comments := []string{"Inner_example"} // []string |  (optional)
+	commentsIc := []string{"Inner_example"} // []string |  (optional)
+	commentsIe := []string{"Inner_example"} // []string |  (optional)
+	commentsIew := []string{"Inner_example"} // []string |  (optional)
+	commentsIre := []string{"Inner_example"} // []string |  (optional)
+	commentsIsw := []string{"Inner_example"} // []string |  (optional)
+	commentsN := []string{"Inner_example"} // []string |  (optional)
+	commentsNic := []string{"Inner_example"} // []string |  (optional)
+	commentsNie := []string{"Inner_example"} // []string |  (optional)
+	commentsNiew := []string{"Inner_example"} // []string |  (optional)
+	commentsNire := []string{"Inner_example"} // []string |  (optional)
+	commentsNisw := []string{"Inner_example"} // []string |  (optional)
+	commentsNre := []string{"Inner_example"} // []string |  (optional)
+	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	consolePortTemplates := []string{"Inner_example"} // []string |  (optional)
+	consolePortTemplatesIsnull := true // bool | Console port templates (name or ID) is null (optional)
+	consolePortTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPortTemplates := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPortTemplatesIsnull := true // bool | Console server port templates (name or ID) is null (optional)
+	consoleServerPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	frontPortTemplates := []string{"Inner_example"} // []string |  (optional)
+	frontPortTemplatesIsnull := true // bool | Front port templates (name or ID) is null (optional)
+	frontPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	hasConsolePortTemplates := true // bool | Has console port templates (optional)
+	hasConsoleServerPortTemplates := true // bool | Has console server port templates (optional)
+	hasFrontPortTemplates := true // bool | Has front port templates (optional)
+	hasInterfaceTemplates := true // bool | Has interface templates (optional)
+	hasModuleBayTemplates := true // bool | Has module bay templates (optional)
+	hasModules := true // bool | Has module instances (optional)
+	hasPowerOutletTemplates := true // bool | Has power outlet templates (optional)
+	hasPowerPortTemplates := true // bool | Has power port templates (optional)
+	hasRearPortTemplates := true // bool | Has rear port templates (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	interfaceTemplates := []string{"Inner_example"} // []string |  (optional)
+	interfaceTemplatesIsnull := true // bool | Interface templates (name or ID) is null (optional)
+	interfaceTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	manufacturer := []string{"Inner_example"} // []string |  (optional)
+	manufacturerN := []string{"Inner_example"} // []string |  (optional)
+	model := []string{"Inner_example"} // []string |  (optional)
+	modelIc := []string{"Inner_example"} // []string |  (optional)
+	modelIe := []string{"Inner_example"} // []string |  (optional)
+	modelIew := []string{"Inner_example"} // []string |  (optional)
+	modelIre := []string{"Inner_example"} // []string |  (optional)
+	modelIsw := []string{"Inner_example"} // []string |  (optional)
+	modelN := []string{"Inner_example"} // []string |  (optional)
+	modelNic := []string{"Inner_example"} // []string |  (optional)
+	modelNie := []string{"Inner_example"} // []string |  (optional)
+	modelNiew := []string{"Inner_example"} // []string |  (optional)
+	modelNire := []string{"Inner_example"} // []string |  (optional)
+	modelNisw := []string{"Inner_example"} // []string |  (optional)
+	modelNre := []string{"Inner_example"} // []string |  (optional)
+	modelRe := []string{"Inner_example"} // []string |  (optional)
+	moduleBayTemplates := []string{"Inner_example"} // []string |  (optional)
+	moduleBayTemplatesIsnull := true // bool |  (optional)
+	moduleBayTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	partNumber := []string{"Inner_example"} // []string |  (optional)
+	partNumberIc := []string{"Inner_example"} // []string |  (optional)
+	partNumberIe := []string{"Inner_example"} // []string |  (optional)
+	partNumberIew := []string{"Inner_example"} // []string |  (optional)
+	partNumberIre := []string{"Inner_example"} // []string |  (optional)
+	partNumberIsw := []string{"Inner_example"} // []string |  (optional)
+	partNumberN := []string{"Inner_example"} // []string |  (optional)
+	partNumberNic := []string{"Inner_example"} // []string |  (optional)
+	partNumberNie := []string{"Inner_example"} // []string |  (optional)
+	partNumberNiew := []string{"Inner_example"} // []string |  (optional)
+	partNumberNire := []string{"Inner_example"} // []string |  (optional)
+	partNumberNisw := []string{"Inner_example"} // []string |  (optional)
+	partNumberNre := []string{"Inner_example"} // []string |  (optional)
+	partNumberRe := []string{"Inner_example"} // []string |  (optional)
+	powerOutletTemplates := []string{"Inner_example"} // []string |  (optional)
+	powerOutletTemplatesIsnull := true // bool | Power outlet templates (name or ID) is null (optional)
+	powerOutletTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	powerPortTemplates := []string{"Inner_example"} // []string |  (optional)
+	powerPortTemplatesIsnull := true // bool | Power port templates (name or ID) is null (optional)
+	powerPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
+	rearPortTemplates := []string{"Inner_example"} // []string |  (optional)
+	rearPortTemplatesIsnull := true // bool | Rear port templates (name or ID) is null (optional)
+	rearPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesList(context.Background()).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ConsolePortTemplates(consolePortTemplates).ConsolePortTemplatesIsnull(consolePortTemplatesIsnull).ConsolePortTemplatesN(consolePortTemplatesN).ConsoleServerPortTemplates(consoleServerPortTemplates).ConsoleServerPortTemplatesIsnull(consoleServerPortTemplatesIsnull).ConsoleServerPortTemplatesN(consoleServerPortTemplatesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasConsolePortTemplates(hasConsolePortTemplates).HasConsoleServerPortTemplates(hasConsoleServerPortTemplates).HasFrontPortTemplates(hasFrontPortTemplates).HasInterfaceTemplates(hasInterfaceTemplates).HasModuleBayTemplates(hasModuleBayTemplates).HasModules(hasModules).HasPowerOutletTemplates(hasPowerOutletTemplates).HasPowerPortTemplates(hasPowerPortTemplates).HasRearPortTemplates(hasRearPortTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InterfaceTemplates(interfaceTemplates).InterfaceTemplatesIsnull(interfaceTemplatesIsnull).InterfaceTemplatesN(interfaceTemplatesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerN(manufacturerN).Model(model).ModelIc(modelIc).ModelIe(modelIe).ModelIew(modelIew).ModelIre(modelIre).ModelIsw(modelIsw).ModelN(modelN).ModelNic(modelNic).ModelNie(modelNie).ModelNiew(modelNiew).ModelNire(modelNire).ModelNisw(modelNisw).ModelNre(modelNre).ModelRe(modelRe).ModuleBayTemplates(moduleBayTemplates).ModuleBayTemplatesIsnull(moduleBayTemplatesIsnull).ModuleBayTemplatesN(moduleBayTemplatesN).Offset(offset).PartNumber(partNumber).PartNumberIc(partNumberIc).PartNumberIe(partNumberIe).PartNumberIew(partNumberIew).PartNumberIre(partNumberIre).PartNumberIsw(partNumberIsw).PartNumberN(partNumberN).PartNumberNic(partNumberNic).PartNumberNie(partNumberNie).PartNumberNiew(partNumberNiew).PartNumberNire(partNumberNire).PartNumberNisw(partNumberNisw).PartNumberNre(partNumberNre).PartNumberRe(partNumberRe).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).PowerPortTemplates(powerPortTemplates).PowerPortTemplatesIsnull(powerPortTemplatesIsnull).PowerPortTemplatesN(powerPortTemplatesN).Q(q).RearPortTemplates(rearPortTemplates).RearPortTemplatesIsnull(rearPortTemplatesIsnull).RearPortTemplatesN(rearPortTemplatesN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesList`: PaginatedModuleTypeList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **comments** | **[]string** |  | 
+ **commentsIc** | **[]string** |  | 
+ **commentsIe** | **[]string** |  | 
+ **commentsIew** | **[]string** |  | 
+ **commentsIre** | **[]string** |  | 
+ **commentsIsw** | **[]string** |  | 
+ **commentsN** | **[]string** |  | 
+ **commentsNic** | **[]string** |  | 
+ **commentsNie** | **[]string** |  | 
+ **commentsNiew** | **[]string** |  | 
+ **commentsNire** | **[]string** |  | 
+ **commentsNisw** | **[]string** |  | 
+ **commentsNre** | **[]string** |  | 
+ **commentsRe** | **[]string** |  | 
+ **consolePortTemplates** | **[]string** |  | 
+ **consolePortTemplatesIsnull** | **bool** | Console port templates (name or ID) is null | 
+ **consolePortTemplatesN** | **[]string** |  | 
+ **consoleServerPortTemplates** | **[]string** |  | 
+ **consoleServerPortTemplatesIsnull** | **bool** | Console server port templates (name or ID) is null | 
+ **consoleServerPortTemplatesN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **frontPortTemplates** | **[]string** |  | 
+ **frontPortTemplatesIsnull** | **bool** | Front port templates (name or ID) is null | 
+ **frontPortTemplatesN** | **[]string** |  | 
+ **hasConsolePortTemplates** | **bool** | Has console port templates | 
+ **hasConsoleServerPortTemplates** | **bool** | Has console server port templates | 
+ **hasFrontPortTemplates** | **bool** | Has front port templates | 
+ **hasInterfaceTemplates** | **bool** | Has interface templates | 
+ **hasModuleBayTemplates** | **bool** | Has module bay templates | 
+ **hasModules** | **bool** | Has module instances | 
+ **hasPowerOutletTemplates** | **bool** | Has power outlet templates | 
+ **hasPowerPortTemplates** | **bool** | Has power port templates | 
+ **hasRearPortTemplates** | **bool** | Has rear port templates | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **interfaceTemplates** | **[]string** |  | 
+ **interfaceTemplatesIsnull** | **bool** | Interface templates (name or ID) is null | 
+ **interfaceTemplatesN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **manufacturer** | **[]string** |  | 
+ **manufacturerN** | **[]string** |  | 
+ **model** | **[]string** |  | 
+ **modelIc** | **[]string** |  | 
+ **modelIe** | **[]string** |  | 
+ **modelIew** | **[]string** |  | 
+ **modelIre** | **[]string** |  | 
+ **modelIsw** | **[]string** |  | 
+ **modelN** | **[]string** |  | 
+ **modelNic** | **[]string** |  | 
+ **modelNie** | **[]string** |  | 
+ **modelNiew** | **[]string** |  | 
+ **modelNire** | **[]string** |  | 
+ **modelNisw** | **[]string** |  | 
+ **modelNre** | **[]string** |  | 
+ **modelRe** | **[]string** |  | 
+ **moduleBayTemplates** | **[]string** |  | 
+ **moduleBayTemplatesIsnull** | **bool** |  | 
+ **moduleBayTemplatesN** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **partNumber** | **[]string** |  | 
+ **partNumberIc** | **[]string** |  | 
+ **partNumberIe** | **[]string** |  | 
+ **partNumberIew** | **[]string** |  | 
+ **partNumberIre** | **[]string** |  | 
+ **partNumberIsw** | **[]string** |  | 
+ **partNumberN** | **[]string** |  | 
+ **partNumberNic** | **[]string** |  | 
+ **partNumberNie** | **[]string** |  | 
+ **partNumberNiew** | **[]string** |  | 
+ **partNumberNire** | **[]string** |  | 
+ **partNumberNisw** | **[]string** |  | 
+ **partNumberNre** | **[]string** |  | 
+ **partNumberRe** | **[]string** |  | 
+ **powerOutletTemplates** | **[]string** |  | 
+ **powerOutletTemplatesIsnull** | **bool** | Power outlet templates (name or ID) is null | 
+ **powerOutletTemplatesN** | **[]string** |  | 
+ **powerPortTemplates** | **[]string** |  | 
+ **powerPortTemplatesIsnull** | **bool** | Power port templates (name or ID) is null | 
+ **powerPortTemplatesN** | **[]string** |  | 
+ **q** | **string** | Search | 
+ **rearPortTemplates** | **[]string** |  | 
+ **rearPortTemplatesIsnull** | **bool** | Rear port templates (name or ID) is null | 
+ **rearPortTemplatesN** | **[]string** |  | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedModuleTypeList**](PaginatedModuleTypeList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesNotesCreate
+
+> Note DcimModuleTypesNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesNotesList
+
+> PaginatedNoteList DcimModuleTypesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesPartialUpdate
+
+> ModuleType DcimModuleTypesPartialUpdate(ctx, id).Format(format).PatchedModuleTypeRequest(patchedModuleTypeRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedModuleTypeRequest := *openapiclient.NewPatchedModuleTypeRequest() // PatchedModuleTypeRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesPartialUpdate(context.Background(), id).Format(format).PatchedModuleTypeRequest(patchedModuleTypeRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesPartialUpdate`: ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedModuleTypeRequest** | [**PatchedModuleTypeRequest**](PatchedModuleTypeRequest.md) |  | 
+
+### Return type
+
+[**ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesRetrieve
+
+> ModuleType DcimModuleTypesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesRetrieve`: ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModuleTypesUpdate
+
+> ModuleType DcimModuleTypesUpdate(ctx, id).ModuleTypeRequest(moduleTypeRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModuleTypesUpdate(context.Background(), id).ModuleTypeRequest(moduleTypeRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModuleTypesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModuleTypesUpdate`: ModuleType
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModuleTypesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module type. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModuleTypesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **moduleTypeRequest** | [**ModuleTypeRequest**](ModuleTypeRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ModuleType**](ModuleType.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesBulkDestroy
+
+> DcimModulesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModulesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesBulkPartialUpdate
+
+> []Module DcimModulesBulkPartialUpdate(ctx).PatchedBulkWritableModuleRequest(patchedBulkWritableModuleRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	patchedBulkWritableModuleRequest := []openapiclient.PatchedBulkWritableModuleRequest{*openapiclient.NewPatchedBulkWritableModuleRequest("Id_example")} // []PatchedBulkWritableModuleRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesBulkPartialUpdate(context.Background()).PatchedBulkWritableModuleRequest(patchedBulkWritableModuleRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesBulkPartialUpdate`: []Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableModuleRequest** | [**[]PatchedBulkWritableModuleRequest**](PatchedBulkWritableModuleRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesBulkUpdate
+
+> []Module DcimModulesBulkUpdate(ctx).BulkWritableModuleRequest(bulkWritableModuleRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	bulkWritableModuleRequest := []openapiclient.BulkWritableModuleRequest{*openapiclient.NewBulkWritableModuleRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesBulkUpdate(context.Background()).BulkWritableModuleRequest(bulkWritableModuleRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesBulkUpdate`: []Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableModuleRequest** | [**[]BulkWritableModuleRequest**](BulkWritableModuleRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesCreate
+
+> Module DcimModulesCreate(ctx).ModuleRequest(moduleRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesCreate(context.Background()).ModuleRequest(moduleRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesCreate`: Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **moduleRequest** | [**ModuleRequest**](ModuleRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesDestroy
+
+> DcimModulesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimModulesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesList
+
+> PaginatedModuleList DcimModulesList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasRearPorts(hasRearPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsInstalled(isInstalled).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).ModuleType(moduleType).ModuleTypeN(moduleTypeN).Offset(offset).ParentModuleBay(parentModuleBay).ParentModuleBayIsnull(parentModuleBayIsnull).ParentModuleBayN(parentModuleBayN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsnull(serialIsnull).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	assetTag := []string{"Inner_example"} // []string |  (optional)
+	assetTagIc := []string{"Inner_example"} // []string |  (optional)
+	assetTagIe := []string{"Inner_example"} // []string |  (optional)
+	assetTagIew := []string{"Inner_example"} // []string |  (optional)
+	assetTagIre := []string{"Inner_example"} // []string |  (optional)
+	assetTagIsnull := true // bool |  (optional)
+	assetTagIsw := []string{"Inner_example"} // []string |  (optional)
+	assetTagN := []string{"Inner_example"} // []string |  (optional)
+	assetTagNic := []string{"Inner_example"} // []string |  (optional)
+	assetTagNie := []string{"Inner_example"} // []string |  (optional)
+	assetTagNiew := []string{"Inner_example"} // []string |  (optional)
+	assetTagNire := []string{"Inner_example"} // []string |  (optional)
+	assetTagNisw := []string{"Inner_example"} // []string |  (optional)
+	assetTagNre := []string{"Inner_example"} // []string |  (optional)
+	assetTagRe := []string{"Inner_example"} // []string |  (optional)
+	consolePorts := []string{"Inner_example"} // []string |  (optional)
+	consolePortsIsnull := true // bool | Console Ports (name or ID) is null (optional)
+	consolePortsN := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPorts := []string{"Inner_example"} // []string |  (optional)
+	consoleServerPortsIsnull := true // bool | Console Server Ports (name or ID) is null (optional)
+	consoleServerPortsN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	device := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	frontPorts := []string{"Inner_example"} // []string |  (optional)
+	frontPortsIsnull := true // bool | Front Ports (name or ID) is null (optional)
+	frontPortsN := []string{"Inner_example"} // []string |  (optional)
+	hasConsolePorts := true // bool | Has console ports (optional)
+	hasConsoleServerPorts := true // bool | Has console server ports (optional)
+	hasEmptyModuleBays := true // bool | Has empty module bays (optional)
+	hasFrontPorts := true // bool | Has front ports (optional)
+	hasInterfaces := true // bool | Has interfaces (optional)
+	hasModuleBays := true // bool | Has module bays (optional)
+	hasModules := true // bool | Has modules (optional)
+	hasPowerOutlets := true // bool | Has power outlets (optional)
+	hasPowerPorts := true // bool | Has power ports (optional)
+	hasRearPorts := true // bool | Has rear ports (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idIc := []string{"Inner_example"} // []string |  (optional)
+	idIe := []string{"Inner_example"} // []string |  (optional)
+	idIew := []string{"Inner_example"} // []string |  (optional)
+	idIre := []string{"Inner_example"} // []string |  (optional)
+	idIsw := []string{"Inner_example"} // []string |  (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	idNic := []string{"Inner_example"} // []string |  (optional)
+	idNie := []string{"Inner_example"} // []string |  (optional)
+	idNiew := []string{"Inner_example"} // []string |  (optional)
+	idNire := []string{"Inner_example"} // []string |  (optional)
+	idNisw := []string{"Inner_example"} // []string |  (optional)
+	idNre := []string{"Inner_example"} // []string |  (optional)
+	idRe := []string{"Inner_example"} // []string |  (optional)
+	interfaces := []string{"Inner_example"} // []string |  (optional)
+	interfacesIsnull := true // bool | Interfaces (name or ID) is null (optional)
+	interfacesN := []string{"Inner_example"} // []string |  (optional)
+	isInstalled := true // bool | Is installed in a module bay (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	location := []string{"Inner_example"} // []string |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
+	locationN := []string{"Inner_example"} // []string |  (optional)
+	macAddress := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIc := []string{"Inner_example"} // []string | MAC address contains (optional)
+	macAddressIe := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIew := []string{"Inner_example"} // []string | MAC address ends with (optional)
+	macAddressIre := []string{"Inner_example"} // []string | MAC address matches regex (optional)
+	macAddressIsw := []string{"Inner_example"} // []string | MAC address starts with (optional)
+	macAddressN := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNic := []string{"Inner_example"} // []string | Exclude MAC address contains (optional)
+	macAddressNie := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNiew := []string{"Inner_example"} // []string | Exclude MAC address ends with (optional)
+	macAddressNire := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
+	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
+	manufacturer := []string{"Inner_example"} // []string |  (optional)
+	manufacturerN := []string{"Inner_example"} // []string |  (optional)
+	moduleBays := []string{"Inner_example"} // []string | Module Bays (optional)
+	moduleBaysIsnull := true // bool | Module Bays is null (optional)
+	moduleBaysN := []string{"Inner_example"} // []string | Exclude Module Bays (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	parentModuleBay := []string{"Inner_example"} // []string | Parent Module Bay (optional)
+	parentModuleBayIsnull := true // bool | Parent Module Bay is null (optional)
+	parentModuleBayN := []string{"Inner_example"} // []string | Exclude Parent Module Bay (optional)
+	powerOutlets := []string{"Inner_example"} // []string |  (optional)
+	powerOutletsIsnull := true // bool | Power Outlets (name or ID) is null (optional)
+	powerOutletsN := []string{"Inner_example"} // []string |  (optional)
+	powerPorts := []string{"Inner_example"} // []string |  (optional)
+	powerPortsIsnull := true // bool | Power Ports (name or ID) is null (optional)
+	powerPortsN := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
+	rearPorts := []string{"Inner_example"} // []string |  (optional)
+	rearPortsIsnull := true // bool | Rear Ports (name or ID) is null (optional)
+	rearPortsN := []string{"Inner_example"} // []string |  (optional)
+	role := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
+	serial := []string{"Inner_example"} // []string |  (optional)
+	serialIc := []string{"Inner_example"} // []string |  (optional)
+	serialIe := []string{"Inner_example"} // []string |  (optional)
+	serialIew := []string{"Inner_example"} // []string |  (optional)
+	serialIre := []string{"Inner_example"} // []string |  (optional)
+	serialIsnull := true // bool |  (optional)
+	serialIsw := []string{"Inner_example"} // []string |  (optional)
+	serialN := []string{"Inner_example"} // []string |  (optional)
+	serialNic := []string{"Inner_example"} // []string |  (optional)
+	serialNie := []string{"Inner_example"} // []string |  (optional)
+	serialNiew := []string{"Inner_example"} // []string |  (optional)
+	serialNire := []string{"Inner_example"} // []string |  (optional)
+	serialNisw := []string{"Inner_example"} // []string |  (optional)
+	serialNre := []string{"Inner_example"} // []string |  (optional)
+	serialRe := []string{"Inner_example"} // []string |  (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	status := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	tenant := []string{"Inner_example"} // []string |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
+	tenantN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
+	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasRearPorts(hasRearPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IsInstalled(isInstalled).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).ModuleType(moduleType).ModuleTypeN(moduleTypeN).Offset(offset).ParentModuleBay(parentModuleBay).ParentModuleBayIsnull(parentModuleBayIsnull).ParentModuleBayN(parentModuleBayN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsnull(serialIsnull).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesList`: PaginatedModuleList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **assetTag** | **[]string** |  | 
+ **assetTagIc** | **[]string** |  | 
+ **assetTagIe** | **[]string** |  | 
+ **assetTagIew** | **[]string** |  | 
+ **assetTagIre** | **[]string** |  | 
+ **assetTagIsnull** | **bool** |  | 
+ **assetTagIsw** | **[]string** |  | 
+ **assetTagN** | **[]string** |  | 
+ **assetTagNic** | **[]string** |  | 
+ **assetTagNie** | **[]string** |  | 
+ **assetTagNiew** | **[]string** |  | 
+ **assetTagNire** | **[]string** |  | 
+ **assetTagNisw** | **[]string** |  | 
+ **assetTagNre** | **[]string** |  | 
+ **assetTagRe** | **[]string** |  | 
+ **consolePorts** | **[]string** |  | 
+ **consolePortsIsnull** | **bool** | Console Ports (name or ID) is null | 
+ **consolePortsN** | **[]string** |  | 
+ **consoleServerPorts** | **[]string** |  | 
+ **consoleServerPortsIsnull** | **bool** | Console Server Ports (name or ID) is null | 
+ **consoleServerPortsN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **device** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **frontPorts** | **[]string** |  | 
+ **frontPortsIsnull** | **bool** | Front Ports (name or ID) is null | 
+ **frontPortsN** | **[]string** |  | 
+ **hasConsolePorts** | **bool** | Has console ports | 
+ **hasConsoleServerPorts** | **bool** | Has console server ports | 
+ **hasEmptyModuleBays** | **bool** | Has empty module bays | 
+ **hasFrontPorts** | **bool** | Has front ports | 
+ **hasInterfaces** | **bool** | Has interfaces | 
+ **hasModuleBays** | **bool** | Has module bays | 
+ **hasModules** | **bool** | Has modules | 
+ **hasPowerOutlets** | **bool** | Has power outlets | 
+ **hasPowerPorts** | **bool** | Has power ports | 
+ **hasRearPorts** | **bool** | Has rear ports | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idIc** | **[]string** |  | 
+ **idIe** | **[]string** |  | 
+ **idIew** | **[]string** |  | 
+ **idIre** | **[]string** |  | 
+ **idIsw** | **[]string** |  | 
+ **idN** | **[]string** |  | 
+ **idNic** | **[]string** |  | 
+ **idNie** | **[]string** |  | 
+ **idNiew** | **[]string** |  | 
+ **idNire** | **[]string** |  | 
+ **idNisw** | **[]string** |  | 
+ **idNre** | **[]string** |  | 
+ **idRe** | **[]string** |  | 
+ **interfaces** | **[]string** |  | 
+ **interfacesIsnull** | **bool** | Interfaces (name or ID) is null | 
+ **interfacesN** | **[]string** |  | 
+ **isInstalled** | **bool** | Is installed in a module bay | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **location** | **[]string** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
+ **locationN** | **[]string** |  | 
+ **macAddress** | **[]string** | MAC address | 
+ **macAddressIc** | **[]string** | MAC address contains | 
+ **macAddressIe** | **[]string** | MAC address | 
+ **macAddressIew** | **[]string** | MAC address ends with | 
+ **macAddressIre** | **[]string** | MAC address matches regex | 
+ **macAddressIsw** | **[]string** | MAC address starts with | 
+ **macAddressN** | **[]string** | Exclude MAC address | 
+ **macAddressNic** | **[]string** | Exclude MAC address contains | 
+ **macAddressNie** | **[]string** | Exclude MAC address | 
+ **macAddressNiew** | **[]string** | Exclude MAC address ends with | 
+ **macAddressNire** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
+ **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressRe** | **[]string** | MAC address matches regex | 
+ **manufacturer** | **[]string** |  | 
+ **manufacturerN** | **[]string** |  | 
+ **moduleBays** | **[]string** | Module Bays | 
+ **moduleBaysIsnull** | **bool** | Module Bays is null | 
+ **moduleBaysN** | **[]string** | Exclude Module Bays | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeN** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **parentModuleBay** | **[]string** | Parent Module Bay | 
+ **parentModuleBayIsnull** | **bool** | Parent Module Bay is null | 
+ **parentModuleBayN** | **[]string** | Exclude Parent Module Bay | 
+ **powerOutlets** | **[]string** |  | 
+ **powerOutletsIsnull** | **bool** | Power Outlets (name or ID) is null | 
+ **powerOutletsN** | **[]string** |  | 
+ **powerPorts** | **[]string** |  | 
+ **powerPortsIsnull** | **bool** | Power Ports (name or ID) is null | 
+ **powerPortsN** | **[]string** |  | 
+ **q** | **string** | Search | 
+ **rearPorts** | **[]string** |  | 
+ **rearPortsIsnull** | **bool** | Rear Ports (name or ID) is null | 
+ **rearPortsN** | **[]string** |  | 
+ **role** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
+ **serial** | **[]string** |  | 
+ **serialIc** | **[]string** |  | 
+ **serialIe** | **[]string** |  | 
+ **serialIew** | **[]string** |  | 
+ **serialIre** | **[]string** |  | 
+ **serialIsnull** | **bool** |  | 
+ **serialIsw** | **[]string** |  | 
+ **serialN** | **[]string** |  | 
+ **serialNic** | **[]string** |  | 
+ **serialNie** | **[]string** |  | 
+ **serialNiew** | **[]string** |  | 
+ **serialNire** | **[]string** |  | 
+ **serialNisw** | **[]string** |  | 
+ **serialNre** | **[]string** |  | 
+ **serialRe** | **[]string** |  | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **status** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **tenant** | **[]string** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
+ **tenantN** | **[]string** |  | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
+ **tenantGroupN** | **[]string** |  | 
+ **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedModuleList**](PaginatedModuleList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesNotesCreate
+
+> Note DcimModulesNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesNotesList
+
+> PaginatedNoteList DcimModulesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesPartialUpdate
+
+> Module DcimModulesPartialUpdate(ctx, id).Format(format).PatchedModuleRequest(patchedModuleRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedModuleRequest := *openapiclient.NewPatchedModuleRequest() // PatchedModuleRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesPartialUpdate(context.Background(), id).Format(format).PatchedModuleRequest(patchedModuleRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesPartialUpdate`: Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedModuleRequest** | [**PatchedModuleRequest**](PatchedModuleRequest.md) |  | 
+
+### Return type
+
+[**Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesRetrieve
+
+> Module DcimModulesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesRetrieve`: Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+
+### Return type
+
+[**Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimModulesUpdate
+
+> Module DcimModulesUpdate(ctx, id).ModuleRequest(moduleRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimModulesUpdate(context.Background(), id).ModuleRequest(moduleRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimModulesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimModulesUpdate`: Module
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimModulesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this module. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimModulesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **moduleRequest** | [**ModuleRequest**](ModuleRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Module**](Module.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## DcimPlatformsBulkDestroy
 
 > DcimPlatformsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -24785,7 +29401,7 @@ Name | Type | Description  | Notes
 
 ## DcimPlatformsList
 
-> PaginatedPlatformList DcimPlatformsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NapalmArgs(napalmArgs).NapalmDriver(napalmDriver).NapalmDriverIc(napalmDriverIc).NapalmDriverIe(napalmDriverIe).NapalmDriverIew(napalmDriverIew).NapalmDriverIre(napalmDriverIre).NapalmDriverIsw(napalmDriverIsw).NapalmDriverN(napalmDriverN).NapalmDriverNic(napalmDriverNic).NapalmDriverNie(napalmDriverNie).NapalmDriverNiew(napalmDriverNiew).NapalmDriverNire(napalmDriverNire).NapalmDriverNisw(napalmDriverNisw).NapalmDriverNre(napalmDriverNre).NapalmDriverRe(napalmDriverRe).NetworkDriver(networkDriver).NetworkDriverIc(networkDriverIc).NetworkDriverIe(networkDriverIe).NetworkDriverIew(networkDriverIew).NetworkDriverIre(networkDriverIre).NetworkDriverIsw(networkDriverIsw).NetworkDriverN(networkDriverN).NetworkDriverNic(networkDriverNic).NetworkDriverNie(networkDriverNie).NetworkDriverNiew(networkDriverNiew).NetworkDriverNire(networkDriverNire).NetworkDriverNisw(networkDriverNisw).NetworkDriverNre(networkDriverNre).NetworkDriverRe(networkDriverRe).Offset(offset).Q(q).Sort(sort).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+> PaginatedPlatformList DcimPlatformsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NapalmArgs(napalmArgs).NapalmDriver(napalmDriver).NapalmDriverIc(napalmDriverIc).NapalmDriverIe(napalmDriverIe).NapalmDriverIew(napalmDriverIew).NapalmDriverIre(napalmDriverIre).NapalmDriverIsw(napalmDriverIsw).NapalmDriverN(napalmDriverN).NapalmDriverNic(napalmDriverNic).NapalmDriverNie(napalmDriverNie).NapalmDriverNiew(napalmDriverNiew).NapalmDriverNire(napalmDriverNire).NapalmDriverNisw(napalmDriverNisw).NapalmDriverNre(napalmDriverNre).NapalmDriverRe(napalmDriverRe).NetworkDriver(networkDriver).NetworkDriverIc(networkDriverIc).NetworkDriverIe(networkDriverIe).NetworkDriverIew(networkDriverIew).NetworkDriverIre(networkDriverIre).NetworkDriverIsw(networkDriverIsw).NetworkDriverN(networkDriverN).NetworkDriverNic(networkDriverNic).NetworkDriverNie(networkDriverNie).NetworkDriverNiew(networkDriverNiew).NetworkDriverNire(networkDriverNire).NetworkDriverNisw(networkDriverNisw).NetworkDriverNre(networkDriverNre).NetworkDriverRe(networkDriverRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 
 
 
@@ -24805,6 +29421,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -24829,6 +29448,8 @@ func main() {
 	devices := []string{"Inner_example"} // []string |  (optional)
 	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDevices := true // bool | Has devices (optional)
 	hasVirtualMachines := true // bool | Has virtual machines (optional)
@@ -24855,7 +29476,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	manufacturer := []string{"Inner_example"} // []string |  (optional)
-	manufacturerIsnull := true // bool |  (optional)
+	manufacturerIsnull := true // bool | Manufacturer (name or ID) is null (optional)
 	manufacturerN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -24903,6 +29524,9 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
 	virtualMachinesIsnull := true // bool |  (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
@@ -24910,7 +29534,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPlatformsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NapalmArgs(napalmArgs).NapalmDriver(napalmDriver).NapalmDriverIc(napalmDriverIc).NapalmDriverIe(napalmDriverIe).NapalmDriverIew(napalmDriverIew).NapalmDriverIre(napalmDriverIre).NapalmDriverIsw(napalmDriverIsw).NapalmDriverN(napalmDriverN).NapalmDriverNic(napalmDriverNic).NapalmDriverNie(napalmDriverNie).NapalmDriverNiew(napalmDriverNiew).NapalmDriverNire(napalmDriverNire).NapalmDriverNisw(napalmDriverNisw).NapalmDriverNre(napalmDriverNre).NapalmDriverRe(napalmDriverRe).NetworkDriver(networkDriver).NetworkDriverIc(networkDriverIc).NetworkDriverIe(networkDriverIe).NetworkDriverIew(networkDriverIew).NetworkDriverIre(networkDriverIre).NetworkDriverIsw(networkDriverIsw).NetworkDriverN(networkDriverN).NetworkDriverNic(networkDriverNic).NetworkDriverNie(networkDriverNie).NetworkDriverNiew(networkDriverNiew).NetworkDriverNire(networkDriverNire).NetworkDriverNisw(networkDriverNisw).NetworkDriverNre(networkDriverNre).NetworkDriverRe(networkDriverRe).Offset(offset).Q(q).Sort(sort).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPlatformsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Manufacturer(manufacturer).ManufacturerIsnull(manufacturerIsnull).ManufacturerN(manufacturerN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NapalmArgs(napalmArgs).NapalmDriver(napalmDriver).NapalmDriverIc(napalmDriverIc).NapalmDriverIe(napalmDriverIe).NapalmDriverIew(napalmDriverIew).NapalmDriverIre(napalmDriverIre).NapalmDriverIsw(napalmDriverIsw).NapalmDriverN(napalmDriverN).NapalmDriverNic(napalmDriverNic).NapalmDriverNie(napalmDriverNie).NapalmDriverNiew(napalmDriverNiew).NapalmDriverNire(napalmDriverNire).NapalmDriverNisw(napalmDriverNisw).NapalmDriverNre(napalmDriverNre).NapalmDriverRe(napalmDriverRe).NetworkDriver(networkDriver).NetworkDriverIc(networkDriverIc).NetworkDriverIe(networkDriverIe).NetworkDriverIew(networkDriverIew).NetworkDriverIre(networkDriverIre).NetworkDriverIsw(networkDriverIsw).NetworkDriverN(networkDriverN).NetworkDriverNic(networkDriverNic).NetworkDriverNie(networkDriverNie).NetworkDriverNiew(networkDriverNiew).NetworkDriverNire(networkDriverNire).NetworkDriverNisw(networkDriverNisw).NetworkDriverNre(networkDriverNre).NetworkDriverRe(networkDriverRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPlatformsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -24931,6 +29555,9 @@ Other parameters are passed through a pointer to a apiDcimPlatformsListRequest s
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -24955,6 +29582,8 @@ Name | Type | Description  | Notes
  **devices** | **[]string** |  | 
  **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDevices** | **bool** | Has devices | 
  **hasVirtualMachines** | **bool** | Has virtual machines | 
@@ -24981,7 +29610,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **manufacturer** | **[]string** |  | 
- **manufacturerIsnull** | **bool** |  | 
+ **manufacturerIsnull** | **bool** | Manufacturer (name or ID) is null | 
  **manufacturerN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -25029,6 +29658,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **virtualMachines** | **[]string** |  | 
  **virtualMachinesIsnull** | **bool** |  | 
  **virtualMachinesN** | **[]string** |  | 
@@ -25428,7 +30060,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerConnectionsList
 
-> PaginatedPowerPortList DcimPowerConnectionsList(ctx).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Depth(depth).Execute()
+> PaginatedPowerPortList DcimPowerConnectionsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -25447,8 +30079,13 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	device := []string{"Inner_example"} // []string | Device (name) (optional)
 	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -25482,11 +30119,14 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerConnectionsList(context.Background()).Device(device).DeviceId(deviceId).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerConnectionsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Device(device).DeviceId(deviceId).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerConnectionsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -25507,8 +30147,13 @@ Other parameters are passed through a pointer to a apiDcimPowerConnectionsListRe
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **device** | **[]string** | Device (name) | 
  **deviceId** | **[]string** | Device (ID) | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -25542,6 +30187,9 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -25904,7 +30552,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerFeedsList
 
-> PaginatedPowerFeedList DcimPowerFeedsList(ctx).Amperage(amperage).AmperageGt(amperageGt).AmperageGte(amperageGte).AmperageLt(amperageLt).AmperageLte(amperageLte).AmperageN(amperageN).AvailablePower(availablePower).AvailablePowerGt(availablePowerGt).AvailablePowerGte(availablePowerGte).AvailablePowerLt(availablePowerLt).AvailablePowerLte(availablePowerLte).AvailablePowerN(availablePowerN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Connected(connected).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).MaxUtilization(maxUtilization).MaxUtilizationGt(maxUtilizationGt).MaxUtilizationGte(maxUtilizationGte).MaxUtilizationLt(maxUtilizationLt).MaxUtilizationLte(maxUtilizationLte).MaxUtilizationN(maxUtilizationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phase(phase).PhaseIc(phaseIc).PhaseIe(phaseIe).PhaseIew(phaseIew).PhaseIre(phaseIre).PhaseIsw(phaseIsw).PhaseN(phaseN).PhaseNic(phaseNic).PhaseNie(phaseNie).PhaseNiew(phaseNiew).PhaseNire(phaseNire).PhaseNisw(phaseNisw).PhaseNre(phaseNre).PhaseRe(phaseRe).PowerPanel(powerPanel).PowerPanelN(powerPanelN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).Sort(sort).Status(status).StatusN(statusN).Supply(supply).SupplyIc(supplyIc).SupplyIe(supplyIe).SupplyIew(supplyIew).SupplyIre(supplyIre).SupplyIsw(supplyIsw).SupplyN(supplyN).SupplyNic(supplyNic).SupplyNie(supplyNie).SupplyNiew(supplyNiew).SupplyNire(supplyNire).SupplyNisw(supplyNisw).SupplyNre(supplyNre).SupplyRe(supplyRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Voltage(voltage).VoltageGt(voltageGt).VoltageGte(voltageGte).VoltageLt(voltageLt).VoltageLte(voltageLte).VoltageN(voltageN).Depth(depth).Execute()
+> PaginatedPowerFeedList DcimPowerFeedsList(ctx).Amperage(amperage).AmperageGt(amperageGt).AmperageGte(amperageGte).AmperageLt(amperageLt).AmperageLte(amperageLte).AmperageN(amperageN).AvailablePower(availablePower).AvailablePowerGt(availablePowerGt).AvailablePowerGte(availablePowerGte).AvailablePowerLt(availablePowerLt).AvailablePowerLte(availablePowerLte).AvailablePowerN(availablePowerN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).MaxUtilization(maxUtilization).MaxUtilizationGt(maxUtilizationGt).MaxUtilizationGte(maxUtilizationGte).MaxUtilizationLt(maxUtilizationLt).MaxUtilizationLte(maxUtilizationLte).MaxUtilizationN(maxUtilizationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phase(phase).PhaseIc(phaseIc).PhaseIe(phaseIe).PhaseIew(phaseIew).PhaseIre(phaseIre).PhaseIsw(phaseIsw).PhaseN(phaseN).PhaseNic(phaseNic).PhaseNie(phaseNie).PhaseNiew(phaseNiew).PhaseNire(phaseNire).PhaseNisw(phaseNisw).PhaseNre(phaseNre).PhaseRe(phaseRe).PowerPanel(powerPanel).PowerPanelN(powerPanelN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).Sort(sort).Status(status).StatusN(statusN).Supply(supply).SupplyIc(supplyIc).SupplyIe(supplyIe).SupplyIew(supplyIew).SupplyIre(supplyIre).SupplyIsw(supplyIsw).SupplyN(supplyN).SupplyNic(supplyNic).SupplyNie(supplyNie).SupplyNiew(supplyNiew).SupplyNire(supplyNire).SupplyNisw(supplyNisw).SupplyNre(supplyNre).SupplyRe(supplyRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Voltage(voltage).VoltageGt(voltageGt).VoltageGte(voltageGte).VoltageLt(voltageLt).VoltageLte(voltageLte).VoltageN(voltageN).Depth(depth).Execute()
 
 
 
@@ -25954,6 +30602,9 @@ func main() {
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -25961,6 +30612,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -26026,11 +30679,11 @@ func main() {
 	powerPanelN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rack := []string{"Inner_example"} // []string |  (optional)
-	rackIsnull := true // bool |  (optional)
+	rackIsnull := true // bool | Rack (name or ID) is null (optional)
 	rackN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	supply := []string{"Inner_example"} // []string |  (optional)
 	supplyIc := []string{"Inner_example"} // []string |  (optional)
 	supplyIe := []string{"Inner_example"} // []string |  (optional)
@@ -26048,6 +30701,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -26072,7 +30728,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerFeedsList(context.Background()).Amperage(amperage).AmperageGt(amperageGt).AmperageGte(amperageGte).AmperageLt(amperageLt).AmperageLte(amperageLte).AmperageN(amperageN).AvailablePower(availablePower).AvailablePowerGt(availablePowerGt).AvailablePowerGte(availablePowerGte).AvailablePowerLt(availablePowerLt).AvailablePowerLte(availablePowerLte).AvailablePowerN(availablePowerN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Connected(connected).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).MaxUtilization(maxUtilization).MaxUtilizationGt(maxUtilizationGt).MaxUtilizationGte(maxUtilizationGte).MaxUtilizationLt(maxUtilizationLt).MaxUtilizationLte(maxUtilizationLte).MaxUtilizationN(maxUtilizationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phase(phase).PhaseIc(phaseIc).PhaseIe(phaseIe).PhaseIew(phaseIew).PhaseIre(phaseIre).PhaseIsw(phaseIsw).PhaseN(phaseN).PhaseNic(phaseNic).PhaseNie(phaseNie).PhaseNiew(phaseNiew).PhaseNire(phaseNire).PhaseNisw(phaseNisw).PhaseNre(phaseNre).PhaseRe(phaseRe).PowerPanel(powerPanel).PowerPanelN(powerPanelN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).Sort(sort).Status(status).StatusN(statusN).Supply(supply).SupplyIc(supplyIc).SupplyIe(supplyIe).SupplyIew(supplyIew).SupplyIre(supplyIre).SupplyIsw(supplyIsw).SupplyN(supplyN).SupplyNic(supplyNic).SupplyNie(supplyNie).SupplyNiew(supplyNiew).SupplyNire(supplyNire).SupplyNisw(supplyNisw).SupplyNre(supplyNre).SupplyRe(supplyRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Voltage(voltage).VoltageGt(voltageGt).VoltageGte(voltageGte).VoltageLt(voltageLt).VoltageLte(voltageLte).VoltageN(voltageN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerFeedsList(context.Background()).Amperage(amperage).AmperageGt(amperageGt).AmperageGte(amperageGte).AmperageLt(amperageLt).AmperageLte(amperageLte).AmperageN(amperageN).AvailablePower(availablePower).AvailablePowerGt(availablePowerGt).AvailablePowerGte(availablePowerGte).AvailablePowerLt(availablePowerLt).AvailablePowerLte(availablePowerLte).AvailablePowerN(availablePowerN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).MaxUtilization(maxUtilization).MaxUtilizationGt(maxUtilizationGt).MaxUtilizationGte(maxUtilizationGte).MaxUtilizationLt(maxUtilizationLt).MaxUtilizationLte(maxUtilizationLte).MaxUtilizationN(maxUtilizationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Phase(phase).PhaseIc(phaseIc).PhaseIe(phaseIe).PhaseIew(phaseIew).PhaseIre(phaseIre).PhaseIsw(phaseIsw).PhaseN(phaseN).PhaseNic(phaseNic).PhaseNie(phaseNie).PhaseNiew(phaseNiew).PhaseNire(phaseNire).PhaseNisw(phaseNisw).PhaseNre(phaseNre).PhaseRe(phaseRe).PowerPanel(powerPanel).PowerPanelN(powerPanelN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).Sort(sort).Status(status).StatusN(statusN).Supply(supply).SupplyIc(supplyIc).SupplyIe(supplyIe).SupplyIew(supplyIew).SupplyIre(supplyIre).SupplyIsw(supplyIsw).SupplyN(supplyN).SupplyNic(supplyNic).SupplyNie(supplyNie).SupplyNiew(supplyNiew).SupplyNire(supplyNire).SupplyNisw(supplyNisw).SupplyNre(supplyNre).SupplyRe(supplyRe).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Voltage(voltage).VoltageGt(voltageGt).VoltageGte(voltageGte).VoltageLt(voltageLt).VoltageLte(voltageLte).VoltageN(voltageN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerFeedsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -26123,6 +30779,9 @@ Name | Type | Description  | Notes
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -26130,6 +30789,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -26195,11 +30856,11 @@ Name | Type | Description  | Notes
  **powerPanelN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rack** | **[]string** |  | 
- **rackIsnull** | **bool** |  | 
+ **rackIsnull** | **bool** | Rack (name or ID) is null | 
  **rackN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **supply** | **[]string** |  | 
  **supplyIc** | **[]string** |  | 
  **supplyIe** | **[]string** |  | 
@@ -26217,6 +30878,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -26860,7 +31524,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerOutletTemplateRequest := []openapiclient.BulkWritablePowerOutletTemplateRequest{*openapiclient.NewBulkWritablePowerOutletTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerOutletTemplateRequest | 
+	bulkWritablePowerOutletTemplateRequest := []openapiclient.BulkWritablePowerOutletTemplateRequest{*openapiclient.NewBulkWritablePowerOutletTemplateRequest("Id_example", "Name_example")} // []BulkWritablePowerOutletTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -26928,7 +31592,7 @@ import (
 )
 
 func main() {
-	writablePowerOutletTemplateRequest := *openapiclient.NewWritablePowerOutletTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerOutletTemplateRequest | 
+	writablePowerOutletTemplateRequest := *openapiclient.NewWritablePowerOutletTemplateRequest("Name_example") // WritablePowerOutletTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27047,7 +31711,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerOutletTemplatesList
 
-> PaginatedPowerOutletTemplateList DcimPowerOutletTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPortTemplate(powerPortTemplate).PowerPortTemplateIsnull(powerPortTemplateIsnull).PowerPortTemplateN(powerPortTemplateN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedPowerOutletTemplateList DcimPowerOutletTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPortTemplate(powerPortTemplate).PowerPortTemplateIsnull(powerPortTemplateIsnull).PowerPortTemplateN(powerPortTemplateN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -27066,6 +31730,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -27081,7 +31748,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	feedLeg := []string{"Inner_example"} // []string | Phase (for three-phase feeds) (optional)
 	feedLegIc := []string{"Inner_example"} // []string |  (optional)
 	feedLegIe := []string{"Inner_example"} // []string |  (optional)
@@ -27097,20 +31767,22 @@ func main() {
 	feedLegNre := []string{"Inner_example"} // []string |  (optional)
 	feedLegRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -27126,6 +31798,9 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string | Label (optional)
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -27142,10 +31817,13 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string | Name (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerPortTemplate := []string{"Inner_example"} // []string |  (optional)
-	powerPortTemplateIsnull := true // bool |  (optional)
+	powerPortTemplateIsnull := true // bool | Power port template (name or ID) is null (optional)
 	powerPortTemplateN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -27164,7 +31842,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerOutletTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPortTemplate(powerPortTemplate).PowerPortTemplateIsnull(powerPortTemplateIsnull).PowerPortTemplateN(powerPortTemplateN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerOutletTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPortTemplate(powerPortTemplate).PowerPortTemplateIsnull(powerPortTemplateIsnull).PowerPortTemplateN(powerPortTemplateN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerOutletTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -27185,6 +31863,9 @@ Other parameters are passed through a pointer to a apiDcimPowerOutletTemplatesLi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -27200,7 +31881,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **feedLeg** | **[]string** | Phase (for three-phase feeds) | 
  **feedLegIc** | **[]string** |  | 
  **feedLegIe** | **[]string** |  | 
@@ -27216,20 +31900,22 @@ Name | Type | Description  | Notes
  **feedLegNre** | **[]string** |  | 
  **feedLegRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -27245,6 +31931,9 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** | Label | 
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -27261,10 +31950,13 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** | Name | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerPortTemplate** | **[]string** |  | 
- **powerPortTemplateIsnull** | **bool** |  | 
+ **powerPortTemplateIsnull** | **bool** | Power port template (name or ID) is null | 
  **powerPortTemplateN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -27621,7 +32313,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power outlet template.
-	writablePowerOutletTemplateRequest := *openapiclient.NewWritablePowerOutletTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerOutletTemplateRequest | 
+	writablePowerOutletTemplateRequest := *openapiclient.NewWritablePowerOutletTemplateRequest("Name_example") // WritablePowerOutletTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27828,7 +32520,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerOutletRequest := []openapiclient.BulkWritablePowerOutletRequest{*openapiclient.NewBulkWritablePowerOutletRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerOutletRequest | 
+	bulkWritablePowerOutletRequest := []openapiclient.BulkWritablePowerOutletRequest{*openapiclient.NewBulkWritablePowerOutletRequest("Id_example", "Name_example")} // []BulkWritablePowerOutletRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27896,7 +32588,7 @@ import (
 )
 
 func main() {
-	writablePowerOutletRequest := *openapiclient.NewWritablePowerOutletRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerOutletRequest | 
+	writablePowerOutletRequest := *openapiclient.NewWritablePowerOutletRequest("Name_example") // WritablePowerOutletRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28015,7 +32707,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerOutletsList
 
-> PaginatedPowerOutletList DcimPowerOutletsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPort(powerPort).PowerPortIsnull(powerPortIsnull).PowerPortN(powerPortN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedPowerOutletList DcimPowerOutletsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPort(powerPort).PowerPortIsnull(powerPortIsnull).PowerPortN(powerPortN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -28038,6 +32730,9 @@ func main() {
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -28053,7 +32748,8 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	feedLeg := []string{"Inner_example"} // []string | Phase (for three-phase feeds) (optional)
 	feedLegIc := []string{"Inner_example"} // []string |  (optional)
 	feedLegIe := []string{"Inner_example"} // []string |  (optional)
@@ -28101,6 +32797,9 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -28124,6 +32823,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIc := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIe := []string{"Inner_example"} // []string | Physical port type (optional)
@@ -28142,7 +32844,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerOutletsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPort(powerPort).PowerPortIsnull(powerPortIsnull).PowerPortN(powerPortN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerOutletsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FeedLeg(feedLeg).FeedLegIc(feedLegIc).FeedLegIe(feedLegIe).FeedLegIew(feedLegIew).FeedLegIre(feedLegIre).FeedLegIsw(feedLegIsw).FeedLegN(feedLegN).FeedLegNic(feedLegNic).FeedLegNie(feedLegNie).FeedLegNiew(feedLegNiew).FeedLegNire(feedLegNire).FeedLegNisw(feedLegNisw).FeedLegNre(feedLegNre).FeedLegRe(feedLegRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerPort(powerPort).PowerPortIsnull(powerPortIsnull).PowerPortN(powerPortN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerOutletsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -28167,6 +32869,9 @@ Name | Type | Description  | Notes
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -28182,7 +32887,8 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **feedLeg** | **[]string** | Phase (for three-phase feeds) | 
  **feedLegIc** | **[]string** |  | 
  **feedLegIe** | **[]string** |  | 
@@ -28230,6 +32936,9 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -28253,6 +32962,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** | Physical port type | 
  **typeIc** | **[]string** | Physical port type | 
  **typeIe** | **[]string** | Physical port type | 
@@ -28683,7 +33395,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power outlet.
-	writablePowerOutletRequest := *openapiclient.NewWritablePowerOutletRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerOutletRequest | 
+	writablePowerOutletRequest := *openapiclient.NewWritablePowerOutletRequest("Name_example") // WritablePowerOutletRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29077,7 +33789,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerPanelsList
 
-> PaginatedPowerPanelList DcimPowerPanelsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasPowerFeeds(hasPowerFeeds).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedPowerPanelList DcimPowerPanelsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasPowerFeeds(hasPowerFeeds).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -29097,6 +33809,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -29104,6 +33819,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasPowerFeeds := true // bool | Has power feeds (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -29146,21 +33863,24 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerFeeds := []string{"Inner_example"} // []string |  (optional)
-	powerFeedsIsnull := true // bool |  (optional)
+	powerFeedsIsnull := true // bool | Power feeds (name or ID) is null (optional)
 	powerFeedsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
-	rackGroupIsnull := true // bool |  (optional)
+	rackGroupIsnull := true // bool | Rack group (name or ID) is null (optional)
 	rackGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerPanelsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasPowerFeeds(hasPowerFeeds).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerPanelsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasPowerFeeds(hasPowerFeeds).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerPanelsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -29181,6 +33901,9 @@ Other parameters are passed through a pointer to a apiDcimPowerPanelsListRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -29188,6 +33911,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasPowerFeeds** | **bool** | Has power feeds | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -29230,16 +33955,19 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerFeeds** | **[]string** |  | 
- **powerFeedsIsnull** | **bool** |  | 
+ **powerFeedsIsnull** | **bool** | Power feeds (name or ID) is null | 
  **powerFeedsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rackGroup** | **[]string** |  | 
- **rackGroupIsnull** | **bool** |  | 
+ **rackGroupIsnull** | **bool** | Rack group (name or ID) is null | 
  **rackGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -29789,7 +34517,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerPortTemplateRequest := []openapiclient.BulkWritablePowerPortTemplateRequest{*openapiclient.NewBulkWritablePowerPortTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerPortTemplateRequest | 
+	bulkWritablePowerPortTemplateRequest := []openapiclient.BulkWritablePowerPortTemplateRequest{*openapiclient.NewBulkWritablePowerPortTemplateRequest("Id_example", "Name_example")} // []BulkWritablePowerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29857,7 +34585,7 @@ import (
 )
 
 func main() {
-	writablePowerPortTemplateRequest := *openapiclient.NewWritablePowerPortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPortTemplateRequest | 
+	writablePowerPortTemplateRequest := *openapiclient.NewWritablePowerPortTemplateRequest("Name_example") // WritablePowerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29976,7 +34704,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerPortTemplatesList
 
-> PaginatedPowerPortTemplateList DcimPowerPortTemplatesList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).HasPowerOutletTemplates(hasPowerOutletTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedPowerPortTemplateList DcimPowerPortTemplatesList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).HasPowerOutletTemplates(hasPowerOutletTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -30002,6 +34730,9 @@ func main() {
 	allocatedDrawLt := []int32{int32(123)} // []int32 |  (optional)
 	allocatedDrawLte := []int32{int32(123)} // []int32 |  (optional)
 	allocatedDrawN := []int32{int32(123)} // []int32 |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -30017,23 +34748,28 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasDeviceType := true // bool | Has device type (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	hasPowerOutletTemplates := true // bool | Has power outlet templates (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -30056,6 +34792,9 @@ func main() {
 	maximumDrawLt := []int32{int32(123)} // []int32 |  (optional)
 	maximumDrawLte := []int32{int32(123)} // []int32 |  (optional)
 	maximumDrawN := []int32{int32(123)} // []int32 |  (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -30072,10 +34811,13 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string | Name (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerOutletTemplates := []string{"Inner_example"} // []string |  (optional)
-	powerOutletTemplatesIsnull := true // bool |  (optional)
+	powerOutletTemplatesIsnull := true // bool | Power outlet templates (name or ID) is null (optional)
 	powerOutletTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -30094,7 +34836,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerPortTemplatesList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).HasPowerOutletTemplates(hasPowerOutletTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerPortTemplatesList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).HasPowerOutletTemplates(hasPowerOutletTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutletTemplates(powerOutletTemplates).PowerOutletTemplatesIsnull(powerOutletTemplatesIsnull).PowerOutletTemplatesN(powerOutletTemplatesN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerPortTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -30122,6 +34864,9 @@ Name | Type | Description  | Notes
  **allocatedDrawLt** | **[]int32** |  | 
  **allocatedDrawLte** | **[]int32** |  | 
  **allocatedDrawN** | **[]int32** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -30137,23 +34882,28 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasDeviceType** | **bool** | Has device type | 
+ **hasModuleType** | **bool** | Has module type | 
  **hasPowerOutletTemplates** | **bool** | Has power outlet templates | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -30176,6 +34926,9 @@ Name | Type | Description  | Notes
  **maximumDrawLt** | **[]int32** |  | 
  **maximumDrawLte** | **[]int32** |  | 
  **maximumDrawN** | **[]int32** |  | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -30192,10 +34945,13 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** | Name | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerOutletTemplates** | **[]string** |  | 
- **powerOutletTemplatesIsnull** | **bool** |  | 
+ **powerOutletTemplatesIsnull** | **bool** | Power outlet templates (name or ID) is null | 
  **powerOutletTemplatesN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -30552,7 +35308,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power port template.
-	writablePowerPortTemplateRequest := *openapiclient.NewWritablePowerPortTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPortTemplateRequest | 
+	writablePowerPortTemplateRequest := *openapiclient.NewWritablePowerPortTemplateRequest("Name_example") // WritablePowerPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30759,7 +35515,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerPortRequest := []openapiclient.BulkWritablePowerPortRequest{*openapiclient.NewBulkWritablePowerPortRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerPortRequest | 
+	bulkWritablePowerPortRequest := []openapiclient.BulkWritablePowerPortRequest{*openapiclient.NewBulkWritablePowerPortRequest("Id_example", "Name_example")} // []BulkWritablePowerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30827,7 +35583,7 @@ import (
 )
 
 func main() {
-	writablePowerPortRequest := *openapiclient.NewWritablePowerPortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPortRequest | 
+	writablePowerPortRequest := *openapiclient.NewWritablePowerPortRequest("Name_example") // WritablePowerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30946,7 +35702,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerPortsList
 
-> PaginatedPowerPortList DcimPowerPortsList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).HasPowerOutlets(hasPowerOutlets).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedPowerPortList DcimPowerPortsList(ctx).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).HasPowerOutlets(hasPowerOutlets).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -30976,6 +35732,9 @@ func main() {
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -30991,7 +35750,8 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	hasPowerOutlets := true // bool | Has power outlets (optional)
@@ -31033,6 +35793,9 @@ func main() {
 	maximumDrawLt := []int32{int32(123)} // []int32 |  (optional)
 	maximumDrawLte := []int32{int32(123)} // []int32 |  (optional)
 	maximumDrawN := []int32{int32(123)} // []int32 |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -31049,13 +35812,16 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerOutlets := []string{"Inner_example"} // []string |  (optional)
-	powerOutletsIsnull := true // bool |  (optional)
+	powerOutletsIsnull := true // bool | Power outlets (name or ID) is null (optional)
 	powerOutletsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIc := []string{"Inner_example"} // []string | Physical port type (optional)
 	typeIe := []string{"Inner_example"} // []string | Physical port type (optional)
@@ -31074,7 +35840,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerPortsList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).HasCable(hasCable).HasPowerOutlets(hasPowerOutlets).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerPortsList(context.Background()).AllocatedDraw(allocatedDraw).AllocatedDrawGt(allocatedDrawGt).AllocatedDrawGte(allocatedDrawGte).AllocatedDrawIsnull(allocatedDrawIsnull).AllocatedDrawLt(allocatedDrawLt).AllocatedDrawLte(allocatedDrawLte).AllocatedDrawN(allocatedDrawN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).HasPowerOutlets(hasPowerOutlets).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).MaximumDraw(maximumDraw).MaximumDrawGt(maximumDrawGt).MaximumDrawGte(maximumDrawGte).MaximumDrawIsnull(maximumDrawIsnull).MaximumDrawLt(maximumDrawLt).MaximumDrawLte(maximumDrawLte).MaximumDrawN(maximumDrawN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -31106,6 +35872,9 @@ Name | Type | Description  | Notes
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -31121,7 +35890,8 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **hasPowerOutlets** | **bool** | Has power outlets | 
@@ -31163,6 +35933,9 @@ Name | Type | Description  | Notes
  **maximumDrawLt** | **[]int32** |  | 
  **maximumDrawLte** | **[]int32** |  | 
  **maximumDrawN** | **[]int32** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -31179,13 +35952,16 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerOutlets** | **[]string** |  | 
- **powerOutletsIsnull** | **bool** |  | 
+ **powerOutletsIsnull** | **bool** | Power outlets (name or ID) is null | 
  **powerOutletsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** | Physical port type | 
  **typeIc** | **[]string** | Physical port type | 
  **typeIe** | **[]string** | Physical port type | 
@@ -31616,7 +36392,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power port.
-	writablePowerPortRequest := *openapiclient.NewWritablePowerPortRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPortRequest | 
+	writablePowerPortRequest := *openapiclient.NewWritablePowerPortRequest("Name_example") // WritablePowerPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -32010,7 +36786,7 @@ Name | Type | Description  | Notes
 
 ## DcimRackGroupsList
 
-> PaginatedRackGroupList DcimRackGroupsList(ctx).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasChildren(hasChildren).HasPowerPanels(hasPowerPanels).HasRacks(hasRacks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Q(q).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).Sort(sort).Depth(depth).Execute()
+> PaginatedRackGroupList DcimRackGroupsList(ctx).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasPowerPanels(hasPowerPanels).HasRacks(hasRacks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Q(q).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -32031,8 +36807,11 @@ import (
 
 func main() {
 	children := []string{"Inner_example"} // []string |  (optional)
-	childrenIsnull := true // bool |  (optional)
+	childrenIsnull := true // bool | Children (name or ID) is null (optional)
 	childrenN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -32054,6 +36833,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasChildren := true // bool | Has children (optional)
 	hasPowerPanels := true // bool | Has power panels (optional)
@@ -32098,21 +36879,24 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Parent (name or ID) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	powerPanels := []string{"Inner_example"} // []string |  (optional)
-	powerPanelsIsnull := true // bool |  (optional)
+	powerPanelsIsnull := true // bool | Power panels (name or ID) is null (optional)
 	powerPanelsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	racks := []string{"Inner_example"} // []string |  (optional)
 	racksIsnull := true // bool |  (optional)
 	racksN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRackGroupsList(context.Background()).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasChildren(hasChildren).HasPowerPanels(hasPowerPanels).HasRacks(hasRacks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Q(q).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRackGroupsList(context.Background()).Children(children).ChildrenIsnull(childrenIsnull).ChildrenN(childrenN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasChildren(hasChildren).HasPowerPanels(hasPowerPanels).HasRacks(hasRacks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Q(q).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRackGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -32134,8 +36918,11 @@ Other parameters are passed through a pointer to a apiDcimRackGroupsListRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **children** | **[]string** |  | 
- **childrenIsnull** | **bool** |  | 
+ **childrenIsnull** | **bool** | Children (name or ID) is null | 
  **childrenN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -32157,6 +36944,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasChildren** | **bool** | Has children | 
  **hasPowerPanels** | **bool** | Has power panels | 
@@ -32201,16 +36990,19 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Parent (name or ID) is null | 
  **parentN** | **[]string** |  | 
  **powerPanels** | **[]string** |  | 
- **powerPanelsIsnull** | **bool** |  | 
+ **powerPanelsIsnull** | **bool** | Power panels (name or ID) is null | 
  **powerPanelsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **racks** | **[]string** |  | 
  **racksIsnull** | **bool** |  | 
  **racksN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -32760,7 +37552,7 @@ import (
 )
 
 func main() {
-	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", map[string]interface{}{"key": interface{}(123)}, "Description_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackReservationRequest | 
+	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -32828,7 +37620,7 @@ import (
 )
 
 func main() {
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(map[string]interface{}{"key": interface{}(123)}, "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -32947,7 +37739,7 @@ Name | Type | Description  | Notes
 
 ## DcimRackReservationsList
 
-> PaginatedRackReservationList DcimRackReservationsList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).Execute()
+> PaginatedRackReservationList DcimRackReservationsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).Execute()
 
 
 
@@ -32967,6 +37759,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -32988,6 +37783,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -33016,28 +37813,31 @@ func main() {
 	rack := []string{"Inner_example"} // []string |  (optional)
 	rackN := []string{"Inner_example"} // []string |  (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
-	rackGroupIsnull := true // bool |  (optional)
+	rackGroupIsnull := true // bool | Rack group (name or ID) is null (optional)
 	rackGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	user := []string{"Inner_example"} // []string |  (optional)
 	userN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRackReservationsList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRackReservationsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRackReservationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -33058,6 +37858,9 @@ Other parameters are passed through a pointer to a apiDcimRackReservationsListRe
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -33079,6 +37882,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -33107,21 +37912,24 @@ Name | Type | Description  | Notes
  **rack** | **[]string** |  | 
  **rackN** | **[]string** |  | 
  **rackGroup** | **[]string** |  | 
- **rackGroupIsnull** | **bool** |  | 
+ **rackGroupIsnull** | **bool** | Rack group (name or ID) is null | 
  **rackGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **user** | **[]string** |  | 
  **userN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
@@ -33466,7 +38274,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack reservation.
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(map[string]interface{}{"key": interface{}(123)}, "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -33958,7 +38766,7 @@ Name | Type | Description  | Notes
 
 ## DcimRacksList
 
-> PaginatedRackList DcimRacksList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DescUnits(descUnits).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).FacilityId(facilityId).FacilityIdIc(facilityIdIc).FacilityIdIe(facilityIdIe).FacilityIdIew(facilityIdIew).FacilityIdIre(facilityIdIre).FacilityIdIsnull(facilityIdIsnull).FacilityIdIsw(facilityIdIsw).FacilityIdN(facilityIdN).FacilityIdNic(facilityIdNic).FacilityIdNie(facilityIdNie).FacilityIdNiew(facilityIdNiew).FacilityIdNire(facilityIdNire).FacilityIdNisw(facilityIdNisw).FacilityIdNre(facilityIdNre).FacilityIdRe(facilityIdRe).Format(format).HasDevices(hasDevices).HasPowerFeeds(hasPowerFeeds).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OuterDepth(outerDepth).OuterDepthGt(outerDepthGt).OuterDepthGte(outerDepthGte).OuterDepthIsnull(outerDepthIsnull).OuterDepthLt(outerDepthLt).OuterDepthLte(outerDepthLte).OuterDepthN(outerDepthN).OuterUnit(outerUnit).OuterUnitIc(outerUnitIc).OuterUnitIe(outerUnitIe).OuterUnitIew(outerUnitIew).OuterUnitIre(outerUnitIre).OuterUnitIsw(outerUnitIsw).OuterUnitN(outerUnitN).OuterUnitNic(outerUnitNic).OuterUnitNie(outerUnitNie).OuterUnitNiew(outerUnitNiew).OuterUnitNire(outerUnitNire).OuterUnitNisw(outerUnitNisw).OuterUnitNre(outerUnitNre).OuterUnitRe(outerUnitRe).OuterWidth(outerWidth).OuterWidthGt(outerWidthGt).OuterWidthGte(outerWidthGte).OuterWidthIsnull(outerWidthIsnull).OuterWidthLt(outerWidthLt).OuterWidthLte(outerWidthLte).OuterWidthN(outerWidthN).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Width(width).WidthIc(widthIc).WidthIe(widthIe).WidthIew(widthIew).WidthIre(widthIre).WidthIsw(widthIsw).WidthN(widthN).WidthNic(widthNic).WidthNie(widthNie).WidthNiew(widthNiew).WidthNire(widthNire).WidthNisw(widthNisw).WidthNre(widthNre).WidthRe(widthRe).Depth(depth).Execute()
+> PaginatedRackList DcimRacksList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DescUnits(descUnits).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FacilityId(facilityId).FacilityIdIc(facilityIdIc).FacilityIdIe(facilityIdIe).FacilityIdIew(facilityIdIew).FacilityIdIre(facilityIdIre).FacilityIdIsnull(facilityIdIsnull).FacilityIdIsw(facilityIdIsw).FacilityIdN(facilityIdN).FacilityIdNic(facilityIdNic).FacilityIdNie(facilityIdNie).FacilityIdNiew(facilityIdNiew).FacilityIdNire(facilityIdNire).FacilityIdNisw(facilityIdNisw).FacilityIdNre(facilityIdNre).FacilityIdRe(facilityIdRe).Format(format).HasDevices(hasDevices).HasPowerFeeds(hasPowerFeeds).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OuterDepth(outerDepth).OuterDepthGt(outerDepthGt).OuterDepthGte(outerDepthGte).OuterDepthIsnull(outerDepthIsnull).OuterDepthLt(outerDepthLt).OuterDepthLte(outerDepthLte).OuterDepthN(outerDepthN).OuterUnit(outerUnit).OuterUnitIc(outerUnitIc).OuterUnitIe(outerUnitIe).OuterUnitIew(outerUnitIew).OuterUnitIre(outerUnitIre).OuterUnitIsw(outerUnitIsw).OuterUnitN(outerUnitN).OuterUnitNic(outerUnitNic).OuterUnitNie(outerUnitNie).OuterUnitNiew(outerUnitNiew).OuterUnitNire(outerUnitNire).OuterUnitNisw(outerUnitNisw).OuterUnitNre(outerUnitNre).OuterUnitRe(outerUnitRe).OuterWidth(outerWidth).OuterWidthGt(outerWidthGt).OuterWidthGte(outerWidthGte).OuterWidthIsnull(outerWidthIsnull).OuterWidthLt(outerWidthLt).OuterWidthLte(outerWidthLte).OuterWidthN(outerWidthN).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Width(width).WidthIc(widthIc).WidthIe(widthIe).WidthIew(widthIew).WidthIre(widthIre).WidthIsw(widthIsw).WidthN(widthN).WidthNic(widthNic).WidthNie(widthNie).WidthNiew(widthNiew).WidthNire(widthNire).WidthNisw(widthNisw).WidthNre(widthNre).WidthRe(widthRe).Depth(depth).Execute()
 
 
 
@@ -34007,6 +38815,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -34018,6 +38829,8 @@ func main() {
 	devices := []string{"Inner_example"} // []string |  (optional)
 	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	facilityId := []string{"Inner_example"} // []string |  (optional)
 	facilityIdIc := []string{"Inner_example"} // []string |  (optional)
 	facilityIdIe := []string{"Inner_example"} // []string |  (optional)
@@ -34105,34 +38918,37 @@ func main() {
 	outerWidthLte := []int32{int32(123)} // []int32 |  (optional)
 	outerWidthN := []int32{int32(123)} // []int32 |  (optional)
 	powerFeeds := []string{"Inner_example"} // []string |  (optional)
-	powerFeedsIsnull := true // bool |  (optional)
+	powerFeedsIsnull := true // bool | Power feeds (name or ID) is null (optional)
 	powerFeedsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
-	rackGroupIsnull := true // bool |  (optional)
+	rackGroupIsnull := true // bool | Rack group (name or ID) is null (optional)
 	rackGroupN := []string{"Inner_example"} // []string |  (optional)
 	rackReservations := []string{"Inner_example"} // []string |  (optional)
 	rackReservationsIsnull := true // bool |  (optional)
 	rackReservationsN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
-	roleIsnull := true // bool |  (optional)
-	roleN := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	serial := []string{"Inner_example"} // []string | Serial Number (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -34171,7 +38987,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRacksList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DescUnits(descUnits).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).FacilityId(facilityId).FacilityIdIc(facilityIdIc).FacilityIdIe(facilityIdIe).FacilityIdIew(facilityIdIew).FacilityIdIre(facilityIdIre).FacilityIdIsnull(facilityIdIsnull).FacilityIdIsw(facilityIdIsw).FacilityIdN(facilityIdN).FacilityIdNic(facilityIdNic).FacilityIdNie(facilityIdNie).FacilityIdNiew(facilityIdNiew).FacilityIdNire(facilityIdNire).FacilityIdNisw(facilityIdNisw).FacilityIdNre(facilityIdNre).FacilityIdRe(facilityIdRe).Format(format).HasDevices(hasDevices).HasPowerFeeds(hasPowerFeeds).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OuterDepth(outerDepth).OuterDepthGt(outerDepthGt).OuterDepthGte(outerDepthGte).OuterDepthIsnull(outerDepthIsnull).OuterDepthLt(outerDepthLt).OuterDepthLte(outerDepthLte).OuterDepthN(outerDepthN).OuterUnit(outerUnit).OuterUnitIc(outerUnitIc).OuterUnitIe(outerUnitIe).OuterUnitIew(outerUnitIew).OuterUnitIre(outerUnitIre).OuterUnitIsw(outerUnitIsw).OuterUnitN(outerUnitN).OuterUnitNic(outerUnitNic).OuterUnitNie(outerUnitNie).OuterUnitNiew(outerUnitNiew).OuterUnitNire(outerUnitNire).OuterUnitNisw(outerUnitNisw).OuterUnitNre(outerUnitNre).OuterUnitRe(outerUnitRe).OuterWidth(outerWidth).OuterWidthGt(outerWidthGt).OuterWidthGte(outerWidthGte).OuterWidthIsnull(outerWidthIsnull).OuterWidthLt(outerWidthLt).OuterWidthLte(outerWidthLte).OuterWidthN(outerWidthN).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Width(width).WidthIc(widthIc).WidthIe(widthIe).WidthIew(widthIew).WidthIre(widthIre).WidthIsw(widthIsw).WidthN(widthN).WidthNic(widthNic).WidthNie(widthNie).WidthNiew(widthNiew).WidthNire(widthNire).WidthNisw(widthNisw).WidthNre(widthNre).WidthRe(widthRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRacksList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DescUnits(descUnits).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).FacilityId(facilityId).FacilityIdIc(facilityIdIc).FacilityIdIe(facilityIdIe).FacilityIdIew(facilityIdIew).FacilityIdIre(facilityIdIre).FacilityIdIsnull(facilityIdIsnull).FacilityIdIsw(facilityIdIsw).FacilityIdN(facilityIdN).FacilityIdNic(facilityIdNic).FacilityIdNie(facilityIdNie).FacilityIdNiew(facilityIdNiew).FacilityIdNire(facilityIdNire).FacilityIdNisw(facilityIdNisw).FacilityIdNre(facilityIdNre).FacilityIdRe(facilityIdRe).Format(format).HasDevices(hasDevices).HasPowerFeeds(hasPowerFeeds).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OuterDepth(outerDepth).OuterDepthGt(outerDepthGt).OuterDepthGte(outerDepthGte).OuterDepthIsnull(outerDepthIsnull).OuterDepthLt(outerDepthLt).OuterDepthLte(outerDepthLte).OuterDepthN(outerDepthN).OuterUnit(outerUnit).OuterUnitIc(outerUnitIc).OuterUnitIe(outerUnitIe).OuterUnitIew(outerUnitIew).OuterUnitIre(outerUnitIre).OuterUnitIsw(outerUnitIsw).OuterUnitN(outerUnitN).OuterUnitNic(outerUnitNic).OuterUnitNie(outerUnitNie).OuterUnitNiew(outerUnitNiew).OuterUnitNire(outerUnitNire).OuterUnitNisw(outerUnitNisw).OuterUnitNre(outerUnitNre).OuterUnitRe(outerUnitRe).OuterWidth(outerWidth).OuterWidthGt(outerWidthGt).OuterWidthGte(outerWidthGte).OuterWidthIsnull(outerWidthIsnull).OuterWidthLt(outerWidthLt).OuterWidthLte(outerWidthLte).OuterWidthN(outerWidthN).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RackReservations(rackReservations).RackReservationsIsnull(rackReservationsIsnull).RackReservationsN(rackReservationsN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Serial(serial).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UHeight(uHeight).UHeightGt(uHeightGt).UHeightGte(uHeightGte).UHeightLt(uHeightLt).UHeightLte(uHeightLte).UHeightN(uHeightN).Width(width).WidthIc(widthIc).WidthIe(widthIe).WidthIew(widthIew).WidthIre(widthIre).WidthIsw(widthIsw).WidthN(widthN).WidthNic(widthNic).WidthNie(widthNie).WidthNiew(widthNiew).WidthNire(widthNire).WidthNisw(widthNisw).WidthNre(widthNre).WidthRe(widthRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRacksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -34221,6 +39037,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -34232,6 +39051,8 @@ Name | Type | Description  | Notes
  **devices** | **[]string** |  | 
  **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **facilityId** | **[]string** |  | 
  **facilityIdIc** | **[]string** |  | 
  **facilityIdIe** | **[]string** |  | 
@@ -34319,34 +39140,37 @@ Name | Type | Description  | Notes
  **outerWidthLte** | **[]int32** |  | 
  **outerWidthN** | **[]int32** |  | 
  **powerFeeds** | **[]string** |  | 
- **powerFeedsIsnull** | **bool** |  | 
+ **powerFeedsIsnull** | **bool** | Power feeds (name or ID) is null | 
  **powerFeedsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rackGroup** | **[]string** |  | 
- **rackGroupIsnull** | **bool** |  | 
+ **rackGroupIsnull** | **bool** | Rack group (name or ID) is null | 
  **rackGroupN** | **[]string** |  | 
  **rackReservations** | **[]string** |  | 
  **rackReservationsIsnull** | **bool** |  | 
  **rackReservationsN** | **[]string** |  | 
  **role** | **[]string** |  | 
- **roleIsnull** | **bool** |  | 
- **roleN** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **serial** | **[]string** | Serial Number | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -34930,7 +39754,7 @@ import (
 )
 
 func main() {
-	bulkWritableRearPortTemplateRequest := []openapiclient.BulkWritableRearPortTemplateRequest{*openapiclient.NewBulkWritableRearPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRearPortTemplateRequest | 
+	bulkWritableRearPortTemplateRequest := []openapiclient.BulkWritableRearPortTemplateRequest{*openapiclient.NewBulkWritableRearPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example")} // []BulkWritableRearPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34998,7 +39822,7 @@ import (
 )
 
 func main() {
-	writableRearPortTemplateRequest := *openapiclient.NewWritableRearPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRearPortTemplateRequest | 
+	writableRearPortTemplateRequest := *openapiclient.NewWritableRearPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c")) // WritableRearPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -35117,7 +39941,7 @@ Name | Type | Description  | Notes
 
 ## DcimRearPortTemplatesList
 
-> PaginatedRearPortTemplateList DcimRearPortTemplatesList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasFrontPortTemplates(hasFrontPortTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedRearPortTemplateList DcimRearPortTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasDeviceType(hasDeviceType).HasFrontPortTemplates(hasFrontPortTemplates).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -35136,6 +39960,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIc := []string{"Inner_example"} // []string | Description (optional)
 	descriptionIe := []string{"Inner_example"} // []string | Description (optional)
@@ -35151,26 +39978,31 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string | Description (optional)
 	descriptionRe := []string{"Inner_example"} // []string | Description (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
+	deviceTypeIsnull := true // bool | Device type (model or ID) is null (optional)
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	frontPortTemplates := []string{"Inner_example"} // []string | Front port templates (optional)
 	frontPortTemplatesIsnull := true // bool |  (optional)
 	frontPortTemplatesN := []string{"Inner_example"} // []string | Front port templates (optional)
+	hasDeviceType := true // bool | Has device type (optional)
 	hasFrontPortTemplates := true // bool | Has front port templates (optional)
+	hasModuleType := true // bool | Has module type (optional)
 	id := []string{"Inner_example"} // []string | ID (optional)
-	idIc := []string{"Inner_example"} // []string | ID (optional)
+	idIc := []string{"Inner_example"} // []string | ID contains (optional)
 	idIe := []string{"Inner_example"} // []string | ID (optional)
-	idIew := []string{"Inner_example"} // []string | ID (optional)
-	idIre := []string{"Inner_example"} // []string | ID (optional)
-	idIsw := []string{"Inner_example"} // []string | ID (optional)
-	idN := []string{"Inner_example"} // []string | ID (optional)
-	idNic := []string{"Inner_example"} // []string | ID (optional)
-	idNie := []string{"Inner_example"} // []string | ID (optional)
-	idNiew := []string{"Inner_example"} // []string | ID (optional)
-	idNire := []string{"Inner_example"} // []string | ID (optional)
-	idNisw := []string{"Inner_example"} // []string | ID (optional)
-	idNre := []string{"Inner_example"} // []string | ID (optional)
-	idRe := []string{"Inner_example"} // []string | ID (optional)
+	idIew := []string{"Inner_example"} // []string | ID ends with (optional)
+	idIre := []string{"Inner_example"} // []string | ID matches regex (optional)
+	idIsw := []string{"Inner_example"} // []string | ID starts with (optional)
+	idN := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNic := []string{"Inner_example"} // []string | Exclude ID contains (optional)
+	idNie := []string{"Inner_example"} // []string | Exclude ID (optional)
+	idNiew := []string{"Inner_example"} // []string | Exclude ID ends with (optional)
+	idNire := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idNisw := []string{"Inner_example"} // []string | Exclude ID starts with (optional)
+	idNre := []string{"Inner_example"} // []string | Exclude ID matches regex (optional)
+	idRe := []string{"Inner_example"} // []string | ID matches regex (optional)
 	label := []string{"Inner_example"} // []string | Label (optional)
 	labelIc := []string{"Inner_example"} // []string | Label (optional)
 	labelIe := []string{"Inner_example"} // []string | Label (optional)
@@ -35186,6 +40018,9 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string | Label (optional)
 	labelRe := []string{"Inner_example"} // []string | Label (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	moduleType := []string{"Inner_example"} // []string |  (optional)
+	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
+	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string | Name (optional)
 	nameIc := []string{"Inner_example"} // []string | Name (optional)
 	nameIe := []string{"Inner_example"} // []string | Name (optional)
@@ -35209,6 +40044,9 @@ func main() {
 	positionsN := []int32{int32(123)} // []int32 |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -35227,7 +40065,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRearPortTemplatesList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeN(deviceTypeN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasFrontPortTemplates(hasFrontPortTemplates).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRearPortTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPortTemplates(frontPortTemplates).FrontPortTemplatesIsnull(frontPortTemplatesIsnull).FrontPortTemplatesN(frontPortTemplatesN).HasDeviceType(hasDeviceType).HasFrontPortTemplates(hasFrontPortTemplates).HasModuleType(hasModuleType).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRearPortTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -35248,6 +40086,9 @@ Other parameters are passed through a pointer to a apiDcimRearPortTemplatesListR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** | Description | 
  **descriptionIc** | **[]string** | Description | 
  **descriptionIe** | **[]string** | Description | 
@@ -35263,26 +40104,31 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** | Description | 
  **descriptionRe** | **[]string** | Description | 
  **deviceType** | **[]string** |  | 
+ **deviceTypeIsnull** | **bool** | Device type (model or ID) is null | 
  **deviceTypeN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **frontPortTemplates** | **[]string** | Front port templates | 
  **frontPortTemplatesIsnull** | **bool** |  | 
  **frontPortTemplatesN** | **[]string** | Front port templates | 
+ **hasDeviceType** | **bool** | Has device type | 
  **hasFrontPortTemplates** | **bool** | Has front port templates | 
+ **hasModuleType** | **bool** | Has module type | 
  **id** | **[]string** | ID | 
- **idIc** | **[]string** | ID | 
+ **idIc** | **[]string** | ID contains | 
  **idIe** | **[]string** | ID | 
- **idIew** | **[]string** | ID | 
- **idIre** | **[]string** | ID | 
- **idIsw** | **[]string** | ID | 
- **idN** | **[]string** | ID | 
- **idNic** | **[]string** | ID | 
- **idNie** | **[]string** | ID | 
- **idNiew** | **[]string** | ID | 
- **idNire** | **[]string** | ID | 
- **idNisw** | **[]string** | ID | 
- **idNre** | **[]string** | ID | 
- **idRe** | **[]string** | ID | 
+ **idIew** | **[]string** | ID ends with | 
+ **idIre** | **[]string** | ID matches regex | 
+ **idIsw** | **[]string** | ID starts with | 
+ **idN** | **[]string** | Exclude ID | 
+ **idNic** | **[]string** | Exclude ID contains | 
+ **idNie** | **[]string** | Exclude ID | 
+ **idNiew** | **[]string** | Exclude ID ends with | 
+ **idNire** | **[]string** | Exclude ID matches regex | 
+ **idNisw** | **[]string** | Exclude ID starts with | 
+ **idNre** | **[]string** | Exclude ID matches regex | 
+ **idRe** | **[]string** | ID matches regex | 
  **label** | **[]string** | Label | 
  **labelIc** | **[]string** | Label | 
  **labelIe** | **[]string** | Label | 
@@ -35298,6 +40144,9 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** | Label | 
  **labelRe** | **[]string** | Label | 
  **limit** | **int32** | Number of results to return per page. | 
+ **moduleType** | **[]string** |  | 
+ **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
+ **moduleTypeN** | **[]string** |  | 
  **name** | **[]string** | Name | 
  **nameIc** | **[]string** | Name | 
  **nameIe** | **[]string** | Name | 
@@ -35321,6 +40170,9 @@ Name | Type | Description  | Notes
  **positionsN** | **[]int32** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -35677,7 +40529,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rear port template.
-	writableRearPortTemplateRequest := *openapiclient.NewWritableRearPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRearPortTemplateRequest | 
+	writableRearPortTemplateRequest := *openapiclient.NewWritableRearPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c")) // WritableRearPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -35884,7 +40736,7 @@ import (
 )
 
 func main() {
-	bulkWritableRearPortRequest := []openapiclient.BulkWritableRearPortRequest{*openapiclient.NewBulkWritableRearPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRearPortRequest | 
+	bulkWritableRearPortRequest := []openapiclient.BulkWritableRearPortRequest{*openapiclient.NewBulkWritableRearPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example")} // []BulkWritableRearPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -35952,7 +40804,7 @@ import (
 )
 
 func main() {
-	writableRearPortRequest := *openapiclient.NewWritableRearPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRearPortRequest | 
+	writableRearPortRequest := *openapiclient.NewWritableRearPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c")) // WritableRearPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -36071,7 +40923,7 @@ Name | Type | Description  | Notes
 
 ## DcimRearPortsList
 
-> PaginatedRearPortList DcimRearPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasCable(hasCable).HasFrontPorts(hasFrontPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+> PaginatedRearPortList DcimRearPortsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasCable(hasCable).HasFrontPorts(hasFrontPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 
 
 
@@ -36093,6 +40945,9 @@ func main() {
 	cable := []string{"Inner_example"} // []string | Cable (optional)
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -36108,10 +40963,11 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
-	deviceN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	frontPorts := []string{"Inner_example"} // []string |  (optional)
-	frontPortsIsnull := true // bool |  (optional)
+	frontPortsIsnull := true // bool | Front ports (name or ID) is null (optional)
 	frontPortsN := []string{"Inner_example"} // []string |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	hasFrontPorts := true // bool | Has front ports (optional)
@@ -36146,6 +41002,9 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
+	module := []string{"Inner_example"} // []string |  (optional)
+	moduleIsnull := true // bool | Module (model or ID) is null (optional)
+	moduleN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -36172,6 +41031,9 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
@@ -36190,7 +41052,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRearPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasCable(hasCable).HasFrontPorts(hasFrontPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRearPortsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasCable(hasCable).HasFrontPorts(hasFrontPorts).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).Location(location).LocationN(locationN).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Positions(positions).PositionsGt(positionsGt).PositionsGte(positionsGte).PositionsLt(positionsLt).PositionsLte(positionsLte).PositionsN(positionsN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRearPortsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -36214,6 +41076,9 @@ Name | Type | Description  | Notes
  **cable** | **[]string** | Cable | 
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -36229,10 +41094,11 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
- **deviceN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **frontPorts** | **[]string** |  | 
- **frontPortsIsnull** | **bool** |  | 
+ **frontPortsIsnull** | **bool** | Front ports (name or ID) is null | 
  **frontPortsN** | **[]string** |  | 
  **hasCable** | **bool** | Has cable | 
  **hasFrontPorts** | **bool** | Has front ports | 
@@ -36267,6 +41133,9 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
+ **module** | **[]string** |  | 
+ **moduleIsnull** | **bool** | Module (model or ID) is null | 
+ **moduleN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -36293,6 +41162,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
@@ -36727,7 +41599,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rear port.
-	writableRearPortRequest := *openapiclient.NewWritableRearPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRearPortRequest | 
+	writableRearPortRequest := *openapiclient.NewWritableRearPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c")) // WritableRearPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -37121,7 +41993,7 @@ Name | Type | Description  | Notes
 
 ## DcimSoftwareImageFilesList
 
-> PaginatedSoftwareImageFileList DcimSoftwareImageFilesList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedSoftwareImageFileList DcimSoftwareImageFilesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -37141,6 +42013,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -37150,10 +42025,10 @@ func main() {
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	defaultImage := true // bool | Is default image for associated software version (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool |  (optional)
+	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool |  (optional)
+	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	downloadUrl := []string{"Inner_example"} // []string |  (optional)
 	downloadUrlIc := []string{"Inner_example"} // []string |  (optional)
@@ -37169,6 +42044,8 @@ func main() {
 	downloadUrlNisw := []string{"Inner_example"} // []string |  (optional)
 	downloadUrlNre := []string{"Inner_example"} // []string |  (optional)
 	downloadUrlRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDeviceTypes := true // bool | Has device types (optional)
 	hasDevices := true // bool | Has devices (optional)
@@ -37249,15 +42126,18 @@ func main() {
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimSoftwareImageFilesList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimSoftwareImageFilesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimSoftwareImageFilesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -37278,6 +42158,9 @@ Other parameters are passed through a pointer to a apiDcimSoftwareImageFilesList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -37287,10 +42170,10 @@ Name | Type | Description  | Notes
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **defaultImage** | **bool** | Is default image for associated software version | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** |  | 
+ **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
  **deviceTypesN** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** |  | 
+ **devicesIsnull** | **bool** | Devices (name or ID) is null | 
  **devicesN** | **[]string** |  | 
  **downloadUrl** | **[]string** |  | 
  **downloadUrlIc** | **[]string** |  | 
@@ -37306,6 +42189,8 @@ Name | Type | Description  | Notes
  **downloadUrlNisw** | **[]string** |  | 
  **downloadUrlNre** | **[]string** |  | 
  **downloadUrlRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDeviceTypes** | **bool** | Has device types | 
  **hasDevices** | **bool** | Has devices | 
@@ -37386,10 +42271,13 @@ Name | Type | Description  | Notes
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -38126,7 +43014,7 @@ Name | Type | Description  | Notes
 
 ## DcimSoftwareVersionsList
 
-> PaginatedSoftwareVersionList DcimSoftwareVersionsList(ctx).Alias(alias).AliasIc(aliasIc).AliasIe(aliasIe).AliasIew(aliasIew).AliasIre(aliasIre).AliasIsw(aliasIsw).AliasN(aliasN).AliasNic(aliasNic).AliasNie(aliasNie).AliasNiew(aliasNiew).AliasNire(aliasNire).AliasNisw(aliasNisw).AliasNre(aliasNre).AliasRe(aliasRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DocumentationUrl(documentationUrl).DocumentationUrlIc(documentationUrlIc).DocumentationUrlIe(documentationUrlIe).DocumentationUrlIew(documentationUrlIew).DocumentationUrlIre(documentationUrlIre).DocumentationUrlIsw(documentationUrlIsw).DocumentationUrlN(documentationUrlN).DocumentationUrlNic(documentationUrlNic).DocumentationUrlNie(documentationUrlNie).DocumentationUrlNiew(documentationUrlNiew).DocumentationUrlNire(documentationUrlNire).DocumentationUrlNisw(documentationUrlNisw).DocumentationUrlNre(documentationUrlNre).DocumentationUrlRe(documentationUrlRe).EndOfSupportDate(endOfSupportDate).EndOfSupportDateGt(endOfSupportDateGt).EndOfSupportDateGte(endOfSupportDateGte).EndOfSupportDateIsnull(endOfSupportDateIsnull).EndOfSupportDateLt(endOfSupportDateLt).EndOfSupportDateLte(endOfSupportDateLte).EndOfSupportDateN(endOfSupportDateN).Format(format).HasDevices(hasDevices).HasInventoryItems(hasInventoryItems).HasSoftwareImageFiles(hasSoftwareImageFiles).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LongTermSupport(longTermSupport).Offset(offset).Platform(platform).PlatformN(platformN).PreRelease(preRelease).Q(q).ReleaseDate(releaseDate).ReleaseDateGt(releaseDateGt).ReleaseDateGte(releaseDateGte).ReleaseDateIsnull(releaseDateIsnull).ReleaseDateLt(releaseDateLt).ReleaseDateLte(releaseDateLte).ReleaseDateN(releaseDateN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesIsnull(softwareImageFilesIsnull).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Version(version).VersionIc(versionIc).VersionIe(versionIe).VersionIew(versionIew).VersionIre(versionIre).VersionIsw(versionIsw).VersionN(versionN).VersionNic(versionNic).VersionNie(versionNie).VersionNiew(versionNiew).VersionNire(versionNire).VersionNisw(versionNisw).VersionNre(versionNre).VersionRe(versionRe).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+> PaginatedSoftwareVersionList DcimSoftwareVersionsList(ctx).Alias(alias).AliasIc(aliasIc).AliasIe(aliasIe).AliasIew(aliasIew).AliasIre(aliasIre).AliasIsw(aliasIsw).AliasN(aliasN).AliasNic(aliasNic).AliasNie(aliasNie).AliasNiew(aliasNiew).AliasNire(aliasNire).AliasNisw(aliasNisw).AliasNre(aliasNre).AliasRe(aliasRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DocumentationUrl(documentationUrl).DocumentationUrlIc(documentationUrlIc).DocumentationUrlIe(documentationUrlIe).DocumentationUrlIew(documentationUrlIew).DocumentationUrlIre(documentationUrlIre).DocumentationUrlIsw(documentationUrlIsw).DocumentationUrlN(documentationUrlN).DocumentationUrlNic(documentationUrlNic).DocumentationUrlNie(documentationUrlNie).DocumentationUrlNiew(documentationUrlNiew).DocumentationUrlNire(documentationUrlNire).DocumentationUrlNisw(documentationUrlNisw).DocumentationUrlNre(documentationUrlNre).DocumentationUrlRe(documentationUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).EndOfSupportDate(endOfSupportDate).EndOfSupportDateGt(endOfSupportDateGt).EndOfSupportDateGte(endOfSupportDateGte).EndOfSupportDateIsnull(endOfSupportDateIsnull).EndOfSupportDateLt(endOfSupportDateLt).EndOfSupportDateLte(endOfSupportDateLte).EndOfSupportDateN(endOfSupportDateN).Format(format).HasDevices(hasDevices).HasInventoryItems(hasInventoryItems).HasSoftwareImageFiles(hasSoftwareImageFiles).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LongTermSupport(longTermSupport).Offset(offset).Platform(platform).PlatformN(platformN).PreRelease(preRelease).Q(q).ReleaseDate(releaseDate).ReleaseDateGt(releaseDateGt).ReleaseDateGte(releaseDateGte).ReleaseDateIsnull(releaseDateIsnull).ReleaseDateLt(releaseDateLt).ReleaseDateLte(releaseDateLte).ReleaseDateN(releaseDateN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesIsnull(softwareImageFilesIsnull).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Version(version).VersionIc(versionIc).VersionIe(versionIe).VersionIew(versionIew).VersionIre(versionIre).VersionIsw(versionIsw).VersionN(versionN).VersionNic(versionNic).VersionNie(versionNie).VersionNiew(versionNiew).VersionNire(versionNire).VersionNisw(versionNisw).VersionNre(versionNre).VersionRe(versionRe).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 
 
 
@@ -38160,6 +43048,9 @@ func main() {
 	aliasNisw := []string{"Inner_example"} // []string |  (optional)
 	aliasNre := []string{"Inner_example"} // []string |  (optional)
 	aliasRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -38168,10 +43059,10 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool |  (optional)
+	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool |  (optional)
+	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	documentationUrl := []string{"Inner_example"} // []string |  (optional)
 	documentationUrlIc := []string{"Inner_example"} // []string |  (optional)
@@ -38187,6 +43078,8 @@ func main() {
 	documentationUrlNisw := []string{"Inner_example"} // []string |  (optional)
 	documentationUrlNre := []string{"Inner_example"} // []string |  (optional)
 	documentationUrlRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	endOfSupportDate := []string{time.Now()} // []string |  (optional)
 	endOfSupportDateGt := []string{time.Now()} // []string |  (optional)
 	endOfSupportDateGte := []string{time.Now()} // []string |  (optional)
@@ -38214,7 +43107,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	inventoryItems := []string{"Inner_example"} // []string |  (optional)
-	inventoryItemsIsnull := true // bool |  (optional)
+	inventoryItemsIsnull := true // bool | Inventory items (name or ID) is null (optional)
 	inventoryItemsN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -38238,14 +43131,17 @@ func main() {
 	releaseDateLte := []string{time.Now()} // []string |  (optional)
 	releaseDateN := []string{time.Now()} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
-	softwareImageFilesIsnull := true // bool |  (optional)
+	softwareImageFilesIsnull := true // bool | Software image files (image file name or ID) is null (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	version := []string{"Inner_example"} // []string |  (optional)
 	versionIc := []string{"Inner_example"} // []string |  (optional)
 	versionIe := []string{"Inner_example"} // []string |  (optional)
@@ -38261,13 +43157,13 @@ func main() {
 	versionNre := []string{"Inner_example"} // []string |  (optional)
 	versionRe := []string{"Inner_example"} // []string |  (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
-	virtualMachinesIsnull := true // bool |  (optional)
+	virtualMachinesIsnull := true // bool | Virtual machines (name or ID) is null (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimSoftwareVersionsList(context.Background()).Alias(alias).AliasIc(aliasIc).AliasIe(aliasIe).AliasIew(aliasIew).AliasIre(aliasIre).AliasIsw(aliasIsw).AliasN(aliasN).AliasNic(aliasNic).AliasNie(aliasNie).AliasNiew(aliasNiew).AliasNire(aliasNire).AliasNisw(aliasNisw).AliasNre(aliasNre).AliasRe(aliasRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DocumentationUrl(documentationUrl).DocumentationUrlIc(documentationUrlIc).DocumentationUrlIe(documentationUrlIe).DocumentationUrlIew(documentationUrlIew).DocumentationUrlIre(documentationUrlIre).DocumentationUrlIsw(documentationUrlIsw).DocumentationUrlN(documentationUrlN).DocumentationUrlNic(documentationUrlNic).DocumentationUrlNie(documentationUrlNie).DocumentationUrlNiew(documentationUrlNiew).DocumentationUrlNire(documentationUrlNire).DocumentationUrlNisw(documentationUrlNisw).DocumentationUrlNre(documentationUrlNre).DocumentationUrlRe(documentationUrlRe).EndOfSupportDate(endOfSupportDate).EndOfSupportDateGt(endOfSupportDateGt).EndOfSupportDateGte(endOfSupportDateGte).EndOfSupportDateIsnull(endOfSupportDateIsnull).EndOfSupportDateLt(endOfSupportDateLt).EndOfSupportDateLte(endOfSupportDateLte).EndOfSupportDateN(endOfSupportDateN).Format(format).HasDevices(hasDevices).HasInventoryItems(hasInventoryItems).HasSoftwareImageFiles(hasSoftwareImageFiles).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LongTermSupport(longTermSupport).Offset(offset).Platform(platform).PlatformN(platformN).PreRelease(preRelease).Q(q).ReleaseDate(releaseDate).ReleaseDateGt(releaseDateGt).ReleaseDateGte(releaseDateGte).ReleaseDateIsnull(releaseDateIsnull).ReleaseDateLt(releaseDateLt).ReleaseDateLte(releaseDateLte).ReleaseDateN(releaseDateN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesIsnull(softwareImageFilesIsnull).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Version(version).VersionIc(versionIc).VersionIe(versionIe).VersionIew(versionIew).VersionIre(versionIre).VersionIsw(versionIsw).VersionN(versionN).VersionNic(versionNic).VersionNie(versionNie).VersionNiew(versionNiew).VersionNire(versionNire).VersionNisw(versionNisw).VersionNre(versionNre).VersionRe(versionRe).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimSoftwareVersionsList(context.Background()).Alias(alias).AliasIc(aliasIc).AliasIe(aliasIe).AliasIew(aliasIew).AliasIre(aliasIre).AliasIsw(aliasIsw).AliasN(aliasN).AliasNic(aliasNic).AliasNie(aliasNie).AliasNiew(aliasNiew).AliasNire(aliasNire).AliasNisw(aliasNisw).AliasNre(aliasNre).AliasRe(aliasRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DocumentationUrl(documentationUrl).DocumentationUrlIc(documentationUrlIc).DocumentationUrlIe(documentationUrlIe).DocumentationUrlIew(documentationUrlIew).DocumentationUrlIre(documentationUrlIre).DocumentationUrlIsw(documentationUrlIsw).DocumentationUrlN(documentationUrlN).DocumentationUrlNic(documentationUrlNic).DocumentationUrlNie(documentationUrlNie).DocumentationUrlNiew(documentationUrlNiew).DocumentationUrlNire(documentationUrlNire).DocumentationUrlNisw(documentationUrlNisw).DocumentationUrlNre(documentationUrlNre).DocumentationUrlRe(documentationUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).EndOfSupportDate(endOfSupportDate).EndOfSupportDateGt(endOfSupportDateGt).EndOfSupportDateGte(endOfSupportDateGte).EndOfSupportDateIsnull(endOfSupportDateIsnull).EndOfSupportDateLt(endOfSupportDateLt).EndOfSupportDateLte(endOfSupportDateLte).EndOfSupportDateN(endOfSupportDateN).Format(format).HasDevices(hasDevices).HasInventoryItems(hasInventoryItems).HasSoftwareImageFiles(hasSoftwareImageFiles).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InventoryItems(inventoryItems).InventoryItemsIsnull(inventoryItemsIsnull).InventoryItemsN(inventoryItemsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LongTermSupport(longTermSupport).Offset(offset).Platform(platform).PlatformN(platformN).PreRelease(preRelease).Q(q).ReleaseDate(releaseDate).ReleaseDateGt(releaseDateGt).ReleaseDateGte(releaseDateGte).ReleaseDateIsnull(releaseDateIsnull).ReleaseDateLt(releaseDateLt).ReleaseDateLte(releaseDateLte).ReleaseDateN(releaseDateN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesIsnull(softwareImageFilesIsnull).SoftwareImageFilesN(softwareImageFilesN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Version(version).VersionIc(versionIc).VersionIe(versionIe).VersionIew(versionIew).VersionIre(versionIre).VersionIsw(versionIsw).VersionN(versionN).VersionNic(versionNic).VersionNie(versionNie).VersionNiew(versionNiew).VersionNire(versionNire).VersionNisw(versionNisw).VersionNre(versionNre).VersionRe(versionRe).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimSoftwareVersionsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -38302,6 +43198,9 @@ Name | Type | Description  | Notes
  **aliasNisw** | **[]string** |  | 
  **aliasNre** | **[]string** |  | 
  **aliasRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -38310,10 +43209,10 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** |  | 
+ **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
  **deviceTypesN** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** |  | 
+ **devicesIsnull** | **bool** | Devices (name or ID) is null | 
  **devicesN** | **[]string** |  | 
  **documentationUrl** | **[]string** |  | 
  **documentationUrlIc** | **[]string** |  | 
@@ -38329,6 +43228,8 @@ Name | Type | Description  | Notes
  **documentationUrlNisw** | **[]string** |  | 
  **documentationUrlNre** | **[]string** |  | 
  **documentationUrlRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **endOfSupportDate** | **[]string** |  | 
  **endOfSupportDateGt** | **[]string** |  | 
  **endOfSupportDateGte** | **[]string** |  | 
@@ -38356,7 +43257,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **inventoryItems** | **[]string** |  | 
- **inventoryItemsIsnull** | **bool** |  | 
+ **inventoryItemsIsnull** | **bool** | Inventory items (name or ID) is null | 
  **inventoryItemsN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -38380,14 +43281,17 @@ Name | Type | Description  | Notes
  **releaseDateLte** | **[]string** |  | 
  **releaseDateN** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
- **softwareImageFilesIsnull** | **bool** |  | 
+ **softwareImageFilesIsnull** | **bool** | Software image files (image file name or ID) is null | 
  **softwareImageFilesN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **version** | **[]string** |  | 
  **versionIc** | **[]string** |  | 
  **versionIe** | **[]string** |  | 
@@ -38403,7 +43307,7 @@ Name | Type | Description  | Notes
  **versionNre** | **[]string** |  | 
  **versionRe** | **[]string** |  | 
  **virtualMachines** | **[]string** |  | 
- **virtualMachinesIsnull** | **bool** |  | 
+ **virtualMachinesIsnull** | **bool** | Virtual machines (name or ID) is null | 
  **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -39141,7 +44045,7 @@ Name | Type | Description  | Notes
 
 ## DcimVirtualChassisList
 
-> PaginatedVirtualChassisList DcimVirtualChassisList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).Format(format).HasMembers(hasMembers).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).Execute()
+> PaginatedVirtualChassisList DcimVirtualChassisList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).Execute()
 
 
 
@@ -39161,6 +44065,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -39182,6 +44089,8 @@ func main() {
 	domainNisw := []string{"Inner_example"} // []string |  (optional)
 	domainNre := []string{"Inner_example"} // []string |  (optional)
 	domainRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasMembers := true // bool | Has device members (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -39209,10 +44118,10 @@ func main() {
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	master := []string{"Inner_example"} // []string |  (optional)
-	masterIsnull := true // bool |  (optional)
+	masterIsnull := true // bool | Master (name or ID) is null (optional)
 	masterN := []string{"Inner_example"} // []string |  (optional)
 	members := []string{"Inner_example"} // []string |  (optional)
-	membersIsnull := true // bool |  (optional)
+	membersIsnull := true // bool | Device members (name or ID) is null (optional)
 	membersN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -39234,14 +44143,17 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimVirtualChassisList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).Format(format).HasMembers(hasMembers).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimVirtualChassisList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimVirtualChassisList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -39262,6 +44174,9 @@ Other parameters are passed through a pointer to a apiDcimVirtualChassisListRequ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -39283,6 +44198,8 @@ Name | Type | Description  | Notes
  **domainNisw** | **[]string** |  | 
  **domainNre** | **[]string** |  | 
  **domainRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasMembers** | **bool** | Has device members | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -39310,10 +44227,10 @@ Name | Type | Description  | Notes
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **master** | **[]string** |  | 
- **masterIsnull** | **bool** |  | 
+ **masterIsnull** | **bool** | Master (name or ID) is null | 
  **masterN** | **[]string** |  | 
  **members** | **[]string** |  | 
- **membersIsnull** | **bool** |  | 
+ **membersIsnull** | **bool** | Device members (name or ID) is null | 
  **membersN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -39335,8 +44252,11 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 

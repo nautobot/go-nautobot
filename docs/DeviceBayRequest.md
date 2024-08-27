@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **InstalledDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -157,31 +157,6 @@ HasInstalledDevice returns a boolean if a field has been set.
 `func (o *DeviceBayRequest) UnsetInstalledDevice()`
 
 UnsetInstalledDevice ensures that no value is present for InstalledDevice, not even an explicit nil
-### GetTags
-
-`func (o *DeviceBayRequest) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *DeviceBayRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *DeviceBayRequest) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *DeviceBayRequest) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetCustomFields
 
 `func (o *DeviceBayRequest) GetCustomFields() map[string]interface{}`
@@ -231,6 +206,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *DeviceBayRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *DeviceBayRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *DeviceBayRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *DeviceBayRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *DeviceBayRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

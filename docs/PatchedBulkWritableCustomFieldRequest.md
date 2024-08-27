@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **Description** | Pointer to **string** | A helpful description for this field. | [optional] 
 **Required** | Pointer to **bool** | If true, this field is required when creating new objects or editing an existing object. | [optional] 
-**Default** | Pointer to **map[string]interface{}** | Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. \&quot;Foo\&quot;). | [optional] 
+**Default** | Pointer to **interface{}** | Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. \&quot;Foo\&quot;). | [optional] 
 **Weight** | Pointer to **int32** | Fields with higher weights appear lower in a form. | [optional] 
 **ValidationMinimum** | Pointer to **NullableInt64** | Minimum allowed value (for numeric fields) or length (for text fields). | [optional] 
 **ValidationMaximum** | Pointer to **NullableInt64** | Maximum allowed value (for numeric fields) or length (for text fields). | [optional] 
@@ -261,20 +261,20 @@ HasRequired returns a boolean if a field has been set.
 
 ### GetDefault
 
-`func (o *PatchedBulkWritableCustomFieldRequest) GetDefault() map[string]interface{}`
+`func (o *PatchedBulkWritableCustomFieldRequest) GetDefault() interface{}`
 
 GetDefault returns the Default field if non-nil, zero value otherwise.
 
 ### GetDefaultOk
 
-`func (o *PatchedBulkWritableCustomFieldRequest) GetDefaultOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableCustomFieldRequest) GetDefaultOk() (*interface{}, bool)`
 
 GetDefaultOk returns a tuple with the Default field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDefault
 
-`func (o *PatchedBulkWritableCustomFieldRequest) SetDefault(v map[string]interface{})`
+`func (o *PatchedBulkWritableCustomFieldRequest) SetDefault(v interface{})`
 
 SetDefault sets Default field to given value.
 

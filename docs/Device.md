@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **Face** | Pointer to [**DeviceFace**](DeviceFace.md) |  | [optional] 
-**LocalConfigContextData** | Pointer to **map[string]interface{}** |  | [optional] 
+**LocalConfigContextData** | Pointer to **interface{}** |  | [optional] 
 **LocalConfigContextDataOwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | Pointer to **NullableString** |  | [optional] 
 **Serial** | Pointer to **string** |  | [optional] 
@@ -40,9 +40,9 @@ Name | Type | Description | Notes
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this device | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **ParentBay** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 
 ## Methods
@@ -191,20 +191,20 @@ HasFace returns a boolean if a field has been set.
 
 ### GetLocalConfigContextData
 
-`func (o *Device) GetLocalConfigContextData() map[string]interface{}`
+`func (o *Device) GetLocalConfigContextData() interface{}`
 
 GetLocalConfigContextData returns the LocalConfigContextData field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOk
 
-`func (o *Device) GetLocalConfigContextDataOk() (*map[string]interface{}, bool)`
+`func (o *Device) GetLocalConfigContextDataOk() (*interface{}, bool)`
 
 GetLocalConfigContextDataOk returns a tuple with the LocalConfigContextData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextData
 
-`func (o *Device) SetLocalConfigContextData(v map[string]interface{})`
+`func (o *Device) SetLocalConfigContextData(v interface{})`
 
 SetLocalConfigContextData sets LocalConfigContextData field to given value.
 
@@ -1139,31 +1139,6 @@ SetLastUpdated sets LastUpdated field to given value.
 `func (o *Device) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
-### GetTags
-
-`func (o *Device) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *Device) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *Device) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *Device) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetNotesUrl
 
 `func (o *Device) GetNotesUrl() string`
@@ -1208,6 +1183,31 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *Device) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *Device) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *Device) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *Device) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *Device) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 ### GetParentBay
 

@@ -7,10 +7,10 @@ gitRepoId: go-nautobot
 packageName: nautobot
 
 globalProperty:
-  apiDocs: false
-  modelDocs: false
-  apiTests: false
-  modelTests: false
+  apiDocs: true
+  modelDocs: true
+  apiTests: true
+  modelTests: true
 
 additionalProperties:
   disallowAdditionalPropertiesIfNotPresent: "false"

@@ -9,7 +9,8 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
 **MgmtOnly** | Pointer to **bool** |  | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 
 ### NewWritableInterfaceTemplateRequest
 
-`func NewWritableInterfaceTemplateRequest(name string, type_ InterfaceTypeChoices, deviceType BulkWritableCableRequestStatus, ) *WritableInterfaceTemplateRequest`
+`func NewWritableInterfaceTemplateRequest(name string, type_ InterfaceTypeChoices, ) *WritableInterfaceTemplateRequest`
 
 NewWritableInterfaceTemplateRequest instantiates a new WritableInterfaceTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -149,24 +150,74 @@ HasMgmtOnly returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *WritableInterfaceTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *WritableInterfaceTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *WritableInterfaceTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritableInterfaceTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *WritableInterfaceTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *WritableInterfaceTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *WritableInterfaceTemplateRequest) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *WritableInterfaceTemplateRequest) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *WritableInterfaceTemplateRequest) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *WritableInterfaceTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *WritableInterfaceTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *WritableInterfaceTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *WritableInterfaceTemplateRequest) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *WritableInterfaceTemplateRequest) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *WritableInterfaceTemplateRequest) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCustomFields
 
 `func (o *WritableInterfaceTemplateRequest) GetCustomFields() map[string]interface{}`

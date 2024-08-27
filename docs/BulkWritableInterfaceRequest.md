@@ -14,23 +14,25 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** | This interface is used only for out-of-band management | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
 **Lag** | Pointer to [**NullableParentLAG**](ParentLAG.md) |  | [optional] 
 **UntaggedVlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Vrf** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **TaggedVlans** | Pointer to [**[]TaggedVLANs**](TaggedVLANs.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableInterfaceRequest
 
-`func NewBulkWritableInterfaceRequest(id string, type_ InterfaceTypeChoices, name string, device BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *BulkWritableInterfaceRequest`
+`func NewBulkWritableInterfaceRequest(id string, type_ InterfaceTypeChoices, name string, status BulkWritableCableRequestStatus, ) *BulkWritableInterfaceRequest`
 
 NewBulkWritableInterfaceRequest instantiates a new BulkWritableInterfaceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -302,24 +304,74 @@ HasMgmtOnly returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *BulkWritableInterfaceRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *BulkWritableInterfaceRequest) GetDevice() BulkWritableCircuitRequestTenant`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *BulkWritableInterfaceRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableInterfaceRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *BulkWritableInterfaceRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableInterfaceRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
 
 SetDevice sets Device field to given value.
 
+### HasDevice
 
+`func (o *BulkWritableInterfaceRequest) HasDevice() bool`
+
+HasDevice returns a boolean if a field has been set.
+
+### SetDeviceNil
+
+`func (o *BulkWritableInterfaceRequest) SetDeviceNil(b bool)`
+
+ SetDeviceNil sets the value for Device to be an explicit nil
+
+### UnsetDevice
+`func (o *BulkWritableInterfaceRequest) UnsetDevice()`
+
+UnsetDevice ensures that no value is present for Device, not even an explicit nil
+### GetModule
+
+`func (o *BulkWritableInterfaceRequest) GetModule() BulkWritableCircuitRequestTenant`
+
+GetModule returns the Module field if non-nil, zero value otherwise.
+
+### GetModuleOk
+
+`func (o *BulkWritableInterfaceRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModule
+
+`func (o *BulkWritableInterfaceRequest) SetModule(v BulkWritableCircuitRequestTenant)`
+
+SetModule sets Module field to given value.
+
+### HasModule
+
+`func (o *BulkWritableInterfaceRequest) HasModule() bool`
+
+HasModule returns a boolean if a field has been set.
+
+### SetModuleNil
+
+`func (o *BulkWritableInterfaceRequest) SetModuleNil(b bool)`
+
+ SetModuleNil sets the value for Module to be an explicit nil
+
+### UnsetModule
+`func (o *BulkWritableInterfaceRequest) UnsetModule()`
+
+UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetStatus
 
 `func (o *BulkWritableInterfaceRequest) GetStatus() BulkWritableCableRequestStatus`
@@ -340,6 +392,41 @@ and a boolean to check if the value has been set.
 SetStatus sets Status field to given value.
 
 
+### GetRole
+
+`func (o *BulkWritableInterfaceRequest) GetRole() BulkWritableCircuitRequestTenant`
+
+GetRole returns the Role field if non-nil, zero value otherwise.
+
+### GetRoleOk
+
+`func (o *BulkWritableInterfaceRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRole
+
+`func (o *BulkWritableInterfaceRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+
+SetRole sets Role field to given value.
+
+### HasRole
+
+`func (o *BulkWritableInterfaceRequest) HasRole() bool`
+
+HasRole returns a boolean if a field has been set.
+
+### SetRoleNil
+
+`func (o *BulkWritableInterfaceRequest) SetRoleNil(b bool)`
+
+ SetRoleNil sets the value for Role to be an explicit nil
+
+### UnsetRole
+`func (o *BulkWritableInterfaceRequest) UnsetRole()`
+
+UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetParentInterface
 
 `func (o *BulkWritableInterfaceRequest) GetParentInterface() BulkWritableInterfaceRequestParentInterface`
@@ -540,31 +627,6 @@ SetTaggedVlans sets TaggedVlans field to given value.
 
 HasTaggedVlans returns a boolean if a field has been set.
 
-### GetTags
-
-`func (o *BulkWritableInterfaceRequest) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *BulkWritableInterfaceRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *BulkWritableInterfaceRequest) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *BulkWritableInterfaceRequest) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetCustomFields
 
 `func (o *BulkWritableInterfaceRequest) GetCustomFields() map[string]interface{}`
@@ -614,6 +676,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *BulkWritableInterfaceRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *BulkWritableInterfaceRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *BulkWritableInterfaceRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *BulkWritableInterfaceRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *BulkWritableInterfaceRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

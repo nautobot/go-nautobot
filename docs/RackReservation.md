@@ -9,22 +9,22 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**Units** | **map[string]interface{}** | List of rack unit numbers to reserve | 
+**Units** | **interface{}** | List of rack unit numbers to reserve | 
 **Description** | **string** |  | 
 **Rack** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewRackReservation
 
-`func NewRackReservation(id string, objectType string, display string, url string, naturalSlug string, units map[string]interface{}, description string, rack BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackReservation`
+`func NewRackReservation(id string, objectType string, display string, url string, naturalSlug string, units interface{}, description string, rack BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackReservation`
 
 NewRackReservation instantiates a new RackReservation object
 This constructor will assign default values to properties that have it defined,
@@ -141,24 +141,34 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetUnits
 
-`func (o *RackReservation) GetUnits() map[string]interface{}`
+`func (o *RackReservation) GetUnits() interface{}`
 
 GetUnits returns the Units field if non-nil, zero value otherwise.
 
 ### GetUnitsOk
 
-`func (o *RackReservation) GetUnitsOk() (*map[string]interface{}, bool)`
+`func (o *RackReservation) GetUnitsOk() (*interface{}, bool)`
 
 GetUnitsOk returns a tuple with the Units field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUnits
 
-`func (o *RackReservation) SetUnits(v map[string]interface{})`
+`func (o *RackReservation) SetUnits(v interface{})`
 
 SetUnits sets Units field to given value.
 
 
+### SetUnitsNil
+
+`func (o *RackReservation) SetUnitsNil(b bool)`
+
+ SetUnitsNil sets the value for Units to be an explicit nil
+
+### UnsetUnits
+`func (o *RackReservation) UnsetUnits()`
+
+UnsetUnits ensures that no value is present for Units, not even an explicit nil
 ### GetDescription
 
 `func (o *RackReservation) GetDescription() string`
@@ -319,31 +329,6 @@ SetLastUpdated sets LastUpdated field to given value.
 `func (o *RackReservation) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
-### GetTags
-
-`func (o *RackReservation) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *RackReservation) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *RackReservation) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *RackReservation) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetNotesUrl
 
 `func (o *RackReservation) GetNotesUrl() string`
@@ -388,6 +373,31 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *RackReservation) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *RackReservation) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *RackReservation) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *RackReservation) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *RackReservation) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

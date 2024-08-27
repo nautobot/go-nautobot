@@ -14,13 +14,13 @@ Name | Type | Description | Notes
 **TaskName** | Pointer to **NullableString** | Registered name of the Celery task for this job. Internal use only. | [optional] 
 **DateCreated** | **time.Time** |  | [readonly] 
 **DateDone** | Pointer to **NullableTime** |  | [optional] 
-**Result** | **map[string]interface{}** | The data returned by the task | [readonly] 
+**Result** | **interface{}** | The data returned by the task | [readonly] 
 **Worker** | Pointer to **NullableString** |  | [optional] 
-**TaskArgs** | Pointer to **map[string]interface{}** |  | [optional] 
-**TaskKwargs** | Pointer to **map[string]interface{}** |  | [optional] 
-**CeleryKwargs** | Pointer to **map[string]interface{}** |  | [optional] 
+**TaskArgs** | Pointer to **interface{}** |  | [optional] 
+**TaskKwargs** | Pointer to **interface{}** |  | [optional] 
+**CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
 **Traceback** | Pointer to **NullableString** |  | [optional] 
-**Meta** | **map[string]interface{}** |  | [readonly] 
+**Meta** | **interface{}** |  | [readonly] 
 **JobModel** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ScheduledJob** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewJobResult
 
-`func NewJobResult(id string, objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result map[string]interface{}, meta map[string]interface{}, files []BulkWritableCableRequestStatus, ) *JobResult`
+`func NewJobResult(id string, objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, files []BulkWritableCableRequestStatus, ) *JobResult`
 
 NewJobResult instantiates a new JobResult object
 This constructor will assign default values to properties that have it defined,
@@ -278,20 +278,20 @@ HasDateDone returns a boolean if a field has been set.
 UnsetDateDone ensures that no value is present for DateDone, not even an explicit nil
 ### GetResult
 
-`func (o *JobResult) GetResult() map[string]interface{}`
+`func (o *JobResult) GetResult() interface{}`
 
 GetResult returns the Result field if non-nil, zero value otherwise.
 
 ### GetResultOk
 
-`func (o *JobResult) GetResultOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetResultOk() (*interface{}, bool)`
 
 GetResultOk returns a tuple with the Result field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetResult
 
-`func (o *JobResult) SetResult(v map[string]interface{})`
+`func (o *JobResult) SetResult(v interface{})`
 
 SetResult sets Result field to given value.
 
@@ -343,20 +343,20 @@ HasWorker returns a boolean if a field has been set.
 UnsetWorker ensures that no value is present for Worker, not even an explicit nil
 ### GetTaskArgs
 
-`func (o *JobResult) GetTaskArgs() map[string]interface{}`
+`func (o *JobResult) GetTaskArgs() interface{}`
 
 GetTaskArgs returns the TaskArgs field if non-nil, zero value otherwise.
 
 ### GetTaskArgsOk
 
-`func (o *JobResult) GetTaskArgsOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetTaskArgsOk() (*interface{}, bool)`
 
 GetTaskArgsOk returns a tuple with the TaskArgs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTaskArgs
 
-`func (o *JobResult) SetTaskArgs(v map[string]interface{})`
+`func (o *JobResult) SetTaskArgs(v interface{})`
 
 SetTaskArgs sets TaskArgs field to given value.
 
@@ -366,22 +366,32 @@ SetTaskArgs sets TaskArgs field to given value.
 
 HasTaskArgs returns a boolean if a field has been set.
 
+### SetTaskArgsNil
+
+`func (o *JobResult) SetTaskArgsNil(b bool)`
+
+ SetTaskArgsNil sets the value for TaskArgs to be an explicit nil
+
+### UnsetTaskArgs
+`func (o *JobResult) UnsetTaskArgs()`
+
+UnsetTaskArgs ensures that no value is present for TaskArgs, not even an explicit nil
 ### GetTaskKwargs
 
-`func (o *JobResult) GetTaskKwargs() map[string]interface{}`
+`func (o *JobResult) GetTaskKwargs() interface{}`
 
 GetTaskKwargs returns the TaskKwargs field if non-nil, zero value otherwise.
 
 ### GetTaskKwargsOk
 
-`func (o *JobResult) GetTaskKwargsOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetTaskKwargsOk() (*interface{}, bool)`
 
 GetTaskKwargsOk returns a tuple with the TaskKwargs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTaskKwargs
 
-`func (o *JobResult) SetTaskKwargs(v map[string]interface{})`
+`func (o *JobResult) SetTaskKwargs(v interface{})`
 
 SetTaskKwargs sets TaskKwargs field to given value.
 
@@ -391,22 +401,32 @@ SetTaskKwargs sets TaskKwargs field to given value.
 
 HasTaskKwargs returns a boolean if a field has been set.
 
+### SetTaskKwargsNil
+
+`func (o *JobResult) SetTaskKwargsNil(b bool)`
+
+ SetTaskKwargsNil sets the value for TaskKwargs to be an explicit nil
+
+### UnsetTaskKwargs
+`func (o *JobResult) UnsetTaskKwargs()`
+
+UnsetTaskKwargs ensures that no value is present for TaskKwargs, not even an explicit nil
 ### GetCeleryKwargs
 
-`func (o *JobResult) GetCeleryKwargs() map[string]interface{}`
+`func (o *JobResult) GetCeleryKwargs() interface{}`
 
 GetCeleryKwargs returns the CeleryKwargs field if non-nil, zero value otherwise.
 
 ### GetCeleryKwargsOk
 
-`func (o *JobResult) GetCeleryKwargsOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetCeleryKwargsOk() (*interface{}, bool)`
 
 GetCeleryKwargsOk returns a tuple with the CeleryKwargs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCeleryKwargs
 
-`func (o *JobResult) SetCeleryKwargs(v map[string]interface{})`
+`func (o *JobResult) SetCeleryKwargs(v interface{})`
 
 SetCeleryKwargs sets CeleryKwargs field to given value.
 
@@ -416,6 +436,16 @@ SetCeleryKwargs sets CeleryKwargs field to given value.
 
 HasCeleryKwargs returns a boolean if a field has been set.
 
+### SetCeleryKwargsNil
+
+`func (o *JobResult) SetCeleryKwargsNil(b bool)`
+
+ SetCeleryKwargsNil sets the value for CeleryKwargs to be an explicit nil
+
+### UnsetCeleryKwargs
+`func (o *JobResult) UnsetCeleryKwargs()`
+
+UnsetCeleryKwargs ensures that no value is present for CeleryKwargs, not even an explicit nil
 ### GetTraceback
 
 `func (o *JobResult) GetTraceback() string`
@@ -453,20 +483,20 @@ HasTraceback returns a boolean if a field has been set.
 UnsetTraceback ensures that no value is present for Traceback, not even an explicit nil
 ### GetMeta
 
-`func (o *JobResult) GetMeta() map[string]interface{}`
+`func (o *JobResult) GetMeta() interface{}`
 
 GetMeta returns the Meta field if non-nil, zero value otherwise.
 
 ### GetMetaOk
 
-`func (o *JobResult) GetMetaOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetMetaOk() (*interface{}, bool)`
 
 GetMetaOk returns a tuple with the Meta field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMeta
 
-`func (o *JobResult) SetMeta(v map[string]interface{})`
+`func (o *JobResult) SetMeta(v interface{})`
 
 SetMeta sets Meta field to given value.
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**LocalConfigContextData** | Pointer to **map[string]interface{}** |  | [optional] 
+**LocalConfigContextData** | Pointer to **interface{}** |  | [optional] 
 **LocalConfigContextDataOwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Vcpus** | Pointer to **NullableInt32** |  | [optional] 
@@ -47,20 +47,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetLocalConfigContextData
 
-`func (o *PatchedVirtualMachineRequest) GetLocalConfigContextData() map[string]interface{}`
+`func (o *PatchedVirtualMachineRequest) GetLocalConfigContextData() interface{}`
 
 GetLocalConfigContextData returns the LocalConfigContextData field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOk
 
-`func (o *PatchedVirtualMachineRequest) GetLocalConfigContextDataOk() (*map[string]interface{}, bool)`
+`func (o *PatchedVirtualMachineRequest) GetLocalConfigContextDataOk() (*interface{}, bool)`
 
 GetLocalConfigContextDataOk returns a tuple with the LocalConfigContextData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextData
 
-`func (o *PatchedVirtualMachineRequest) SetLocalConfigContextData(v map[string]interface{})`
+`func (o *PatchedVirtualMachineRequest) SetLocalConfigContextData(v interface{})`
 
 SetLocalConfigContextData sets LocalConfigContextData field to given value.
 

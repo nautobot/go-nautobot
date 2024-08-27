@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
-**NaturalSlug** | **string** |  | [readonly] 
 **CablePeerType** | **NullableString** |  | [readonly] 
 **CablePeer** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
+**NaturalSlug** | **string** |  | [readonly] 
 **ConnectedEndpointType** | **NullableString** |  | [readonly] 
 **ConnectedEndpoint** | [**NullablePathEndpoint**](PathEndpoint.md) |  | [readonly] 
 **ConnectedEndpointReachable** | **NullableBool** |  | [readonly] 
@@ -24,9 +24,11 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** | This interface is used only for out-of-band management | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
 **Lag** | Pointer to [**NullableParentLAG**](ParentLAG.md) |  | [optional] 
@@ -36,15 +38,15 @@ Name | Type | Description | Notes
 **IpAddresses** | [**[]IPAddresses**](IPAddresses.md) |  | [readonly] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewInterface
 
-`func NewInterface(id string, objectType string, display string, url string, naturalSlug string, cablePeerType NullableString, cablePeer NullableCableTermination, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, ipAddressCount int32, name string, device BulkWritableCableRequestStatus, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
+`func NewInterface(id string, objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, ipAddressCount int32, name string, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
 
 NewInterface instantiates a new Interface object
 This constructor will assign default values to properties that have it defined,
@@ -139,26 +141,6 @@ and a boolean to check if the value has been set.
 SetUrl sets Url field to given value.
 
 
-### GetNaturalSlug
-
-`func (o *Interface) GetNaturalSlug() string`
-
-GetNaturalSlug returns the NaturalSlug field if non-nil, zero value otherwise.
-
-### GetNaturalSlugOk
-
-`func (o *Interface) GetNaturalSlugOk() (*string, bool)`
-
-GetNaturalSlugOk returns a tuple with the NaturalSlug field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNaturalSlug
-
-`func (o *Interface) SetNaturalSlug(v string)`
-
-SetNaturalSlug sets NaturalSlug field to given value.
-
-
 ### GetCablePeerType
 
 `func (o *Interface) GetCablePeerType() string`
@@ -219,6 +201,26 @@ SetCablePeer sets CablePeer field to given value.
 `func (o *Interface) UnsetCablePeer()`
 
 UnsetCablePeer ensures that no value is present for CablePeer, not even an explicit nil
+### GetNaturalSlug
+
+`func (o *Interface) GetNaturalSlug() string`
+
+GetNaturalSlug returns the NaturalSlug field if non-nil, zero value otherwise.
+
+### GetNaturalSlugOk
+
+`func (o *Interface) GetNaturalSlugOk() (*string, bool)`
+
+GetNaturalSlugOk returns a tuple with the NaturalSlug field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNaturalSlug
+
+`func (o *Interface) SetNaturalSlug(v string)`
+
+SetNaturalSlug sets NaturalSlug field to given value.
+
+
 ### GetConnectedEndpointType
 
 `func (o *Interface) GetConnectedEndpointType() string`
@@ -566,24 +568,74 @@ HasMgmtOnly returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *Interface) GetDevice() BulkWritableCableRequestStatus`
+`func (o *Interface) GetDevice() BulkWritableCircuitRequestTenant`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *Interface) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *Interface) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *Interface) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *Interface) SetDevice(v BulkWritableCircuitRequestTenant)`
 
 SetDevice sets Device field to given value.
 
+### HasDevice
 
+`func (o *Interface) HasDevice() bool`
+
+HasDevice returns a boolean if a field has been set.
+
+### SetDeviceNil
+
+`func (o *Interface) SetDeviceNil(b bool)`
+
+ SetDeviceNil sets the value for Device to be an explicit nil
+
+### UnsetDevice
+`func (o *Interface) UnsetDevice()`
+
+UnsetDevice ensures that no value is present for Device, not even an explicit nil
+### GetModule
+
+`func (o *Interface) GetModule() BulkWritableCircuitRequestTenant`
+
+GetModule returns the Module field if non-nil, zero value otherwise.
+
+### GetModuleOk
+
+`func (o *Interface) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModule
+
+`func (o *Interface) SetModule(v BulkWritableCircuitRequestTenant)`
+
+SetModule sets Module field to given value.
+
+### HasModule
+
+`func (o *Interface) HasModule() bool`
+
+HasModule returns a boolean if a field has been set.
+
+### SetModuleNil
+
+`func (o *Interface) SetModuleNil(b bool)`
+
+ SetModuleNil sets the value for Module to be an explicit nil
+
+### UnsetModule
+`func (o *Interface) UnsetModule()`
+
+UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetCable
 
 `func (o *Interface) GetCable() CircuitCircuitTerminationA`
@@ -634,6 +686,41 @@ and a boolean to check if the value has been set.
 SetStatus sets Status field to given value.
 
 
+### GetRole
+
+`func (o *Interface) GetRole() BulkWritableCircuitRequestTenant`
+
+GetRole returns the Role field if non-nil, zero value otherwise.
+
+### GetRoleOk
+
+`func (o *Interface) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRole
+
+`func (o *Interface) SetRole(v BulkWritableCircuitRequestTenant)`
+
+SetRole sets Role field to given value.
+
+### HasRole
+
+`func (o *Interface) HasRole() bool`
+
+HasRole returns a boolean if a field has been set.
+
+### SetRoleNil
+
+`func (o *Interface) SetRoleNil(b bool)`
+
+ SetRoleNil sets the value for Role to be an explicit nil
+
+### UnsetRole
+`func (o *Interface) UnsetRole()`
+
+UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetParentInterface
 
 `func (o *Interface) GetParentInterface() BulkWritableInterfaceRequestParentInterface`
@@ -914,31 +1001,6 @@ SetLastUpdated sets LastUpdated field to given value.
 `func (o *Interface) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
-### GetTags
-
-`func (o *Interface) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *Interface) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *Interface) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *Interface) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetNotesUrl
 
 `func (o *Interface) GetNotesUrl() string`
@@ -983,6 +1045,31 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *Interface) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *Interface) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *Interface) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *Interface) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *Interface) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

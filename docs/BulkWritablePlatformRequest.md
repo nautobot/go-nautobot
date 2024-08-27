@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **NetworkDriver** | Pointer to **string** | The normalized network driver to use when interacting with devices, e.g. cisco_ios, arista_eos, etc. Library-specific driver names will be derived from this setting as appropriate | [optional] 
 **NapalmDriver** | Pointer to **string** | The name of the NAPALM driver to use when Nautobot internals interact with devices | [optional] 
-**NapalmArgs** | Pointer to **map[string]interface{}** | Additional arguments to pass when initiating the NAPALM driver (JSON format) | [optional] 
+**NapalmArgs** | Pointer to **interface{}** | Additional arguments to pass when initiating the NAPALM driver (JSON format) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**NullableBulkWritablePlatformRequestManufacturer**](BulkWritablePlatformRequestManufacturer.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -125,20 +125,20 @@ HasNapalmDriver returns a boolean if a field has been set.
 
 ### GetNapalmArgs
 
-`func (o *BulkWritablePlatformRequest) GetNapalmArgs() map[string]interface{}`
+`func (o *BulkWritablePlatformRequest) GetNapalmArgs() interface{}`
 
 GetNapalmArgs returns the NapalmArgs field if non-nil, zero value otherwise.
 
 ### GetNapalmArgsOk
 
-`func (o *BulkWritablePlatformRequest) GetNapalmArgsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritablePlatformRequest) GetNapalmArgsOk() (*interface{}, bool)`
 
 GetNapalmArgsOk returns a tuple with the NapalmArgs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNapalmArgs
 
-`func (o *BulkWritablePlatformRequest) SetNapalmArgs(v map[string]interface{})`
+`func (o *BulkWritablePlatformRequest) SetNapalmArgs(v interface{})`
 
 SetNapalmArgs sets NapalmArgs field to given value.
 

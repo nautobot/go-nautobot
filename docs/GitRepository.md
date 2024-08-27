@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Slug** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **RemoteUrl** | **string** | Only HTTP and HTTPS URLs are presently supported | 
-**Branch** | Pointer to **string** |  | [optional] 
+**Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
 **CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
 **SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 

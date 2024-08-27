@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ContentType** | **string** |  | 
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
+**Grouping** | Pointer to **string** | Human-readable grouping that this computed field belongs to. | [optional] 
 **Label** | **string** | Name of the field as displayed to users | 
 **Description** | Pointer to **string** |  | [optional] 
 **Template** | **string** | Jinja2 template code for field value | 
@@ -76,6 +77,31 @@ SetKey sets Key field to given value.
 `func (o *ComputedFieldRequest) HasKey() bool`
 
 HasKey returns a boolean if a field has been set.
+
+### GetGrouping
+
+`func (o *ComputedFieldRequest) GetGrouping() string`
+
+GetGrouping returns the Grouping field if non-nil, zero value otherwise.
+
+### GetGroupingOk
+
+`func (o *ComputedFieldRequest) GetGroupingOk() (*string, bool)`
+
+GetGroupingOk returns a tuple with the Grouping field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGrouping
+
+`func (o *ComputedFieldRequest) SetGrouping(v string)`
+
+SetGrouping sets Grouping field to given value.
+
+### HasGrouping
+
+`func (o *ComputedFieldRequest) HasGrouping() bool`
+
+HasGrouping returns a boolean if a field has been set.
 
 ### GetLabel
 

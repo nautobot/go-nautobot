@@ -15,11 +15,11 @@ Name | Type | Description | Notes
 **Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Device** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Manufacturer** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**SoftwareVersion** | Pointer to [**NullableTheSoftwareVersionInstalledOnThisInventoryItem**](TheSoftwareVersionInstalledOnThisInventoryItem.md) |  | [optional] 
+**SoftwareVersion** | Pointer to [**NullableBulkWritableInventoryItemRequestSoftwareVersion**](BulkWritableInventoryItemRequestSoftwareVersion.md) |  | [optional] 
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this inventory item | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -342,20 +342,20 @@ HasManufacturer returns a boolean if a field has been set.
 UnsetManufacturer ensures that no value is present for Manufacturer, not even an explicit nil
 ### GetSoftwareVersion
 
-`func (o *PatchedBulkWritableInventoryItemRequest) GetSoftwareVersion() TheSoftwareVersionInstalledOnThisInventoryItem`
+`func (o *PatchedBulkWritableInventoryItemRequest) GetSoftwareVersion() BulkWritableInventoryItemRequestSoftwareVersion`
 
 GetSoftwareVersion returns the SoftwareVersion field if non-nil, zero value otherwise.
 
 ### GetSoftwareVersionOk
 
-`func (o *PatchedBulkWritableInventoryItemRequest) GetSoftwareVersionOk() (*TheSoftwareVersionInstalledOnThisInventoryItem, bool)`
+`func (o *PatchedBulkWritableInventoryItemRequest) GetSoftwareVersionOk() (*BulkWritableInventoryItemRequestSoftwareVersion, bool)`
 
 GetSoftwareVersionOk returns a tuple with the SoftwareVersion field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSoftwareVersion
 
-`func (o *PatchedBulkWritableInventoryItemRequest) SetSoftwareVersion(v TheSoftwareVersionInstalledOnThisInventoryItem)`
+`func (o *PatchedBulkWritableInventoryItemRequest) SetSoftwareVersion(v BulkWritableInventoryItemRequestSoftwareVersion)`
 
 SetSoftwareVersion sets SoftwareVersion field to given value.
 
@@ -399,31 +399,6 @@ SetSoftwareImageFiles sets SoftwareImageFiles field to given value.
 `func (o *PatchedBulkWritableInventoryItemRequest) HasSoftwareImageFiles() bool`
 
 HasSoftwareImageFiles returns a boolean if a field has been set.
-
-### GetTags
-
-`func (o *PatchedBulkWritableInventoryItemRequest) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *PatchedBulkWritableInventoryItemRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *PatchedBulkWritableInventoryItemRequest) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *PatchedBulkWritableInventoryItemRequest) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
 
 ### GetCustomFields
 
@@ -474,6 +449,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *PatchedBulkWritableInventoryItemRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedBulkWritableInventoryItemRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedBulkWritableInventoryItemRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedBulkWritableInventoryItemRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedBulkWritableInventoryItemRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

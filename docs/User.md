@@ -18,14 +18,15 @@ Name | Type | Description | Notes
 **IsStaff** | Pointer to **bool** | Designates whether the user can log into this admin site. | [optional] 
 **IsActive** | Pointer to **bool** | Designates whether this user should be treated as active. Unselect this instead of deleting accounts. | [optional] 
 **DateJoined** | Pointer to **time.Time** |  | [optional] 
-**ConfigData** | Pointer to **map[string]interface{}** |  | [optional] 
+**ConfigData** | Pointer to **interface{}** |  | [optional] 
 **Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) | The groups this user belongs to. A user will get all permissions granted to each of their groups. | [optional] 
+**DefaultSavedViews** | [**[]UserSpecificDefaultSavedViews**](UserSpecificDefaultSavedViews.md) | User specific default saved views | [readonly] 
 
 ## Methods
 
 ### NewUser
 
-`func NewUser(id string, objectType string, display string, url string, naturalSlug string, username string, ) *User`
+`func NewUser(id string, objectType string, display string, url string, naturalSlug string, username string, defaultSavedViews []UserSpecificDefaultSavedViews, ) *User`
 
 NewUser instantiates a new User object
 This constructor will assign default values to properties that have it defined,
@@ -372,20 +373,20 @@ HasDateJoined returns a boolean if a field has been set.
 
 ### GetConfigData
 
-`func (o *User) GetConfigData() map[string]interface{}`
+`func (o *User) GetConfigData() interface{}`
 
 GetConfigData returns the ConfigData field if non-nil, zero value otherwise.
 
 ### GetConfigDataOk
 
-`func (o *User) GetConfigDataOk() (*map[string]interface{}, bool)`
+`func (o *User) GetConfigDataOk() (*interface{}, bool)`
 
 GetConfigDataOk returns a tuple with the ConfigData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetConfigData
 
-`func (o *User) SetConfigData(v map[string]interface{})`
+`func (o *User) SetConfigData(v interface{})`
 
 SetConfigData sets ConfigData field to given value.
 
@@ -395,6 +396,16 @@ SetConfigData sets ConfigData field to given value.
 
 HasConfigData returns a boolean if a field has been set.
 
+### SetConfigDataNil
+
+`func (o *User) SetConfigDataNil(b bool)`
+
+ SetConfigDataNil sets the value for ConfigData to be an explicit nil
+
+### UnsetConfigData
+`func (o *User) UnsetConfigData()`
+
+UnsetConfigData ensures that no value is present for ConfigData, not even an explicit nil
 ### GetGroups
 
 `func (o *User) GetGroups() []BulkWritableCableRequestStatus`
@@ -419,6 +430,26 @@ SetGroups sets Groups field to given value.
 `func (o *User) HasGroups() bool`
 
 HasGroups returns a boolean if a field has been set.
+
+### GetDefaultSavedViews
+
+`func (o *User) GetDefaultSavedViews() []UserSpecificDefaultSavedViews`
+
+GetDefaultSavedViews returns the DefaultSavedViews field if non-nil, zero value otherwise.
+
+### GetDefaultSavedViewsOk
+
+`func (o *User) GetDefaultSavedViewsOk() (*[]UserSpecificDefaultSavedViews, bool)`
+
+GetDefaultSavedViewsOk returns a tuple with the DefaultSavedViews field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDefaultSavedViews
+
+`func (o *User) SetDefaultSavedViews(v []UserSpecificDefaultSavedViews)`
+
+SetDefaultSavedViews sets DefaultSavedViews field to given value.
+
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

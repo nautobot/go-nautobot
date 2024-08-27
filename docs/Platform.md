@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**NetworkDriverMappings** | **map[string]interface{}** |  | [readonly] 
+**NetworkDriverMappings** | **interface{}** |  | [readonly] 
 **DeviceCount** | **int32** |  | [readonly] 
 **VirtualMachineCount** | **int32** |  | [readonly] 
 **Name** | **string** |  | 
 **NetworkDriver** | Pointer to **string** | The normalized network driver to use when interacting with devices, e.g. cisco_ios, arista_eos, etc. Library-specific driver names will be derived from this setting as appropriate | [optional] 
 **NapalmDriver** | Pointer to **string** | The name of the NAPALM driver to use when Nautobot internals interact with devices | [optional] 
-**NapalmArgs** | Pointer to **map[string]interface{}** | Additional arguments to pass when initiating the NAPALM driver (JSON format) | [optional] 
+**NapalmArgs** | Pointer to **interface{}** | Additional arguments to pass when initiating the NAPALM driver (JSON format) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**NullableBulkWritablePlatformRequestManufacturer**](BulkWritablePlatformRequestManufacturer.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewPlatform
 
-`func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings map[string]interface{}, deviceCount int32, virtualMachineCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
+`func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, deviceCount int32, virtualMachineCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
 
 NewPlatform instantiates a new Platform object
 This constructor will assign default values to properties that have it defined,
@@ -144,24 +144,34 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetNetworkDriverMappings
 
-`func (o *Platform) GetNetworkDriverMappings() map[string]interface{}`
+`func (o *Platform) GetNetworkDriverMappings() interface{}`
 
 GetNetworkDriverMappings returns the NetworkDriverMappings field if non-nil, zero value otherwise.
 
 ### GetNetworkDriverMappingsOk
 
-`func (o *Platform) GetNetworkDriverMappingsOk() (*map[string]interface{}, bool)`
+`func (o *Platform) GetNetworkDriverMappingsOk() (*interface{}, bool)`
 
 GetNetworkDriverMappingsOk returns a tuple with the NetworkDriverMappings field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNetworkDriverMappings
 
-`func (o *Platform) SetNetworkDriverMappings(v map[string]interface{})`
+`func (o *Platform) SetNetworkDriverMappings(v interface{})`
 
 SetNetworkDriverMappings sets NetworkDriverMappings field to given value.
 
 
+### SetNetworkDriverMappingsNil
+
+`func (o *Platform) SetNetworkDriverMappingsNil(b bool)`
+
+ SetNetworkDriverMappingsNil sets the value for NetworkDriverMappings to be an explicit nil
+
+### UnsetNetworkDriverMappings
+`func (o *Platform) UnsetNetworkDriverMappings()`
+
+UnsetNetworkDriverMappings ensures that no value is present for NetworkDriverMappings, not even an explicit nil
 ### GetDeviceCount
 
 `func (o *Platform) GetDeviceCount() int32`
@@ -274,20 +284,20 @@ HasNapalmDriver returns a boolean if a field has been set.
 
 ### GetNapalmArgs
 
-`func (o *Platform) GetNapalmArgs() map[string]interface{}`
+`func (o *Platform) GetNapalmArgs() interface{}`
 
 GetNapalmArgs returns the NapalmArgs field if non-nil, zero value otherwise.
 
 ### GetNapalmArgsOk
 
-`func (o *Platform) GetNapalmArgsOk() (*map[string]interface{}, bool)`
+`func (o *Platform) GetNapalmArgsOk() (*interface{}, bool)`
 
 GetNapalmArgsOk returns a tuple with the NapalmArgs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNapalmArgs
 
-`func (o *Platform) SetNapalmArgs(v map[string]interface{})`
+`func (o *Platform) SetNapalmArgs(v interface{})`
 
 SetNapalmArgs sets NapalmArgs field to given value.
 

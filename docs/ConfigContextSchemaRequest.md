@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**DataSchema** | **map[string]interface{}** | A JSON Schema document which is used to validate a config context object. | 
+**DataSchema** | **interface{}** | A JSON Schema document which is used to validate a config context object. | 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewConfigContextSchemaRequest
 
-`func NewConfigContextSchemaRequest(name string, dataSchema map[string]interface{}, ) *ConfigContextSchemaRequest`
+`func NewConfigContextSchemaRequest(name string, dataSchema interface{}, ) *ConfigContextSchemaRequest`
 
 NewConfigContextSchemaRequest instantiates a new ConfigContextSchemaRequest object
 This constructor will assign default values to properties that have it defined,
@@ -113,24 +113,34 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDataSchema
 
-`func (o *ConfigContextSchemaRequest) GetDataSchema() map[string]interface{}`
+`func (o *ConfigContextSchemaRequest) GetDataSchema() interface{}`
 
 GetDataSchema returns the DataSchema field if non-nil, zero value otherwise.
 
 ### GetDataSchemaOk
 
-`func (o *ConfigContextSchemaRequest) GetDataSchemaOk() (*map[string]interface{}, bool)`
+`func (o *ConfigContextSchemaRequest) GetDataSchemaOk() (*interface{}, bool)`
 
 GetDataSchemaOk returns a tuple with the DataSchema field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDataSchema
 
-`func (o *ConfigContextSchemaRequest) SetDataSchema(v map[string]interface{})`
+`func (o *ConfigContextSchemaRequest) SetDataSchema(v interface{})`
 
 SetDataSchema sets DataSchema field to given value.
 
 
+### SetDataSchemaNil
+
+`func (o *ConfigContextSchemaRequest) SetDataSchemaNil(b bool)`
+
+ SetDataSchemaNil sets the value for DataSchema to be an explicit nil
+
+### UnsetDataSchema
+`func (o *ConfigContextSchemaRequest) UnsetDataSchema()`
+
+UnsetDataSchema ensures that no value is present for DataSchema, not even an explicit nil
 ### GetOwnerObjectId
 
 `func (o *ConfigContextSchemaRequest) GetOwnerObjectId() string`

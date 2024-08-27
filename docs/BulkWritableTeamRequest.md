@@ -5,12 +5,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Name** | **string** |  | 
 **Phone** | Pointer to **string** |  | [optional] [default to ""]
 **Email** | Pointer to **string** |  | [optional] [default to ""]
 **Address** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -52,6 +52,31 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+
+### GetContacts
+
+`func (o *BulkWritableTeamRequest) GetContacts() []BulkWritableCableRequestStatus`
+
+GetContacts returns the Contacts field if non-nil, zero value otherwise.
+
+### GetContactsOk
+
+`func (o *BulkWritableTeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContacts
+
+`func (o *BulkWritableTeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
+
+SetContacts sets Contacts field to given value.
+
+### HasContacts
+
+`func (o *BulkWritableTeamRequest) HasContacts() bool`
+
+HasContacts returns a boolean if a field has been set.
 
 ### GetName
 
@@ -172,31 +197,6 @@ SetComments sets Comments field to given value.
 `func (o *BulkWritableTeamRequest) HasComments() bool`
 
 HasComments returns a boolean if a field has been set.
-
-### GetContacts
-
-`func (o *BulkWritableTeamRequest) GetContacts() []BulkWritableCableRequestStatus`
-
-GetContacts returns the Contacts field if non-nil, zero value otherwise.
-
-### GetContactsOk
-
-`func (o *BulkWritableTeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetContacts
-
-`func (o *BulkWritableTeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
-
-SetContacts sets Contacts field to given value.
-
-### HasContacts
-
-`func (o *BulkWritableTeamRequest) HasContacts() bool`
-
-HasContacts returns a boolean if a field has been set.
 
 ### GetCustomFields
 

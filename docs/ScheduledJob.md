@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 **Name** | **string** | Human-readable description of this scheduled task | 
 **Task** | **string** | The name of the Celery task that should be run. (Example: \&quot;proj.tasks.import_contacts\&quot;) | 
 **Interval** | [**JobExecutionTypeIntervalChoices**](JobExecutionTypeIntervalChoices.md) |  | 
-**Args** | Pointer to **map[string]interface{}** |  | [optional] 
-**Kwargs** | Pointer to **map[string]interface{}** |  | [optional] 
-**CeleryKwargs** | Pointer to **map[string]interface{}** |  | [optional] 
+**Args** | Pointer to **interface{}** |  | [optional] 
+**Kwargs** | Pointer to **interface{}** |  | [optional] 
+**CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
 **Queue** | Pointer to **string** | Queue defined in CELERY_TASK_QUEUES. Leave empty for default queuing. | [optional] 
 **OneOff** | Pointer to **bool** | If True, the schedule will only run the task a single time | [optional] 
 **StartTime** | **time.Time** | Datetime when the schedule should begin triggering the task to run | 
@@ -211,20 +211,20 @@ SetInterval sets Interval field to given value.
 
 ### GetArgs
 
-`func (o *ScheduledJob) GetArgs() map[string]interface{}`
+`func (o *ScheduledJob) GetArgs() interface{}`
 
 GetArgs returns the Args field if non-nil, zero value otherwise.
 
 ### GetArgsOk
 
-`func (o *ScheduledJob) GetArgsOk() (*map[string]interface{}, bool)`
+`func (o *ScheduledJob) GetArgsOk() (*interface{}, bool)`
 
 GetArgsOk returns a tuple with the Args field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetArgs
 
-`func (o *ScheduledJob) SetArgs(v map[string]interface{})`
+`func (o *ScheduledJob) SetArgs(v interface{})`
 
 SetArgs sets Args field to given value.
 
@@ -234,22 +234,32 @@ SetArgs sets Args field to given value.
 
 HasArgs returns a boolean if a field has been set.
 
+### SetArgsNil
+
+`func (o *ScheduledJob) SetArgsNil(b bool)`
+
+ SetArgsNil sets the value for Args to be an explicit nil
+
+### UnsetArgs
+`func (o *ScheduledJob) UnsetArgs()`
+
+UnsetArgs ensures that no value is present for Args, not even an explicit nil
 ### GetKwargs
 
-`func (o *ScheduledJob) GetKwargs() map[string]interface{}`
+`func (o *ScheduledJob) GetKwargs() interface{}`
 
 GetKwargs returns the Kwargs field if non-nil, zero value otherwise.
 
 ### GetKwargsOk
 
-`func (o *ScheduledJob) GetKwargsOk() (*map[string]interface{}, bool)`
+`func (o *ScheduledJob) GetKwargsOk() (*interface{}, bool)`
 
 GetKwargsOk returns a tuple with the Kwargs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetKwargs
 
-`func (o *ScheduledJob) SetKwargs(v map[string]interface{})`
+`func (o *ScheduledJob) SetKwargs(v interface{})`
 
 SetKwargs sets Kwargs field to given value.
 
@@ -259,22 +269,32 @@ SetKwargs sets Kwargs field to given value.
 
 HasKwargs returns a boolean if a field has been set.
 
+### SetKwargsNil
+
+`func (o *ScheduledJob) SetKwargsNil(b bool)`
+
+ SetKwargsNil sets the value for Kwargs to be an explicit nil
+
+### UnsetKwargs
+`func (o *ScheduledJob) UnsetKwargs()`
+
+UnsetKwargs ensures that no value is present for Kwargs, not even an explicit nil
 ### GetCeleryKwargs
 
-`func (o *ScheduledJob) GetCeleryKwargs() map[string]interface{}`
+`func (o *ScheduledJob) GetCeleryKwargs() interface{}`
 
 GetCeleryKwargs returns the CeleryKwargs field if non-nil, zero value otherwise.
 
 ### GetCeleryKwargsOk
 
-`func (o *ScheduledJob) GetCeleryKwargsOk() (*map[string]interface{}, bool)`
+`func (o *ScheduledJob) GetCeleryKwargsOk() (*interface{}, bool)`
 
 GetCeleryKwargsOk returns a tuple with the CeleryKwargs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCeleryKwargs
 
-`func (o *ScheduledJob) SetCeleryKwargs(v map[string]interface{})`
+`func (o *ScheduledJob) SetCeleryKwargs(v interface{})`
 
 SetCeleryKwargs sets CeleryKwargs field to given value.
 
@@ -284,6 +304,16 @@ SetCeleryKwargs sets CeleryKwargs field to given value.
 
 HasCeleryKwargs returns a boolean if a field has been set.
 
+### SetCeleryKwargsNil
+
+`func (o *ScheduledJob) SetCeleryKwargsNil(b bool)`
+
+ SetCeleryKwargsNil sets the value for CeleryKwargs to be an explicit nil
+
+### UnsetCeleryKwargs
+`func (o *ScheduledJob) UnsetCeleryKwargs()`
+
+UnsetCeleryKwargs ensures that no value is present for CeleryKwargs, not even an explicit nil
 ### GetQueue
 
 `func (o *ScheduledJob) GetQueue() string`

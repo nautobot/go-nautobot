@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Provider** | Pointer to **string** |  | [optional] 
-**Parameters** | Pointer to **map[string]interface{}** |  | [optional] 
+**Parameters** | Pointer to **interface{}** |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -129,20 +129,20 @@ HasProvider returns a boolean if a field has been set.
 
 ### GetParameters
 
-`func (o *PatchedBulkWritableSecretRequest) GetParameters() map[string]interface{}`
+`func (o *PatchedBulkWritableSecretRequest) GetParameters() interface{}`
 
 GetParameters returns the Parameters field if non-nil, zero value otherwise.
 
 ### GetParametersOk
 
-`func (o *PatchedBulkWritableSecretRequest) GetParametersOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableSecretRequest) GetParametersOk() (*interface{}, bool)`
 
 GetParametersOk returns a tuple with the Parameters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParameters
 
-`func (o *PatchedBulkWritableSecretRequest) SetParameters(v map[string]interface{})`
+`func (o *PatchedBulkWritableSecretRequest) SetParameters(v interface{})`
 
 SetParameters sets Parameters field to given value.
 
@@ -152,6 +152,16 @@ SetParameters sets Parameters field to given value.
 
 HasParameters returns a boolean if a field has been set.
 
+### SetParametersNil
+
+`func (o *PatchedBulkWritableSecretRequest) SetParametersNil(b bool)`
+
+ SetParametersNil sets the value for Parameters to be an explicit nil
+
+### UnsetParameters
+`func (o *PatchedBulkWritableSecretRequest) UnsetParameters()`
+
+UnsetParameters ensures that no value is present for Parameters, not even an explicit nil
 ### GetTags
 
 `func (o *PatchedBulkWritableSecretRequest) GetTags() []BulkWritableCableRequestStatus`

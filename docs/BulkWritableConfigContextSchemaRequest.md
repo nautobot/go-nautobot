@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**DataSchema** | **map[string]interface{}** | A JSON Schema document which is used to validate a config context object. | 
+**DataSchema** | **interface{}** | A JSON Schema document which is used to validate a config context object. | 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableConfigContextSchemaRequest
 
-`func NewBulkWritableConfigContextSchemaRequest(id string, name string, dataSchema map[string]interface{}, ) *BulkWritableConfigContextSchemaRequest`
+`func NewBulkWritableConfigContextSchemaRequest(id string, name string, dataSchema interface{}, ) *BulkWritableConfigContextSchemaRequest`
 
 NewBulkWritableConfigContextSchemaRequest instantiates a new BulkWritableConfigContextSchemaRequest object
 This constructor will assign default values to properties that have it defined,
@@ -134,24 +134,34 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDataSchema
 
-`func (o *BulkWritableConfigContextSchemaRequest) GetDataSchema() map[string]interface{}`
+`func (o *BulkWritableConfigContextSchemaRequest) GetDataSchema() interface{}`
 
 GetDataSchema returns the DataSchema field if non-nil, zero value otherwise.
 
 ### GetDataSchemaOk
 
-`func (o *BulkWritableConfigContextSchemaRequest) GetDataSchemaOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableConfigContextSchemaRequest) GetDataSchemaOk() (*interface{}, bool)`
 
 GetDataSchemaOk returns a tuple with the DataSchema field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDataSchema
 
-`func (o *BulkWritableConfigContextSchemaRequest) SetDataSchema(v map[string]interface{})`
+`func (o *BulkWritableConfigContextSchemaRequest) SetDataSchema(v interface{})`
 
 SetDataSchema sets DataSchema field to given value.
 
 
+### SetDataSchemaNil
+
+`func (o *BulkWritableConfigContextSchemaRequest) SetDataSchemaNil(b bool)`
+
+ SetDataSchemaNil sets the value for DataSchema to be an explicit nil
+
+### UnsetDataSchema
+`func (o *BulkWritableConfigContextSchemaRequest) UnsetDataSchema()`
+
+UnsetDataSchema ensures that no value is present for DataSchema, not even an explicit nil
 ### GetOwnerObjectId
 
 `func (o *BulkWritableConfigContextSchemaRequest) GetOwnerObjectId() string`

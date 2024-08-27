@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Query** | **string** | GraphQL query | 
-**Variables** | Pointer to **map[string]interface{}** | Variables in JSON Format | [optional] 
+**Variables** | Pointer to **interface{}** | Variables in JSON Format | [optional] 
 
 ## Methods
 
@@ -48,20 +48,20 @@ SetQuery sets Query field to given value.
 
 ### GetVariables
 
-`func (o *GraphQLAPIRequest) GetVariables() map[string]interface{}`
+`func (o *GraphQLAPIRequest) GetVariables() interface{}`
 
 GetVariables returns the Variables field if non-nil, zero value otherwise.
 
 ### GetVariablesOk
 
-`func (o *GraphQLAPIRequest) GetVariablesOk() (*map[string]interface{}, bool)`
+`func (o *GraphQLAPIRequest) GetVariablesOk() (*interface{}, bool)`
 
 GetVariablesOk returns a tuple with the Variables field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVariables
 
-`func (o *GraphQLAPIRequest) SetVariables(v map[string]interface{})`
+`func (o *GraphQLAPIRequest) SetVariables(v interface{})`
 
 SetVariables sets Variables field to given value.
 
@@ -71,6 +71,16 @@ SetVariables sets Variables field to given value.
 
 HasVariables returns a boolean if a field has been set.
 
+### SetVariablesNil
+
+`func (o *GraphQLAPIRequest) SetVariablesNil(b bool)`
+
+ SetVariablesNil sets the value for Variables to be an explicit nil
+
+### UnsetVariables
+`func (o *GraphQLAPIRequest) UnsetVariables()`
+
+UnsetVariables ensures that no value is present for Variables, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

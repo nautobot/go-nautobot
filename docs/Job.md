@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **ReadOnly** | **bool** | Set to true if the job does not make any changes to the environment | [readonly] 
 **SoftTimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **TimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
-**TaskQueues** | Pointer to **map[string]interface{}** | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] 
+**TaskQueues** | Pointer to **interface{}** | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] 
 **SupportsDryrun** | **bool** | If supported, allows the job to bypass approval when running with dryrun argument set to true | [readonly] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
@@ -524,20 +524,20 @@ HasTimeLimit returns a boolean if a field has been set.
 
 ### GetTaskQueues
 
-`func (o *Job) GetTaskQueues() map[string]interface{}`
+`func (o *Job) GetTaskQueues() interface{}`
 
 GetTaskQueues returns the TaskQueues field if non-nil, zero value otherwise.
 
 ### GetTaskQueuesOk
 
-`func (o *Job) GetTaskQueuesOk() (*map[string]interface{}, bool)`
+`func (o *Job) GetTaskQueuesOk() (*interface{}, bool)`
 
 GetTaskQueuesOk returns a tuple with the TaskQueues field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTaskQueues
 
-`func (o *Job) SetTaskQueues(v map[string]interface{})`
+`func (o *Job) SetTaskQueues(v interface{})`
 
 SetTaskQueues sets TaskQueues field to given value.
 
@@ -547,6 +547,16 @@ SetTaskQueues sets TaskQueues field to given value.
 
 HasTaskQueues returns a boolean if a field has been set.
 
+### SetTaskQueuesNil
+
+`func (o *Job) SetTaskQueuesNil(b bool)`
+
+ SetTaskQueuesNil sets the value for TaskQueues to be an explicit nil
+
+### UnsetTaskQueues
+`func (o *Job) UnsetTaskQueues()`
+
+UnsetTaskQueues ensures that no value is present for TaskQueues, not even an explicit nil
 ### GetSupportsDryrun
 
 `func (o *Job) GetSupportsDryrun() bool`

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **AssociatedObjectId** | **string** |  | 
 **Contact** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Team** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Role** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewContactAssociation
 
-`func NewContactAssociation(id string, objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObjectId string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ContactAssociation`
+`func NewContactAssociation(id string, objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObjectId string, role BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ContactAssociation`
 
 NewContactAssociation instantiates a new ContactAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -268,11 +268,6 @@ and a boolean to check if the value has been set.
 
 SetRole sets Role field to given value.
 
-### HasRole
-
-`func (o *ContactAssociation) HasRole() bool`
-
-HasRole returns a boolean if a field has been set.
 
 ### GetStatus
 

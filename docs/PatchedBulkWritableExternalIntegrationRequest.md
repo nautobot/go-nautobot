@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **RemoteUrl** | Pointer to **string** |  | [optional] 
 **VerifySsl** | Pointer to **bool** | Verify SSL certificates when connecting to the remote system | [optional] 
 **Timeout** | Pointer to **int32** | Number of seconds to wait for a response | [optional] 
-**ExtraConfig** | Pointer to **map[string]interface{}** | Optional user-defined JSON data for this integration | [optional] 
+**ExtraConfig** | Pointer to **interface{}** | Optional user-defined JSON data for this integration | [optional] 
 **HttpMethod** | Pointer to [**BulkWritableExternalIntegrationRequestHttpMethod**](BulkWritableExternalIntegrationRequestHttpMethod.md) |  | [optional] 
-**Headers** | Pointer to **map[string]interface{}** | Headers for the HTTP request | [optional] 
+**Headers** | Pointer to **interface{}** | Headers for the HTTP request | [optional] 
 **CaFilePath** | Pointer to **string** |  | [optional] 
 **SecretsGroup** | Pointer to [**NullableBulkWritableExternalIntegrationRequestSecretsGroup**](BulkWritableExternalIntegrationRequestSecretsGroup.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -158,20 +158,20 @@ HasTimeout returns a boolean if a field has been set.
 
 ### GetExtraConfig
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) GetExtraConfig() map[string]interface{}`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) GetExtraConfig() interface{}`
 
 GetExtraConfig returns the ExtraConfig field if non-nil, zero value otherwise.
 
 ### GetExtraConfigOk
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) GetExtraConfigOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) GetExtraConfigOk() (*interface{}, bool)`
 
 GetExtraConfigOk returns a tuple with the ExtraConfig field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetExtraConfig
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) SetExtraConfig(v map[string]interface{})`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) SetExtraConfig(v interface{})`
 
 SetExtraConfig sets ExtraConfig field to given value.
 
@@ -218,20 +218,20 @@ HasHttpMethod returns a boolean if a field has been set.
 
 ### GetHeaders
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) GetHeaders() map[string]interface{}`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) GetHeaders() interface{}`
 
 GetHeaders returns the Headers field if non-nil, zero value otherwise.
 
 ### GetHeadersOk
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) GetHeadersOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) GetHeadersOk() (*interface{}, bool)`
 
 GetHeadersOk returns a tuple with the Headers field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetHeaders
 
-`func (o *PatchedBulkWritableExternalIntegrationRequest) SetHeaders(v map[string]interface{})`
+`func (o *PatchedBulkWritableExternalIntegrationRequest) SetHeaders(v interface{})`
 
 SetHeaders sets Headers field to given value.
 

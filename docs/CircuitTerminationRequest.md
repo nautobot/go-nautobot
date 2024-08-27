@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **Circuit** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**CloudNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -290,6 +291,41 @@ HasProviderNetwork returns a boolean if a field has been set.
 `func (o *CircuitTerminationRequest) UnsetProviderNetwork()`
 
 UnsetProviderNetwork ensures that no value is present for ProviderNetwork, not even an explicit nil
+### GetCloudNetwork
+
+`func (o *CircuitTerminationRequest) GetCloudNetwork() BulkWritableCircuitRequestTenant`
+
+GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
+
+### GetCloudNetworkOk
+
+`func (o *CircuitTerminationRequest) GetCloudNetworkOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCloudNetwork
+
+`func (o *CircuitTerminationRequest) SetCloudNetwork(v BulkWritableCircuitRequestTenant)`
+
+SetCloudNetwork sets CloudNetwork field to given value.
+
+### HasCloudNetwork
+
+`func (o *CircuitTerminationRequest) HasCloudNetwork() bool`
+
+HasCloudNetwork returns a boolean if a field has been set.
+
+### SetCloudNetworkNil
+
+`func (o *CircuitTerminationRequest) SetCloudNetworkNil(b bool)`
+
+ SetCloudNetworkNil sets the value for CloudNetwork to be an explicit nil
+
+### UnsetCloudNetwork
+`func (o *CircuitTerminationRequest) UnsetCloudNetwork()`
+
+UnsetCloudNetwork ensures that no value is present for CloudNetwork, not even an explicit nil
 ### GetCustomFields
 
 `func (o *CircuitTerminationRequest) GetCustomFields() map[string]interface{}`

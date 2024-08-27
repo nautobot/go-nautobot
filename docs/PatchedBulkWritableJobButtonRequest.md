@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **ContentTypes** | Pointer to **[]string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
 **Text** | Pointer to **string** | Jinja2 template code for button text. Reference the object as &lt;code&gt;{{ obj }}&lt;/code&gt; such as &lt;code&gt;{{ obj.platform.name }}&lt;/code&gt;. Buttons which render as empty text will not be displayed. | [optional] 
 **Weight** | Pointer to **int32** |  | [optional] 
 **GroupName** | Pointer to **string** | Buttons with the same group will appear as a dropdown menu. Group dropdown buttons will inherit the button class from the button with the lowest weight in the group. | [optional] 
@@ -102,6 +103,31 @@ SetName sets Name field to given value.
 `func (o *PatchedBulkWritableJobButtonRequest) HasName() bool`
 
 HasName returns a boolean if a field has been set.
+
+### GetEnabled
+
+`func (o *PatchedBulkWritableJobButtonRequest) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *PatchedBulkWritableJobButtonRequest) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *PatchedBulkWritableJobButtonRequest) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *PatchedBulkWritableJobButtonRequest) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
 
 ### GetText
 

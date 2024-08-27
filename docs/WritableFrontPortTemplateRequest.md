@@ -8,8 +8,9 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | [**PortTypeChoices**](PortTypeChoices.md) |  | 
-**RearPortPosition** | Pointer to **int32** |  | [optional] [default to 1]
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**RearPortPosition** | Pointer to **int32** |  | [optional] 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **RearPortTemplate** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 
 ### NewWritableFrontPortTemplateRequest
 
-`func NewWritableFrontPortTemplateRequest(name string, type_ PortTypeChoices, deviceType BulkWritableCableRequestStatus, rearPortTemplate BulkWritableCableRequestStatus, ) *WritableFrontPortTemplateRequest`
+`func NewWritableFrontPortTemplateRequest(name string, type_ PortTypeChoices, rearPortTemplate BulkWritableCableRequestStatus, ) *WritableFrontPortTemplateRequest`
 
 NewWritableFrontPortTemplateRequest instantiates a new WritableFrontPortTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -150,24 +151,74 @@ HasRearPortPosition returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *WritableFrontPortTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *WritableFrontPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *WritableFrontPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritableFrontPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *WritableFrontPortTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *WritableFrontPortTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *WritableFrontPortTemplateRequest) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *WritableFrontPortTemplateRequest) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *WritableFrontPortTemplateRequest) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *WritableFrontPortTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *WritableFrontPortTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *WritableFrontPortTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *WritableFrontPortTemplateRequest) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *WritableFrontPortTemplateRequest) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *WritableFrontPortTemplateRequest) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetRearPortTemplate
 
 `func (o *WritableFrontPortTemplateRequest) GetRearPortTemplate() BulkWritableCableRequestStatus`

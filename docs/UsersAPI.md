@@ -945,7 +945,7 @@ import (
 )
 
 func main() {
-	bulkWritableObjectPermissionRequest := []openapiclient.BulkWritableObjectPermissionRequest{*openapiclient.NewBulkWritableObjectPermissionRequest("Id_example", []string{"ObjectTypes_example"}, "Name_example", map[string]interface{}{"key": interface{}(123)})} // []BulkWritableObjectPermissionRequest | 
+	bulkWritableObjectPermissionRequest := []openapiclient.BulkWritableObjectPermissionRequest{*openapiclient.NewBulkWritableObjectPermissionRequest("Id_example", []string{"ObjectTypes_example"}, "Name_example", interface{}(123))} // []BulkWritableObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1013,7 +1013,7 @@ import (
 )
 
 func main() {
-	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", map[string]interface{}{"key": interface{}(123)}) // ObjectPermissionRequest | 
+	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", interface{}(123)) // ObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1168,9 +1168,9 @@ func main() {
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	groups := []string{"Inner_example"} // []string | Group (name) (optional)
-	groupsN := []string{"Inner_example"} // []string | Group (name) (optional)
+	groupsN := []string{"Inner_example"} // []string | Exclude Group (name) (optional)
 	groupsId := []int32{int32(123)} // []int32 | Group (ID) (optional)
-	groupsIdN := []int32{int32(123)} // []int32 | Group (ID) (optional)
+	groupsIdN := []int32{int32(123)} // []int32 | Exclude Group (ID) (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
 	idIe := []string{"Inner_example"} // []string |  (optional)
@@ -1249,9 +1249,9 @@ Name | Type | Description  | Notes
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **groups** | **[]string** | Group (name) | 
- **groupsN** | **[]string** | Group (name) | 
+ **groupsN** | **[]string** | Exclude Group (name) | 
  **groupsId** | **[]int32** | Group (ID) | 
- **groupsIdN** | **[]int32** | Group (ID) | 
+ **groupsIdN** | **[]int32** | Exclude Group (ID) | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
  **idIe** | **[]string** |  | 
@@ -1478,7 +1478,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this permission.
-	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", map[string]interface{}{"key": interface{}(123)}) // ObjectPermissionRequest | 
+	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", interface{}(123)) // ObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2672,9 +2672,9 @@ func main() {
 	firstNameRe := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	groups := []string{"Inner_example"} // []string | Group (name) (optional)
-	groupsN := []string{"Inner_example"} // []string | Group (name) (optional)
+	groupsN := []string{"Inner_example"} // []string | Exclude Group (name) (optional)
 	groupsId := []int32{int32(123)} // []int32 | Group (ID) (optional)
-	groupsIdN := []int32{int32(123)} // []int32 | Group (ID) (optional)
+	groupsIdN := []int32{int32(123)} // []int32 | Exclude Group (ID) (optional)
 	hasObjectChanges := true // bool | Has Changes (optional)
 	hasObjectPermissions := true // bool | Has object permissions (optional)
 	hasRackReservations := true // bool | Has Rack Reservations (optional)
@@ -2710,16 +2710,16 @@ func main() {
 	lastNameRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	objectChanges := []string{"Inner_example"} // []string | Object Changes (ID) (optional)
-	objectChangesIsnull := true // bool |  (optional)
-	objectChangesN := []string{"Inner_example"} // []string | Object Changes (ID) (optional)
+	objectChangesIsnull := true // bool | Object Changes (ID) is null (optional)
+	objectChangesN := []string{"Inner_example"} // []string | Exclude Object Changes (ID) (optional)
 	objectPermissions := []string{"Inner_example"} // []string |  (optional)
-	objectPermissionsIsnull := true // bool |  (optional)
+	objectPermissionsIsnull := true // bool | Object Permission (ID or name) is null (optional)
 	objectPermissionsN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	rackReservationsId := []string{"Inner_example"} // []string | Rack Reservation (ID) (optional)
-	rackReservationsIdIsnull := true // bool |  (optional)
-	rackReservationsIdN := []string{"Inner_example"} // []string | Rack Reservation (ID) (optional)
+	rackReservationsIdIsnull := true // bool | Rack Reservation (ID) is null (optional)
+	rackReservationsIdN := []string{"Inner_example"} // []string | Exclude Rack Reservation (ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	username := []string{"Inner_example"} // []string |  (optional)
 	usernameIc := []string{"Inner_example"} // []string |  (optional)
@@ -2790,9 +2790,9 @@ Name | Type | Description  | Notes
  **firstNameRe** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **groups** | **[]string** | Group (name) | 
- **groupsN** | **[]string** | Group (name) | 
+ **groupsN** | **[]string** | Exclude Group (name) | 
  **groupsId** | **[]int32** | Group (ID) | 
- **groupsIdN** | **[]int32** | Group (ID) | 
+ **groupsIdN** | **[]int32** | Exclude Group (ID) | 
  **hasObjectChanges** | **bool** | Has Changes | 
  **hasObjectPermissions** | **bool** | Has object permissions | 
  **hasRackReservations** | **bool** | Has Rack Reservations | 
@@ -2828,16 +2828,16 @@ Name | Type | Description  | Notes
  **lastNameRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **objectChanges** | **[]string** | Object Changes (ID) | 
- **objectChangesIsnull** | **bool** |  | 
- **objectChangesN** | **[]string** | Object Changes (ID) | 
+ **objectChangesIsnull** | **bool** | Object Changes (ID) is null | 
+ **objectChangesN** | **[]string** | Exclude Object Changes (ID) | 
  **objectPermissions** | **[]string** |  | 
- **objectPermissionsIsnull** | **bool** |  | 
+ **objectPermissionsIsnull** | **bool** | Object Permission (ID or name) is null | 
  **objectPermissionsN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **rackReservationsId** | **[]string** | Rack Reservation (ID) | 
- **rackReservationsIdIsnull** | **bool** |  | 
- **rackReservationsIdN** | **[]string** | Rack Reservation (ID) | 
+ **rackReservationsIdIsnull** | **bool** | Rack Reservation (ID) is null | 
+ **rackReservationsIdN** | **[]string** | Exclude Rack Reservation (ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **username** | **[]string** |  | 
  **usernameIc** | **[]string** |  | 

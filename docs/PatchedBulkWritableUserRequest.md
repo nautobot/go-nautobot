@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **IsStaff** | Pointer to **bool** | Designates whether the user can log into this admin site. | [optional] 
 **IsActive** | Pointer to **bool** | Designates whether this user should be treated as active. Unselect this instead of deleting accounts. | [optional] 
 **DateJoined** | Pointer to **time.Time** |  | [optional] 
-**ConfigData** | Pointer to **map[string]interface{}** |  | [optional] 
+**ConfigData** | Pointer to **interface{}** |  | [optional] 
 **Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) | The groups this user belongs to. A user will get all permissions granted to each of their groups. | [optional] 
 
 ## Methods
@@ -329,20 +329,20 @@ HasDateJoined returns a boolean if a field has been set.
 
 ### GetConfigData
 
-`func (o *PatchedBulkWritableUserRequest) GetConfigData() map[string]interface{}`
+`func (o *PatchedBulkWritableUserRequest) GetConfigData() interface{}`
 
 GetConfigData returns the ConfigData field if non-nil, zero value otherwise.
 
 ### GetConfigDataOk
 
-`func (o *PatchedBulkWritableUserRequest) GetConfigDataOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableUserRequest) GetConfigDataOk() (*interface{}, bool)`
 
 GetConfigDataOk returns a tuple with the ConfigData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetConfigData
 
-`func (o *PatchedBulkWritableUserRequest) SetConfigData(v map[string]interface{})`
+`func (o *PatchedBulkWritableUserRequest) SetConfigData(v interface{})`
 
 SetConfigData sets ConfigData field to given value.
 
@@ -352,6 +352,16 @@ SetConfigData sets ConfigData field to given value.
 
 HasConfigData returns a boolean if a field has been set.
 
+### SetConfigDataNil
+
+`func (o *PatchedBulkWritableUserRequest) SetConfigDataNil(b bool)`
+
+ SetConfigDataNil sets the value for ConfigData to be an explicit nil
+
+### UnsetConfigData
+`func (o *PatchedBulkWritableUserRequest) UnsetConfigData()`
+
+UnsetConfigData ensures that no value is present for ConfigData, not even an explicit nil
 ### GetGroups
 
 `func (o *PatchedBulkWritableUserRequest) GetGroups() []BulkWritableCableRequestStatus`

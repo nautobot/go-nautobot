@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **Weight** | Pointer to **int32** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **IsActive** | Pointer to **bool** |  | [optional] 
-**Data** | Pointer to **map[string]interface{}** |  | [optional] 
+**Data** | Pointer to **interface{}** |  | [optional] 
 **ConfigContextSchema** | Pointer to [**NullableBulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequestConfigContextSchema.md) |  | [optional] 
 **Locations** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Roles** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -235,20 +235,20 @@ HasIsActive returns a boolean if a field has been set.
 
 ### GetData
 
-`func (o *PatchedBulkWritableConfigContextRequest) GetData() map[string]interface{}`
+`func (o *PatchedBulkWritableConfigContextRequest) GetData() interface{}`
 
 GetData returns the Data field if non-nil, zero value otherwise.
 
 ### GetDataOk
 
-`func (o *PatchedBulkWritableConfigContextRequest) GetDataOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableConfigContextRequest) GetDataOk() (*interface{}, bool)`
 
 GetDataOk returns a tuple with the Data field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetData
 
-`func (o *PatchedBulkWritableConfigContextRequest) SetData(v map[string]interface{})`
+`func (o *PatchedBulkWritableConfigContextRequest) SetData(v interface{})`
 
 SetData sets Data field to given value.
 
@@ -258,6 +258,16 @@ SetData sets Data field to given value.
 
 HasData returns a boolean if a field has been set.
 
+### SetDataNil
+
+`func (o *PatchedBulkWritableConfigContextRequest) SetDataNil(b bool)`
+
+ SetDataNil sets the value for Data to be an explicit nil
+
+### UnsetData
+`func (o *PatchedBulkWritableConfigContextRequest) UnsetData()`
+
+UnsetData ensures that no value is present for Data, not even an explicit nil
 ### GetConfigContextSchema
 
 `func (o *PatchedBulkWritableConfigContextRequest) GetConfigContextSchema() BulkWritableConfigContextRequestConfigContextSchema`

@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
-**Actions** | **map[string]interface{}** | The list of actions granted by this permission | 
-**Constraints** | Pointer to **map[string]interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
+**Actions** | **interface{}** | The list of actions granted by this permission | 
+**Constraints** | Pointer to **interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
 **Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Users** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewObjectPermission
 
-`func NewObjectPermission(id string, objectType string, display string, url string, naturalSlug string, objectTypes []string, name string, actions map[string]interface{}, created NullableTime, lastUpdated NullableTime, ) *ObjectPermission`
+`func NewObjectPermission(id string, objectType string, display string, url string, naturalSlug string, objectTypes []string, name string, actions interface{}, created NullableTime, lastUpdated NullableTime, ) *ObjectPermission`
 
 NewObjectPermission instantiates a new ObjectPermission object
 This constructor will assign default values to properties that have it defined,
@@ -231,40 +231,50 @@ HasEnabled returns a boolean if a field has been set.
 
 ### GetActions
 
-`func (o *ObjectPermission) GetActions() map[string]interface{}`
+`func (o *ObjectPermission) GetActions() interface{}`
 
 GetActions returns the Actions field if non-nil, zero value otherwise.
 
 ### GetActionsOk
 
-`func (o *ObjectPermission) GetActionsOk() (*map[string]interface{}, bool)`
+`func (o *ObjectPermission) GetActionsOk() (*interface{}, bool)`
 
 GetActionsOk returns a tuple with the Actions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetActions
 
-`func (o *ObjectPermission) SetActions(v map[string]interface{})`
+`func (o *ObjectPermission) SetActions(v interface{})`
 
 SetActions sets Actions field to given value.
 
 
+### SetActionsNil
+
+`func (o *ObjectPermission) SetActionsNil(b bool)`
+
+ SetActionsNil sets the value for Actions to be an explicit nil
+
+### UnsetActions
+`func (o *ObjectPermission) UnsetActions()`
+
+UnsetActions ensures that no value is present for Actions, not even an explicit nil
 ### GetConstraints
 
-`func (o *ObjectPermission) GetConstraints() map[string]interface{}`
+`func (o *ObjectPermission) GetConstraints() interface{}`
 
 GetConstraints returns the Constraints field if non-nil, zero value otherwise.
 
 ### GetConstraintsOk
 
-`func (o *ObjectPermission) GetConstraintsOk() (*map[string]interface{}, bool)`
+`func (o *ObjectPermission) GetConstraintsOk() (*interface{}, bool)`
 
 GetConstraintsOk returns a tuple with the Constraints field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetConstraints
 
-`func (o *ObjectPermission) SetConstraints(v map[string]interface{})`
+`func (o *ObjectPermission) SetConstraints(v interface{})`
 
 SetConstraints sets Constraints field to given value.
 

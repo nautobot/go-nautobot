@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsCircuitTerminationsList
 
-> PaginatedCircuitTerminationList CircuitsCircuitTerminationsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).Execute()
+> PaginatedCircuitTerminationList CircuitsCircuitTerminationsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).Execute()
 
 
 
@@ -429,7 +429,13 @@ func main() {
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	circuit := []string{"Inner_example"} // []string |  (optional)
 	circuitN := []string{"Inner_example"} // []string |  (optional)
+	cloudNetwork := []string{"Inner_example"} // []string |  (optional)
+	cloudNetworkIsnull := true // bool | Cloud Network (name or ID) is null (optional)
+	cloudNetworkN := []string{"Inner_example"} // []string |  (optional)
 	connected := true // bool | Connected status (bool) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -444,6 +450,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -462,7 +470,7 @@ func main() {
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
-	locationIsnull := true // bool |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	portSpeed := []int32{int32(123)} // []int32 |  (optional)
@@ -487,13 +495,16 @@ func main() {
 	ppInfoNre := []string{"Inner_example"} // []string |  (optional)
 	ppInfoRe := []string{"Inner_example"} // []string |  (optional)
 	providerNetwork := []string{"Inner_example"} // []string |  (optional)
-	providerNetworkIsnull := true // bool |  (optional)
+	providerNetworkIsnull := true // bool | Provider Network (name or ID) is null (optional)
 	providerNetworkN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	termSide := []string{"Inner_example"} // []string |  (optional)
 	termSideIc := []string{"Inner_example"} // []string |  (optional)
 	termSideIe := []string{"Inner_example"} // []string |  (optional)
@@ -533,7 +544,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTerminationsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).Connected(connected).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTerminationsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsCircuitTerminationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -559,7 +570,13 @@ Name | Type | Description  | Notes
  **cableN** | **[]string** | Cable | 
  **circuit** | **[]string** |  | 
  **circuitN** | **[]string** |  | 
+ **cloudNetwork** | **[]string** |  | 
+ **cloudNetworkIsnull** | **bool** | Cloud Network (name or ID) is null | 
+ **cloudNetworkN** | **[]string** |  | 
  **connected** | **bool** | Connected status (bool) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -574,6 +591,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCable** | **bool** | Has cable | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -592,7 +611,7 @@ Name | Type | Description  | Notes
  **idRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
- **locationIsnull** | **bool** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
  **locationN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **portSpeed** | **[]int32** |  | 
@@ -617,13 +636,16 @@ Name | Type | Description  | Notes
  **ppInfoNre** | **[]string** |  | 
  **ppInfoRe** | **[]string** |  | 
  **providerNetwork** | **[]string** |  | 
- **providerNetworkIsnull** | **bool** |  | 
+ **providerNetworkIsnull** | **bool** | Provider Network (name or ID) is null | 
  **providerNetworkN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **termSide** | **[]string** |  | 
  **termSideIc** | **[]string** |  | 
  **termSideIe** | **[]string** |  | 
@@ -1469,7 +1491,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsCircuitTypesList
 
-> PaginatedCircuitTypeList CircuitsCircuitTypesList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedCircuitTypeList CircuitsCircuitTypesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -1489,6 +1511,9 @@ import (
 )
 
 func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -1510,6 +1535,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idIc := []string{"Inner_example"} // []string |  (optional)
@@ -1550,11 +1577,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTypesList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTypesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsCircuitTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1575,6 +1605,9 @@ Other parameters are passed through a pointer to a apiCircuitsCircuitTypesListRe
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1596,6 +1629,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idIc** | **[]string** |  | 
@@ -1636,6 +1671,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -2372,7 +2410,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsCircuitsList
 
-> PaginatedCircuitList CircuitsCircuitsList(ctx).Cid(cid).CidIc(cidIc).CidIe(cidIe).CidIew(cidIew).CidIre(cidIre).CidIsw(cidIsw).CidN(cidN).CidNic(cidNic).CidNie(cidNie).CidNiew(cidNiew).CidNire(cidNire).CidNisw(cidNisw).CidNre(cidNre).CidRe(cidRe).CircuitTerminationA(circuitTerminationA).CircuitTerminationAIsnull(circuitTerminationAIsnull).CircuitTerminationAN(circuitTerminationAN).CircuitTerminationZ(circuitTerminationZ).CircuitTerminationZIsnull(circuitTerminationZIsnull).CircuitTerminationZN(circuitTerminationZN).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).CircuitType(circuitType).CircuitTypeN(circuitTypeN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).CommitRate(commitRate).CommitRateGt(commitRateGt).CommitRateGte(commitRateGte).CommitRateIsnull(commitRateIsnull).CommitRateLt(commitRateLt).CommitRateLte(commitRateLte).CommitRateN(commitRateN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasTerminations(hasTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstallDate(installDate).InstallDateGt(installDateGt).InstallDateGte(installDateGte).InstallDateIsnull(installDateIsnull).InstallDateLt(installDateLt).InstallDateLte(installDateLte).InstallDateN(installDateN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).Provider(provider).ProviderN(providerN).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+> PaginatedCircuitList CircuitsCircuitsList(ctx).Cid(cid).CidIc(cidIc).CidIe(cidIe).CidIew(cidIew).CidIre(cidIre).CidIsw(cidIsw).CidN(cidN).CidNic(cidNic).CidNie(cidNie).CidNiew(cidNiew).CidNire(cidNire).CidNisw(cidNisw).CidNre(cidNre).CidRe(cidRe).CircuitTerminationA(circuitTerminationA).CircuitTerminationAIsnull(circuitTerminationAIsnull).CircuitTerminationAN(circuitTerminationAN).CircuitTerminationZ(circuitTerminationZ).CircuitTerminationZIsnull(circuitTerminationZIsnull).CircuitTerminationZN(circuitTerminationZN).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).CircuitType(circuitType).CircuitTypeN(circuitTypeN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).CommitRate(commitRate).CommitRateGt(commitRateGt).CommitRateGte(commitRateGte).CommitRateIsnull(commitRateIsnull).CommitRateLt(commitRateLt).CommitRateLte(commitRateLte).CommitRateN(commitRateN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasTerminations(hasTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstallDate(installDate).InstallDateGt(installDateGt).InstallDateGte(installDateGte).InstallDateIsnull(installDateIsnull).InstallDateLt(installDateLt).InstallDateLte(installDateLte).InstallDateN(installDateN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).Provider(provider).ProviderN(providerN).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 
 
 
@@ -2407,16 +2445,19 @@ func main() {
 	cidNre := []string{"Inner_example"} // []string |  (optional)
 	cidRe := []string{"Inner_example"} // []string |  (optional)
 	circuitTerminationA := []string{"Inner_example"} // []string | Termination A (ID) (optional)
-	circuitTerminationAIsnull := true // bool |  (optional)
-	circuitTerminationAN := []string{"Inner_example"} // []string | Termination A (ID) (optional)
+	circuitTerminationAIsnull := true // bool | Termination A (ID) is null (optional)
+	circuitTerminationAN := []string{"Inner_example"} // []string | Exclude Termination A (ID) (optional)
 	circuitTerminationZ := []string{"Inner_example"} // []string | Termination Z (ID) (optional)
-	circuitTerminationZIsnull := true // bool |  (optional)
-	circuitTerminationZN := []string{"Inner_example"} // []string | Termination Z (ID) (optional)
+	circuitTerminationZIsnull := true // bool | Termination Z (ID) is null (optional)
+	circuitTerminationZN := []string{"Inner_example"} // []string | Exclude Termination Z (ID) (optional)
 	circuitTerminations := []string{"Inner_example"} // []string |  (optional)
 	circuitTerminationsIsnull := true // bool |  (optional)
 	circuitTerminationsN := []string{"Inner_example"} // []string |  (optional)
 	circuitType := []string{"Inner_example"} // []string |  (optional)
 	circuitTypeN := []string{"Inner_example"} // []string |  (optional)
+	cloudNetwork := []string{"Inner_example"} // []string |  (optional)
+	cloudNetworkIsnull := true // bool | Cloud Network (name or ID) is null (optional)
+	cloudNetworkN := []string{"Inner_example"} // []string |  (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
 	commentsIe := []string{"Inner_example"} // []string |  (optional)
@@ -2438,6 +2479,9 @@ func main() {
 	commitRateLt := []int32{int32(123)} // []int32 |  (optional)
 	commitRateLte := []int32{int32(123)} // []int32 |  (optional)
 	commitRateN := []int32{int32(123)} // []int32 |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2459,6 +2503,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasTerminations := true // bool | Has terminations (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -2491,35 +2537,38 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
-	locationIsnull := true // bool |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	provider := []string{"Inner_example"} // []string |  (optional)
 	providerN := []string{"Inner_example"} // []string |  (optional)
 	providerNetwork := []string{"Inner_example"} // []string |  (optional)
-	providerNetworkIsnull := true // bool |  (optional)
+	providerNetworkIsnull := true // bool | Provider Network (name or ID) is null (optional)
 	providerNetworkN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitsList(context.Background()).Cid(cid).CidIc(cidIc).CidIe(cidIe).CidIew(cidIew).CidIre(cidIre).CidIsw(cidIsw).CidN(cidN).CidNic(cidNic).CidNie(cidNie).CidNiew(cidNiew).CidNire(cidNire).CidNisw(cidNisw).CidNre(cidNre).CidRe(cidRe).CircuitTerminationA(circuitTerminationA).CircuitTerminationAIsnull(circuitTerminationAIsnull).CircuitTerminationAN(circuitTerminationAN).CircuitTerminationZ(circuitTerminationZ).CircuitTerminationZIsnull(circuitTerminationZIsnull).CircuitTerminationZN(circuitTerminationZN).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).CircuitType(circuitType).CircuitTypeN(circuitTypeN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).CommitRate(commitRate).CommitRateGt(commitRateGt).CommitRateGte(commitRateGte).CommitRateIsnull(commitRateIsnull).CommitRateLt(commitRateLt).CommitRateLte(commitRateLte).CommitRateN(commitRateN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasTerminations(hasTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstallDate(installDate).InstallDateGt(installDateGt).InstallDateGte(installDateGte).InstallDateIsnull(installDateIsnull).InstallDateLt(installDateLt).InstallDateLte(installDateLte).InstallDateN(installDateN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).Provider(provider).ProviderN(providerN).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitsList(context.Background()).Cid(cid).CidIc(cidIc).CidIe(cidIe).CidIew(cidIew).CidIre(cidIre).CidIsw(cidIsw).CidN(cidN).CidNic(cidNic).CidNie(cidNie).CidNiew(cidNiew).CidNire(cidNire).CidNisw(cidNisw).CidNre(cidNre).CidRe(cidRe).CircuitTerminationA(circuitTerminationA).CircuitTerminationAIsnull(circuitTerminationAIsnull).CircuitTerminationAN(circuitTerminationAN).CircuitTerminationZ(circuitTerminationZ).CircuitTerminationZIsnull(circuitTerminationZIsnull).CircuitTerminationZN(circuitTerminationZN).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).CircuitType(circuitType).CircuitTypeN(circuitTypeN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).CommitRate(commitRate).CommitRateGt(commitRateGt).CommitRateGte(commitRateGte).CommitRateIsnull(commitRateIsnull).CommitRateLt(commitRateLt).CommitRateLte(commitRateLte).CommitRateN(commitRateN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasTerminations(hasTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).InstallDate(installDate).InstallDateGt(installDateGt).InstallDateGte(installDateGte).InstallDateIsnull(installDateIsnull).InstallDateLt(installDateLt).InstallDateLte(installDateLte).InstallDateN(installDateN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).Provider(provider).ProviderN(providerN).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsCircuitsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2555,16 +2604,19 @@ Name | Type | Description  | Notes
  **cidNre** | **[]string** |  | 
  **cidRe** | **[]string** |  | 
  **circuitTerminationA** | **[]string** | Termination A (ID) | 
- **circuitTerminationAIsnull** | **bool** |  | 
- **circuitTerminationAN** | **[]string** | Termination A (ID) | 
+ **circuitTerminationAIsnull** | **bool** | Termination A (ID) is null | 
+ **circuitTerminationAN** | **[]string** | Exclude Termination A (ID) | 
  **circuitTerminationZ** | **[]string** | Termination Z (ID) | 
- **circuitTerminationZIsnull** | **bool** |  | 
- **circuitTerminationZN** | **[]string** | Termination Z (ID) | 
+ **circuitTerminationZIsnull** | **bool** | Termination Z (ID) is null | 
+ **circuitTerminationZN** | **[]string** | Exclude Termination Z (ID) | 
  **circuitTerminations** | **[]string** |  | 
  **circuitTerminationsIsnull** | **bool** |  | 
  **circuitTerminationsN** | **[]string** |  | 
  **circuitType** | **[]string** |  | 
  **circuitTypeN** | **[]string** |  | 
+ **cloudNetwork** | **[]string** |  | 
+ **cloudNetworkIsnull** | **bool** | Cloud Network (name or ID) is null | 
+ **cloudNetworkN** | **[]string** |  | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
  **commentsIe** | **[]string** |  | 
@@ -2586,6 +2638,9 @@ Name | Type | Description  | Notes
  **commitRateLt** | **[]int32** |  | 
  **commitRateLte** | **[]int32** |  | 
  **commitRateN** | **[]int32** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2607,6 +2662,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasTerminations** | **bool** | Has terminations | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -2639,30 +2696,33 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
- **locationIsnull** | **bool** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
  **locationN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **provider** | **[]string** |  | 
  **providerN** | **[]string** |  | 
  **providerNetwork** | **[]string** |  | 
- **providerNetworkIsnull** | **bool** |  | 
+ **providerNetworkIsnull** | **bool** | Provider Network (name or ID) is null | 
  **providerNetworkN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -3399,7 +3459,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsProviderNetworksList
 
-> PaginatedProviderNetworkList CircuitsProviderNetworksList(ctx).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedProviderNetworkList CircuitsProviderNetworksList(ctx).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuitTerminations(hasCircuitTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -3420,8 +3480,8 @@ import (
 
 func main() {
 	circuitTerminations := []string{"Inner_example"} // []string | Circuit Terminations (ID) (optional)
-	circuitTerminationsIsnull := true // bool |  (optional)
-	circuitTerminationsN := []string{"Inner_example"} // []string | Circuit Terminations (ID) (optional)
+	circuitTerminationsIsnull := true // bool | Circuit Terminations (ID) is null (optional)
+	circuitTerminationsN := []string{"Inner_example"} // []string | Exclude Circuit Terminations (ID) (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
 	commentsIe := []string{"Inner_example"} // []string |  (optional)
@@ -3436,6 +3496,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -3457,6 +3520,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCircuitTerminations := true // bool | Has circuit terminations (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -3503,11 +3568,14 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsProviderNetworksList(context.Background()).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsProviderNetworksList(context.Background()).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuitTerminations(hasCircuitTerminations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsProviderNetworksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3529,8 +3597,8 @@ Other parameters are passed through a pointer to a apiCircuitsProviderNetworksLi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **circuitTerminations** | **[]string** | Circuit Terminations (ID) | 
- **circuitTerminationsIsnull** | **bool** |  | 
- **circuitTerminationsN** | **[]string** | Circuit Terminations (ID) | 
+ **circuitTerminationsIsnull** | **bool** | Circuit Terminations (ID) is null | 
+ **circuitTerminationsN** | **[]string** | Exclude Circuit Terminations (ID) | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
  **commentsIe** | **[]string** |  | 
@@ -3545,6 +3613,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -3566,6 +3637,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCircuitTerminations** | **bool** | Has circuit terminations | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -3612,6 +3685,9 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -4348,7 +4424,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsProvidersList
 
-> PaginatedProviderList CircuitsProvidersList(ctx).Account(account).AccountIc(accountIc).AccountIe(accountIe).AccountIew(accountIew).AccountIre(accountIre).AccountIsw(accountIsw).AccountN(accountN).AccountNic(accountNic).AccountNie(accountNie).AccountNiew(accountNiew).AccountNire(accountNire).AccountNisw(accountNisw).AccountNre(accountNre).AccountRe(accountRe).AdminContact(adminContact).AdminContactIc(adminContactIc).AdminContactIe(adminContactIe).AdminContactIew(adminContactIew).AdminContactIre(adminContactIre).AdminContactIsw(adminContactIsw).AdminContactN(adminContactN).AdminContactNic(adminContactNic).AdminContactNie(adminContactNie).AdminContactNiew(adminContactNiew).AdminContactNire(adminContactNire).AdminContactNisw(adminContactNisw).AdminContactNre(adminContactNre).AdminContactRe(adminContactRe).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasCircuits(hasCircuits).HasProviderNetworks(hasProviderNetworks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NocContact(nocContact).NocContactIc(nocContactIc).NocContactIe(nocContactIe).NocContactIew(nocContactIew).NocContactIre(nocContactIre).NocContactIsw(nocContactIsw).NocContactN(nocContactN).NocContactNic(nocContactNic).NocContactNie(nocContactNie).NocContactNiew(nocContactNiew).NocContactNire(nocContactNire).NocContactNisw(nocContactNisw).NocContactNre(nocContactNre).NocContactRe(nocContactRe).Offset(offset).PortalUrl(portalUrl).PortalUrlIc(portalUrlIc).PortalUrlIe(portalUrlIe).PortalUrlIew(portalUrlIew).PortalUrlIre(portalUrlIre).PortalUrlIsw(portalUrlIsw).PortalUrlN(portalUrlN).PortalUrlNic(portalUrlNic).PortalUrlNie(portalUrlNie).PortalUrlNiew(portalUrlNiew).PortalUrlNire(portalUrlNire).PortalUrlNisw(portalUrlNisw).PortalUrlNre(portalUrlNre).PortalUrlRe(portalUrlRe).ProviderNetworks(providerNetworks).ProviderNetworksIsnull(providerNetworksIsnull).ProviderNetworksN(providerNetworksN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+> PaginatedProviderList CircuitsProvidersList(ctx).Account(account).AccountIc(accountIc).AccountIe(accountIe).AccountIew(accountIew).AccountIre(accountIre).AccountIsw(accountIsw).AccountN(accountN).AccountNic(accountNic).AccountNie(accountNie).AccountNiew(accountNiew).AccountNire(accountNire).AccountNisw(accountNisw).AccountNre(accountNre).AccountRe(accountRe).AdminContact(adminContact).AdminContactIc(adminContactIc).AdminContactIe(adminContactIe).AdminContactIew(adminContactIew).AdminContactIre(adminContactIre).AdminContactIsw(adminContactIsw).AdminContactN(adminContactN).AdminContactNic(adminContactNic).AdminContactNie(adminContactNie).AdminContactNiew(adminContactNiew).AdminContactNire(adminContactNire).AdminContactNisw(adminContactNisw).AdminContactNre(adminContactNre).AdminContactRe(adminContactRe).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuits(hasCircuits).HasProviderNetworks(hasProviderNetworks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NocContact(nocContact).NocContactIc(nocContactIc).NocContactIe(nocContactIe).NocContactIew(nocContactIew).NocContactIre(nocContactIre).NocContactIsw(nocContactIsw).NocContactN(nocContactN).NocContactNic(nocContactNic).NocContactNie(nocContactNie).NocContactNiew(nocContactNiew).NocContactNire(nocContactNire).NocContactNisw(nocContactNisw).NocContactNre(nocContactNre).NocContactRe(nocContactRe).Offset(offset).PortalUrl(portalUrl).PortalUrlIc(portalUrlIc).PortalUrlIe(portalUrlIe).PortalUrlIew(portalUrlIew).PortalUrlIre(portalUrlIre).PortalUrlIsw(portalUrlIsw).PortalUrlN(portalUrlN).PortalUrlNic(portalUrlNic).PortalUrlNie(portalUrlNie).PortalUrlNiew(portalUrlNiew).PortalUrlNire(portalUrlNire).PortalUrlNisw(portalUrlNisw).PortalUrlNre(portalUrlNre).PortalUrlRe(portalUrlRe).ProviderNetworks(providerNetworks).ProviderNetworksIsnull(providerNetworksIsnull).ProviderNetworksN(providerNetworksN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -4404,7 +4480,7 @@ func main() {
 	asnLte := []int32{int32(123)} // []int32 |  (optional)
 	asnN := []int32{int32(123)} // []int32 |  (optional)
 	circuits := []string{"Inner_example"} // []string |  (optional)
-	circuitsIsnull := true // bool |  (optional)
+	circuitsIsnull := true // bool | Circuit (ID or circuit ID) is null (optional)
 	circuitsN := []string{"Inner_example"} // []string |  (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
@@ -4420,6 +4496,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4427,6 +4506,8 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasCircuits := true // bool | Has circuits (optional)
 	hasProviderNetworks := true // bool | Has provider networks (optional)
@@ -4453,7 +4534,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
-	locationIsnull := true // bool |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -4499,18 +4580,21 @@ func main() {
 	portalUrlNre := []string{"Inner_example"} // []string |  (optional)
 	portalUrlRe := []string{"Inner_example"} // []string |  (optional)
 	providerNetworks := []string{"Inner_example"} // []string |  (optional)
-	providerNetworksIsnull := true // bool |  (optional)
+	providerNetworksIsnull := true // bool | Provider networks (name or ID) is null (optional)
 	providerNetworksN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsProvidersList(context.Background()).Account(account).AccountIc(accountIc).AccountIe(accountIe).AccountIew(accountIew).AccountIre(accountIre).AccountIsw(accountIsw).AccountN(accountN).AccountNic(accountNic).AccountNie(accountNie).AccountNiew(accountNiew).AccountNire(accountNire).AccountNisw(accountNisw).AccountNre(accountNre).AccountRe(accountRe).AdminContact(adminContact).AdminContactIc(adminContactIc).AdminContactIe(adminContactIe).AdminContactIew(adminContactIew).AdminContactIre(adminContactIre).AdminContactIsw(adminContactIsw).AdminContactN(adminContactN).AdminContactNic(adminContactNic).AdminContactNie(adminContactNie).AdminContactNiew(adminContactNiew).AdminContactNire(adminContactNire).AdminContactNisw(adminContactNisw).AdminContactNre(adminContactNre).AdminContactRe(adminContactRe).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Format(format).HasCircuits(hasCircuits).HasProviderNetworks(hasProviderNetworks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NocContact(nocContact).NocContactIc(nocContactIc).NocContactIe(nocContactIe).NocContactIew(nocContactIew).NocContactIre(nocContactIre).NocContactIsw(nocContactIsw).NocContactN(nocContactN).NocContactNic(nocContactNic).NocContactNie(nocContactNie).NocContactNiew(nocContactNiew).NocContactNire(nocContactNire).NocContactNisw(nocContactNisw).NocContactNre(nocContactNre).NocContactRe(nocContactRe).Offset(offset).PortalUrl(portalUrl).PortalUrlIc(portalUrlIc).PortalUrlIe(portalUrlIe).PortalUrlIew(portalUrlIew).PortalUrlIre(portalUrlIre).PortalUrlIsw(portalUrlIsw).PortalUrlN(portalUrlN).PortalUrlNic(portalUrlNic).PortalUrlNie(portalUrlNie).PortalUrlNiew(portalUrlNiew).PortalUrlNire(portalUrlNire).PortalUrlNisw(portalUrlNisw).PortalUrlNre(portalUrlNre).PortalUrlRe(portalUrlRe).ProviderNetworks(providerNetworks).ProviderNetworksIsnull(providerNetworksIsnull).ProviderNetworksN(providerNetworksN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsProvidersList(context.Background()).Account(account).AccountIc(accountIc).AccountIe(accountIe).AccountIew(accountIew).AccountIre(accountIre).AccountIsw(accountIsw).AccountN(accountN).AccountNic(accountNic).AccountNie(accountNie).AccountNiew(accountNiew).AccountNire(accountNire).AccountNisw(accountNisw).AccountNre(accountNre).AccountRe(accountRe).AdminContact(adminContact).AdminContactIc(adminContactIc).AdminContactIe(adminContactIe).AdminContactIew(adminContactIew).AdminContactIre(adminContactIre).AdminContactIsw(adminContactIsw).AdminContactN(adminContactN).AdminContactNic(adminContactNic).AdminContactNie(adminContactNie).AdminContactNiew(adminContactNiew).AdminContactNire(adminContactNire).AdminContactNisw(adminContactNisw).AdminContactNre(adminContactNre).AdminContactRe(adminContactRe).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).Circuits(circuits).CircuitsIsnull(circuitsIsnull).CircuitsN(circuitsN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCircuits(hasCircuits).HasProviderNetworks(hasProviderNetworks).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NocContact(nocContact).NocContactIc(nocContactIc).NocContactIe(nocContactIe).NocContactIew(nocContactIew).NocContactIre(nocContactIre).NocContactIsw(nocContactIsw).NocContactN(nocContactN).NocContactNic(nocContactNic).NocContactNie(nocContactNie).NocContactNiew(nocContactNiew).NocContactNire(nocContactNire).NocContactNisw(nocContactNisw).NocContactNre(nocContactNre).NocContactRe(nocContactRe).Offset(offset).PortalUrl(portalUrl).PortalUrlIc(portalUrlIc).PortalUrlIe(portalUrlIe).PortalUrlIew(portalUrlIew).PortalUrlIre(portalUrlIre).PortalUrlIsw(portalUrlIsw).PortalUrlN(portalUrlN).PortalUrlNic(portalUrlNic).PortalUrlNie(portalUrlNie).PortalUrlNiew(portalUrlNiew).PortalUrlNire(portalUrlNire).PortalUrlNisw(portalUrlNisw).PortalUrlNre(portalUrlNre).PortalUrlRe(portalUrlRe).ProviderNetworks(providerNetworks).ProviderNetworksIsnull(providerNetworksIsnull).ProviderNetworksN(providerNetworksN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsProvidersList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4567,7 +4651,7 @@ Name | Type | Description  | Notes
  **asnLte** | **[]int32** |  | 
  **asnN** | **[]int32** |  | 
  **circuits** | **[]string** |  | 
- **circuitsIsnull** | **bool** |  | 
+ **circuitsIsnull** | **bool** | Circuit (ID or circuit ID) is null | 
  **circuitsN** | **[]string** |  | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
@@ -4583,6 +4667,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -4590,6 +4677,8 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasCircuits** | **bool** | Has circuits | 
  **hasProviderNetworks** | **bool** | Has provider networks | 
@@ -4616,7 +4705,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
- **locationIsnull** | **bool** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
  **locationN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -4662,13 +4751,16 @@ Name | Type | Description  | Notes
  **portalUrlNre** | **[]string** |  | 
  **portalUrlRe** | **[]string** |  | 
  **providerNetworks** | **[]string** |  | 
- **providerNetworksIsnull** | **bool** |  | 
+ **providerNetworksIsnull** | **bool** | Provider networks (name or ID) is null | 
  **providerNetworksN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type

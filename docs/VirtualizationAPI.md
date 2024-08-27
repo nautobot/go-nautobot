@@ -404,7 +404,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationClusterGroupsList
 
-> PaginatedClusterGroupList VirtualizationClusterGroupsList(ctx).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedClusterGroupList VirtualizationClusterGroupsList(ctx).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -425,8 +425,11 @@ import (
 
 func main() {
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool |  (optional)
+	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -448,6 +451,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasClusters := true // bool | Has clusters (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -489,11 +494,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClusterGroupsList(context.Background()).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClusterGroupsList(context.Background()).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationClusterGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -515,8 +523,11 @@ Other parameters are passed through a pointer to a apiVirtualizationClusterGroup
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** |  | 
+ **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
  **clustersN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -538,6 +549,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasClusters** | **bool** | Has clusters | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -579,6 +592,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -1315,7 +1331,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationClusterTypesList
 
-> PaginatedClusterTypeList VirtualizationClusterTypesList(ctx).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedClusterTypeList VirtualizationClusterTypesList(ctx).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 
 
 
@@ -1336,8 +1352,11 @@ import (
 
 func main() {
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool |  (optional)
+	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -1359,6 +1378,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasClusters := true // bool | Has clusters (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -1400,11 +1421,14 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClusterTypesList(context.Background()).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClusterTypesList(context.Background()).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasClusters(hasClusters).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationClusterTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1426,8 +1450,11 @@ Other parameters are passed through a pointer to a apiVirtualizationClusterTypes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** |  | 
+ **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
  **clustersN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1449,6 +1476,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasClusters** | **bool** | Has clusters | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -1490,6 +1519,9 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -2226,7 +2258,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationClustersList
 
-> PaginatedClusterList VirtualizationClustersList(ctx).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+> PaginatedClusterList VirtualizationClustersList(ctx).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 
 
 
@@ -2247,15 +2279,15 @@ import (
 
 func main() {
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
-	clusterGroupIsnull := true // bool |  (optional)
+	clusterGroupIsnull := true // bool | Parent group (ID or name) is null (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupId := []string{"Inner_example"} // []string | Parent group (ID) - Deprecated (use group filter) (optional)
-	clusterGroupIdIsnull := true // bool |  (optional)
-	clusterGroupIdN := []string{"Inner_example"} // []string | Parent group (ID) - Deprecated (use group filter) (optional)
+	clusterGroupIdIsnull := true // bool | Parent group (ID) - Deprecated (use group filter) is null (optional)
+	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Parent group (ID) - Deprecated (use group filter) (optional)
 	clusterType := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeN := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeId := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use type filter) (optional)
-	clusterTypeIdN := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use type filter) (optional)
+	clusterTypeIdN := []string{"Inner_example"} // []string | Exclude Cluster type (ID) - Deprecated (use type filter) (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
 	commentsIe := []string{"Inner_example"} // []string |  (optional)
@@ -2270,6 +2302,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2278,8 +2313,10 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool |  (optional)
+	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDevices := true // bool | Has devices (optional)
 	hasVirtualMachines := true // bool | Has virtual machines (optional)
@@ -2306,7 +2343,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
-	locationIsnull := true // bool |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -2328,23 +2365,26 @@ func main() {
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
-	virtualMachinesIsnull := true // bool |  (optional)
+	virtualMachinesIsnull := true // bool | Virtual machines (name or ID) is null (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClustersList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationClustersList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDevices(hasDevices).HasVirtualMachines(hasVirtualMachines).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualMachines(virtualMachines).VirtualMachinesIsnull(virtualMachinesIsnull).VirtualMachinesN(virtualMachinesN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationClustersList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2366,15 +2406,15 @@ Other parameters are passed through a pointer to a apiVirtualizationClustersList
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusterGroup** | **[]string** |  | 
- **clusterGroupIsnull** | **bool** |  | 
+ **clusterGroupIsnull** | **bool** | Parent group (ID or name) is null | 
  **clusterGroupN** | **[]string** |  | 
  **clusterGroupId** | **[]string** | Parent group (ID) - Deprecated (use group filter) | 
- **clusterGroupIdIsnull** | **bool** |  | 
- **clusterGroupIdN** | **[]string** | Parent group (ID) - Deprecated (use group filter) | 
+ **clusterGroupIdIsnull** | **bool** | Parent group (ID) - Deprecated (use group filter) is null | 
+ **clusterGroupIdN** | **[]string** | Exclude Parent group (ID) - Deprecated (use group filter) | 
  **clusterType** | **[]string** |  | 
  **clusterTypeN** | **[]string** |  | 
  **clusterTypeId** | **[]string** | Cluster type (ID) - Deprecated (use type filter) | 
- **clusterTypeIdN** | **[]string** | Cluster type (ID) - Deprecated (use type filter) | 
+ **clusterTypeIdN** | **[]string** | Exclude Cluster type (ID) - Deprecated (use type filter) | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
  **commentsIe** | **[]string** |  | 
@@ -2389,6 +2429,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2397,8 +2440,10 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** |  | 
+ **devicesIsnull** | **bool** | Devices (name or ID) is null | 
  **devicesN** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDevices** | **bool** | Has devices | 
  **hasVirtualMachines** | **bool** | Has virtual machines | 
@@ -2425,7 +2470,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
- **locationIsnull** | **bool** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
  **locationN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -2447,17 +2492,20 @@ Name | Type | Description  | Notes
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **virtualMachines** | **[]string** |  | 
- **virtualMachinesIsnull** | **bool** |  | 
+ **virtualMachinesIsnull** | **bool** | Virtual machines (name or ID) is null | 
  **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
@@ -3195,7 +3243,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationInterfacesList
 
-> PaginatedVMInterfaceList VirtualizationInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Cluster(cluster).ClusterN(clusterN).ClusterId(clusterId).ClusterIdN(clusterIdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).Limit(limit).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualMachine(virtualMachine).VirtualMachineN(virtualMachineN).VirtualMachineId(virtualMachineId).VirtualMachineIdN(virtualMachineIdN).Depth(depth).Execute()
+> PaginatedVMInterfaceList VirtualizationInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Cluster(cluster).ClusterN(clusterN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).Limit(limit).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualMachine(virtualMachine).VirtualMachineN(virtualMachineN).VirtualMachineId(virtualMachineId).VirtualMachineIdN(virtualMachineIdN).Depth(depth).Execute()
 
 
 
@@ -3215,18 +3263,21 @@ import (
 
 func main() {
 	bridge := []string{"Inner_example"} // []string |  (optional)
-	bridgeIsnull := true // bool |  (optional)
+	bridgeIsnull := true // bool | Bridge interface (name or ID) is null (optional)
 	bridgeN := []string{"Inner_example"} // []string |  (optional)
 	bridgedInterfaces := []string{"Inner_example"} // []string |  (optional)
-	bridgedInterfacesIsnull := true // bool |  (optional)
+	bridgedInterfacesIsnull := true // bool | Bridged interfaces (name or ID) is null (optional)
 	bridgedInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	childInterfaces := []string{"Inner_example"} // []string |  (optional)
-	childInterfacesIsnull := true // bool |  (optional)
+	childInterfacesIsnull := true // bool | Child interfaces (name or ID) is null (optional)
 	childInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	cluster := []string{"Inner_example"} // []string |  (optional)
 	clusterN := []string{"Inner_example"} // []string |  (optional)
 	clusterId := []string{"Inner_example"} // []string | Cluster (ID) - Deprecated (use cluster filter) (optional)
-	clusterIdN := []string{"Inner_example"} // []string | Cluster (ID) - Deprecated (use cluster filter) (optional)
+	clusterIdN := []string{"Inner_example"} // []string | Exclude Cluster (ID) - Deprecated (use cluster filter) (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -3241,6 +3292,8 @@ func main() {
 	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasBridgedInterfaces := true // bool | Has Bridged Interfaces (optional)
@@ -3264,19 +3317,19 @@ func main() {
 	ipAddresses := []string{"Inner_example"} // []string | IP addresses (address or ID) (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	macAddress := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIc := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIc := []string{"Inner_example"} // []string | MAC address contains (optional)
 	macAddressIe := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIsw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressN := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNic := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNie := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNiew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNire := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNisw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressRe := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIew := []string{"Inner_example"} // []string | MAC address ends with (optional)
+	macAddressIre := []string{"Inner_example"} // []string | MAC address matches regex (optional)
+	macAddressIsw := []string{"Inner_example"} // []string | MAC address starts with (optional)
+	macAddressN := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNic := []string{"Inner_example"} // []string | Exclude MAC address contains (optional)
+	macAddressNie := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNiew := []string{"Inner_example"} // []string | Exclude MAC address ends with (optional)
+	macAddressNire := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
+	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
 	mode := []string{"Inner_example"} // []string |  (optional)
 	modeIc := []string{"Inner_example"} // []string |  (optional)
 	modeIe := []string{"Inner_example"} // []string |  (optional)
@@ -3314,29 +3367,35 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parentInterface := []string{"Inner_example"} // []string |  (optional)
-	parentInterfaceIsnull := true // bool |  (optional)
+	parentInterfaceIsnull := true // bool | Parent interface (name or ID) is null (optional)
 	parentInterfaceN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
+	role := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	taggedVlans := []string{"Inner_example"} // []string |  (optional)
 	taggedVlansN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	untaggedVlan := []string{"Inner_example"} // []string |  (optional)
-	untaggedVlanIsnull := true // bool |  (optional)
+	untaggedVlanIsnull := true // bool | Untagged VLAN (VID or ID) is null (optional)
 	untaggedVlanN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachine := []string{"Inner_example"} // []string |  (optional)
 	virtualMachineN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachineId := []string{"Inner_example"} // []string | Virtual machine (ID) - Deprecated (use virtual_machine filter) (optional)
-	virtualMachineIdN := []string{"Inner_example"} // []string | Virtual machine (ID) - Deprecated (use virtual_machine filter) (optional)
+	virtualMachineIdN := []string{"Inner_example"} // []string | Exclude Virtual machine (ID) - Deprecated (use virtual_machine filter) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Cluster(cluster).ClusterN(clusterN).ClusterId(clusterId).ClusterIdN(clusterIdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).Limit(limit).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualMachine(virtualMachine).VirtualMachineN(virtualMachineN).VirtualMachineId(virtualMachineId).VirtualMachineIdN(virtualMachineIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Cluster(cluster).ClusterN(clusterN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasTaggedVlans(hasTaggedVlans).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpAddresses(ipAddresses).Limit(limit).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualMachine(virtualMachine).VirtualMachineN(virtualMachineN).VirtualMachineId(virtualMachineId).VirtualMachineIdN(virtualMachineIdN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationInterfacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3358,18 +3417,21 @@ Other parameters are passed through a pointer to a apiVirtualizationInterfacesLi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **bridge** | **[]string** |  | 
- **bridgeIsnull** | **bool** |  | 
+ **bridgeIsnull** | **bool** | Bridge interface (name or ID) is null | 
  **bridgeN** | **[]string** |  | 
  **bridgedInterfaces** | **[]string** |  | 
- **bridgedInterfacesIsnull** | **bool** |  | 
+ **bridgedInterfacesIsnull** | **bool** | Bridged interfaces (name or ID) is null | 
  **bridgedInterfacesN** | **[]string** |  | 
  **childInterfaces** | **[]string** |  | 
- **childInterfacesIsnull** | **bool** |  | 
+ **childInterfacesIsnull** | **bool** | Child interfaces (name or ID) is null | 
  **childInterfacesN** | **[]string** |  | 
  **cluster** | **[]string** |  | 
  **clusterN** | **[]string** |  | 
  **clusterId** | **[]string** | Cluster (ID) - Deprecated (use cluster filter) | 
- **clusterIdN** | **[]string** | Cluster (ID) - Deprecated (use cluster filter) | 
+ **clusterIdN** | **[]string** | Exclude Cluster (ID) - Deprecated (use cluster filter) | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -3384,6 +3446,8 @@ Name | Type | Description  | Notes
  **descriptionNisw** | **[]string** |  | 
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasBridgedInterfaces** | **bool** | Has Bridged Interfaces | 
@@ -3407,19 +3471,19 @@ Name | Type | Description  | Notes
  **ipAddresses** | **[]string** | IP addresses (address or ID) | 
  **limit** | **int32** | Number of results to return per page. | 
  **macAddress** | **[]string** | MAC address | 
- **macAddressIc** | **[]string** | MAC address | 
+ **macAddressIc** | **[]string** | MAC address contains | 
  **macAddressIe** | **[]string** | MAC address | 
- **macAddressIew** | **[]string** | MAC address | 
- **macAddressIre** | **[]string** | MAC address | 
- **macAddressIsw** | **[]string** | MAC address | 
- **macAddressN** | **[]string** | MAC address | 
- **macAddressNic** | **[]string** | MAC address | 
- **macAddressNie** | **[]string** | MAC address | 
- **macAddressNiew** | **[]string** | MAC address | 
- **macAddressNire** | **[]string** | MAC address | 
- **macAddressNisw** | **[]string** | MAC address | 
- **macAddressNre** | **[]string** | MAC address | 
- **macAddressRe** | **[]string** | MAC address | 
+ **macAddressIew** | **[]string** | MAC address ends with | 
+ **macAddressIre** | **[]string** | MAC address matches regex | 
+ **macAddressIsw** | **[]string** | MAC address starts with | 
+ **macAddressN** | **[]string** | Exclude MAC address | 
+ **macAddressNic** | **[]string** | Exclude MAC address contains | 
+ **macAddressNie** | **[]string** | Exclude MAC address | 
+ **macAddressNiew** | **[]string** | Exclude MAC address ends with | 
+ **macAddressNire** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
+ **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressRe** | **[]string** | MAC address matches regex | 
  **mode** | **[]string** |  | 
  **modeIc** | **[]string** |  | 
  **modeIe** | **[]string** |  | 
@@ -3457,24 +3521,30 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parentInterface** | **[]string** |  | 
- **parentInterfaceIsnull** | **bool** |  | 
+ **parentInterfaceIsnull** | **bool** | Parent interface (name or ID) is null | 
  **parentInterfaceN** | **[]string** |  | 
  **q** | **string** | Search | 
+ **role** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **taggedVlans** | **[]string** |  | 
  **taggedVlansN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **untaggedVlan** | **[]string** |  | 
- **untaggedVlanIsnull** | **bool** |  | 
+ **untaggedVlanIsnull** | **bool** | Untagged VLAN (VID or ID) is null | 
  **untaggedVlanN** | **[]string** |  | 
  **virtualMachine** | **[]string** |  | 
  **virtualMachineN** | **[]string** |  | 
  **virtualMachineId** | **[]string** | Virtual machine (ID) - Deprecated (use virtual_machine filter) | 
- **virtualMachineIdN** | **[]string** | Virtual machine (ID) - Deprecated (use virtual_machine filter) | 
+ **virtualMachineIdN** | **[]string** | Exclude Virtual machine (ID) - Deprecated (use virtual_machine filter) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
 
 ### Return type
@@ -4211,7 +4281,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationVirtualMachinesList
 
-> PaginatedVirtualMachineList VirtualizationVirtualMachinesList(ctx).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).Execute()
+> PaginatedVirtualMachineList VirtualizationVirtualMachinesList(ctx).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).Execute()
 
 
 
@@ -4234,17 +4304,17 @@ func main() {
 	cluster := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
 	clusterN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
-	clusterGroupIsnull := true // bool |  (optional)
+	clusterGroupIsnull := true // bool | Cluster group (ID or name) is null (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupId := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
-	clusterGroupIdIsnull := true // bool |  (optional)
-	clusterGroupIdN := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
+	clusterGroupIdIsnull := true // bool | Cluster group (ID) - Deprecated (use cluster_group filter) is null (optional)
+	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
 	clusterId := []string{"Inner_example"} // []string | Cluster (ID) (optional)
-	clusterIdN := []string{"Inner_example"} // []string | Cluster (ID) (optional)
+	clusterIdN := []string{"Inner_example"} // []string | Exclude Cluster (ID) (optional)
 	clusterType := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeN := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeId := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
-	clusterTypeIdN := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
+	clusterTypeIdN := []string{"Inner_example"} // []string | Exclude Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
 	commentsIe := []string{"Inner_example"} // []string |  (optional)
@@ -4259,6 +4329,9 @@ func main() {
 	commentsNisw := []string{"Inner_example"} // []string |  (optional)
 	commentsNre := []string{"Inner_example"} // []string |  (optional)
 	commentsRe := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4273,6 +4346,8 @@ func main() {
 	diskLt := []int32{int32(123)} // []int32 |  (optional)
 	diskLte := []int32{int32(123)} // []int32 |  (optional)
 	diskN := []int32{int32(123)} // []int32 |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasInterfaces := true // bool | Has interfaces (optional)
 	hasPrimaryIp := true // bool | Has a primary IP (optional)
@@ -4294,7 +4369,7 @@ func main() {
 	idNre := []string{"Inner_example"} // []string |  (optional)
 	idRe := []string{"Inner_example"} // []string |  (optional)
 	interfaces := []string{"Inner_example"} // []string |  (optional)
-	interfacesIsnull := true // bool |  (optional)
+	interfacesIsnull := true // bool | Interfaces (name or ID) is null (optional)
 	interfacesN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4306,28 +4381,28 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	localConfigContextData := true // bool | Has local config context data (optional)
 	localConfigContextSchema := []string{"Inner_example"} // []string |  (optional)
-	localConfigContextSchemaIsnull := true // bool |  (optional)
+	localConfigContextSchemaIsnull := true // bool | Schema (ID or name) is null (optional)
 	localConfigContextSchemaN := []string{"Inner_example"} // []string |  (optional)
 	localConfigContextSchemaId := []*string{"Inner_example"} // []*string | Schema (ID) - Deprecated (use local_context_schema filter) (optional)
-	localConfigContextSchemaIdIsnull := true // bool |  (optional)
-	localConfigContextSchemaIdN := []*string{"Inner_example"} // []*string | Schema (ID) - Deprecated (use local_context_schema filter) (optional)
+	localConfigContextSchemaIdIsnull := true // bool | Schema (ID) - Deprecated (use local_context_schema filter) is null (optional)
+	localConfigContextSchemaIdN := []*string{"Inner_example"} // []*string | Exclude Schema (ID) - Deprecated (use local_context_schema filter) (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
-	locationIsnull := true // bool |  (optional)
+	locationIsnull := true // bool | Location (name or ID) is null (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	macAddress := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIc := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIc := []string{"Inner_example"} // []string | MAC address contains (optional)
 	macAddressIe := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressIsw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressN := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNic := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNie := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNiew := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNire := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNisw := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressNre := []string{"Inner_example"} // []string | MAC address (optional)
-	macAddressRe := []string{"Inner_example"} // []string | MAC address (optional)
+	macAddressIew := []string{"Inner_example"} // []string | MAC address ends with (optional)
+	macAddressIre := []string{"Inner_example"} // []string | MAC address matches regex (optional)
+	macAddressIsw := []string{"Inner_example"} // []string | MAC address starts with (optional)
+	macAddressN := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNic := []string{"Inner_example"} // []string | Exclude MAC address contains (optional)
+	macAddressNie := []string{"Inner_example"} // []string | Exclude MAC address (optional)
+	macAddressNiew := []string{"Inner_example"} // []string | Exclude MAC address ends with (optional)
+	macAddressNire := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
+	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
+	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
 	memory := []int32{int32(123)} // []int32 |  (optional)
 	memoryGt := []int32{int32(123)} // []int32 |  (optional)
 	memoryGte := []int32{int32(123)} // []int32 |  (optional)
@@ -4351,40 +4426,43 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool |  (optional)
+	platformIsnull := true // bool | Platform (ID or name) is null (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	platformId := []*string{"Inner_example"} // []*string | Platform (ID) - Deprecated (use platform filter) (optional)
-	platformIdIsnull := true // bool |  (optional)
-	platformIdN := []*string{"Inner_example"} // []*string | Platform (ID) - Deprecated (use platform filter) (optional)
+	platformIdIsnull := true // bool | Platform (ID) - Deprecated (use platform filter) is null (optional)
+	platformIdN := []*string{"Inner_example"} // []*string | Exclude Platform (ID) - Deprecated (use platform filter) (optional)
 	primaryIp4 := []string{"Inner_example"} // []string | Primary IPv4 Address (address or ID) (optional)
 	primaryIp6 := []string{"Inner_example"} // []string | Primary IPv6 Address (address or ID) (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
-	roleIsnull := true // bool |  (optional)
-	roleN := []string{"Inner_example"} // []string |  (optional)
+	roleIsnull := true // bool | Role (name or ID) is null (optional)
+	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
 	services := []string{"Inner_example"} // []string |  (optional)
-	servicesIsnull := true // bool |  (optional)
+	servicesIsnull := true // bool | Services (name or ID) is null (optional)
 	servicesN := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool |  (optional)
+	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := []string{"Inner_example"} // []string |  (optional)
+	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
-	tenantIsnull := true // bool |  (optional)
+	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
 	tenantGroup := []string{"Inner_example"} // []string |  (optional)
-	tenantGroupIsnull := true // bool |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
 	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	tenantIdIsnull := true // bool |  (optional)
-	tenantIdN := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
+	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	vcpus := []int32{int32(123)} // []int32 |  (optional)
 	vcpusGt := []int32{int32(123)} // []int32 |  (optional)
 	vcpusGte := []int32{int32(123)} // []int32 |  (optional)
@@ -4396,7 +4474,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationVirtualMachinesList(context.Background()).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationVirtualMachinesList(context.Background()).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationVirtualMachinesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4420,17 +4498,17 @@ Name | Type | Description  | Notes
  **cluster** | **string** |  | 
  **clusterN** | **string** |  | 
  **clusterGroup** | **[]string** |  | 
- **clusterGroupIsnull** | **bool** |  | 
+ **clusterGroupIsnull** | **bool** | Cluster group (ID or name) is null | 
  **clusterGroupN** | **[]string** |  | 
  **clusterGroupId** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
- **clusterGroupIdIsnull** | **bool** |  | 
- **clusterGroupIdN** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
+ **clusterGroupIdIsnull** | **bool** | Cluster group (ID) - Deprecated (use cluster_group filter) is null | 
+ **clusterGroupIdN** | **[]string** | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) | 
  **clusterId** | **[]string** | Cluster (ID) | 
- **clusterIdN** | **[]string** | Cluster (ID) | 
+ **clusterIdN** | **[]string** | Exclude Cluster (ID) | 
  **clusterType** | **[]string** |  | 
  **clusterTypeN** | **[]string** |  | 
  **clusterTypeId** | **[]string** | Cluster type (ID) - Deprecated (use cluster_type filter) | 
- **clusterTypeIdN** | **[]string** | Cluster type (ID) - Deprecated (use cluster_type filter) | 
+ **clusterTypeIdN** | **[]string** | Exclude Cluster type (ID) - Deprecated (use cluster_type filter) | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
  **commentsIe** | **[]string** |  | 
@@ -4445,6 +4523,9 @@ Name | Type | Description  | Notes
  **commentsNisw** | **[]string** |  | 
  **commentsNre** | **[]string** |  | 
  **commentsRe** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **string** | Exclude Contacts (name or ID) | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -4459,6 +4540,8 @@ Name | Type | Description  | Notes
  **diskLt** | **[]int32** |  | 
  **diskLte** | **[]int32** |  | 
  **diskN** | **[]int32** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasInterfaces** | **bool** | Has interfaces | 
  **hasPrimaryIp** | **bool** | Has a primary IP | 
@@ -4480,7 +4563,7 @@ Name | Type | Description  | Notes
  **idNre** | **[]string** |  | 
  **idRe** | **[]string** |  | 
  **interfaces** | **[]string** |  | 
- **interfacesIsnull** | **bool** |  | 
+ **interfacesIsnull** | **bool** | Interfaces (name or ID) is null | 
  **interfacesN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -4492,28 +4575,28 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **localConfigContextData** | **bool** | Has local config context data | 
  **localConfigContextSchema** | **[]string** |  | 
- **localConfigContextSchemaIsnull** | **bool** |  | 
+ **localConfigContextSchemaIsnull** | **bool** | Schema (ID or name) is null | 
  **localConfigContextSchemaN** | **[]string** |  | 
  **localConfigContextSchemaId** | **[]string** | Schema (ID) - Deprecated (use local_context_schema filter) | 
- **localConfigContextSchemaIdIsnull** | **bool** |  | 
- **localConfigContextSchemaIdN** | **[]string** | Schema (ID) - Deprecated (use local_context_schema filter) | 
+ **localConfigContextSchemaIdIsnull** | **bool** | Schema (ID) - Deprecated (use local_context_schema filter) is null | 
+ **localConfigContextSchemaIdN** | **[]string** | Exclude Schema (ID) - Deprecated (use local_context_schema filter) | 
  **location** | **[]string** |  | 
- **locationIsnull** | **bool** |  | 
+ **locationIsnull** | **bool** | Location (name or ID) is null | 
  **locationN** | **[]string** |  | 
  **macAddress** | **[]string** | MAC address | 
- **macAddressIc** | **[]string** | MAC address | 
+ **macAddressIc** | **[]string** | MAC address contains | 
  **macAddressIe** | **[]string** | MAC address | 
- **macAddressIew** | **[]string** | MAC address | 
- **macAddressIre** | **[]string** | MAC address | 
- **macAddressIsw** | **[]string** | MAC address | 
- **macAddressN** | **[]string** | MAC address | 
- **macAddressNic** | **[]string** | MAC address | 
- **macAddressNie** | **[]string** | MAC address | 
- **macAddressNiew** | **[]string** | MAC address | 
- **macAddressNire** | **[]string** | MAC address | 
- **macAddressNisw** | **[]string** | MAC address | 
- **macAddressNre** | **[]string** | MAC address | 
- **macAddressRe** | **[]string** | MAC address | 
+ **macAddressIew** | **[]string** | MAC address ends with | 
+ **macAddressIre** | **[]string** | MAC address matches regex | 
+ **macAddressIsw** | **[]string** | MAC address starts with | 
+ **macAddressN** | **[]string** | Exclude MAC address | 
+ **macAddressNic** | **[]string** | Exclude MAC address contains | 
+ **macAddressNie** | **[]string** | Exclude MAC address | 
+ **macAddressNiew** | **[]string** | Exclude MAC address ends with | 
+ **macAddressNire** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
+ **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
+ **macAddressRe** | **[]string** | MAC address matches regex | 
  **memory** | **[]int32** |  | 
  **memoryGt** | **[]int32** |  | 
  **memoryGte** | **[]int32** |  | 
@@ -4537,40 +4620,43 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** |  | 
+ **platformIsnull** | **bool** | Platform (ID or name) is null | 
  **platformN** | **[]string** |  | 
  **platformId** | **[]string** | Platform (ID) - Deprecated (use platform filter) | 
- **platformIdIsnull** | **bool** |  | 
- **platformIdN** | **[]string** | Platform (ID) - Deprecated (use platform filter) | 
+ **platformIdIsnull** | **bool** | Platform (ID) - Deprecated (use platform filter) is null | 
+ **platformIdN** | **[]string** | Exclude Platform (ID) - Deprecated (use platform filter) | 
  **primaryIp4** | **[]string** | Primary IPv4 Address (address or ID) | 
  **primaryIp6** | **[]string** | Primary IPv6 Address (address or ID) | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
- **roleIsnull** | **bool** |  | 
- **roleN** | **[]string** |  | 
+ **roleIsnull** | **bool** | Role (name or ID) is null | 
+ **roleN** | **string** | Exclude Role (name or ID) | 
  **services** | **[]string** |  | 
- **servicesIsnull** | **bool** |  | 
+ **servicesIsnull** | **bool** | Services (name or ID) is null | 
  **servicesN** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** |  | 
+ **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **[]string** |  | 
+ **statusN** | **string** | Exclude Status (name or ID) | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **string** | Exclude Teams (name or ID) | 
  **tenant** | **[]string** |  | 
- **tenantIsnull** | **bool** |  | 
+ **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
  **tenantGroup** | **[]string** |  | 
- **tenantGroupIsnull** | **bool** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
  **tenantGroupN** | **[]string** |  | 
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **tenantIdIsnull** | **bool** |  | 
- **tenantIdN** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
+ **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **vcpus** | **[]int32** |  | 
  **vcpusGt** | **[]int32** |  | 
  **vcpusGte** | **[]int32** |  | 

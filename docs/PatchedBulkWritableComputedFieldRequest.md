@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **ContentType** | Pointer to **string** |  | [optional] 
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
+**Grouping** | Pointer to **string** | Human-readable grouping that this computed field belongs to. | [optional] 
 **Label** | Pointer to **string** | Name of the field as displayed to users | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Template** | Pointer to **string** | Jinja2 template code for field value | [optional] 
@@ -102,6 +103,31 @@ SetKey sets Key field to given value.
 `func (o *PatchedBulkWritableComputedFieldRequest) HasKey() bool`
 
 HasKey returns a boolean if a field has been set.
+
+### GetGrouping
+
+`func (o *PatchedBulkWritableComputedFieldRequest) GetGrouping() string`
+
+GetGrouping returns the Grouping field if non-nil, zero value otherwise.
+
+### GetGroupingOk
+
+`func (o *PatchedBulkWritableComputedFieldRequest) GetGroupingOk() (*string, bool)`
+
+GetGroupingOk returns a tuple with the Grouping field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetGrouping
+
+`func (o *PatchedBulkWritableComputedFieldRequest) SetGrouping(v string)`
+
+SetGrouping sets Grouping field to given value.
+
+### HasGrouping
+
+`func (o *PatchedBulkWritableComputedFieldRequest) HasGrouping() bool`
+
+HasGrouping returns a boolean if a field has been set.
 
 ### GetLabel
 

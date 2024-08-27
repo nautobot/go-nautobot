@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Provider** | Pointer to **string** |  | [optional] 
-**Parameters** | Pointer to **map[string]interface{}** |  | [optional] 
+**Parameters** | Pointer to **interface{}** |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -108,20 +108,20 @@ HasProvider returns a boolean if a field has been set.
 
 ### GetParameters
 
-`func (o *PatchedSecretRequest) GetParameters() map[string]interface{}`
+`func (o *PatchedSecretRequest) GetParameters() interface{}`
 
 GetParameters returns the Parameters field if non-nil, zero value otherwise.
 
 ### GetParametersOk
 
-`func (o *PatchedSecretRequest) GetParametersOk() (*map[string]interface{}, bool)`
+`func (o *PatchedSecretRequest) GetParametersOk() (*interface{}, bool)`
 
 GetParametersOk returns a tuple with the Parameters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParameters
 
-`func (o *PatchedSecretRequest) SetParameters(v map[string]interface{})`
+`func (o *PatchedSecretRequest) SetParameters(v interface{})`
 
 SetParameters sets Parameters field to given value.
 
@@ -131,6 +131,16 @@ SetParameters sets Parameters field to given value.
 
 HasParameters returns a boolean if a field has been set.
 
+### SetParametersNil
+
+`func (o *PatchedSecretRequest) SetParametersNil(b bool)`
+
+ SetParametersNil sets the value for Parameters to be an explicit nil
+
+### UnsetParameters
+`func (o *PatchedSecretRequest) UnsetParameters()`
+
+UnsetParameters ensures that no value is present for Parameters, not even an explicit nil
 ### GetTags
 
 `func (o *PatchedSecretRequest) GetTags() []BulkWritableCableRequestStatus`

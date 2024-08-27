@@ -9,10 +9,11 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | Pointer to [**PortTypeChoices**](PortTypeChoices.md) |  | [optional] 
 **Positions** | Pointer to **int32** |  | [optional] 
-**Device** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -160,20 +161,20 @@ HasPositions returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *PatchedWritableRearPortRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableRearPortRequest) GetDevice() BulkWritableCircuitRequestTenant`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *PatchedWritableRearPortRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableRearPortRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *PatchedWritableRearPortRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableRearPortRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
 
 SetDevice sets Device field to given value.
 
@@ -183,31 +184,51 @@ SetDevice sets Device field to given value.
 
 HasDevice returns a boolean if a field has been set.
 
-### GetTags
+### SetDeviceNil
 
-`func (o *PatchedWritableRearPortRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedWritableRearPortRequest) SetDeviceNil(b bool)`
 
-GetTags returns the Tags field if non-nil, zero value otherwise.
+ SetDeviceNil sets the value for Device to be an explicit nil
 
-### GetTagsOk
+### UnsetDevice
+`func (o *PatchedWritableRearPortRequest) UnsetDevice()`
 
-`func (o *PatchedWritableRearPortRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+UnsetDevice ensures that no value is present for Device, not even an explicit nil
+### GetModule
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+`func (o *PatchedWritableRearPortRequest) GetModule() BulkWritableCircuitRequestTenant`
+
+GetModule returns the Module field if non-nil, zero value otherwise.
+
+### GetModuleOk
+
+`func (o *PatchedWritableRearPortRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTags
+### SetModule
 
-`func (o *PatchedWritableRearPortRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableRearPortRequest) SetModule(v BulkWritableCircuitRequestTenant)`
 
-SetTags sets Tags field to given value.
+SetModule sets Module field to given value.
 
-### HasTags
+### HasModule
 
-`func (o *PatchedWritableRearPortRequest) HasTags() bool`
+`func (o *PatchedWritableRearPortRequest) HasModule() bool`
 
-HasTags returns a boolean if a field has been set.
+HasModule returns a boolean if a field has been set.
 
+### SetModuleNil
+
+`func (o *PatchedWritableRearPortRequest) SetModuleNil(b bool)`
+
+ SetModuleNil sets the value for Module to be an explicit nil
+
+### UnsetModule
+`func (o *PatchedWritableRearPortRequest) UnsetModule()`
+
+UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedWritableRearPortRequest) GetCustomFields() map[string]interface{}`
@@ -257,6 +278,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *PatchedWritableRearPortRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedWritableRearPortRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedWritableRearPortRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedWritableRearPortRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedWritableRearPortRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

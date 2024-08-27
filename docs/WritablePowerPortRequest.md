@@ -10,16 +10,17 @@ Name | Type | Description | Notes
 **Type** | Pointer to [**PatchedWritablePowerPortRequestType**](PatchedWritablePowerPortRequestType.md) |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritablePowerPortRequest
 
-`func NewWritablePowerPortRequest(name string, device BulkWritableCableRequestStatus, ) *WritablePowerPortRequest`
+`func NewWritablePowerPortRequest(name string, ) *WritablePowerPortRequest`
 
 NewWritablePowerPortRequest instantiates a new WritablePowerPortRequest object
 This constructor will assign default values to properties that have it defined,
@@ -201,49 +202,74 @@ HasAllocatedDraw returns a boolean if a field has been set.
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
 ### GetDevice
 
-`func (o *WritablePowerPortRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *WritablePowerPortRequest) GetDevice() BulkWritableCircuitRequestTenant`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *WritablePowerPortRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritablePowerPortRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *WritablePowerPortRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *WritablePowerPortRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
 
 SetDevice sets Device field to given value.
 
+### HasDevice
 
-### GetTags
+`func (o *WritablePowerPortRequest) HasDevice() bool`
 
-`func (o *WritablePowerPortRequest) GetTags() []BulkWritableCableRequestStatus`
+HasDevice returns a boolean if a field has been set.
 
-GetTags returns the Tags field if non-nil, zero value otherwise.
+### SetDeviceNil
 
-### GetTagsOk
+`func (o *WritablePowerPortRequest) SetDeviceNil(b bool)`
 
-`func (o *WritablePowerPortRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+ SetDeviceNil sets the value for Device to be an explicit nil
 
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+### UnsetDevice
+`func (o *WritablePowerPortRequest) UnsetDevice()`
+
+UnsetDevice ensures that no value is present for Device, not even an explicit nil
+### GetModule
+
+`func (o *WritablePowerPortRequest) GetModule() BulkWritableCircuitRequestTenant`
+
+GetModule returns the Module field if non-nil, zero value otherwise.
+
+### GetModuleOk
+
+`func (o *WritablePowerPortRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTags
+### SetModule
 
-`func (o *WritablePowerPortRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *WritablePowerPortRequest) SetModule(v BulkWritableCircuitRequestTenant)`
 
-SetTags sets Tags field to given value.
+SetModule sets Module field to given value.
 
-### HasTags
+### HasModule
 
-`func (o *WritablePowerPortRequest) HasTags() bool`
+`func (o *WritablePowerPortRequest) HasModule() bool`
 
-HasTags returns a boolean if a field has been set.
+HasModule returns a boolean if a field has been set.
 
+### SetModuleNil
+
+`func (o *WritablePowerPortRequest) SetModuleNil(b bool)`
+
+ SetModuleNil sets the value for Module to be an explicit nil
+
+### UnsetModule
+`func (o *WritablePowerPortRequest) UnsetModule()`
+
+UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetCustomFields
 
 `func (o *WritablePowerPortRequest) GetCustomFields() map[string]interface{}`
@@ -293,6 +319,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *WritablePowerPortRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *WritablePowerPortRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *WritablePowerPortRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *WritablePowerPortRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *WritablePowerPortRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

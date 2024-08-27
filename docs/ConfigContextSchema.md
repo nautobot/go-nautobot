@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Owner** | [**NullableConfigContextSchemaOwner**](ConfigContextSchemaOwner.md) |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**DataSchema** | **map[string]interface{}** | A JSON Schema document which is used to validate a config context object. | 
+**DataSchema** | **interface{}** | A JSON Schema document which is used to validate a config context object. | 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewConfigContextSchema
 
-`func NewConfigContextSchema(id string, objectType string, display string, url string, naturalSlug string, owner NullableConfigContextSchemaOwner, name string, dataSchema map[string]interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContextSchema`
+`func NewConfigContextSchema(id string, objectType string, display string, url string, naturalSlug string, owner NullableConfigContextSchemaOwner, name string, dataSchema interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContextSchema`
 
 NewConfigContextSchema instantiates a new ConfigContextSchema object
 This constructor will assign default values to properties that have it defined,
@@ -251,24 +251,34 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDataSchema
 
-`func (o *ConfigContextSchema) GetDataSchema() map[string]interface{}`
+`func (o *ConfigContextSchema) GetDataSchema() interface{}`
 
 GetDataSchema returns the DataSchema field if non-nil, zero value otherwise.
 
 ### GetDataSchemaOk
 
-`func (o *ConfigContextSchema) GetDataSchemaOk() (*map[string]interface{}, bool)`
+`func (o *ConfigContextSchema) GetDataSchemaOk() (*interface{}, bool)`
 
 GetDataSchemaOk returns a tuple with the DataSchema field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDataSchema
 
-`func (o *ConfigContextSchema) SetDataSchema(v map[string]interface{})`
+`func (o *ConfigContextSchema) SetDataSchema(v interface{})`
 
 SetDataSchema sets DataSchema field to given value.
 
 
+### SetDataSchemaNil
+
+`func (o *ConfigContextSchema) SetDataSchemaNil(b bool)`
+
+ SetDataSchemaNil sets the value for DataSchema to be an explicit nil
+
+### UnsetDataSchema
+`func (o *ConfigContextSchema) UnsetDataSchema()`
+
+UnsetDataSchema ensures that no value is present for DataSchema, not even an explicit nil
 ### GetOwnerObjectId
 
 `func (o *ConfigContextSchema) GetOwnerObjectId() string`

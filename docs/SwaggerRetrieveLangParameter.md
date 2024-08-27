@@ -25,6 +25,8 @@
 
 * `CA` (value: `"ca"`)
 
+* `CKB` (value: `"ckb"`)
+
 * `CS` (value: `"cs"`)
 
 * `CY` (value: `"cy"`)
@@ -128,6 +130,8 @@
 * `MN` (value: `"mn"`)
 
 * `MR` (value: `"mr"`)
+
+* `MS` (value: `"ms"`)
 
 * `MY` (value: `"my"`)
 

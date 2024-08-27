@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**LocalConfigContextData** | Pointer to **map[string]interface{}** |  | [optional] 
+**LocalConfigContextData** | Pointer to **interface{}** |  | [optional] 
 **LocalConfigContextDataOwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Vcpus** | Pointer to **NullableInt32** |  | [optional] 
@@ -68,20 +68,20 @@ SetId sets Id field to given value.
 
 ### GetLocalConfigContextData
 
-`func (o *PatchedBulkWritableVirtualMachineRequest) GetLocalConfigContextData() map[string]interface{}`
+`func (o *PatchedBulkWritableVirtualMachineRequest) GetLocalConfigContextData() interface{}`
 
 GetLocalConfigContextData returns the LocalConfigContextData field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOk
 
-`func (o *PatchedBulkWritableVirtualMachineRequest) GetLocalConfigContextDataOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableVirtualMachineRequest) GetLocalConfigContextDataOk() (*interface{}, bool)`
 
 GetLocalConfigContextDataOk returns a tuple with the LocalConfigContextData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextData
 
-`func (o *PatchedBulkWritableVirtualMachineRequest) SetLocalConfigContextData(v map[string]interface{})`
+`func (o *PatchedBulkWritableVirtualMachineRequest) SetLocalConfigContextData(v interface{})`
 
 SetLocalConfigContextData sets LocalConfigContextData field to given value.
 

@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **Circuit** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**CloudNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -583,6 +584,41 @@ HasProviderNetwork returns a boolean if a field has been set.
 `func (o *CircuitTermination) UnsetProviderNetwork()`
 
 UnsetProviderNetwork ensures that no value is present for ProviderNetwork, not even an explicit nil
+### GetCloudNetwork
+
+`func (o *CircuitTermination) GetCloudNetwork() BulkWritableCircuitRequestTenant`
+
+GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
+
+### GetCloudNetworkOk
+
+`func (o *CircuitTermination) GetCloudNetworkOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCloudNetwork
+
+`func (o *CircuitTermination) SetCloudNetwork(v BulkWritableCircuitRequestTenant)`
+
+SetCloudNetwork sets CloudNetwork field to given value.
+
+### HasCloudNetwork
+
+`func (o *CircuitTermination) HasCloudNetwork() bool`
+
+HasCloudNetwork returns a boolean if a field has been set.
+
+### SetCloudNetworkNil
+
+`func (o *CircuitTermination) SetCloudNetworkNil(b bool)`
+
+ SetCloudNetworkNil sets the value for CloudNetwork to be an explicit nil
+
+### UnsetCloudNetwork
+`func (o *CircuitTermination) UnsetCloudNetwork()`
+
+UnsetCloudNetwork ensures that no value is present for CloudNetwork, not even an explicit nil
 ### GetCreated
 
 `func (o *CircuitTermination) GetCreated() time.Time`

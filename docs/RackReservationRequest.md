@@ -4,20 +4,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Units** | **map[string]interface{}** | List of rack unit numbers to reserve | 
+**Units** | **interface{}** | List of rack unit numbers to reserve | 
 **Description** | **string** |  | 
 **Rack** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewRackReservationRequest
 
-`func NewRackReservationRequest(units map[string]interface{}, description string, rack BulkWritableCableRequestStatus, ) *RackReservationRequest`
+`func NewRackReservationRequest(units interface{}, description string, rack BulkWritableCableRequestStatus, ) *RackReservationRequest`
 
 NewRackReservationRequest instantiates a new RackReservationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -34,24 +34,34 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetUnits
 
-`func (o *RackReservationRequest) GetUnits() map[string]interface{}`
+`func (o *RackReservationRequest) GetUnits() interface{}`
 
 GetUnits returns the Units field if non-nil, zero value otherwise.
 
 ### GetUnitsOk
 
-`func (o *RackReservationRequest) GetUnitsOk() (*map[string]interface{}, bool)`
+`func (o *RackReservationRequest) GetUnitsOk() (*interface{}, bool)`
 
 GetUnitsOk returns a tuple with the Units field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUnits
 
-`func (o *RackReservationRequest) SetUnits(v map[string]interface{})`
+`func (o *RackReservationRequest) SetUnits(v interface{})`
 
 SetUnits sets Units field to given value.
 
 
+### SetUnitsNil
+
+`func (o *RackReservationRequest) SetUnitsNil(b bool)`
+
+ SetUnitsNil sets the value for Units to be an explicit nil
+
+### UnsetUnits
+`func (o *RackReservationRequest) UnsetUnits()`
+
+UnsetUnits ensures that no value is present for Units, not even an explicit nil
 ### GetDescription
 
 `func (o *RackReservationRequest) GetDescription() string`
@@ -152,31 +162,6 @@ SetUser sets User field to given value.
 
 HasUser returns a boolean if a field has been set.
 
-### GetTags
-
-`func (o *RackReservationRequest) GetTags() []BulkWritableCableRequestStatus`
-
-GetTags returns the Tags field if non-nil, zero value otherwise.
-
-### GetTagsOk
-
-`func (o *RackReservationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTags
-
-`func (o *RackReservationRequest) SetTags(v []BulkWritableCableRequestStatus)`
-
-SetTags sets Tags field to given value.
-
-### HasTags
-
-`func (o *RackReservationRequest) HasTags() bool`
-
-HasTags returns a boolean if a field has been set.
-
 ### GetCustomFields
 
 `func (o *RackReservationRequest) GetCustomFields() map[string]interface{}`
@@ -226,6 +211,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *RackReservationRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *RackReservationRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *RackReservationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *RackReservationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *RackReservationRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

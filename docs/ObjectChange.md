@@ -21,15 +21,15 @@ Name | Type | Description | Notes
 **ChangeContextDetail** | **string** |  | [readonly] 
 **RelatedObjectId** | Pointer to **NullableString** |  | [optional] 
 **ObjectRepr** | **string** |  | [readonly] 
-**ObjectData** | **map[string]interface{}** |  | [readonly] 
-**ObjectDataV2** | **map[string]interface{}** |  | [readonly] 
+**ObjectData** | **interface{}** |  | [readonly] 
+**ObjectDataV2** | **interface{}** |  | [readonly] 
 **User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 
 ## Methods
 
 ### NewObjectChange
 
-`func NewObjectChange(id string, objectType string, display string, url string, naturalSlug string, action ObjectChangeAction, changedObjectType string, relatedObjectType string, changedObject NullableObjectChangeChangedObject, time time.Time, userName string, requestId string, changedObjectId string, changeContext string, changeContextDetail string, objectRepr string, objectData map[string]interface{}, objectDataV2 map[string]interface{}, ) *ObjectChange`
+`func NewObjectChange(id string, objectType string, display string, url string, naturalSlug string, action ObjectChangeAction, changedObjectType string, relatedObjectType string, changedObject NullableObjectChangeChangedObject, time time.Time, userName string, requestId string, changedObjectId string, changeContext string, changeContextDetail string, objectRepr string, objectData interface{}, objectDataV2 interface{}, ) *ObjectChange`
 
 NewObjectChange instantiates a new ObjectChange object
 This constructor will assign default values to properties that have it defined,
@@ -411,40 +411,50 @@ SetObjectRepr sets ObjectRepr field to given value.
 
 ### GetObjectData
 
-`func (o *ObjectChange) GetObjectData() map[string]interface{}`
+`func (o *ObjectChange) GetObjectData() interface{}`
 
 GetObjectData returns the ObjectData field if non-nil, zero value otherwise.
 
 ### GetObjectDataOk
 
-`func (o *ObjectChange) GetObjectDataOk() (*map[string]interface{}, bool)`
+`func (o *ObjectChange) GetObjectDataOk() (*interface{}, bool)`
 
 GetObjectDataOk returns a tuple with the ObjectData field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetObjectData
 
-`func (o *ObjectChange) SetObjectData(v map[string]interface{})`
+`func (o *ObjectChange) SetObjectData(v interface{})`
 
 SetObjectData sets ObjectData field to given value.
 
 
+### SetObjectDataNil
+
+`func (o *ObjectChange) SetObjectDataNil(b bool)`
+
+ SetObjectDataNil sets the value for ObjectData to be an explicit nil
+
+### UnsetObjectData
+`func (o *ObjectChange) UnsetObjectData()`
+
+UnsetObjectData ensures that no value is present for ObjectData, not even an explicit nil
 ### GetObjectDataV2
 
-`func (o *ObjectChange) GetObjectDataV2() map[string]interface{}`
+`func (o *ObjectChange) GetObjectDataV2() interface{}`
 
 GetObjectDataV2 returns the ObjectDataV2 field if non-nil, zero value otherwise.
 
 ### GetObjectDataV2Ok
 
-`func (o *ObjectChange) GetObjectDataV2Ok() (*map[string]interface{}, bool)`
+`func (o *ObjectChange) GetObjectDataV2Ok() (*interface{}, bool)`
 
 GetObjectDataV2Ok returns a tuple with the ObjectDataV2 field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetObjectDataV2
 
-`func (o *ObjectChange) SetObjectDataV2(v map[string]interface{})`
+`func (o *ObjectChange) SetObjectDataV2(v interface{})`
 
 SetObjectDataV2 sets ObjectDataV2 field to given value.
 

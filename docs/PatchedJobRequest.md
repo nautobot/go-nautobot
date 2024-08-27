@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **DryrunDefault** | Pointer to **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] 
 **SoftTimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **TimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
-**TaskQueues** | Pointer to **map[string]interface{}** | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] 
+**TaskQueues** | Pointer to **interface{}** | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
 **DescriptionOverride** | Pointer to **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] 
@@ -300,20 +300,20 @@ HasTimeLimit returns a boolean if a field has been set.
 
 ### GetTaskQueues
 
-`func (o *PatchedJobRequest) GetTaskQueues() map[string]interface{}`
+`func (o *PatchedJobRequest) GetTaskQueues() interface{}`
 
 GetTaskQueues returns the TaskQueues field if non-nil, zero value otherwise.
 
 ### GetTaskQueuesOk
 
-`func (o *PatchedJobRequest) GetTaskQueuesOk() (*map[string]interface{}, bool)`
+`func (o *PatchedJobRequest) GetTaskQueuesOk() (*interface{}, bool)`
 
 GetTaskQueuesOk returns a tuple with the TaskQueues field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTaskQueues
 
-`func (o *PatchedJobRequest) SetTaskQueues(v map[string]interface{})`
+`func (o *PatchedJobRequest) SetTaskQueues(v interface{})`
 
 SetTaskQueues sets TaskQueues field to given value.
 
@@ -323,6 +323,16 @@ SetTaskQueues sets TaskQueues field to given value.
 
 HasTaskQueues returns a boolean if a field has been set.
 
+### SetTaskQueuesNil
+
+`func (o *PatchedJobRequest) SetTaskQueuesNil(b bool)`
+
+ SetTaskQueuesNil sets the value for TaskQueues to be an explicit nil
+
+### UnsetTaskQueues
+`func (o *PatchedJobRequest) UnsetTaskQueues()`
+
+UnsetTaskQueues ensures that no value is present for TaskQueues, not even an explicit nil
 ### GetGroupingOverride
 
 `func (o *PatchedJobRequest) GetGroupingOverride() bool`

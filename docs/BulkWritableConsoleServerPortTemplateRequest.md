@@ -9,7 +9,8 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableConsoleServerPortTemplateRequest
 
-`func NewBulkWritableConsoleServerPortTemplateRequest(id string, name string, deviceType BulkWritableCableRequestStatus, ) *BulkWritableConsoleServerPortTemplateRequest`
+`func NewBulkWritableConsoleServerPortTemplateRequest(id string, name string, ) *BulkWritableConsoleServerPortTemplateRequest`
 
 NewBulkWritableConsoleServerPortTemplateRequest instantiates a new BulkWritableConsoleServerPortTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -149,24 +150,74 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *BulkWritableConsoleServerPortTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *BulkWritableConsoleServerPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *BulkWritableConsoleServerPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableConsoleServerPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *BulkWritableConsoleServerPortTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableConsoleServerPortTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *BulkWritableConsoleServerPortTemplateRequest) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *BulkWritableConsoleServerPortTemplateRequest) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *BulkWritableConsoleServerPortTemplateRequest) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *BulkWritableConsoleServerPortTemplateRequest) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCustomFields
 
 `func (o *BulkWritableConsoleServerPortTemplateRequest) GetCustomFields() map[string]interface{}`

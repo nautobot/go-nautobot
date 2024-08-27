@@ -13,10 +13,10 @@ Name | Type | Description | Notes
 **RequiredOn** | Pointer to [**BulkWritableRelationshipRequestRequiredOn**](BulkWritableRelationshipRequestRequiredOn.md) |  | [optional] 
 **SourceLabel** | Pointer to **string** | Label for related destination objects, as displayed on the source object. | [optional] 
 **SourceHidden** | Pointer to **bool** | Hide this relationship on the source object. | [optional] 
-**SourceFilter** | Pointer to **map[string]interface{}** | Filterset filter matching the applicable source objects of the selected type | [optional] 
+**SourceFilter** | Pointer to **interface{}** | Filterset filter matching the applicable source objects of the selected type | [optional] 
 **DestinationLabel** | Pointer to **string** | Label for related source objects, as displayed on the destination object. | [optional] 
 **DestinationHidden** | Pointer to **bool** | Hide this relationship on the destination object. | [optional] 
-**DestinationFilter** | Pointer to **map[string]interface{}** | Filterset filter matching the applicable destination objects of the selected type | [optional] 
+**DestinationFilter** | Pointer to **interface{}** | Filterset filter matching the applicable destination objects of the selected type | [optional] 
 **AdvancedUi** | Pointer to **bool** | Hide this field from the object&#39;s primary information tab. It will appear in the \&quot;Advanced\&quot; tab instead. | [optional] 
 
 ## Methods
@@ -265,20 +265,20 @@ HasSourceHidden returns a boolean if a field has been set.
 
 ### GetSourceFilter
 
-`func (o *PatchedRelationshipRequest) GetSourceFilter() map[string]interface{}`
+`func (o *PatchedRelationshipRequest) GetSourceFilter() interface{}`
 
 GetSourceFilter returns the SourceFilter field if non-nil, zero value otherwise.
 
 ### GetSourceFilterOk
 
-`func (o *PatchedRelationshipRequest) GetSourceFilterOk() (*map[string]interface{}, bool)`
+`func (o *PatchedRelationshipRequest) GetSourceFilterOk() (*interface{}, bool)`
 
 GetSourceFilterOk returns a tuple with the SourceFilter field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSourceFilter
 
-`func (o *PatchedRelationshipRequest) SetSourceFilter(v map[string]interface{})`
+`func (o *PatchedRelationshipRequest) SetSourceFilter(v interface{})`
 
 SetSourceFilter sets SourceFilter field to given value.
 
@@ -350,20 +350,20 @@ HasDestinationHidden returns a boolean if a field has been set.
 
 ### GetDestinationFilter
 
-`func (o *PatchedRelationshipRequest) GetDestinationFilter() map[string]interface{}`
+`func (o *PatchedRelationshipRequest) GetDestinationFilter() interface{}`
 
 GetDestinationFilter returns the DestinationFilter field if non-nil, zero value otherwise.
 
 ### GetDestinationFilterOk
 
-`func (o *PatchedRelationshipRequest) GetDestinationFilterOk() (*map[string]interface{}, bool)`
+`func (o *PatchedRelationshipRequest) GetDestinationFilterOk() (*interface{}, bool)`
 
 GetDestinationFilterOk returns a tuple with the DestinationFilter field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDestinationFilter
 
-`func (o *PatchedRelationshipRequest) SetDestinationFilter(v map[string]interface{})`
+`func (o *PatchedRelationshipRequest) SetDestinationFilter(v interface{})`
 
 SetDestinationFilter sets DestinationFilter field to given value.
 

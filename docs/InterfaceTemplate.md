@@ -15,7 +15,8 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** |  | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -24,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewInterfaceTemplate
 
-`func NewInterfaceTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, type_ InterfaceType, name string, deviceType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *InterfaceTemplate`
+`func NewInterfaceTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, type_ InterfaceType, name string, created NullableTime, lastUpdated NullableTime, ) *InterfaceTemplate`
 
 NewInterfaceTemplate instantiates a new InterfaceTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -276,24 +277,74 @@ HasMgmtOnly returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *InterfaceTemplate) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *InterfaceTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *InterfaceTemplate) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *InterfaceTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *InterfaceTemplate) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *InterfaceTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
 
 SetDeviceType sets DeviceType field to given value.
 
+### HasDeviceType
 
+`func (o *InterfaceTemplate) HasDeviceType() bool`
+
+HasDeviceType returns a boolean if a field has been set.
+
+### SetDeviceTypeNil
+
+`func (o *InterfaceTemplate) SetDeviceTypeNil(b bool)`
+
+ SetDeviceTypeNil sets the value for DeviceType to be an explicit nil
+
+### UnsetDeviceType
+`func (o *InterfaceTemplate) UnsetDeviceType()`
+
+UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
+### GetModuleType
+
+`func (o *InterfaceTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+
+GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
+
+### GetModuleTypeOk
+
+`func (o *InterfaceTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleType
+
+`func (o *InterfaceTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+
+SetModuleType sets ModuleType field to given value.
+
+### HasModuleType
+
+`func (o *InterfaceTemplate) HasModuleType() bool`
+
+HasModuleType returns a boolean if a field has been set.
+
+### SetModuleTypeNil
+
+`func (o *InterfaceTemplate) SetModuleTypeNil(b bool)`
+
+ SetModuleTypeNil sets the value for ModuleType to be an explicit nil
+
+### UnsetModuleType
+`func (o *InterfaceTemplate) UnsetModuleType()`
+
+UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCreated
 
 `func (o *InterfaceTemplate) GetCreated() time.Time`
