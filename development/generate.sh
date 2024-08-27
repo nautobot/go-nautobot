@@ -67,7 +67,6 @@ openapi-generator-cli generate --config /client/development/oapi-config.yaml \
     --input-spec /client/api/openapi.yaml \
     --output /client \
     --inline-schema-options RESOLVE_INLINE_ENUMS=true \
-    --skip-validate-spec \
     --http-user-agent go-nautobot/$(cat /client/api/nautobot_version)
 
 /client/development/scripts/add-missing-imports.sh
