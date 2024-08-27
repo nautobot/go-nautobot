@@ -16,7 +16,7 @@ jobs:
   test:
     runs-on: "ubuntu-20.04"
     env:
-      NAUTOBOT_VER: "2.2.5"
+      NAUTOBOT_VER: "2.3.1"
       PYTHON_VER: "3.11"
     steps:
       - name: "Get go-nautobot code"
