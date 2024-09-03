@@ -61,7 +61,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -129,7 +129,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -195,7 +195,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -263,7 +263,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -331,7 +331,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -399,7 +399,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -469,7 +469,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -585,7 +585,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -659,7 +659,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -733,7 +733,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -807,7 +807,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -873,7 +873,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -941,7 +941,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1009,7 +1009,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1077,7 +1077,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1147,7 +1147,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1325,7 +1325,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1399,7 +1399,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1473,7 +1473,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1547,7 +1547,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1613,7 +1613,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1681,7 +1681,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1749,7 +1749,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1817,7 +1817,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -1888,7 +1888,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2076,7 +2076,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2150,7 +2150,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2224,7 +2224,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2298,7 +2298,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2364,7 +2364,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2432,7 +2432,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2500,7 +2500,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2568,7 +2568,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2638,7 +2638,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2890,7 +2890,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -2964,7 +2964,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {
@@ -3038,7 +3038,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func main() {

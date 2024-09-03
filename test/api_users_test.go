@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/nautobot/go-nautobot"
+	openapiclient "github.com/TobiPeterG/go-nautobot"
 )
 
 func Test_nautobot_UsersAPIService(t *testing.T) {
