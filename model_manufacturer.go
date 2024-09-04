@@ -27,7 +27,7 @@ type Manufacturer struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	CloudAccountCount int32 `json:"cloud_account_count"`
+	CloudAccountCount *int32 `json:"cloud_account_count,omitempty"`
 	DeviceTypeCount int32 `json:"device_type_count"`
 	InventoryItemCount int32 `json:"inventory_item_count"`
 	PlatformCount int32 `json:"platform_count"`
@@ -46,14 +46,13 @@ type _Manufacturer Manufacturer
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, cloudAccountCount int32, deviceTypeCount int32, inventoryItemCount int32, platformCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Manufacturer {
+func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, deviceTypeCount int32, inventoryItemCount int32, platformCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Manufacturer {
 	this := Manufacturer{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.CloudAccountCount = cloudAccountCount
 	this.DeviceTypeCount = deviceTypeCount
 	this.InventoryItemCount = inventoryItemCount
 	this.PlatformCount = platformCount
@@ -192,28 +191,36 @@ func (o *Manufacturer) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetCloudAccountCount returns the CloudAccountCount field value
+// GetCloudAccountCount returns the CloudAccountCount field value if set, zero value otherwise.
 func (o *Manufacturer) GetCloudAccountCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.CloudAccountCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.CloudAccountCount
+	return *o.CloudAccountCount
 }
 
-// GetCloudAccountCountOk returns a tuple with the CloudAccountCount field value
+// GetCloudAccountCountOk returns a tuple with the CloudAccountCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Manufacturer) GetCloudAccountCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.CloudAccountCount) {
 		return nil, false
 	}
-	return &o.CloudAccountCount, true
+	return o.CloudAccountCount, true
 }
 
-// SetCloudAccountCount sets field value
+// HasCloudAccountCount returns a boolean if a field has been set.
+func (o *Manufacturer) HasCloudAccountCount() bool {
+	if o != nil && !IsNil(o.CloudAccountCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetCloudAccountCount gets a reference to the given int32 and assigns it to the CloudAccountCount field.
 func (o *Manufacturer) SetCloudAccountCount(v int32) {
-	o.CloudAccountCount = v
+	o.CloudAccountCount = &v
 }
 
 // GetDeviceTypeCount returns the DeviceTypeCount field value
@@ -467,7 +474,9 @@ func (o Manufacturer) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["cloud_account_count"] = o.CloudAccountCount
+	if !IsNil(o.CloudAccountCount) {
+		toSerialize["cloud_account_count"] = o.CloudAccountCount
+	}
 	toSerialize["device_type_count"] = o.DeviceTypeCount
 	toSerialize["inventory_item_count"] = o.InventoryItemCount
 	toSerialize["platform_count"] = o.PlatformCount
@@ -499,7 +508,6 @@ func (o *Manufacturer) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"cloud_account_count",
 		"device_type_count",
 		"inventory_item_count",
 		"platform_count",

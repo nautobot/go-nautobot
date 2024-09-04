@@ -11,6 +11,14 @@ with open(SPEC_PATH, 'r') as file:
 # Traverse schemas
 if 'components' in data and 'schemas' in data['components']:
     for name, schema in data['components']['schemas'].items():
+    
+        # Handle Manufacturer schema (https://github.com/nautobot/nautobot/issues/6183)
+        if name == 'Manufacturer' and 'required' in schema:
+            required_fields = schema['required']
+            if 'cloud_account_count' in required_fields:
+                print(f"Removing 'cloud_account_count' from {name}.required")
+                required_fields.remove('cloud_account_count')
+                
         # Handle failover_strategy
         if 'failover_strategy' in schema.get('properties', {}):
             prop = schema['properties']['failover_strategy']

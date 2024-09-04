@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**CloudAccountCount** | **int32** |  | [readonly] 
+**CloudAccountCount** | Pointer to **int32** |  | [optional] [readonly] 
 **DeviceTypeCount** | **int32** |  | [readonly] 
 **InventoryItemCount** | **int32** |  | [readonly] 
 **PlatformCount** | **int32** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewManufacturer
 
-`func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, cloudAccountCount int32, deviceTypeCount int32, inventoryItemCount int32, platformCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Manufacturer`
+`func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, deviceTypeCount int32, inventoryItemCount int32, platformCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Manufacturer`
 
 NewManufacturer instantiates a new Manufacturer object
 This constructor will assign default values to properties that have it defined,
@@ -158,6 +158,11 @@ and a boolean to check if the value has been set.
 
 SetCloudAccountCount sets CloudAccountCount field to given value.
 
+### HasCloudAccountCount
+
+`func (o *Manufacturer) HasCloudAccountCount() bool`
+
+HasCloudAccountCount returns a boolean if a field has been set.
 
 ### GetDeviceTypeCount
 
