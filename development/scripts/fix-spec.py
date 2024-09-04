@@ -18,6 +18,15 @@ if 'components' in data and 'schemas' in data['components']:
             if 'cloud_account_count' in required_fields:
                 print(f"Removing 'cloud_account_count' from {name}.required")
                 required_fields.remove('cloud_account_count')
+            if 'device_type_count' in required_fields:
+                print(f"Removing 'device_type_count' from {name}.required")
+                required_fields.remove('device_type_count')
+            if 'inventory_item_count' in required_fields:
+                print(f"Removing 'inventory_item_count' from {name}.required")
+                required_fields.remove('inventory_item_count')
+            if 'platform_count' in required_fields:
+                print(f"Removing 'platform_count' from {name}.required")
+                required_fields.remove('platform_count')
                 
         # Handle failover_strategy
         if 'failover_strategy' in schema.get('properties', {}):

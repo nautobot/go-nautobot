@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **CloudAccountCount** | Pointer to **int32** |  | [optional] [readonly] 
-**DeviceTypeCount** | **int32** |  | [readonly] 
-**InventoryItemCount** | **int32** |  | [readonly] 
-**PlatformCount** | **int32** |  | [readonly] 
+**DeviceTypeCount** | Pointer to **int32** |  | [optional] [readonly] 
+**InventoryItemCount** | Pointer to **int32** |  | [optional] [readonly] 
+**PlatformCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewManufacturer
 
-`func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, deviceTypeCount int32, inventoryItemCount int32, platformCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Manufacturer`
+`func NewManufacturer(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Manufacturer`
 
 NewManufacturer instantiates a new Manufacturer object
 This constructor will assign default values to properties that have it defined,
@@ -183,6 +183,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceTypeCount sets DeviceTypeCount field to given value.
 
+### HasDeviceTypeCount
+
+`func (o *Manufacturer) HasDeviceTypeCount() bool`
+
+HasDeviceTypeCount returns a boolean if a field has been set.
 
 ### GetInventoryItemCount
 
@@ -203,6 +208,11 @@ and a boolean to check if the value has been set.
 
 SetInventoryItemCount sets InventoryItemCount field to given value.
 
+### HasInventoryItemCount
+
+`func (o *Manufacturer) HasInventoryItemCount() bool`
+
+HasInventoryItemCount returns a boolean if a field has been set.
 
 ### GetPlatformCount
 
@@ -223,6 +233,11 @@ and a boolean to check if the value has been set.
 
 SetPlatformCount sets PlatformCount field to given value.
 
+### HasPlatformCount
+
+`func (o *Manufacturer) HasPlatformCount() bool`
+
+HasPlatformCount returns a boolean if a field has been set.
 
 ### GetName
 
