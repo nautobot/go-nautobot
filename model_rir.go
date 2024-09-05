@@ -27,7 +27,7 @@ type RIR struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	AssignedPrefixCount int32 `json:"assigned_prefix_count"`
+	AssignedPrefixCount *int32 `json:"assigned_prefix_count,omitempty"`
 	Name string `json:"name"`
 	// IP space managed by this RIR is considered private
 	IsPrivate *bool `json:"is_private,omitempty"`
@@ -45,14 +45,13 @@ type _RIR RIR
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewRIR(id string, objectType string, display string, url string, naturalSlug string, assignedPrefixCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *RIR {
+func NewRIR(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *RIR {
 	this := RIR{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.AssignedPrefixCount = assignedPrefixCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -188,28 +187,36 @@ func (o *RIR) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetAssignedPrefixCount returns the AssignedPrefixCount field value
+// GetAssignedPrefixCount returns the AssignedPrefixCount field value if set, zero value otherwise.
 func (o *RIR) GetAssignedPrefixCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.AssignedPrefixCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.AssignedPrefixCount
+	return *o.AssignedPrefixCount
 }
 
-// GetAssignedPrefixCountOk returns a tuple with the AssignedPrefixCount field value
+// GetAssignedPrefixCountOk returns a tuple with the AssignedPrefixCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *RIR) GetAssignedPrefixCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.AssignedPrefixCount) {
 		return nil, false
 	}
-	return &o.AssignedPrefixCount, true
+	return o.AssignedPrefixCount, true
 }
 
-// SetAssignedPrefixCount sets field value
+// HasAssignedPrefixCount returns a boolean if a field has been set.
+func (o *RIR) HasAssignedPrefixCount() bool {
+	if o != nil && !IsNil(o.AssignedPrefixCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetAssignedPrefixCount gets a reference to the given int32 and assigns it to the AssignedPrefixCount field.
 func (o *RIR) SetAssignedPrefixCount(v int32) {
-	o.AssignedPrefixCount = v
+	o.AssignedPrefixCount = &v
 }
 
 // GetName returns the Name field value
@@ -423,7 +430,9 @@ func (o RIR) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["assigned_prefix_count"] = o.AssignedPrefixCount
+	if !IsNil(o.AssignedPrefixCount) {
+		toSerialize["assigned_prefix_count"] = o.AssignedPrefixCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.IsPrivate) {
 		toSerialize["is_private"] = o.IsPrivate
@@ -455,7 +464,6 @@ func (o *RIR) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"assigned_prefix_count",
 		"name",
 		"created",
 		"last_updated",

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**PrefixCount** | **int32** |  | [readonly] 
+**PrefixCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Vid** | **int32** |  | 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 
 ### NewVLAN
 
-`func NewVLAN(id string, objectType string, display string, url string, naturalSlug string, prefixCount int32, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLAN`
+`func NewVLAN(id string, objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLAN`
 
 NewVLAN instantiates a new VLAN object
 This constructor will assign default values to properties that have it defined,
@@ -162,6 +162,11 @@ and a boolean to check if the value has been set.
 
 SetPrefixCount sets PrefixCount field to given value.
 
+### HasPrefixCount
+
+`func (o *VLAN) HasPrefixCount() bool`
+
+HasPrefixCount returns a boolean if a field has been set.
 
 ### GetVid
 

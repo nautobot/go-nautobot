@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **NetworkDriverMappings** | **interface{}** |  | [readonly] 
-**DeviceCount** | **int32** |  | [readonly] 
-**VirtualMachineCount** | **int32** |  | [readonly] 
+**DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
+**VirtualMachineCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **NetworkDriver** | Pointer to **string** | The normalized network driver to use when interacting with devices, e.g. cisco_ios, arista_eos, etc. Library-specific driver names will be derived from this setting as appropriate | [optional] 
 **NapalmDriver** | Pointer to **string** | The name of the NAPALM driver to use when Nautobot internals interact with devices | [optional] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewPlatform
 
-`func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, deviceCount int32, virtualMachineCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
+`func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
 
 NewPlatform instantiates a new Platform object
 This constructor will assign default values to properties that have it defined,
@@ -191,6 +191,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceCount sets DeviceCount field to given value.
 
+### HasDeviceCount
+
+`func (o *Platform) HasDeviceCount() bool`
+
+HasDeviceCount returns a boolean if a field has been set.
 
 ### GetVirtualMachineCount
 
@@ -211,6 +216,11 @@ and a boolean to check if the value has been set.
 
 SetVirtualMachineCount sets VirtualMachineCount field to given value.
 
+### HasVirtualMachineCount
+
+`func (o *Platform) HasVirtualMachineCount() bool`
+
+HasVirtualMachineCount returns a boolean if a field has been set.
 
 ### GetName
 

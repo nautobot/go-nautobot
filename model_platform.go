@@ -28,8 +28,8 @@ type Platform struct {
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
 	NetworkDriverMappings interface{} `json:"network_driver_mappings"`
-	DeviceCount int32 `json:"device_count"`
-	VirtualMachineCount int32 `json:"virtual_machine_count"`
+	DeviceCount *int32 `json:"device_count,omitempty"`
+	VirtualMachineCount *int32 `json:"virtual_machine_count,omitempty"`
 	Name string `json:"name"`
 	// The normalized network driver to use when interacting with devices, e.g. cisco_ios, arista_eos, etc. Library-specific driver names will be derived from this setting as appropriate
 	NetworkDriver *string `json:"network_driver,omitempty"`
@@ -52,7 +52,7 @@ type _Platform Platform
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, deviceCount int32, virtualMachineCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Platform {
+func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Platform {
 	this := Platform{}
 	this.Id = id
 	this.ObjectType = objectType
@@ -60,8 +60,6 @@ func NewPlatform(id string, objectType string, display string, url string, natur
 	this.Url = url
 	this.NaturalSlug = naturalSlug
 	this.NetworkDriverMappings = networkDriverMappings
-	this.DeviceCount = deviceCount
-	this.VirtualMachineCount = virtualMachineCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -223,52 +221,68 @@ func (o *Platform) SetNetworkDriverMappings(v interface{}) {
 	o.NetworkDriverMappings = v
 }
 
-// GetDeviceCount returns the DeviceCount field value
+// GetDeviceCount returns the DeviceCount field value if set, zero value otherwise.
 func (o *Platform) GetDeviceCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.DeviceCount
+	return *o.DeviceCount
 }
 
-// GetDeviceCountOk returns a tuple with the DeviceCount field value
+// GetDeviceCountOk returns a tuple with the DeviceCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Platform) GetDeviceCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		return nil, false
 	}
-	return &o.DeviceCount, true
+	return o.DeviceCount, true
 }
 
-// SetDeviceCount sets field value
+// HasDeviceCount returns a boolean if a field has been set.
+func (o *Platform) HasDeviceCount() bool {
+	if o != nil && !IsNil(o.DeviceCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetDeviceCount gets a reference to the given int32 and assigns it to the DeviceCount field.
 func (o *Platform) SetDeviceCount(v int32) {
-	o.DeviceCount = v
+	o.DeviceCount = &v
 }
 
-// GetVirtualMachineCount returns the VirtualMachineCount field value
+// GetVirtualMachineCount returns the VirtualMachineCount field value if set, zero value otherwise.
 func (o *Platform) GetVirtualMachineCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.VirtualMachineCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.VirtualMachineCount
+	return *o.VirtualMachineCount
 }
 
-// GetVirtualMachineCountOk returns a tuple with the VirtualMachineCount field value
+// GetVirtualMachineCountOk returns a tuple with the VirtualMachineCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Platform) GetVirtualMachineCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.VirtualMachineCount) {
 		return nil, false
 	}
-	return &o.VirtualMachineCount, true
+	return o.VirtualMachineCount, true
 }
 
-// SetVirtualMachineCount sets field value
+// HasVirtualMachineCount returns a boolean if a field has been set.
+func (o *Platform) HasVirtualMachineCount() bool {
+	if o != nil && !IsNil(o.VirtualMachineCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetVirtualMachineCount gets a reference to the given int32 and assigns it to the VirtualMachineCount field.
 func (o *Platform) SetVirtualMachineCount(v int32) {
-	o.VirtualMachineCount = v
+	o.VirtualMachineCount = &v
 }
 
 // GetName returns the Name field value
@@ -592,8 +606,12 @@ func (o Platform) ToMap() (map[string]interface{}, error) {
 	if o.NetworkDriverMappings != nil {
 		toSerialize["network_driver_mappings"] = o.NetworkDriverMappings
 	}
-	toSerialize["device_count"] = o.DeviceCount
-	toSerialize["virtual_machine_count"] = o.VirtualMachineCount
+	if !IsNil(o.DeviceCount) {
+		toSerialize["device_count"] = o.DeviceCount
+	}
+	if !IsNil(o.VirtualMachineCount) {
+		toSerialize["virtual_machine_count"] = o.VirtualMachineCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.NetworkDriver) {
 		toSerialize["network_driver"] = o.NetworkDriver
@@ -635,8 +653,6 @@ func (o *Platform) UnmarshalJSON(data []byte) (err error) {
 		"url",
 		"natural_slug",
 		"network_driver_mappings",
-		"device_count",
-		"virtual_machine_count",
 		"name",
 		"created",
 		"last_updated",

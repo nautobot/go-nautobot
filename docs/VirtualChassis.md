@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**MemberCount** | **int32** |  | [readonly] 
+**MemberCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Domain** | Pointer to **string** |  | [optional] 
 **Master** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewVirtualChassis
 
-`func NewVirtualChassis(id string, objectType string, display string, url string, naturalSlug string, memberCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VirtualChassis`
+`func NewVirtualChassis(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VirtualChassis`
 
 NewVirtualChassis instantiates a new VirtualChassis object
 This constructor will assign default values to properties that have it defined,
@@ -157,6 +157,11 @@ and a boolean to check if the value has been set.
 
 SetMemberCount sets MemberCount field to given value.
 
+### HasMemberCount
+
+`func (o *VirtualChassis) HasMemberCount() bool`
+
+HasMemberCount returns a boolean if a field has been set.
 
 ### GetName
 

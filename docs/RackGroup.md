@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **TreeDepth** | **NullableInt32** |  | [readonly] 
-**RackCount** | **int32** |  | [readonly] 
+**RackCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewRackGroup
 
-`func NewRackGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, rackCount int32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackGroup`
+`func NewRackGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackGroup`
 
 NewRackGroup instantiates a new RackGroup object
 This constructor will assign default values to properties that have it defined,
@@ -188,6 +188,11 @@ and a boolean to check if the value has been set.
 
 SetRackCount sets RackCount field to given value.
 
+### HasRackCount
+
+`func (o *RackGroup) HasRackCount() bool`
+
+HasRackCount returns a boolean if a field has been set.
 
 ### GetName
 

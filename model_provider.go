@@ -27,7 +27,7 @@ type Provider struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	CircuitCount int32 `json:"circuit_count"`
+	CircuitCount *int32 `json:"circuit_count,omitempty"`
 	Name string `json:"name"`
 	// 32-bit autonomous system number
 	Asn NullableInt64 `json:"asn,omitempty"`
@@ -50,14 +50,13 @@ type _Provider Provider
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewProvider(id string, objectType string, display string, url string, naturalSlug string, circuitCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Provider {
+func NewProvider(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *Provider {
 	this := Provider{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.CircuitCount = circuitCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -193,28 +192,36 @@ func (o *Provider) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetCircuitCount returns the CircuitCount field value
+// GetCircuitCount returns the CircuitCount field value if set, zero value otherwise.
 func (o *Provider) GetCircuitCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.CircuitCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.CircuitCount
+	return *o.CircuitCount
 }
 
-// GetCircuitCountOk returns a tuple with the CircuitCount field value
+// GetCircuitCountOk returns a tuple with the CircuitCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Provider) GetCircuitCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.CircuitCount) {
 		return nil, false
 	}
-	return &o.CircuitCount, true
+	return o.CircuitCount, true
 }
 
-// SetCircuitCount sets field value
+// HasCircuitCount returns a boolean if a field has been set.
+func (o *Provider) HasCircuitCount() bool {
+	if o != nil && !IsNil(o.CircuitCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetCircuitCount gets a reference to the given int32 and assigns it to the CircuitCount field.
 func (o *Provider) SetCircuitCount(v int32) {
-	o.CircuitCount = v
+	o.CircuitCount = &v
 }
 
 // GetName returns the Name field value
@@ -598,7 +605,9 @@ func (o Provider) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["circuit_count"] = o.CircuitCount
+	if !IsNil(o.CircuitCount) {
+		toSerialize["circuit_count"] = o.CircuitCount
+	}
 	toSerialize["name"] = o.Name
 	if o.Asn.IsSet() {
 		toSerialize["asn"] = o.Asn.Get()
@@ -645,7 +654,6 @@ func (o *Provider) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"circuit_count",
 		"name",
 		"created",
 		"last_updated",

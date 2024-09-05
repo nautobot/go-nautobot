@@ -28,7 +28,7 @@ type RackGroup struct {
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
 	TreeDepth NullableInt32 `json:"tree_depth"`
-	RackCount int32 `json:"rack_count"`
+	RackCount *int32 `json:"rack_count,omitempty"`
 	Name string `json:"name"`
 	Description *string `json:"description,omitempty"`
 	Parent NullableBulkWritableCircuitRequestTenant `json:"parent,omitempty"`
@@ -46,7 +46,7 @@ type _RackGroup RackGroup
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewRackGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, rackCount int32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *RackGroup {
+func NewRackGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *RackGroup {
 	this := RackGroup{}
 	this.Id = id
 	this.ObjectType = objectType
@@ -54,7 +54,6 @@ func NewRackGroup(id string, objectType string, display string, url string, natu
 	this.Url = url
 	this.NaturalSlug = naturalSlug
 	this.TreeDepth = treeDepth
-	this.RackCount = rackCount
 	this.Name = name
 	this.Location = location
 	this.Created = created
@@ -217,28 +216,36 @@ func (o *RackGroup) SetTreeDepth(v int32) {
 	o.TreeDepth.Set(&v)
 }
 
-// GetRackCount returns the RackCount field value
+// GetRackCount returns the RackCount field value if set, zero value otherwise.
 func (o *RackGroup) GetRackCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.RackCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.RackCount
+	return *o.RackCount
 }
 
-// GetRackCountOk returns a tuple with the RackCount field value
+// GetRackCountOk returns a tuple with the RackCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *RackGroup) GetRackCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.RackCount) {
 		return nil, false
 	}
-	return &o.RackCount, true
+	return o.RackCount, true
 }
 
-// SetRackCount sets field value
+// HasRackCount returns a boolean if a field has been set.
+func (o *RackGroup) HasRackCount() bool {
+	if o != nil && !IsNil(o.RackCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetRackCount gets a reference to the given int32 and assigns it to the RackCount field.
 func (o *RackGroup) SetRackCount(v int32) {
-	o.RackCount = v
+	o.RackCount = &v
 }
 
 // GetName returns the Name field value
@@ -487,7 +494,9 @@ func (o RackGroup) ToMap() (map[string]interface{}, error) {
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
 	toSerialize["tree_depth"] = o.TreeDepth.Get()
-	toSerialize["rack_count"] = o.RackCount
+	if !IsNil(o.RackCount) {
+		toSerialize["rack_count"] = o.RackCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -521,7 +530,6 @@ func (o *RackGroup) UnmarshalJSON(data []byte) (err error) {
 		"url",
 		"natural_slug",
 		"tree_depth",
-		"rack_count",
 		"name",
 		"location",
 		"created",

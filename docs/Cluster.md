@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**DeviceCount** | **int32** |  | [readonly] 
-**VirtualmachineCount** | **int32** |  | [readonly] 
+**DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
+**VirtualmachineCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Comments** | Pointer to **string** |  | [optional] 
 **ClusterType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewCluster
 
-`func NewCluster(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, virtualmachineCount int32, name string, clusterType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cluster`
+`func NewCluster(id string, objectType string, display string, url string, naturalSlug string, name string, clusterType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cluster`
 
 NewCluster instantiates a new Cluster object
 This constructor will assign default values to properties that have it defined,
@@ -161,6 +161,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceCount sets DeviceCount field to given value.
 
+### HasDeviceCount
+
+`func (o *Cluster) HasDeviceCount() bool`
+
+HasDeviceCount returns a boolean if a field has been set.
 
 ### GetVirtualmachineCount
 
@@ -181,6 +186,11 @@ and a boolean to check if the value has been set.
 
 SetVirtualmachineCount sets VirtualmachineCount field to given value.
 
+### HasVirtualmachineCount
+
+`func (o *Cluster) HasVirtualmachineCount() bool`
+
+HasVirtualmachineCount returns a boolean if a field has been set.
 
 ### GetName
 

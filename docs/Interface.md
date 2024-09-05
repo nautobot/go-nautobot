@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **Type** | [**InterfaceType**](InterfaceType.md) |  | 
 **Mode** | Pointer to [**InterfaceMode**](InterfaceMode.md) |  | [optional] 
 **MacAddress** | Pointer to **NullableString** |  | [optional] 
-**IpAddressCount** | **int32** |  | [readonly] 
+**IpAddressCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -46,7 +46,7 @@ Name | Type | Description | Notes
 
 ### NewInterface
 
-`func NewInterface(id string, objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, ipAddressCount int32, name string, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
+`func NewInterface(id string, objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, name string, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
 
 NewInterface instantiates a new Interface object
 This constructor will assign default values to properties that have it defined,
@@ -410,6 +410,11 @@ and a boolean to check if the value has been set.
 
 SetIpAddressCount sets IpAddressCount field to given value.
 
+### HasIpAddressCount
+
+`func (o *Interface) HasIpAddressCount() bool`
+
+HasIpAddressCount returns a boolean if a field has been set.
 
 ### GetName
 

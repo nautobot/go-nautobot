@@ -30,7 +30,7 @@ type DeviceType struct {
 	SubdeviceRole *DeviceTypeSubdeviceRole `json:"subdevice_role,omitempty"`
 	FrontImage NullableString `json:"front_image,omitempty"`
 	RearImage NullableString `json:"rear_image,omitempty"`
-	DeviceCount int32 `json:"device_count"`
+	DeviceCount *int32 `json:"device_count,omitempty"`
 	Model string `json:"model"`
 	// Discrete part number (optional)
 	PartNumber *string `json:"part_number,omitempty"`
@@ -55,14 +55,13 @@ type _DeviceType DeviceType
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewDeviceType(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string) *DeviceType {
+func NewDeviceType(id string, objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string) *DeviceType {
 	this := DeviceType{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.DeviceCount = deviceCount
 	this.Model = model
 	this.Manufacturer = manufacturer
 	this.SoftwareImageFiles = softwareImageFiles
@@ -316,28 +315,36 @@ func (o *DeviceType) UnsetRearImage() {
 	o.RearImage.Unset()
 }
 
-// GetDeviceCount returns the DeviceCount field value
+// GetDeviceCount returns the DeviceCount field value if set, zero value otherwise.
 func (o *DeviceType) GetDeviceCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.DeviceCount
+	return *o.DeviceCount
 }
 
-// GetDeviceCountOk returns a tuple with the DeviceCount field value
+// GetDeviceCountOk returns a tuple with the DeviceCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *DeviceType) GetDeviceCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		return nil, false
 	}
-	return &o.DeviceCount, true
+	return o.DeviceCount, true
 }
 
-// SetDeviceCount sets field value
+// HasDeviceCount returns a boolean if a field has been set.
+func (o *DeviceType) HasDeviceCount() bool {
+	if o != nil && !IsNil(o.DeviceCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetDeviceCount gets a reference to the given int32 and assigns it to the DeviceCount field.
 func (o *DeviceType) SetDeviceCount(v int32) {
-	o.DeviceCount = v
+	o.DeviceCount = &v
 }
 
 // GetModel returns the Model field value
@@ -746,7 +753,9 @@ func (o DeviceType) ToMap() (map[string]interface{}, error) {
 	if o.RearImage.IsSet() {
 		toSerialize["rear_image"] = o.RearImage.Get()
 	}
-	toSerialize["device_count"] = o.DeviceCount
+	if !IsNil(o.DeviceCount) {
+		toSerialize["device_count"] = o.DeviceCount
+	}
 	toSerialize["model"] = o.Model
 	if !IsNil(o.PartNumber) {
 		toSerialize["part_number"] = o.PartNumber
@@ -792,7 +801,6 @@ func (o *DeviceType) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"device_count",
 		"model",
 		"manufacturer",
 		"software_image_files",

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**AssignedPrefixCount** | **int32** |  | [readonly] 
+**AssignedPrefixCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **IsPrivate** | Pointer to **bool** | IP space managed by this RIR is considered private | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 
 ### NewRIR
 
-`func NewRIR(id string, objectType string, display string, url string, naturalSlug string, assignedPrefixCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RIR`
+`func NewRIR(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RIR`
 
 NewRIR instantiates a new RIR object
 This constructor will assign default values to properties that have it defined,
@@ -156,6 +156,11 @@ and a boolean to check if the value has been set.
 
 SetAssignedPrefixCount sets AssignedPrefixCount field to given value.
 
+### HasAssignedPrefixCount
+
+`func (o *RIR) HasAssignedPrefixCount() bool`
+
+HasAssignedPrefixCount returns a boolean if a field has been set.
 
 ### GetName
 

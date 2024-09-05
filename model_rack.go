@@ -30,8 +30,8 @@ type Rack struct {
 	Type *RackType `json:"type,omitempty"`
 	Width *RackWidth `json:"width,omitempty"`
 	OuterUnit *RackOuterUnit `json:"outer_unit,omitempty"`
-	DeviceCount int32 `json:"device_count"`
-	PowerFeedCount int32 `json:"power_feed_count"`
+	DeviceCount *int32 `json:"device_count,omitempty"`
+	PowerFeedCount *int32 `json:"power_feed_count,omitempty"`
 	Name string `json:"name"`
 	// Locally-assigned identifier
 	FacilityId NullableString `json:"facility_id,omitempty"`
@@ -66,15 +66,13 @@ type _Rack Rack
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewRack(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, powerFeedCount int32, name string, status BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *Rack {
+func NewRack(id string, objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *Rack {
 	this := Rack{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.DeviceCount = deviceCount
-	this.PowerFeedCount = powerFeedCount
 	this.Name = name
 	this.Status = status
 	this.Location = location
@@ -308,52 +306,68 @@ func (o *Rack) SetOuterUnit(v RackOuterUnit) {
 	o.OuterUnit = &v
 }
 
-// GetDeviceCount returns the DeviceCount field value
+// GetDeviceCount returns the DeviceCount field value if set, zero value otherwise.
 func (o *Rack) GetDeviceCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.DeviceCount
+	return *o.DeviceCount
 }
 
-// GetDeviceCountOk returns a tuple with the DeviceCount field value
+// GetDeviceCountOk returns a tuple with the DeviceCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Rack) GetDeviceCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		return nil, false
 	}
-	return &o.DeviceCount, true
+	return o.DeviceCount, true
 }
 
-// SetDeviceCount sets field value
+// HasDeviceCount returns a boolean if a field has been set.
+func (o *Rack) HasDeviceCount() bool {
+	if o != nil && !IsNil(o.DeviceCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetDeviceCount gets a reference to the given int32 and assigns it to the DeviceCount field.
 func (o *Rack) SetDeviceCount(v int32) {
-	o.DeviceCount = v
+	o.DeviceCount = &v
 }
 
-// GetPowerFeedCount returns the PowerFeedCount field value
+// GetPowerFeedCount returns the PowerFeedCount field value if set, zero value otherwise.
 func (o *Rack) GetPowerFeedCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.PowerFeedCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.PowerFeedCount
+	return *o.PowerFeedCount
 }
 
-// GetPowerFeedCountOk returns a tuple with the PowerFeedCount field value
+// GetPowerFeedCountOk returns a tuple with the PowerFeedCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Rack) GetPowerFeedCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.PowerFeedCount) {
 		return nil, false
 	}
-	return &o.PowerFeedCount, true
+	return o.PowerFeedCount, true
 }
 
-// SetPowerFeedCount sets field value
+// HasPowerFeedCount returns a boolean if a field has been set.
+func (o *Rack) HasPowerFeedCount() bool {
+	if o != nil && !IsNil(o.PowerFeedCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetPowerFeedCount gets a reference to the given int32 and assigns it to the PowerFeedCount field.
 func (o *Rack) SetPowerFeedCount(v int32) {
-	o.PowerFeedCount = v
+	o.PowerFeedCount = &v
 }
 
 // GetName returns the Name field value
@@ -1014,8 +1028,12 @@ func (o Rack) ToMap() (map[string]interface{}, error) {
 	if !IsNil(o.OuterUnit) {
 		toSerialize["outer_unit"] = o.OuterUnit
 	}
-	toSerialize["device_count"] = o.DeviceCount
-	toSerialize["power_feed_count"] = o.PowerFeedCount
+	if !IsNil(o.DeviceCount) {
+		toSerialize["device_count"] = o.DeviceCount
+	}
+	if !IsNil(o.PowerFeedCount) {
+		toSerialize["power_feed_count"] = o.PowerFeedCount
+	}
 	toSerialize["name"] = o.Name
 	if o.FacilityId.IsSet() {
 		toSerialize["facility_id"] = o.FacilityId.Get()
@@ -1079,8 +1097,6 @@ func (o *Rack) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"device_count",
-		"power_feed_count",
 		"name",
 		"status",
 		"location",

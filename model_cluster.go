@@ -27,8 +27,8 @@ type Cluster struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	DeviceCount int32 `json:"device_count"`
-	VirtualmachineCount int32 `json:"virtualmachine_count"`
+	DeviceCount *int32 `json:"device_count,omitempty"`
+	VirtualmachineCount *int32 `json:"virtualmachine_count,omitempty"`
 	Name string `json:"name"`
 	Comments *string `json:"comments,omitempty"`
 	ClusterType BulkWritableCableRequestStatus `json:"cluster_type"`
@@ -49,15 +49,13 @@ type _Cluster Cluster
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewCluster(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, virtualmachineCount int32, name string, clusterType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *Cluster {
+func NewCluster(id string, objectType string, display string, url string, naturalSlug string, name string, clusterType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *Cluster {
 	this := Cluster{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.DeviceCount = deviceCount
-	this.VirtualmachineCount = virtualmachineCount
 	this.Name = name
 	this.ClusterType = clusterType
 	this.Created = created
@@ -194,52 +192,68 @@ func (o *Cluster) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetDeviceCount returns the DeviceCount field value
+// GetDeviceCount returns the DeviceCount field value if set, zero value otherwise.
 func (o *Cluster) GetDeviceCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.DeviceCount
+	return *o.DeviceCount
 }
 
-// GetDeviceCountOk returns a tuple with the DeviceCount field value
+// GetDeviceCountOk returns a tuple with the DeviceCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Cluster) GetDeviceCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceCount) {
 		return nil, false
 	}
-	return &o.DeviceCount, true
+	return o.DeviceCount, true
 }
 
-// SetDeviceCount sets field value
+// HasDeviceCount returns a boolean if a field has been set.
+func (o *Cluster) HasDeviceCount() bool {
+	if o != nil && !IsNil(o.DeviceCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetDeviceCount gets a reference to the given int32 and assigns it to the DeviceCount field.
 func (o *Cluster) SetDeviceCount(v int32) {
-	o.DeviceCount = v
+	o.DeviceCount = &v
 }
 
-// GetVirtualmachineCount returns the VirtualmachineCount field value
+// GetVirtualmachineCount returns the VirtualmachineCount field value if set, zero value otherwise.
 func (o *Cluster) GetVirtualmachineCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.VirtualmachineCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.VirtualmachineCount
+	return *o.VirtualmachineCount
 }
 
-// GetVirtualmachineCountOk returns a tuple with the VirtualmachineCount field value
+// GetVirtualmachineCountOk returns a tuple with the VirtualmachineCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Cluster) GetVirtualmachineCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.VirtualmachineCount) {
 		return nil, false
 	}
-	return &o.VirtualmachineCount, true
+	return o.VirtualmachineCount, true
 }
 
-// SetVirtualmachineCount sets field value
+// HasVirtualmachineCount returns a boolean if a field has been set.
+func (o *Cluster) HasVirtualmachineCount() bool {
+	if o != nil && !IsNil(o.VirtualmachineCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetVirtualmachineCount gets a reference to the given int32 and assigns it to the VirtualmachineCount field.
 func (o *Cluster) SetVirtualmachineCount(v int32) {
-	o.VirtualmachineCount = v
+	o.VirtualmachineCount = &v
 }
 
 // GetName returns the Name field value
@@ -603,8 +617,12 @@ func (o Cluster) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["device_count"] = o.DeviceCount
-	toSerialize["virtualmachine_count"] = o.VirtualmachineCount
+	if !IsNil(o.DeviceCount) {
+		toSerialize["device_count"] = o.DeviceCount
+	}
+	if !IsNil(o.VirtualmachineCount) {
+		toSerialize["virtualmachine_count"] = o.VirtualmachineCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Comments) {
 		toSerialize["comments"] = o.Comments
@@ -646,8 +664,6 @@ func (o *Cluster) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"device_count",
-		"virtualmachine_count",
 		"name",
 		"cluster_type",
 		"created",

@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **Type** | Pointer to [**RackType**](RackType.md) |  | [optional] 
 **Width** | Pointer to [**RackWidth**](RackWidth.md) |  | [optional] 
 **OuterUnit** | Pointer to [**RackOuterUnit**](RackOuterUnit.md) |  | [optional] 
-**DeviceCount** | **int32** |  | [readonly] 
-**PowerFeedCount** | **int32** |  | [readonly] 
+**DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
+**PowerFeedCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **FacilityId** | Pointer to **NullableString** | Locally-assigned identifier | [optional] 
 **Serial** | Pointer to **string** |  | [optional] 
@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 
 ### NewRack
 
-`func NewRack(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, powerFeedCount int32, name string, status BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Rack`
+`func NewRack(id string, objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Rack`
 
 NewRack instantiates a new Rack object
 This constructor will assign default values to properties that have it defined,
@@ -247,6 +247,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceCount sets DeviceCount field to given value.
 
+### HasDeviceCount
+
+`func (o *Rack) HasDeviceCount() bool`
+
+HasDeviceCount returns a boolean if a field has been set.
 
 ### GetPowerFeedCount
 
@@ -267,6 +272,11 @@ and a boolean to check if the value has been set.
 
 SetPowerFeedCount sets PowerFeedCount field to given value.
 
+### HasPowerFeedCount
+
+`func (o *Rack) HasPowerFeedCount() bool`
+
+HasPowerFeedCount returns a boolean if a field has been set.
 
 ### GetName
 

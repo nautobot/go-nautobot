@@ -27,7 +27,7 @@ type ClusterGroup struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	ClusterCount int32 `json:"cluster_count"`
+	ClusterCount *int32 `json:"cluster_count,omitempty"`
 	Name string `json:"name"`
 	Description *string `json:"description,omitempty"`
 	Created NullableTime `json:"created"`
@@ -43,14 +43,13 @@ type _ClusterGroup ClusterGroup
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewClusterGroup(id string, objectType string, display string, url string, naturalSlug string, clusterCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *ClusterGroup {
+func NewClusterGroup(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *ClusterGroup {
 	this := ClusterGroup{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.ClusterCount = clusterCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -186,28 +185,36 @@ func (o *ClusterGroup) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetClusterCount returns the ClusterCount field value
+// GetClusterCount returns the ClusterCount field value if set, zero value otherwise.
 func (o *ClusterGroup) GetClusterCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.ClusterCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.ClusterCount
+	return *o.ClusterCount
 }
 
-// GetClusterCountOk returns a tuple with the ClusterCount field value
+// GetClusterCountOk returns a tuple with the ClusterCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *ClusterGroup) GetClusterCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.ClusterCount) {
 		return nil, false
 	}
-	return &o.ClusterCount, true
+	return o.ClusterCount, true
 }
 
-// SetClusterCount sets field value
+// HasClusterCount returns a boolean if a field has been set.
+func (o *ClusterGroup) HasClusterCount() bool {
+	if o != nil && !IsNil(o.ClusterCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetClusterCount gets a reference to the given int32 and assigns it to the ClusterCount field.
 func (o *ClusterGroup) SetClusterCount(v int32) {
-	o.ClusterCount = v
+	o.ClusterCount = &v
 }
 
 // GetName returns the Name field value
@@ -389,7 +396,9 @@ func (o ClusterGroup) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["cluster_count"] = o.ClusterCount
+	if !IsNil(o.ClusterCount) {
+		toSerialize["cluster_count"] = o.ClusterCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -418,7 +427,6 @@ func (o *ClusterGroup) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"cluster_count",
 		"name",
 		"created",
 		"last_updated",

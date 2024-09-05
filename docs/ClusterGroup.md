@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**ClusterCount** | **int32** |  | [readonly] 
+**ClusterCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 
 ### NewClusterGroup
 
-`func NewClusterGroup(id string, objectType string, display string, url string, naturalSlug string, clusterCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ClusterGroup`
+`func NewClusterGroup(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ClusterGroup`
 
 NewClusterGroup instantiates a new ClusterGroup object
 This constructor will assign default values to properties that have it defined,
@@ -155,6 +155,11 @@ and a boolean to check if the value has been set.
 
 SetClusterCount sets ClusterCount field to given value.
 
+### HasClusterCount
+
+`func (o *ClusterGroup) HasClusterCount() bool`
+
+HasClusterCount returns a boolean if a field has been set.
 
 ### GetName
 

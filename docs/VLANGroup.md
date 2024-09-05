@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**VlanCount** | **int32** |  | [readonly] 
+**VlanCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 
 ### NewVLANGroup
 
-`func NewVLANGroup(id string, objectType string, display string, url string, naturalSlug string, vlanCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLANGroup`
+`func NewVLANGroup(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLANGroup`
 
 NewVLANGroup instantiates a new VLANGroup object
 This constructor will assign default values to properties that have it defined,
@@ -156,6 +156,11 @@ and a boolean to check if the value has been set.
 
 SetVlanCount sets VlanCount field to given value.
 
+### HasVlanCount
+
+`func (o *VLANGroup) HasVlanCount() bool`
+
+HasVlanCount returns a boolean if a field has been set.
 
 ### GetName
 

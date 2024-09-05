@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**CircuitCount** | **int32** |  | [readonly] 
+**CircuitCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 
 ### NewCircuitType
 
-`func NewCircuitType(id string, objectType string, display string, url string, naturalSlug string, circuitCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CircuitType`
+`func NewCircuitType(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CircuitType`
 
 NewCircuitType instantiates a new CircuitType object
 This constructor will assign default values to properties that have it defined,
@@ -155,6 +155,11 @@ and a boolean to check if the value has been set.
 
 SetCircuitCount sets CircuitCount field to given value.
 
+### HasCircuitCount
+
+`func (o *CircuitType) HasCircuitCount() bool`
+
+HasCircuitCount returns a boolean if a field has been set.
 
 ### GetName
 

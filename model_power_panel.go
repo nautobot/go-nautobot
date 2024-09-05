@@ -27,7 +27,7 @@ type PowerPanel struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	PowerFeedCount int32 `json:"power_feed_count"`
+	PowerFeedCount *int32 `json:"power_feed_count,omitempty"`
 	Name string `json:"name"`
 	Location BulkWritableCableRequestStatus `json:"location"`
 	RackGroup NullableBulkWritableCircuitRequestTenant `json:"rack_group,omitempty"`
@@ -45,14 +45,13 @@ type _PowerPanel PowerPanel
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewPowerPanel(id string, objectType string, display string, url string, naturalSlug string, powerFeedCount int32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *PowerPanel {
+func NewPowerPanel(id string, objectType string, display string, url string, naturalSlug string, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *PowerPanel {
 	this := PowerPanel{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.PowerFeedCount = powerFeedCount
 	this.Name = name
 	this.Location = location
 	this.Created = created
@@ -189,28 +188,36 @@ func (o *PowerPanel) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetPowerFeedCount returns the PowerFeedCount field value
+// GetPowerFeedCount returns the PowerFeedCount field value if set, zero value otherwise.
 func (o *PowerPanel) GetPowerFeedCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.PowerFeedCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.PowerFeedCount
+	return *o.PowerFeedCount
 }
 
-// GetPowerFeedCountOk returns a tuple with the PowerFeedCount field value
+// GetPowerFeedCountOk returns a tuple with the PowerFeedCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *PowerPanel) GetPowerFeedCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.PowerFeedCount) {
 		return nil, false
 	}
-	return &o.PowerFeedCount, true
+	return o.PowerFeedCount, true
 }
 
-// SetPowerFeedCount sets field value
+// HasPowerFeedCount returns a boolean if a field has been set.
+func (o *PowerPanel) HasPowerFeedCount() bool {
+	if o != nil && !IsNil(o.PowerFeedCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetPowerFeedCount gets a reference to the given int32 and assigns it to the PowerFeedCount field.
 func (o *PowerPanel) SetPowerFeedCount(v int32) {
-	o.PowerFeedCount = v
+	o.PowerFeedCount = &v
 }
 
 // GetName returns the Name field value
@@ -458,7 +465,9 @@ func (o PowerPanel) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["power_feed_count"] = o.PowerFeedCount
+	if !IsNil(o.PowerFeedCount) {
+		toSerialize["power_feed_count"] = o.PowerFeedCount
+	}
 	toSerialize["name"] = o.Name
 	toSerialize["location"] = o.Location
 	if o.RackGroup.IsSet() {
@@ -491,7 +500,6 @@ func (o *PowerPanel) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"power_feed_count",
 		"name",
 		"location",
 		"created",

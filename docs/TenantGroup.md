@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **TreeDepth** | **NullableInt32** |  | [readonly] 
-**TenantCount** | **int32** |  | [readonly] 
+**TenantCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewTenantGroup
 
-`func NewTenantGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, tenantCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *TenantGroup`
+`func NewTenantGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *TenantGroup`
 
 NewTenantGroup instantiates a new TenantGroup object
 This constructor will assign default values to properties that have it defined,
@@ -187,6 +187,11 @@ and a boolean to check if the value has been set.
 
 SetTenantCount sets TenantCount field to given value.
 
+### HasTenantCount
+
+`func (o *TenantGroup) HasTenantCount() bool`
+
+HasTenantCount returns a boolean if a field has been set.
 
 ### GetName
 

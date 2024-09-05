@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **SubdeviceRole** | Pointer to [**DeviceTypeSubdeviceRole**](DeviceTypeSubdeviceRole.md) |  | [optional] 
 **FrontImage** | Pointer to **NullableString** |  | [optional] 
 **RearImage** | Pointer to **NullableString** |  | [optional] 
-**DeviceCount** | **int32** |  | [readonly] 
+**DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Model** | **string** |  | 
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **UHeight** | Pointer to **int32** |  | [optional] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewDeviceType
 
-`func NewDeviceType(id string, objectType string, display string, url string, naturalSlug string, deviceCount int32, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
+`func NewDeviceType(id string, objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
 
 NewDeviceType instantiates a new DeviceType object
 This constructor will assign default values to properties that have it defined,
@@ -260,6 +260,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceCount sets DeviceCount field to given value.
 
+### HasDeviceCount
+
+`func (o *DeviceType) HasDeviceCount() bool`
+
+HasDeviceCount returns a boolean if a field has been set.
 
 ### GetModel
 

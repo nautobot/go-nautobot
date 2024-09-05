@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **StartTime** | **time.Time** | Datetime when the schedule should begin triggering the task to run | 
 **Enabled** | Pointer to **bool** | Set to False to disable the schedule | [optional] 
 **LastRunAt** | **NullableTime** | Datetime that the schedule last triggered the task to run. Reset to None if enabled is set to False. | [readonly] 
-**TotalRunCount** | **int32** | Running count of how many times the schedule has triggered the task | [readonly] 
+**TotalRunCount** | Pointer to **int32** | Running count of how many times the schedule has triggered the task | [optional] [readonly] 
 **DateChanged** | **time.Time** | Datetime that this scheduled job was last modified | [readonly] 
 **Description** | Pointer to **string** | Detailed description about the details of this scheduled job | [optional] 
 **ApprovalRequired** | Pointer to **bool** |  | [optional] 
@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 
 ### NewScheduledJob
 
-`func NewScheduledJob(id string, objectType string, display string, url string, naturalSlug string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, totalRunCount int32, dateChanged time.Time, approvedAt NullableTime, ) *ScheduledJob`
+`func NewScheduledJob(id string, objectType string, display string, url string, naturalSlug string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, approvedAt NullableTime, ) *ScheduledJob`
 
 NewScheduledJob instantiates a new ScheduledJob object
 This constructor will assign default values to properties that have it defined,
@@ -458,6 +458,11 @@ and a boolean to check if the value has been set.
 
 SetTotalRunCount sets TotalRunCount field to given value.
 
+### HasTotalRunCount
+
+`func (o *ScheduledJob) HasTotalRunCount() bool`
+
+HasTotalRunCount returns a boolean if a field has been set.
 
 ### GetDateChanged
 

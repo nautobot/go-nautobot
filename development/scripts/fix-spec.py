@@ -12,21 +12,17 @@ with open(SPEC_PATH, 'r') as file:
 if 'components' in data and 'schemas' in data['components']:
     for name, schema in data['components']['schemas'].items():
     
-        # Handle Manufacturer schema (https://github.com/nautobot/nautobot/issues/6183)
-        if name == 'Manufacturer' and 'required' in schema:
+        # Check if the schema has 'required' fields
+        if 'required' in schema:
             required_fields = schema['required']
-            if 'cloud_account_count' in required_fields:
-                print(f"Removing 'cloud_account_count' from {name}.required")
-                required_fields.remove('cloud_account_count')
-            if 'device_type_count' in required_fields:
-                print(f"Removing 'device_type_count' from {name}.required")
-                required_fields.remove('device_type_count')
-            if 'inventory_item_count' in required_fields:
-                print(f"Removing 'inventory_item_count' from {name}.required")
-                required_fields.remove('inventory_item_count')
-            if 'platform_count' in required_fields:
-                print(f"Removing 'platform_count' from {name}.required")
-                required_fields.remove('platform_count')
+            
+            # Find and remove all fields that end with '_count' (https://github.com/nautobot/nautobot/issues/6183)
+            fields_to_remove = [field for field in required_fields if field.endswith('_count')]
+            
+            if fields_to_remove:
+                print(f"Removing {fields_to_remove} from {name}.required")
+                for field in fields_to_remove:
+                    required_fields.remove(field)
                 
         # Handle failover_strategy
         if 'failover_strategy' in schema.get('properties', {}):

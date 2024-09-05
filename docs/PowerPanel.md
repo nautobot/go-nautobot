@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**PowerFeedCount** | **int32** |  | [readonly] 
+**PowerFeedCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **RackGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewPowerPanel
 
-`func NewPowerPanel(id string, objectType string, display string, url string, naturalSlug string, powerFeedCount int32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerPanel`
+`func NewPowerPanel(id string, objectType string, display string, url string, naturalSlug string, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerPanel`
 
 NewPowerPanel instantiates a new PowerPanel object
 This constructor will assign default values to properties that have it defined,
@@ -157,6 +157,11 @@ and a boolean to check if the value has been set.
 
 SetPowerFeedCount sets PowerFeedCount field to given value.
 
+### HasPowerFeedCount
+
+`func (o *PowerPanel) HasPowerFeedCount() bool`
+
+HasPowerFeedCount returns a boolean if a field has been set.
 
 ### GetName
 

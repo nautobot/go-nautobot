@@ -35,7 +35,7 @@ type Interface struct {
 	Type InterfaceType `json:"type"`
 	Mode *InterfaceMode `json:"mode,omitempty"`
 	MacAddress NullableString `json:"mac_address,omitempty"`
-	IpAddressCount int32 `json:"ip_address_count"`
+	IpAddressCount *int32 `json:"ip_address_count,omitempty"`
 	Name string `json:"name"`
 	// Physical label
 	Label *string `json:"label,omitempty"`
@@ -70,7 +70,7 @@ type _Interface Interface
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewInterface(id string, objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, ipAddressCount int32, name string, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string) *Interface {
+func NewInterface(id string, objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, name string, cable NullableCircuitCircuitTerminationA, status BulkWritableCableRequestStatus, ipAddresses []IPAddresses, created NullableTime, lastUpdated NullableTime, notesUrl string) *Interface {
 	this := Interface{}
 	this.Id = id
 	this.ObjectType = objectType
@@ -83,7 +83,6 @@ func NewInterface(id string, objectType string, display string, url string, cabl
 	this.ConnectedEndpoint = connectedEndpoint
 	this.ConnectedEndpointReachable = connectedEndpointReachable
 	this.Type = type_
-	this.IpAddressCount = ipAddressCount
 	this.Name = name
 	this.Cable = cable
 	this.Status = status
@@ -450,28 +449,36 @@ func (o *Interface) UnsetMacAddress() {
 	o.MacAddress.Unset()
 }
 
-// GetIpAddressCount returns the IpAddressCount field value
+// GetIpAddressCount returns the IpAddressCount field value if set, zero value otherwise.
 func (o *Interface) GetIpAddressCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.IpAddressCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.IpAddressCount
+	return *o.IpAddressCount
 }
 
-// GetIpAddressCountOk returns a tuple with the IpAddressCount field value
+// GetIpAddressCountOk returns a tuple with the IpAddressCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *Interface) GetIpAddressCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.IpAddressCount) {
 		return nil, false
 	}
-	return &o.IpAddressCount, true
+	return o.IpAddressCount, true
 }
 
-// SetIpAddressCount sets field value
+// HasIpAddressCount returns a boolean if a field has been set.
+func (o *Interface) HasIpAddressCount() bool {
+	if o != nil && !IsNil(o.IpAddressCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetIpAddressCount gets a reference to the given int32 and assigns it to the IpAddressCount field.
 func (o *Interface) SetIpAddressCount(v int32) {
-	o.IpAddressCount = v
+	o.IpAddressCount = &v
 }
 
 // GetName returns the Name field value
@@ -1277,7 +1284,9 @@ func (o Interface) ToMap() (map[string]interface{}, error) {
 	if o.MacAddress.IsSet() {
 		toSerialize["mac_address"] = o.MacAddress.Get()
 	}
-	toSerialize["ip_address_count"] = o.IpAddressCount
+	if !IsNil(o.IpAddressCount) {
+		toSerialize["ip_address_count"] = o.IpAddressCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Label) {
 		toSerialize["label"] = o.Label
@@ -1357,7 +1366,6 @@ func (o *Interface) UnmarshalJSON(data []byte) (err error) {
 		"connected_endpoint",
 		"connected_endpoint_reachable",
 		"type",
-		"ip_address_count",
 		"name",
 		"cable",
 		"status",

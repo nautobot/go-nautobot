@@ -11,12 +11,12 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **TreeDepth** | **NullableInt32** |  | [readonly] 
 **TimeZone** | Pointer to **NullableString** |  | [optional] 
-**CircuitCount** | **int32** |  | [readonly] 
-**DeviceCount** | **int32** |  | [readonly] 
-**PrefixCount** | **int32** |  | [readonly] 
-**RackCount** | **int32** |  | [readonly] 
-**VirtualMachineCount** | **int32** |  | [readonly] 
-**VlanCount** | **int32** |  | [readonly] 
+**CircuitCount** | Pointer to **int32** |  | [optional] [readonly] 
+**DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
+**PrefixCount** | Pointer to **int32** |  | [optional] [readonly] 
+**RackCount** | Pointer to **int32** |  | [optional] [readonly] 
+**VirtualMachineCount** | Pointer to **int32** |  | [optional] [readonly] 
+**VlanCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Facility** | Pointer to **string** | Local facility ID or description | [optional] 
@@ -43,7 +43,7 @@ Name | Type | Description | Notes
 
 ### NewLocation
 
-`func NewLocation(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, circuitCount int32, deviceCount int32, prefixCount int32, rackCount int32, virtualMachineCount int32, vlanCount int32, name string, locationType BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Location`
+`func NewLocation(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, locationType BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Location`
 
 NewLocation instantiates a new Location object
 This constructor will assign default values to properties that have it defined,
@@ -242,6 +242,11 @@ and a boolean to check if the value has been set.
 
 SetCircuitCount sets CircuitCount field to given value.
 
+### HasCircuitCount
+
+`func (o *Location) HasCircuitCount() bool`
+
+HasCircuitCount returns a boolean if a field has been set.
 
 ### GetDeviceCount
 
@@ -262,6 +267,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceCount sets DeviceCount field to given value.
 
+### HasDeviceCount
+
+`func (o *Location) HasDeviceCount() bool`
+
+HasDeviceCount returns a boolean if a field has been set.
 
 ### GetPrefixCount
 
@@ -282,6 +292,11 @@ and a boolean to check if the value has been set.
 
 SetPrefixCount sets PrefixCount field to given value.
 
+### HasPrefixCount
+
+`func (o *Location) HasPrefixCount() bool`
+
+HasPrefixCount returns a boolean if a field has been set.
 
 ### GetRackCount
 
@@ -302,6 +317,11 @@ and a boolean to check if the value has been set.
 
 SetRackCount sets RackCount field to given value.
 
+### HasRackCount
+
+`func (o *Location) HasRackCount() bool`
+
+HasRackCount returns a boolean if a field has been set.
 
 ### GetVirtualMachineCount
 
@@ -322,6 +342,11 @@ and a boolean to check if the value has been set.
 
 SetVirtualMachineCount sets VirtualMachineCount field to given value.
 
+### HasVirtualMachineCount
+
+`func (o *Location) HasVirtualMachineCount() bool`
+
+HasVirtualMachineCount returns a boolean if a field has been set.
 
 ### GetVlanCount
 
@@ -342,6 +367,11 @@ and a boolean to check if the value has been set.
 
 SetVlanCount sets VlanCount field to given value.
 
+### HasVlanCount
+
+`func (o *Location) HasVlanCount() bool`
+
+HasVlanCount returns a boolean if a field has been set.
 
 ### GetName
 

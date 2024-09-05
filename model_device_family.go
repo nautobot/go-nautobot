@@ -27,7 +27,7 @@ type DeviceFamily struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	DeviceTypeCount int32 `json:"device_type_count"`
+	DeviceTypeCount *int32 `json:"device_type_count,omitempty"`
 	Name string `json:"name"`
 	Description *string `json:"description,omitempty"`
 	Created NullableTime `json:"created"`
@@ -43,14 +43,13 @@ type _DeviceFamily DeviceFamily
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewDeviceFamily(id string, objectType string, display string, url string, naturalSlug string, deviceTypeCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *DeviceFamily {
+func NewDeviceFamily(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *DeviceFamily {
 	this := DeviceFamily{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.DeviceTypeCount = deviceTypeCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -186,28 +185,36 @@ func (o *DeviceFamily) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetDeviceTypeCount returns the DeviceTypeCount field value
+// GetDeviceTypeCount returns the DeviceTypeCount field value if set, zero value otherwise.
 func (o *DeviceFamily) GetDeviceTypeCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceTypeCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.DeviceTypeCount
+	return *o.DeviceTypeCount
 }
 
-// GetDeviceTypeCountOk returns a tuple with the DeviceTypeCount field value
+// GetDeviceTypeCountOk returns a tuple with the DeviceTypeCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *DeviceFamily) GetDeviceTypeCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.DeviceTypeCount) {
 		return nil, false
 	}
-	return &o.DeviceTypeCount, true
+	return o.DeviceTypeCount, true
 }
 
-// SetDeviceTypeCount sets field value
+// HasDeviceTypeCount returns a boolean if a field has been set.
+func (o *DeviceFamily) HasDeviceTypeCount() bool {
+	if o != nil && !IsNil(o.DeviceTypeCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetDeviceTypeCount gets a reference to the given int32 and assigns it to the DeviceTypeCount field.
 func (o *DeviceFamily) SetDeviceTypeCount(v int32) {
-	o.DeviceTypeCount = v
+	o.DeviceTypeCount = &v
 }
 
 // GetName returns the Name field value
@@ -389,7 +396,9 @@ func (o DeviceFamily) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["device_type_count"] = o.DeviceTypeCount
+	if !IsNil(o.DeviceTypeCount) {
+		toSerialize["device_type_count"] = o.DeviceTypeCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -418,7 +427,6 @@ func (o *DeviceFamily) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"device_type_count",
 		"name",
 		"created",
 		"last_updated",

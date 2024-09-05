@@ -28,7 +28,7 @@ type TenantGroup struct {
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
 	TreeDepth NullableInt32 `json:"tree_depth"`
-	TenantCount int32 `json:"tenant_count"`
+	TenantCount *int32 `json:"tenant_count,omitempty"`
 	Name string `json:"name"`
 	Description *string `json:"description,omitempty"`
 	Parent NullableBulkWritableCircuitRequestTenant `json:"parent,omitempty"`
@@ -45,7 +45,7 @@ type _TenantGroup TenantGroup
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewTenantGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, tenantCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *TenantGroup {
+func NewTenantGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *TenantGroup {
 	this := TenantGroup{}
 	this.Id = id
 	this.ObjectType = objectType
@@ -53,7 +53,6 @@ func NewTenantGroup(id string, objectType string, display string, url string, na
 	this.Url = url
 	this.NaturalSlug = naturalSlug
 	this.TreeDepth = treeDepth
-	this.TenantCount = tenantCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -215,28 +214,36 @@ func (o *TenantGroup) SetTreeDepth(v int32) {
 	o.TreeDepth.Set(&v)
 }
 
-// GetTenantCount returns the TenantCount field value
+// GetTenantCount returns the TenantCount field value if set, zero value otherwise.
 func (o *TenantGroup) GetTenantCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.TenantCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.TenantCount
+	return *o.TenantCount
 }
 
-// GetTenantCountOk returns a tuple with the TenantCount field value
+// GetTenantCountOk returns a tuple with the TenantCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *TenantGroup) GetTenantCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.TenantCount) {
 		return nil, false
 	}
-	return &o.TenantCount, true
+	return o.TenantCount, true
 }
 
-// SetTenantCount sets field value
+// HasTenantCount returns a boolean if a field has been set.
+func (o *TenantGroup) HasTenantCount() bool {
+	if o != nil && !IsNil(o.TenantCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetTenantCount gets a reference to the given int32 and assigns it to the TenantCount field.
 func (o *TenantGroup) SetTenantCount(v int32) {
-	o.TenantCount = v
+	o.TenantCount = &v
 }
 
 // GetName returns the Name field value
@@ -461,7 +468,9 @@ func (o TenantGroup) ToMap() (map[string]interface{}, error) {
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
 	toSerialize["tree_depth"] = o.TreeDepth.Get()
-	toSerialize["tenant_count"] = o.TenantCount
+	if !IsNil(o.TenantCount) {
+		toSerialize["tenant_count"] = o.TenantCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -494,7 +503,6 @@ func (o *TenantGroup) UnmarshalJSON(data []byte) (err error) {
 		"url",
 		"natural_slug",
 		"tree_depth",
-		"tenant_count",
 		"name",
 		"created",
 		"last_updated",

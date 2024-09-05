@@ -27,7 +27,7 @@ type VLANGroup struct {
 	Display string `json:"display"`
 	Url string `json:"url"`
 	NaturalSlug string `json:"natural_slug"`
-	VlanCount int32 `json:"vlan_count"`
+	VlanCount *int32 `json:"vlan_count,omitempty"`
 	Name string `json:"name"`
 	Description *string `json:"description,omitempty"`
 	Location NullableBulkWritableCircuitRequestTenant `json:"location,omitempty"`
@@ -44,14 +44,13 @@ type _VLANGroup VLANGroup
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewVLANGroup(id string, objectType string, display string, url string, naturalSlug string, vlanCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *VLANGroup {
+func NewVLANGroup(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string) *VLANGroup {
 	this := VLANGroup{}
 	this.Id = id
 	this.ObjectType = objectType
 	this.Display = display
 	this.Url = url
 	this.NaturalSlug = naturalSlug
-	this.VlanCount = vlanCount
 	this.Name = name
 	this.Created = created
 	this.LastUpdated = lastUpdated
@@ -187,28 +186,36 @@ func (o *VLANGroup) SetNaturalSlug(v string) {
 	o.NaturalSlug = v
 }
 
-// GetVlanCount returns the VlanCount field value
+// GetVlanCount returns the VlanCount field value if set, zero value otherwise.
 func (o *VLANGroup) GetVlanCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.VlanCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.VlanCount
+	return *o.VlanCount
 }
 
-// GetVlanCountOk returns a tuple with the VlanCount field value
+// GetVlanCountOk returns a tuple with the VlanCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *VLANGroup) GetVlanCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.VlanCount) {
 		return nil, false
 	}
-	return &o.VlanCount, true
+	return o.VlanCount, true
 }
 
-// SetVlanCount sets field value
+// HasVlanCount returns a boolean if a field has been set.
+func (o *VLANGroup) HasVlanCount() bool {
+	if o != nil && !IsNil(o.VlanCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetVlanCount gets a reference to the given int32 and assigns it to the VlanCount field.
 func (o *VLANGroup) SetVlanCount(v int32) {
-	o.VlanCount = v
+	o.VlanCount = &v
 }
 
 // GetName returns the Name field value
@@ -432,7 +439,9 @@ func (o VLANGroup) ToMap() (map[string]interface{}, error) {
 	toSerialize["display"] = o.Display
 	toSerialize["url"] = o.Url
 	toSerialize["natural_slug"] = o.NaturalSlug
-	toSerialize["vlan_count"] = o.VlanCount
+	if !IsNil(o.VlanCount) {
+		toSerialize["vlan_count"] = o.VlanCount
+	}
 	toSerialize["name"] = o.Name
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -464,7 +473,6 @@ func (o *VLANGroup) UnmarshalJSON(data []byte) (err error) {
 		"display",
 		"url",
 		"natural_slug",
-		"vlan_count",
 		"name",
 		"created",
 		"last_updated",

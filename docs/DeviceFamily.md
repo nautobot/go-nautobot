@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**DeviceTypeCount** | **int32** |  | [readonly] 
+**DeviceTypeCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 
 ### NewDeviceFamily
 
-`func NewDeviceFamily(id string, objectType string, display string, url string, naturalSlug string, deviceTypeCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceFamily`
+`func NewDeviceFamily(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceFamily`
 
 NewDeviceFamily instantiates a new DeviceFamily object
 This constructor will assign default values to properties that have it defined,
@@ -155,6 +155,11 @@ and a boolean to check if the value has been set.
 
 SetDeviceTypeCount sets DeviceTypeCount field to given value.
 
+### HasDeviceTypeCount
+
+`func (o *DeviceFamily) HasDeviceTypeCount() bool`
+
+HasDeviceTypeCount returns a boolean if a field has been set.
 
 ### GetName
 

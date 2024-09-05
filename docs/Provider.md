@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**CircuitCount** | **int32** |  | [readonly] 
+**CircuitCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Asn** | Pointer to **NullableInt64** | 32-bit autonomous system number | [optional] 
 **Account** | Pointer to **string** |  | [optional] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewProvider
 
-`func NewProvider(id string, objectType string, display string, url string, naturalSlug string, circuitCount int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Provider`
+`func NewProvider(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Provider`
 
 NewProvider instantiates a new Provider object
 This constructor will assign default values to properties that have it defined,
@@ -161,6 +161,11 @@ and a boolean to check if the value has been set.
 
 SetCircuitCount sets CircuitCount field to given value.
 
+### HasCircuitCount
+
+`func (o *Provider) HasCircuitCount() bool`
+
+HasCircuitCount returns a boolean if a field has been set.
 
 ### GetName
 

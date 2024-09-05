@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**UserCount** | **int32** |  | [readonly] 
+**UserCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 
 ## Methods
 
 ### NewGroup
 
-`func NewGroup(id int32, objectType string, display string, url string, naturalSlug string, userCount int32, name string, ) *Group`
+`func NewGroup(id int32, objectType string, display string, url string, naturalSlug string, name string, ) *Group`
 
 NewGroup instantiates a new Group object
 This constructor will assign default values to properties that have it defined,
@@ -150,6 +150,11 @@ and a boolean to check if the value has been set.
 
 SetUserCount sets UserCount field to given value.
 
+### HasUserCount
+
+`func (o *Group) HasUserCount() bool`
+
+HasUserCount returns a boolean if a field has been set.
 
 ### GetName
 

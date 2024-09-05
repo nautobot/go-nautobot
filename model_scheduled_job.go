@@ -46,7 +46,7 @@ type ScheduledJob struct {
 	// Datetime that the schedule last triggered the task to run. Reset to None if enabled is set to False.
 	LastRunAt NullableTime `json:"last_run_at"`
 	// Running count of how many times the schedule has triggered the task
-	TotalRunCount int32 `json:"total_run_count"`
+	TotalRunCount *int32 `json:"total_run_count,omitempty"`
 	// Datetime that this scheduled job was last modified
 	DateChanged time.Time `json:"date_changed"`
 	// Detailed description about the details of this scheduled job
@@ -68,7 +68,7 @@ type _ScheduledJob ScheduledJob
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewScheduledJob(id string, objectType string, display string, url string, naturalSlug string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, totalRunCount int32, dateChanged time.Time, approvedAt NullableTime) *ScheduledJob {
+func NewScheduledJob(id string, objectType string, display string, url string, naturalSlug string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, approvedAt NullableTime) *ScheduledJob {
 	this := ScheduledJob{}
 	this.Id = id
 	this.ObjectType = objectType
@@ -80,7 +80,6 @@ func NewScheduledJob(id string, objectType string, display string, url string, n
 	this.Interval = interval
 	this.StartTime = startTime
 	this.LastRunAt = lastRunAt
-	this.TotalRunCount = totalRunCount
 	this.DateChanged = dateChanged
 	this.ApprovedAt = approvedAt
 	return &this
@@ -531,28 +530,36 @@ func (o *ScheduledJob) SetLastRunAt(v time.Time) {
 	o.LastRunAt.Set(&v)
 }
 
-// GetTotalRunCount returns the TotalRunCount field value
+// GetTotalRunCount returns the TotalRunCount field value if set, zero value otherwise.
 func (o *ScheduledJob) GetTotalRunCount() int32 {
-	if o == nil {
+	if o == nil || IsNil(o.TotalRunCount) {
 		var ret int32
 		return ret
 	}
-
-	return o.TotalRunCount
+	return *o.TotalRunCount
 }
 
-// GetTotalRunCountOk returns a tuple with the TotalRunCount field value
+// GetTotalRunCountOk returns a tuple with the TotalRunCount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *ScheduledJob) GetTotalRunCountOk() (*int32, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.TotalRunCount) {
 		return nil, false
 	}
-	return &o.TotalRunCount, true
+	return o.TotalRunCount, true
 }
 
-// SetTotalRunCount sets field value
+// HasTotalRunCount returns a boolean if a field has been set.
+func (o *ScheduledJob) HasTotalRunCount() bool {
+	if o != nil && !IsNil(o.TotalRunCount) {
+		return true
+	}
+
+	return false
+}
+
+// SetTotalRunCount gets a reference to the given int32 and assigns it to the TotalRunCount field.
 func (o *ScheduledJob) SetTotalRunCount(v int32) {
-	o.TotalRunCount = v
+	o.TotalRunCount = &v
 }
 
 // GetDateChanged returns the DateChanged field value
@@ -865,7 +872,9 @@ func (o ScheduledJob) ToMap() (map[string]interface{}, error) {
 		toSerialize["enabled"] = o.Enabled
 	}
 	toSerialize["last_run_at"] = o.LastRunAt.Get()
-	toSerialize["total_run_count"] = o.TotalRunCount
+	if !IsNil(o.TotalRunCount) {
+		toSerialize["total_run_count"] = o.TotalRunCount
+	}
 	toSerialize["date_changed"] = o.DateChanged
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
@@ -909,7 +918,6 @@ func (o *ScheduledJob) UnmarshalJSON(data []byte) (err error) {
 		"interval",
 		"start_time",
 		"last_run_at",
-		"total_run_count",
 		"date_changed",
 		"approved_at",
 	}
