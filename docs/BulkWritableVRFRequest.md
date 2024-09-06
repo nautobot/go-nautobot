@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Rd** | **NullableString** | Unique route distinguisher (as defined in RFC 4364) | 
 **Description** | Pointer to **string** |  | [optional] 
+**Status** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ImportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -130,6 +131,41 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetStatus
+
+`func (o *BulkWritableVRFRequest) GetStatus() BulkWritableCircuitRequestTenant`
+
+GetStatus returns the Status field if non-nil, zero value otherwise.
+
+### GetStatusOk
+
+`func (o *BulkWritableVRFRequest) GetStatusOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatus
+
+`func (o *BulkWritableVRFRequest) SetStatus(v BulkWritableCircuitRequestTenant)`
+
+SetStatus sets Status field to given value.
+
+### HasStatus
+
+`func (o *BulkWritableVRFRequest) HasStatus() bool`
+
+HasStatus returns a boolean if a field has been set.
+
+### SetStatusNil
+
+`func (o *BulkWritableVRFRequest) SetStatusNil(b bool)`
+
+ SetStatusNil sets the value for Status to be an explicit nil
+
+### UnsetStatus
+`func (o *BulkWritableVRFRequest) UnsetStatus()`
+
+UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetNamespace
 
 `func (o *BulkWritableVRFRequest) GetNamespace() BulkWritableCableRequestStatus`

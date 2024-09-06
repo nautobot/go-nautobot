@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**TimeZone** | Pointer to **string** |  | [optional] 
 **Name** | **string** | Human-readable description of this scheduled task | 
 **Task** | **string** | The name of the Celery task that should be run. (Example: \&quot;proj.tasks.import_contacts\&quot;) | 
 **Interval** | [**JobExecutionTypeIntervalChoices**](JobExecutionTypeIntervalChoices.md) |  | 
@@ -148,6 +149,31 @@ and a boolean to check if the value has been set.
 
 SetNaturalSlug sets NaturalSlug field to given value.
 
+
+### GetTimeZone
+
+`func (o *ScheduledJob) GetTimeZone() string`
+
+GetTimeZone returns the TimeZone field if non-nil, zero value otherwise.
+
+### GetTimeZoneOk
+
+`func (o *ScheduledJob) GetTimeZoneOk() (*string, bool)`
+
+GetTimeZoneOk returns a tuple with the TimeZone field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTimeZone
+
+`func (o *ScheduledJob) SetTimeZone(v string)`
+
+SetTimeZone sets TimeZone field to given value.
+
+### HasTimeZone
+
+`func (o *ScheduledJob) HasTimeZone() bool`
+
+HasTimeZone returns a boolean if a field has been set.
 
 ### GetName
 

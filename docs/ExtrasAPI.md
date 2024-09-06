@@ -17132,7 +17132,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobResultsList
 
-> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).Execute()
+> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).Execute()
 
 
 
@@ -17203,6 +17203,9 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
+	scheduledJob := []string{"Inner_example"} // []string |  (optional)
+	scheduledJobIsnull := true // bool | Scheduled Job (name or ID) is null (optional)
+	scheduledJobN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string | Current state of the Job being run (optional)
 	statusIc := []string{"Inner_example"} // []string | Current state of the Job being run (optional)
@@ -17225,7 +17228,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobResultsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -17297,6 +17300,9 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
+ **scheduledJob** | **[]string** |  | 
+ **scheduledJobIsnull** | **bool** | Scheduled Job (name or ID) is null | 
+ **scheduledJobN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** | Current state of the Job being run | 
  **statusIc** | **[]string** | Current state of the Job being run | 
@@ -26492,7 +26498,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasScheduledJobsList
 
-> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).Execute()
+> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).Execute()
 
 
 
@@ -26564,6 +26570,20 @@ func main() {
 	startTimeLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeN := []time.Time{time.Now()} // []time.Time |  (optional)
+	timeZone := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneIc := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneIe := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneIew := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneIre := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneIsw := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneN := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNic := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNie := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNiew := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNire := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNisw := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneNre := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
+	timeZoneRe := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	totalRunCount := []int32{int32(123)} // []int32 |  (optional)
 	totalRunCountGt := []int32{int32(123)} // []int32 |  (optional)
 	totalRunCountGte := []int32{int32(123)} // []int32 |  (optional)
@@ -26574,7 +26594,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasScheduledJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -26647,6 +26667,20 @@ Name | Type | Description  | Notes
  **startTimeLt** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeLte** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeN** | [**[]time.Time**](time.Time.md) |  | 
+ **timeZone** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneIc** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneIe** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneIew** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneIre** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneIsw** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneN** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNic** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNie** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNiew** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNire** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNisw** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneNre** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
+ **timeZoneRe** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **totalRunCount** | **[]int32** |  | 
  **totalRunCountGt** | **[]int32** |  | 
  **totalRunCountGte** | **[]int32** |  | 
