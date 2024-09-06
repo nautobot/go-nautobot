@@ -24,14 +24,14 @@ if 'components' in data and 'schemas' in data['components']:
                 for field in fields_to_remove:
                     required_fields.remove(field)
                 
-        # Handle failover_strategy
+        # Handle failover_strategy (https://github.com/nautobot/nautobot/issues/6157)
         if 'failover_strategy' in schema.get('properties', {}):
             prop = schema['properties']['failover_strategy']
             if 'default' in prop and prop['default'] is None:
                 print(f"Removing 'default: null' in {name}.failover_strategy")
                 del prop['default']
                 
-        # Handle PowerFeed schema
+        # Handle PowerFeed schema (TODO: This should probably be solved differently, but it works for now)
         if name == 'PowerFeed' and 'properties' in schema:
             # Replace nested `type` field in PowerFeed
             if 'type' in schema['properties']:
@@ -46,7 +46,7 @@ if 'components' in data and 'schemas' in data['components']:
                             'default': 'primary'
                         }
 
-            # Replace nested `supply` field in PowerFeed
+            # Replace nested `supply` field in PowerFeed (TODO: This should probably be solved differently, but it works for now)
             if 'supply' in schema['properties']:
                 supply_property = schema['properties']['supply']
                 if 'properties' in supply_property and 'value' in supply_property['properties']:
@@ -59,7 +59,7 @@ if 'components' in data and 'schemas' in data['components']:
                             'default': 'ac'
                         }
 
-            # Replace nested `phase` field in PowerFeed
+            # Replace nested `phase` field in PowerFeed (TODO: This should probably be solved differently, but it works for now)
             if 'phase' in schema['properties']:
                 phase_property = schema['properties']['phase']
                 if 'properties' in phase_property and 'value' in phase_property['properties']:
@@ -72,7 +72,7 @@ if 'components' in data and 'schemas' in data['components']:
                             'default': 'single-phase'
                         }
         
-        # Handle Prefix schema
+        # Handle Prefix schema (TODO: This should probably be solved differently, but it works for now)
         if name == 'Prefix' and 'properties' in schema:
             # Replace complex `type` object with a simpler string enum in Prefix
             if 'type' in schema['properties']:

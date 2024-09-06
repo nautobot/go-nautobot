@@ -25,7 +25,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/TobiPeterG/go-nautobot"
+	openapiclient "github.com/nautobot/go-nautobot"
 )
 
 func main() {
