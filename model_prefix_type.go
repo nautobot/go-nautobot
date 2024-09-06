@@ -12,67 +12,153 @@ package nautobot
 
 import (
 	"encoding/json"
-	"fmt"
 )
 
-// PrefixType the model 'PrefixType'
-type PrefixType string
+// checks if the PrefixType type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &PrefixType{}
 
-// List of Prefix_type
-const (
-	PREFIXTYPE_CONTAINER PrefixType = "container"
-	PREFIXTYPE_NETWORK PrefixType = "network"
-	PREFIXTYPE_POOL PrefixType = "pool"
-)
-
-// All allowed values of PrefixType enum
-var AllowedPrefixTypeEnumValues = []PrefixType{
-	"container",
-	"network",
-	"pool",
+// PrefixType struct for PrefixType
+type PrefixType struct {
+	Value *PrefixTypeValue `json:"value,omitempty"`
+	Label *PrefixTypeLabel `json:"label,omitempty"`
+	AdditionalProperties map[string]interface{}
 }
 
-func (v *PrefixType) UnmarshalJSON(src []byte) error {
-	var value string
-	err := json.Unmarshal(src, &value)
-	if err != nil {
-		return err
-	}
-	enumTypeValue := PrefixType(value)
-	for _, existing := range AllowedPrefixTypeEnumValues {
-		if existing == enumTypeValue {
-			*v = enumTypeValue
-			return nil
-		}
-	}
+type _PrefixType PrefixType
 
-	return fmt.Errorf("%+v is not a valid PrefixType", value)
+// NewPrefixType instantiates a new PrefixType object
+// This constructor will assign default values to properties that have it defined,
+// and makes sure properties required by API are set, but the set of arguments
+// will change when the set of required properties is changed
+func NewPrefixType() *PrefixType {
+	this := PrefixType{}
+	var value PrefixTypeValue = PREFIXTYPEVALUE_NETWORK
+	this.Value = &value
+	var label PrefixTypeLabel = PREFIXTYPELABEL_NETWORK
+	this.Label = &label
+	return &this
 }
 
-// NewPrefixTypeFromValue returns a pointer to a valid PrefixType
-// for the value passed as argument, or an error if the value passed is not allowed by the enum
-func NewPrefixTypeFromValue(v string) (*PrefixType, error) {
-	ev := PrefixType(v)
-	if ev.IsValid() {
-		return &ev, nil
-	} else {
-		return nil, fmt.Errorf("invalid value '%v' for PrefixType: valid values are %v", v, AllowedPrefixTypeEnumValues)
-	}
+// NewPrefixTypeWithDefaults instantiates a new PrefixType object
+// This constructor will only assign default values to properties that have it defined,
+// but it doesn't guarantee that properties required by API are set
+func NewPrefixTypeWithDefaults() *PrefixType {
+	this := PrefixType{}
+	var value PrefixTypeValue = PREFIXTYPEVALUE_NETWORK
+	this.Value = &value
+	var label PrefixTypeLabel = PREFIXTYPELABEL_NETWORK
+	this.Label = &label
+	return &this
 }
 
-// IsValid return true if the value is valid for the enum, false otherwise
-func (v PrefixType) IsValid() bool {
-	for _, existing := range AllowedPrefixTypeEnumValues {
-		if existing == v {
-			return true
-		}
+// GetValue returns the Value field value if set, zero value otherwise.
+func (o *PrefixType) GetValue() PrefixTypeValue {
+	if o == nil || IsNil(o.Value) {
+		var ret PrefixTypeValue
+		return ret
 	}
+	return *o.Value
+}
+
+// GetValueOk returns a tuple with the Value field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PrefixType) GetValueOk() (*PrefixTypeValue, bool) {
+	if o == nil || IsNil(o.Value) {
+		return nil, false
+	}
+	return o.Value, true
+}
+
+// HasValue returns a boolean if a field has been set.
+func (o *PrefixType) HasValue() bool {
+	if o != nil && !IsNil(o.Value) {
+		return true
+	}
+
 	return false
 }
 
-// Ptr returns reference to Prefix_type value
-func (v PrefixType) Ptr() *PrefixType {
-	return &v
+// SetValue gets a reference to the given PrefixTypeValue and assigns it to the Value field.
+func (o *PrefixType) SetValue(v PrefixTypeValue) {
+	o.Value = &v
+}
+
+// GetLabel returns the Label field value if set, zero value otherwise.
+func (o *PrefixType) GetLabel() PrefixTypeLabel {
+	if o == nil || IsNil(o.Label) {
+		var ret PrefixTypeLabel
+		return ret
+	}
+	return *o.Label
+}
+
+// GetLabelOk returns a tuple with the Label field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PrefixType) GetLabelOk() (*PrefixTypeLabel, bool) {
+	if o == nil || IsNil(o.Label) {
+		return nil, false
+	}
+	return o.Label, true
+}
+
+// HasLabel returns a boolean if a field has been set.
+func (o *PrefixType) HasLabel() bool {
+	if o != nil && !IsNil(o.Label) {
+		return true
+	}
+
+	return false
+}
+
+// SetLabel gets a reference to the given PrefixTypeLabel and assigns it to the Label field.
+func (o *PrefixType) SetLabel(v PrefixTypeLabel) {
+	o.Label = &v
+}
+
+func (o PrefixType) MarshalJSON() ([]byte, error) {
+	toSerialize,err := o.ToMap()
+	if err != nil {
+		return []byte{}, err
+	}
+	return json.Marshal(toSerialize)
+}
+
+func (o PrefixType) ToMap() (map[string]interface{}, error) {
+	toSerialize := map[string]interface{}{}
+	if !IsNil(o.Value) {
+		toSerialize["value"] = o.Value
+	}
+	if !IsNil(o.Label) {
+		toSerialize["label"] = o.Label
+	}
+
+	for key, value := range o.AdditionalProperties {
+		toSerialize[key] = value
+	}
+
+	return toSerialize, nil
+}
+
+func (o *PrefixType) UnmarshalJSON(data []byte) (err error) {
+	varPrefixType := _PrefixType{}
+
+	err = json.Unmarshal(data, &varPrefixType)
+
+	if err != nil {
+		return err
+	}
+
+	*o = PrefixType(varPrefixType)
+
+	additionalProperties := make(map[string]interface{})
+
+	if err = json.Unmarshal(data, &additionalProperties); err == nil {
+		delete(additionalProperties, "value")
+		delete(additionalProperties, "label")
+		o.AdditionalProperties = additionalProperties
+	}
+
+	return err
 }
 
 type NullablePrefixType struct {
@@ -110,4 +196,5 @@ func (v *NullablePrefixType) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
+
 

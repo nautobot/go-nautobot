@@ -31,7 +31,7 @@ if 'components' in data and 'schemas' in data['components']:
                 print(f"Removing 'default: null' in {name}.failover_strategy")
                 del prop['default']
                 
-        # Handle PowerFeed schema (TODO: This should probably be solved differently, but it works for now)
+        # Handle PowerFeed schema (TODO: This might not be correct, but it works for now)
         if name == 'PowerFeed' and 'properties' in schema:
             # Replace nested `type` field in PowerFeed
             if 'type' in schema['properties']:
@@ -41,12 +41,22 @@ if 'components' in data and 'schemas' in data['components']:
                     if 'enum' in value_property and set(value_property['enum']) == {'primary', 'redundant'}:
                         print(f"Replacing complex 'type' field in PowerFeed")
                         schema['properties']['type'] = {
-                            'type': 'string',
-                            'enum': ['primary', 'redundant'],
-                            'default': 'primary'
+                            'type': 'object',
+                            'properties': {
+                                'value': {
+                                    'type': 'string',
+                                    'enum': ['primary', 'redundant'],
+                                    'default': 'primary'
+                                },
+                                'label': {
+                                    'type': 'string',
+                                    'enum': ['Primary', 'Redundant'],
+                                    'default': 'Primary'
+                                }
+                            }
                         }
 
-            # Replace nested `supply` field in PowerFeed (TODO: This should probably be solved differently, but it works for now)
+            # Replace nested `supply` field in PowerFeed
             if 'supply' in schema['properties']:
                 supply_property = schema['properties']['supply']
                 if 'properties' in supply_property and 'value' in supply_property['properties']:
@@ -54,12 +64,22 @@ if 'components' in data and 'schemas' in data['components']:
                     if 'enum' in value_property and set(value_property['enum']) == {'ac', 'dc'}:
                         print(f"Replacing complex 'supply' field in PowerFeed")
                         schema['properties']['supply'] = {
-                            'type': 'string',
-                            'enum': ['ac', 'dc'],
-                            'default': 'ac'
+                            'type': 'object',
+                            'properties': {
+                                'value': {
+                                    'type': 'string',
+                                    'enum': ['ac', 'dc'],
+                                    'default': 'ac'
+                                },
+                                'label': {
+                                    'type': 'string',
+                                    'enum': ['AC', 'DC'],
+                                    'default': 'AC'
+                                }
+                            }
                         }
 
-            # Replace nested `phase` field in PowerFeed (TODO: This should probably be solved differently, but it works for now)
+            # Replace nested `phase` field in PowerFeed
             if 'phase' in schema['properties']:
                 phase_property = schema['properties']['phase']
                 if 'properties' in phase_property and 'value' in phase_property['properties']:
@@ -67,22 +87,41 @@ if 'components' in data and 'schemas' in data['components']:
                     if 'enum' in value_property and set(value_property['enum']) == {'single-phase', 'three-phase'}:
                         print(f"Replacing complex 'phase' field in PowerFeed")
                         schema['properties']['phase'] = {
-                            'type': 'string',
-                            'enum': ['single-phase', 'three-phase'],
-                            'default': 'single-phase'
+                            'type': 'object',
+                            'properties': {
+                                'value': {
+                                    'type': 'string',
+                                    'enum': ['single-phase', 'three-phase'],
+                                    'default': 'single-phase'
+                                },
+                                'label': {
+                                    'type': 'string',
+                                    'enum': ['Single phase', 'Three-phase'],
+                                    'default': 'Single phase'
+                                }
+                            }
                         }
-        
-        # Handle Prefix schema (TODO: This should probably be solved differently, but it works for now)
+
         if name == 'Prefix' and 'properties' in schema:
-            # Replace complex `type` object with a simpler string enum in Prefix
+            # Replace complex `type` object with a more detailed schema in Prefix (TODO: This might not be correct, but it works for now)
             if 'type' in schema['properties']:
                 type_property = schema['properties']['type']
                 if 'properties' in type_property and 'value' in type_property['properties']:
-                    print(f"Replacing complex 'type' field in Prefix")
+                    print(f"Replacing complex 'type' field in Prefix with detailed properties")
                     schema['properties']['type'] = {
-                        'type': 'string',
-                        'enum': ['container', 'network', 'pool'],
-                        'default': 'network'
+                        'type': 'object',
+                        'properties': {
+                            'value': {
+                                'type': 'string',
+                                'enum': ['container', 'network', 'pool'],
+                                'default': 'network'
+                            },
+                            'label': {
+                                'type': 'string',
+                                'enum': ['Container', 'Network', 'Pool'],
+                                'default': 'Network'
+                            }
+                        }
                     }
                     
         if 'properties' in schema:
@@ -101,3 +140,4 @@ if 'components' in data and 'schemas' in data['components']:
 # Save the spec file
 with open(SPEC_PATH, 'w') as file:
     yaml.dump(data, file, Dumper=yaml.CDumper, sort_keys=False)
+    

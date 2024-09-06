@@ -69,8 +69,6 @@ func NewPrefix(id string, objectType string, display string, url string, natural
 	this.Url = url
 	this.NaturalSlug = naturalSlug
 	this.Prefix = prefix
-	var type_ PrefixType = PREFIXTYPE_NETWORK
-	this.Type = &type_
 	this.Network = network
 	this.Broadcast = broadcast
 	this.PrefixLength = prefixLength
@@ -88,8 +86,6 @@ func NewPrefix(id string, objectType string, display string, url string, natural
 // but it doesn't guarantee that properties required by API are set
 func NewPrefixWithDefaults() *Prefix {
 	this := Prefix{}
-	var type_ PrefixType = PREFIXTYPE_NETWORK
-	this.Type = &type_
 	return &this
 }
 

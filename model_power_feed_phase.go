@@ -12,65 +12,153 @@ package nautobot
 
 import (
 	"encoding/json"
-	"fmt"
 )
 
-// PowerFeedPhase the model 'PowerFeedPhase'
-type PowerFeedPhase string
+// checks if the PowerFeedPhase type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &PowerFeedPhase{}
 
-// List of PowerFeed_phase
-const (
-	POWERFEEDPHASE_SINGLE_PHASE PowerFeedPhase = "single-phase"
-	POWERFEEDPHASE_THREE_PHASE PowerFeedPhase = "three-phase"
-)
-
-// All allowed values of PowerFeedPhase enum
-var AllowedPowerFeedPhaseEnumValues = []PowerFeedPhase{
-	"single-phase",
-	"three-phase",
+// PowerFeedPhase struct for PowerFeedPhase
+type PowerFeedPhase struct {
+	Value *PowerFeedPhaseValue `json:"value,omitempty"`
+	Label *PowerFeedPhaseLabel `json:"label,omitempty"`
+	AdditionalProperties map[string]interface{}
 }
 
-func (v *PowerFeedPhase) UnmarshalJSON(src []byte) error {
-	var value string
-	err := json.Unmarshal(src, &value)
-	if err != nil {
-		return err
-	}
-	enumTypeValue := PowerFeedPhase(value)
-	for _, existing := range AllowedPowerFeedPhaseEnumValues {
-		if existing == enumTypeValue {
-			*v = enumTypeValue
-			return nil
-		}
-	}
+type _PowerFeedPhase PowerFeedPhase
 
-	return fmt.Errorf("%+v is not a valid PowerFeedPhase", value)
+// NewPowerFeedPhase instantiates a new PowerFeedPhase object
+// This constructor will assign default values to properties that have it defined,
+// and makes sure properties required by API are set, but the set of arguments
+// will change when the set of required properties is changed
+func NewPowerFeedPhase() *PowerFeedPhase {
+	this := PowerFeedPhase{}
+	var value PowerFeedPhaseValue = POWERFEEDPHASEVALUE_SINGLE_PHASE
+	this.Value = &value
+	var label PowerFeedPhaseLabel = POWERFEEDPHASELABEL_SINGLE_PHASE
+	this.Label = &label
+	return &this
 }
 
-// NewPowerFeedPhaseFromValue returns a pointer to a valid PowerFeedPhase
-// for the value passed as argument, or an error if the value passed is not allowed by the enum
-func NewPowerFeedPhaseFromValue(v string) (*PowerFeedPhase, error) {
-	ev := PowerFeedPhase(v)
-	if ev.IsValid() {
-		return &ev, nil
-	} else {
-		return nil, fmt.Errorf("invalid value '%v' for PowerFeedPhase: valid values are %v", v, AllowedPowerFeedPhaseEnumValues)
-	}
+// NewPowerFeedPhaseWithDefaults instantiates a new PowerFeedPhase object
+// This constructor will only assign default values to properties that have it defined,
+// but it doesn't guarantee that properties required by API are set
+func NewPowerFeedPhaseWithDefaults() *PowerFeedPhase {
+	this := PowerFeedPhase{}
+	var value PowerFeedPhaseValue = POWERFEEDPHASEVALUE_SINGLE_PHASE
+	this.Value = &value
+	var label PowerFeedPhaseLabel = POWERFEEDPHASELABEL_SINGLE_PHASE
+	this.Label = &label
+	return &this
 }
 
-// IsValid return true if the value is valid for the enum, false otherwise
-func (v PowerFeedPhase) IsValid() bool {
-	for _, existing := range AllowedPowerFeedPhaseEnumValues {
-		if existing == v {
-			return true
-		}
+// GetValue returns the Value field value if set, zero value otherwise.
+func (o *PowerFeedPhase) GetValue() PowerFeedPhaseValue {
+	if o == nil || IsNil(o.Value) {
+		var ret PowerFeedPhaseValue
+		return ret
 	}
+	return *o.Value
+}
+
+// GetValueOk returns a tuple with the Value field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PowerFeedPhase) GetValueOk() (*PowerFeedPhaseValue, bool) {
+	if o == nil || IsNil(o.Value) {
+		return nil, false
+	}
+	return o.Value, true
+}
+
+// HasValue returns a boolean if a field has been set.
+func (o *PowerFeedPhase) HasValue() bool {
+	if o != nil && !IsNil(o.Value) {
+		return true
+	}
+
 	return false
 }
 
-// Ptr returns reference to PowerFeed_phase value
-func (v PowerFeedPhase) Ptr() *PowerFeedPhase {
-	return &v
+// SetValue gets a reference to the given PowerFeedPhaseValue and assigns it to the Value field.
+func (o *PowerFeedPhase) SetValue(v PowerFeedPhaseValue) {
+	o.Value = &v
+}
+
+// GetLabel returns the Label field value if set, zero value otherwise.
+func (o *PowerFeedPhase) GetLabel() PowerFeedPhaseLabel {
+	if o == nil || IsNil(o.Label) {
+		var ret PowerFeedPhaseLabel
+		return ret
+	}
+	return *o.Label
+}
+
+// GetLabelOk returns a tuple with the Label field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PowerFeedPhase) GetLabelOk() (*PowerFeedPhaseLabel, bool) {
+	if o == nil || IsNil(o.Label) {
+		return nil, false
+	}
+	return o.Label, true
+}
+
+// HasLabel returns a boolean if a field has been set.
+func (o *PowerFeedPhase) HasLabel() bool {
+	if o != nil && !IsNil(o.Label) {
+		return true
+	}
+
+	return false
+}
+
+// SetLabel gets a reference to the given PowerFeedPhaseLabel and assigns it to the Label field.
+func (o *PowerFeedPhase) SetLabel(v PowerFeedPhaseLabel) {
+	o.Label = &v
+}
+
+func (o PowerFeedPhase) MarshalJSON() ([]byte, error) {
+	toSerialize,err := o.ToMap()
+	if err != nil {
+		return []byte{}, err
+	}
+	return json.Marshal(toSerialize)
+}
+
+func (o PowerFeedPhase) ToMap() (map[string]interface{}, error) {
+	toSerialize := map[string]interface{}{}
+	if !IsNil(o.Value) {
+		toSerialize["value"] = o.Value
+	}
+	if !IsNil(o.Label) {
+		toSerialize["label"] = o.Label
+	}
+
+	for key, value := range o.AdditionalProperties {
+		toSerialize[key] = value
+	}
+
+	return toSerialize, nil
+}
+
+func (o *PowerFeedPhase) UnmarshalJSON(data []byte) (err error) {
+	varPowerFeedPhase := _PowerFeedPhase{}
+
+	err = json.Unmarshal(data, &varPowerFeedPhase)
+
+	if err != nil {
+		return err
+	}
+
+	*o = PowerFeedPhase(varPowerFeedPhase)
+
+	additionalProperties := make(map[string]interface{})
+
+	if err = json.Unmarshal(data, &additionalProperties); err == nil {
+		delete(additionalProperties, "value")
+		delete(additionalProperties, "label")
+		o.AdditionalProperties = additionalProperties
+	}
+
+	return err
 }
 
 type NullablePowerFeedPhase struct {
@@ -108,4 +196,5 @@ func (v *NullablePowerFeedPhase) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
+
 

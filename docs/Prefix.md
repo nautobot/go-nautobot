@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **Prefix** | **string** |  | 
-**Type** | Pointer to [**PrefixType**](PrefixType.md) |  | [optional] [default to PREFIXTYPE_NETWORK]
+**Type** | Pointer to [**PrefixType**](PrefixType.md) |  | [optional] 
 **Network** | **string** | IPv4 or IPv6 network address | [readonly] 
 **Broadcast** | **string** | IPv4 or IPv6 broadcast address | [readonly] 
 **PrefixLength** | **int32** | Length of the Network prefix, in bits. | [readonly] 

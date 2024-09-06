@@ -12,65 +12,153 @@ package nautobot
 
 import (
 	"encoding/json"
-	"fmt"
 )
 
-// PowerFeedType the model 'PowerFeedType'
-type PowerFeedType string
+// checks if the PowerFeedType type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &PowerFeedType{}
 
-// List of PowerFeed_type
-const (
-	POWERFEEDTYPE_PRIMARY PowerFeedType = "primary"
-	POWERFEEDTYPE_REDUNDANT PowerFeedType = "redundant"
-)
-
-// All allowed values of PowerFeedType enum
-var AllowedPowerFeedTypeEnumValues = []PowerFeedType{
-	"primary",
-	"redundant",
+// PowerFeedType struct for PowerFeedType
+type PowerFeedType struct {
+	Value *PowerFeedTypeValue `json:"value,omitempty"`
+	Label *PowerFeedTypeLabel `json:"label,omitempty"`
+	AdditionalProperties map[string]interface{}
 }
 
-func (v *PowerFeedType) UnmarshalJSON(src []byte) error {
-	var value string
-	err := json.Unmarshal(src, &value)
-	if err != nil {
-		return err
-	}
-	enumTypeValue := PowerFeedType(value)
-	for _, existing := range AllowedPowerFeedTypeEnumValues {
-		if existing == enumTypeValue {
-			*v = enumTypeValue
-			return nil
-		}
-	}
+type _PowerFeedType PowerFeedType
 
-	return fmt.Errorf("%+v is not a valid PowerFeedType", value)
+// NewPowerFeedType instantiates a new PowerFeedType object
+// This constructor will assign default values to properties that have it defined,
+// and makes sure properties required by API are set, but the set of arguments
+// will change when the set of required properties is changed
+func NewPowerFeedType() *PowerFeedType {
+	this := PowerFeedType{}
+	var value PowerFeedTypeValue = POWERFEEDTYPEVALUE_PRIMARY
+	this.Value = &value
+	var label PowerFeedTypeLabel = POWERFEEDTYPELABEL_PRIMARY
+	this.Label = &label
+	return &this
 }
 
-// NewPowerFeedTypeFromValue returns a pointer to a valid PowerFeedType
-// for the value passed as argument, or an error if the value passed is not allowed by the enum
-func NewPowerFeedTypeFromValue(v string) (*PowerFeedType, error) {
-	ev := PowerFeedType(v)
-	if ev.IsValid() {
-		return &ev, nil
-	} else {
-		return nil, fmt.Errorf("invalid value '%v' for PowerFeedType: valid values are %v", v, AllowedPowerFeedTypeEnumValues)
-	}
+// NewPowerFeedTypeWithDefaults instantiates a new PowerFeedType object
+// This constructor will only assign default values to properties that have it defined,
+// but it doesn't guarantee that properties required by API are set
+func NewPowerFeedTypeWithDefaults() *PowerFeedType {
+	this := PowerFeedType{}
+	var value PowerFeedTypeValue = POWERFEEDTYPEVALUE_PRIMARY
+	this.Value = &value
+	var label PowerFeedTypeLabel = POWERFEEDTYPELABEL_PRIMARY
+	this.Label = &label
+	return &this
 }
 
-// IsValid return true if the value is valid for the enum, false otherwise
-func (v PowerFeedType) IsValid() bool {
-	for _, existing := range AllowedPowerFeedTypeEnumValues {
-		if existing == v {
-			return true
-		}
+// GetValue returns the Value field value if set, zero value otherwise.
+func (o *PowerFeedType) GetValue() PowerFeedTypeValue {
+	if o == nil || IsNil(o.Value) {
+		var ret PowerFeedTypeValue
+		return ret
 	}
+	return *o.Value
+}
+
+// GetValueOk returns a tuple with the Value field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PowerFeedType) GetValueOk() (*PowerFeedTypeValue, bool) {
+	if o == nil || IsNil(o.Value) {
+		return nil, false
+	}
+	return o.Value, true
+}
+
+// HasValue returns a boolean if a field has been set.
+func (o *PowerFeedType) HasValue() bool {
+	if o != nil && !IsNil(o.Value) {
+		return true
+	}
+
 	return false
 }
 
-// Ptr returns reference to PowerFeed_type value
-func (v PowerFeedType) Ptr() *PowerFeedType {
-	return &v
+// SetValue gets a reference to the given PowerFeedTypeValue and assigns it to the Value field.
+func (o *PowerFeedType) SetValue(v PowerFeedTypeValue) {
+	o.Value = &v
+}
+
+// GetLabel returns the Label field value if set, zero value otherwise.
+func (o *PowerFeedType) GetLabel() PowerFeedTypeLabel {
+	if o == nil || IsNil(o.Label) {
+		var ret PowerFeedTypeLabel
+		return ret
+	}
+	return *o.Label
+}
+
+// GetLabelOk returns a tuple with the Label field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *PowerFeedType) GetLabelOk() (*PowerFeedTypeLabel, bool) {
+	if o == nil || IsNil(o.Label) {
+		return nil, false
+	}
+	return o.Label, true
+}
+
+// HasLabel returns a boolean if a field has been set.
+func (o *PowerFeedType) HasLabel() bool {
+	if o != nil && !IsNil(o.Label) {
+		return true
+	}
+
+	return false
+}
+
+// SetLabel gets a reference to the given PowerFeedTypeLabel and assigns it to the Label field.
+func (o *PowerFeedType) SetLabel(v PowerFeedTypeLabel) {
+	o.Label = &v
+}
+
+func (o PowerFeedType) MarshalJSON() ([]byte, error) {
+	toSerialize,err := o.ToMap()
+	if err != nil {
+		return []byte{}, err
+	}
+	return json.Marshal(toSerialize)
+}
+
+func (o PowerFeedType) ToMap() (map[string]interface{}, error) {
+	toSerialize := map[string]interface{}{}
+	if !IsNil(o.Value) {
+		toSerialize["value"] = o.Value
+	}
+	if !IsNil(o.Label) {
+		toSerialize["label"] = o.Label
+	}
+
+	for key, value := range o.AdditionalProperties {
+		toSerialize[key] = value
+	}
+
+	return toSerialize, nil
+}
+
+func (o *PowerFeedType) UnmarshalJSON(data []byte) (err error) {
+	varPowerFeedType := _PowerFeedType{}
+
+	err = json.Unmarshal(data, &varPowerFeedType)
+
+	if err != nil {
+		return err
+	}
+
+	*o = PowerFeedType(varPowerFeedType)
+
+	additionalProperties := make(map[string]interface{})
+
+	if err = json.Unmarshal(data, &additionalProperties); err == nil {
+		delete(additionalProperties, "value")
+		delete(additionalProperties, "label")
+		o.AdditionalProperties = additionalProperties
+	}
+
+	return err
 }
 
 type NullablePowerFeedType struct {
@@ -108,4 +196,5 @@ func (v *NullablePowerFeedType) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
+
 

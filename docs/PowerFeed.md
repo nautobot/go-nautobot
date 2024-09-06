@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 **ConnectedEndpointType** | **NullableString** |  | [readonly] 
 **ConnectedEndpoint** | [**NullablePathEndpoint**](PathEndpoint.md) |  | [readonly] 
 **ConnectedEndpointReachable** | **NullableBool** |  | [readonly] 
-**Type** | Pointer to [**PowerFeedType**](PowerFeedType.md) |  | [optional] [default to POWERFEEDTYPE_PRIMARY]
-**Supply** | Pointer to [**PowerFeedSupply**](PowerFeedSupply.md) |  | [optional] [default to POWERFEEDSUPPLY_AC]
-**Phase** | Pointer to [**PowerFeedPhase**](PowerFeedPhase.md) |  | [optional] [default to POWERFEEDPHASE_SINGLE_PHASE]
+**Type** | Pointer to [**PowerFeedType**](PowerFeedType.md) |  | [optional] 
+**Supply** | Pointer to [**PowerFeedSupply**](PowerFeedSupply.md) |  | [optional] 
+**Phase** | Pointer to [**PowerFeedPhase**](PowerFeedPhase.md) |  | [optional] 
 **Name** | **string** |  | 
 **Voltage** | Pointer to **int32** |  | [optional] 
 **Amperage** | Pointer to **int32** |  | [optional] 
