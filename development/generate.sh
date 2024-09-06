@@ -69,6 +69,7 @@ openapi-generator-cli generate --config /client/development/oapi-config.yaml \
     --inline-schema-options RESOLVE_INLINE_ENUMS=true \
     --http-user-agent go-nautobot/$(cat /client/api/nautobot_version)
 
+rm /client/.travis.yml
 /client/development/scripts/add-missing-imports.sh
 echo "Starting Nautobot client tests..."
 
