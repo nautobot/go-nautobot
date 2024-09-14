@@ -3801,7 +3801,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesAvailableIpsCreate
 
-> PaginatedIPAddressList IpamPrefixesAvailableIpsCreate(ctx, id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
+> []IPAddress IpamPrefixesAvailableIpsCreate(ctx, id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
 
 
 
@@ -3834,7 +3834,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesAvailableIpsCreate``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `IpamPrefixesAvailableIpsCreate`: PaginatedIPAddressList
+	// response from `IpamPrefixesAvailableIpsCreate`: []IPAddress
 	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamPrefixesAvailableIpsCreate`: %v\n", resp)
 }
 ```
@@ -3863,7 +3863,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PaginatedIPAddressList**](PaginatedIPAddressList.md)
+[**[]IPAddress**](IPAddress.md)
 
 ### Authorization
 
@@ -3881,7 +3881,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesAvailableIpsList
 
-> PaginatedAvailableIPList IpamPrefixesAvailableIpsList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
+> []AvailableIP IpamPrefixesAvailableIpsList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
 
 
 
@@ -3914,7 +3914,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesAvailableIpsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `IpamPrefixesAvailableIpsList`: PaginatedAvailableIPList
+	// response from `IpamPrefixesAvailableIpsList`: []AvailableIP
 	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamPrefixesAvailableIpsList`: %v\n", resp)
 }
 ```
@@ -3943,7 +3943,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PaginatedAvailableIPList**](PaginatedAvailableIPList.md)
+[**[]AvailableIP**](AvailableIP.md)
 
 ### Authorization
 

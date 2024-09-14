@@ -136,6 +136,48 @@ if 'components' in data and 'schemas' in data['components']:
                 if ntype in schema['properties']:
                     if schema['properties'][ntype]['format'] == 'binary':
                         schema['properties'][ntype].pop('nullable')
+                        
+# Patch to use AvailableIP array directly instead of PaginatedAvailableIPList for GET and POST
+if 'paths' in data:
+    if '/ipam/prefixes/{id}/available-ips/' in data['paths']:
+        available_ips_path = data['paths']['/ipam/prefixes/{id}/available-ips/']
+        
+        # Update the GET request response to return an array of AvailableIP objects directly
+        if 'get' in available_ips_path and 'responses' in available_ips_path['get']:
+            responses = available_ips_path['get']['responses']
+            if '200' in responses and 'content' in responses['200']:
+                print("Updating available-ips GET response to return an array of AvailableIP objects")
+                responses['200']['content']['application/json']['schema'] = {
+                    'type': 'array',
+                    'items': {
+                        '$ref': '#/components/schemas/AvailableIP'
+                    }
+                }
+                responses['200']['content']['text/csv']['schema'] = {
+                    'type': 'array',
+                    'items': {
+                        '$ref': '#/components/schemas/AvailableIP'
+                    }
+                }
+
+        # Update the POST request response to return an array of IPAddress objects
+        if 'post' in available_ips_path and 'responses' in available_ips_path['post']:
+            responses_post = available_ips_path['post']['responses']
+            if '201' in responses_post and 'content' in responses_post['201']:
+                print("Updating available-ips POST response to return an array of IPAddress objects")
+                responses_post['201']['content']['application/json']['schema'] = {
+                    'type': 'array',
+                    'items': {
+                        '$ref': '#/components/schemas/IPAddress'
+                    }
+                }
+                responses_post['201']['content']['text/csv']['schema'] = {
+                    'type': 'array',
+                    'items': {
+                        '$ref': '#/components/schemas/IPAddress'
+                    }
+                }
+
 
 # Save the spec file
 with open(SPEC_PATH, 'w') as file:

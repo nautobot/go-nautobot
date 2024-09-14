@@ -9820,7 +9820,7 @@ func (r ApiIpamPrefixesAvailableIpsCreateRequest) Sort(sort string) ApiIpamPrefi
 	return r
 }
 
-func (r ApiIpamPrefixesAvailableIpsCreateRequest) Execute() (*PaginatedIPAddressList, *http.Response, error) {
+func (r ApiIpamPrefixesAvailableIpsCreateRequest) Execute() ([]IPAddress, *http.Response, error) {
 	return r.ApiService.IpamPrefixesAvailableIpsCreateExecute(r)
 }
 
@@ -9848,13 +9848,13 @@ func (a *IpamAPIService) IpamPrefixesAvailableIpsCreate(ctx context.Context, id 
 }
 
 // Execute executes the request
-//  @return PaginatedIPAddressList
-func (a *IpamAPIService) IpamPrefixesAvailableIpsCreateExecute(r ApiIpamPrefixesAvailableIpsCreateRequest) (*PaginatedIPAddressList, *http.Response, error) {
+//  @return []IPAddress
+func (a *IpamAPIService) IpamPrefixesAvailableIpsCreateExecute(r ApiIpamPrefixesAvailableIpsCreateRequest) ([]IPAddress, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodPost
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  *PaginatedIPAddressList
+		localVarReturnValue  []IPAddress
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "IpamAPIService.IpamPrefixesAvailableIpsCreate")
@@ -9994,7 +9994,7 @@ func (r ApiIpamPrefixesAvailableIpsListRequest) Depth(depth int32) ApiIpamPrefix
 	return r
 }
 
-func (r ApiIpamPrefixesAvailableIpsListRequest) Execute() (*PaginatedAvailableIPList, *http.Response, error) {
+func (r ApiIpamPrefixesAvailableIpsListRequest) Execute() ([]AvailableIP, *http.Response, error) {
 	return r.ApiService.IpamPrefixesAvailableIpsListExecute(r)
 }
 
@@ -10022,13 +10022,13 @@ func (a *IpamAPIService) IpamPrefixesAvailableIpsList(ctx context.Context, id st
 }
 
 // Execute executes the request
-//  @return PaginatedAvailableIPList
-func (a *IpamAPIService) IpamPrefixesAvailableIpsListExecute(r ApiIpamPrefixesAvailableIpsListRequest) (*PaginatedAvailableIPList, *http.Response, error) {
+//  @return []AvailableIP
+func (a *IpamAPIService) IpamPrefixesAvailableIpsListExecute(r ApiIpamPrefixesAvailableIpsListRequest) ([]AvailableIP, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  *PaginatedAvailableIPList
+		localVarReturnValue  []AvailableIP
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "IpamAPIService.IpamPrefixesAvailableIpsList")
