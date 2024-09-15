@@ -137,7 +137,7 @@ if 'components' in data and 'schemas' in data['components']:
                     if schema['properties'][ntype]['format'] == 'binary':
                         schema['properties'][ntype].pop('nullable')
                         
-# Patch to use AvailableIP array directly instead of PaginatedAvailableIPList for GET and POST
+# Patch to use AvailableIP array directly instead of PaginatedAvailableIPList (https://github.com/nautobot/nautobot/issues/2131)
 if 'paths' in data:
     if '/ipam/prefixes/{id}/available-ips/' in data['paths']:
         available_ips_path = data['paths']['/ipam/prefixes/{id}/available-ips/']

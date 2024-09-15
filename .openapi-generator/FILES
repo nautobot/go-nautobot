@@ -2087,3 +2087,4 @@ test/api_tenancy_test.go
 test/api_users_test.go
 test/api_virtualization_test.go
 utils.go
+docs/README.md

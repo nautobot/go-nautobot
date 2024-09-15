@@ -71,6 +71,13 @@ openapi-generator-cli generate --config /client/development/oapi-config.yaml \
 
 rm /client/.travis.yml
 /client/development/scripts/add-missing-imports.sh
+
+echo "Copying READMEs"
+mv /client/README.md /client/docs/README.md
+sed -i 's|docs/||g' /client/docs/README.md
+echo "docs/README.md" >> /client/.openapi-generator/FILES
+cp /client/.README.md /client/README.md
+
 echo "Starting Nautobot client tests..."
 
 export NAUTOBOT_URL=http://nautobot:8080/api/
