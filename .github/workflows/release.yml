@@ -19,14 +19,21 @@ jobs:
     steps:
       - name: "Get go-nautobot generator code"
         uses: actions/checkout@v3
+      - name: "Set up Docker Compose"
+        run: |
+          curl -L "https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          chmod +x /usr/local/bin/docker-compose
       - name: "Start Nautobot and Generator"
-        run: "docker-compose --project-name go_nautobot -f development/docker-compose.yml up --build --abort-on-container-exit"
+        run: |
+          cd development
+          docker-compose --project-name go_nautobot -f docker-compose.yml up --build --abort-on-container-exit
       - name: "Commit Changes"
         run: |
-          TAG=v$( cat tag.md )
+          cd ..
+          TAG=v$( cat api/nautobot_version )
           git config --global user.name 'GitHub CI'
           git config --global user.email 'networktocode@users.noreply.github.com'
-          git add pkg/nautobot/nautobot.go tag.md
+          git add -A
           git remote set-url origin https://${{ secrets.BOT_GITHUB_USERNAME }}:${{ secrets.BOT_GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git checkout
           git commit -am "Release $TAG"

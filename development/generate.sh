@@ -1,19 +1,19 @@
 #!/bin/sh
 set -euxo pipefail
 
-echo "Starting generation of Go Nautobot Bindings"
+echo "Getting openAPI spec"
 
 BETA_TAG="beta"
 ALPHA_TAG="alpha"
 RC_TAG="rc"
 
 # TODO: eventually we would like to generate for experimental Nautobot versions
-if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"* ]] || [[" $NAUTOBOT_VER" == *"$RC_TAG"* ]]; then
+if [[ "$NAUTOBOT_VER" == *"$BETA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$ALPHA_TAG"* ]] || [[ "$NAUTOBOT_VER" == *"$RC_TAG"* ]]; then
   echo "${NAUTOBOT_VER} is not an official Nautobot version, no new bindings are generated."
   exit 0
 fi
 
-VERSION_FILE="/client/tag.md"
+VERSION_FILE="/client/api/nautobot_version"
 CURRENT_VERSION=$(head -n 1 $VERSION_FILE)
 CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 
@@ -23,9 +23,23 @@ CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 # 1.4.0 -> 1.4
 MAJOR_MINOR_VER=${NAUTOBOT_VER%.*}
 
-wget --tries=5  http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER} -O swagger.yaml
+# Remove generated files
+for F in $(cat /client/.openapi-generator/FILES) ; do
+    rm -f /client/"${F}"
+done
 
-oapi-codegen --config oapi-config.yml swagger.yaml
+NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
+wget --tries=5 --header="Authorization: Token ${NAUTOBOT_TOKEN}" \
+     -O /client/api/openapi.yaml \
+     "http://nautobot:8080/api/swagger.yaml?api_version=${MAJOR_MINOR_VER}" || {
+  echo "Failed to download swagger.yaml"
+  exit 1
+}
+
+cp /client/api/openapi.yaml /client/api/openapi-original.yaml
+
+echo "Creating GO bindings"
+
 
 if [ "$CURRENT_MAJOR_MINOR_VER" = "$MAJOR_MINOR_VER" ]; then
     # Get the Patch version string
@@ -42,20 +56,36 @@ fi
 # TODO: remove beta when it's in production
 FINAL_NEW_TAG=${NEW_TAG}-beta
 
-echo $FINAL_NEW_TAG > tag.md
+echo $FINAL_NEW_TAG > /client/api/nautobot_version
 
-cp tag.md /client
-cp nautobot.go /client/pkg/nautobot
+#Fix openapi spec file
+/client/development/scripts/fix-spec.py
 
-echo "Go Nautobot Bindings generated"
+#yaml file is too long
+export _JAVA_OPTIONS=-DmaxYamlCodePoints=99999999
+openapi-generator-cli generate --config /client/development/oapi-config.yaml \
+    --input-spec /client/api/openapi.yaml \
+    --output /client \
+    --inline-schema-options RESOLVE_INLINE_ENUMS=true \
+    --http-user-agent go-nautobot/$(cat /client/api/nautobot_version)
+
+rm /client/.travis.yml
+/client/development/scripts/add-missing-imports.sh
+
+echo "Copying READMEs"
+mv /client/README.md /client/docs/README.md
+sed -i 's|docs/||g' /client/docs/README.md
+echo "docs/README.md" >> /client/.openapi-generator/FILES
+cp /client/.README.md /client/README.md
 
 echo "Starting Nautobot client tests..."
 
 export NAUTOBOT_URL=http://nautobot:8080/api/
 export NAUTOBOT_TOKEN=0123456789abcdef0123456789abcdef01234567
 
-cd /client/pkg/nautobot
+cd /client
 go mod tidy
-go test -v
+go test -v -gcflags="-e" ./...
+
 
 echo "Nautobot client tests completed"

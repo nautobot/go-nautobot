@@ -11,8 +11,8 @@ version: "3.4"
 services:
   oapi:
     build:
-      context: ../
-      dockerfile: development/Dockerfile
+      context: ./
+      dockerfile: Dockerfile
     image: "networktocode/oapi:local"
     depends_on:
       nautobot:
@@ -23,10 +23,10 @@ services:
       - "../:/client"
   nautobot:
     healthcheck:
-      interval: 10s
-      timeout: 5s
-      start_period: 45s
-      retries: 5
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 15
       test:
         - "CMD"
         - "curl"
@@ -41,23 +41,24 @@ services:
       db:
         condition: "service_healthy"
     <<: *nautobot-base
-  celery_worker:
-    healthcheck:
-      interval: "5s"
-      timeout: "5s"
-      start_period: "5s"
-      retries: 3
-      test: ["CMD", "nautobot-server", "health_check"]
-    depends_on:
-      nautobot:
-        condition: "service_started"
-      db:
-        condition: "service_healthy"
-    entrypoint:
-      - "sh"
-      - "-c"  # this is to evaluate the $NAUTOBOT_LOG_LEVEL from the env
-      - "nautobot-server celery worker -B -l $$NAUTOBOT_LOG_LEVEL"  # $$ because of docker-compose
-    <<: *nautobot-base
+  # NOTE: I'ts not necessary to have the worker running
+  # celery_worker:
+  #   healthcheck:
+  #     interval: "30s"
+  #     timeout: "10s"
+  #     start_period: "30s"
+  #     retries: 3
+  #     test: ["CMD", "nautobot-server", "health_check"]
+  #   depends_on:
+  #     nautobot:
+  #       condition: "service_healthy"
+  #     db:
+  #       condition: "service_healthy"
+  #   entrypoint:
+  #     - "sh"
+  #     - "-c"  # this is to evaluate the $NAUTOBOT_LOG_LEVEL from the env
+  #     - "nautobot-server celery worker -B -l $$NAUTOBOT_LOG_LEVEL"  # $$ because of docker-compose
+  #   <<: *nautobot-base
   db:
     image: "postgres:13-alpine"
     env_file:

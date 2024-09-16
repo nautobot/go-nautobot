@@ -1,0 +1,18 @@
+generatorName: go
+
+gitHost: github.com
+gitUserId: nautobot
+gitRepoId: go-nautobot
+
+packageName: nautobot
+
+globalProperty:
+  apiDocs: false
+  modelDocs: false
+  apiTests: false
+  modelTests: false
+
+additionalProperties:
+  disallowAdditionalPropertiesIfNotPresent: "false"
+  packageVersion: "3"
+  enumClassPrefix: true
