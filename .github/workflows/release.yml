@@ -29,7 +29,6 @@ jobs:
           docker-compose --project-name go_nautobot -f docker-compose.yml up --build --abort-on-container-exit
       - name: "Commit Changes"
         run: |
-          ls
           TAG=v$( cat api/nautobot_version )
           git config --global user.name 'GitHub CI'
           git config --global user.email 'networktocode@users.noreply.github.com'
