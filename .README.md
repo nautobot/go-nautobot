@@ -64,10 +64,10 @@ This way the project versioning will keep a relationship with the original minor
 
 ### Go Get Nautobot package
 
-Simply point your `get` for the `nautobot` package to the version you require, in this example version `1.5.8-beta`:
+Simply point your `get` for the `nautobot` package to the version you require, in this example version `v2.3.0-beta`:
 
 ```bash
-$ go get github.com/nautobot/go-nautobot@latest
+$ go get github.com/nautobot/go-nautobot/v2@v2.3.0-beta
 ```
 
 ### Go main example
@@ -79,7 +79,7 @@ import (
 	"context"
 	"fmt"
 
-	nb "github.com/nautobot/go-nautobot"
+	nb "github.com/nautobot/go-nautobot/v2"
 )
 
 func check(err error) {

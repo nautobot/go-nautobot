@@ -1,4 +1,4 @@
-module github.com/nautobot/go-nautobot
+module github.com/nautobot/go-nautobot/v2
 
 go 1.18
 
