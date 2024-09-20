@@ -2,7 +2,7 @@ generatorName: go
 
 gitHost: github.com
 gitUserId: nautobot
-gitRepoId: go-nautobot
+gitRepoId: go-nautobot/v2
 
 packageName: nautobot
 
