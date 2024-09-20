@@ -4301,16 +4301,16 @@ import (
 )
 
 func main() {
-	cluster := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
-	clusterN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
+	cluster := []string{"Inner_example"} // []string |  (optional)
+	clusterN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupIsnull := true // bool | Cluster group (ID or name) is null (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupId := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
 	clusterGroupIdIsnull := true // bool | Cluster group (ID) - Deprecated (use cluster_group filter) is null (optional)
 	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
-	clusterId := []string{"Inner_example"} // []string | Cluster (ID) (optional)
-	clusterIdN := []string{"Inner_example"} // []string | Exclude Cluster (ID) (optional)
+	clusterId := []string{"Inner_example"} // []string | Cluster (ID) - Deprecated (use cluster filter) (optional)
+	clusterIdN := []string{"Inner_example"} // []string | Exclude Cluster (ID) - Deprecated (use cluster filter) (optional)
 	clusterType := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeN := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeId := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
@@ -4495,16 +4495,16 @@ Other parameters are passed through a pointer to a apiVirtualizationVirtualMachi
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **cluster** | **string** |  | 
- **clusterN** | **string** |  | 
+ **cluster** | **[]string** |  | 
+ **clusterN** | **[]string** |  | 
  **clusterGroup** | **[]string** |  | 
  **clusterGroupIsnull** | **bool** | Cluster group (ID or name) is null | 
  **clusterGroupN** | **[]string** |  | 
  **clusterGroupId** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
  **clusterGroupIdIsnull** | **bool** | Cluster group (ID) - Deprecated (use cluster_group filter) is null | 
  **clusterGroupIdN** | **[]string** | Exclude Cluster group (ID) - Deprecated (use cluster_group filter) | 
- **clusterId** | **[]string** | Cluster (ID) | 
- **clusterIdN** | **[]string** | Exclude Cluster (ID) | 
+ **clusterId** | **[]string** | Cluster (ID) - Deprecated (use cluster filter) | 
+ **clusterIdN** | **[]string** | Exclude Cluster (ID) - Deprecated (use cluster filter) | 
  **clusterType** | **[]string** |  | 
  **clusterTypeN** | **[]string** |  | 
  **clusterTypeId** | **[]string** | Cluster type (ID) - Deprecated (use cluster_type filter) | 
