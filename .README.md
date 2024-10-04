@@ -22,7 +22,7 @@ Being aware of it, most often than not, you would need to generate your own bind
    $ wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/7.8.0/openapi-generator-cli-7.8.0.jar -O openapi-generator-cli.jar
    ```
 
-2. Define your `openapi-codegen` config file. You can use the [one in this repository](development/oapi-config.yml).
+2. Define your `openapi-codegen` config file. You can use the [one in this repository](development/oapi-config.yaml).
 
 3. Download the `swagger.yaml` from the API, using the proper minor version:
 
