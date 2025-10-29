@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -30,12 +30,13 @@ Name | Type | Description | Notes
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Vrfs** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 
 ## Methods
 
 ### NewPrefix
 
-`func NewPrefix(id string, objectType string, display string, url string, naturalSlug string, prefix string, network string, broadcast string, prefixLength int32, ipVersion int32, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Prefix`
+`func NewPrefix(objectType string, display string, url string, naturalSlug string, prefix string, network string, broadcast string, prefixLength int32, ipVersion int32, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, vrfs []BulkWritableCableRequestStatus, ) *Prefix`
 
 NewPrefix instantiates a new Prefix object
 This constructor will assign default values to properties that have it defined,
@@ -69,6 +70,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Prefix) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -704,6 +710,26 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *Prefix) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetVrfs
+
+`func (o *Prefix) GetVrfs() []BulkWritableCableRequestStatus`
+
+GetVrfs returns the Vrfs field if non-nil, zero value otherwise.
+
+### GetVrfsOk
+
+`func (o *Prefix) GetVrfsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetVrfsOk returns a tuple with the Vrfs field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVrfs
+
+`func (o *Prefix) SetVrfs(v []BulkWritableCableRequestStatus)`
+
+SetVrfs sets Vrfs field to given value.
+
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,6 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
+**Capabilities** | Pointer to [**[]CapabilitiesEnum**](CapabilitiesEnum.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -37,6 +39,66 @@ NewPatchedControllerRequestWithDefaults instantiates a new PatchedControllerRequ
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
+### GetId
+
+`func (o *PatchedControllerRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedControllerRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedControllerRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedControllerRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
+
+### GetCapabilities
+
+`func (o *PatchedControllerRequest) GetCapabilities() []CapabilitiesEnum`
+
+GetCapabilities returns the Capabilities field if non-nil, zero value otherwise.
+
+### GetCapabilitiesOk
+
+`func (o *PatchedControllerRequest) GetCapabilitiesOk() (*[]CapabilitiesEnum, bool)`
+
+GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCapabilities
+
+`func (o *PatchedControllerRequest) SetCapabilities(v []CapabilitiesEnum)`
+
+SetCapabilities sets Capabilities field to given value.
+
+### HasCapabilities
+
+`func (o *PatchedControllerRequest) HasCapabilities() bool`
+
+HasCapabilities returns a boolean if a field has been set.
+
+### SetCapabilitiesNil
+
+`func (o *PatchedControllerRequest) SetCapabilitiesNil(b bool)`
+
+ SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
+
+### UnsetCapabilities
+`func (o *PatchedControllerRequest) UnsetCapabilities()`
+
+UnsetCapabilities ensures that no value is present for Capabilities, not even an explicit nil
 ### GetName
 
 `func (o *PatchedControllerRequest) GetName() string`

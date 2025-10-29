@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewTenantGroup
 
-`func NewTenantGroup(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *TenantGroup`
+`func NewTenantGroup(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *TenantGroup`
 
 NewTenantGroup instantiates a new TenantGroup object
 This constructor will assign default values to properties that have it defined,
@@ -57,6 +57,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *TenantGroup) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

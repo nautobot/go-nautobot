@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedProvider
 
-`func NewNestedProvider(id string, objectType string, url string, ) *NestedProvider`
+`func NewNestedProvider(objectType string, url string, ) *NestedProvider`
 
 NewNestedProvider instantiates a new NestedProvider object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedProvider) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

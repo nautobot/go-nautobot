@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **ContentType** | **string** |  | 
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
-**Owner** | [**NullableExportTemplateOwner**](ExportTemplateOwner.md) |  | [readonly] 
+**Owner** | [**NullableNestedGitRepository**](NestedGitRepository.md) |  | [readonly] 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewExportTemplate
 
-`func NewExportTemplate(id string, objectType string, display string, url string, naturalSlug string, contentType string, owner NullableExportTemplateOwner, name string, templateCode string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ExportTemplate`
+`func NewExportTemplate(objectType string, display string, url string, naturalSlug string, contentType string, owner NullableNestedGitRepository, name string, templateCode string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ExportTemplate`
 
 NewExportTemplate instantiates a new ExportTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -60,6 +60,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ExportTemplate) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -198,20 +203,20 @@ HasOwnerContentType returns a boolean if a field has been set.
 UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
 ### GetOwner
 
-`func (o *ExportTemplate) GetOwner() ExportTemplateOwner`
+`func (o *ExportTemplate) GetOwner() NestedGitRepository`
 
 GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 ### GetOwnerOk
 
-`func (o *ExportTemplate) GetOwnerOk() (*ExportTemplateOwner, bool)`
+`func (o *ExportTemplate) GetOwnerOk() (*NestedGitRepository, bool)`
 
 GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOwner
 
-`func (o *ExportTemplate) SetOwner(v ExportTemplateOwner)`
+`func (o *ExportTemplate) SetOwner(v NestedGitRepository)`
 
 SetOwner sets Owner field to given value.
 

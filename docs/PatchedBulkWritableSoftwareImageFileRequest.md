@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **DownloadUrl** | Pointer to **string** |  | [optional] 
 **DefaultImage** | Pointer to **bool** | Is the default image for this software version | [optional] 
 **SoftwareVersion** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ExternalIntegration** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -241,6 +242,41 @@ SetSoftwareVersion sets SoftwareVersion field to given value.
 
 HasSoftwareVersion returns a boolean if a field has been set.
 
+### GetExternalIntegration
+
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) GetExternalIntegration() BulkWritableCircuitRequestTenant`
+
+GetExternalIntegration returns the ExternalIntegration field if non-nil, zero value otherwise.
+
+### GetExternalIntegrationOk
+
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) GetExternalIntegrationOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetExternalIntegrationOk returns a tuple with the ExternalIntegration field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExternalIntegration
+
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) SetExternalIntegration(v BulkWritableCircuitRequestTenant)`
+
+SetExternalIntegration sets ExternalIntegration field to given value.
+
+### HasExternalIntegration
+
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) HasExternalIntegration() bool`
+
+HasExternalIntegration returns a boolean if a field has been set.
+
+### SetExternalIntegrationNil
+
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) SetExternalIntegrationNil(b bool)`
+
+ SetExternalIntegrationNil sets the value for ExternalIntegration to be an explicit nil
+
+### UnsetExternalIntegration
+`func (o *PatchedBulkWritableSoftwareImageFileRequest) UnsetExternalIntegration()`
+
+UnsetExternalIntegration ensures that no value is present for ExternalIntegration, not even an explicit nil
 ### GetStatus
 
 `func (o *PatchedBulkWritableSoftwareImageFileRequest) GetStatus() BulkWritableCableRequestStatus`

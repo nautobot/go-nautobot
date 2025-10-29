@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**Mode** | Pointer to [**ModeEnum**](ModeEnum.md) |  | [optional] 
+**Mode** | Pointer to [**InterfaceModeChoices**](InterfaceModeChoices.md) |  | [optional] 
 **MacAddress** | Pointer to **NullableString** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
@@ -64,20 +64,20 @@ SetId sets Id field to given value.
 
 ### GetMode
 
-`func (o *PatchedBulkWritableVMInterfaceRequest) GetMode() ModeEnum`
+`func (o *PatchedBulkWritableVMInterfaceRequest) GetMode() InterfaceModeChoices`
 
 GetMode returns the Mode field if non-nil, zero value otherwise.
 
 ### GetModeOk
 
-`func (o *PatchedBulkWritableVMInterfaceRequest) GetModeOk() (*ModeEnum, bool)`
+`func (o *PatchedBulkWritableVMInterfaceRequest) GetModeOk() (*InterfaceModeChoices, bool)`
 
 GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMode
 
-`func (o *PatchedBulkWritableVMInterfaceRequest) SetMode(v ModeEnum)`
+`func (o *PatchedBulkWritableVMInterfaceRequest) SetMode(v InterfaceModeChoices)`
 
 SetMode sets Mode field to given value.
 

@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
-**Owner** | [**NullableConfigContextSchemaOwner**](ConfigContextSchemaOwner.md) |  | [readonly] 
+**Owner** | [**NullableNestedGitRepository**](NestedGitRepository.md) |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **DataSchema** | **interface{}** | A JSON Schema document which is used to validate a config context object. | 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewConfigContextSchema
 
-`func NewConfigContextSchema(id string, objectType string, display string, url string, naturalSlug string, owner NullableConfigContextSchemaOwner, name string, dataSchema interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContextSchema`
+`func NewConfigContextSchema(objectType string, display string, url string, naturalSlug string, owner NullableNestedGitRepository, name string, dataSchema interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContextSchema`
 
 NewConfigContextSchema instantiates a new ConfigContextSchema object
 This constructor will assign default values to properties that have it defined,
@@ -58,6 +58,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ConfigContextSchema) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -176,20 +181,20 @@ HasOwnerContentType returns a boolean if a field has been set.
 UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
 ### GetOwner
 
-`func (o *ConfigContextSchema) GetOwner() ConfigContextSchemaOwner`
+`func (o *ConfigContextSchema) GetOwner() NestedGitRepository`
 
 GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 ### GetOwnerOk
 
-`func (o *ConfigContextSchema) GetOwnerOk() (*ConfigContextSchemaOwner, bool)`
+`func (o *ConfigContextSchema) GetOwnerOk() (*NestedGitRepository, bool)`
 
 GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOwner
 
-`func (o *ConfigContextSchema) SetOwner(v ConfigContextSchemaOwner)`
+`func (o *ConfigContextSchema) SetOwner(v NestedGitRepository)`
 
 SetOwner sets Owner field to given value.
 

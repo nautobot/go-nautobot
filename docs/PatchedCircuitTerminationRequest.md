@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **TermSide** | Pointer to [**TermSideEnum**](TermSideEnum.md) |  | [optional] 
 **PortSpeed** | Pointer to **NullableInt32** |  | [optional] 
 **UpstreamSpeed** | Pointer to **NullableInt32** | Upstream speed, if different from port speed | [optional] 
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CloudNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -35,6 +37,31 @@ will change when the set of required properties is changed
 NewPatchedCircuitTerminationRequestWithDefaults instantiates a new PatchedCircuitTerminationRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedCircuitTerminationRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedCircuitTerminationRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedCircuitTerminationRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedCircuitTerminationRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetTermSide
 
@@ -336,6 +363,31 @@ HasCloudNetwork returns a boolean if a field has been set.
 `func (o *PatchedCircuitTerminationRequest) UnsetCloudNetwork()`
 
 UnsetCloudNetwork ensures that no value is present for CloudNetwork, not even an explicit nil
+### GetTags
+
+`func (o *PatchedCircuitTerminationRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedCircuitTerminationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedCircuitTerminationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedCircuitTerminationRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
 ### GetCustomFields
 
 `func (o *PatchedCircuitTerminationRequest) GetCustomFields() map[string]interface{}`

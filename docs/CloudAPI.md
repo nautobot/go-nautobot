@@ -21,8 +21,6 @@ Method | HTTP request | Description
 [**CloudCloudNetworkPrefixAssignmentsCreate**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsCreate) | **Post** /cloud/cloud-network-prefix-assignments/ | 
 [**CloudCloudNetworkPrefixAssignmentsDestroy**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsDestroy) | **Delete** /cloud/cloud-network-prefix-assignments/{id}/ | 
 [**CloudCloudNetworkPrefixAssignmentsList**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsList) | **Get** /cloud/cloud-network-prefix-assignments/ | 
-[**CloudCloudNetworkPrefixAssignmentsNotesCreate**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsNotesCreate) | **Post** /cloud/cloud-network-prefix-assignments/{id}/notes/ | 
-[**CloudCloudNetworkPrefixAssignmentsNotesList**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsNotesList) | **Get** /cloud/cloud-network-prefix-assignments/{id}/notes/ | 
 [**CloudCloudNetworkPrefixAssignmentsPartialUpdate**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsPartialUpdate) | **Patch** /cloud/cloud-network-prefix-assignments/{id}/ | 
 [**CloudCloudNetworkPrefixAssignmentsRetrieve**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsRetrieve) | **Get** /cloud/cloud-network-prefix-assignments/{id}/ | 
 [**CloudCloudNetworkPrefixAssignmentsUpdate**](CloudAPI.md#CloudCloudNetworkPrefixAssignmentsUpdate) | **Put** /cloud/cloud-network-prefix-assignments/{id}/ | 
@@ -54,8 +52,6 @@ Method | HTTP request | Description
 [**CloudCloudServiceNetworkAssignmentsCreate**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsCreate) | **Post** /cloud/cloud-service-network-assignments/ | 
 [**CloudCloudServiceNetworkAssignmentsDestroy**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsDestroy) | **Delete** /cloud/cloud-service-network-assignments/{id}/ | 
 [**CloudCloudServiceNetworkAssignmentsList**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsList) | **Get** /cloud/cloud-service-network-assignments/ | 
-[**CloudCloudServiceNetworkAssignmentsNotesCreate**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsNotesCreate) | **Post** /cloud/cloud-service-network-assignments/{id}/notes/ | 
-[**CloudCloudServiceNetworkAssignmentsNotesList**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsNotesList) | **Get** /cloud/cloud-service-network-assignments/{id}/notes/ | 
 [**CloudCloudServiceNetworkAssignmentsPartialUpdate**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsPartialUpdate) | **Patch** /cloud/cloud-service-network-assignments/{id}/ | 
 [**CloudCloudServiceNetworkAssignmentsRetrieve**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsRetrieve) | **Get** /cloud/cloud-service-network-assignments/{id}/ | 
 [**CloudCloudServiceNetworkAssignmentsUpdate**](CloudAPI.md#CloudCloudServiceNetworkAssignmentsUpdate) | **Put** /cloud/cloud-service-network-assignments/{id}/ | 
@@ -415,7 +411,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudAccountsList
 
-> PaginatedCloudAccountList CloudCloudAccountsList(ctx).AccountNumber(accountNumber).AccountNumberIc(accountNumberIc).AccountNumberIe(accountNumberIe).AccountNumberIew(accountNumberIew).AccountNumberIre(accountNumberIre).AccountNumberIsw(accountNumberIsw).AccountNumberN(accountNumberN).AccountNumberNic(accountNumberNic).AccountNumberNie(accountNumberNie).AccountNumberNiew(accountNumberNiew).AccountNumberNire(accountNumberNire).AccountNumberNisw(accountNumberNisw).AccountNumberNre(accountNumberNre).AccountNumberRe(accountNumberRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedCloudAccountList CloudCloudAccountsList(ctx).AccountNumber(accountNumber).AccountNumberIc(accountNumberIc).AccountNumberIe(accountNumberIe).AccountNumberIew(accountNumberIew).AccountNumberIre(accountNumberIre).AccountNumberIsw(accountNumberIsw).AccountNumberN(accountNumberN).AccountNumberNic(accountNumberNic).AccountNumberNie(accountNumberNie).AccountNumberNiew(accountNumberNiew).AccountNumberNire(accountNumberNire).AccountNumberNisw(accountNumberNisw).AccountNumberNre(accountNumberNre).AccountNumberRe(accountNumberRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -451,7 +447,7 @@ func main() {
 	accountNumberRe := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -474,22 +470,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -525,12 +509,13 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsList(context.Background()).AccountNumber(accountNumber).AccountNumberIc(accountNumberIc).AccountNumberIe(accountNumberIe).AccountNumberIew(accountNumberIew).AccountNumberIre(accountNumberIre).AccountNumberIsw(accountNumberIsw).AccountNumberN(accountNumberN).AccountNumberNic(accountNumberNic).AccountNumberNie(accountNumberNie).AccountNumberNiew(accountNumberNiew).AccountNumberNire(accountNumberNire).AccountNumberNisw(accountNumberNisw).AccountNumberNre(accountNumberNre).AccountNumberRe(accountNumberRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsList(context.Background()).AccountNumber(accountNumber).AccountNumberIc(accountNumberIc).AccountNumberIe(accountNumberIe).AccountNumberIew(accountNumberIew).AccountNumberIre(accountNumberIre).AccountNumberIsw(accountNumberIsw).AccountNumberN(accountNumberN).AccountNumberNic(accountNumberNic).AccountNumberNie(accountNumberNie).AccountNumberNiew(accountNumberNiew).AccountNumberNire(accountNumberNire).AccountNumberNisw(accountNumberNisw).AccountNumberNre(accountNumberNre).AccountNumberRe(accountNumberRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudAccountsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -567,7 +552,7 @@ Name | Type | Description  | Notes
  **accountNumberRe** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -590,22 +575,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -641,8 +614,9 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -738,7 +712,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudAccountsNotesList
 
-> PaginatedNoteList CloudCloudAccountsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList CloudCloudAccountsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -762,10 +736,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudAccountsNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -795,6 +770,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -890,7 +866,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudAccountsRetrieve
 
-> CloudAccount CloudCloudAccountsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudAccount CloudCloudAccountsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -912,10 +888,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud account.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudAccountsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudAccountsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -943,6 +920,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1378,7 +1356,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudNetworkPrefixAssignmentsList
 
-> PaginatedCloudNetworkPrefixAssignmentList CloudCloudNetworkPrefixAssignmentsList(ctx).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedCloudNetworkPrefixAssignmentList CloudCloudNetworkPrefixAssignmentsList(ctx).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).Format(format).Id(id).IdN(idN).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1401,19 +1379,7 @@ func main() {
 	cloudNetworkN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	prefix := []string{"Inner_example"} // []string |  (optional)
@@ -1421,10 +1387,11 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsList(context.Background()).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsList(context.Background()).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).Format(format).Id(id).IdN(idN).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworkPrefixAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1449,19 +1416,7 @@ Name | Type | Description  | Notes
  **cloudNetworkN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **prefix** | **[]string** |  | 
@@ -1469,162 +1424,11 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedCloudNetworkPrefixAssignmentList**](PaginatedCloudNetworkPrefixAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## CloudCloudNetworkPrefixAssignmentsNotesCreate
-
-> Note CloudCloudNetworkPrefixAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network prefix assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `CloudCloudNetworkPrefixAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this cloud network prefix assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiCloudCloudNetworkPrefixAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## CloudCloudNetworkPrefixAssignmentsNotesList
-
-> PaginatedNoteList CloudCloudNetworkPrefixAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network prefix assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `CloudCloudNetworkPrefixAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this cloud network prefix assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiCloudCloudNetworkPrefixAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -1716,7 +1520,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudNetworkPrefixAssignmentsRetrieve
 
-> CloudNetworkPrefixAssignment CloudCloudNetworkPrefixAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudNetworkPrefixAssignment CloudCloudNetworkPrefixAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1738,10 +1542,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network prefix assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworkPrefixAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1769,6 +1574,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2204,7 +2010,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudNetworksList
 
-> PaginatedCloudNetworkList CloudCloudNetworksList(ctx).CloudAccount(cloudAccount).CloudAccountN(cloudAccountN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).CloudServices(cloudServices).CloudServicesIsnull(cloudServicesIsnull).CloudServicesN(cloudServicesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefixes(prefixes).PrefixesN(prefixesN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedCloudNetworkList CloudCloudNetworksList(ctx).CloudAccount(cloudAccount).CloudAccountN(cloudAccountN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).CloudServices(cloudServices).CloudServicesIsnull(cloudServicesIsnull).CloudServicesN(cloudServicesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefixes(prefixes).PrefixesN(prefixesN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2233,7 +2039,7 @@ func main() {
 	cloudServicesN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2256,22 +2062,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2307,12 +2101,13 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksList(context.Background()).CloudAccount(cloudAccount).CloudAccountN(cloudAccountN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).CloudServices(cloudServices).CloudServicesIsnull(cloudServicesIsnull).CloudServicesN(cloudServicesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefixes(prefixes).PrefixesN(prefixesN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksList(context.Background()).CloudAccount(cloudAccount).CloudAccountN(cloudAccountN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).CloudServices(cloudServices).CloudServicesIsnull(cloudServicesIsnull).CloudServicesN(cloudServicesN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefixes(prefixes).PrefixesN(prefixesN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworksList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2342,7 +2137,7 @@ Name | Type | Description  | Notes
  **cloudServicesN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2365,22 +2160,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2416,8 +2199,9 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2513,7 +2297,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudNetworksNotesList
 
-> PaginatedNoteList CloudCloudNetworksNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList CloudCloudNetworksNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2537,10 +2321,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworksNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2570,6 +2355,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2665,7 +2451,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudNetworksRetrieve
 
-> CloudNetwork CloudCloudNetworksRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudNetwork CloudCloudNetworksRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2687,10 +2473,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudNetworksRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudNetworksRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2718,6 +2505,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -3153,7 +2941,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudResourceTypesList
 
-> PaginatedCloudResourceTypeList CloudCloudResourceTypesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedCloudResourceTypeList CloudCloudResourceTypesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesN(contentTypesN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3175,21 +2963,9 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	contentTypes := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesIc := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesIe := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesIew := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesIre := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesIsw := []int32{int32(123)} // []int32 |  (optional)
 	contentTypesN := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNic := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNie := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNiew := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNire := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNisw := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesNre := []int32{int32(123)} // []int32 |  (optional)
-	contentTypesRe := []int32{int32(123)} // []int32 |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -3212,22 +2988,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -3260,12 +3024,13 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesIc(contentTypesIc).ContentTypesIe(contentTypesIe).ContentTypesIew(contentTypesIew).ContentTypesIre(contentTypesIre).ContentTypesIsw(contentTypesIsw).ContentTypesN(contentTypesN).ContentTypesNic(contentTypesNic).ContentTypesNie(contentTypesNie).ContentTypesNiew(contentTypesNiew).ContentTypesNire(contentTypesNire).ContentTypesNisw(contentTypesNisw).ContentTypesNre(contentTypesNre).ContentTypesRe(contentTypesRe).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentTypes(contentTypes).ContentTypesN(contentTypesN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderN(providerN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudResourceTypesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3288,21 +3053,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **contentTypes** | **[]int32** |  | 
- **contentTypesIc** | **[]int32** |  | 
- **contentTypesIe** | **[]int32** |  | 
- **contentTypesIew** | **[]int32** |  | 
- **contentTypesIre** | **[]int32** |  | 
- **contentTypesIsw** | **[]int32** |  | 
  **contentTypesN** | **[]int32** |  | 
- **contentTypesNic** | **[]int32** |  | 
- **contentTypesNie** | **[]int32** |  | 
- **contentTypesNiew** | **[]int32** |  | 
- **contentTypesNire** | **[]int32** |  | 
- **contentTypesNisw** | **[]int32** |  | 
- **contentTypesNre** | **[]int32** |  | 
- **contentTypesRe** | **[]int32** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -3325,22 +3078,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -3373,8 +3114,9 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -3470,7 +3212,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudResourceTypesNotesList
 
-> PaginatedNoteList CloudCloudResourceTypesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList CloudCloudResourceTypesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3494,10 +3236,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudResourceTypesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3527,6 +3270,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -3622,7 +3366,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudResourceTypesRetrieve
 
-> CloudResourceType CloudCloudResourceTypesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudResourceType CloudCloudResourceTypesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3644,10 +3388,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud resource type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudResourceTypesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudResourceTypesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3675,6 +3420,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4110,7 +3856,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudServiceNetworkAssignmentsList
 
-> PaginatedCloudServiceNetworkAssignmentList CloudCloudServiceNetworkAssignmentsList(ctx).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).CloudService(cloudService).CloudServiceN(cloudServiceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedCloudServiceNetworkAssignmentList CloudCloudServiceNetworkAssignmentsList(ctx).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).CloudService(cloudService).CloudServiceN(cloudServiceN).Format(format).Id(id).IdN(idN).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4135,28 +3881,17 @@ func main() {
 	cloudServiceN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsList(context.Background()).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).CloudService(cloudService).CloudServiceN(cloudServiceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsList(context.Background()).CloudNetwork(cloudNetwork).CloudNetworkN(cloudNetworkN).CloudService(cloudService).CloudServiceN(cloudServiceN).Format(format).Id(id).IdN(idN).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServiceNetworkAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4183,180 +3918,17 @@ Name | Type | Description  | Notes
  **cloudServiceN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedCloudServiceNetworkAssignmentList**](PaginatedCloudServiceNetworkAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## CloudCloudServiceNetworkAssignmentsNotesCreate
-
-> Note CloudCloudServiceNetworkAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service network assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServiceNetworkAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `CloudCloudServiceNetworkAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `CloudAPI.CloudCloudServiceNetworkAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this cloud service network assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiCloudCloudServiceNetworkAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## CloudCloudServiceNetworkAssignmentsNotesList
-
-> PaginatedNoteList CloudCloudServiceNetworkAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service network assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServiceNetworkAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `CloudCloudServiceNetworkAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `CloudAPI.CloudCloudServiceNetworkAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this cloud service network assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiCloudCloudServiceNetworkAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -4448,7 +4020,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudServiceNetworkAssignmentsRetrieve
 
-> CloudServiceNetworkAssignment CloudCloudServiceNetworkAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudServiceNetworkAssignment CloudCloudServiceNetworkAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4470,10 +4042,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service network assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServiceNetworkAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4501,6 +4074,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4936,7 +4510,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudServicesList
 
-> PaginatedCloudServiceList CloudCloudServicesList(ctx).CloudAccount(cloudAccount).CloudAccountIsnull(cloudAccountIsnull).CloudAccountN(cloudAccountN).CloudNetworks(cloudNetworks).CloudNetworksN(cloudNetworksN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedCloudServiceList CloudCloudServicesList(ctx).CloudAccount(cloudAccount).CloudAccountIsnull(cloudAccountIsnull).CloudAccountN(cloudAccountN).CloudNetworks(cloudNetworks).CloudNetworksN(cloudNetworksN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4965,7 +4539,7 @@ func main() {
 	cloudResourceTypeN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4988,22 +4562,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -5034,12 +4596,13 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServicesList(context.Background()).CloudAccount(cloudAccount).CloudAccountIsnull(cloudAccountIsnull).CloudAccountN(cloudAccountN).CloudNetworks(cloudNetworks).CloudNetworksN(cloudNetworksN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudServicesList(context.Background()).CloudAccount(cloudAccount).CloudAccountIsnull(cloudAccountIsnull).CloudAccountN(cloudAccountN).CloudNetworks(cloudNetworks).CloudNetworksN(cloudNetworksN).CloudResourceType(cloudResourceType).CloudResourceTypeN(cloudResourceTypeN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServicesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5069,7 +4632,7 @@ Name | Type | Description  | Notes
  **cloudResourceTypeN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -5092,22 +4655,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -5138,8 +4689,9 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -5235,7 +4787,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudServicesNotesList
 
-> PaginatedNoteList CloudCloudServicesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList CloudCloudServicesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5259,10 +4811,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServicesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudServicesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServicesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5292,6 +4845,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -5387,7 +4941,7 @@ Name | Type | Description  | Notes
 
 ## CloudCloudServicesRetrieve
 
-> CloudService CloudCloudServicesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> CloudService CloudCloudServicesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5409,10 +4963,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CloudAPI.CloudCloudServicesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.CloudAPI.CloudCloudServicesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CloudAPI.CloudCloudServicesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5440,6 +4995,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 

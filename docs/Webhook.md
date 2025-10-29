@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewWebhook
 
-`func NewWebhook(id string, objectType string, display string, url string, naturalSlug string, contentTypes []string, name string, payloadUrl string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Webhook`
+`func NewWebhook(objectType string, display string, url string, naturalSlug string, contentTypes []string, name string, payloadUrl string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Webhook`
 
 NewWebhook instantiates a new Webhook object
 This constructor will assign default values to properties that have it defined,
@@ -65,6 +65,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Webhook) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

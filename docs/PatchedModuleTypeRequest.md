@@ -4,10 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Model** | Pointer to **string** |  | [optional] 
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -30,6 +32,31 @@ will change when the set of required properties is changed
 NewPatchedModuleTypeRequestWithDefaults instantiates a new PatchedModuleTypeRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedModuleTypeRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedModuleTypeRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedModuleTypeRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedModuleTypeRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetModel
 
@@ -131,6 +158,41 @@ SetManufacturer sets Manufacturer field to given value.
 
 HasManufacturer returns a boolean if a field has been set.
 
+### GetModuleFamily
+
+`func (o *PatchedModuleTypeRequest) GetModuleFamily() BulkWritableCircuitRequestTenant`
+
+GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
+
+### GetModuleFamilyOk
+
+`func (o *PatchedModuleTypeRequest) GetModuleFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleFamily
+
+`func (o *PatchedModuleTypeRequest) SetModuleFamily(v BulkWritableCircuitRequestTenant)`
+
+SetModuleFamily sets ModuleFamily field to given value.
+
+### HasModuleFamily
+
+`func (o *PatchedModuleTypeRequest) HasModuleFamily() bool`
+
+HasModuleFamily returns a boolean if a field has been set.
+
+### SetModuleFamilyNil
+
+`func (o *PatchedModuleTypeRequest) SetModuleFamilyNil(b bool)`
+
+ SetModuleFamilyNil sets the value for ModuleFamily to be an explicit nil
+
+### UnsetModuleFamily
+`func (o *PatchedModuleTypeRequest) UnsetModuleFamily()`
+
+UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedModuleTypeRequest) GetCustomFields() map[string]interface{}`

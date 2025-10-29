@@ -6,5 +6,5 @@ To Create the go-bindings manually, you need to install:
 - `git`
 
 Then run
-`./create-go-bindings` in this directory.
+`./create-go-bindings.sh` in this directory.
 You will need root permissions.

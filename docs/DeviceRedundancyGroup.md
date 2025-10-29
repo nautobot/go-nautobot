@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewDeviceRedundancyGroup
 
-`func NewDeviceRedundancyGroup(id string, objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceRedundancyGroup`
+`func NewDeviceRedundancyGroup(objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceRedundancyGroup`
 
 NewDeviceRedundancyGroup instantiates a new DeviceRedundancyGroup object
 This constructor will assign default values to properties that have it defined,
@@ -59,6 +59,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *DeviceRedundancyGroup) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

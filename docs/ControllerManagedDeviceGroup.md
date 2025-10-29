@@ -4,15 +4,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**Capabilities** | Pointer to [**[]ControllerCapabilitiesInner**](ControllerCapabilitiesInner.md) |  | [optional] 
 **Name** | **string** | Name of the controller device group | 
+**Description** | Pointer to **string** |  | [optional] 
 **Weight** | Pointer to **int32** | Weight of the controller device group, used to sort the groups within its parent group | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Controller** | [**BulkWritableControllerManagedDeviceGroupRequestController**](BulkWritableControllerManagedDeviceGroupRequestController.md) |  | 
+**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**RadioProfiles** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**WirelessNetworks** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -23,7 +28,7 @@ Name | Type | Description | Notes
 
 ### NewControllerManagedDeviceGroup
 
-`func NewControllerManagedDeviceGroup(id string, objectType string, display string, url string, naturalSlug string, name string, controller BulkWritableControllerManagedDeviceGroupRequestController, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ControllerManagedDeviceGroup`
+`func NewControllerManagedDeviceGroup(objectType string, display string, url string, naturalSlug string, name string, controller BulkWritableControllerManagedDeviceGroupRequestController, radioProfiles []BulkWritableCableRequestStatus, wirelessNetworks []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ControllerManagedDeviceGroup`
 
 NewControllerManagedDeviceGroup instantiates a new ControllerManagedDeviceGroup object
 This constructor will assign default values to properties that have it defined,
@@ -57,6 +62,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ControllerManagedDeviceGroup) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -138,6 +148,41 @@ and a boolean to check if the value has been set.
 SetNaturalSlug sets NaturalSlug field to given value.
 
 
+### GetCapabilities
+
+`func (o *ControllerManagedDeviceGroup) GetCapabilities() []ControllerCapabilitiesInner`
+
+GetCapabilities returns the Capabilities field if non-nil, zero value otherwise.
+
+### GetCapabilitiesOk
+
+`func (o *ControllerManagedDeviceGroup) GetCapabilitiesOk() (*[]ControllerCapabilitiesInner, bool)`
+
+GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCapabilities
+
+`func (o *ControllerManagedDeviceGroup) SetCapabilities(v []ControllerCapabilitiesInner)`
+
+SetCapabilities sets Capabilities field to given value.
+
+### HasCapabilities
+
+`func (o *ControllerManagedDeviceGroup) HasCapabilities() bool`
+
+HasCapabilities returns a boolean if a field has been set.
+
+### SetCapabilitiesNil
+
+`func (o *ControllerManagedDeviceGroup) SetCapabilitiesNil(b bool)`
+
+ SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
+
+### UnsetCapabilities
+`func (o *ControllerManagedDeviceGroup) UnsetCapabilities()`
+
+UnsetCapabilities ensures that no value is present for Capabilities, not even an explicit nil
 ### GetName
 
 `func (o *ControllerManagedDeviceGroup) GetName() string`
@@ -157,6 +202,31 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
+
+### GetDescription
+
+`func (o *ControllerManagedDeviceGroup) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *ControllerManagedDeviceGroup) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *ControllerManagedDeviceGroup) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *ControllerManagedDeviceGroup) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
 
 ### GetWeight
 
@@ -236,6 +306,81 @@ and a boolean to check if the value has been set.
 `func (o *ControllerManagedDeviceGroup) SetController(v BulkWritableControllerManagedDeviceGroupRequestController)`
 
 SetController sets Controller field to given value.
+
+
+### GetTenant
+
+`func (o *ControllerManagedDeviceGroup) GetTenant() BulkWritableCircuitRequestTenant`
+
+GetTenant returns the Tenant field if non-nil, zero value otherwise.
+
+### GetTenantOk
+
+`func (o *ControllerManagedDeviceGroup) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTenant
+
+`func (o *ControllerManagedDeviceGroup) SetTenant(v BulkWritableCircuitRequestTenant)`
+
+SetTenant sets Tenant field to given value.
+
+### HasTenant
+
+`func (o *ControllerManagedDeviceGroup) HasTenant() bool`
+
+HasTenant returns a boolean if a field has been set.
+
+### SetTenantNil
+
+`func (o *ControllerManagedDeviceGroup) SetTenantNil(b bool)`
+
+ SetTenantNil sets the value for Tenant to be an explicit nil
+
+### UnsetTenant
+`func (o *ControllerManagedDeviceGroup) UnsetTenant()`
+
+UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
+### GetRadioProfiles
+
+`func (o *ControllerManagedDeviceGroup) GetRadioProfiles() []BulkWritableCableRequestStatus`
+
+GetRadioProfiles returns the RadioProfiles field if non-nil, zero value otherwise.
+
+### GetRadioProfilesOk
+
+`func (o *ControllerManagedDeviceGroup) GetRadioProfilesOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetRadioProfilesOk returns a tuple with the RadioProfiles field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRadioProfiles
+
+`func (o *ControllerManagedDeviceGroup) SetRadioProfiles(v []BulkWritableCableRequestStatus)`
+
+SetRadioProfiles sets RadioProfiles field to given value.
+
+
+### GetWirelessNetworks
+
+`func (o *ControllerManagedDeviceGroup) GetWirelessNetworks() []BulkWritableCableRequestStatus`
+
+GetWirelessNetworks returns the WirelessNetworks field if non-nil, zero value otherwise.
+
+### GetWirelessNetworksOk
+
+`func (o *ControllerManagedDeviceGroup) GetWirelessNetworksOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetWirelessNetworksOk returns a tuple with the WirelessNetworks field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWirelessNetworks
+
+`func (o *ControllerManagedDeviceGroup) SetWirelessNetworks(v []BulkWritableCableRequestStatus)`
+
+SetWirelessNetworks sets WirelessNetworks field to given value.
 
 
 ### GetCreated

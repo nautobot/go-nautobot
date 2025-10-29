@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewInterfaceRedundancyGroup
 
-`func NewInterfaceRedundancyGroup(id string, objectType string, display string, url string, naturalSlug string, protocol InterfaceRedundancyGroupProtocol, name string, status BulkWritableCableRequestStatus, interfaces []BulkWritableCableRequestStatus, created time.Time, lastUpdated NullableTime, notesUrl string, ) *InterfaceRedundancyGroup`
+`func NewInterfaceRedundancyGroup(objectType string, display string, url string, naturalSlug string, protocol InterfaceRedundancyGroupProtocol, name string, status BulkWritableCableRequestStatus, interfaces []BulkWritableCableRequestStatus, created time.Time, lastUpdated NullableTime, notesUrl string, ) *InterfaceRedundancyGroup`
 
 NewInterfaceRedundancyGroup instantiates a new InterfaceRedundancyGroup object
 This constructor will assign default values to properties that have it defined,
@@ -61,6 +61,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *InterfaceRedundancyGroup) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

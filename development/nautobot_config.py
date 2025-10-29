@@ -30,6 +30,7 @@ if DEBUG and not _TESTING:
 
 ALLOWED_HOSTS = os.getenv("NAUTOBOT_ALLOWED_HOSTS", "").split(" ")
 SECRET_KEY = os.getenv("NAUTOBOT_SECRET_KEY", "")
+INSTALLATION_METRICS_ENABLED = is_truthy(os.getenv("INSTALLATION_METRICS_ENABLED", False))
 
 #
 # Database

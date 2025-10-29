@@ -4,12 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **Variables** | **map[string]interface{}** |  | [readonly] 
+**OwnerContentType** | Pointer to **NullableString** |  | [optional] 
+**Owner** | [**NullableNestedGitRepository**](NestedGitRepository.md) |  | [readonly] 
+**OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Query** | **string** |  | 
 **Created** | **NullableTime** |  | [readonly] 
@@ -20,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewGraphQLQuery
 
-`func NewGraphQLQuery(id string, objectType string, display string, url string, naturalSlug string, variables map[string]interface{}, name string, query string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GraphQLQuery`
+`func NewGraphQLQuery(objectType string, display string, url string, naturalSlug string, variables map[string]interface{}, owner NullableNestedGitRepository, name string, query string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GraphQLQuery`
 
 NewGraphQLQuery instantiates a new GraphQLQuery object
 This constructor will assign default values to properties that have it defined,
@@ -54,6 +57,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *GraphQLQuery) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -155,6 +163,106 @@ and a boolean to check if the value has been set.
 SetVariables sets Variables field to given value.
 
 
+### GetOwnerContentType
+
+`func (o *GraphQLQuery) GetOwnerContentType() string`
+
+GetOwnerContentType returns the OwnerContentType field if non-nil, zero value otherwise.
+
+### GetOwnerContentTypeOk
+
+`func (o *GraphQLQuery) GetOwnerContentTypeOk() (*string, bool)`
+
+GetOwnerContentTypeOk returns a tuple with the OwnerContentType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerContentType
+
+`func (o *GraphQLQuery) SetOwnerContentType(v string)`
+
+SetOwnerContentType sets OwnerContentType field to given value.
+
+### HasOwnerContentType
+
+`func (o *GraphQLQuery) HasOwnerContentType() bool`
+
+HasOwnerContentType returns a boolean if a field has been set.
+
+### SetOwnerContentTypeNil
+
+`func (o *GraphQLQuery) SetOwnerContentTypeNil(b bool)`
+
+ SetOwnerContentTypeNil sets the value for OwnerContentType to be an explicit nil
+
+### UnsetOwnerContentType
+`func (o *GraphQLQuery) UnsetOwnerContentType()`
+
+UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
+### GetOwner
+
+`func (o *GraphQLQuery) GetOwner() NestedGitRepository`
+
+GetOwner returns the Owner field if non-nil, zero value otherwise.
+
+### GetOwnerOk
+
+`func (o *GraphQLQuery) GetOwnerOk() (*NestedGitRepository, bool)`
+
+GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwner
+
+`func (o *GraphQLQuery) SetOwner(v NestedGitRepository)`
+
+SetOwner sets Owner field to given value.
+
+
+### SetOwnerNil
+
+`func (o *GraphQLQuery) SetOwnerNil(b bool)`
+
+ SetOwnerNil sets the value for Owner to be an explicit nil
+
+### UnsetOwner
+`func (o *GraphQLQuery) UnsetOwner()`
+
+UnsetOwner ensures that no value is present for Owner, not even an explicit nil
+### GetOwnerObjectId
+
+`func (o *GraphQLQuery) GetOwnerObjectId() string`
+
+GetOwnerObjectId returns the OwnerObjectId field if non-nil, zero value otherwise.
+
+### GetOwnerObjectIdOk
+
+`func (o *GraphQLQuery) GetOwnerObjectIdOk() (*string, bool)`
+
+GetOwnerObjectIdOk returns a tuple with the OwnerObjectId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerObjectId
+
+`func (o *GraphQLQuery) SetOwnerObjectId(v string)`
+
+SetOwnerObjectId sets OwnerObjectId field to given value.
+
+### HasOwnerObjectId
+
+`func (o *GraphQLQuery) HasOwnerObjectId() bool`
+
+HasOwnerObjectId returns a boolean if a field has been set.
+
+### SetOwnerObjectIdNil
+
+`func (o *GraphQLQuery) SetOwnerObjectIdNil(b bool)`
+
+ SetOwnerObjectIdNil sets the value for OwnerObjectId to be an explicit nil
+
+### UnsetOwnerObjectId
+`func (o *GraphQLQuery) UnsetOwnerObjectId()`
+
+UnsetOwnerObjectId ensures that no value is present for OwnerObjectId, not even an explicit nil
 ### GetName
 
 `func (o *GraphQLQuery) GetName() string`

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewService
 
-`func NewService(id string, objectType string, display string, url string, naturalSlug string, ports []int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Service`
+`func NewService(objectType string, display string, url string, naturalSlug string, ports []int32, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Service`
 
 NewService instantiates a new Service object
 This constructor will assign default values to properties that have it defined,
@@ -60,6 +60,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Service) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

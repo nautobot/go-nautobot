@@ -4,17 +4,19 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**RequiresFirstPartyModules** | Pointer to **bool** | This bay will only accept modules from the same manufacturer as the parent device or module | [optional] 
 **Name** | **string** |  | 
 **Position** | Pointer to **string** | The position of the module bay within the parent device/module | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **ParentDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ParentModule** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayRequestModuleFamily**](BulkWritableModuleBayRequestModuleFamily.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -25,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewModuleBay
 
-`func NewModuleBay(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ModuleBay`
+`func NewModuleBay(objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ModuleBay`
 
 NewModuleBay instantiates a new ModuleBay object
 This constructor will assign default values to properties that have it defined,
@@ -59,6 +61,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ModuleBay) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -139,6 +146,31 @@ and a boolean to check if the value has been set.
 
 SetNaturalSlug sets NaturalSlug field to given value.
 
+
+### GetRequiresFirstPartyModules
+
+`func (o *ModuleBay) GetRequiresFirstPartyModules() bool`
+
+GetRequiresFirstPartyModules returns the RequiresFirstPartyModules field if non-nil, zero value otherwise.
+
+### GetRequiresFirstPartyModulesOk
+
+`func (o *ModuleBay) GetRequiresFirstPartyModulesOk() (*bool, bool)`
+
+GetRequiresFirstPartyModulesOk returns a tuple with the RequiresFirstPartyModules field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRequiresFirstPartyModules
+
+`func (o *ModuleBay) SetRequiresFirstPartyModules(v bool)`
+
+SetRequiresFirstPartyModules sets RequiresFirstPartyModules field to given value.
+
+### HasRequiresFirstPartyModules
+
+`func (o *ModuleBay) HasRequiresFirstPartyModules() bool`
+
+HasRequiresFirstPartyModules returns a boolean if a field has been set.
 
 ### GetName
 
@@ -305,6 +337,41 @@ HasParentModule returns a boolean if a field has been set.
 `func (o *ModuleBay) UnsetParentModule()`
 
 UnsetParentModule ensures that no value is present for ParentModule, not even an explicit nil
+### GetModuleFamily
+
+`func (o *ModuleBay) GetModuleFamily() BulkWritableModuleBayRequestModuleFamily`
+
+GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
+
+### GetModuleFamilyOk
+
+`func (o *ModuleBay) GetModuleFamilyOk() (*BulkWritableModuleBayRequestModuleFamily, bool)`
+
+GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleFamily
+
+`func (o *ModuleBay) SetModuleFamily(v BulkWritableModuleBayRequestModuleFamily)`
+
+SetModuleFamily sets ModuleFamily field to given value.
+
+### HasModuleFamily
+
+`func (o *ModuleBay) HasModuleFamily() bool`
+
+HasModuleFamily returns a boolean if a field has been set.
+
+### SetModuleFamilyNil
+
+`func (o *ModuleBay) SetModuleFamilyNil(b bool)`
+
+ SetModuleFamilyNil sets the value for ModuleFamily to be an explicit nil
+
+### UnsetModuleFamily
+`func (o *ModuleBay) UnsetModuleFamily()`
+
+UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCreated
 
 `func (o *ModuleBay) GetCreated() time.Time`

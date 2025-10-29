@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewPlatform
 
-`func NewPlatform(id string, objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
+`func NewPlatform(objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
 
 NewPlatform instantiates a new Platform object
 This constructor will assign default values to properties that have it defined,
@@ -61,6 +61,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Platform) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

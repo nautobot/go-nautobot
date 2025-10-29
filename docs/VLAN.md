@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -23,12 +23,14 @@ Name | Type | Description | Notes
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**ComputedFields** | **map[string]interface{}** |  | [readonly] 
+**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewVLAN
 
-`func NewVLAN(id string, objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLAN`
+`func NewVLAN(objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, computedFields map[string]interface{}, ) *VLAN`
 
 NewVLAN instantiates a new VLAN object
 This constructor will assign default values to properties that have it defined,
@@ -62,6 +64,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *VLAN) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -507,6 +514,51 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *VLAN) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetComputedFields
+
+`func (o *VLAN) GetComputedFields() map[string]interface{}`
+
+GetComputedFields returns the ComputedFields field if non-nil, zero value otherwise.
+
+### GetComputedFieldsOk
+
+`func (o *VLAN) GetComputedFieldsOk() (*map[string]interface{}, bool)`
+
+GetComputedFieldsOk returns a tuple with the ComputedFields field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetComputedFields
+
+`func (o *VLAN) SetComputedFields(v map[string]interface{})`
+
+SetComputedFields sets ComputedFields field to given value.
+
+
+### GetRelationships
+
+`func (o *VLAN) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+
+GetRelationships returns the Relationships field if non-nil, zero value otherwise.
+
+### GetRelationshipsOk
+
+`func (o *VLAN) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+
+GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRelationships
+
+`func (o *VLAN) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+
+SetRelationships sets Relationships field to given value.
+
+### HasRelationships
+
+`func (o *VLAN) HasRelationships() bool`
+
+HasRelationships returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

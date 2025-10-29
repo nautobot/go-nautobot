@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewCloudNetworkPrefixAssignment
 
-`func NewCloudNetworkPrefixAssignment(id string, objectType string, display string, url string, naturalSlug string, cloudNetwork BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *CloudNetworkPrefixAssignment`
+`func NewCloudNetworkPrefixAssignment(objectType string, display string, url string, naturalSlug string, cloudNetwork BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *CloudNetworkPrefixAssignment`
 
 NewCloudNetworkPrefixAssignment instantiates a new CloudNetworkPrefixAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -50,6 +50,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *CloudNetworkPrefixAssignment) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

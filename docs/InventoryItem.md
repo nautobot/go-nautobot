@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -32,7 +32,7 @@ Name | Type | Description | Notes
 
 ### NewInventoryItem
 
-`func NewInventoryItem(id string, objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, device BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *InventoryItem`
+`func NewInventoryItem(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, device BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *InventoryItem`
 
 NewInventoryItem instantiates a new InventoryItem object
 This constructor will assign default values to properties that have it defined,
@@ -66,6 +66,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *InventoryItem) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

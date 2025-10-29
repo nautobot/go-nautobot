@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **OwnerContentType** | Pointer to **NullableString** |  | [optional] 
-**Owner** | [**NullableConfigContextOwner**](ConfigContextOwner.md) |  | [readonly] 
+**Owner** | [**NullableNestedGitRepository**](NestedGitRepository.md) |  | [readonly] 
 **Name** | **string** |  | 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Weight** | Pointer to **int32** |  | [optional] 
@@ -36,7 +36,7 @@ Name | Type | Description | Notes
 
 ### NewConfigContext
 
-`func NewConfigContext(id string, objectType string, display string, url string, naturalSlug string, owner NullableConfigContextOwner, name string, data interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContext`
+`func NewConfigContext(objectType string, display string, url string, naturalSlug string, owner NullableNestedGitRepository, name string, data interface{}, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ConfigContext`
 
 NewConfigContext instantiates a new ConfigContext object
 This constructor will assign default values to properties that have it defined,
@@ -70,6 +70,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ConfigContext) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -188,20 +193,20 @@ HasOwnerContentType returns a boolean if a field has been set.
 UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
 ### GetOwner
 
-`func (o *ConfigContext) GetOwner() ConfigContextOwner`
+`func (o *ConfigContext) GetOwner() NestedGitRepository`
 
 GetOwner returns the Owner field if non-nil, zero value otherwise.
 
 ### GetOwnerOk
 
-`func (o *ConfigContext) GetOwnerOk() (*ConfigContextOwner, bool)`
+`func (o *ConfigContext) GetOwnerOk() (*NestedGitRepository, bool)`
 
 GetOwnerOk returns a tuple with the Owner field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetOwner
 
-`func (o *ConfigContext) SetOwner(v ConfigContextOwner)`
+`func (o *ConfigContext) SetOwner(v NestedGitRepository)`
 
 SetOwner sets Owner field to given value.
 

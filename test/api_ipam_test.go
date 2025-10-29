@@ -520,34 +520,6 @@ func Test_nautobot_IpamAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test IpamAPIService IpamPrefixLocationAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamPrefixLocationAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsNotesList(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test IpamAPIService IpamPrefixLocationAssignmentsPartialUpdate", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1214,6 +1186,34 @@ func Test_nautobot_IpamAPIService(t *testing.T) {
 
 	})
 
+	t.Run("Test IpamAPIService IpamVlanGroupsAvailableVlansCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.IpamAPI.IpamVlanGroupsAvailableVlansCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test IpamAPIService IpamVlanGroupsAvailableVlansList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.IpamAPI.IpamVlanGroupsAvailableVlansList(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test IpamAPIService IpamVlanGroupsBulkDestroy", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1421,34 +1421,6 @@ func Test_nautobot_IpamAPIService(t *testing.T) {
 		t.Skip("skip test")  // remove to run test
 
 		resp, httpRes, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsList(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamVlanLocationAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamVlanLocationAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsNotesList(context.Background(), id).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)
@@ -1712,34 +1684,6 @@ func Test_nautobot_IpamAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test IpamAPIService IpamVrfDeviceAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamVrfDeviceAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsNotesList(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test IpamAPIService IpamVrfDeviceAssignmentsPartialUpdate", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -1847,34 +1791,6 @@ func Test_nautobot_IpamAPIService(t *testing.T) {
 		t.Skip("skip test")  // remove to run test
 
 		resp, httpRes, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsList(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamVrfPrefixAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test IpamAPIService IpamVrfPrefixAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsNotesList(context.Background(), id).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)

@@ -46,7 +46,7 @@ Method | HTTP request | Description
 
 ## UsersConfigRetrieve
 
-> map[string]interface{} UsersConfigRetrieve(ctx).Format(format).Depth(depth).Execute()
+> map[string]interface{} UsersConfigRetrieve(ctx).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -67,10 +67,11 @@ import (
 func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersConfigRetrieve(context.Background()).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersConfigRetrieve(context.Background()).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersConfigRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -93,6 +94,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -454,7 +456,7 @@ Name | Type | Description  | Notes
 
 ## UsersGroupsList
 
-> PaginatedGroupList UsersGroupsList(ctx).Format(format).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedGroupList UsersGroupsList(ctx).Format(format).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -499,10 +501,11 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersGroupsList(context.Background()).Format(format).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersGroupsList(context.Background()).Format(format).Id(id).IdGt(idGt).IdGte(idGte).IdLt(idLt).IdLte(idLte).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -549,6 +552,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -644,7 +648,7 @@ Name | Type | Description  | Notes
 
 ## UsersGroupsRetrieve
 
-> Group UsersGroupsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> Group UsersGroupsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -666,10 +670,11 @@ func main() {
 	id := int32(56) // int32 | A unique integer value identifying this group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersGroupsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersGroupsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersGroupsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -697,6 +702,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1132,7 +1138,7 @@ Name | Type | Description  | Notes
 
 ## UsersPermissionsList
 
-> PaginatedObjectPermissionList UsersPermissionsList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).ObjectTypes(objectTypes).ObjectTypesN(objectTypesN).Offset(offset).Q(q).Sort(sort).Users(users).UsersN(usersN).Depth(depth).Execute()
+> PaginatedObjectPermissionList UsersPermissionsList(ctx).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).Id(id).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).ObjectTypes(objectTypes).ObjectTypesN(objectTypesN).Offset(offset).Q(q).Sort(sort).Users(users).UsersN(usersN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1172,19 +1178,7 @@ func main() {
 	groupsId := []int32{int32(123)} // []int32 | Group (ID) (optional)
 	groupsIdN := []int32{int32(123)} // []int32 | Exclude Group (ID) (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -1208,10 +1202,11 @@ func main() {
 	users := []string{"Inner_example"} // []string |  (optional)
 	usersN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersPermissionsList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).ObjectTypes(objectTypes).ObjectTypesN(objectTypesN).Offset(offset).Q(q).Sort(sort).Users(users).UsersN(usersN).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersPermissionsList(context.Background()).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Enabled(enabled).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).Id(id).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).ObjectTypes(objectTypes).ObjectTypesN(objectTypesN).Offset(offset).Q(q).Sort(sort).Users(users).UsersN(usersN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersPermissionsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1253,19 +1248,7 @@ Name | Type | Description  | Notes
  **groupsId** | **[]int32** | Group (ID) | 
  **groupsIdN** | **[]int32** | Exclude Group (ID) | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -1289,6 +1272,7 @@ Name | Type | Description  | Notes
  **users** | **[]string** |  | 
  **usersN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1384,7 +1368,7 @@ Name | Type | Description  | Notes
 
 ## UsersPermissionsRetrieve
 
-> ObjectPermission UsersPermissionsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> ObjectPermission UsersPermissionsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1406,10 +1390,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this permission.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersPermissionsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersPermissionsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersPermissionsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1437,6 +1422,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1872,7 +1858,7 @@ Name | Type | Description  | Notes
 
 ## UsersTokensList
 
-> PaginatedTokenList UsersTokensList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Expires(expires).ExpiresGt(expiresGt).ExpiresGte(expiresGte).ExpiresIsnull(expiresIsnull).ExpiresLt(expiresLt).ExpiresLte(expiresLte).ExpiresN(expiresN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).WriteEnabled(writeEnabled).Depth(depth).Execute()
+> PaginatedTokenList UsersTokensList(ctx).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Expires(expires).ExpiresGt(expiresGt).ExpiresGte(expiresGte).ExpiresIsnull(expiresIsnull).ExpiresLt(expiresLt).ExpiresLte(expiresLte).ExpiresN(expiresN).Format(format).Id(id).IdN(idN).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).WriteEnabled(writeEnabled).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1921,19 +1907,7 @@ func main() {
 	expiresN := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	key := []string{"Inner_example"} // []string |  (optional)
 	keyIc := []string{"Inner_example"} // []string |  (optional)
 	keyIe := []string{"Inner_example"} // []string |  (optional)
@@ -1954,10 +1928,11 @@ func main() {
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	writeEnabled := true // bool |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersTokensList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Expires(expires).ExpiresGt(expiresGt).ExpiresGte(expiresGte).ExpiresIsnull(expiresIsnull).ExpiresLt(expiresLt).ExpiresLte(expiresLte).ExpiresN(expiresN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).WriteEnabled(writeEnabled).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersTokensList(context.Background()).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Expires(expires).ExpiresGt(expiresGt).ExpiresGte(expiresGte).ExpiresIsnull(expiresIsnull).ExpiresLt(expiresLt).ExpiresLte(expiresLte).ExpiresN(expiresN).Format(format).Id(id).IdN(idN).Key(key).KeyIc(keyIc).KeyIe(keyIe).KeyIew(keyIew).KeyIre(keyIre).KeyIsw(keyIsw).KeyN(keyN).KeyNic(keyNic).KeyNie(keyNie).KeyNiew(keyNiew).KeyNire(keyNire).KeyNisw(keyNisw).KeyNre(keyNre).KeyRe(keyRe).Limit(limit).Offset(offset).Q(q).Sort(sort).WriteEnabled(writeEnabled).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersTokensList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2007,19 +1982,7 @@ Name | Type | Description  | Notes
  **expiresN** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **key** | **[]string** |  | 
  **keyIc** | **[]string** |  | 
  **keyIe** | **[]string** |  | 
@@ -2040,6 +2003,7 @@ Name | Type | Description  | Notes
  **sort** | **string** | Which field to use when ordering the results. | 
  **writeEnabled** | **bool** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2135,7 +2099,7 @@ Name | Type | Description  | Notes
 
 ## UsersTokensRetrieve
 
-> Token UsersTokensRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> Token UsersTokensRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2157,10 +2121,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this token.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersTokensRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersTokensRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersTokensRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2188,6 +2153,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2623,7 +2589,7 @@ Name | Type | Description  | Notes
 
 ## UsersUsersList
 
-> PaginatedUserList UsersUsersList(ctx).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).FirstName(firstName).FirstNameIc(firstNameIc).FirstNameIe(firstNameIe).FirstNameIew(firstNameIew).FirstNameIre(firstNameIre).FirstNameIsw(firstNameIsw).FirstNameN(firstNameN).FirstNameNic(firstNameNic).FirstNameNie(firstNameNie).FirstNameNiew(firstNameNiew).FirstNameNire(firstNameNire).FirstNameNisw(firstNameNisw).FirstNameNre(firstNameNre).FirstNameRe(firstNameRe).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).HasObjectChanges(hasObjectChanges).HasObjectPermissions(hasObjectPermissions).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).IsStaff(isStaff).LastName(lastName).LastNameIc(lastNameIc).LastNameIe(lastNameIe).LastNameIew(lastNameIew).LastNameIre(lastNameIre).LastNameIsw(lastNameIsw).LastNameN(lastNameN).LastNameNic(lastNameNic).LastNameNie(lastNameNie).LastNameNiew(lastNameNiew).LastNameNire(lastNameNire).LastNameNisw(lastNameNisw).LastNameNre(lastNameNre).LastNameRe(lastNameRe).Limit(limit).ObjectChanges(objectChanges).ObjectChangesIsnull(objectChangesIsnull).ObjectChangesN(objectChangesN).ObjectPermissions(objectPermissions).ObjectPermissionsIsnull(objectPermissionsIsnull).ObjectPermissionsN(objectPermissionsN).Offset(offset).Q(q).RackReservationsId(rackReservationsId).RackReservationsIdIsnull(rackReservationsIdIsnull).RackReservationsIdN(rackReservationsIdN).Sort(sort).Username(username).UsernameIc(usernameIc).UsernameIe(usernameIe).UsernameIew(usernameIew).UsernameIre(usernameIre).UsernameIsw(usernameIsw).UsernameN(usernameN).UsernameNic(usernameNic).UsernameNie(usernameNie).UsernameNiew(usernameNiew).UsernameNire(usernameNire).UsernameNisw(usernameNisw).UsernameNre(usernameNre).UsernameRe(usernameRe).Depth(depth).Execute()
+> PaginatedUserList UsersUsersList(ctx).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).FirstName(firstName).FirstNameIc(firstNameIc).FirstNameIe(firstNameIe).FirstNameIew(firstNameIew).FirstNameIre(firstNameIre).FirstNameIsw(firstNameIsw).FirstNameN(firstNameN).FirstNameNic(firstNameNic).FirstNameNie(firstNameNie).FirstNameNiew(firstNameNiew).FirstNameNire(firstNameNire).FirstNameNisw(firstNameNisw).FirstNameNre(firstNameNre).FirstNameRe(firstNameRe).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).HasObjectChanges(hasObjectChanges).HasObjectPermissions(hasObjectPermissions).HasRackReservations(hasRackReservations).Id(id).IdN(idN).IsActive(isActive).IsStaff(isStaff).LastName(lastName).LastNameIc(lastNameIc).LastNameIe(lastNameIe).LastNameIew(lastNameIew).LastNameIre(lastNameIre).LastNameIsw(lastNameIsw).LastNameN(lastNameN).LastNameNic(lastNameNic).LastNameNie(lastNameNie).LastNameNiew(lastNameNiew).LastNameNire(lastNameNire).LastNameNisw(lastNameNisw).LastNameNre(lastNameNre).LastNameRe(lastNameRe).Limit(limit).ObjectChanges(objectChanges).ObjectChangesIsnull(objectChangesIsnull).ObjectChangesN(objectChangesN).ObjectPermissions(objectPermissions).ObjectPermissionsIsnull(objectPermissionsIsnull).ObjectPermissionsN(objectPermissionsN).Offset(offset).Q(q).RackReservationsId(rackReservationsId).RackReservationsIdIsnull(rackReservationsIdIsnull).RackReservationsIdN(rackReservationsIdN).Sort(sort).Username(username).UsernameIc(usernameIc).UsernameIe(usernameIe).UsernameIew(usernameIew).UsernameIre(usernameIre).UsernameIsw(usernameIsw).UsernameN(usernameN).UsernameNic(usernameNic).UsernameNie(usernameNie).UsernameNiew(usernameNiew).UsernameNire(usernameNire).UsernameNisw(usernameNisw).UsernameNre(usernameNre).UsernameRe(usernameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2679,19 +2645,7 @@ func main() {
 	hasObjectPermissions := true // bool | Has object permissions (optional)
 	hasRackReservations := true // bool | Has Rack Reservations (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	isActive := true // bool |  (optional)
 	isStaff := true // bool |  (optional)
 	lastName := []string{"Inner_example"} // []string |  (optional)
@@ -2736,10 +2690,11 @@ func main() {
 	usernameNre := []string{"Inner_example"} // []string |  (optional)
 	usernameRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersUsersList(context.Background()).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).FirstName(firstName).FirstNameIc(firstNameIc).FirstNameIe(firstNameIe).FirstNameIew(firstNameIew).FirstNameIre(firstNameIre).FirstNameIsw(firstNameIsw).FirstNameN(firstNameN).FirstNameNic(firstNameNic).FirstNameNie(firstNameNie).FirstNameNiew(firstNameNiew).FirstNameNire(firstNameNire).FirstNameNisw(firstNameNisw).FirstNameNre(firstNameNre).FirstNameRe(firstNameRe).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).HasObjectChanges(hasObjectChanges).HasObjectPermissions(hasObjectPermissions).HasRackReservations(hasRackReservations).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsActive(isActive).IsStaff(isStaff).LastName(lastName).LastNameIc(lastNameIc).LastNameIe(lastNameIe).LastNameIew(lastNameIew).LastNameIre(lastNameIre).LastNameIsw(lastNameIsw).LastNameN(lastNameN).LastNameNic(lastNameNic).LastNameNie(lastNameNie).LastNameNiew(lastNameNiew).LastNameNire(lastNameNire).LastNameNisw(lastNameNisw).LastNameNre(lastNameNre).LastNameRe(lastNameRe).Limit(limit).ObjectChanges(objectChanges).ObjectChangesIsnull(objectChangesIsnull).ObjectChangesN(objectChangesN).ObjectPermissions(objectPermissions).ObjectPermissionsIsnull(objectPermissionsIsnull).ObjectPermissionsN(objectPermissionsN).Offset(offset).Q(q).RackReservationsId(rackReservationsId).RackReservationsIdIsnull(rackReservationsIdIsnull).RackReservationsIdN(rackReservationsIdN).Sort(sort).Username(username).UsernameIc(usernameIc).UsernameIe(usernameIe).UsernameIew(usernameIew).UsernameIre(usernameIre).UsernameIsw(usernameIsw).UsernameN(usernameN).UsernameNic(usernameNic).UsernameNie(usernameNie).UsernameNiew(usernameNiew).UsernameNire(usernameNire).UsernameNisw(usernameNisw).UsernameNre(usernameNre).UsernameRe(usernameRe).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersUsersList(context.Background()).Email(email).EmailIc(emailIc).EmailIe(emailIe).EmailIew(emailIew).EmailIre(emailIre).EmailIsw(emailIsw).EmailN(emailN).EmailNic(emailNic).EmailNie(emailNie).EmailNiew(emailNiew).EmailNire(emailNire).EmailNisw(emailNisw).EmailNre(emailNre).EmailRe(emailRe).FirstName(firstName).FirstNameIc(firstNameIc).FirstNameIe(firstNameIe).FirstNameIew(firstNameIew).FirstNameIre(firstNameIre).FirstNameIsw(firstNameIsw).FirstNameN(firstNameN).FirstNameNic(firstNameNic).FirstNameNie(firstNameNie).FirstNameNiew(firstNameNiew).FirstNameNire(firstNameNire).FirstNameNisw(firstNameNisw).FirstNameNre(firstNameNre).FirstNameRe(firstNameRe).Format(format).Groups(groups).GroupsN(groupsN).GroupsId(groupsId).GroupsIdN(groupsIdN).HasObjectChanges(hasObjectChanges).HasObjectPermissions(hasObjectPermissions).HasRackReservations(hasRackReservations).Id(id).IdN(idN).IsActive(isActive).IsStaff(isStaff).LastName(lastName).LastNameIc(lastNameIc).LastNameIe(lastNameIe).LastNameIew(lastNameIew).LastNameIre(lastNameIre).LastNameIsw(lastNameIsw).LastNameN(lastNameN).LastNameNic(lastNameNic).LastNameNie(lastNameNie).LastNameNiew(lastNameNiew).LastNameNire(lastNameNire).LastNameNisw(lastNameNisw).LastNameNre(lastNameNre).LastNameRe(lastNameRe).Limit(limit).ObjectChanges(objectChanges).ObjectChangesIsnull(objectChangesIsnull).ObjectChangesN(objectChangesN).ObjectPermissions(objectPermissions).ObjectPermissionsIsnull(objectPermissionsIsnull).ObjectPermissionsN(objectPermissionsN).Offset(offset).Q(q).RackReservationsId(rackReservationsId).RackReservationsIdIsnull(rackReservationsIdIsnull).RackReservationsIdN(rackReservationsIdN).Sort(sort).Username(username).UsernameIc(usernameIc).UsernameIe(usernameIe).UsernameIew(usernameIew).UsernameIre(usernameIre).UsernameIsw(usernameIsw).UsernameN(usernameN).UsernameNic(usernameNic).UsernameNie(usernameNie).UsernameNiew(usernameNiew).UsernameNire(usernameNire).UsernameNisw(usernameNisw).UsernameNre(usernameNre).UsernameRe(usernameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersUsersList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2797,19 +2752,7 @@ Name | Type | Description  | Notes
  **hasObjectPermissions** | **bool** | Has object permissions | 
  **hasRackReservations** | **bool** | Has Rack Reservations | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **isActive** | **bool** |  | 
  **isStaff** | **bool** |  | 
  **lastName** | **[]string** |  | 
@@ -2854,6 +2797,7 @@ Name | Type | Description  | Notes
  **usernameNre** | **[]string** |  | 
  **usernameRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2949,7 +2893,7 @@ Name | Type | Description  | Notes
 
 ## UsersUsersRetrieve
 
-> User UsersUsersRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> User UsersUsersRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2971,10 +2915,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.UsersAPI.UsersUsersRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.UsersAPI.UsersUsersRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `UsersAPI.UsersUsersRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3002,6 +2947,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 

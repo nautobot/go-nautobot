@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **SourceType** | **string** |  | 
 **DestinationType** | **string** |  | 
 **SourceId** | **string** |  | 
@@ -28,6 +29,31 @@ will change when the set of required properties is changed
 NewRelationshipAssociationRequestWithDefaults instantiates a new RelationshipAssociationRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *RelationshipAssociationRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *RelationshipAssociationRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *RelationshipAssociationRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *RelationshipAssociationRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetSourceType
 

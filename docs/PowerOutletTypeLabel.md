@@ -185,6 +185,8 @@
 
 * `UBIQUITI_SMART_POWER` (value: `"Ubiquiti SmartPower"`)
 
+* `EATON_C39` (value: `"Eaton C39"`)
+
 * `HARDWIRED` (value: `"Hardwired"`)
 
 * `OTHER` (value: `"Other"`)

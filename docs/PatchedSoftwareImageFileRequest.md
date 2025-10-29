@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **ImageFileName** | Pointer to **string** |  | [optional] 
 **ImageFileChecksum** | Pointer to **string** |  | [optional] 
 **HashingAlgorithm** | Pointer to [**BulkWritableSoftwareImageFileRequestHashingAlgorithm**](BulkWritableSoftwareImageFileRequestHashingAlgorithm.md) |  | [optional] 
@@ -11,6 +12,7 @@ Name | Type | Description | Notes
 **DownloadUrl** | Pointer to **string** |  | [optional] 
 **DefaultImage** | Pointer to **bool** | Is the default image for this software version | [optional] 
 **SoftwareVersion** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ExternalIntegration** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -34,6 +36,31 @@ will change when the set of required properties is changed
 NewPatchedSoftwareImageFileRequestWithDefaults instantiates a new PatchedSoftwareImageFileRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedSoftwareImageFileRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedSoftwareImageFileRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedSoftwareImageFileRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedSoftwareImageFileRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetImageFileName
 
@@ -220,6 +247,41 @@ SetSoftwareVersion sets SoftwareVersion field to given value.
 
 HasSoftwareVersion returns a boolean if a field has been set.
 
+### GetExternalIntegration
+
+`func (o *PatchedSoftwareImageFileRequest) GetExternalIntegration() BulkWritableCircuitRequestTenant`
+
+GetExternalIntegration returns the ExternalIntegration field if non-nil, zero value otherwise.
+
+### GetExternalIntegrationOk
+
+`func (o *PatchedSoftwareImageFileRequest) GetExternalIntegrationOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetExternalIntegrationOk returns a tuple with the ExternalIntegration field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExternalIntegration
+
+`func (o *PatchedSoftwareImageFileRequest) SetExternalIntegration(v BulkWritableCircuitRequestTenant)`
+
+SetExternalIntegration sets ExternalIntegration field to given value.
+
+### HasExternalIntegration
+
+`func (o *PatchedSoftwareImageFileRequest) HasExternalIntegration() bool`
+
+HasExternalIntegration returns a boolean if a field has been set.
+
+### SetExternalIntegrationNil
+
+`func (o *PatchedSoftwareImageFileRequest) SetExternalIntegrationNil(b bool)`
+
+ SetExternalIntegrationNil sets the value for ExternalIntegration to be an explicit nil
+
+### UnsetExternalIntegration
+`func (o *PatchedSoftwareImageFileRequest) UnsetExternalIntegration()`
+
+UnsetExternalIntegration ensures that no value is present for ExternalIntegration, not even an explicit nil
 ### GetStatus
 
 `func (o *PatchedSoftwareImageFileRequest) GetStatus() BulkWritableCableRequestStatus`

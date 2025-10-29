@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Version** | **string** |  | 
 **Alias** | Pointer to **string** | Optional alternative label for this version | [optional] 
 **ReleaseDate** | Pointer to **NullableString** |  | [optional] 
@@ -35,6 +36,31 @@ will change when the set of required properties is changed
 NewSoftwareVersionRequestWithDefaults instantiates a new SoftwareVersionRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *SoftwareVersionRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *SoftwareVersionRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *SoftwareVersionRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *SoftwareVersionRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetVersion
 

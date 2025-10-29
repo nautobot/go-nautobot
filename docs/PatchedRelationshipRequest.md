@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **SourceType** | Pointer to **string** |  | [optional] 
 **DestinationType** | Pointer to **string** |  | [optional] 
 **Label** | Pointer to **string** | Label of the relationship as displayed to users | [optional] 
@@ -37,6 +38,31 @@ will change when the set of required properties is changed
 NewPatchedRelationshipRequestWithDefaults instantiates a new PatchedRelationshipRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedRelationshipRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedRelationshipRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedRelationshipRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedRelationshipRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetSourceType
 

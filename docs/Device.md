@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -49,7 +49,7 @@ Name | Type | Description | Notes
 
 ### NewDevice
 
-`func NewDevice(id string, objectType string, display string, url string, naturalSlug string, deviceType BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, role BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Device`
+`func NewDevice(objectType string, display string, url string, naturalSlug string, deviceType BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, role BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Device`
 
 NewDevice instantiates a new Device object
 This constructor will assign default values to properties that have it defined,
@@ -83,6 +83,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Device) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
+**PowerFactor** | Pointer to **float64** | Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95. | [optional] 
 **DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -26,7 +27,7 @@ Name | Type | Description | Notes
 
 ### NewPowerPortTemplate
 
-`func NewPowerPortTemplate(id string, objectType string, display string, url string, naturalSlug string, notesUrl string, name string, created NullableTime, lastUpdated NullableTime, ) *PowerPortTemplate`
+`func NewPowerPortTemplate(objectType string, display string, url string, naturalSlug string, notesUrl string, name string, created NullableTime, lastUpdated NullableTime, ) *PowerPortTemplate`
 
 NewPowerPortTemplate instantiates a new PowerPortTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -60,6 +61,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *PowerPortTemplate) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -326,6 +332,31 @@ HasAllocatedDraw returns a boolean if a field has been set.
 `func (o *PowerPortTemplate) UnsetAllocatedDraw()`
 
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
+### GetPowerFactor
+
+`func (o *PowerPortTemplate) GetPowerFactor() float64`
+
+GetPowerFactor returns the PowerFactor field if non-nil, zero value otherwise.
+
+### GetPowerFactorOk
+
+`func (o *PowerPortTemplate) GetPowerFactorOk() (*float64, bool)`
+
+GetPowerFactorOk returns a tuple with the PowerFactor field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerFactor
+
+`func (o *PowerPortTemplate) SetPowerFactor(v float64)`
+
+SetPowerFactor sets PowerFactor field to given value.
+
+### HasPowerFactor
+
+`func (o *PowerPortTemplate) HasPowerFactor() bool`
+
+HasPowerFactor returns a boolean if a field has been set.
+
 ### GetDeviceType
 
 `func (o *PowerPortTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`

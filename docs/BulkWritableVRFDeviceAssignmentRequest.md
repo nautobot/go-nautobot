@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Vrf** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**VirtualDeviceContext** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 
 ## Methods
 
@@ -200,6 +201,41 @@ HasVirtualMachine returns a boolean if a field has been set.
 `func (o *BulkWritableVRFDeviceAssignmentRequest) UnsetVirtualMachine()`
 
 UnsetVirtualMachine ensures that no value is present for VirtualMachine, not even an explicit nil
+### GetVirtualDeviceContext
+
+`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContext() BulkWritableCircuitRequestTenant`
+
+GetVirtualDeviceContext returns the VirtualDeviceContext field if non-nil, zero value otherwise.
+
+### GetVirtualDeviceContextOk
+
+`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContextOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetVirtualDeviceContextOk returns a tuple with the VirtualDeviceContext field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVirtualDeviceContext
+
+`func (o *BulkWritableVRFDeviceAssignmentRequest) SetVirtualDeviceContext(v BulkWritableCircuitRequestTenant)`
+
+SetVirtualDeviceContext sets VirtualDeviceContext field to given value.
+
+### HasVirtualDeviceContext
+
+`func (o *BulkWritableVRFDeviceAssignmentRequest) HasVirtualDeviceContext() bool`
+
+HasVirtualDeviceContext returns a boolean if a field has been set.
+
+### SetVirtualDeviceContextNil
+
+`func (o *BulkWritableVRFDeviceAssignmentRequest) SetVirtualDeviceContextNil(b bool)`
+
+ SetVirtualDeviceContextNil sets the value for VirtualDeviceContext to be an explicit nil
+
+### UnsetVirtualDeviceContext
+`func (o *BulkWritableVRFDeviceAssignmentRequest) UnsetVirtualDeviceContext()`
+
+UnsetVirtualDeviceContext ensures that no value is present for VirtualDeviceContext, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

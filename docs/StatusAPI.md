@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## StatusRetrieve
 
-> StatusRetrieve200Response StatusRetrieve(ctx).Format(format).Depth(depth).Execute()
+> StatusRetrieve200Response StatusRetrieve(ctx).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -31,10 +31,11 @@ import (
 func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.StatusAPI.StatusRetrieve(context.Background()).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.StatusAPI.StatusRetrieve(context.Background()).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `StatusAPI.StatusRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -57,6 +58,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 

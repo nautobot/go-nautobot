@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Key** | Pointer to **string** |  | [optional] 
 **Expires** | Pointer to **NullableTime** |  | [optional] 
 **WriteEnabled** | Pointer to **bool** | Permit create/update/delete operations using this key | [optional] 
@@ -27,6 +28,31 @@ will change when the set of required properties is changed
 NewTokenRequestWithDefaults instantiates a new TokenRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *TokenRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *TokenRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *TokenRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *TokenRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetKey
 

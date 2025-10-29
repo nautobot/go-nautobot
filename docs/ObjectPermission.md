@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewObjectPermission
 
-`func NewObjectPermission(id string, objectType string, display string, url string, naturalSlug string, objectTypes []string, name string, actions interface{}, created NullableTime, lastUpdated NullableTime, ) *ObjectPermission`
+`func NewObjectPermission(objectType string, display string, url string, naturalSlug string, objectTypes []string, name string, actions interface{}, created NullableTime, lastUpdated NullableTime, ) *ObjectPermission`
 
 NewObjectPermission instantiates a new ObjectPermission object
 This constructor will assign default values to properties that have it defined,
@@ -58,6 +58,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ObjectPermission) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

@@ -5,12 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**RequiresFirstPartyModules** | Pointer to **bool** | This bay will only accept modules from the same manufacturer as the parent device or module | [optional] 
 **Name** | **string** |  | 
 **Position** | Pointer to **string** | The position of the module bay within the parent device/module | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **ParentDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ParentModule** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayRequestModuleFamily**](BulkWritableModuleBayRequestModuleFamily.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -53,6 +55,31 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+
+### GetRequiresFirstPartyModules
+
+`func (o *BulkWritableModuleBayRequest) GetRequiresFirstPartyModules() bool`
+
+GetRequiresFirstPartyModules returns the RequiresFirstPartyModules field if non-nil, zero value otherwise.
+
+### GetRequiresFirstPartyModulesOk
+
+`func (o *BulkWritableModuleBayRequest) GetRequiresFirstPartyModulesOk() (*bool, bool)`
+
+GetRequiresFirstPartyModulesOk returns a tuple with the RequiresFirstPartyModules field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRequiresFirstPartyModules
+
+`func (o *BulkWritableModuleBayRequest) SetRequiresFirstPartyModules(v bool)`
+
+SetRequiresFirstPartyModules sets RequiresFirstPartyModules field to given value.
+
+### HasRequiresFirstPartyModules
+
+`func (o *BulkWritableModuleBayRequest) HasRequiresFirstPartyModules() bool`
+
+HasRequiresFirstPartyModules returns a boolean if a field has been set.
 
 ### GetName
 
@@ -219,6 +246,41 @@ HasParentModule returns a boolean if a field has been set.
 `func (o *BulkWritableModuleBayRequest) UnsetParentModule()`
 
 UnsetParentModule ensures that no value is present for ParentModule, not even an explicit nil
+### GetModuleFamily
+
+`func (o *BulkWritableModuleBayRequest) GetModuleFamily() BulkWritableModuleBayRequestModuleFamily`
+
+GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
+
+### GetModuleFamilyOk
+
+`func (o *BulkWritableModuleBayRequest) GetModuleFamilyOk() (*BulkWritableModuleBayRequestModuleFamily, bool)`
+
+GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleFamily
+
+`func (o *BulkWritableModuleBayRequest) SetModuleFamily(v BulkWritableModuleBayRequestModuleFamily)`
+
+SetModuleFamily sets ModuleFamily field to given value.
+
+### HasModuleFamily
+
+`func (o *BulkWritableModuleBayRequest) HasModuleFamily() bool`
+
+HasModuleFamily returns a boolean if a field has been set.
+
+### SetModuleFamilyNil
+
+`func (o *BulkWritableModuleBayRequest) SetModuleFamilyNil(b bool)`
+
+ SetModuleFamilyNil sets the value for ModuleFamily to be an explicit nil
+
+### UnsetModuleFamily
+`func (o *BulkWritableModuleBayRequest) UnsetModuleFamily()`
+
+UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCustomFields
 
 `func (o *BulkWritableModuleBayRequest) GetCustomFields() map[string]interface{}`

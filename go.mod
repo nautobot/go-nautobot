@@ -3,7 +3,7 @@ module github.com/nautobot/go-nautobot/v2
 go 1.18
 
 require (
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.11.1
 	gopkg.in/validator.v2 v2.0.1
 )
 

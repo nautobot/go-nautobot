@@ -4,6 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
+**OwnerContentType** | Pointer to **NullableString** |  | [optional] 
+**OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Query** | **string** |  | 
 
@@ -26,6 +29,101 @@ NewGraphQLQueryRequestWithDefaults instantiates a new GraphQLQueryRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
+### GetId
+
+`func (o *GraphQLQueryRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *GraphQLQueryRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *GraphQLQueryRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *GraphQLQueryRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
+
+### GetOwnerContentType
+
+`func (o *GraphQLQueryRequest) GetOwnerContentType() string`
+
+GetOwnerContentType returns the OwnerContentType field if non-nil, zero value otherwise.
+
+### GetOwnerContentTypeOk
+
+`func (o *GraphQLQueryRequest) GetOwnerContentTypeOk() (*string, bool)`
+
+GetOwnerContentTypeOk returns a tuple with the OwnerContentType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerContentType
+
+`func (o *GraphQLQueryRequest) SetOwnerContentType(v string)`
+
+SetOwnerContentType sets OwnerContentType field to given value.
+
+### HasOwnerContentType
+
+`func (o *GraphQLQueryRequest) HasOwnerContentType() bool`
+
+HasOwnerContentType returns a boolean if a field has been set.
+
+### SetOwnerContentTypeNil
+
+`func (o *GraphQLQueryRequest) SetOwnerContentTypeNil(b bool)`
+
+ SetOwnerContentTypeNil sets the value for OwnerContentType to be an explicit nil
+
+### UnsetOwnerContentType
+`func (o *GraphQLQueryRequest) UnsetOwnerContentType()`
+
+UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
+### GetOwnerObjectId
+
+`func (o *GraphQLQueryRequest) GetOwnerObjectId() string`
+
+GetOwnerObjectId returns the OwnerObjectId field if non-nil, zero value otherwise.
+
+### GetOwnerObjectIdOk
+
+`func (o *GraphQLQueryRequest) GetOwnerObjectIdOk() (*string, bool)`
+
+GetOwnerObjectIdOk returns a tuple with the OwnerObjectId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerObjectId
+
+`func (o *GraphQLQueryRequest) SetOwnerObjectId(v string)`
+
+SetOwnerObjectId sets OwnerObjectId field to given value.
+
+### HasOwnerObjectId
+
+`func (o *GraphQLQueryRequest) HasOwnerObjectId() bool`
+
+HasOwnerObjectId returns a boolean if a field has been set.
+
+### SetOwnerObjectIdNil
+
+`func (o *GraphQLQueryRequest) SetOwnerObjectIdNil(b bool)`
+
+ SetOwnerObjectIdNil sets the value for OwnerObjectId to be an explicit nil
+
+### UnsetOwnerObjectId
+`func (o *GraphQLQueryRequest) UnsetOwnerObjectId()`
+
+UnsetOwnerObjectId ensures that no value is present for OwnerObjectId, not even an explicit nil
 ### GetName
 
 `func (o *GraphQLQueryRequest) GetName() string`

@@ -4,14 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Phone** | Pointer to **string** |  | [optional] [default to ""]
 **Email** | Pointer to **string** |  | [optional] [default to ""]
 **Address** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
+**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -32,30 +34,30 @@ NewTeamRequestWithDefaults instantiates a new TeamRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetContacts
+### GetId
 
-`func (o *TeamRequest) GetContacts() []BulkWritableCableRequestStatus`
+`func (o *TeamRequest) GetId() string`
 
-GetContacts returns the Contacts field if non-nil, zero value otherwise.
+GetId returns the Id field if non-nil, zero value otherwise.
 
-### GetContactsOk
+### GetIdOk
 
-`func (o *TeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *TeamRequest) GetIdOk() (*string, bool)`
 
-GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetContacts
+### SetId
 
-`func (o *TeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
+`func (o *TeamRequest) SetId(v string)`
 
-SetContacts sets Contacts field to given value.
+SetId sets Id field to given value.
 
-### HasContacts
+### HasId
 
-`func (o *TeamRequest) HasContacts() bool`
+`func (o *TeamRequest) HasId() bool`
 
-HasContacts returns a boolean if a field has been set.
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -177,6 +179,31 @@ SetComments sets Comments field to given value.
 
 HasComments returns a boolean if a field has been set.
 
+### GetContacts
+
+`func (o *TeamRequest) GetContacts() []BulkWritableCableRequestStatus`
+
+GetContacts returns the Contacts field if non-nil, zero value otherwise.
+
+### GetContactsOk
+
+`func (o *TeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContacts
+
+`func (o *TeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
+
+SetContacts sets Contacts field to given value.
+
+### HasContacts
+
+`func (o *TeamRequest) HasContacts() bool`
+
+HasContacts returns a boolean if a field has been set.
+
 ### GetCustomFields
 
 `func (o *TeamRequest) GetCustomFields() map[string]interface{}`
@@ -226,6 +253,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *TeamRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *TeamRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *TeamRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *TeamRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *TeamRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

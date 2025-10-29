@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
+**PowerFactor** | Pointer to **float64** | Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95. | [optional] 
 **Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -221,6 +222,31 @@ HasAllocatedDraw returns a boolean if a field has been set.
 `func (o *BulkWritablePowerPortRequest) UnsetAllocatedDraw()`
 
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
+### GetPowerFactor
+
+`func (o *BulkWritablePowerPortRequest) GetPowerFactor() float64`
+
+GetPowerFactor returns the PowerFactor field if non-nil, zero value otherwise.
+
+### GetPowerFactorOk
+
+`func (o *BulkWritablePowerPortRequest) GetPowerFactorOk() (*float64, bool)`
+
+GetPowerFactorOk returns a tuple with the PowerFactor field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerFactor
+
+`func (o *BulkWritablePowerPortRequest) SetPowerFactor(v float64)`
+
+SetPowerFactor sets PowerFactor field to given value.
+
+### HasPowerFactor
+
+`func (o *BulkWritablePowerPortRequest) HasPowerFactor() bool`
+
+HasPowerFactor returns a boolean if a field has been set.
+
 ### GetDevice
 
 `func (o *BulkWritablePowerPortRequest) GetDevice() BulkWritableCircuitRequestTenant`

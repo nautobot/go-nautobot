@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewFileProxy
 
-`func NewFileProxy(id string, objectType string, display string, url string, naturalSlug string, name string, uploadedAt time.Time, ) *FileProxy`
+`func NewFileProxy(objectType string, display string, url string, naturalSlug string, name string, uploadedAt time.Time, ) *FileProxy`
 
 NewFileProxy instantiates a new FileProxy object
 This constructor will assign default values to properties that have it defined,
@@ -51,6 +51,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *FileProxy) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

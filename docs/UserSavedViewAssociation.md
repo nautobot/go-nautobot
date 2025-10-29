@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewUserSavedViewAssociation
 
-`func NewUserSavedViewAssociation(id string, objectType string, display string, url string, naturalSlug string, viewName string, savedView BulkWritableCableRequestStatus, user BulkWritableCableRequestStatus, ) *UserSavedViewAssociation`
+`func NewUserSavedViewAssociation(objectType string, display string, url string, naturalSlug string, viewName string, savedView BulkWritableCableRequestStatus, user BulkWritableCableRequestStatus, ) *UserSavedViewAssociation`
 
 NewUserSavedViewAssociation instantiates a new UserSavedViewAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -51,6 +51,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *UserSavedViewAssociation) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

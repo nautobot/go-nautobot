@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **DownloadUrl** | Pointer to **string** |  | [optional] 
 **DefaultImage** | Pointer to **bool** | Is the default image for this software version | [optional] 
 **SoftwareVersion** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**ExternalIntegration** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 ### NewSoftwareImageFile
 
-`func NewSoftwareImageFile(id string, objectType string, display string, url string, naturalSlug string, imageFileName string, softwareVersion BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *SoftwareImageFile`
+`func NewSoftwareImageFile(objectType string, display string, url string, naturalSlug string, imageFileName string, softwareVersion BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *SoftwareImageFile`
 
 NewSoftwareImageFile instantiates a new SoftwareImageFile object
 This constructor will assign default values to properties that have it defined,
@@ -61,6 +62,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *SoftwareImageFile) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -317,6 +323,41 @@ and a boolean to check if the value has been set.
 SetSoftwareVersion sets SoftwareVersion field to given value.
 
 
+### GetExternalIntegration
+
+`func (o *SoftwareImageFile) GetExternalIntegration() BulkWritableCircuitRequestTenant`
+
+GetExternalIntegration returns the ExternalIntegration field if non-nil, zero value otherwise.
+
+### GetExternalIntegrationOk
+
+`func (o *SoftwareImageFile) GetExternalIntegrationOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetExternalIntegrationOk returns a tuple with the ExternalIntegration field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExternalIntegration
+
+`func (o *SoftwareImageFile) SetExternalIntegration(v BulkWritableCircuitRequestTenant)`
+
+SetExternalIntegration sets ExternalIntegration field to given value.
+
+### HasExternalIntegration
+
+`func (o *SoftwareImageFile) HasExternalIntegration() bool`
+
+HasExternalIntegration returns a boolean if a field has been set.
+
+### SetExternalIntegrationNil
+
+`func (o *SoftwareImageFile) SetExternalIntegrationNil(b bool)`
+
+ SetExternalIntegrationNil sets the value for ExternalIntegration to be an explicit nil
+
+### UnsetExternalIntegration
+`func (o *SoftwareImageFile) UnsetExternalIntegration()`
+
+UnsetExternalIntegration ensures that no value is present for ExternalIntegration, not even an explicit nil
 ### GetStatus
 
 `func (o *SoftwareImageFile) GetStatus() BulkWritableCableRequestStatus`

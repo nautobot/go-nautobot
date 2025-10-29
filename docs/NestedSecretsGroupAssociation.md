@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedSecretsGroupAssociation
 
-`func NewNestedSecretsGroupAssociation(id string, objectType string, url string, ) *NestedSecretsGroupAssociation`
+`func NewNestedSecretsGroupAssociation(objectType string, url string, ) *NestedSecretsGroupAssociation`
 
 NewNestedSecretsGroupAssociation instantiates a new NestedSecretsGroupAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedSecretsGroupAssociation) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

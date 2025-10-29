@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **Type** | Pointer to [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | [optional] 
-**Mode** | Pointer to [**ModeEnum**](ModeEnum.md) |  | [optional] 
+**Mode** | Pointer to [**InterfaceModeChoices**](InterfaceModeChoices.md) |  | [optional] 
 **MacAddress** | Pointer to **NullableString** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
@@ -94,20 +94,20 @@ HasType returns a boolean if a field has been set.
 
 ### GetMode
 
-`func (o *PatchedBulkWritableInterfaceRequest) GetMode() ModeEnum`
+`func (o *PatchedBulkWritableInterfaceRequest) GetMode() InterfaceModeChoices`
 
 GetMode returns the Mode field if non-nil, zero value otherwise.
 
 ### GetModeOk
 
-`func (o *PatchedBulkWritableInterfaceRequest) GetModeOk() (*ModeEnum, bool)`
+`func (o *PatchedBulkWritableInterfaceRequest) GetModeOk() (*InterfaceModeChoices, bool)`
 
 GetModeOk returns a tuple with the Mode field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMode
 
-`func (o *PatchedBulkWritableInterfaceRequest) SetMode(v ModeEnum)`
+`func (o *PatchedBulkWritableInterfaceRequest) SetMode(v InterfaceModeChoices)`
 
 SetMode sets Mode field to given value.
 

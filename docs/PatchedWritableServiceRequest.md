@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Ports** | Pointer to **[]int32** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Protocol** | Pointer to [**ServiceProtocolChoices**](ServiceProtocolChoices.md) |  | [optional] 
@@ -33,6 +34,31 @@ will change when the set of required properties is changed
 NewPatchedWritableServiceRequestWithDefaults instantiates a new PatchedWritableServiceRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedWritableServiceRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedWritableServiceRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedWritableServiceRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedWritableServiceRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetPorts
 

@@ -7,7 +7,6 @@ x-nautobot-base: &nautobot-base
   volumes:
     - "./nautobot_config.py:/opt/nautobot/nautobot_config.py"
 
-version: "3.4"
 services:
   oapi:
     build:

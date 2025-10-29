@@ -4,11 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Vrf** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**VirtualDeviceContext** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 
 ## Methods
 
@@ -28,6 +30,31 @@ will change when the set of required properties is changed
 NewVRFDeviceAssignmentRequestWithDefaults instantiates a new VRFDeviceAssignmentRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *VRFDeviceAssignmentRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *VRFDeviceAssignmentRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *VRFDeviceAssignmentRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *VRFDeviceAssignmentRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetRd
 
@@ -179,6 +206,41 @@ HasVirtualMachine returns a boolean if a field has been set.
 `func (o *VRFDeviceAssignmentRequest) UnsetVirtualMachine()`
 
 UnsetVirtualMachine ensures that no value is present for VirtualMachine, not even an explicit nil
+### GetVirtualDeviceContext
+
+`func (o *VRFDeviceAssignmentRequest) GetVirtualDeviceContext() BulkWritableCircuitRequestTenant`
+
+GetVirtualDeviceContext returns the VirtualDeviceContext field if non-nil, zero value otherwise.
+
+### GetVirtualDeviceContextOk
+
+`func (o *VRFDeviceAssignmentRequest) GetVirtualDeviceContextOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetVirtualDeviceContextOk returns a tuple with the VirtualDeviceContext field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVirtualDeviceContext
+
+`func (o *VRFDeviceAssignmentRequest) SetVirtualDeviceContext(v BulkWritableCircuitRequestTenant)`
+
+SetVirtualDeviceContext sets VirtualDeviceContext field to given value.
+
+### HasVirtualDeviceContext
+
+`func (o *VRFDeviceAssignmentRequest) HasVirtualDeviceContext() bool`
+
+HasVirtualDeviceContext returns a boolean if a field has been set.
+
+### SetVirtualDeviceContextNil
+
+`func (o *VRFDeviceAssignmentRequest) SetVirtualDeviceContextNil(b bool)`
+
+ SetVirtualDeviceContextNil sets the value for VirtualDeviceContext to be an explicit nil
+
+### UnsetVirtualDeviceContext
+`func (o *VRFDeviceAssignmentRequest) UnsetVirtualDeviceContext()`
+
+UnsetVirtualDeviceContext ensures that no value is present for VirtualDeviceContext, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

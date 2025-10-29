@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Priority** | **int32** |  | 
 **InterfaceRedundancyGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Interface** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
@@ -26,6 +27,31 @@ will change when the set of required properties is changed
 NewInterfaceRedundancyGroupAssociationRequestWithDefaults instantiates a new InterfaceRedundancyGroupAssociationRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *InterfaceRedundancyGroupAssociationRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *InterfaceRedundancyGroupAssociationRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *InterfaceRedundancyGroupAssociationRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *InterfaceRedundancyGroupAssociationRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetPriority
 

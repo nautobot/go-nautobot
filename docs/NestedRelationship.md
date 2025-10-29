@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedRelationship
 
-`func NewNestedRelationship(id string, objectType string, url string, ) *NestedRelationship`
+`func NewNestedRelationship(objectType string, url string, ) *NestedRelationship`
 
 NewNestedRelationship instantiates a new NestedRelationship object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedRelationship) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

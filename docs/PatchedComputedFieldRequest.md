@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **ContentType** | Pointer to **string** |  | [optional] 
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **Grouping** | Pointer to **string** | Human-readable grouping that this computed field belongs to. | [optional] 
@@ -32,6 +33,31 @@ will change when the set of required properties is changed
 NewPatchedComputedFieldRequestWithDefaults instantiates a new PatchedComputedFieldRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedComputedFieldRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedComputedFieldRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedComputedFieldRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedComputedFieldRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetContentType
 

@@ -4,12 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**Teams** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Name** | **string** |  | 
 **Phone** | Pointer to **string** |  | [optional] [default to ""]
 **Email** | Pointer to **string** |  | [optional] [default to ""]
@@ -19,12 +18,14 @@ Name | Type | Description | Notes
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Teams** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewContact
 
-`func NewContact(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Contact`
+`func NewContact(objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Contact`
 
 NewContact instantiates a new Contact object
 This constructor will assign default values to properties that have it defined,
@@ -58,6 +59,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Contact) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -138,31 +144,6 @@ and a boolean to check if the value has been set.
 
 SetNaturalSlug sets NaturalSlug field to given value.
 
-
-### GetTeams
-
-`func (o *Contact) GetTeams() []BulkWritableCableRequestStatus`
-
-GetTeams returns the Teams field if non-nil, zero value otherwise.
-
-### GetTeamsOk
-
-`func (o *Contact) GetTeamsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetTeamsOk returns a tuple with the Teams field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTeams
-
-`func (o *Contact) SetTeams(v []BulkWritableCableRequestStatus)`
-
-SetTeams sets Teams field to given value.
-
-### HasTeams
-
-`func (o *Contact) HasTeams() bool`
-
-HasTeams returns a boolean if a field has been set.
 
 ### GetName
 
@@ -388,6 +369,56 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *Contact) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *Contact) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *Contact) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *Contact) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *Contact) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
+### GetTeams
+
+`func (o *Contact) GetTeams() []BulkWritableCableRequestStatus`
+
+GetTeams returns the Teams field if non-nil, zero value otherwise.
+
+### GetTeamsOk
+
+`func (o *Contact) GetTeamsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTeamsOk returns a tuple with the Teams field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTeams
+
+`func (o *Contact) SetTeams(v []BulkWritableCableRequestStatus)`
+
+SetTeams sets Teams field to given value.
+
+### HasTeams
+
+`func (o *Contact) HasTeams() bool`
+
+HasTeams returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

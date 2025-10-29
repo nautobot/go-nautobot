@@ -89,6 +89,12 @@
 
 * `OSFP__800_GE` (value: `"OSFP (800GE)"`)
 
+* `OSFP_XD__800_GE` (value: `"OSFP-XD (800GE)"`)
+
+* `OSFP__1600_GE` (value: `"OSFP (1600GE)"`)
+
+* `OSFP_XD__1600_GE` (value: `"OSFP-XD (1600GE)"`)
+
 * `_1000_BASE_KX__1_GE` (value: `"1000BASE-KX (1GE)"`)
 
 * `_10_GBASE_KR__10_GE` (value: `"10GBASE-KR (10GE)"`)

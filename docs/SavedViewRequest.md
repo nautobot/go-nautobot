@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** | The name of this view | 
 **View** | **string** | The name of the list view that the saved view is derived from, e.g. dcim:device_list | 
 **Config** | Pointer to **interface{}** | Saved Configuration on this view | [optional] 
@@ -29,6 +30,31 @@ will change when the set of required properties is changed
 NewSavedViewRequestWithDefaults instantiates a new SavedViewRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *SavedViewRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *SavedViewRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *SavedViewRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *SavedViewRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetName
 

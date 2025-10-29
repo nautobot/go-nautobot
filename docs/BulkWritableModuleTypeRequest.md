@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**ModuleFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -142,6 +143,41 @@ and a boolean to check if the value has been set.
 SetManufacturer sets Manufacturer field to given value.
 
 
+### GetModuleFamily
+
+`func (o *BulkWritableModuleTypeRequest) GetModuleFamily() BulkWritableCircuitRequestTenant`
+
+GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
+
+### GetModuleFamilyOk
+
+`func (o *BulkWritableModuleTypeRequest) GetModuleFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleFamily
+
+`func (o *BulkWritableModuleTypeRequest) SetModuleFamily(v BulkWritableCircuitRequestTenant)`
+
+SetModuleFamily sets ModuleFamily field to given value.
+
+### HasModuleFamily
+
+`func (o *BulkWritableModuleTypeRequest) HasModuleFamily() bool`
+
+HasModuleFamily returns a boolean if a field has been set.
+
+### SetModuleFamilyNil
+
+`func (o *BulkWritableModuleTypeRequest) SetModuleFamilyNil(b bool)`
+
+ SetModuleFamilyNil sets the value for ModuleFamily to be an explicit nil
+
+### UnsetModuleFamily
+`func (o *BulkWritableModuleTypeRequest) UnsetModuleFamily()`
+
+UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCustomFields
 
 `func (o *BulkWritableModuleTypeRequest) GetCustomFields() map[string]interface{}`

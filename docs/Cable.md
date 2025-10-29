@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewCable
 
-`func NewCable(id string, objectType string, display string, url string, naturalSlug string, terminationAType string, terminationBType string, terminationA CableTermination, terminationB CableTermination, terminationAId string, terminationBId string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cable`
+`func NewCable(objectType string, display string, url string, naturalSlug string, terminationAType string, terminationBType string, terminationA CableTermination, terminationB CableTermination, terminationAId string, terminationBId string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cable`
 
 NewCable instantiates a new Cable object
 This constructor will assign default values to properties that have it defined,
@@ -65,6 +65,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Cable) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

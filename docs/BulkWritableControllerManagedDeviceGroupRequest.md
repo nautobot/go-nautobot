@@ -5,10 +5,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**Capabilities** | Pointer to [**[]CapabilitiesEnum**](CapabilitiesEnum.md) |  | [optional] 
 **Name** | **string** | Name of the controller device group | 
+**Description** | Pointer to **string** |  | [optional] 
 **Weight** | Pointer to **int32** | Weight of the controller device group, used to sort the groups within its parent group | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Controller** | [**BulkWritableControllerManagedDeviceGroupRequestController**](BulkWritableControllerManagedDeviceGroupRequestController.md) |  | 
+**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -52,6 +55,41 @@ and a boolean to check if the value has been set.
 SetId sets Id field to given value.
 
 
+### GetCapabilities
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetCapabilities() []CapabilitiesEnum`
+
+GetCapabilities returns the Capabilities field if non-nil, zero value otherwise.
+
+### GetCapabilitiesOk
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetCapabilitiesOk() (*[]CapabilitiesEnum, bool)`
+
+GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCapabilities
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) SetCapabilities(v []CapabilitiesEnum)`
+
+SetCapabilities sets Capabilities field to given value.
+
+### HasCapabilities
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) HasCapabilities() bool`
+
+HasCapabilities returns a boolean if a field has been set.
+
+### SetCapabilitiesNil
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) SetCapabilitiesNil(b bool)`
+
+ SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
+
+### UnsetCapabilities
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) UnsetCapabilities()`
+
+UnsetCapabilities ensures that no value is present for Capabilities, not even an explicit nil
 ### GetName
 
 `func (o *BulkWritableControllerManagedDeviceGroupRequest) GetName() string`
@@ -71,6 +109,31 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
+
+### GetDescription
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
 
 ### GetWeight
 
@@ -152,6 +215,41 @@ and a boolean to check if the value has been set.
 SetController sets Controller field to given value.
 
 
+### GetTenant
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetTenant() BulkWritableCircuitRequestTenant`
+
+GetTenant returns the Tenant field if non-nil, zero value otherwise.
+
+### GetTenantOk
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTenant
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+
+SetTenant sets Tenant field to given value.
+
+### HasTenant
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) HasTenant() bool`
+
+HasTenant returns a boolean if a field has been set.
+
+### SetTenantNil
+
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) SetTenantNil(b bool)`
+
+ SetTenantNil sets the value for Tenant to be an explicit nil
+
+### UnsetTenant
+`func (o *BulkWritableControllerManagedDeviceGroupRequest) UnsetTenant()`
+
+UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetCustomFields
 
 `func (o *BulkWritableControllerManagedDeviceGroupRequest) GetCustomFields() map[string]interface{}`

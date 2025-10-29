@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Units** | Pointer to **interface{}** | List of rack unit numbers to reserve | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Rack** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -31,6 +32,31 @@ will change when the set of required properties is changed
 NewPatchedRackReservationRequestWithDefaults instantiates a new PatchedRackReservationRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedRackReservationRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedRackReservationRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedRackReservationRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedRackReservationRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetUnits
 
