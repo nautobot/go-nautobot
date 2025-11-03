@@ -2377,14 +2377,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTerminationsListExecute(r ApiCircuit
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2686,14 +2688,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTerminationsNotesListExecute(r ApiCi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2972,14 +2976,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTerminationsRetrieveExecute(r ApiCir
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -3124,14 +3130,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTerminationsTraceRetrieveExecute(r A
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -4940,14 +4948,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTypesListExecute(r ApiCircuitsCircui
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5249,14 +5259,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTypesNotesListExecute(r ApiCircuitsC
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5535,14 +5547,16 @@ func (a *CircuitsAPIService) CircuitsCircuitTypesRetrieveExecute(r ApiCircuitsCi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8367,14 +8381,16 @@ func (a *CircuitsAPIService) CircuitsCircuitsListExecute(r ApiCircuitsCircuitsLi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8676,14 +8692,16 @@ func (a *CircuitsAPIService) CircuitsCircuitsNotesListExecute(r ApiCircuitsCircu
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8962,14 +8980,16 @@ func (a *CircuitsAPIService) CircuitsCircuitsRetrieveExecute(r ApiCircuitsCircui
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -11149,14 +11169,16 @@ func (a *CircuitsAPIService) CircuitsProviderNetworksListExecute(r ApiCircuitsPr
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -11458,14 +11480,16 @@ func (a *CircuitsAPIService) CircuitsProviderNetworksNotesListExecute(r ApiCircu
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -11744,14 +11768,16 @@ func (a *CircuitsAPIService) CircuitsProviderNetworksRetrieveExecute(r ApiCircui
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -14818,14 +14844,16 @@ func (a *CircuitsAPIService) CircuitsProvidersListExecute(r ApiCircuitsProviders
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -15127,14 +15155,16 @@ func (a *CircuitsAPIService) CircuitsProvidersNotesListExecute(r ApiCircuitsProv
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -15413,14 +15443,16 @@ func (a *CircuitsAPIService) CircuitsProvidersRetrieveExecute(r ApiCircuitsProvi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

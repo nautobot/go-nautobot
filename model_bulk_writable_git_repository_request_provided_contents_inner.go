@@ -13,123 +13,72 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// BulkWritableGitRepositoryRequestProvidedContentsInner - struct for BulkWritableGitRepositoryRequestProvidedContentsInner
-type BulkWritableGitRepositoryRequestProvidedContentsInner struct {
-	BlankEnum *BlankEnum
-	ProvidedContentsEnum *ProvidedContentsEnum
+// BulkWritableGitRepositoryRequestProvidedContentsInner the model 'BulkWritableGitRepositoryRequestProvidedContentsInner'
+type BulkWritableGitRepositoryRequestProvidedContentsInner string
+
+// List of BulkWritableGitRepositoryRequest_provided_contents_inner
+const (
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EXTRAS_CONFIGCONTEXT BulkWritableGitRepositoryRequestProvidedContentsInner = "extras.configcontext"
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EXTRAS_CONFIGCONTEXTSCHEMA BulkWritableGitRepositoryRequestProvidedContentsInner = "extras.configcontextschema"
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EXTRAS_EXPORTTEMPLATE BulkWritableGitRepositoryRequestProvidedContentsInner = "extras.exporttemplate"
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EXTRAS_GRAPHQLQUERY BulkWritableGitRepositoryRequestProvidedContentsInner = "extras.graphqlquery"
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EXTRAS_JOB BulkWritableGitRepositoryRequestProvidedContentsInner = "extras.job"
+	BULKWRITABLEGITREPOSITORYREQUESTPROVIDEDCONTENTSINNER_EMPTY BulkWritableGitRepositoryRequestProvidedContentsInner = ""
+)
+
+// All allowed values of BulkWritableGitRepositoryRequestProvidedContentsInner enum
+var AllowedBulkWritableGitRepositoryRequestProvidedContentsInnerEnumValues = []BulkWritableGitRepositoryRequestProvidedContentsInner{
+	"extras.configcontext",
+	"extras.configcontextschema",
+	"extras.exporttemplate",
+	"extras.graphqlquery",
+	"extras.job",
+	"",
 }
 
-// BlankEnumAsBulkWritableGitRepositoryRequestProvidedContentsInner is a convenience function that returns BlankEnum wrapped in BulkWritableGitRepositoryRequestProvidedContentsInner
-func BlankEnumAsBulkWritableGitRepositoryRequestProvidedContentsInner(v *BlankEnum) BulkWritableGitRepositoryRequestProvidedContentsInner {
-	return BulkWritableGitRepositoryRequestProvidedContentsInner{
-		BlankEnum: v,
+func (v *BulkWritableGitRepositoryRequestProvidedContentsInner) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// ProvidedContentsEnumAsBulkWritableGitRepositoryRequestProvidedContentsInner is a convenience function that returns ProvidedContentsEnum wrapped in BulkWritableGitRepositoryRequestProvidedContentsInner
-func ProvidedContentsEnumAsBulkWritableGitRepositoryRequestProvidedContentsInner(v *ProvidedContentsEnum) BulkWritableGitRepositoryRequestProvidedContentsInner {
-	return BulkWritableGitRepositoryRequestProvidedContentsInner{
-		ProvidedContentsEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *BulkWritableGitRepositoryRequestProvidedContentsInner) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := BulkWritableGitRepositoryRequestProvidedContentsInner(value)
+	for _, existing := range AllowedBulkWritableGitRepositoryRequestProvidedContentsInnerEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into ProvidedContentsEnum
-	err = newStrictDecoder(data).Decode(&dst.ProvidedContentsEnum)
-	if err == nil {
-		jsonProvidedContentsEnum, _ := json.Marshal(dst.ProvidedContentsEnum)
-		if string(jsonProvidedContentsEnum) == "{}" { // empty struct
-			dst.ProvidedContentsEnum = nil
-		} else {
-			if err = validator.Validate(dst.ProvidedContentsEnum); err != nil {
-				dst.ProvidedContentsEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid BulkWritableGitRepositoryRequestProvidedContentsInner", value)
+}
+
+// NewBulkWritableGitRepositoryRequestProvidedContentsInnerFromValue returns a pointer to a valid BulkWritableGitRepositoryRequestProvidedContentsInner
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewBulkWritableGitRepositoryRequestProvidedContentsInnerFromValue(v string) (*BulkWritableGitRepositoryRequestProvidedContentsInner, error) {
+	ev := BulkWritableGitRepositoryRequestProvidedContentsInner(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for BulkWritableGitRepositoryRequestProvidedContentsInner: valid values are %v", v, AllowedBulkWritableGitRepositoryRequestProvidedContentsInnerEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v BulkWritableGitRepositoryRequestProvidedContentsInner) IsValid() bool {
+	for _, existing := range AllowedBulkWritableGitRepositoryRequestProvidedContentsInnerEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.ProvidedContentsEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.ProvidedContentsEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(BulkWritableGitRepositoryRequestProvidedContentsInner)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(BulkWritableGitRepositoryRequestProvidedContentsInner)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src BulkWritableGitRepositoryRequestProvidedContentsInner) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.ProvidedContentsEnum != nil {
-		return json.Marshal(&src.ProvidedContentsEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *BulkWritableGitRepositoryRequestProvidedContentsInner) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.ProvidedContentsEnum != nil {
-		return obj.ProvidedContentsEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj BulkWritableGitRepositoryRequestProvidedContentsInner) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.ProvidedContentsEnum != nil {
-		return *obj.ProvidedContentsEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to BulkWritableGitRepositoryRequest_provided_contents_inner value
+func (v BulkWritableGitRepositoryRequestProvidedContentsInner) Ptr() *BulkWritableGitRepositoryRequestProvidedContentsInner {
+	return &v
 }
 
 type NullableBulkWritableGitRepositoryRequestProvidedContentsInner struct {
@@ -167,5 +116,4 @@ func (v *NullableBulkWritableGitRepositoryRequestProvidedContentsInner) Unmarsha
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

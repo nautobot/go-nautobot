@@ -13,123 +13,262 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritablePowerPortRequestType - Physical port type
-type PatchedWritablePowerPortRequestType struct {
-	BlankEnum *BlankEnum
-	PowerPortTypeChoices *PowerPortTypeChoices
+// PatchedWritablePowerPortRequestType Physical port type
+type PatchedWritablePowerPortRequestType string
+
+// List of PatchedWritablePowerPortRequest_type
+const (
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C6 PatchedWritablePowerPortRequestType = "iec-60320-c6"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C8 PatchedWritablePowerPortRequestType = "iec-60320-c8"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C14 PatchedWritablePowerPortRequestType = "iec-60320-c14"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C16 PatchedWritablePowerPortRequestType = "iec-60320-c16"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C20 PatchedWritablePowerPortRequestType = "iec-60320-c20"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60320_C22 PatchedWritablePowerPortRequestType = "iec-60320-c22"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_P_N_E_4H PatchedWritablePowerPortRequestType = "iec-60309-p-n-e-4h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_P_N_E_6H PatchedWritablePowerPortRequestType = "iec-60309-p-n-e-6h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_P_N_E_9H PatchedWritablePowerPortRequestType = "iec-60309-p-n-e-9h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_2P_E_4H PatchedWritablePowerPortRequestType = "iec-60309-2p-e-4h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_2P_E_6H PatchedWritablePowerPortRequestType = "iec-60309-2p-e-6h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_2P_E_9H PatchedWritablePowerPortRequestType = "iec-60309-2p-e-9h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_E_4H PatchedWritablePowerPortRequestType = "iec-60309-3p-e-4h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_E_6H PatchedWritablePowerPortRequestType = "iec-60309-3p-e-6h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_E_9H PatchedWritablePowerPortRequestType = "iec-60309-3p-e-9h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_N_E_4H PatchedWritablePowerPortRequestType = "iec-60309-3p-n-e-4h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_N_E_6H PatchedWritablePowerPortRequestType = "iec-60309-3p-n-e-6h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60309_3P_N_E_9H PatchedWritablePowerPortRequestType = "iec-60309-3p-n-e-9h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_IEC_60906_1 PatchedWritablePowerPortRequestType = "iec-60906-1"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NBR_14136_10A PatchedWritablePowerPortRequestType = "nbr-14136-10a"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NBR_14136_20A PatchedWritablePowerPortRequestType = "nbr-14136-20a"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_1_15P PatchedWritablePowerPortRequestType = "nema-1-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_5_15P PatchedWritablePowerPortRequestType = "nema-5-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_5_20P PatchedWritablePowerPortRequestType = "nema-5-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_5_30P PatchedWritablePowerPortRequestType = "nema-5-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_5_50P PatchedWritablePowerPortRequestType = "nema-5-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_6_15P PatchedWritablePowerPortRequestType = "nema-6-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_6_20P PatchedWritablePowerPortRequestType = "nema-6-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_6_30P PatchedWritablePowerPortRequestType = "nema-6-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_6_50P PatchedWritablePowerPortRequestType = "nema-6-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_10_30P PatchedWritablePowerPortRequestType = "nema-10-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_10_50P PatchedWritablePowerPortRequestType = "nema-10-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_14_20P PatchedWritablePowerPortRequestType = "nema-14-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_14_30P PatchedWritablePowerPortRequestType = "nema-14-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_14_50P PatchedWritablePowerPortRequestType = "nema-14-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_14_60P PatchedWritablePowerPortRequestType = "nema-14-60p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_15_15P PatchedWritablePowerPortRequestType = "nema-15-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_15_20P PatchedWritablePowerPortRequestType = "nema-15-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_15_30P PatchedWritablePowerPortRequestType = "nema-15-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_15_50P PatchedWritablePowerPortRequestType = "nema-15-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_15_60P PatchedWritablePowerPortRequestType = "nema-15-60p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L1_15P PatchedWritablePowerPortRequestType = "nema-l1-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L5_15P PatchedWritablePowerPortRequestType = "nema-l5-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L5_20P PatchedWritablePowerPortRequestType = "nema-l5-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L5_30P PatchedWritablePowerPortRequestType = "nema-l5-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L5_50P PatchedWritablePowerPortRequestType = "nema-l5-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L6_15P PatchedWritablePowerPortRequestType = "nema-l6-15p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L6_20P PatchedWritablePowerPortRequestType = "nema-l6-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L6_30P PatchedWritablePowerPortRequestType = "nema-l6-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L6_50P PatchedWritablePowerPortRequestType = "nema-l6-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L10_30P PatchedWritablePowerPortRequestType = "nema-l10-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L14_20P PatchedWritablePowerPortRequestType = "nema-l14-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L14_30P PatchedWritablePowerPortRequestType = "nema-l14-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L14_50P PatchedWritablePowerPortRequestType = "nema-l14-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L14_60P PatchedWritablePowerPortRequestType = "nema-l14-60p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L15_20P PatchedWritablePowerPortRequestType = "nema-l15-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L15_30P PatchedWritablePowerPortRequestType = "nema-l15-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L15_50P PatchedWritablePowerPortRequestType = "nema-l15-50p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L15_60P PatchedWritablePowerPortRequestType = "nema-l15-60p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L21_20P PatchedWritablePowerPortRequestType = "nema-l21-20p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L21_30P PatchedWritablePowerPortRequestType = "nema-l21-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEMA_L22_30P PatchedWritablePowerPortRequestType = "nema-l22-30p"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS6361C PatchedWritablePowerPortRequestType = "cs6361c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS6365C PatchedWritablePowerPortRequestType = "cs6365c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS8165C PatchedWritablePowerPortRequestType = "cs8165c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS8265C PatchedWritablePowerPortRequestType = "cs8265c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS8365C PatchedWritablePowerPortRequestType = "cs8365c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_CS8465C PatchedWritablePowerPortRequestType = "cs8465c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_C PatchedWritablePowerPortRequestType = "ita-c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_E PatchedWritablePowerPortRequestType = "ita-e"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_F PatchedWritablePowerPortRequestType = "ita-f"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_EF PatchedWritablePowerPortRequestType = "ita-ef"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_G PatchedWritablePowerPortRequestType = "ita-g"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_H PatchedWritablePowerPortRequestType = "ita-h"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_I PatchedWritablePowerPortRequestType = "ita-i"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_J PatchedWritablePowerPortRequestType = "ita-j"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_K PatchedWritablePowerPortRequestType = "ita-k"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_L PatchedWritablePowerPortRequestType = "ita-l"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_M PatchedWritablePowerPortRequestType = "ita-m"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_N PatchedWritablePowerPortRequestType = "ita-n"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_ITA_O PatchedWritablePowerPortRequestType = "ita-o"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_A PatchedWritablePowerPortRequestType = "usb-a"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_B PatchedWritablePowerPortRequestType = "usb-b"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_C PatchedWritablePowerPortRequestType = "usb-c"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_MINI_A PatchedWritablePowerPortRequestType = "usb-mini-a"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_MINI_B PatchedWritablePowerPortRequestType = "usb-mini-b"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_MICRO_A PatchedWritablePowerPortRequestType = "usb-micro-a"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_MICRO_B PatchedWritablePowerPortRequestType = "usb-micro-b"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_MICRO_AB PatchedWritablePowerPortRequestType = "usb-micro-ab"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_3_B PatchedWritablePowerPortRequestType = "usb-3-b"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_USB_3_MICRO_B PatchedWritablePowerPortRequestType = "usb-3-micro-b"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_DC_TERMINAL PatchedWritablePowerPortRequestType = "dc-terminal"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_SAF_D_GRID PatchedWritablePowerPortRequestType = "saf-d-grid"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEUTRIK_POWERCON_20 PatchedWritablePowerPortRequestType = "neutrik-powercon-20"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEUTRIK_POWERCON_32 PatchedWritablePowerPortRequestType = "neutrik-powercon-32"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEUTRIK_POWERCON_TRUE1 PatchedWritablePowerPortRequestType = "neutrik-powercon-true1"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_NEUTRIK_POWERCON_TRUE1_TOP PatchedWritablePowerPortRequestType = "neutrik-powercon-true1-top"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_UBIQUITI_SMARTPOWER PatchedWritablePowerPortRequestType = "ubiquiti-smartpower"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_HARDWIRED PatchedWritablePowerPortRequestType = "hardwired"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_OTHER PatchedWritablePowerPortRequestType = "other"
+	PATCHEDWRITABLEPOWERPORTREQUESTTYPE_EMPTY PatchedWritablePowerPortRequestType = ""
+)
+
+// All allowed values of PatchedWritablePowerPortRequestType enum
+var AllowedPatchedWritablePowerPortRequestTypeEnumValues = []PatchedWritablePowerPortRequestType{
+	"iec-60320-c6",
+	"iec-60320-c8",
+	"iec-60320-c14",
+	"iec-60320-c16",
+	"iec-60320-c20",
+	"iec-60320-c22",
+	"iec-60309-p-n-e-4h",
+	"iec-60309-p-n-e-6h",
+	"iec-60309-p-n-e-9h",
+	"iec-60309-2p-e-4h",
+	"iec-60309-2p-e-6h",
+	"iec-60309-2p-e-9h",
+	"iec-60309-3p-e-4h",
+	"iec-60309-3p-e-6h",
+	"iec-60309-3p-e-9h",
+	"iec-60309-3p-n-e-4h",
+	"iec-60309-3p-n-e-6h",
+	"iec-60309-3p-n-e-9h",
+	"iec-60906-1",
+	"nbr-14136-10a",
+	"nbr-14136-20a",
+	"nema-1-15p",
+	"nema-5-15p",
+	"nema-5-20p",
+	"nema-5-30p",
+	"nema-5-50p",
+	"nema-6-15p",
+	"nema-6-20p",
+	"nema-6-30p",
+	"nema-6-50p",
+	"nema-10-30p",
+	"nema-10-50p",
+	"nema-14-20p",
+	"nema-14-30p",
+	"nema-14-50p",
+	"nema-14-60p",
+	"nema-15-15p",
+	"nema-15-20p",
+	"nema-15-30p",
+	"nema-15-50p",
+	"nema-15-60p",
+	"nema-l1-15p",
+	"nema-l5-15p",
+	"nema-l5-20p",
+	"nema-l5-30p",
+	"nema-l5-50p",
+	"nema-l6-15p",
+	"nema-l6-20p",
+	"nema-l6-30p",
+	"nema-l6-50p",
+	"nema-l10-30p",
+	"nema-l14-20p",
+	"nema-l14-30p",
+	"nema-l14-50p",
+	"nema-l14-60p",
+	"nema-l15-20p",
+	"nema-l15-30p",
+	"nema-l15-50p",
+	"nema-l15-60p",
+	"nema-l21-20p",
+	"nema-l21-30p",
+	"nema-l22-30p",
+	"cs6361c",
+	"cs6365c",
+	"cs8165c",
+	"cs8265c",
+	"cs8365c",
+	"cs8465c",
+	"ita-c",
+	"ita-e",
+	"ita-f",
+	"ita-ef",
+	"ita-g",
+	"ita-h",
+	"ita-i",
+	"ita-j",
+	"ita-k",
+	"ita-l",
+	"ita-m",
+	"ita-n",
+	"ita-o",
+	"usb-a",
+	"usb-b",
+	"usb-c",
+	"usb-mini-a",
+	"usb-mini-b",
+	"usb-micro-a",
+	"usb-micro-b",
+	"usb-micro-ab",
+	"usb-3-b",
+	"usb-3-micro-b",
+	"dc-terminal",
+	"saf-d-grid",
+	"neutrik-powercon-20",
+	"neutrik-powercon-32",
+	"neutrik-powercon-true1",
+	"neutrik-powercon-true1-top",
+	"ubiquiti-smartpower",
+	"hardwired",
+	"other",
+	"",
 }
 
-// BlankEnumAsPatchedWritablePowerPortRequestType is a convenience function that returns BlankEnum wrapped in PatchedWritablePowerPortRequestType
-func BlankEnumAsPatchedWritablePowerPortRequestType(v *BlankEnum) PatchedWritablePowerPortRequestType {
-	return PatchedWritablePowerPortRequestType{
-		BlankEnum: v,
+func (v *PatchedWritablePowerPortRequestType) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// PowerPortTypeChoicesAsPatchedWritablePowerPortRequestType is a convenience function that returns PowerPortTypeChoices wrapped in PatchedWritablePowerPortRequestType
-func PowerPortTypeChoicesAsPatchedWritablePowerPortRequestType(v *PowerPortTypeChoices) PatchedWritablePowerPortRequestType {
-	return PatchedWritablePowerPortRequestType{
-		PowerPortTypeChoices: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritablePowerPortRequestType) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritablePowerPortRequestType(value)
+	for _, existing := range AllowedPatchedWritablePowerPortRequestTypeEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into PowerPortTypeChoices
-	err = newStrictDecoder(data).Decode(&dst.PowerPortTypeChoices)
-	if err == nil {
-		jsonPowerPortTypeChoices, _ := json.Marshal(dst.PowerPortTypeChoices)
-		if string(jsonPowerPortTypeChoices) == "{}" { // empty struct
-			dst.PowerPortTypeChoices = nil
-		} else {
-			if err = validator.Validate(dst.PowerPortTypeChoices); err != nil {
-				dst.PowerPortTypeChoices = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritablePowerPortRequestType", value)
+}
+
+// NewPatchedWritablePowerPortRequestTypeFromValue returns a pointer to a valid PatchedWritablePowerPortRequestType
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritablePowerPortRequestTypeFromValue(v string) (*PatchedWritablePowerPortRequestType, error) {
+	ev := PatchedWritablePowerPortRequestType(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritablePowerPortRequestType: valid values are %v", v, AllowedPatchedWritablePowerPortRequestTypeEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritablePowerPortRequestType) IsValid() bool {
+	for _, existing := range AllowedPatchedWritablePowerPortRequestTypeEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.PowerPortTypeChoices = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.PowerPortTypeChoices = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritablePowerPortRequestType)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritablePowerPortRequestType)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritablePowerPortRequestType) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.PowerPortTypeChoices != nil {
-		return json.Marshal(&src.PowerPortTypeChoices)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritablePowerPortRequestType) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.PowerPortTypeChoices != nil {
-		return obj.PowerPortTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritablePowerPortRequestType) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.PowerPortTypeChoices != nil {
-		return *obj.PowerPortTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritablePowerPortRequest_type value
+func (v PatchedWritablePowerPortRequestType) Ptr() *PatchedWritablePowerPortRequestType {
+	return &v
 }
 
 type NullablePatchedWritablePowerPortRequestType struct {
@@ -167,5 +306,4 @@ func (v *NullablePatchedWritablePowerPortRequestType) UnmarshalJSON(src []byte) 
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

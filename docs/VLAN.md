@@ -23,14 +23,14 @@ Name | Type | Description | Notes
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**ComputedFields** | **map[string]interface{}** |  | [readonly] 
+**ComputedFields** | Pointer to **map[string]interface{}** |  | [optional] [readonly] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewVLAN
 
-`func NewVLAN(objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, computedFields map[string]interface{}, ) *VLAN`
+`func NewVLAN(objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLAN`
 
 NewVLAN instantiates a new VLAN object
 This constructor will assign default values to properties that have it defined,
@@ -534,6 +534,11 @@ and a boolean to check if the value has been set.
 
 SetComputedFields sets ComputedFields field to given value.
 
+### HasComputedFields
+
+`func (o *VLAN) HasComputedFields() bool`
+
+HasComputedFields returns a boolean if a field has been set.
 
 ### GetRelationships
 

@@ -13,123 +13,68 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// BulkWritableRadioProfileRequestFrequency - struct for BulkWritableRadioProfileRequestFrequency
-type BulkWritableRadioProfileRequestFrequency struct {
-	BlankEnum *BlankEnum
-	FrequencyEnum *FrequencyEnum
+// BulkWritableRadioProfileRequestFrequency the model 'BulkWritableRadioProfileRequestFrequency'
+type BulkWritableRadioProfileRequestFrequency string
+
+// List of BulkWritableRadioProfileRequest_frequency
+const (
+	BULKWRITABLERADIOPROFILEREQUESTFREQUENCY__2_4_GHZ BulkWritableRadioProfileRequestFrequency = "2.4GHz"
+	BULKWRITABLERADIOPROFILEREQUESTFREQUENCY__5_GHZ BulkWritableRadioProfileRequestFrequency = "5GHz"
+	BULKWRITABLERADIOPROFILEREQUESTFREQUENCY__6_GHZ BulkWritableRadioProfileRequestFrequency = "6GHz"
+	BULKWRITABLERADIOPROFILEREQUESTFREQUENCY_EMPTY BulkWritableRadioProfileRequestFrequency = ""
+)
+
+// All allowed values of BulkWritableRadioProfileRequestFrequency enum
+var AllowedBulkWritableRadioProfileRequestFrequencyEnumValues = []BulkWritableRadioProfileRequestFrequency{
+	"2.4GHz",
+	"5GHz",
+	"6GHz",
+	"",
 }
 
-// BlankEnumAsBulkWritableRadioProfileRequestFrequency is a convenience function that returns BlankEnum wrapped in BulkWritableRadioProfileRequestFrequency
-func BlankEnumAsBulkWritableRadioProfileRequestFrequency(v *BlankEnum) BulkWritableRadioProfileRequestFrequency {
-	return BulkWritableRadioProfileRequestFrequency{
-		BlankEnum: v,
+func (v *BulkWritableRadioProfileRequestFrequency) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// FrequencyEnumAsBulkWritableRadioProfileRequestFrequency is a convenience function that returns FrequencyEnum wrapped in BulkWritableRadioProfileRequestFrequency
-func FrequencyEnumAsBulkWritableRadioProfileRequestFrequency(v *FrequencyEnum) BulkWritableRadioProfileRequestFrequency {
-	return BulkWritableRadioProfileRequestFrequency{
-		FrequencyEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *BulkWritableRadioProfileRequestFrequency) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := BulkWritableRadioProfileRequestFrequency(value)
+	for _, existing := range AllowedBulkWritableRadioProfileRequestFrequencyEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into FrequencyEnum
-	err = newStrictDecoder(data).Decode(&dst.FrequencyEnum)
-	if err == nil {
-		jsonFrequencyEnum, _ := json.Marshal(dst.FrequencyEnum)
-		if string(jsonFrequencyEnum) == "{}" { // empty struct
-			dst.FrequencyEnum = nil
-		} else {
-			if err = validator.Validate(dst.FrequencyEnum); err != nil {
-				dst.FrequencyEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid BulkWritableRadioProfileRequestFrequency", value)
+}
+
+// NewBulkWritableRadioProfileRequestFrequencyFromValue returns a pointer to a valid BulkWritableRadioProfileRequestFrequency
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewBulkWritableRadioProfileRequestFrequencyFromValue(v string) (*BulkWritableRadioProfileRequestFrequency, error) {
+	ev := BulkWritableRadioProfileRequestFrequency(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for BulkWritableRadioProfileRequestFrequency: valid values are %v", v, AllowedBulkWritableRadioProfileRequestFrequencyEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v BulkWritableRadioProfileRequestFrequency) IsValid() bool {
+	for _, existing := range AllowedBulkWritableRadioProfileRequestFrequencyEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.FrequencyEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.FrequencyEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(BulkWritableRadioProfileRequestFrequency)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(BulkWritableRadioProfileRequestFrequency)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src BulkWritableRadioProfileRequestFrequency) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.FrequencyEnum != nil {
-		return json.Marshal(&src.FrequencyEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *BulkWritableRadioProfileRequestFrequency) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.FrequencyEnum != nil {
-		return obj.FrequencyEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj BulkWritableRadioProfileRequestFrequency) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.FrequencyEnum != nil {
-		return *obj.FrequencyEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to BulkWritableRadioProfileRequest_frequency value
+func (v BulkWritableRadioProfileRequestFrequency) Ptr() *BulkWritableRadioProfileRequestFrequency {
+	return &v
 }
 
 type NullableBulkWritableRadioProfileRequestFrequency struct {
@@ -167,5 +112,4 @@ func (v *NullableBulkWritableRadioProfileRequestFrequency) UnmarshalJSON(src []b
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

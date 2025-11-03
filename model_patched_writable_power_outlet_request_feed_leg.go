@@ -13,123 +13,68 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritablePowerOutletRequestFeedLeg - Phase (for three-phase feeds)
-type PatchedWritablePowerOutletRequestFeedLeg struct {
-	BlankEnum *BlankEnum
-	FeedLegEnum *FeedLegEnum
+// PatchedWritablePowerOutletRequestFeedLeg Phase (for three-phase feeds)
+type PatchedWritablePowerOutletRequestFeedLeg string
+
+// List of PatchedWritablePowerOutletRequest_feed_leg
+const (
+	PATCHEDWRITABLEPOWEROUTLETREQUESTFEEDLEG_A PatchedWritablePowerOutletRequestFeedLeg = "A"
+	PATCHEDWRITABLEPOWEROUTLETREQUESTFEEDLEG_B PatchedWritablePowerOutletRequestFeedLeg = "B"
+	PATCHEDWRITABLEPOWEROUTLETREQUESTFEEDLEG_C PatchedWritablePowerOutletRequestFeedLeg = "C"
+	PATCHEDWRITABLEPOWEROUTLETREQUESTFEEDLEG_EMPTY PatchedWritablePowerOutletRequestFeedLeg = ""
+)
+
+// All allowed values of PatchedWritablePowerOutletRequestFeedLeg enum
+var AllowedPatchedWritablePowerOutletRequestFeedLegEnumValues = []PatchedWritablePowerOutletRequestFeedLeg{
+	"A",
+	"B",
+	"C",
+	"",
 }
 
-// BlankEnumAsPatchedWritablePowerOutletRequestFeedLeg is a convenience function that returns BlankEnum wrapped in PatchedWritablePowerOutletRequestFeedLeg
-func BlankEnumAsPatchedWritablePowerOutletRequestFeedLeg(v *BlankEnum) PatchedWritablePowerOutletRequestFeedLeg {
-	return PatchedWritablePowerOutletRequestFeedLeg{
-		BlankEnum: v,
+func (v *PatchedWritablePowerOutletRequestFeedLeg) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// FeedLegEnumAsPatchedWritablePowerOutletRequestFeedLeg is a convenience function that returns FeedLegEnum wrapped in PatchedWritablePowerOutletRequestFeedLeg
-func FeedLegEnumAsPatchedWritablePowerOutletRequestFeedLeg(v *FeedLegEnum) PatchedWritablePowerOutletRequestFeedLeg {
-	return PatchedWritablePowerOutletRequestFeedLeg{
-		FeedLegEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritablePowerOutletRequestFeedLeg) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritablePowerOutletRequestFeedLeg(value)
+	for _, existing := range AllowedPatchedWritablePowerOutletRequestFeedLegEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into FeedLegEnum
-	err = newStrictDecoder(data).Decode(&dst.FeedLegEnum)
-	if err == nil {
-		jsonFeedLegEnum, _ := json.Marshal(dst.FeedLegEnum)
-		if string(jsonFeedLegEnum) == "{}" { // empty struct
-			dst.FeedLegEnum = nil
-		} else {
-			if err = validator.Validate(dst.FeedLegEnum); err != nil {
-				dst.FeedLegEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritablePowerOutletRequestFeedLeg", value)
+}
+
+// NewPatchedWritablePowerOutletRequestFeedLegFromValue returns a pointer to a valid PatchedWritablePowerOutletRequestFeedLeg
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritablePowerOutletRequestFeedLegFromValue(v string) (*PatchedWritablePowerOutletRequestFeedLeg, error) {
+	ev := PatchedWritablePowerOutletRequestFeedLeg(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritablePowerOutletRequestFeedLeg: valid values are %v", v, AllowedPatchedWritablePowerOutletRequestFeedLegEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritablePowerOutletRequestFeedLeg) IsValid() bool {
+	for _, existing := range AllowedPatchedWritablePowerOutletRequestFeedLegEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.FeedLegEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.FeedLegEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritablePowerOutletRequestFeedLeg)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritablePowerOutletRequestFeedLeg)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritablePowerOutletRequestFeedLeg) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.FeedLegEnum != nil {
-		return json.Marshal(&src.FeedLegEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritablePowerOutletRequestFeedLeg) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.FeedLegEnum != nil {
-		return obj.FeedLegEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritablePowerOutletRequestFeedLeg) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.FeedLegEnum != nil {
-		return *obj.FeedLegEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritablePowerOutletRequest_feed_leg value
+func (v PatchedWritablePowerOutletRequestFeedLeg) Ptr() *PatchedWritablePowerOutletRequestFeedLeg {
+	return &v
 }
 
 type NullablePatchedWritablePowerOutletRequestFeedLeg struct {
@@ -167,5 +112,4 @@ func (v *NullablePatchedWritablePowerOutletRequestFeedLeg) UnmarshalJSON(src []b
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

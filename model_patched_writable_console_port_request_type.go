@@ -13,123 +13,92 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritableConsolePortRequestType - Physical port type
-type PatchedWritableConsolePortRequestType struct {
-	BlankEnum *BlankEnum
-	ConsolePortTypeChoices *ConsolePortTypeChoices
+// PatchedWritableConsolePortRequestType Physical port type
+type PatchedWritableConsolePortRequestType string
+
+// List of PatchedWritableConsolePortRequest_type
+const (
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_DE_9 PatchedWritableConsolePortRequestType = "de-9"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_DB_25 PatchedWritableConsolePortRequestType = "db-25"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_RJ_11 PatchedWritableConsolePortRequestType = "rj-11"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_RJ_12 PatchedWritableConsolePortRequestType = "rj-12"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_RJ_45 PatchedWritableConsolePortRequestType = "rj-45"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_MINI_DIN_8 PatchedWritableConsolePortRequestType = "mini-din-8"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_A PatchedWritableConsolePortRequestType = "usb-a"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_B PatchedWritableConsolePortRequestType = "usb-b"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_C PatchedWritableConsolePortRequestType = "usb-c"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_MINI_A PatchedWritableConsolePortRequestType = "usb-mini-a"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_MINI_B PatchedWritableConsolePortRequestType = "usb-mini-b"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_MICRO_A PatchedWritableConsolePortRequestType = "usb-micro-a"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_MICRO_B PatchedWritableConsolePortRequestType = "usb-micro-b"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_USB_MICRO_AB PatchedWritableConsolePortRequestType = "usb-micro-ab"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_OTHER PatchedWritableConsolePortRequestType = "other"
+	PATCHEDWRITABLECONSOLEPORTREQUESTTYPE_EMPTY PatchedWritableConsolePortRequestType = ""
+)
+
+// All allowed values of PatchedWritableConsolePortRequestType enum
+var AllowedPatchedWritableConsolePortRequestTypeEnumValues = []PatchedWritableConsolePortRequestType{
+	"de-9",
+	"db-25",
+	"rj-11",
+	"rj-12",
+	"rj-45",
+	"mini-din-8",
+	"usb-a",
+	"usb-b",
+	"usb-c",
+	"usb-mini-a",
+	"usb-mini-b",
+	"usb-micro-a",
+	"usb-micro-b",
+	"usb-micro-ab",
+	"other",
+	"",
 }
 
-// BlankEnumAsPatchedWritableConsolePortRequestType is a convenience function that returns BlankEnum wrapped in PatchedWritableConsolePortRequestType
-func BlankEnumAsPatchedWritableConsolePortRequestType(v *BlankEnum) PatchedWritableConsolePortRequestType {
-	return PatchedWritableConsolePortRequestType{
-		BlankEnum: v,
+func (v *PatchedWritableConsolePortRequestType) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// ConsolePortTypeChoicesAsPatchedWritableConsolePortRequestType is a convenience function that returns ConsolePortTypeChoices wrapped in PatchedWritableConsolePortRequestType
-func ConsolePortTypeChoicesAsPatchedWritableConsolePortRequestType(v *ConsolePortTypeChoices) PatchedWritableConsolePortRequestType {
-	return PatchedWritableConsolePortRequestType{
-		ConsolePortTypeChoices: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritableConsolePortRequestType) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritableConsolePortRequestType(value)
+	for _, existing := range AllowedPatchedWritableConsolePortRequestTypeEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into ConsolePortTypeChoices
-	err = newStrictDecoder(data).Decode(&dst.ConsolePortTypeChoices)
-	if err == nil {
-		jsonConsolePortTypeChoices, _ := json.Marshal(dst.ConsolePortTypeChoices)
-		if string(jsonConsolePortTypeChoices) == "{}" { // empty struct
-			dst.ConsolePortTypeChoices = nil
-		} else {
-			if err = validator.Validate(dst.ConsolePortTypeChoices); err != nil {
-				dst.ConsolePortTypeChoices = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritableConsolePortRequestType", value)
+}
+
+// NewPatchedWritableConsolePortRequestTypeFromValue returns a pointer to a valid PatchedWritableConsolePortRequestType
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritableConsolePortRequestTypeFromValue(v string) (*PatchedWritableConsolePortRequestType, error) {
+	ev := PatchedWritableConsolePortRequestType(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritableConsolePortRequestType: valid values are %v", v, AllowedPatchedWritableConsolePortRequestTypeEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritableConsolePortRequestType) IsValid() bool {
+	for _, existing := range AllowedPatchedWritableConsolePortRequestTypeEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.ConsolePortTypeChoices = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.ConsolePortTypeChoices = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritableConsolePortRequestType)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritableConsolePortRequestType)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritableConsolePortRequestType) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.ConsolePortTypeChoices != nil {
-		return json.Marshal(&src.ConsolePortTypeChoices)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritableConsolePortRequestType) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.ConsolePortTypeChoices != nil {
-		return obj.ConsolePortTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritableConsolePortRequestType) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.ConsolePortTypeChoices != nil {
-		return *obj.ConsolePortTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritableConsolePortRequest_type value
+func (v PatchedWritableConsolePortRequestType) Ptr() *PatchedWritableConsolePortRequestType {
+	return &v
 }
 
 type NullablePatchedWritableConsolePortRequestType struct {
@@ -167,5 +136,4 @@ func (v *NullablePatchedWritableConsolePortRequestType) UnmarshalJSON(src []byte
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

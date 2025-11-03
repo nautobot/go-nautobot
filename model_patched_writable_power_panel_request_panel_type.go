@@ -13,123 +13,82 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritablePowerPanelRequestPanelType - struct for PatchedWritablePowerPanelRequestPanelType
-type PatchedWritablePowerPanelRequestPanelType struct {
-	BlankEnum *BlankEnum
-	PanelTypeEnum *PanelTypeEnum
+// PatchedWritablePowerPanelRequestPanelType the model 'PatchedWritablePowerPanelRequestPanelType'
+type PatchedWritablePowerPanelRequestPanelType string
+
+// List of PatchedWritablePowerPanelRequest_panel_type
+const (
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_UTILITY PatchedWritablePowerPanelRequestPanelType = "utility"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_GENERATOR PatchedWritablePowerPanelRequestPanelType = "generator"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_SWITCHGEAR PatchedWritablePowerPanelRequestPanelType = "switchgear"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_MDP PatchedWritablePowerPanelRequestPanelType = "mdp"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_UPS PatchedWritablePowerPanelRequestPanelType = "ups"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_TRANSFER_SWITCH PatchedWritablePowerPanelRequestPanelType = "transfer-switch"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_PDU PatchedWritablePowerPanelRequestPanelType = "pdu"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_PANELBOARD PatchedWritablePowerPanelRequestPanelType = "panelboard"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_MLC PatchedWritablePowerPanelRequestPanelType = "mlc"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_RPP PatchedWritablePowerPanelRequestPanelType = "rpp"
+	PATCHEDWRITABLEPOWERPANELREQUESTPANELTYPE_EMPTY PatchedWritablePowerPanelRequestPanelType = ""
+)
+
+// All allowed values of PatchedWritablePowerPanelRequestPanelType enum
+var AllowedPatchedWritablePowerPanelRequestPanelTypeEnumValues = []PatchedWritablePowerPanelRequestPanelType{
+	"utility",
+	"generator",
+	"switchgear",
+	"mdp",
+	"ups",
+	"transfer-switch",
+	"pdu",
+	"panelboard",
+	"mlc",
+	"rpp",
+	"",
 }
 
-// BlankEnumAsPatchedWritablePowerPanelRequestPanelType is a convenience function that returns BlankEnum wrapped in PatchedWritablePowerPanelRequestPanelType
-func BlankEnumAsPatchedWritablePowerPanelRequestPanelType(v *BlankEnum) PatchedWritablePowerPanelRequestPanelType {
-	return PatchedWritablePowerPanelRequestPanelType{
-		BlankEnum: v,
+func (v *PatchedWritablePowerPanelRequestPanelType) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// PanelTypeEnumAsPatchedWritablePowerPanelRequestPanelType is a convenience function that returns PanelTypeEnum wrapped in PatchedWritablePowerPanelRequestPanelType
-func PanelTypeEnumAsPatchedWritablePowerPanelRequestPanelType(v *PanelTypeEnum) PatchedWritablePowerPanelRequestPanelType {
-	return PatchedWritablePowerPanelRequestPanelType{
-		PanelTypeEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritablePowerPanelRequestPanelType) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritablePowerPanelRequestPanelType(value)
+	for _, existing := range AllowedPatchedWritablePowerPanelRequestPanelTypeEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into PanelTypeEnum
-	err = newStrictDecoder(data).Decode(&dst.PanelTypeEnum)
-	if err == nil {
-		jsonPanelTypeEnum, _ := json.Marshal(dst.PanelTypeEnum)
-		if string(jsonPanelTypeEnum) == "{}" { // empty struct
-			dst.PanelTypeEnum = nil
-		} else {
-			if err = validator.Validate(dst.PanelTypeEnum); err != nil {
-				dst.PanelTypeEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritablePowerPanelRequestPanelType", value)
+}
+
+// NewPatchedWritablePowerPanelRequestPanelTypeFromValue returns a pointer to a valid PatchedWritablePowerPanelRequestPanelType
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritablePowerPanelRequestPanelTypeFromValue(v string) (*PatchedWritablePowerPanelRequestPanelType, error) {
+	ev := PatchedWritablePowerPanelRequestPanelType(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritablePowerPanelRequestPanelType: valid values are %v", v, AllowedPatchedWritablePowerPanelRequestPanelTypeEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritablePowerPanelRequestPanelType) IsValid() bool {
+	for _, existing := range AllowedPatchedWritablePowerPanelRequestPanelTypeEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.PanelTypeEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.PanelTypeEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritablePowerPanelRequestPanelType)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritablePowerPanelRequestPanelType)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritablePowerPanelRequestPanelType) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.PanelTypeEnum != nil {
-		return json.Marshal(&src.PanelTypeEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritablePowerPanelRequestPanelType) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.PanelTypeEnum != nil {
-		return obj.PanelTypeEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritablePowerPanelRequestPanelType) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.PanelTypeEnum != nil {
-		return *obj.PanelTypeEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritablePowerPanelRequest_panel_type value
+func (v PatchedWritablePowerPanelRequestPanelType) Ptr() *PatchedWritablePowerPanelRequestPanelType {
+	return &v
 }
 
 type NullablePatchedWritablePowerPanelRequestPanelType struct {
@@ -167,5 +126,4 @@ func (v *NullablePatchedWritablePowerPanelRequestPanelType) UnmarshalJSON(src []
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

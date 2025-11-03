@@ -13,123 +13,66 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// ParentChildStatus - Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.
-type ParentChildStatus struct {
-	BlankEnum *BlankEnum
-	SubdeviceRoleEnum *SubdeviceRoleEnum
+// ParentChildStatus Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.
+type ParentChildStatus string
+
+// List of Parent_child_status
+const (
+	PARENTCHILDSTATUS_PARENT ParentChildStatus = "parent"
+	PARENTCHILDSTATUS_CHILD ParentChildStatus = "child"
+	PARENTCHILDSTATUS_EMPTY ParentChildStatus = ""
+)
+
+// All allowed values of ParentChildStatus enum
+var AllowedParentChildStatusEnumValues = []ParentChildStatus{
+	"parent",
+	"child",
+	"",
 }
 
-// BlankEnumAsParentChildStatus is a convenience function that returns BlankEnum wrapped in ParentChildStatus
-func BlankEnumAsParentChildStatus(v *BlankEnum) ParentChildStatus {
-	return ParentChildStatus{
-		BlankEnum: v,
+func (v *ParentChildStatus) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// SubdeviceRoleEnumAsParentChildStatus is a convenience function that returns SubdeviceRoleEnum wrapped in ParentChildStatus
-func SubdeviceRoleEnumAsParentChildStatus(v *SubdeviceRoleEnum) ParentChildStatus {
-	return ParentChildStatus{
-		SubdeviceRoleEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *ParentChildStatus) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := ParentChildStatus(value)
+	for _, existing := range AllowedParentChildStatusEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into SubdeviceRoleEnum
-	err = newStrictDecoder(data).Decode(&dst.SubdeviceRoleEnum)
-	if err == nil {
-		jsonSubdeviceRoleEnum, _ := json.Marshal(dst.SubdeviceRoleEnum)
-		if string(jsonSubdeviceRoleEnum) == "{}" { // empty struct
-			dst.SubdeviceRoleEnum = nil
-		} else {
-			if err = validator.Validate(dst.SubdeviceRoleEnum); err != nil {
-				dst.SubdeviceRoleEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid ParentChildStatus", value)
+}
+
+// NewParentChildStatusFromValue returns a pointer to a valid ParentChildStatus
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewParentChildStatusFromValue(v string) (*ParentChildStatus, error) {
+	ev := ParentChildStatus(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for ParentChildStatus: valid values are %v", v, AllowedParentChildStatusEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v ParentChildStatus) IsValid() bool {
+	for _, existing := range AllowedParentChildStatusEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.SubdeviceRoleEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.SubdeviceRoleEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(ParentChildStatus)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(ParentChildStatus)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src ParentChildStatus) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.SubdeviceRoleEnum != nil {
-		return json.Marshal(&src.SubdeviceRoleEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *ParentChildStatus) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.SubdeviceRoleEnum != nil {
-		return obj.SubdeviceRoleEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj ParentChildStatus) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.SubdeviceRoleEnum != nil {
-		return *obj.SubdeviceRoleEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to Parent_child_status value
+func (v ParentChildStatus) Ptr() *ParentChildStatus {
+	return &v
 }
 
 type NullableParentChildStatus struct {
@@ -167,5 +110,4 @@ func (v *NullableParentChildStatus) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

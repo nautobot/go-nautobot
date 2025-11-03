@@ -1986,14 +1986,16 @@ func (a *CloudAPIService) CloudCloudAccountsListExecute(r ApiCloudCloudAccountsL
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2295,14 +2297,16 @@ func (a *CloudAPIService) CloudCloudAccountsNotesListExecute(r ApiCloudCloudAcco
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2581,14 +2585,16 @@ func (a *CloudAPIService) CloudCloudAccountsRetrieveExecute(r ApiCloudCloudAccou
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -3645,14 +3651,16 @@ func (a *CloudAPIService) CloudCloudNetworkPrefixAssignmentsListExecute(r ApiClo
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -3931,14 +3939,16 @@ func (a *CloudAPIService) CloudCloudNetworkPrefixAssignmentsRetrieveExecute(r Ap
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5980,14 +5990,16 @@ func (a *CloudAPIService) CloudCloudNetworksListExecute(r ApiCloudCloudNetworksL
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -6289,14 +6301,16 @@ func (a *CloudAPIService) CloudCloudNetworksNotesListExecute(r ApiCloudCloudNetw
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -6575,14 +6589,16 @@ func (a *CloudAPIService) CloudCloudNetworksRetrieveExecute(r ApiCloudCloudNetwo
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8502,14 +8518,16 @@ func (a *CloudAPIService) CloudCloudResourceTypesListExecute(r ApiCloudCloudReso
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8811,14 +8829,16 @@ func (a *CloudAPIService) CloudCloudResourceTypesNotesListExecute(r ApiCloudClou
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -9097,14 +9117,16 @@ func (a *CloudAPIService) CloudCloudResourceTypesRetrieveExecute(r ApiCloudCloud
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -10161,14 +10183,16 @@ func (a *CloudAPIService) CloudCloudServiceNetworkAssignmentsListExecute(r ApiCl
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -10447,14 +10471,16 @@ func (a *CloudAPIService) CloudCloudServiceNetworkAssignmentsRetrieveExecute(r A
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -12418,14 +12444,16 @@ func (a *CloudAPIService) CloudCloudServicesListExecute(r ApiCloudCloudServicesL
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -12727,14 +12755,16 @@ func (a *CloudAPIService) CloudCloudServicesNotesListExecute(r ApiCloudCloudServ
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -13013,14 +13043,16 @@ func (a *CloudAPIService) CloudCloudServicesRetrieveExecute(r ApiCloudCloudServi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

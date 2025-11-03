@@ -13,123 +13,68 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritableInterfaceRequestMode - struct for PatchedWritableInterfaceRequestMode
-type PatchedWritableInterfaceRequestMode struct {
-	BlankEnum *BlankEnum
-	InterfaceModeChoices *InterfaceModeChoices
+// PatchedWritableInterfaceRequestMode the model 'PatchedWritableInterfaceRequestMode'
+type PatchedWritableInterfaceRequestMode string
+
+// List of PatchedWritableInterfaceRequest_mode
+const (
+	PATCHEDWRITABLEINTERFACEREQUESTMODE_ACCESS PatchedWritableInterfaceRequestMode = "access"
+	PATCHEDWRITABLEINTERFACEREQUESTMODE_TAGGED PatchedWritableInterfaceRequestMode = "tagged"
+	PATCHEDWRITABLEINTERFACEREQUESTMODE_TAGGED_ALL PatchedWritableInterfaceRequestMode = "tagged-all"
+	PATCHEDWRITABLEINTERFACEREQUESTMODE_EMPTY PatchedWritableInterfaceRequestMode = ""
+)
+
+// All allowed values of PatchedWritableInterfaceRequestMode enum
+var AllowedPatchedWritableInterfaceRequestModeEnumValues = []PatchedWritableInterfaceRequestMode{
+	"access",
+	"tagged",
+	"tagged-all",
+	"",
 }
 
-// BlankEnumAsPatchedWritableInterfaceRequestMode is a convenience function that returns BlankEnum wrapped in PatchedWritableInterfaceRequestMode
-func BlankEnumAsPatchedWritableInterfaceRequestMode(v *BlankEnum) PatchedWritableInterfaceRequestMode {
-	return PatchedWritableInterfaceRequestMode{
-		BlankEnum: v,
+func (v *PatchedWritableInterfaceRequestMode) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// InterfaceModeChoicesAsPatchedWritableInterfaceRequestMode is a convenience function that returns InterfaceModeChoices wrapped in PatchedWritableInterfaceRequestMode
-func InterfaceModeChoicesAsPatchedWritableInterfaceRequestMode(v *InterfaceModeChoices) PatchedWritableInterfaceRequestMode {
-	return PatchedWritableInterfaceRequestMode{
-		InterfaceModeChoices: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritableInterfaceRequestMode) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritableInterfaceRequestMode(value)
+	for _, existing := range AllowedPatchedWritableInterfaceRequestModeEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into InterfaceModeChoices
-	err = newStrictDecoder(data).Decode(&dst.InterfaceModeChoices)
-	if err == nil {
-		jsonInterfaceModeChoices, _ := json.Marshal(dst.InterfaceModeChoices)
-		if string(jsonInterfaceModeChoices) == "{}" { // empty struct
-			dst.InterfaceModeChoices = nil
-		} else {
-			if err = validator.Validate(dst.InterfaceModeChoices); err != nil {
-				dst.InterfaceModeChoices = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritableInterfaceRequestMode", value)
+}
+
+// NewPatchedWritableInterfaceRequestModeFromValue returns a pointer to a valid PatchedWritableInterfaceRequestMode
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritableInterfaceRequestModeFromValue(v string) (*PatchedWritableInterfaceRequestMode, error) {
+	ev := PatchedWritableInterfaceRequestMode(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritableInterfaceRequestMode: valid values are %v", v, AllowedPatchedWritableInterfaceRequestModeEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritableInterfaceRequestMode) IsValid() bool {
+	for _, existing := range AllowedPatchedWritableInterfaceRequestModeEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.InterfaceModeChoices = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.InterfaceModeChoices = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritableInterfaceRequestMode)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritableInterfaceRequestMode)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritableInterfaceRequestMode) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.InterfaceModeChoices != nil {
-		return json.Marshal(&src.InterfaceModeChoices)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritableInterfaceRequestMode) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.InterfaceModeChoices != nil {
-		return obj.InterfaceModeChoices
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritableInterfaceRequestMode) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.InterfaceModeChoices != nil {
-		return *obj.InterfaceModeChoices
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritableInterfaceRequest_mode value
+func (v PatchedWritableInterfaceRequestMode) Ptr() *PatchedWritableInterfaceRequestMode {
+	return &v
 }
 
 type NullablePatchedWritableInterfaceRequestMode struct {
@@ -167,5 +112,4 @@ func (v *NullablePatchedWritableInterfaceRequestMode) UnmarshalJSON(src []byte) 
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

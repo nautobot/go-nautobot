@@ -41,7 +41,7 @@ type VLAN struct {
 	Tags []BulkWritableCableRequestStatus `json:"tags,omitempty"`
 	NotesUrl string `json:"notes_url"`
 	CustomFields map[string]interface{} `json:"custom_fields,omitempty"`
-	ComputedFields map[string]interface{} `json:"computed_fields"`
+	ComputedFields map[string]interface{} `json:"computed_fields,omitempty"`
 	Relationships *map[string]BulkWritableCableRequestRelationshipsValue `json:"relationships,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
@@ -52,7 +52,7 @@ type _VLAN VLAN
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewVLAN(objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, computedFields map[string]interface{}) *VLAN {
+func NewVLAN(objectType string, display string, url string, naturalSlug string, vid int32, name string, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string) *VLAN {
 	this := VLAN{}
 	this.ObjectType = objectType
 	this.Display = display
@@ -65,7 +65,6 @@ func NewVLAN(objectType string, display string, url string, naturalSlug string, 
 	this.Created = created
 	this.LastUpdated = lastUpdated
 	this.NotesUrl = notesUrl
-	this.ComputedFields = computedFields
 	return &this
 }
 
@@ -631,26 +630,34 @@ func (o *VLAN) SetCustomFields(v map[string]interface{}) {
 	o.CustomFields = v
 }
 
-// GetComputedFields returns the ComputedFields field value
+// GetComputedFields returns the ComputedFields field value if set, zero value otherwise.
 func (o *VLAN) GetComputedFields() map[string]interface{} {
-	if o == nil {
+	if o == nil || IsNil(o.ComputedFields) {
 		var ret map[string]interface{}
 		return ret
 	}
-
 	return o.ComputedFields
 }
 
-// GetComputedFieldsOk returns a tuple with the ComputedFields field value
+// GetComputedFieldsOk returns a tuple with the ComputedFields field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *VLAN) GetComputedFieldsOk() (map[string]interface{}, bool) {
-	if o == nil {
+	if o == nil || IsNil(o.ComputedFields) {
 		return map[string]interface{}{}, false
 	}
 	return o.ComputedFields, true
 }
 
-// SetComputedFields sets field value
+// HasComputedFields returns a boolean if a field has been set.
+func (o *VLAN) HasComputedFields() bool {
+	if o != nil && !IsNil(o.ComputedFields) {
+		return true
+	}
+
+	return false
+}
+
+// SetComputedFields gets a reference to the given map[string]interface{} and assigns it to the ComputedFields field.
 func (o *VLAN) SetComputedFields(v map[string]interface{}) {
 	o.ComputedFields = v
 }
@@ -732,7 +739,9 @@ func (o VLAN) ToMap() (map[string]interface{}, error) {
 	if !IsNil(o.CustomFields) {
 		toSerialize["custom_fields"] = o.CustomFields
 	}
-	toSerialize["computed_fields"] = o.ComputedFields
+	if !IsNil(o.ComputedFields) {
+		toSerialize["computed_fields"] = o.ComputedFields
+	}
 	if !IsNil(o.Relationships) {
 		toSerialize["relationships"] = o.Relationships
 	}
@@ -760,7 +769,6 @@ func (o *VLAN) UnmarshalJSON(data []byte) (err error) {
 		"created",
 		"last_updated",
 		"notes_url",
-		"computed_fields",
 	}
 
 	allProperties := make(map[string]interface{})

@@ -13,123 +13,66 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritableRackRequestOuterUnit - struct for PatchedWritableRackRequestOuterUnit
-type PatchedWritableRackRequestOuterUnit struct {
-	BlankEnum *BlankEnum
-	OuterUnitEnum *OuterUnitEnum
+// PatchedWritableRackRequestOuterUnit the model 'PatchedWritableRackRequestOuterUnit'
+type PatchedWritableRackRequestOuterUnit string
+
+// List of PatchedWritableRackRequest_outer_unit
+const (
+	PATCHEDWRITABLERACKREQUESTOUTERUNIT_MM PatchedWritableRackRequestOuterUnit = "mm"
+	PATCHEDWRITABLERACKREQUESTOUTERUNIT_IN PatchedWritableRackRequestOuterUnit = "in"
+	PATCHEDWRITABLERACKREQUESTOUTERUNIT_EMPTY PatchedWritableRackRequestOuterUnit = ""
+)
+
+// All allowed values of PatchedWritableRackRequestOuterUnit enum
+var AllowedPatchedWritableRackRequestOuterUnitEnumValues = []PatchedWritableRackRequestOuterUnit{
+	"mm",
+	"in",
+	"",
 }
 
-// BlankEnumAsPatchedWritableRackRequestOuterUnit is a convenience function that returns BlankEnum wrapped in PatchedWritableRackRequestOuterUnit
-func BlankEnumAsPatchedWritableRackRequestOuterUnit(v *BlankEnum) PatchedWritableRackRequestOuterUnit {
-	return PatchedWritableRackRequestOuterUnit{
-		BlankEnum: v,
+func (v *PatchedWritableRackRequestOuterUnit) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// OuterUnitEnumAsPatchedWritableRackRequestOuterUnit is a convenience function that returns OuterUnitEnum wrapped in PatchedWritableRackRequestOuterUnit
-func OuterUnitEnumAsPatchedWritableRackRequestOuterUnit(v *OuterUnitEnum) PatchedWritableRackRequestOuterUnit {
-	return PatchedWritableRackRequestOuterUnit{
-		OuterUnitEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritableRackRequestOuterUnit) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritableRackRequestOuterUnit(value)
+	for _, existing := range AllowedPatchedWritableRackRequestOuterUnitEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into OuterUnitEnum
-	err = newStrictDecoder(data).Decode(&dst.OuterUnitEnum)
-	if err == nil {
-		jsonOuterUnitEnum, _ := json.Marshal(dst.OuterUnitEnum)
-		if string(jsonOuterUnitEnum) == "{}" { // empty struct
-			dst.OuterUnitEnum = nil
-		} else {
-			if err = validator.Validate(dst.OuterUnitEnum); err != nil {
-				dst.OuterUnitEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritableRackRequestOuterUnit", value)
+}
+
+// NewPatchedWritableRackRequestOuterUnitFromValue returns a pointer to a valid PatchedWritableRackRequestOuterUnit
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritableRackRequestOuterUnitFromValue(v string) (*PatchedWritableRackRequestOuterUnit, error) {
+	ev := PatchedWritableRackRequestOuterUnit(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritableRackRequestOuterUnit: valid values are %v", v, AllowedPatchedWritableRackRequestOuterUnitEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritableRackRequestOuterUnit) IsValid() bool {
+	for _, existing := range AllowedPatchedWritableRackRequestOuterUnitEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.OuterUnitEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.OuterUnitEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritableRackRequestOuterUnit)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritableRackRequestOuterUnit)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritableRackRequestOuterUnit) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.OuterUnitEnum != nil {
-		return json.Marshal(&src.OuterUnitEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritableRackRequestOuterUnit) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.OuterUnitEnum != nil {
-		return obj.OuterUnitEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritableRackRequestOuterUnit) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.OuterUnitEnum != nil {
-		return *obj.OuterUnitEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritableRackRequest_outer_unit value
+func (v PatchedWritableRackRequestOuterUnit) Ptr() *PatchedWritableRackRequestOuterUnit {
+	return &v
 }
 
 type NullablePatchedWritableRackRequestOuterUnit struct {
@@ -167,5 +110,4 @@ func (v *NullablePatchedWritableRackRequestOuterUnit) UnmarshalJSON(src []byte) 
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

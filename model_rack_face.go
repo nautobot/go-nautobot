@@ -13,123 +13,66 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// RackFace - struct for RackFace
-type RackFace struct {
-	BlankEnum *BlankEnum
-	FaceEnum *FaceEnum
+// RackFace the model 'RackFace'
+type RackFace string
+
+// List of Rack_face
+const (
+	RACKFACE_FRONT RackFace = "front"
+	RACKFACE_REAR RackFace = "rear"
+	RACKFACE_EMPTY RackFace = ""
+)
+
+// All allowed values of RackFace enum
+var AllowedRackFaceEnumValues = []RackFace{
+	"front",
+	"rear",
+	"",
 }
 
-// BlankEnumAsRackFace is a convenience function that returns BlankEnum wrapped in RackFace
-func BlankEnumAsRackFace(v *BlankEnum) RackFace {
-	return RackFace{
-		BlankEnum: v,
+func (v *RackFace) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// FaceEnumAsRackFace is a convenience function that returns FaceEnum wrapped in RackFace
-func FaceEnumAsRackFace(v *FaceEnum) RackFace {
-	return RackFace{
-		FaceEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *RackFace) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := RackFace(value)
+	for _, existing := range AllowedRackFaceEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into FaceEnum
-	err = newStrictDecoder(data).Decode(&dst.FaceEnum)
-	if err == nil {
-		jsonFaceEnum, _ := json.Marshal(dst.FaceEnum)
-		if string(jsonFaceEnum) == "{}" { // empty struct
-			dst.FaceEnum = nil
-		} else {
-			if err = validator.Validate(dst.FaceEnum); err != nil {
-				dst.FaceEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid RackFace", value)
+}
+
+// NewRackFaceFromValue returns a pointer to a valid RackFace
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewRackFaceFromValue(v string) (*RackFace, error) {
+	ev := RackFace(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for RackFace: valid values are %v", v, AllowedRackFaceEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v RackFace) IsValid() bool {
+	for _, existing := range AllowedRackFaceEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.FaceEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.FaceEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(RackFace)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(RackFace)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src RackFace) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.FaceEnum != nil {
-		return json.Marshal(&src.FaceEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *RackFace) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.FaceEnum != nil {
-		return obj.FaceEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj RackFace) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.FaceEnum != nil {
-		return *obj.FaceEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to Rack_face value
+func (v RackFace) Ptr() *RackFace {
+	return &v
 }
 
 type NullableRackFace struct {
@@ -167,5 +110,4 @@ func (v *NullableRackFace) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

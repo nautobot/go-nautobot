@@ -1,28 +1,13 @@
 # ParentChildStatus
 
-## Properties
+## Enum
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
 
-## Methods
+* `PARENT` (value: `"parent"`)
 
-### NewParentChildStatus
+* `CHILD` (value: `"child"`)
 
-`func NewParentChildStatus() *ParentChildStatus`
-
-NewParentChildStatus instantiates a new ParentChildStatus object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
-
-### NewParentChildStatusWithDefaults
-
-`func NewParentChildStatusWithDefaults() *ParentChildStatus`
-
-NewParentChildStatusWithDefaults instantiates a new ParentChildStatus object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+* `EMPTY` (value: `""`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

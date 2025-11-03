@@ -13,123 +13,78 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritableRackRequestType - struct for PatchedWritableRackRequestType
-type PatchedWritableRackRequestType struct {
-	BlankEnum *BlankEnum
-	RackTypeChoices *RackTypeChoices
+// PatchedWritableRackRequestType the model 'PatchedWritableRackRequestType'
+type PatchedWritableRackRequestType string
+
+// List of PatchedWritableRackRequest_type
+const (
+	PATCHEDWRITABLERACKREQUESTTYPE__2_POST_FRAME PatchedWritableRackRequestType = "2-post-frame"
+	PATCHEDWRITABLERACKREQUESTTYPE__4_POST_FRAME PatchedWritableRackRequestType = "4-post-frame"
+	PATCHEDWRITABLERACKREQUESTTYPE__4_POST_CABINET PatchedWritableRackRequestType = "4-post-cabinet"
+	PATCHEDWRITABLERACKREQUESTTYPE_WALL_FRAME PatchedWritableRackRequestType = "wall-frame"
+	PATCHEDWRITABLERACKREQUESTTYPE_WALL_FRAME_VERTICAL PatchedWritableRackRequestType = "wall-frame-vertical"
+	PATCHEDWRITABLERACKREQUESTTYPE_WALL_CABINET PatchedWritableRackRequestType = "wall-cabinet"
+	PATCHEDWRITABLERACKREQUESTTYPE_WALL_CABINET_VERTICAL PatchedWritableRackRequestType = "wall-cabinet-vertical"
+	PATCHEDWRITABLERACKREQUESTTYPE_OTHER PatchedWritableRackRequestType = "other"
+	PATCHEDWRITABLERACKREQUESTTYPE_EMPTY PatchedWritableRackRequestType = ""
+)
+
+// All allowed values of PatchedWritableRackRequestType enum
+var AllowedPatchedWritableRackRequestTypeEnumValues = []PatchedWritableRackRequestType{
+	"2-post-frame",
+	"4-post-frame",
+	"4-post-cabinet",
+	"wall-frame",
+	"wall-frame-vertical",
+	"wall-cabinet",
+	"wall-cabinet-vertical",
+	"other",
+	"",
 }
 
-// BlankEnumAsPatchedWritableRackRequestType is a convenience function that returns BlankEnum wrapped in PatchedWritableRackRequestType
-func BlankEnumAsPatchedWritableRackRequestType(v *BlankEnum) PatchedWritableRackRequestType {
-	return PatchedWritableRackRequestType{
-		BlankEnum: v,
+func (v *PatchedWritableRackRequestType) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// RackTypeChoicesAsPatchedWritableRackRequestType is a convenience function that returns RackTypeChoices wrapped in PatchedWritableRackRequestType
-func RackTypeChoicesAsPatchedWritableRackRequestType(v *RackTypeChoices) PatchedWritableRackRequestType {
-	return PatchedWritableRackRequestType{
-		RackTypeChoices: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritableRackRequestType) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritableRackRequestType(value)
+	for _, existing := range AllowedPatchedWritableRackRequestTypeEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into RackTypeChoices
-	err = newStrictDecoder(data).Decode(&dst.RackTypeChoices)
-	if err == nil {
-		jsonRackTypeChoices, _ := json.Marshal(dst.RackTypeChoices)
-		if string(jsonRackTypeChoices) == "{}" { // empty struct
-			dst.RackTypeChoices = nil
-		} else {
-			if err = validator.Validate(dst.RackTypeChoices); err != nil {
-				dst.RackTypeChoices = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritableRackRequestType", value)
+}
+
+// NewPatchedWritableRackRequestTypeFromValue returns a pointer to a valid PatchedWritableRackRequestType
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritableRackRequestTypeFromValue(v string) (*PatchedWritableRackRequestType, error) {
+	ev := PatchedWritableRackRequestType(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritableRackRequestType: valid values are %v", v, AllowedPatchedWritableRackRequestTypeEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritableRackRequestType) IsValid() bool {
+	for _, existing := range AllowedPatchedWritableRackRequestTypeEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.RackTypeChoices = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.RackTypeChoices = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritableRackRequestType)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritableRackRequestType)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritableRackRequestType) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.RackTypeChoices != nil {
-		return json.Marshal(&src.RackTypeChoices)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritableRackRequestType) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.RackTypeChoices != nil {
-		return obj.RackTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritableRackRequestType) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.RackTypeChoices != nil {
-		return *obj.RackTypeChoices
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritableRackRequest_type value
+func (v PatchedWritableRackRequestType) Ptr() *PatchedWritableRackRequestType {
+	return &v
 }
 
 type NullablePatchedWritableRackRequestType struct {
@@ -167,5 +122,4 @@ func (v *NullablePatchedWritableRackRequestType) UnmarshalJSON(src []byte) error
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

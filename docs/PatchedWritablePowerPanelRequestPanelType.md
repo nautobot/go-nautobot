@@ -1,28 +1,29 @@
 # PatchedWritablePowerPanelRequestPanelType
 
-## Properties
+## Enum
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
 
-## Methods
+* `UTILITY` (value: `"utility"`)
 
-### NewPatchedWritablePowerPanelRequestPanelType
+* `GENERATOR` (value: `"generator"`)
 
-`func NewPatchedWritablePowerPanelRequestPanelType() *PatchedWritablePowerPanelRequestPanelType`
+* `SWITCHGEAR` (value: `"switchgear"`)
 
-NewPatchedWritablePowerPanelRequestPanelType instantiates a new PatchedWritablePowerPanelRequestPanelType object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+* `MDP` (value: `"mdp"`)
 
-### NewPatchedWritablePowerPanelRequestPanelTypeWithDefaults
+* `UPS` (value: `"ups"`)
 
-`func NewPatchedWritablePowerPanelRequestPanelTypeWithDefaults() *PatchedWritablePowerPanelRequestPanelType`
+* `TRANSFER_SWITCH` (value: `"transfer-switch"`)
 
-NewPatchedWritablePowerPanelRequestPanelTypeWithDefaults instantiates a new PatchedWritablePowerPanelRequestPanelType object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+* `PDU` (value: `"pdu"`)
+
+* `PANELBOARD` (value: `"panelboard"`)
+
+* `MLC` (value: `"mlc"`)
+
+* `RPP` (value: `"rpp"`)
+
+* `EMPTY` (value: `""`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

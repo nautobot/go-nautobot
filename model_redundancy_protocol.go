@@ -13,123 +13,70 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// RedundancyProtocol - struct for RedundancyProtocol
-type RedundancyProtocol struct {
-	BlankEnum *BlankEnum
-	InterfaceRedundancyGroupProtocolChoices *InterfaceRedundancyGroupProtocolChoices
+// RedundancyProtocol the model 'RedundancyProtocol'
+type RedundancyProtocol string
+
+// List of Redundancy_Protocol
+const (
+	REDUNDANCYPROTOCOL_HSRP RedundancyProtocol = "hsrp"
+	REDUNDANCYPROTOCOL_VRRP RedundancyProtocol = "vrrp"
+	REDUNDANCYPROTOCOL_GLBP RedundancyProtocol = "glbp"
+	REDUNDANCYPROTOCOL_CARP RedundancyProtocol = "carp"
+	REDUNDANCYPROTOCOL_EMPTY RedundancyProtocol = ""
+)
+
+// All allowed values of RedundancyProtocol enum
+var AllowedRedundancyProtocolEnumValues = []RedundancyProtocol{
+	"hsrp",
+	"vrrp",
+	"glbp",
+	"carp",
+	"",
 }
 
-// BlankEnumAsRedundancyProtocol is a convenience function that returns BlankEnum wrapped in RedundancyProtocol
-func BlankEnumAsRedundancyProtocol(v *BlankEnum) RedundancyProtocol {
-	return RedundancyProtocol{
-		BlankEnum: v,
+func (v *RedundancyProtocol) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// InterfaceRedundancyGroupProtocolChoicesAsRedundancyProtocol is a convenience function that returns InterfaceRedundancyGroupProtocolChoices wrapped in RedundancyProtocol
-func InterfaceRedundancyGroupProtocolChoicesAsRedundancyProtocol(v *InterfaceRedundancyGroupProtocolChoices) RedundancyProtocol {
-	return RedundancyProtocol{
-		InterfaceRedundancyGroupProtocolChoices: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *RedundancyProtocol) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := RedundancyProtocol(value)
+	for _, existing := range AllowedRedundancyProtocolEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into InterfaceRedundancyGroupProtocolChoices
-	err = newStrictDecoder(data).Decode(&dst.InterfaceRedundancyGroupProtocolChoices)
-	if err == nil {
-		jsonInterfaceRedundancyGroupProtocolChoices, _ := json.Marshal(dst.InterfaceRedundancyGroupProtocolChoices)
-		if string(jsonInterfaceRedundancyGroupProtocolChoices) == "{}" { // empty struct
-			dst.InterfaceRedundancyGroupProtocolChoices = nil
-		} else {
-			if err = validator.Validate(dst.InterfaceRedundancyGroupProtocolChoices); err != nil {
-				dst.InterfaceRedundancyGroupProtocolChoices = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid RedundancyProtocol", value)
+}
+
+// NewRedundancyProtocolFromValue returns a pointer to a valid RedundancyProtocol
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewRedundancyProtocolFromValue(v string) (*RedundancyProtocol, error) {
+	ev := RedundancyProtocol(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for RedundancyProtocol: valid values are %v", v, AllowedRedundancyProtocolEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v RedundancyProtocol) IsValid() bool {
+	for _, existing := range AllowedRedundancyProtocolEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.InterfaceRedundancyGroupProtocolChoices = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.InterfaceRedundancyGroupProtocolChoices = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(RedundancyProtocol)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(RedundancyProtocol)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src RedundancyProtocol) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.InterfaceRedundancyGroupProtocolChoices != nil {
-		return json.Marshal(&src.InterfaceRedundancyGroupProtocolChoices)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *RedundancyProtocol) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.InterfaceRedundancyGroupProtocolChoices != nil {
-		return obj.InterfaceRedundancyGroupProtocolChoices
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj RedundancyProtocol) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.InterfaceRedundancyGroupProtocolChoices != nil {
-		return *obj.InterfaceRedundancyGroupProtocolChoices
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to Redundancy_Protocol value
+func (v RedundancyProtocol) Ptr() *RedundancyProtocol {
+	return &v
 }
 
 type NullableRedundancyProtocol struct {
@@ -167,5 +114,4 @@ func (v *NullableRedundancyProtocol) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 

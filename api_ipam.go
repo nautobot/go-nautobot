@@ -1028,14 +1028,16 @@ func (a *IpamAPIService) IpamIpAddressToInterfaceListExecute(r ApiIpamIpAddressT
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -1337,14 +1339,16 @@ func (a *IpamAPIService) IpamIpAddressToInterfaceNotesListExecute(r ApiIpamIpAdd
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -1623,14 +1627,16 @@ func (a *IpamAPIService) IpamIpAddressToInterfaceRetrieveExecute(r ApiIpamIpAddr
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -4448,14 +4454,16 @@ func (a *IpamAPIService) IpamIpAddressesListExecute(r ApiIpamIpAddressesListRequ
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -4757,14 +4765,16 @@ func (a *IpamAPIService) IpamIpAddressesNotesListExecute(r ApiIpamIpAddressesNot
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5043,14 +5053,16 @@ func (a *IpamAPIService) IpamIpAddressesRetrieveExecute(r ApiIpamIpAddressesRetr
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -6929,14 +6941,16 @@ func (a *IpamAPIService) IpamNamespacesListExecute(r ApiIpamNamespacesListReques
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -7238,14 +7252,16 @@ func (a *IpamAPIService) IpamNamespacesNotesListExecute(r ApiIpamNamespacesNotes
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -7524,14 +7540,16 @@ func (a *IpamAPIService) IpamNamespacesRetrieveExecute(r ApiIpamNamespacesRetrie
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8622,14 +8640,16 @@ func (a *IpamAPIService) IpamPrefixLocationAssignmentsListExecute(r ApiIpamPrefi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -8908,14 +8928,16 @@ func (a *IpamAPIService) IpamPrefixLocationAssignmentsRetrieveExecute(r ApiIpamP
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -9446,14 +9468,16 @@ func (a *IpamAPIService) IpamPrefixesAvailableIpsListExecute(r ApiIpamPrefixesAv
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -9801,14 +9825,16 @@ func (a *IpamAPIService) IpamPrefixesAvailablePrefixesListExecute(r ApiIpamPrefi
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -12253,14 +12279,16 @@ func (a *IpamAPIService) IpamPrefixesListExecute(r ApiIpamPrefixesListRequest) (
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -12562,14 +12590,16 @@ func (a *IpamAPIService) IpamPrefixesNotesListExecute(r ApiIpamPrefixesNotesList
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -12848,14 +12878,16 @@ func (a *IpamAPIService) IpamPrefixesRetrieveExecute(r ApiIpamPrefixesRetrieveRe
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -14673,14 +14705,16 @@ func (a *IpamAPIService) IpamRirsListExecute(r ApiIpamRirsListRequest) (*Paginat
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -14982,14 +15016,16 @@ func (a *IpamAPIService) IpamRirsNotesListExecute(r ApiIpamRirsNotesListRequest)
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -15268,14 +15304,16 @@ func (a *IpamAPIService) IpamRirsRetrieveExecute(r ApiIpamRirsRetrieveRequest) (
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -17111,14 +17149,16 @@ func (a *IpamAPIService) IpamRouteTargetsListExecute(r ApiIpamRouteTargetsListRe
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -17420,14 +17460,16 @@ func (a *IpamAPIService) IpamRouteTargetsNotesListExecute(r ApiIpamRouteTargetsN
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -17706,14 +17748,16 @@ func (a *IpamAPIService) IpamRouteTargetsRetrieveExecute(r ApiIpamRouteTargetsRe
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -19662,14 +19706,16 @@ func (a *IpamAPIService) IpamServicesListExecute(r ApiIpamServicesListRequest) (
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -19971,14 +20017,16 @@ func (a *IpamAPIService) IpamServicesNotesListExecute(r ApiIpamServicesNotesList
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -20257,14 +20305,16 @@ func (a *IpamAPIService) IpamServicesRetrieveExecute(r ApiIpamServicesRetrieveRe
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -20747,14 +20797,16 @@ func (a *IpamAPIService) IpamVlanGroupsAvailableVlansListExecute(r ApiIpamVlanGr
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -22513,14 +22565,16 @@ func (a *IpamAPIService) IpamVlanGroupsListExecute(r ApiIpamVlanGroupsListReques
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -22822,14 +22876,16 @@ func (a *IpamAPIService) IpamVlanGroupsNotesListExecute(r ApiIpamVlanGroupsNotes
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -23108,14 +23164,16 @@ func (a *IpamAPIService) IpamVlanGroupsRetrieveExecute(r ApiIpamVlanGroupsRetrie
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -24206,14 +24264,16 @@ func (a *IpamAPIService) IpamVlanLocationAssignmentsListExecute(r ApiIpamVlanLoc
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -24492,14 +24552,16 @@ func (a *IpamAPIService) IpamVlanLocationAssignmentsRetrieveExecute(r ApiIpamVla
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -26557,14 +26619,16 @@ func (a *IpamAPIService) IpamVlansListExecute(r ApiIpamVlansListRequest) (*Pagin
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -26866,14 +26930,16 @@ func (a *IpamAPIService) IpamVlansNotesListExecute(r ApiIpamVlansNotesListReques
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -27152,14 +27218,16 @@ func (a *IpamAPIService) IpamVlansRetrieveExecute(r ApiIpamVlansRetrieveRequest)
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -28833,14 +28901,16 @@ func (a *IpamAPIService) IpamVrfDeviceAssignmentsListExecute(r ApiIpamVrfDeviceA
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -29119,14 +29189,16 @@ func (a *IpamAPIService) IpamVrfDeviceAssignmentsRetrieveExecute(r ApiIpamVrfDev
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -30217,14 +30289,16 @@ func (a *IpamAPIService) IpamVrfPrefixAssignmentsListExecute(r ApiIpamVrfPrefixA
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -30503,14 +30577,16 @@ func (a *IpamAPIService) IpamVrfPrefixAssignmentsRetrieveExecute(r ApiIpamVrfPre
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -33025,14 +33101,16 @@ func (a *IpamAPIService) IpamVrfsListExecute(r ApiIpamVrfsListRequest) (*Paginat
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -33334,14 +33412,16 @@ func (a *IpamAPIService) IpamVrfsNotesListExecute(r ApiIpamVrfsNotesListRequest)
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -33620,14 +33700,16 @@ func (a *IpamAPIService) IpamVrfsRetrieveExecute(r ApiIpamVrfsRetrieveRequest) (
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-		var defaultValue int32 = 1
-		r.depth = &defaultValue
+        var defaultValue int32 = 1
+        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+        r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-		var defaultValue bool = false
-		r.excludeM2m = &defaultValue
+        var defaultValue bool = false
+        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+        r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

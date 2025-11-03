@@ -1,28 +1,39 @@
 # PatchedWritableConsolePortTemplateRequestType
 
-## Properties
+## Enum
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
 
-## Methods
+* `DE_9` (value: `"de-9"`)
 
-### NewPatchedWritableConsolePortTemplateRequestType
+* `DB_25` (value: `"db-25"`)
 
-`func NewPatchedWritableConsolePortTemplateRequestType() *PatchedWritableConsolePortTemplateRequestType`
+* `RJ_11` (value: `"rj-11"`)
 
-NewPatchedWritableConsolePortTemplateRequestType instantiates a new PatchedWritableConsolePortTemplateRequestType object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+* `RJ_12` (value: `"rj-12"`)
 
-### NewPatchedWritableConsolePortTemplateRequestTypeWithDefaults
+* `RJ_45` (value: `"rj-45"`)
 
-`func NewPatchedWritableConsolePortTemplateRequestTypeWithDefaults() *PatchedWritableConsolePortTemplateRequestType`
+* `MINI_DIN_8` (value: `"mini-din-8"`)
 
-NewPatchedWritableConsolePortTemplateRequestTypeWithDefaults instantiates a new PatchedWritableConsolePortTemplateRequestType object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+* `USB_A` (value: `"usb-a"`)
+
+* `USB_B` (value: `"usb-b"`)
+
+* `USB_C` (value: `"usb-c"`)
+
+* `USB_MINI_A` (value: `"usb-mini-a"`)
+
+* `USB_MINI_B` (value: `"usb-mini-b"`)
+
+* `USB_MICRO_A` (value: `"usb-micro-a"`)
+
+* `USB_MICRO_B` (value: `"usb-micro-b"`)
+
+* `USB_MICRO_AB` (value: `"usb-micro-ab"`)
+
+* `OTHER` (value: `"other"`)
+
+* `EMPTY` (value: `""`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

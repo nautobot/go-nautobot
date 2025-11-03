@@ -28,6 +28,12 @@ if 'components' in data and 'schemas' in data['components']:
                 for field in fields_to_remove:
                     required_fields.remove(field)
 
+        # Remove computed_fields as required for VLANs (https://github.com/nautobot/nautobot/issues/8082)
+        if name == 'VLAN' and 'required' in schema:
+            if 'computed_fields' in schema['required']:
+                print("Removing computed_fields from VLAN.required")
+                schema['required'].remove('computed_fields')
+
         # PowerFeed patches (go bindings generator issue?)
         if name == 'PowerFeed' and 'properties' in schema:
             if 'type' in schema['properties']:

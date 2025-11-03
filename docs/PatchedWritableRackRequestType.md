@@ -1,28 +1,25 @@
 # PatchedWritableRackRequestType
 
-## Properties
+## Enum
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
 
-## Methods
+* `_2_POST_FRAME` (value: `"2-post-frame"`)
 
-### NewPatchedWritableRackRequestType
+* `_4_POST_FRAME` (value: `"4-post-frame"`)
 
-`func NewPatchedWritableRackRequestType() *PatchedWritableRackRequestType`
+* `_4_POST_CABINET` (value: `"4-post-cabinet"`)
 
-NewPatchedWritableRackRequestType instantiates a new PatchedWritableRackRequestType object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+* `WALL_FRAME` (value: `"wall-frame"`)
 
-### NewPatchedWritableRackRequestTypeWithDefaults
+* `WALL_FRAME_VERTICAL` (value: `"wall-frame-vertical"`)
 
-`func NewPatchedWritableRackRequestTypeWithDefaults() *PatchedWritableRackRequestType`
+* `WALL_CABINET` (value: `"wall-cabinet"`)
 
-NewPatchedWritableRackRequestTypeWithDefaults instantiates a new PatchedWritableRackRequestType object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+* `WALL_CABINET_VERTICAL` (value: `"wall-cabinet-vertical"`)
+
+* `OTHER` (value: `"other"`)
+
+* `EMPTY` (value: `""`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

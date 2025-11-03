@@ -13,123 +13,66 @@ package nautobot
 import (
 	"encoding/json"
 	"fmt"
-	"gopkg.in/validator.v2"
 )
 
-// PatchedWritablePowerFeedRequestPowerPath - Physical power distribution redundancy path.
-type PatchedWritablePowerFeedRequestPowerPath struct {
-	BlankEnum *BlankEnum
-	PowerPathEnum *PowerPathEnum
+// PatchedWritablePowerFeedRequestPowerPath Physical power distribution redundancy path.
+type PatchedWritablePowerFeedRequestPowerPath string
+
+// List of PatchedWritablePowerFeedRequest_power_path
+const (
+	PATCHEDWRITABLEPOWERFEEDREQUESTPOWERPATH_A PatchedWritablePowerFeedRequestPowerPath = "a"
+	PATCHEDWRITABLEPOWERFEEDREQUESTPOWERPATH_B PatchedWritablePowerFeedRequestPowerPath = "b"
+	PATCHEDWRITABLEPOWERFEEDREQUESTPOWERPATH_EMPTY PatchedWritablePowerFeedRequestPowerPath = ""
+)
+
+// All allowed values of PatchedWritablePowerFeedRequestPowerPath enum
+var AllowedPatchedWritablePowerFeedRequestPowerPathEnumValues = []PatchedWritablePowerFeedRequestPowerPath{
+	"a",
+	"b",
+	"",
 }
 
-// BlankEnumAsPatchedWritablePowerFeedRequestPowerPath is a convenience function that returns BlankEnum wrapped in PatchedWritablePowerFeedRequestPowerPath
-func BlankEnumAsPatchedWritablePowerFeedRequestPowerPath(v *BlankEnum) PatchedWritablePowerFeedRequestPowerPath {
-	return PatchedWritablePowerFeedRequestPowerPath{
-		BlankEnum: v,
+func (v *PatchedWritablePowerFeedRequestPowerPath) UnmarshalJSON(src []byte) error {
+	var value string
+	err := json.Unmarshal(src, &value)
+	if err != nil {
+		return err
 	}
-}
-
-// PowerPathEnumAsPatchedWritablePowerFeedRequestPowerPath is a convenience function that returns PowerPathEnum wrapped in PatchedWritablePowerFeedRequestPowerPath
-func PowerPathEnumAsPatchedWritablePowerFeedRequestPowerPath(v *PowerPathEnum) PatchedWritablePowerFeedRequestPowerPath {
-	return PatchedWritablePowerFeedRequestPowerPath{
-		PowerPathEnum: v,
-	}
-}
-
-
-// Unmarshal JSON data into one of the pointers in the struct
-func (dst *PatchedWritablePowerFeedRequestPowerPath) UnmarshalJSON(data []byte) error {
-	var err error
-	match := 0
-	// try to unmarshal data into BlankEnum
-	err = newStrictDecoder(data).Decode(&dst.BlankEnum)
-	if err == nil {
-		jsonBlankEnum, _ := json.Marshal(dst.BlankEnum)
-		if string(jsonBlankEnum) == "{}" { // empty struct
-			dst.BlankEnum = nil
-		} else {
-			if err = validator.Validate(dst.BlankEnum); err != nil {
-				dst.BlankEnum = nil
-			} else {
-				match++
-			}
+	enumTypeValue := PatchedWritablePowerFeedRequestPowerPath(value)
+	for _, existing := range AllowedPatchedWritablePowerFeedRequestPowerPathEnumValues {
+		if existing == enumTypeValue {
+			*v = enumTypeValue
+			return nil
 		}
-	} else {
-		dst.BlankEnum = nil
 	}
 
-	// try to unmarshal data into PowerPathEnum
-	err = newStrictDecoder(data).Decode(&dst.PowerPathEnum)
-	if err == nil {
-		jsonPowerPathEnum, _ := json.Marshal(dst.PowerPathEnum)
-		if string(jsonPowerPathEnum) == "{}" { // empty struct
-			dst.PowerPathEnum = nil
-		} else {
-			if err = validator.Validate(dst.PowerPathEnum); err != nil {
-				dst.PowerPathEnum = nil
-			} else {
-				match++
-			}
+	return fmt.Errorf("%+v is not a valid PatchedWritablePowerFeedRequestPowerPath", value)
+}
+
+// NewPatchedWritablePowerFeedRequestPowerPathFromValue returns a pointer to a valid PatchedWritablePowerFeedRequestPowerPath
+// for the value passed as argument, or an error if the value passed is not allowed by the enum
+func NewPatchedWritablePowerFeedRequestPowerPathFromValue(v string) (*PatchedWritablePowerFeedRequestPowerPath, error) {
+	ev := PatchedWritablePowerFeedRequestPowerPath(v)
+	if ev.IsValid() {
+		return &ev, nil
+	} else {
+		return nil, fmt.Errorf("invalid value '%v' for PatchedWritablePowerFeedRequestPowerPath: valid values are %v", v, AllowedPatchedWritablePowerFeedRequestPowerPathEnumValues)
+	}
+}
+
+// IsValid return true if the value is valid for the enum, false otherwise
+func (v PatchedWritablePowerFeedRequestPowerPath) IsValid() bool {
+	for _, existing := range AllowedPatchedWritablePowerFeedRequestPowerPathEnumValues {
+		if existing == v {
+			return true
 		}
-	} else {
-		dst.PowerPathEnum = nil
 	}
-
-	if match > 1 { // more than 1 match
-		// reset to nil
-		dst.BlankEnum = nil
-		dst.PowerPathEnum = nil
-
-		return fmt.Errorf("data matches more than one schema in oneOf(PatchedWritablePowerFeedRequestPowerPath)")
-	} else if match == 1 {
-		return nil // exactly one match
-	} else { // no match
-		return fmt.Errorf("data failed to match schemas in oneOf(PatchedWritablePowerFeedRequestPowerPath)")
-	}
+	return false
 }
 
-// Marshal data from the first non-nil pointers in the struct to JSON
-func (src PatchedWritablePowerFeedRequestPowerPath) MarshalJSON() ([]byte, error) {
-	if src.BlankEnum != nil {
-		return json.Marshal(&src.BlankEnum)
-	}
-
-	if src.PowerPathEnum != nil {
-		return json.Marshal(&src.PowerPathEnum)
-	}
-
-	return nil, nil // no data in oneOf schemas
-}
-
-// Get the actual instance
-func (obj *PatchedWritablePowerFeedRequestPowerPath) GetActualInstance() (interface{}) {
-	if obj == nil {
-		return nil
-	}
-	if obj.BlankEnum != nil {
-		return obj.BlankEnum
-	}
-
-	if obj.PowerPathEnum != nil {
-		return obj.PowerPathEnum
-	}
-
-	// all schemas are nil
-	return nil
-}
-
-// Get the actual instance value
-func (obj PatchedWritablePowerFeedRequestPowerPath) GetActualInstanceValue() (interface{}) {
-	if obj.BlankEnum != nil {
-		return *obj.BlankEnum
-	}
-
-	if obj.PowerPathEnum != nil {
-		return *obj.PowerPathEnum
-	}
-
-	// all schemas are nil
-	return nil
+// Ptr returns reference to PatchedWritablePowerFeedRequest_power_path value
+func (v PatchedWritablePowerFeedRequestPowerPath) Ptr() *PatchedWritablePowerFeedRequestPowerPath {
+	return &v
 }
 
 type NullablePatchedWritablePowerFeedRequestPowerPath struct {
@@ -167,5 +110,4 @@ func (v *NullablePatchedWritablePowerFeedRequestPowerPath) UnmarshalJSON(src []b
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
-
 
