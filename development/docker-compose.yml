@@ -20,6 +20,9 @@ services:
       - NAUTOBOT_VER=${NAUTOBOT_VER}
     volumes:
       - "../:/client"
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
   nautobot:
     healthcheck:
       interval: 30s
