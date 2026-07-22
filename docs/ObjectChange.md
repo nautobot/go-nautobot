@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 
 ### NewObjectChange
 
-`func NewObjectChange(id string, objectType string, display string, url string, naturalSlug string, action ObjectChangeAction, changedObjectType string, relatedObjectType string, changedObject NullableObjectChangeChangedObject, time time.Time, userName string, requestId string, changedObjectId string, changeContext string, changeContextDetail string, objectRepr string, objectData interface{}, objectDataV2 interface{}, ) *ObjectChange`
+`func NewObjectChange(objectType string, display string, url string, naturalSlug string, action ObjectChangeAction, changedObjectType string, relatedObjectType string, changedObject NullableObjectChangeChangedObject, time time.Time, userName string, requestId string, changedObjectId string, changeContext string, changeContextDetail string, objectRepr string, objectData interface{}, objectDataV2 interface{}, ) *ObjectChange`
 
 NewObjectChange instantiates a new ObjectChange object
 This constructor will assign default values to properties that have it defined,
@@ -63,6 +63,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ObjectChange) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

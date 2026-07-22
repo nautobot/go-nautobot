@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Teams** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Phone** | Pointer to **string** |  | [optional] [default to ""]
 **Email** | Pointer to **string** |  | [optional] [default to ""]
@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **Comments** | Pointer to **string** |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Teams** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -32,30 +34,30 @@ NewPatchedContactRequestWithDefaults instantiates a new PatchedContactRequest ob
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetTeams
+### GetId
 
-`func (o *PatchedContactRequest) GetTeams() []BulkWritableCableRequestStatus`
+`func (o *PatchedContactRequest) GetId() string`
 
-GetTeams returns the Teams field if non-nil, zero value otherwise.
+GetId returns the Id field if non-nil, zero value otherwise.
 
-### GetTeamsOk
+### GetIdOk
 
-`func (o *PatchedContactRequest) GetTeamsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedContactRequest) GetIdOk() (*string, bool)`
 
-GetTeamsOk returns a tuple with the Teams field if it's non-nil, zero value otherwise
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTeams
+### SetId
 
-`func (o *PatchedContactRequest) SetTeams(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedContactRequest) SetId(v string)`
 
-SetTeams sets Teams field to given value.
+SetId sets Id field to given value.
 
-### HasTeams
+### HasId
 
-`func (o *PatchedContactRequest) HasTeams() bool`
+`func (o *PatchedContactRequest) HasId() bool`
 
-HasTeams returns a boolean if a field has been set.
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -231,6 +233,56 @@ SetRelationships sets Relationships field to given value.
 `func (o *PatchedContactRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedContactRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedContactRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedContactRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedContactRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
+### GetTeams
+
+`func (o *PatchedContactRequest) GetTeams() []BulkWritableCableRequestStatus`
+
+GetTeams returns the Teams field if non-nil, zero value otherwise.
+
+### GetTeamsOk
+
+`func (o *PatchedContactRequest) GetTeamsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTeamsOk returns a tuple with the Teams field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTeams
+
+`func (o *PatchedContactRequest) SetTeams(v []BulkWritableCableRequestStatus)`
+
+SetTeams sets Teams field to given value.
+
+### HasTeams
+
+`func (o *PatchedContactRequest) HasTeams() bool`
+
+HasTeams returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

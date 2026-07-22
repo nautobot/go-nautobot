@@ -236,34 +236,6 @@ func Test_nautobot_CloudAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test CloudAPIService CloudCloudNetworkPrefixAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test CloudAPIService CloudCloudNetworkPrefixAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.CloudAPI.CloudCloudNetworkPrefixAssignmentsNotesList(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test CloudAPIService CloudCloudNetworkPrefixAssignmentsPartialUpdate", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -655,34 +627,6 @@ func Test_nautobot_CloudAPIService(t *testing.T) {
 		t.Skip("skip test")  // remove to run test
 
 		resp, httpRes, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsList(context.Background()).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test CloudAPIService CloudCloudServiceNetworkAssignmentsNotesCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsNotesCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test CloudAPIService CloudCloudServiceNetworkAssignmentsNotesList", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.CloudAPI.CloudCloudServiceNetworkAssignmentsNotesList(context.Background(), id).Execute()
 
 		require.Nil(t, err)
 		require.NotNil(t, resp)

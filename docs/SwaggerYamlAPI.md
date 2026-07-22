@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## SwaggerYamlRetrieve
 
-> map[string]interface{} SwaggerYamlRetrieve(ctx).Lang(lang).Depth(depth).Execute()
+> map[string]interface{} SwaggerYamlRetrieve(ctx).Lang(lang).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -31,10 +31,11 @@ import (
 func main() {
 	lang := openapiclient.swagger_retrieve_lang_parameter("af") // SwaggerRetrieveLangParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.SwaggerYamlAPI.SwaggerYamlRetrieve(context.Background()).Lang(lang).Depth(depth).Execute()
+	resp, r, err := apiClient.SwaggerYamlAPI.SwaggerYamlRetrieve(context.Background()).Lang(lang).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `SwaggerYamlAPI.SwaggerYamlRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -57,6 +58,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **lang** | [**SwaggerRetrieveLangParameter**](SwaggerRetrieveLangParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedRearPort
 
-`func NewNestedRearPort(id string, objectType string, url string, ) *NestedRearPort`
+`func NewNestedRearPort(objectType string, url string, ) *NestedRearPort`
 
 NewNestedRearPort instantiates a new NestedRearPort object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedRearPort) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

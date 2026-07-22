@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 
 ### NewInterfaceRedundancyGroupAssociation
 
-`func NewInterfaceRedundancyGroupAssociation(id string, objectType string, display string, url string, naturalSlug string, priority int32, interfaceRedundancyGroup BulkWritableCableRequestStatus, interface_ BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *InterfaceRedundancyGroupAssociation`
+`func NewInterfaceRedundancyGroupAssociation(objectType string, display string, url string, naturalSlug string, priority int32, interfaceRedundancyGroup BulkWritableCableRequestStatus, interface_ BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *InterfaceRedundancyGroupAssociation`
 
 NewInterfaceRedundancyGroupAssociation instantiates a new InterfaceRedundancyGroupAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -53,6 +53,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *InterfaceRedundancyGroupAssociation) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

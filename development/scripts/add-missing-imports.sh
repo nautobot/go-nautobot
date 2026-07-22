@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# List of files to process
-files=("api_circuits.go" "api_dcim.go" "api_extras.go" "api_ipam.go" "api_tenancy.go" "api_users.go" "api_virtualization.go" "api_cloud.go")
+# List of files to process (go bindings generator issue?)
+files=("api_circuits.go" "api_cloud.go" "api_dcim.go" "api_extras.go" "api_ipam.go" "api_tenancy.go" "api_users.go" "api_virtualization.go" "api_wireless.go")
 
 for file in "${files[@]}"
 do

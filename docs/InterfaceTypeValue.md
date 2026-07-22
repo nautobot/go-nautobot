@@ -89,6 +89,12 @@
 
 * `_800GBASE_X_OSFP` (value: `"800gbase-x-osfp"`)
 
+* `_800GBASE_X_OSFP_XD` (value: `"800gbase-x-osfp-xd"`)
+
+* `_1600GBASE_X_OSFP` (value: `"1600gbase-x-osfp"`)
+
+* `_1600GBASE_X_OSFP_XD` (value: `"1600gbase-x-osfp-xd"`)
+
 * `_1000BASE_KX` (value: `"1000base-kx"`)
 
 * `_10GBASE_KR` (value: `"10gbase-kr"`)

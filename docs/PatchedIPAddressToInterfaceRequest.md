@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **IsSource** | Pointer to **bool** | Is source address on interface | [optional] 
 **IsDestination** | Pointer to **bool** | Is destination address on interface | [optional] 
 **IsDefault** | Pointer to **bool** | Is default address on interface | [optional] 
@@ -33,6 +34,31 @@ will change when the set of required properties is changed
 NewPatchedIPAddressToInterfaceRequestWithDefaults instantiates a new PatchedIPAddressToInterfaceRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedIPAddressToInterfaceRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedIPAddressToInterfaceRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedIPAddressToInterfaceRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedIPAddressToInterfaceRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetIsSource
 

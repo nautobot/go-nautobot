@@ -5,7 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**PanelType** | Pointer to [**PanelTypeEnum**](PanelTypeEnum.md) |  | [optional] 
+**PowerPath** | Pointer to [**PowerPathEnum**](PowerPathEnum.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
+**BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
 **Location** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **RackGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -51,6 +54,56 @@ and a boolean to check if the value has been set.
 SetId sets Id field to given value.
 
 
+### GetPanelType
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetPanelType() PanelTypeEnum`
+
+GetPanelType returns the PanelType field if non-nil, zero value otherwise.
+
+### GetPanelTypeOk
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetPanelTypeOk() (*PanelTypeEnum, bool)`
+
+GetPanelTypeOk returns a tuple with the PanelType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPanelType
+
+`func (o *PatchedBulkWritablePowerPanelRequest) SetPanelType(v PanelTypeEnum)`
+
+SetPanelType sets PanelType field to given value.
+
+### HasPanelType
+
+`func (o *PatchedBulkWritablePowerPanelRequest) HasPanelType() bool`
+
+HasPanelType returns a boolean if a field has been set.
+
+### GetPowerPath
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetPowerPath() PowerPathEnum`
+
+GetPowerPath returns the PowerPath field if non-nil, zero value otherwise.
+
+### GetPowerPathOk
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetPowerPathOk() (*PowerPathEnum, bool)`
+
+GetPowerPathOk returns a tuple with the PowerPath field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerPath
+
+`func (o *PatchedBulkWritablePowerPanelRequest) SetPowerPath(v PowerPathEnum)`
+
+SetPowerPath sets PowerPath field to given value.
+
+### HasPowerPath
+
+`func (o *PatchedBulkWritablePowerPanelRequest) HasPowerPath() bool`
+
+HasPowerPath returns a boolean if a field has been set.
+
 ### GetName
 
 `func (o *PatchedBulkWritablePowerPanelRequest) GetName() string`
@@ -76,6 +129,41 @@ SetName sets Name field to given value.
 
 HasName returns a boolean if a field has been set.
 
+### GetBreakerPositionCount
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetBreakerPositionCount() int32`
+
+GetBreakerPositionCount returns the BreakerPositionCount field if non-nil, zero value otherwise.
+
+### GetBreakerPositionCountOk
+
+`func (o *PatchedBulkWritablePowerPanelRequest) GetBreakerPositionCountOk() (*int32, bool)`
+
+GetBreakerPositionCountOk returns a tuple with the BreakerPositionCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBreakerPositionCount
+
+`func (o *PatchedBulkWritablePowerPanelRequest) SetBreakerPositionCount(v int32)`
+
+SetBreakerPositionCount sets BreakerPositionCount field to given value.
+
+### HasBreakerPositionCount
+
+`func (o *PatchedBulkWritablePowerPanelRequest) HasBreakerPositionCount() bool`
+
+HasBreakerPositionCount returns a boolean if a field has been set.
+
+### SetBreakerPositionCountNil
+
+`func (o *PatchedBulkWritablePowerPanelRequest) SetBreakerPositionCountNil(b bool)`
+
+ SetBreakerPositionCountNil sets the value for BreakerPositionCount to be an explicit nil
+
+### UnsetBreakerPositionCount
+`func (o *PatchedBulkWritablePowerPanelRequest) UnsetBreakerPositionCount()`
+
+UnsetBreakerPositionCount ensures that no value is present for BreakerPositionCount, not even an explicit nil
 ### GetLocation
 
 `func (o *PatchedBulkWritablePowerPanelRequest) GetLocation() BulkWritableCableRequestStatus`

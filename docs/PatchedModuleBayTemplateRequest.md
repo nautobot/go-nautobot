@@ -4,12 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Position** | Pointer to **string** | The position of the module bay within the device or module | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
+**RequiresFirstPartyModules** | Pointer to **bool** | This bay will only accept modules from the same manufacturer as the parent device or module | [optional] 
 **DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayTemplateRequestModuleFamily**](BulkWritableModuleBayTemplateRequestModuleFamily.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -31,6 +34,31 @@ will change when the set of required properties is changed
 NewPatchedModuleBayTemplateRequestWithDefaults instantiates a new PatchedModuleBayTemplateRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedModuleBayTemplateRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedModuleBayTemplateRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedModuleBayTemplateRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedModuleBayTemplateRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -132,6 +160,31 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetRequiresFirstPartyModules
+
+`func (o *PatchedModuleBayTemplateRequest) GetRequiresFirstPartyModules() bool`
+
+GetRequiresFirstPartyModules returns the RequiresFirstPartyModules field if non-nil, zero value otherwise.
+
+### GetRequiresFirstPartyModulesOk
+
+`func (o *PatchedModuleBayTemplateRequest) GetRequiresFirstPartyModulesOk() (*bool, bool)`
+
+GetRequiresFirstPartyModulesOk returns a tuple with the RequiresFirstPartyModules field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRequiresFirstPartyModules
+
+`func (o *PatchedModuleBayTemplateRequest) SetRequiresFirstPartyModules(v bool)`
+
+SetRequiresFirstPartyModules sets RequiresFirstPartyModules field to given value.
+
+### HasRequiresFirstPartyModules
+
+`func (o *PatchedModuleBayTemplateRequest) HasRequiresFirstPartyModules() bool`
+
+HasRequiresFirstPartyModules returns a boolean if a field has been set.
+
 ### GetDeviceType
 
 `func (o *PatchedModuleBayTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
@@ -202,6 +255,41 @@ HasModuleType returns a boolean if a field has been set.
 `func (o *PatchedModuleBayTemplateRequest) UnsetModuleType()`
 
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
+### GetModuleFamily
+
+`func (o *PatchedModuleBayTemplateRequest) GetModuleFamily() BulkWritableModuleBayTemplateRequestModuleFamily`
+
+GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
+
+### GetModuleFamilyOk
+
+`func (o *PatchedModuleBayTemplateRequest) GetModuleFamilyOk() (*BulkWritableModuleBayTemplateRequestModuleFamily, bool)`
+
+GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetModuleFamily
+
+`func (o *PatchedModuleBayTemplateRequest) SetModuleFamily(v BulkWritableModuleBayTemplateRequestModuleFamily)`
+
+SetModuleFamily sets ModuleFamily field to given value.
+
+### HasModuleFamily
+
+`func (o *PatchedModuleBayTemplateRequest) HasModuleFamily() bool`
+
+HasModuleFamily returns a boolean if a field has been set.
+
+### SetModuleFamilyNil
+
+`func (o *PatchedModuleBayTemplateRequest) SetModuleFamilyNil(b bool)`
+
+ SetModuleFamilyNil sets the value for ModuleFamily to be an explicit nil
+
+### UnsetModuleFamily
+`func (o *PatchedModuleBayTemplateRequest) UnsetModuleFamily()`
+
+UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedModuleBayTemplateRequest) GetCustomFields() map[string]interface{}`

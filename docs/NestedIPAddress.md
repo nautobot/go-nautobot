@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedIPAddress
 
-`func NewNestedIPAddress(id string, objectType string, url string, ) *NestedIPAddress`
+`func NewNestedIPAddress(objectType string, url string, ) *NestedIPAddress`
 
 NewNestedIPAddress instantiates a new NestedIPAddress object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedIPAddress) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

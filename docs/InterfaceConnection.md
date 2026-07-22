@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **InterfaceA** | [**Interface**](Interface.md) |  | [readonly] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewInterfaceConnection
 
-`func NewInterfaceConnection(id string, objectType string, display string, interfaceA Interface, interfaceB Interface, connectedEndpointReachable NullableBool, created NullableTime, lastUpdated NullableTime, ) *InterfaceConnection`
+`func NewInterfaceConnection(objectType string, display string, interfaceA Interface, interfaceB Interface, connectedEndpointReachable NullableBool, created NullableTime, lastUpdated NullableTime, ) *InterfaceConnection`
 
 NewInterfaceConnection instantiates a new InterfaceConnection object
 This constructor will assign default values to properties that have it defined,
@@ -51,6 +51,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *InterfaceConnection) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

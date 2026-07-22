@@ -5,6 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**OwnerContentType** | Pointer to **NullableString** |  | [optional] 
+**OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **Name** | **string** |  | 
 **Query** | **string** |  | 
 
@@ -47,6 +49,76 @@ and a boolean to check if the value has been set.
 SetId sets Id field to given value.
 
 
+### GetOwnerContentType
+
+`func (o *BulkWritableGraphQLQueryRequest) GetOwnerContentType() string`
+
+GetOwnerContentType returns the OwnerContentType field if non-nil, zero value otherwise.
+
+### GetOwnerContentTypeOk
+
+`func (o *BulkWritableGraphQLQueryRequest) GetOwnerContentTypeOk() (*string, bool)`
+
+GetOwnerContentTypeOk returns a tuple with the OwnerContentType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerContentType
+
+`func (o *BulkWritableGraphQLQueryRequest) SetOwnerContentType(v string)`
+
+SetOwnerContentType sets OwnerContentType field to given value.
+
+### HasOwnerContentType
+
+`func (o *BulkWritableGraphQLQueryRequest) HasOwnerContentType() bool`
+
+HasOwnerContentType returns a boolean if a field has been set.
+
+### SetOwnerContentTypeNil
+
+`func (o *BulkWritableGraphQLQueryRequest) SetOwnerContentTypeNil(b bool)`
+
+ SetOwnerContentTypeNil sets the value for OwnerContentType to be an explicit nil
+
+### UnsetOwnerContentType
+`func (o *BulkWritableGraphQLQueryRequest) UnsetOwnerContentType()`
+
+UnsetOwnerContentType ensures that no value is present for OwnerContentType, not even an explicit nil
+### GetOwnerObjectId
+
+`func (o *BulkWritableGraphQLQueryRequest) GetOwnerObjectId() string`
+
+GetOwnerObjectId returns the OwnerObjectId field if non-nil, zero value otherwise.
+
+### GetOwnerObjectIdOk
+
+`func (o *BulkWritableGraphQLQueryRequest) GetOwnerObjectIdOk() (*string, bool)`
+
+GetOwnerObjectIdOk returns a tuple with the OwnerObjectId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOwnerObjectId
+
+`func (o *BulkWritableGraphQLQueryRequest) SetOwnerObjectId(v string)`
+
+SetOwnerObjectId sets OwnerObjectId field to given value.
+
+### HasOwnerObjectId
+
+`func (o *BulkWritableGraphQLQueryRequest) HasOwnerObjectId() bool`
+
+HasOwnerObjectId returns a boolean if a field has been set.
+
+### SetOwnerObjectIdNil
+
+`func (o *BulkWritableGraphQLQueryRequest) SetOwnerObjectIdNil(b bool)`
+
+ SetOwnerObjectIdNil sets the value for OwnerObjectId to be an explicit nil
+
+### UnsetOwnerObjectId
+`func (o *BulkWritableGraphQLQueryRequest) UnsetOwnerObjectId()`
+
+UnsetOwnerObjectId ensures that no value is present for OwnerObjectId, not even an explicit nil
 ### GetName
 
 `func (o *BulkWritableGraphQLQueryRequest) GetName() string`

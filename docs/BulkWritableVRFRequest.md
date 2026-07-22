@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **Name** | **string** |  | 
-**Rd** | **NullableString** | Unique route distinguisher (as defined in RFC 4364) | 
+**Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableVRFRequest
 
-`func NewBulkWritableVRFRequest(id string, name string, rd NullableString, ) *BulkWritableVRFRequest`
+`func NewBulkWritableVRFRequest(id string, name string, ) *BulkWritableVRFRequest`
 
 NewBulkWritableVRFRequest instantiates a new BulkWritableVRFRequest object
 This constructor will assign default values to properties that have it defined,
@@ -95,6 +95,11 @@ and a boolean to check if the value has been set.
 
 SetRd sets Rd field to given value.
 
+### HasRd
+
+`func (o *BulkWritableVRFRequest) HasRd() bool`
+
+HasRd returns a boolean if a field has been set.
 
 ### SetRdNil
 

@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **FacilityId** | Pointer to **NullableString** | Locally-assigned identifier | [optional] 
 **Serial** | Pointer to **string** |  | [optional] 
@@ -43,6 +44,31 @@ will change when the set of required properties is changed
 NewPatchedWritableRackRequestWithDefaults instantiates a new PatchedWritableRackRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedWritableRackRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedWritableRackRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedWritableRackRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *PatchedWritableRackRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetName
 

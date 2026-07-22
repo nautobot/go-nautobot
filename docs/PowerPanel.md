@@ -4,13 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**PanelType** | Pointer to [**PowerPanelPanelType**](PowerPanelPanelType.md) |  | [optional] 
+**PowerPath** | Pointer to [**PowerFeedPowerPath**](PowerFeedPowerPath.md) |  | [optional] 
 **PowerFeedCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
+**BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **RackGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -23,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewPowerPanel
 
-`func NewPowerPanel(id string, objectType string, display string, url string, naturalSlug string, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerPanel`
+`func NewPowerPanel(objectType string, display string, url string, naturalSlug string, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerPanel`
 
 NewPowerPanel instantiates a new PowerPanel object
 This constructor will assign default values to properties that have it defined,
@@ -57,6 +60,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *PowerPanel) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -138,6 +146,56 @@ and a boolean to check if the value has been set.
 SetNaturalSlug sets NaturalSlug field to given value.
 
 
+### GetPanelType
+
+`func (o *PowerPanel) GetPanelType() PowerPanelPanelType`
+
+GetPanelType returns the PanelType field if non-nil, zero value otherwise.
+
+### GetPanelTypeOk
+
+`func (o *PowerPanel) GetPanelTypeOk() (*PowerPanelPanelType, bool)`
+
+GetPanelTypeOk returns a tuple with the PanelType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPanelType
+
+`func (o *PowerPanel) SetPanelType(v PowerPanelPanelType)`
+
+SetPanelType sets PanelType field to given value.
+
+### HasPanelType
+
+`func (o *PowerPanel) HasPanelType() bool`
+
+HasPanelType returns a boolean if a field has been set.
+
+### GetPowerPath
+
+`func (o *PowerPanel) GetPowerPath() PowerFeedPowerPath`
+
+GetPowerPath returns the PowerPath field if non-nil, zero value otherwise.
+
+### GetPowerPathOk
+
+`func (o *PowerPanel) GetPowerPathOk() (*PowerFeedPowerPath, bool)`
+
+GetPowerPathOk returns a tuple with the PowerPath field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerPath
+
+`func (o *PowerPanel) SetPowerPath(v PowerFeedPowerPath)`
+
+SetPowerPath sets PowerPath field to given value.
+
+### HasPowerPath
+
+`func (o *PowerPanel) HasPowerPath() bool`
+
+HasPowerPath returns a boolean if a field has been set.
+
 ### GetPowerFeedCount
 
 `func (o *PowerPanel) GetPowerFeedCount() int32`
@@ -183,6 +241,41 @@ and a boolean to check if the value has been set.
 SetName sets Name field to given value.
 
 
+### GetBreakerPositionCount
+
+`func (o *PowerPanel) GetBreakerPositionCount() int32`
+
+GetBreakerPositionCount returns the BreakerPositionCount field if non-nil, zero value otherwise.
+
+### GetBreakerPositionCountOk
+
+`func (o *PowerPanel) GetBreakerPositionCountOk() (*int32, bool)`
+
+GetBreakerPositionCountOk returns a tuple with the BreakerPositionCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBreakerPositionCount
+
+`func (o *PowerPanel) SetBreakerPositionCount(v int32)`
+
+SetBreakerPositionCount sets BreakerPositionCount field to given value.
+
+### HasBreakerPositionCount
+
+`func (o *PowerPanel) HasBreakerPositionCount() bool`
+
+HasBreakerPositionCount returns a boolean if a field has been set.
+
+### SetBreakerPositionCountNil
+
+`func (o *PowerPanel) SetBreakerPositionCountNil(b bool)`
+
+ SetBreakerPositionCountNil sets the value for BreakerPositionCount to be an explicit nil
+
+### UnsetBreakerPositionCount
+`func (o *PowerPanel) UnsetBreakerPositionCount()`
+
+UnsetBreakerPositionCount ensures that no value is present for BreakerPositionCount, not even an explicit nil
 ### GetLocation
 
 `func (o *PowerPanel) GetLocation() BulkWritableCableRequestStatus`

@@ -4,14 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Phone** | Pointer to **string** |  | [optional] [default to ""]
 **Email** | Pointer to **string** |  | [optional] [default to ""]
 **Address** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
+**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -32,30 +34,30 @@ NewPatchedTeamRequestWithDefaults instantiates a new PatchedTeamRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
-### GetContacts
+### GetId
 
-`func (o *PatchedTeamRequest) GetContacts() []BulkWritableCableRequestStatus`
+`func (o *PatchedTeamRequest) GetId() string`
 
-GetContacts returns the Contacts field if non-nil, zero value otherwise.
+GetId returns the Id field if non-nil, zero value otherwise.
 
-### GetContactsOk
+### GetIdOk
 
-`func (o *PatchedTeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedTeamRequest) GetIdOk() (*string, bool)`
 
-GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetContacts
+### SetId
 
-`func (o *PatchedTeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedTeamRequest) SetId(v string)`
 
-SetContacts sets Contacts field to given value.
+SetId sets Id field to given value.
 
-### HasContacts
+### HasId
 
-`func (o *PatchedTeamRequest) HasContacts() bool`
+`func (o *PatchedTeamRequest) HasId() bool`
 
-HasContacts returns a boolean if a field has been set.
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -182,6 +184,31 @@ SetComments sets Comments field to given value.
 
 HasComments returns a boolean if a field has been set.
 
+### GetContacts
+
+`func (o *PatchedTeamRequest) GetContacts() []BulkWritableCableRequestStatus`
+
+GetContacts returns the Contacts field if non-nil, zero value otherwise.
+
+### GetContactsOk
+
+`func (o *PatchedTeamRequest) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContacts
+
+`func (o *PatchedTeamRequest) SetContacts(v []BulkWritableCableRequestStatus)`
+
+SetContacts sets Contacts field to given value.
+
+### HasContacts
+
+`func (o *PatchedTeamRequest) HasContacts() bool`
+
+HasContacts returns a boolean if a field has been set.
+
 ### GetCustomFields
 
 `func (o *PatchedTeamRequest) GetCustomFields() map[string]interface{}`
@@ -231,6 +258,31 @@ SetRelationships sets Relationships field to given value.
 `func (o *PatchedTeamRequest) HasRelationships() bool`
 
 HasRelationships returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedTeamRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedTeamRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedTeamRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedTeamRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 
 ### NewStaticGroupAssociation
 
-`func NewStaticGroupAssociation(id string, objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObject DynamicGroupAssociatedObject, associatedObjectId string, dynamicGroup BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *StaticGroupAssociation`
+`func NewStaticGroupAssociation(objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObject DynamicGroupAssociatedObject, associatedObjectId string, dynamicGroup BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *StaticGroupAssociation`
 
 NewStaticGroupAssociation instantiates a new StaticGroupAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -56,6 +56,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *StaticGroupAssociation) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

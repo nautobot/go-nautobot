@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
+**Capabilities** | Pointer to [**[]CapabilitiesEnum**](CapabilitiesEnum.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -58,6 +59,41 @@ and a boolean to check if the value has been set.
 SetId sets Id field to given value.
 
 
+### GetCapabilities
+
+`func (o *PatchedBulkWritableControllerRequest) GetCapabilities() []CapabilitiesEnum`
+
+GetCapabilities returns the Capabilities field if non-nil, zero value otherwise.
+
+### GetCapabilitiesOk
+
+`func (o *PatchedBulkWritableControllerRequest) GetCapabilitiesOk() (*[]CapabilitiesEnum, bool)`
+
+GetCapabilitiesOk returns a tuple with the Capabilities field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCapabilities
+
+`func (o *PatchedBulkWritableControllerRequest) SetCapabilities(v []CapabilitiesEnum)`
+
+SetCapabilities sets Capabilities field to given value.
+
+### HasCapabilities
+
+`func (o *PatchedBulkWritableControllerRequest) HasCapabilities() bool`
+
+HasCapabilities returns a boolean if a field has been set.
+
+### SetCapabilitiesNil
+
+`func (o *PatchedBulkWritableControllerRequest) SetCapabilitiesNil(b bool)`
+
+ SetCapabilitiesNil sets the value for Capabilities to be an explicit nil
+
+### UnsetCapabilities
+`func (o *PatchedBulkWritableControllerRequest) UnsetCapabilities()`
+
+UnsetCapabilities ensures that no value is present for Capabilities, not even an explicit nil
 ### GetName
 
 `func (o *PatchedBulkWritableControllerRequest) GetName() string`

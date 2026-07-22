@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewVRFPrefixAssignment
 
-`func NewVRFPrefixAssignment(id string, objectType string, display string, url string, naturalSlug string, vrf BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *VRFPrefixAssignment`
+`func NewVRFPrefixAssignment(objectType string, display string, url string, naturalSlug string, vrf BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *VRFPrefixAssignment`
 
 NewVRFPrefixAssignment instantiates a new VRFPrefixAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -50,6 +50,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *VRFPrefixAssignment) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

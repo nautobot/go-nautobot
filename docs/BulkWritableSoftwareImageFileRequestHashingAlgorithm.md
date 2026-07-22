@@ -1,28 +1,27 @@
 # BulkWritableSoftwareImageFileRequestHashingAlgorithm
 
-## Properties
+## Enum
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
 
-## Methods
+* `MD5` (value: `"md5"`)
 
-### NewBulkWritableSoftwareImageFileRequestHashingAlgorithm
+* `SHA1` (value: `"sha1"`)
 
-`func NewBulkWritableSoftwareImageFileRequestHashingAlgorithm() *BulkWritableSoftwareImageFileRequestHashingAlgorithm`
+* `SHA224` (value: `"sha224"`)
 
-NewBulkWritableSoftwareImageFileRequestHashingAlgorithm instantiates a new BulkWritableSoftwareImageFileRequestHashingAlgorithm object
-This constructor will assign default values to properties that have it defined,
-and makes sure properties required by API are set, but the set of arguments
-will change when the set of required properties is changed
+* `SHA384` (value: `"sha384"`)
 
-### NewBulkWritableSoftwareImageFileRequestHashingAlgorithmWithDefaults
+* `SHA256` (value: `"sha256"`)
 
-`func NewBulkWritableSoftwareImageFileRequestHashingAlgorithmWithDefaults() *BulkWritableSoftwareImageFileRequestHashingAlgorithm`
+* `SHA512` (value: `"sha512"`)
 
-NewBulkWritableSoftwareImageFileRequestHashingAlgorithmWithDefaults instantiates a new BulkWritableSoftwareImageFileRequestHashingAlgorithm object
-This constructor will only assign default values to properties that have it defined,
-but it doesn't guarantee that properties required by API are set
+* `SHA3` (value: `"sha3"`)
+
+* `BLAKE2` (value: `"blake2"`)
+
+* `BLAKE3` (value: `"blake3"`)
+
+* `EMPTY` (value: `""`)
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

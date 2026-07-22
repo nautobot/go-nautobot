@@ -7,7 +7,11 @@
 
 * `INFO` (value: `"info"`)
 
+* `SUCCESS` (value: `"success"`)
+
 * `WARNING` (value: `"warning"`)
+
+* `FAILURE` (value: `"failure"`)
 
 * `ERROR` (value: `"error"`)
 

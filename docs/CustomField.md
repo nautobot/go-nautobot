@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewCustomField
 
-`func NewCustomField(id string, objectType string, display string, url string, naturalSlug string, contentTypes []string, type_ CustomFieldType, label string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CustomField`
+`func NewCustomField(objectType string, display string, url string, naturalSlug string, contentTypes []string, type_ CustomFieldType, label string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CustomField`
 
 NewCustomField instantiates a new CustomField object
 This constructor will assign default values to properties that have it defined,
@@ -65,6 +65,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *CustomField) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

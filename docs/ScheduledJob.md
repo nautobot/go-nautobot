@@ -4,11 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**Queue** | **string** |  | [readonly] 
 **TimeZone** | Pointer to **string** |  | [optional] 
 **Name** | **string** | Human-readable description of this scheduled task | 
 **Task** | **string** | The name of the Celery task that should be run. (Example: \&quot;proj.tasks.import_contacts\&quot;) | 
@@ -16,7 +17,6 @@ Name | Type | Description | Notes
 **Args** | Pointer to **interface{}** |  | [optional] 
 **Kwargs** | Pointer to **interface{}** |  | [optional] 
 **CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
-**Queue** | Pointer to **string** | Queue defined in CELERY_TASK_QUEUES. Leave empty for default queuing. | [optional] 
 **OneOff** | Pointer to **bool** | If True, the schedule will only run the task a single time | [optional] 
 **StartTime** | **time.Time** | Datetime when the schedule should begin triggering the task to run | 
 **Enabled** | Pointer to **bool** | Set to False to disable the schedule | [optional] 
@@ -28,6 +28,7 @@ Name | Type | Description | Notes
 **ApprovedAt** | **NullableTime** | Datetime that the schedule was approved | [readonly] 
 **Crontab** | Pointer to **string** | Cronjob syntax string for custom scheduling | [optional] 
 **JobModel** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**JobQueue** | Pointer to [**NullableJobQueueOverride**](JobQueueOverride.md) |  | [optional] 
 **User** | Pointer to [**NullableScheduledJobUser**](ScheduledJobUser.md) |  | [optional] 
 **ApprovedByUser** | Pointer to [**NullableScheduledJobApprovedByUser**](ScheduledJobApprovedByUser.md) |  | [optional] 
 
@@ -35,7 +36,7 @@ Name | Type | Description | Notes
 
 ### NewScheduledJob
 
-`func NewScheduledJob(id string, objectType string, display string, url string, naturalSlug string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, approvedAt NullableTime, ) *ScheduledJob`
+`func NewScheduledJob(objectType string, display string, url string, naturalSlug string, queue string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, approvedAt NullableTime, ) *ScheduledJob`
 
 NewScheduledJob instantiates a new ScheduledJob object
 This constructor will assign default values to properties that have it defined,
@@ -69,6 +70,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *ScheduledJob) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -148,6 +154,26 @@ and a boolean to check if the value has been set.
 `func (o *ScheduledJob) SetNaturalSlug(v string)`
 
 SetNaturalSlug sets NaturalSlug field to given value.
+
+
+### GetQueue
+
+`func (o *ScheduledJob) GetQueue() string`
+
+GetQueue returns the Queue field if non-nil, zero value otherwise.
+
+### GetQueueOk
+
+`func (o *ScheduledJob) GetQueueOk() (*string, bool)`
+
+GetQueueOk returns a tuple with the Queue field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetQueue
+
+`func (o *ScheduledJob) SetQueue(v string)`
+
+SetQueue sets Queue field to given value.
 
 
 ### GetTimeZone
@@ -340,31 +366,6 @@ HasCeleryKwargs returns a boolean if a field has been set.
 `func (o *ScheduledJob) UnsetCeleryKwargs()`
 
 UnsetCeleryKwargs ensures that no value is present for CeleryKwargs, not even an explicit nil
-### GetQueue
-
-`func (o *ScheduledJob) GetQueue() string`
-
-GetQueue returns the Queue field if non-nil, zero value otherwise.
-
-### GetQueueOk
-
-`func (o *ScheduledJob) GetQueueOk() (*string, bool)`
-
-GetQueueOk returns a tuple with the Queue field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetQueue
-
-`func (o *ScheduledJob) SetQueue(v string)`
-
-SetQueue sets Queue field to given value.
-
-### HasQueue
-
-`func (o *ScheduledJob) HasQueue() bool`
-
-HasQueue returns a boolean if a field has been set.
-
 ### GetOneOff
 
 `func (o *ScheduledJob) GetOneOff() bool`
@@ -650,6 +651,41 @@ HasJobModel returns a boolean if a field has been set.
 `func (o *ScheduledJob) UnsetJobModel()`
 
 UnsetJobModel ensures that no value is present for JobModel, not even an explicit nil
+### GetJobQueue
+
+`func (o *ScheduledJob) GetJobQueue() JobQueueOverride`
+
+GetJobQueue returns the JobQueue field if non-nil, zero value otherwise.
+
+### GetJobQueueOk
+
+`func (o *ScheduledJob) GetJobQueueOk() (*JobQueueOverride, bool)`
+
+GetJobQueueOk returns a tuple with the JobQueue field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetJobQueue
+
+`func (o *ScheduledJob) SetJobQueue(v JobQueueOverride)`
+
+SetJobQueue sets JobQueue field to given value.
+
+### HasJobQueue
+
+`func (o *ScheduledJob) HasJobQueue() bool`
+
+HasJobQueue returns a boolean if a field has been set.
+
+### SetJobQueueNil
+
+`func (o *ScheduledJob) SetJobQueueNil(b bool)`
+
+ SetJobQueueNil sets the value for JobQueue to be an explicit nil
+
+### UnsetJobQueue
+`func (o *ScheduledJob) UnsetJobQueue()`
+
+UnsetJobQueue ensures that no value is present for JobQueue, not even an explicit nil
 ### GetUser
 
 `func (o *ScheduledJob) GetUser() ScheduledJobUser`

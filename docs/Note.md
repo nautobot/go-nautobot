@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 
 ### NewNote
 
-`func NewNote(id string, objectType string, display string, url string, naturalSlug string, assignedObjectType string, assignedObject NullableNoteAssignedObject, assignedObjectId string, userName string, note string, created NullableTime, lastUpdated NullableTime, ) *Note`
+`func NewNote(objectType string, display string, url string, naturalSlug string, assignedObjectType string, assignedObject NullableNoteAssignedObject, assignedObjectId string, userName string, note string, created NullableTime, lastUpdated NullableTime, ) *Note`
 
 NewNote instantiates a new Note object
 This constructor will assign default values to properties that have it defined,
@@ -56,6 +56,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *Note) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

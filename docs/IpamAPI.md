@@ -43,8 +43,6 @@ Method | HTTP request | Description
 [**IpamPrefixLocationAssignmentsCreate**](IpamAPI.md#IpamPrefixLocationAssignmentsCreate) | **Post** /ipam/prefix-location-assignments/ | 
 [**IpamPrefixLocationAssignmentsDestroy**](IpamAPI.md#IpamPrefixLocationAssignmentsDestroy) | **Delete** /ipam/prefix-location-assignments/{id}/ | 
 [**IpamPrefixLocationAssignmentsList**](IpamAPI.md#IpamPrefixLocationAssignmentsList) | **Get** /ipam/prefix-location-assignments/ | 
-[**IpamPrefixLocationAssignmentsNotesCreate**](IpamAPI.md#IpamPrefixLocationAssignmentsNotesCreate) | **Post** /ipam/prefix-location-assignments/{id}/notes/ | 
-[**IpamPrefixLocationAssignmentsNotesList**](IpamAPI.md#IpamPrefixLocationAssignmentsNotesList) | **Get** /ipam/prefix-location-assignments/{id}/notes/ | 
 [**IpamPrefixLocationAssignmentsPartialUpdate**](IpamAPI.md#IpamPrefixLocationAssignmentsPartialUpdate) | **Patch** /ipam/prefix-location-assignments/{id}/ | 
 [**IpamPrefixLocationAssignmentsRetrieve**](IpamAPI.md#IpamPrefixLocationAssignmentsRetrieve) | **Get** /ipam/prefix-location-assignments/{id}/ | 
 [**IpamPrefixLocationAssignmentsUpdate**](IpamAPI.md#IpamPrefixLocationAssignmentsUpdate) | **Put** /ipam/prefix-location-assignments/{id}/ | 
@@ -96,6 +94,8 @@ Method | HTTP request | Description
 [**IpamServicesPartialUpdate**](IpamAPI.md#IpamServicesPartialUpdate) | **Patch** /ipam/services/{id}/ | 
 [**IpamServicesRetrieve**](IpamAPI.md#IpamServicesRetrieve) | **Get** /ipam/services/{id}/ | 
 [**IpamServicesUpdate**](IpamAPI.md#IpamServicesUpdate) | **Put** /ipam/services/{id}/ | 
+[**IpamVlanGroupsAvailableVlansCreate**](IpamAPI.md#IpamVlanGroupsAvailableVlansCreate) | **Post** /ipam/vlan-groups/{id}/available-vlans/ | 
+[**IpamVlanGroupsAvailableVlansList**](IpamAPI.md#IpamVlanGroupsAvailableVlansList) | **Get** /ipam/vlan-groups/{id}/available-vlans/ | 
 [**IpamVlanGroupsBulkDestroy**](IpamAPI.md#IpamVlanGroupsBulkDestroy) | **Delete** /ipam/vlan-groups/ | 
 [**IpamVlanGroupsBulkPartialUpdate**](IpamAPI.md#IpamVlanGroupsBulkPartialUpdate) | **Patch** /ipam/vlan-groups/ | 
 [**IpamVlanGroupsBulkUpdate**](IpamAPI.md#IpamVlanGroupsBulkUpdate) | **Put** /ipam/vlan-groups/ | 
@@ -113,8 +113,6 @@ Method | HTTP request | Description
 [**IpamVlanLocationAssignmentsCreate**](IpamAPI.md#IpamVlanLocationAssignmentsCreate) | **Post** /ipam/vlan-location-assignments/ | 
 [**IpamVlanLocationAssignmentsDestroy**](IpamAPI.md#IpamVlanLocationAssignmentsDestroy) | **Delete** /ipam/vlan-location-assignments/{id}/ | 
 [**IpamVlanLocationAssignmentsList**](IpamAPI.md#IpamVlanLocationAssignmentsList) | **Get** /ipam/vlan-location-assignments/ | 
-[**IpamVlanLocationAssignmentsNotesCreate**](IpamAPI.md#IpamVlanLocationAssignmentsNotesCreate) | **Post** /ipam/vlan-location-assignments/{id}/notes/ | 
-[**IpamVlanLocationAssignmentsNotesList**](IpamAPI.md#IpamVlanLocationAssignmentsNotesList) | **Get** /ipam/vlan-location-assignments/{id}/notes/ | 
 [**IpamVlanLocationAssignmentsPartialUpdate**](IpamAPI.md#IpamVlanLocationAssignmentsPartialUpdate) | **Patch** /ipam/vlan-location-assignments/{id}/ | 
 [**IpamVlanLocationAssignmentsRetrieve**](IpamAPI.md#IpamVlanLocationAssignmentsRetrieve) | **Get** /ipam/vlan-location-assignments/{id}/ | 
 [**IpamVlanLocationAssignmentsUpdate**](IpamAPI.md#IpamVlanLocationAssignmentsUpdate) | **Put** /ipam/vlan-location-assignments/{id}/ | 
@@ -135,8 +133,6 @@ Method | HTTP request | Description
 [**IpamVrfDeviceAssignmentsCreate**](IpamAPI.md#IpamVrfDeviceAssignmentsCreate) | **Post** /ipam/vrf-device-assignments/ | 
 [**IpamVrfDeviceAssignmentsDestroy**](IpamAPI.md#IpamVrfDeviceAssignmentsDestroy) | **Delete** /ipam/vrf-device-assignments/{id}/ | 
 [**IpamVrfDeviceAssignmentsList**](IpamAPI.md#IpamVrfDeviceAssignmentsList) | **Get** /ipam/vrf-device-assignments/ | 
-[**IpamVrfDeviceAssignmentsNotesCreate**](IpamAPI.md#IpamVrfDeviceAssignmentsNotesCreate) | **Post** /ipam/vrf-device-assignments/{id}/notes/ | 
-[**IpamVrfDeviceAssignmentsNotesList**](IpamAPI.md#IpamVrfDeviceAssignmentsNotesList) | **Get** /ipam/vrf-device-assignments/{id}/notes/ | 
 [**IpamVrfDeviceAssignmentsPartialUpdate**](IpamAPI.md#IpamVrfDeviceAssignmentsPartialUpdate) | **Patch** /ipam/vrf-device-assignments/{id}/ | 
 [**IpamVrfDeviceAssignmentsRetrieve**](IpamAPI.md#IpamVrfDeviceAssignmentsRetrieve) | **Get** /ipam/vrf-device-assignments/{id}/ | 
 [**IpamVrfDeviceAssignmentsUpdate**](IpamAPI.md#IpamVrfDeviceAssignmentsUpdate) | **Put** /ipam/vrf-device-assignments/{id}/ | 
@@ -146,8 +142,6 @@ Method | HTTP request | Description
 [**IpamVrfPrefixAssignmentsCreate**](IpamAPI.md#IpamVrfPrefixAssignmentsCreate) | **Post** /ipam/vrf-prefix-assignments/ | 
 [**IpamVrfPrefixAssignmentsDestroy**](IpamAPI.md#IpamVrfPrefixAssignmentsDestroy) | **Delete** /ipam/vrf-prefix-assignments/{id}/ | 
 [**IpamVrfPrefixAssignmentsList**](IpamAPI.md#IpamVrfPrefixAssignmentsList) | **Get** /ipam/vrf-prefix-assignments/ | 
-[**IpamVrfPrefixAssignmentsNotesCreate**](IpamAPI.md#IpamVrfPrefixAssignmentsNotesCreate) | **Post** /ipam/vrf-prefix-assignments/{id}/notes/ | 
-[**IpamVrfPrefixAssignmentsNotesList**](IpamAPI.md#IpamVrfPrefixAssignmentsNotesList) | **Get** /ipam/vrf-prefix-assignments/{id}/notes/ | 
 [**IpamVrfPrefixAssignmentsPartialUpdate**](IpamAPI.md#IpamVrfPrefixAssignmentsPartialUpdate) | **Patch** /ipam/vrf-prefix-assignments/{id}/ | 
 [**IpamVrfPrefixAssignmentsRetrieve**](IpamAPI.md#IpamVrfPrefixAssignmentsRetrieve) | **Get** /ipam/vrf-prefix-assignments/{id}/ | 
 [**IpamVrfPrefixAssignmentsUpdate**](IpamAPI.md#IpamVrfPrefixAssignmentsUpdate) | **Put** /ipam/vrf-prefix-assignments/{id}/ | 
@@ -507,7 +501,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressToInterfaceList
 
-> PaginatedIPAddressToInterfaceList IpamIpAddressToInterfaceList(ctx).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).IpAddress(ipAddress).IpAddressN(ipAddressN).IsDefault(isDefault).IsDestination(isDestination).IsPreferred(isPreferred).IsPrimary(isPrimary).IsSecondary(isSecondary).IsSource(isSource).IsStandby(isStandby).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Depth(depth).Execute()
+> PaginatedIPAddressToInterfaceList IpamIpAddressToInterfaceList(ctx).Created(created).Format(format).Id(id).IdN(idN).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).IpAddress(ipAddress).IpAddressN(ipAddressN).IsDefault(isDefault).IsDestination(isDestination).IsPreferred(isPreferred).IsPrimary(isPrimary).IsSecondary(isSecondary).IsSource(isSource).IsStandby(isStandby).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -530,19 +524,7 @@ func main() {
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	interface_ := []string{"Inner_example"} // []string |  (optional)
 	interfaceIsnull := true // bool | Interface (name or ID) is null (optional)
 	interfaceN := []string{"Inner_example"} // []string |  (optional)
@@ -564,10 +546,11 @@ func main() {
 	vmInterfaceIsnull := true // bool | VM Interface (name or ID) is null (optional)
 	vmInterfaceN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceList(context.Background()).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).IpAddress(ipAddress).IpAddressN(ipAddressN).IsDefault(isDefault).IsDestination(isDestination).IsPreferred(isPreferred).IsPrimary(isPrimary).IsSecondary(isSecondary).IsSource(isSource).IsStandby(isStandby).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceList(context.Background()).Created(created).Format(format).Id(id).IdN(idN).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).IpAddress(ipAddress).IpAddressN(ipAddressN).IsDefault(isDefault).IsDestination(isDestination).IsPreferred(isPreferred).IsPrimary(isPrimary).IsSecondary(isSecondary).IsSource(isSource).IsStandby(isStandby).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressToInterfaceList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -591,19 +574,7 @@ Name | Type | Description  | Notes
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **interface_** | **[]string** |  | 
  **interfaceIsnull** | **bool** | Interface (name or ID) is null | 
  **interfaceN** | **[]string** |  | 
@@ -625,6 +596,7 @@ Name | Type | Description  | Notes
  **vmInterfaceIsnull** | **bool** | VM Interface (name or ID) is null | 
  **vmInterfaceN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -720,7 +692,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressToInterfaceNotesList
 
-> PaginatedNoteList IpamIpAddressToInterfaceNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamIpAddressToInterfaceNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -744,10 +716,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressToInterfaceNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -777,6 +750,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -872,7 +846,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressToInterfaceRetrieve
 
-> IPAddressToInterface IpamIpAddressToInterfaceRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> IPAddressToInterface IpamIpAddressToInterfaceRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -894,10 +868,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this IP Address Assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressToInterfaceRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressToInterfaceRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -925,6 +900,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1360,7 +1336,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressesList
 
-> PaginatedIPAddressList IpamIpAddressesList(ctx).Address(address).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).DnsName(dnsName).DnsNameIc(dnsNameIc).DnsNameIe(dnsNameIe).DnsNameIew(dnsNameIew).DnsNameIre(dnsNameIre).DnsNameIsw(dnsNameIsw).DnsNameN(dnsNameN).DnsNameNic(dnsNameNic).DnsNameNie(dnsNameNie).DnsNameNiew(dnsNameNiew).DnsNameNire(dnsNameNire).DnsNameNisw(dnsNameNisw).DnsNameNre(dnsNameNre).DnsNameRe(dnsNameRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaceAssignments(hasInterfaceAssignments).HasNatInside(hasNatInside).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MaskLength(maskLength).MaskLengthGt(maskLengthGt).MaskLengthGte(maskLengthGte).MaskLengthLt(maskLengthLt).MaskLengthLte(maskLengthLte).MaskLengthN(maskLengthN).Namespace(namespace).NamespaceN(namespaceN).NatInside(natInside).NatInsideIsnull(natInsideIsnull).NatInsideN(natInsideN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VirtualMachine(virtualMachine).VirtualMachineId(virtualMachineId).VmInterfaces(vmInterfaces).VmInterfacesIsnull(vmInterfacesIsnull).VmInterfacesN(vmInterfacesN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
+> PaginatedIPAddressList IpamIpAddressesList(ctx).Address(address).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DnsName(dnsName).DnsNameIc(dnsNameIc).DnsNameIe(dnsNameIe).DnsNameIew(dnsNameIew).DnsNameIre(dnsNameIre).DnsNameIsw(dnsNameIsw).DnsNameN(dnsNameN).DnsNameNic(dnsNameNic).DnsNameNie(dnsNameNie).DnsNameNiew(dnsNameNiew).DnsNameNire(dnsNameNire).DnsNameNisw(dnsNameNisw).DnsNameNre(dnsNameNre).DnsNameRe(dnsNameRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaceAssignments(hasInterfaceAssignments).HasNatInside(hasNatInside).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MaskLength(maskLength).MaskLengthGt(maskLengthGt).MaskLengthGte(maskLengthGte).MaskLengthLt(maskLengthLt).MaskLengthLte(maskLengthLte).MaskLengthN(maskLengthN).Namespace(namespace).NamespaceN(namespaceN).NatInside(natInside).NatInsideIsnull(natInsideIsnull).NatInsideN(natInsideN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VirtualMachine(virtualMachine).VirtualMachineId(virtualMachineId).VmInterfaces(vmInterfaces).VmInterfacesIsnull(vmInterfacesIsnull).VmInterfacesN(vmInterfacesN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1383,7 +1359,7 @@ func main() {
 	address := []string{"Inner_example"} // []string | Address (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -1391,6 +1367,20 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	description := []string{"Inner_example"} // []string |  (optional)
+	descriptionIc := []string{"Inner_example"} // []string |  (optional)
+	descriptionIe := []string{"Inner_example"} // []string |  (optional)
+	descriptionIew := []string{"Inner_example"} // []string |  (optional)
+	descriptionIre := []string{"Inner_example"} // []string |  (optional)
+	descriptionIsw := []string{"Inner_example"} // []string |  (optional)
+	descriptionN := []string{"Inner_example"} // []string |  (optional)
+	descriptionNic := []string{"Inner_example"} // []string |  (optional)
+	descriptionNie := []string{"Inner_example"} // []string |  (optional)
+	descriptionNiew := []string{"Inner_example"} // []string |  (optional)
+	descriptionNire := []string{"Inner_example"} // []string |  (optional)
+	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
+	descriptionNre := []string{"Inner_example"} // []string |  (optional)
+	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string | Device (name) (optional)
 	deviceId := []string{"Inner_example"} // []string | Device (ID) (optional)
 	dnsName := []string{"Inner_example"} // []string |  (optional)
@@ -1408,24 +1398,12 @@ func main() {
 	dnsNameNre := []string{"Inner_example"} // []string |  (optional)
 	dnsNameRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasInterfaceAssignments := true // bool | Has Interface Assignments (optional)
 	hasNatInside := true // bool | Has NAT Inside (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	interfaces := []string{"Inner_example"} // []string |  (optional)
 	interfacesIsnull := true // bool | Interfaces (ID or name) is null (optional)
 	interfacesN := []string{"Inner_example"} // []string |  (optional)
@@ -1459,16 +1437,16 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
-	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
+	roleN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
@@ -1501,10 +1479,11 @@ func main() {
 	vrfsIsnull := true // bool | VRF (ID or RD) is null (optional)
 	vrfsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressesList(context.Background()).Address(address).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceId(deviceId).DnsName(dnsName).DnsNameIc(dnsNameIc).DnsNameIe(dnsNameIe).DnsNameIew(dnsNameIew).DnsNameIre(dnsNameIre).DnsNameIsw(dnsNameIsw).DnsNameN(dnsNameN).DnsNameNic(dnsNameNic).DnsNameNie(dnsNameNie).DnsNameNiew(dnsNameNiew).DnsNameNire(dnsNameNire).DnsNameNisw(dnsNameNisw).DnsNameNre(dnsNameNre).DnsNameRe(dnsNameRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaceAssignments(hasInterfaceAssignments).HasNatInside(hasNatInside).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MaskLength(maskLength).MaskLengthGt(maskLengthGt).MaskLengthGte(maskLengthGte).MaskLengthLt(maskLengthLt).MaskLengthLte(maskLengthLte).MaskLengthN(maskLengthN).Namespace(namespace).NamespaceN(namespaceN).NatInside(natInside).NatInsideIsnull(natInsideIsnull).NatInsideN(natInsideN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VirtualMachine(virtualMachine).VirtualMachineId(virtualMachineId).VmInterfaces(vmInterfaces).VmInterfacesIsnull(vmInterfacesIsnull).VmInterfacesN(vmInterfacesN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressesList(context.Background()).Address(address).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DnsName(dnsName).DnsNameIc(dnsNameIc).DnsNameIe(dnsNameIe).DnsNameIew(dnsNameIew).DnsNameIre(dnsNameIre).DnsNameIsw(dnsNameIsw).DnsNameN(dnsNameN).DnsNameNic(dnsNameNic).DnsNameNie(dnsNameNie).DnsNameNiew(dnsNameNiew).DnsNameNire(dnsNameNire).DnsNameNisw(dnsNameNisw).DnsNameNre(dnsNameNre).DnsNameRe(dnsNameRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaceAssignments(hasInterfaceAssignments).HasNatInside(hasNatInside).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MaskLength(maskLength).MaskLengthGt(maskLengthGt).MaskLengthGte(maskLengthGte).MaskLengthLt(maskLengthLt).MaskLengthLte(maskLengthLte).MaskLengthN(maskLengthN).Namespace(namespace).NamespaceN(namespaceN).NatInside(natInside).NatInsideIsnull(natInsideIsnull).NatInsideN(natInsideN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VirtualMachine(virtualMachine).VirtualMachineId(virtualMachineId).VmInterfaces(vmInterfaces).VmInterfacesIsnull(vmInterfacesIsnull).VmInterfacesN(vmInterfacesN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1528,7 +1507,7 @@ Name | Type | Description  | Notes
  **address** | **[]string** | Address | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -1536,6 +1515,20 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **description** | **[]string** |  | 
+ **descriptionIc** | **[]string** |  | 
+ **descriptionIe** | **[]string** |  | 
+ **descriptionIew** | **[]string** |  | 
+ **descriptionIre** | **[]string** |  | 
+ **descriptionIsw** | **[]string** |  | 
+ **descriptionN** | **[]string** |  | 
+ **descriptionNic** | **[]string** |  | 
+ **descriptionNie** | **[]string** |  | 
+ **descriptionNiew** | **[]string** |  | 
+ **descriptionNire** | **[]string** |  | 
+ **descriptionNisw** | **[]string** |  | 
+ **descriptionNre** | **[]string** |  | 
+ **descriptionRe** | **[]string** |  | 
  **device** | **[]string** | Device (name) | 
  **deviceId** | **[]string** | Device (ID) | 
  **dnsName** | **[]string** |  | 
@@ -1553,24 +1546,12 @@ Name | Type | Description  | Notes
  **dnsNameNre** | **[]string** |  | 
  **dnsNameRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasInterfaceAssignments** | **bool** | Has Interface Assignments | 
  **hasNatInside** | **bool** | Has NAT Inside | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **interfaces** | **[]string** |  | 
  **interfacesIsnull** | **bool** | Interfaces (ID or name) is null | 
  **interfacesN** | **[]string** |  | 
@@ -1604,16 +1585,16 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** | Role (name or ID) is null | 
- **roleN** | **string** | Exclude Role (name or ID) | 
+ **roleN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **string** | Exclude Status (name or ID) | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
@@ -1646,6 +1627,7 @@ Name | Type | Description  | Notes
  **vrfsIsnull** | **bool** | VRF (ID or RD) is null | 
  **vrfsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1741,7 +1723,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressesNotesList
 
-> PaginatedNoteList IpamIpAddressesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamIpAddressesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1765,10 +1747,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1798,6 +1781,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -1893,7 +1877,7 @@ Name | Type | Description  | Notes
 
 ## IpamIpAddressesRetrieve
 
-> IPAddress IpamIpAddressesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> IPAddress IpamIpAddressesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -1915,10 +1899,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this IP address.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamIpAddressesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamIpAddressesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamIpAddressesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1946,6 +1931,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2381,7 +2367,7 @@ Name | Type | Description  | Notes
 
 ## IpamNamespacesList
 
-> PaginatedNamespaceList IpamNamespacesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedNamespaceList IpamNamespacesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2403,7 +2389,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2426,22 +2412,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -2475,12 +2449,13 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamNamespacesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamNamespacesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamNamespacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2503,7 +2478,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2526,22 +2501,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -2575,8 +2538,9 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2672,7 +2636,7 @@ Name | Type | Description  | Notes
 
 ## IpamNamespacesNotesList
 
-> PaginatedNoteList IpamNamespacesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamNamespacesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2696,10 +2660,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamNamespacesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamNamespacesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamNamespacesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2729,6 +2694,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -2824,7 +2790,7 @@ Name | Type | Description  | Notes
 
 ## IpamNamespacesRetrieve
 
-> Namespace IpamNamespacesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> Namespace IpamNamespacesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2846,10 +2812,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this namespace.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamNamespacesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamNamespacesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamNamespacesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2877,6 +2844,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -3312,7 +3280,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixLocationAssignmentsList
 
-> PaginatedPrefixLocationAssignmentList IpamPrefixLocationAssignmentsList(ctx).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Prefix(prefix).Q(q).Sort(sort).Depth(depth).Execute()
+> PaginatedPrefixLocationAssignmentList IpamPrefixLocationAssignmentsList(ctx).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3335,32 +3303,22 @@ func main() {
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	prefix := []string{"Inner_example"} // []string | Prefix (optional)
+	prefix := []string{"Inner_example"} // []string |  (optional)
+	prefixN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Prefix(prefix).Q(q).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixLocationAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3384,184 +3342,22 @@ Name | Type | Description  | Notes
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **prefix** | **[]string** | Prefix | 
+ **prefix** | **[]string** |  | 
+ **prefixN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedPrefixLocationAssignmentList**](PaginatedPrefixLocationAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamPrefixLocationAssignmentsNotesCreate
-
-> Note IpamPrefixLocationAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix location assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixLocationAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamPrefixLocationAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamPrefixLocationAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this prefix location assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamPrefixLocationAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamPrefixLocationAssignmentsNotesList
-
-> PaginatedNoteList IpamPrefixLocationAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix location assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixLocationAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamPrefixLocationAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamPrefixLocationAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this prefix location assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamPrefixLocationAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -3653,7 +3449,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixLocationAssignmentsRetrieve
 
-> PrefixLocationAssignment IpamPrefixLocationAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> PrefixLocationAssignment IpamPrefixLocationAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3675,10 +3471,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix location assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixLocationAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixLocationAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3706,6 +3503,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -3801,7 +3599,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesAvailableIpsCreate
 
-> []IPAddress IpamPrefixesAvailableIpsCreate(ctx, id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
+> []IPAddress IpamPrefixesAvailableIpsCreate(ctx, id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).RangeEnd(rangeEnd).RangeStart(rangeStart).Sort(sort).Execute()
 
 
 
@@ -3825,11 +3623,13 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	rangeEnd := openapiclient.ipam_prefixes_available_ips_list_range_end_parameter{String: new(string)} // IpamPrefixesAvailableIpsListRangeEndParameter | IP from which enumeration/allocation should stop. (optional)
+	rangeStart := openapiclient.ipam_prefixes_available_ips_list_range_end_parameter{String: new(string)} // IpamPrefixesAvailableIpsListRangeEndParameter | IP from which enumeration/allocation should start. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailableIpsCreate(context.Background(), id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailableIpsCreate(context.Background(), id).IPAllocationRequest(iPAllocationRequest).Format(format).Limit(limit).Offset(offset).RangeEnd(rangeEnd).RangeStart(rangeStart).Sort(sort).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesAvailableIpsCreate``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3859,6 +3659,8 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
+ **rangeEnd** | [**IpamPrefixesAvailableIpsListRangeEndParameter**](IpamPrefixesAvailableIpsListRangeEndParameter.md) | IP from which enumeration/allocation should stop. | 
+ **rangeStart** | [**IpamPrefixesAvailableIpsListRangeEndParameter**](IpamPrefixesAvailableIpsListRangeEndParameter.md) | IP from which enumeration/allocation should start. | 
  **sort** | **string** | Which field to use when ordering the results. | 
 
 ### Return type
@@ -3881,7 +3683,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesAvailableIpsList
 
-> []AvailableIP IpamPrefixesAvailableIpsList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
+> []AvailableIP IpamPrefixesAvailableIpsList(ctx, id).Format(format).Limit(limit).Offset(offset).RangeEnd(rangeEnd).RangeStart(rangeStart).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3904,12 +3706,15 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	rangeEnd := openapiclient.ipam_prefixes_available_ips_list_range_end_parameter{String: new(string)} // IpamPrefixesAvailableIpsListRangeEndParameter | IP from which enumeration/allocation should stop. (optional)
+	rangeStart := openapiclient.ipam_prefixes_available_ips_list_range_end_parameter{String: new(string)} // IpamPrefixesAvailableIpsListRangeEndParameter | IP from which enumeration/allocation should start. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailableIpsList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailableIpsList(context.Background(), id).Format(format).Limit(limit).Offset(offset).RangeEnd(rangeEnd).RangeStart(rangeStart).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesAvailableIpsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3938,8 +3743,11 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
+ **rangeEnd** | [**IpamPrefixesAvailableIpsListRangeEndParameter**](IpamPrefixesAvailableIpsListRangeEndParameter.md) | IP from which enumeration/allocation should stop. | 
+ **rangeStart** | [**IpamPrefixesAvailableIpsListRangeEndParameter**](IpamPrefixesAvailableIpsListRangeEndParameter.md) | IP from which enumeration/allocation should start. | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4041,7 +3849,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesAvailablePrefixesList
 
-> PaginatedAvailablePrefixList IpamPrefixesAvailablePrefixesList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
+> PaginatedAvailablePrefixList IpamPrefixesAvailablePrefixesList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4066,10 +3874,11 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailablePrefixesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesAvailablePrefixesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesAvailablePrefixesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4100,6 +3909,7 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4461,7 +4271,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesList
 
-> PaginatedPrefixList IpamPrefixesList(ctx).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).Execute()
+> PaginatedPrefixList IpamPrefixesList(ctx).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4486,7 +4296,7 @@ func main() {
 	cloudNetworksN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	contains := []string{"Inner_example"} // []string | Prefixes which contain this prefix or IP (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4503,23 +4313,11 @@ func main() {
 	dateAllocatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	dateAllocatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasRir := true // bool | Has RIR (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	ipVersion := int32(56) // int32 |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4537,7 +4335,7 @@ func main() {
 	namespaceN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool |  (optional)
+	parentIsnull := true // bool | Prefix (ID or prefix string) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	prefix := []string{"Inner_example"} // []string | Prefix (optional)
 	prefixLength := []int32{int32(123)} // []int32 |  (optional)
@@ -4554,16 +4352,16 @@ func main() {
 	rirN := []string{"Inner_example"} // []string |  (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
-	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
+	roleN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
@@ -4602,10 +4400,11 @@ func main() {
 	within := []string{"Inner_example"} // []string | Within prefix (optional)
 	withinInclude := []string{"Inner_example"} // []string | Within and including prefix (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesList(context.Background()).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesList(context.Background()).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4631,7 +4430,7 @@ Name | Type | Description  | Notes
  **cloudNetworksN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **contains** | **[]string** | Prefixes which contain this prefix or IP | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -4648,23 +4447,11 @@ Name | Type | Description  | Notes
  **dateAllocatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **dateAllocatedN** | [**[]time.Time**](time.Time.md) |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasRir** | **bool** | Has RIR | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **ipVersion** | **int32** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -4682,7 +4469,7 @@ Name | Type | Description  | Notes
  **namespaceN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** |  | 
+ **parentIsnull** | **bool** | Prefix (ID or prefix string) is null | 
  **parentN** | **[]string** |  | 
  **prefix** | **[]string** | Prefix | 
  **prefixLength** | **[]int32** |  | 
@@ -4699,16 +4486,16 @@ Name | Type | Description  | Notes
  **rirN** | **[]string** |  | 
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** | Role (name or ID) is null | 
- **roleN** | **string** | Exclude Role (name or ID) | 
+ **roleN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **string** | Exclude Status (name or ID) | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
@@ -4747,6 +4534,7 @@ Name | Type | Description  | Notes
  **within** | **[]string** | Within prefix | 
  **withinInclude** | **[]string** | Within and including prefix | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4842,7 +4630,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesNotesList
 
-> PaginatedNoteList IpamPrefixesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamPrefixesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4866,10 +4654,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4899,6 +4688,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -4994,7 +4784,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesRetrieve
 
-> Prefix IpamPrefixesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> Prefix IpamPrefixesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5016,10 +4806,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5047,6 +4838,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -5482,7 +5274,7 @@ Name | Type | Description  | Notes
 
 ## IpamRirsList
 
-> PaginatedRIRList IpamRirsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsPrivate(isPrivate).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedRIRList IpamRirsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).IsPrivate(isPrivate).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5504,7 +5296,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -5527,22 +5319,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	isPrivate := true // bool |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -5571,12 +5351,13 @@ func main() {
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRirsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).IsPrivate(isPrivate).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRirsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).IsPrivate(isPrivate).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRirsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5599,7 +5380,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -5622,22 +5403,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **isPrivate** | **bool** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -5666,8 +5435,9 @@ Name | Type | Description  | Notes
  **sort** | **string** | Which field to use when ordering the results. | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -5763,7 +5533,7 @@ Name | Type | Description  | Notes
 
 ## IpamRirsNotesList
 
-> PaginatedNoteList IpamRirsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamRirsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5787,10 +5557,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRirsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRirsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRirsNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5820,6 +5591,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -5915,7 +5687,7 @@ Name | Type | Description  | Notes
 
 ## IpamRirsRetrieve
 
-> RIR IpamRirsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> RIR IpamRirsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -5937,10 +5709,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this RIR.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRirsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRirsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRirsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -5968,6 +5741,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -6403,7 +6177,7 @@ Name | Type | Description  | Notes
 
 ## IpamRouteTargetsList
 
-> PaginatedRouteTargetList IpamRouteTargetsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportingVrfs(exportingVrfs).ExportingVrfsIsnull(exportingVrfsIsnull).ExportingVrfsN(exportingVrfsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImportingVrfs(importingVrfs).ImportingVrfsIsnull(importingVrfsIsnull).ImportingVrfsN(importingVrfsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+> PaginatedRouteTargetList IpamRouteTargetsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportingVrfs(exportingVrfs).ExportingVrfsIsnull(exportingVrfsIsnull).ExportingVrfsN(exportingVrfsN).Format(format).Id(id).IdN(idN).ImportingVrfs(importingVrfs).ImportingVrfsIsnull(importingVrfsIsnull).ImportingVrfsN(importingVrfsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -6425,7 +6199,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -6434,25 +6208,13 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	exportingVrfs := []string{"Inner_example"} // []string |  (optional)
 	exportingVrfsIsnull := true // bool | Export VRF(s) (ID or RD) is null (optional)
 	exportingVrfsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	importingVrfs := []string{"Inner_example"} // []string |  (optional)
 	importingVrfsIsnull := true // bool | Import VRF(s) (ID or RD) is null (optional)
 	importingVrfsN := []string{"Inner_example"} // []string |  (optional)
@@ -6486,7 +6248,7 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
@@ -6497,10 +6259,11 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportingVrfs(exportingVrfs).ExportingVrfsIsnull(exportingVrfsIsnull).ExportingVrfsN(exportingVrfsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImportingVrfs(importingVrfs).ImportingVrfsIsnull(importingVrfsIsnull).ImportingVrfsN(importingVrfsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportingVrfs(exportingVrfs).ExportingVrfsIsnull(exportingVrfsIsnull).ExportingVrfsN(exportingVrfsN).Format(format).Id(id).IdN(idN).ImportingVrfs(importingVrfs).ImportingVrfsIsnull(importingVrfsIsnull).ImportingVrfsN(importingVrfsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRouteTargetsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6523,7 +6286,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -6532,25 +6295,13 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **exportingVrfs** | **[]string** |  | 
  **exportingVrfsIsnull** | **bool** | Export VRF(s) (ID or RD) is null | 
  **exportingVrfsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **importingVrfs** | **[]string** |  | 
  **importingVrfsIsnull** | **bool** | Import VRF(s) (ID or RD) is null | 
  **importingVrfsN** | **[]string** |  | 
@@ -6584,7 +6335,7 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
@@ -6595,6 +6346,7 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -6690,7 +6442,7 @@ Name | Type | Description  | Notes
 
 ## IpamRouteTargetsNotesList
 
-> PaginatedNoteList IpamRouteTargetsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamRouteTargetsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -6714,10 +6466,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRouteTargetsNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6747,6 +6500,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -6842,7 +6596,7 @@ Name | Type | Description  | Notes
 
 ## IpamRouteTargetsRetrieve
 
-> RouteTarget IpamRouteTargetsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> RouteTarget IpamRouteTargetsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -6864,10 +6618,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this route target.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamRouteTargetsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamRouteTargetsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6895,6 +6650,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -7330,7 +7086,7 @@ Name | Type | Description  | Notes
 
 ## IpamServicesList
 
-> PaginatedServiceList IpamServicesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Ports(ports).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Depth(depth).Execute()
+> PaginatedServiceList IpamServicesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Ports(ports).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -7352,7 +7108,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -7364,22 +7120,10 @@ func main() {
 	deviceIsnull := true // bool | Device (ID or name) is null (optional)
 	deviceN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -7425,15 +7169,16 @@ func main() {
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachine := []string{"Inner_example"} // []string |  (optional)
 	virtualMachineIsnull := true // bool | Virtual machine (ID or name) is null (optional)
 	virtualMachineN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamServicesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Ports(ports).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamServicesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Ports(ports).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamServicesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7456,7 +7201,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -7468,22 +7213,10 @@ Name | Type | Description  | Notes
  **deviceIsnull** | **bool** | Device (ID or name) is null | 
  **deviceN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -7529,11 +7262,12 @@ Name | Type | Description  | Notes
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **virtualMachine** | **[]string** |  | 
  **virtualMachineIsnull** | **bool** | Virtual machine (ID or name) is null | 
  **virtualMachineN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -7629,7 +7363,7 @@ Name | Type | Description  | Notes
 
 ## IpamServicesNotesList
 
-> PaginatedNoteList IpamServicesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamServicesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -7653,10 +7387,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamServicesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamServicesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamServicesNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7686,6 +7421,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -7781,7 +7517,7 @@ Name | Type | Description  | Notes
 
 ## IpamServicesRetrieve
 
-> Service IpamServicesRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> Service IpamServicesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -7803,10 +7539,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this service.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamServicesRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamServicesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamServicesRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -7834,6 +7571,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -7920,6 +7658,168 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## IpamVlanGroupsAvailableVlansCreate
+
+> PaginatedVLANList IpamVlanGroupsAvailableVlansCreate(ctx, id).VLANAllocationRequest(vLANAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v2"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN.
+	vLANAllocationRequest := []openapiclient.VLANAllocationRequest{*openapiclient.NewVLANAllocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []VLANAllocationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsAvailableVlansCreate(context.Background(), id).VLANAllocationRequest(vLANAllocationRequest).Format(format).Limit(limit).Offset(offset).Sort(sort).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanGroupsAvailableVlansCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `IpamVlanGroupsAvailableVlansCreate`: PaginatedVLANList
+	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVlanGroupsAvailableVlansCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VLAN. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiIpamVlanGroupsAvailableVlansCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **vLANAllocationRequest** | [**[]VLANAllocationRequest**](VLANAllocationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+
+### Return type
+
+[**PaginatedVLANList**](PaginatedVLANList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## IpamVlanGroupsAvailableVlansList
+
+> IpamVlanGroupsAvailableVlansList200Response IpamVlanGroupsAvailableVlansList(ctx, id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v2"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsAvailableVlansList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanGroupsAvailableVlansList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `IpamVlanGroupsAvailableVlansList`: IpamVlanGroupsAvailableVlansList200Response
+	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVlanGroupsAvailableVlansList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VLAN. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiIpamVlanGroupsAvailableVlansListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+
+### Return type
+
+[**IpamVlanGroupsAvailableVlansList200Response**](IpamVlanGroupsAvailableVlansList200Response.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: application/json, text/csv
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
@@ -8269,7 +8169,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlanGroupsList
 
-> PaginatedVLANGroupList IpamVlanGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+> PaginatedVLANGroupList IpamVlanGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -8291,7 +8191,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -8314,22 +8214,10 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -8358,14 +8246,18 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8388,7 +8280,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -8411,22 +8303,10 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -8455,10 +8335,14 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -8554,7 +8438,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlanGroupsNotesList
 
-> PaginatedNoteList IpamVlanGroupsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamVlanGroupsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -8578,10 +8462,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanGroupsNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8611,6 +8496,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -8706,7 +8592,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlanGroupsRetrieve
 
-> VLANGroup IpamVlanGroupsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VLANGroup IpamVlanGroupsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -8728,10 +8614,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlanGroupsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanGroupsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -8759,6 +8646,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -9194,7 +9082,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlanLocationAssignmentsList
 
-> PaginatedVLANLocationAssignmentList IpamVlanLocationAssignmentsList(ctx).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Sort(sort).Vlan(vlan).VlanN(vlanN).Depth(depth).Execute()
+> PaginatedVLANLocationAssignmentList IpamVlanLocationAssignmentsList(ctx).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Sort(sort).Vlan(vlan).VlanN(vlanN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -9217,19 +9105,7 @@ func main() {
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
@@ -9240,10 +9116,11 @@ func main() {
 	vlan := []string{"Inner_example"} // []string |  (optional)
 	vlanN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Sort(sort).Vlan(vlan).VlanN(vlanN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Sort(sort).Vlan(vlan).VlanN(vlanN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanLocationAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9267,19 +9144,7 @@ Name | Type | Description  | Notes
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
@@ -9290,162 +9155,11 @@ Name | Type | Description  | Notes
  **vlan** | **[]string** |  | 
  **vlanN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedVLANLocationAssignmentList**](PaginatedVLANLocationAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVlanLocationAssignmentsNotesCreate
-
-> Note IpamVlanLocationAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vlan location assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanLocationAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVlanLocationAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVlanLocationAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vlan location assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVlanLocationAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVlanLocationAssignmentsNotesList
-
-> PaginatedNoteList IpamVlanLocationAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vlan location assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanLocationAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVlanLocationAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVlanLocationAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vlan location assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVlanLocationAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -9537,7 +9251,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlanLocationAssignmentsRetrieve
 
-> VLANLocationAssignment IpamVlanLocationAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VLANLocationAssignment IpamVlanLocationAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -9559,10 +9273,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vlan location assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlanLocationAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlanLocationAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9590,6 +9305,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -10025,7 +9741,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlansList
 
-> PaginatedVLANList IpamVlansList(ctx).AvailableOnDevice(availableOnDevice).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vid(vid).VidGt(vidGt).VidGte(vidGte).VidLt(vidLt).VidLte(vidLte).VidN(vidN).VlanGroup(vlanGroup).VlanGroupIsnull(vlanGroupIsnull).VlanGroupN(vlanGroupN).Depth(depth).Execute()
+> PaginatedVLANList IpamVlansList(ctx).AvailableOnDevice(availableOnDevice).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vid(vid).VidGt(vidGt).VidGte(vidGte).VidLt(vidLt).VidLte(vidLte).VidN(vidN).VlanGroup(vlanGroup).VlanGroupIsnull(vlanGroupIsnull).VlanGroupN(vlanGroupN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -10048,7 +9764,7 @@ func main() {
 	availableOnDevice := []string{"Inner_example"} // []string | Device (ID) (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -10057,22 +9773,10 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -10103,16 +9807,16 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
-	roleN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Role (name or ID) (optional)
+	roleN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
-	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
@@ -10132,10 +9836,11 @@ func main() {
 	vlanGroupIsnull := true // bool | VLAN Group (name or ID) is null (optional)
 	vlanGroupN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlansList(context.Background()).AvailableOnDevice(availableOnDevice).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vid(vid).VidGt(vidGt).VidGte(vidGte).VidLt(vidLt).VidLte(vidLte).VidN(vidN).VlanGroup(vlanGroup).VlanGroupIsnull(vlanGroupIsnull).VlanGroupN(vlanGroupN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlansList(context.Background()).AvailableOnDevice(availableOnDevice).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vid(vid).VidGt(vidGt).VidGte(vidGte).VidLt(vidLt).VidLte(vidLte).VidN(vidN).VlanGroup(vlanGroup).VlanGroupIsnull(vlanGroupIsnull).VlanGroupN(vlanGroupN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlansList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10159,7 +9864,7 @@ Name | Type | Description  | Notes
  **availableOnDevice** | **[]string** | Device (ID) | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -10168,22 +9873,10 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -10214,16 +9907,16 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** | Role (name or ID) is null | 
- **roleN** | **string** | Exclude Role (name or ID) | 
+ **roleN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
- **statusN** | **string** | Exclude Status (name or ID) | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
@@ -10243,6 +9936,7 @@ Name | Type | Description  | Notes
  **vlanGroupIsnull** | **bool** | VLAN Group (name or ID) is null | 
  **vlanGroupN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -10338,7 +10032,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlansNotesList
 
-> PaginatedNoteList IpamVlansNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamVlansNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -10362,10 +10056,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlansNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlansNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlansNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10395,6 +10090,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -10490,7 +10186,7 @@ Name | Type | Description  | Notes
 
 ## IpamVlansRetrieve
 
-> VLAN IpamVlansRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VLAN IpamVlansRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -10512,10 +10208,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVlansRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVlansRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVlansRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -10543,6 +10240,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -10927,7 +10625,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-device assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10946,7 +10644,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
+**id** | **string** | A UUID string identifying this VRF-device assignment. | 
 
 ### Other Parameters
 
@@ -10978,7 +10676,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfDeviceAssignmentsList
 
-> PaginatedVRFDeviceAssignmentList IpamVrfDeviceAssignmentsList(ctx).Created(created).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Sort(sort).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Vrf(vrf).VrfN(vrfN).Depth(depth).Execute()
+> PaginatedVRFDeviceAssignmentList IpamVrfDeviceAssignmentsList(ctx).Created(created).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).VirtualDeviceContext(virtualDeviceContext).VirtualDeviceContextIsnull(virtualDeviceContextIsnull).VirtualDeviceContextN(virtualDeviceContextN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Vrf(vrf).VrfN(vrfN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -11004,33 +10702,55 @@ func main() {
 	deviceN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	rd := []string{"Inner_example"} // []string |  (optional)
+	rdIc := []string{"Inner_example"} // []string |  (optional)
+	rdIe := []string{"Inner_example"} // []string |  (optional)
+	rdIew := []string{"Inner_example"} // []string |  (optional)
+	rdIre := []string{"Inner_example"} // []string |  (optional)
+	rdIsnull := true // bool |  (optional)
+	rdIsw := []string{"Inner_example"} // []string |  (optional)
+	rdN := []string{"Inner_example"} // []string |  (optional)
+	rdNic := []string{"Inner_example"} // []string |  (optional)
+	rdNie := []string{"Inner_example"} // []string |  (optional)
+	rdNiew := []string{"Inner_example"} // []string |  (optional)
+	rdNire := []string{"Inner_example"} // []string |  (optional)
+	rdNisw := []string{"Inner_example"} // []string |  (optional)
+	rdNre := []string{"Inner_example"} // []string |  (optional)
+	rdRe := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	virtualDeviceContext := []string{"Inner_example"} // []string |  (optional)
+	virtualDeviceContextIsnull := true // bool | Virtual Device Context (ID or name) is null (optional)
+	virtualDeviceContextN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachine := []string{"Inner_example"} // []string |  (optional)
 	virtualMachineIsnull := true // bool | Virtual Machine (ID or name) is null (optional)
 	virtualMachineN := []string{"Inner_example"} // []string |  (optional)
-	vrf := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
-	vrfN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
+	vrf := []string{"Inner_example"} // []string |  (optional)
+	vrfN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsList(context.Background()).Created(created).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Sort(sort).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Vrf(vrf).VrfN(vrfN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsList(context.Background()).Created(created).Device(device).DeviceIsnull(deviceIsnull).DeviceN(deviceN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).VirtualDeviceContext(virtualDeviceContext).VirtualDeviceContextIsnull(virtualDeviceContextIsnull).VirtualDeviceContextN(virtualDeviceContextN).VirtualMachine(virtualMachine).VirtualMachineIsnull(virtualMachineIsnull).VirtualMachineN(virtualMachineN).Vrf(vrf).VrfN(vrfN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfDeviceAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -11057,185 +10777,55 @@ Name | Type | Description  | Notes
  **deviceN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **rd** | **[]string** |  | 
+ **rdIc** | **[]string** |  | 
+ **rdIe** | **[]string** |  | 
+ **rdIew** | **[]string** |  | 
+ **rdIre** | **[]string** |  | 
+ **rdIsnull** | **bool** |  | 
+ **rdIsw** | **[]string** |  | 
+ **rdN** | **[]string** |  | 
+ **rdNic** | **[]string** |  | 
+ **rdNie** | **[]string** |  | 
+ **rdNiew** | **[]string** |  | 
+ **rdNire** | **[]string** |  | 
+ **rdNisw** | **[]string** |  | 
+ **rdNre** | **[]string** |  | 
+ **rdRe** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **virtualDeviceContext** | **[]string** |  | 
+ **virtualDeviceContextIsnull** | **bool** | Virtual Device Context (ID or name) is null | 
+ **virtualDeviceContextN** | **[]string** |  | 
  **virtualMachine** | **[]string** |  | 
  **virtualMachineIsnull** | **bool** | Virtual Machine (ID or name) is null | 
  **virtualMachineN** | **[]string** |  | 
- **vrf** | **string** |  | 
- **vrfN** | **string** |  | 
+ **vrf** | **[]string** |  | 
+ **vrfN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedVRFDeviceAssignmentList**](PaginatedVRFDeviceAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVrfDeviceAssignmentsNotesCreate
-
-> Note IpamVrfDeviceAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfDeviceAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVrfDeviceAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVrfDeviceAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVrfDeviceAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVrfDeviceAssignmentsNotesList
-
-> PaginatedNoteList IpamVrfDeviceAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfDeviceAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVrfDeviceAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVrfDeviceAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVrfDeviceAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -11272,7 +10862,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-device assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	patchedVRFDeviceAssignmentRequest := *openapiclient.NewPatchedVRFDeviceAssignmentRequest() // PatchedVRFDeviceAssignmentRequest |  (optional)
 
@@ -11294,7 +10884,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
+**id** | **string** | A UUID string identifying this VRF-device assignment. | 
 
 ### Other Parameters
 
@@ -11327,7 +10917,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfDeviceAssignmentsRetrieve
 
-> VRFDeviceAssignment IpamVrfDeviceAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VRFDeviceAssignment IpamVrfDeviceAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -11346,13 +10936,14 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-device assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfDeviceAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfDeviceAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -11368,7 +10959,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
+**id** | **string** | A UUID string identifying this VRF-device assignment. | 
 
 ### Other Parameters
 
@@ -11380,6 +10971,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -11420,7 +11012,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf device assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-device assignment.
 	vRFDeviceAssignmentRequest := *openapiclient.NewVRFDeviceAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // VRFDeviceAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
@@ -11442,7 +11034,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf device assignment. | 
+**id** | **string** | A UUID string identifying this VRF-device assignment. | 
 
 ### Other Parameters
 
@@ -11764,7 +11356,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-prefix assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11783,7 +11375,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
+**id** | **string** | A UUID string identifying this VRF-prefix assignment. | 
 
 ### Other Parameters
 
@@ -11815,7 +11407,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfPrefixAssignmentsList
 
-> PaginatedVRFPrefixAssignmentList IpamVrfPrefixAssignmentsList(ctx).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Sort(sort).Vrf(vrf).VrfN(vrfN).Depth(depth).Execute()
+> PaginatedVRFPrefixAssignmentList IpamVrfPrefixAssignmentsList(ctx).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Vrf(vrf).VrfN(vrfN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -11838,32 +11430,22 @@ func main() {
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	prefix := []string{"Inner_example"} // []string |  (optional)
 	prefixN := []string{"Inner_example"} // []string |  (optional)
+	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	vrf := []string{"Inner_example"} // []string |  (optional)
 	vrfN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Sort(sort).Vrf(vrf).VrfN(vrfN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsList(context.Background()).Created(created).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Sort(sort).Vrf(vrf).VrfN(vrfN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfPrefixAssignmentsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -11887,184 +11469,22 @@ Name | Type | Description  | Notes
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **prefix** | **[]string** |  | 
  **prefixN** | **[]string** |  | 
+ **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **vrf** | **[]string** |  | 
  **vrfN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
 [**PaginatedVRFPrefixAssignmentList**](PaginatedVRFPrefixAssignmentList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVrfPrefixAssignmentsNotesCreate
-
-> Note IpamVrfPrefixAssignmentsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
-	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfPrefixAssignmentsNotesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVrfPrefixAssignmentsNotesCreate`: Note
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVrfPrefixAssignmentsNotesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVrfPrefixAssignmentsNotesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**Note**](Note.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## IpamVrfPrefixAssignmentsNotesList
-
-> PaginatedNoteList IpamVrfPrefixAssignmentsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfPrefixAssignmentsNotesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `IpamVrfPrefixAssignmentsNotesList`: PaginatedNoteList
-	fmt.Fprintf(os.Stdout, "Response from `IpamAPI.IpamVrfPrefixAssignmentsNotesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiIpamVrfPrefixAssignmentsNotesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **depth** | **int32** | Serializer Depth | [default to 1]
-
-### Return type
-
-[**PaginatedNoteList**](PaginatedNoteList.md)
 
 ### Authorization
 
@@ -12101,7 +11521,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-prefix assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	patchedVRFPrefixAssignmentRequest := *openapiclient.NewPatchedVRFPrefixAssignmentRequest() // PatchedVRFPrefixAssignmentRequest |  (optional)
 
@@ -12123,7 +11543,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
+**id** | **string** | A UUID string identifying this VRF-prefix assignment. | 
 
 ### Other Parameters
 
@@ -12156,7 +11576,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfPrefixAssignmentsRetrieve
 
-> VRFPrefixAssignment IpamVrfPrefixAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VRFPrefixAssignment IpamVrfPrefixAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -12175,13 +11595,14 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-prefix assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfPrefixAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfPrefixAssignmentsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -12197,7 +11618,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
+**id** | **string** | A UUID string identifying this VRF-prefix assignment. | 
 
 ### Other Parameters
 
@@ -12209,6 +11630,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -12249,7 +11671,7 @@ import (
 )
 
 func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vrf prefix assignment.
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-prefix assignment.
 	vRFPrefixAssignmentRequest := *openapiclient.NewVRFPrefixAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VRFPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
@@ -12271,7 +11693,7 @@ func main() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this vrf prefix assignment. | 
+**id** | **string** | A UUID string identifying this VRF-prefix assignment. | 
 
 ### Other Parameters
 
@@ -12457,7 +11879,7 @@ import (
 )
 
 func main() {
-	bulkWritableVRFRequest := []openapiclient.BulkWritableVRFRequest{*openapiclient.NewBulkWritableVRFRequest("Id_example", "Name_example", "Rd_example")} // []BulkWritableVRFRequest | 
+	bulkWritableVRFRequest := []openapiclient.BulkWritableVRFRequest{*openapiclient.NewBulkWritableVRFRequest("Id_example", "Name_example")} // []BulkWritableVRFRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12525,7 +11947,7 @@ import (
 )
 
 func main() {
-	vRFRequest := *openapiclient.NewVRFRequest("Name_example", "Rd_example") // VRFRequest | 
+	vRFRequest := *openapiclient.NewVRFRequest("Name_example") // VRFRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12644,7 +12066,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfsList
 
-> PaginatedVRFList IpamVrfsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportTargets(exportTargets).ExportTargetsN(exportTargetsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImportTargets(importTargets).ImportTargetsN(importTargetsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+> PaginatedVRFList IpamVrfsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportTargets(exportTargets).ExportTargetsN(exportTargetsN).Format(format).Id(id).IdN(idN).ImportTargets(importTargets).ImportTargetsN(importTargetsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsN(virtualDeviceContextsN).VirtualMachines(virtualMachines).VirtualMachinesN(virtualMachinesN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -12666,7 +12088,7 @@ import (
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
-	contactsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Contacts (name or ID) (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -12674,27 +12096,29 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	description := []string{"Inner_example"} // []string |  (optional)
+	descriptionIc := []string{"Inner_example"} // []string |  (optional)
+	descriptionIe := []string{"Inner_example"} // []string |  (optional)
+	descriptionIew := []string{"Inner_example"} // []string |  (optional)
+	descriptionIre := []string{"Inner_example"} // []string |  (optional)
+	descriptionIsw := []string{"Inner_example"} // []string |  (optional)
+	descriptionN := []string{"Inner_example"} // []string |  (optional)
+	descriptionNic := []string{"Inner_example"} // []string |  (optional)
+	descriptionNie := []string{"Inner_example"} // []string |  (optional)
+	descriptionNiew := []string{"Inner_example"} // []string |  (optional)
+	descriptionNire := []string{"Inner_example"} // []string |  (optional)
+	descriptionNisw := []string{"Inner_example"} // []string |  (optional)
+	descriptionNre := []string{"Inner_example"} // []string |  (optional)
+	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	device := []string{"Inner_example"} // []string |  (optional)
 	deviceN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
-	dynamicGroupsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Dynamic groups (name or ID) (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	exportTargets := []string{"Inner_example"} // []string |  (optional)
 	exportTargetsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idIc := []string{"Inner_example"} // []string |  (optional)
-	idIe := []string{"Inner_example"} // []string |  (optional)
-	idIew := []string{"Inner_example"} // []string |  (optional)
-	idIre := []string{"Inner_example"} // []string |  (optional)
-	idIsw := []string{"Inner_example"} // []string |  (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	idNic := []string{"Inner_example"} // []string |  (optional)
-	idNie := []string{"Inner_example"} // []string |  (optional)
-	idNiew := []string{"Inner_example"} // []string |  (optional)
-	idNire := []string{"Inner_example"} // []string |  (optional)
-	idNisw := []string{"Inner_example"} // []string |  (optional)
-	idNre := []string{"Inner_example"} // []string |  (optional)
-	idRe := []string{"Inner_example"} // []string |  (optional)
 	importTargets := []string{"Inner_example"} // []string |  (optional)
 	importTargetsN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -12743,13 +12167,13 @@ func main() {
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
 	statusIsnull := true // bool | Status (name or ID) is null (optional)
-	statusN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Status (name or ID) (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
-	teamsN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Exclude Teams (name or ID) (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
@@ -12759,11 +12183,16 @@ func main() {
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
+	virtualDeviceContexts := []string{"Inner_example"} // []string |  (optional)
+	virtualDeviceContextsN := []string{"Inner_example"} // []string |  (optional)
+	virtualMachines := []string{"Inner_example"} // []string |  (optional)
+	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportTargets(exportTargets).ExportTargetsN(exportTargetsN).Format(format).Id(id).IdIc(idIc).IdIe(idIe).IdIew(idIew).IdIre(idIre).IdIsw(idIsw).IdN(idN).IdNic(idNic).IdNie(idNie).IdNiew(idNiew).IdNire(idNire).IdNisw(idNisw).IdNre(idNre).IdRe(idRe).ImportTargets(importTargets).ImportTargetsN(importTargetsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExportTargets(exportTargets).ExportTargetsN(exportTargetsN).Format(format).Id(id).IdN(idN).ImportTargets(importTargets).ImportTargetsN(importTargetsN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Prefix(prefix).PrefixN(prefixN).Q(q).Rd(rd).RdIc(rdIc).RdIe(rdIe).RdIew(rdIew).RdIre(rdIre).RdIsnull(rdIsnull).RdIsw(rdIsw).RdN(rdN).RdNic(rdNic).RdNie(rdNie).RdNiew(rdNiew).RdNire(rdNire).RdNisw(rdNisw).RdNre(rdNre).RdRe(rdRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsN(virtualDeviceContextsN).VirtualMachines(virtualMachines).VirtualMachinesN(virtualMachinesN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -12786,7 +12215,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
- **contactsN** | **string** | Exclude Contacts (name or ID) | 
+ **contactsN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
  **createdGte** | [**[]time.Time**](time.Time.md) |  | 
@@ -12794,27 +12223,29 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **description** | **[]string** |  | 
+ **descriptionIc** | **[]string** |  | 
+ **descriptionIe** | **[]string** |  | 
+ **descriptionIew** | **[]string** |  | 
+ **descriptionIre** | **[]string** |  | 
+ **descriptionIsw** | **[]string** |  | 
+ **descriptionN** | **[]string** |  | 
+ **descriptionNic** | **[]string** |  | 
+ **descriptionNie** | **[]string** |  | 
+ **descriptionNiew** | **[]string** |  | 
+ **descriptionNire** | **[]string** |  | 
+ **descriptionNisw** | **[]string** |  | 
+ **descriptionNre** | **[]string** |  | 
+ **descriptionRe** | **[]string** |  | 
  **device** | **[]string** |  | 
  **deviceN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
- **dynamicGroupsN** | **string** | Exclude Dynamic groups (name or ID) | 
+ **dynamicGroupsN** | **[]string** |  | 
  **exportTargets** | **[]string** |  | 
  **exportTargetsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idIc** | **[]string** |  | 
- **idIe** | **[]string** |  | 
- **idIew** | **[]string** |  | 
- **idIre** | **[]string** |  | 
- **idIsw** | **[]string** |  | 
  **idN** | **[]string** |  | 
- **idNic** | **[]string** |  | 
- **idNie** | **[]string** |  | 
- **idNiew** | **[]string** |  | 
- **idNire** | **[]string** |  | 
- **idNisw** | **[]string** |  | 
- **idNre** | **[]string** |  | 
- **idRe** | **[]string** |  | 
  **importTargets** | **[]string** |  | 
  **importTargetsN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
@@ -12863,13 +12294,13 @@ Name | Type | Description  | Notes
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
  **statusIsnull** | **bool** | Status (name or ID) is null | 
- **statusN** | **string** | Exclude Status (name or ID) | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
- **teamsN** | **string** | Exclude Teams (name or ID) | 
+ **teamsN** | **[]string** |  | 
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
@@ -12879,7 +12310,12 @@ Name | Type | Description  | Notes
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
+ **virtualDeviceContexts** | **[]string** |  | 
+ **virtualDeviceContextsN** | **[]string** |  | 
+ **virtualMachines** | **[]string** |  | 
+ **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -12975,7 +12411,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfsNotesList
 
-> PaginatedNoteList IpamVrfsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+> PaginatedNoteList IpamVrfsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -12999,10 +12435,11 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfsNotesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13032,6 +12469,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -13127,7 +12565,7 @@ Name | Type | Description  | Notes
 
 ## IpamVrfsRetrieve
 
-> VRF IpamVrfsRetrieve(ctx, id).Format(format).Depth(depth).Execute()
+> VRF IpamVrfsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -13149,10 +12587,11 @@ func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamVrfsRetrieve(context.Background(), id).Format(format).Depth(depth).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamVrfsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamVrfsRetrieve``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13180,6 +12619,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
 
 ### Return type
 
@@ -13221,7 +12661,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF.
-	vRFRequest := *openapiclient.NewVRFRequest("Name_example", "Rd_example") // VRFRequest | 
+	vRFRequest := *openapiclient.NewVRFRequest("Name_example") // VRFRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

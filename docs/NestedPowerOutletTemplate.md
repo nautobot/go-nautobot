@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedPowerOutletTemplate
 
-`func NewNestedPowerOutletTemplate(id string, objectType string, url string, ) *NestedPowerOutletTemplate`
+`func NewNestedPowerOutletTemplate(objectType string, url string, ) *NestedPowerOutletTemplate`
 
 NewNestedPowerOutletTemplate instantiates a new NestedPowerOutletTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedPowerOutletTemplate) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

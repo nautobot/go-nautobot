@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewPrefixLocationAssignment
 
-`func NewPrefixLocationAssignment(id string, objectType string, display string, url string, naturalSlug string, prefix BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, ) *PrefixLocationAssignment`
+`func NewPrefixLocationAssignment(objectType string, display string, url string, naturalSlug string, prefix BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, ) *PrefixLocationAssignment`
 
 NewPrefixLocationAssignment instantiates a new PrefixLocationAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -50,6 +50,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *PrefixLocationAssignment) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

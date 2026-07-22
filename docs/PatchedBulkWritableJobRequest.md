@@ -10,12 +10,12 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** | Markdown formatting and a limited subset of HTML are supported | [optional] 
 **Enabled** | Pointer to **bool** | Whether this job can be executed by users | [optional] 
 **HasSensitiveVariables** | Pointer to **bool** | Whether this job contains sensitive variables | [optional] 
+**IsSingleton** | Pointer to **bool** | Whether this job should fail to run if another instance of this job is already running | [optional] 
 **ApprovalRequired** | Pointer to **bool** | Whether the job requires approval from another user before running | [optional] 
 **Hidden** | Pointer to **bool** | Whether the job defaults to not being shown in the UI | [optional] 
 **DryrunDefault** | Pointer to **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] 
 **SoftTimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **TimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
-**TaskQueues** | Pointer to **interface{}** | Comma separated list of task queues that this job can run on. A blank list will use the default queue | [optional] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
 **DescriptionOverride** | Pointer to **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] 
@@ -25,7 +25,10 @@ Name | Type | Description | Notes
 **SoftTimeLimitOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **TimeLimitOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **HasSensitiveVariablesOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
-**TaskQueuesOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
+**JobQueuesOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
+**DefaultJobQueueOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
+**IsSingletonOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
+**DefaultJobQueue** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
@@ -194,6 +197,31 @@ SetHasSensitiveVariables sets HasSensitiveVariables field to given value.
 
 HasHasSensitiveVariables returns a boolean if a field has been set.
 
+### GetIsSingleton
+
+`func (o *PatchedBulkWritableJobRequest) GetIsSingleton() bool`
+
+GetIsSingleton returns the IsSingleton field if non-nil, zero value otherwise.
+
+### GetIsSingletonOk
+
+`func (o *PatchedBulkWritableJobRequest) GetIsSingletonOk() (*bool, bool)`
+
+GetIsSingletonOk returns a tuple with the IsSingleton field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIsSingleton
+
+`func (o *PatchedBulkWritableJobRequest) SetIsSingleton(v bool)`
+
+SetIsSingleton sets IsSingleton field to given value.
+
+### HasIsSingleton
+
+`func (o *PatchedBulkWritableJobRequest) HasIsSingleton() bool`
+
+HasIsSingleton returns a boolean if a field has been set.
+
 ### GetApprovalRequired
 
 `func (o *PatchedBulkWritableJobRequest) GetApprovalRequired() bool`
@@ -319,41 +347,6 @@ SetTimeLimit sets TimeLimit field to given value.
 
 HasTimeLimit returns a boolean if a field has been set.
 
-### GetTaskQueues
-
-`func (o *PatchedBulkWritableJobRequest) GetTaskQueues() interface{}`
-
-GetTaskQueues returns the TaskQueues field if non-nil, zero value otherwise.
-
-### GetTaskQueuesOk
-
-`func (o *PatchedBulkWritableJobRequest) GetTaskQueuesOk() (*interface{}, bool)`
-
-GetTaskQueuesOk returns a tuple with the TaskQueues field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetTaskQueues
-
-`func (o *PatchedBulkWritableJobRequest) SetTaskQueues(v interface{})`
-
-SetTaskQueues sets TaskQueues field to given value.
-
-### HasTaskQueues
-
-`func (o *PatchedBulkWritableJobRequest) HasTaskQueues() bool`
-
-HasTaskQueues returns a boolean if a field has been set.
-
-### SetTaskQueuesNil
-
-`func (o *PatchedBulkWritableJobRequest) SetTaskQueuesNil(b bool)`
-
- SetTaskQueuesNil sets the value for TaskQueues to be an explicit nil
-
-### UnsetTaskQueues
-`func (o *PatchedBulkWritableJobRequest) UnsetTaskQueues()`
-
-UnsetTaskQueues ensures that no value is present for TaskQueues, not even an explicit nil
 ### GetGroupingOverride
 
 `func (o *PatchedBulkWritableJobRequest) GetGroupingOverride() bool`
@@ -579,30 +572,105 @@ SetHasSensitiveVariablesOverride sets HasSensitiveVariablesOverride field to giv
 
 HasHasSensitiveVariablesOverride returns a boolean if a field has been set.
 
-### GetTaskQueuesOverride
+### GetJobQueuesOverride
 
-`func (o *PatchedBulkWritableJobRequest) GetTaskQueuesOverride() bool`
+`func (o *PatchedBulkWritableJobRequest) GetJobQueuesOverride() bool`
 
-GetTaskQueuesOverride returns the TaskQueuesOverride field if non-nil, zero value otherwise.
+GetJobQueuesOverride returns the JobQueuesOverride field if non-nil, zero value otherwise.
 
-### GetTaskQueuesOverrideOk
+### GetJobQueuesOverrideOk
 
-`func (o *PatchedBulkWritableJobRequest) GetTaskQueuesOverrideOk() (*bool, bool)`
+`func (o *PatchedBulkWritableJobRequest) GetJobQueuesOverrideOk() (*bool, bool)`
 
-GetTaskQueuesOverrideOk returns a tuple with the TaskQueuesOverride field if it's non-nil, zero value otherwise
+GetJobQueuesOverrideOk returns a tuple with the JobQueuesOverride field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTaskQueuesOverride
+### SetJobQueuesOverride
 
-`func (o *PatchedBulkWritableJobRequest) SetTaskQueuesOverride(v bool)`
+`func (o *PatchedBulkWritableJobRequest) SetJobQueuesOverride(v bool)`
 
-SetTaskQueuesOverride sets TaskQueuesOverride field to given value.
+SetJobQueuesOverride sets JobQueuesOverride field to given value.
 
-### HasTaskQueuesOverride
+### HasJobQueuesOverride
 
-`func (o *PatchedBulkWritableJobRequest) HasTaskQueuesOverride() bool`
+`func (o *PatchedBulkWritableJobRequest) HasJobQueuesOverride() bool`
 
-HasTaskQueuesOverride returns a boolean if a field has been set.
+HasJobQueuesOverride returns a boolean if a field has been set.
+
+### GetDefaultJobQueueOverride
+
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueueOverride() bool`
+
+GetDefaultJobQueueOverride returns the DefaultJobQueueOverride field if non-nil, zero value otherwise.
+
+### GetDefaultJobQueueOverrideOk
+
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueueOverrideOk() (*bool, bool)`
+
+GetDefaultJobQueueOverrideOk returns a tuple with the DefaultJobQueueOverride field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDefaultJobQueueOverride
+
+`func (o *PatchedBulkWritableJobRequest) SetDefaultJobQueueOverride(v bool)`
+
+SetDefaultJobQueueOverride sets DefaultJobQueueOverride field to given value.
+
+### HasDefaultJobQueueOverride
+
+`func (o *PatchedBulkWritableJobRequest) HasDefaultJobQueueOverride() bool`
+
+HasDefaultJobQueueOverride returns a boolean if a field has been set.
+
+### GetIsSingletonOverride
+
+`func (o *PatchedBulkWritableJobRequest) GetIsSingletonOverride() bool`
+
+GetIsSingletonOverride returns the IsSingletonOverride field if non-nil, zero value otherwise.
+
+### GetIsSingletonOverrideOk
+
+`func (o *PatchedBulkWritableJobRequest) GetIsSingletonOverrideOk() (*bool, bool)`
+
+GetIsSingletonOverrideOk returns a tuple with the IsSingletonOverride field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetIsSingletonOverride
+
+`func (o *PatchedBulkWritableJobRequest) SetIsSingletonOverride(v bool)`
+
+SetIsSingletonOverride sets IsSingletonOverride field to given value.
+
+### HasIsSingletonOverride
+
+`func (o *PatchedBulkWritableJobRequest) HasIsSingletonOverride() bool`
+
+HasIsSingletonOverride returns a boolean if a field has been set.
+
+### GetDefaultJobQueue
+
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueue() BulkWritableCableRequestStatus`
+
+GetDefaultJobQueue returns the DefaultJobQueue field if non-nil, zero value otherwise.
+
+### GetDefaultJobQueueOk
+
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueueOk() (*BulkWritableCableRequestStatus, bool)`
+
+GetDefaultJobQueueOk returns a tuple with the DefaultJobQueue field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDefaultJobQueue
+
+`func (o *PatchedBulkWritableJobRequest) SetDefaultJobQueue(v BulkWritableCableRequestStatus)`
+
+SetDefaultJobQueue sets DefaultJobQueue field to given value.
+
+### HasDefaultJobQueue
+
+`func (o *PatchedBulkWritableJobRequest) HasDefaultJobQueue() bool`
+
+HasDefaultJobQueue returns a boolean if a field has been set.
 
 ### GetTags
 

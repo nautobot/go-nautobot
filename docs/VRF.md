@@ -4,19 +4,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** |  | 
-**Rd** | **NullableString** | Unique route distinguisher (as defined in RFC 4364) | 
+**Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Devices** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **VirtualMachines** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**VirtualDeviceContexts** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **Prefixes** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **ImportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **ExportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -30,7 +31,7 @@ Name | Type | Description | Notes
 
 ### NewVRF
 
-`func NewVRF(id string, objectType string, display string, url string, naturalSlug string, name string, rd NullableString, devices []BulkWritableCableRequestStatus, virtualMachines []BulkWritableCableRequestStatus, prefixes []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VRF`
+`func NewVRF(objectType string, display string, url string, naturalSlug string, name string, devices []BulkWritableCableRequestStatus, virtualMachines []BulkWritableCableRequestStatus, virtualDeviceContexts []BulkWritableCableRequestStatus, prefixes []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VRF`
 
 NewVRF instantiates a new VRF object
 This constructor will assign default values to properties that have it defined,
@@ -64,6 +65,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *VRF) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -184,6 +190,11 @@ and a boolean to check if the value has been set.
 
 SetRd sets Rd field to given value.
 
+### HasRd
+
+`func (o *VRF) HasRd() bool`
+
+HasRd returns a boolean if a field has been set.
 
 ### SetRdNil
 
@@ -353,6 +364,26 @@ and a boolean to check if the value has been set.
 `func (o *VRF) SetVirtualMachines(v []BulkWritableCableRequestStatus)`
 
 SetVirtualMachines sets VirtualMachines field to given value.
+
+
+### GetVirtualDeviceContexts
+
+`func (o *VRF) GetVirtualDeviceContexts() []BulkWritableCableRequestStatus`
+
+GetVirtualDeviceContexts returns the VirtualDeviceContexts field if non-nil, zero value otherwise.
+
+### GetVirtualDeviceContextsOk
+
+`func (o *VRF) GetVirtualDeviceContextsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetVirtualDeviceContextsOk returns a tuple with the VirtualDeviceContexts field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVirtualDeviceContexts
+
+`func (o *VRF) SetVirtualDeviceContexts(v []BulkWritableCableRequestStatus)`
+
+SetVirtualDeviceContexts sets VirtualDeviceContexts field to given value.
 
 
 ### GetPrefixes

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewNestedLocation
 
-`func NewNestedLocation(id string, objectType string, url string, ) *NestedLocation`
+`func NewNestedLocation(objectType string, url string, ) *NestedLocation`
 
 NewNestedLocation instantiates a new NestedLocation object
 This constructor will assign default values to properties that have it defined,
@@ -46,6 +46,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *NestedLocation) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

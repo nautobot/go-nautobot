@@ -4,12 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | Pointer to [**PatchedWritablePowerPortTemplateRequestType**](PatchedWritablePowerPortTemplateRequestType.md) |  | [optional] 
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
+**PowerFactor** | Pointer to **float64** | Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95. | [optional] 
 **DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -33,6 +35,31 @@ will change when the set of required properties is changed
 NewWritablePowerPortTemplateRequestWithDefaults instantiates a new WritablePowerPortTemplateRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *WritablePowerPortTemplateRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *WritablePowerPortTemplateRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *WritablePowerPortTemplateRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *WritablePowerPortTemplateRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -199,6 +226,31 @@ HasAllocatedDraw returns a boolean if a field has been set.
 `func (o *WritablePowerPortTemplateRequest) UnsetAllocatedDraw()`
 
 UnsetAllocatedDraw ensures that no value is present for AllocatedDraw, not even an explicit nil
+### GetPowerFactor
+
+`func (o *WritablePowerPortTemplateRequest) GetPowerFactor() float64`
+
+GetPowerFactor returns the PowerFactor field if non-nil, zero value otherwise.
+
+### GetPowerFactorOk
+
+`func (o *WritablePowerPortTemplateRequest) GetPowerFactorOk() (*float64, bool)`
+
+GetPowerFactorOk returns a tuple with the PowerFactor field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerFactor
+
+`func (o *WritablePowerPortTemplateRequest) SetPowerFactor(v float64)`
+
+SetPowerFactor sets PowerFactor field to given value.
+
+### HasPowerFactor
+
+`func (o *WritablePowerPortTemplateRequest) HasPowerFactor() bool`
+
+HasPowerFactor returns a boolean if a field has been set.
+
 ### GetDeviceType
 
 `func (o *WritablePowerPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`

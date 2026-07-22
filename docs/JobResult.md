@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **TaskName** | Pointer to **NullableString** | Registered name of the Celery task for this job. Internal use only. | [optional] 
 **DateCreated** | **time.Time** |  | [readonly] 
+**DateStarted** | Pointer to **NullableTime** |  | [optional] 
 **DateDone** | Pointer to **NullableTime** |  | [optional] 
 **Result** | **interface{}** | The data returned by the task | [readonly] 
 **Worker** | Pointer to **NullableString** |  | [optional] 
@@ -25,13 +26,14 @@ Name | Type | Description | Notes
 **User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **ScheduledJob** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**ComputedFields** | **map[string]interface{}** |  | [readonly] 
 **Files** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 
 ## Methods
 
 ### NewJobResult
 
-`func NewJobResult(id string, objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, files []BulkWritableCableRequestStatus, ) *JobResult`
+`func NewJobResult(objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, computedFields map[string]interface{}, files []BulkWritableCableRequestStatus, ) *JobResult`
 
 NewJobResult instantiates a new JobResult object
 This constructor will assign default values to properties that have it defined,
@@ -65,6 +67,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *JobResult) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -241,6 +248,41 @@ and a boolean to check if the value has been set.
 SetDateCreated sets DateCreated field to given value.
 
 
+### GetDateStarted
+
+`func (o *JobResult) GetDateStarted() time.Time`
+
+GetDateStarted returns the DateStarted field if non-nil, zero value otherwise.
+
+### GetDateStartedOk
+
+`func (o *JobResult) GetDateStartedOk() (*time.Time, bool)`
+
+GetDateStartedOk returns a tuple with the DateStarted field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDateStarted
+
+`func (o *JobResult) SetDateStarted(v time.Time)`
+
+SetDateStarted sets DateStarted field to given value.
+
+### HasDateStarted
+
+`func (o *JobResult) HasDateStarted() bool`
+
+HasDateStarted returns a boolean if a field has been set.
+
+### SetDateStartedNil
+
+`func (o *JobResult) SetDateStartedNil(b bool)`
+
+ SetDateStartedNil sets the value for DateStarted to be an explicit nil
+
+### UnsetDateStarted
+`func (o *JobResult) UnsetDateStarted()`
+
+UnsetDateStarted ensures that no value is present for DateStarted, not even an explicit nil
 ### GetDateDone
 
 `func (o *JobResult) GetDateDone() time.Time`
@@ -640,6 +682,26 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *JobResult) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
+
+### GetComputedFields
+
+`func (o *JobResult) GetComputedFields() map[string]interface{}`
+
+GetComputedFields returns the ComputedFields field if non-nil, zero value otherwise.
+
+### GetComputedFieldsOk
+
+`func (o *JobResult) GetComputedFieldsOk() (*map[string]interface{}, bool)`
+
+GetComputedFieldsOk returns a tuple with the ComputedFields field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetComputedFields
+
+`func (o *JobResult) SetComputedFields(v map[string]interface{})`
+
+SetComputedFields sets ComputedFields field to given value.
+
 
 ### GetFiles
 

@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **ContentTypes** | **[]string** |  | 
 **Label** | **string** |  | 
 **Grouping** | Pointer to **string** | Human-readable grouping that this custom field belongs to. | [optional] 
@@ -37,6 +38,31 @@ will change when the set of required properties is changed
 NewWritableCustomFieldRequestWithDefaults instantiates a new WritableCustomFieldRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *WritableCustomFieldRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *WritableCustomFieldRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *WritableCustomFieldRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *WritableCustomFieldRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetContentTypes
 

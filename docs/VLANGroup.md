@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -12,9 +12,11 @@ Name | Type | Description | Notes
 **VlanCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
+**Range** | Pointer to **string** | Permitted VID range(s) as comma-separated list, default &#39;1-4094&#39; if left blank. | [optional] 
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -22,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewVLANGroup
 
-`func NewVLANGroup(id string, objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLANGroup`
+`func NewVLANGroup(objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VLANGroup`
 
 NewVLANGroup instantiates a new VLANGroup object
 This constructor will assign default values to properties that have it defined,
@@ -56,6 +58,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *VLANGroup) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 
@@ -207,6 +214,31 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetRange
+
+`func (o *VLANGroup) GetRange() string`
+
+GetRange returns the Range field if non-nil, zero value otherwise.
+
+### GetRangeOk
+
+`func (o *VLANGroup) GetRangeOk() (*string, bool)`
+
+GetRangeOk returns a tuple with the Range field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRange
+
+`func (o *VLANGroup) SetRange(v string)`
+
+SetRange sets Range field to given value.
+
+### HasRange
+
+`func (o *VLANGroup) HasRange() bool`
+
+HasRange returns a boolean if a field has been set.
+
 ### GetLocation
 
 `func (o *VLANGroup) GetLocation() BulkWritableCircuitRequestTenant`
@@ -302,6 +334,31 @@ SetLastUpdated sets LastUpdated field to given value.
 `func (o *VLANGroup) UnsetLastUpdated()`
 
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
+### GetTags
+
+`func (o *VLANGroup) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *VLANGroup) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *VLANGroup) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *VLANGroup) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
 ### GetNotesUrl
 
 `func (o *VLANGroup) GetNotesUrl() string`

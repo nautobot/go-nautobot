@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Data** | Pointer to **interface{}** |  | [optional] 
 **Schedule** | Pointer to [**JobCreationRequest**](JobCreationRequest.md) |  | [optional] 
 **TaskQueue** | Pointer to **string** |  | [optional] 
+**JobQueue** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
@@ -111,6 +112,31 @@ SetTaskQueue sets TaskQueue field to given value.
 `func (o *JobInputRequest) HasTaskQueue() bool`
 
 HasTaskQueue returns a boolean if a field has been set.
+
+### GetJobQueue
+
+`func (o *JobInputRequest) GetJobQueue() string`
+
+GetJobQueue returns the JobQueue field if non-nil, zero value otherwise.
+
+### GetJobQueueOk
+
+`func (o *JobInputRequest) GetJobQueueOk() (*string, bool)`
+
+GetJobQueueOk returns a tuple with the JobQueue field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetJobQueue
+
+`func (o *JobInputRequest) SetJobQueue(v string)`
+
+SetJobQueue sets JobQueue field to given value.
+
+### HasJobQueue
+
+`func (o *JobInputRequest) HasJobQueue() bool`
+
+HasJobQueue returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

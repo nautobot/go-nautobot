@@ -5,16 +5,20 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**Type** | Pointer to [**PowerFeedTypeChoices**](PowerFeedTypeChoices.md) |  | [optional] [default to "{\"value\":\"primary\",\"label\":\"Primary\"}"]
-**Supply** | Pointer to [**SupplyEnum**](SupplyEnum.md) |  | [optional] [default to "{\"value\":\"ac\",\"label\":\"AC\"}"]
-**Phase** | Pointer to [**PhaseEnum**](PhaseEnum.md) |  | [optional] [default to "{\"value\":\"single-phase\",\"label\":\"Single phase\"}"]
+**Type** | Pointer to [**PowerFeedTypeChoices**](PowerFeedTypeChoices.md) |  | [optional] [default to POWERFEEDTYPECHOICES_PRIMARY]
+**PowerPath** | Pointer to [**PowerPathEnum**](PowerPathEnum.md) |  | [optional] 
+**Supply** | Pointer to [**SupplyEnum**](SupplyEnum.md) |  | [optional] [default to SUPPLYENUM_AC]
+**Phase** | Pointer to [**PhaseEnum**](PhaseEnum.md) |  | [optional] [default to PHASEENUM_SINGLE_PHASE]
+**BreakerPoleCount** | Pointer to [**NullableBreakerPoleCountEnum**](BreakerPoleCountEnum.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Voltage** | Pointer to **int32** |  | [optional] 
 **Amperage** | Pointer to **int32** |  | [optional] 
 **MaxUtilization** | Pointer to **int32** | Maximum permissible draw (percentage) | [optional] 
+**BreakerPosition** | Pointer to **NullableInt32** | Starting circuit breaker position in panel | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Cable** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**PowerPanel** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**PowerPanel** | Pointer to [**BulkWritablePowerFeedRequestPowerPanel**](BulkWritablePowerFeedRequestPowerPanel.md) |  | [optional] 
+**DestinationPanel** | Pointer to [**NullableBulkWritablePowerFeedRequestDestinationPanel**](BulkWritablePowerFeedRequestDestinationPanel.md) |  | [optional] 
 **Rack** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -85,6 +89,31 @@ SetType sets Type field to given value.
 
 HasType returns a boolean if a field has been set.
 
+### GetPowerPath
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPath() PowerPathEnum`
+
+GetPowerPath returns the PowerPath field if non-nil, zero value otherwise.
+
+### GetPowerPathOk
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPathOk() (*PowerPathEnum, bool)`
+
+GetPowerPathOk returns a tuple with the PowerPath field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPowerPath
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetPowerPath(v PowerPathEnum)`
+
+SetPowerPath sets PowerPath field to given value.
+
+### HasPowerPath
+
+`func (o *PatchedBulkWritablePowerFeedRequest) HasPowerPath() bool`
+
+HasPowerPath returns a boolean if a field has been set.
+
 ### GetSupply
 
 `func (o *PatchedBulkWritablePowerFeedRequest) GetSupply() SupplyEnum`
@@ -135,6 +164,41 @@ SetPhase sets Phase field to given value.
 
 HasPhase returns a boolean if a field has been set.
 
+### GetBreakerPoleCount
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetBreakerPoleCount() BreakerPoleCountEnum`
+
+GetBreakerPoleCount returns the BreakerPoleCount field if non-nil, zero value otherwise.
+
+### GetBreakerPoleCountOk
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetBreakerPoleCountOk() (*BreakerPoleCountEnum, bool)`
+
+GetBreakerPoleCountOk returns a tuple with the BreakerPoleCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBreakerPoleCount
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetBreakerPoleCount(v BreakerPoleCountEnum)`
+
+SetBreakerPoleCount sets BreakerPoleCount field to given value.
+
+### HasBreakerPoleCount
+
+`func (o *PatchedBulkWritablePowerFeedRequest) HasBreakerPoleCount() bool`
+
+HasBreakerPoleCount returns a boolean if a field has been set.
+
+### SetBreakerPoleCountNil
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetBreakerPoleCountNil(b bool)`
+
+ SetBreakerPoleCountNil sets the value for BreakerPoleCount to be an explicit nil
+
+### UnsetBreakerPoleCount
+`func (o *PatchedBulkWritablePowerFeedRequest) UnsetBreakerPoleCount()`
+
+UnsetBreakerPoleCount ensures that no value is present for BreakerPoleCount, not even an explicit nil
 ### GetName
 
 `func (o *PatchedBulkWritablePowerFeedRequest) GetName() string`
@@ -235,6 +299,41 @@ SetMaxUtilization sets MaxUtilization field to given value.
 
 HasMaxUtilization returns a boolean if a field has been set.
 
+### GetBreakerPosition
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetBreakerPosition() int32`
+
+GetBreakerPosition returns the BreakerPosition field if non-nil, zero value otherwise.
+
+### GetBreakerPositionOk
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetBreakerPositionOk() (*int32, bool)`
+
+GetBreakerPositionOk returns a tuple with the BreakerPosition field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBreakerPosition
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetBreakerPosition(v int32)`
+
+SetBreakerPosition sets BreakerPosition field to given value.
+
+### HasBreakerPosition
+
+`func (o *PatchedBulkWritablePowerFeedRequest) HasBreakerPosition() bool`
+
+HasBreakerPosition returns a boolean if a field has been set.
+
+### SetBreakerPositionNil
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetBreakerPositionNil(b bool)`
+
+ SetBreakerPositionNil sets the value for BreakerPosition to be an explicit nil
+
+### UnsetBreakerPosition
+`func (o *PatchedBulkWritablePowerFeedRequest) UnsetBreakerPosition()`
+
+UnsetBreakerPosition ensures that no value is present for BreakerPosition, not even an explicit nil
 ### GetComments
 
 `func (o *PatchedBulkWritablePowerFeedRequest) GetComments() string`
@@ -297,20 +396,20 @@ HasCable returns a boolean if a field has been set.
 UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetPowerPanel
 
-`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPanel() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPanel() BulkWritablePowerFeedRequestPowerPanel`
 
 GetPowerPanel returns the PowerPanel field if non-nil, zero value otherwise.
 
 ### GetPowerPanelOk
 
-`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPanelOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritablePowerFeedRequest) GetPowerPanelOk() (*BulkWritablePowerFeedRequestPowerPanel, bool)`
 
 GetPowerPanelOk returns a tuple with the PowerPanel field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPowerPanel
 
-`func (o *PatchedBulkWritablePowerFeedRequest) SetPowerPanel(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritablePowerFeedRequest) SetPowerPanel(v BulkWritablePowerFeedRequestPowerPanel)`
 
 SetPowerPanel sets PowerPanel field to given value.
 
@@ -320,6 +419,41 @@ SetPowerPanel sets PowerPanel field to given value.
 
 HasPowerPanel returns a boolean if a field has been set.
 
+### GetDestinationPanel
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetDestinationPanel() BulkWritablePowerFeedRequestDestinationPanel`
+
+GetDestinationPanel returns the DestinationPanel field if non-nil, zero value otherwise.
+
+### GetDestinationPanelOk
+
+`func (o *PatchedBulkWritablePowerFeedRequest) GetDestinationPanelOk() (*BulkWritablePowerFeedRequestDestinationPanel, bool)`
+
+GetDestinationPanelOk returns a tuple with the DestinationPanel field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDestinationPanel
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetDestinationPanel(v BulkWritablePowerFeedRequestDestinationPanel)`
+
+SetDestinationPanel sets DestinationPanel field to given value.
+
+### HasDestinationPanel
+
+`func (o *PatchedBulkWritablePowerFeedRequest) HasDestinationPanel() bool`
+
+HasDestinationPanel returns a boolean if a field has been set.
+
+### SetDestinationPanelNil
+
+`func (o *PatchedBulkWritablePowerFeedRequest) SetDestinationPanelNil(b bool)`
+
+ SetDestinationPanelNil sets the value for DestinationPanel to be an explicit nil
+
+### UnsetDestinationPanel
+`func (o *PatchedBulkWritablePowerFeedRequest) UnsetDestinationPanel()`
+
+UnsetDestinationPanel ensures that no value is present for DestinationPanel, not even an explicit nil
 ### GetRack
 
 `func (o *PatchedBulkWritablePowerFeedRequest) GetRack() BulkWritableCircuitRequestTenant`

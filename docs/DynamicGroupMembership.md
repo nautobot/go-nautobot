@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **string** |  | [readonly] 
+**Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 
 ### NewDynamicGroupMembership
 
-`func NewDynamicGroupMembership(id string, objectType string, display string, url string, naturalSlug string, operator OperatorEnum, weight int32, group BulkWritableCableRequestStatus, parentGroup BulkWritableCableRequestStatus, ) *DynamicGroupMembership`
+`func NewDynamicGroupMembership(objectType string, display string, url string, naturalSlug string, operator OperatorEnum, weight int32, group BulkWritableCableRequestStatus, parentGroup BulkWritableCableRequestStatus, ) *DynamicGroupMembership`
 
 NewDynamicGroupMembership instantiates a new DynamicGroupMembership object
 This constructor will assign default values to properties that have it defined,
@@ -52,6 +52,11 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
+### HasId
+
+`func (o *DynamicGroupMembership) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetObjectType
 

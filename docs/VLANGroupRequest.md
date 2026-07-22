@@ -4,9 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
+**Range** | Pointer to **string** | Permitted VID range(s) as comma-separated list, default &#39;1-4094&#39; if left blank. | [optional] 
 **Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
 
@@ -28,6 +31,31 @@ will change when the set of required properties is changed
 NewVLANGroupRequestWithDefaults instantiates a new VLANGroupRequest object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *VLANGroupRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *VLANGroupRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *VLANGroupRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+### HasId
+
+`func (o *VLANGroupRequest) HasId() bool`
+
+HasId returns a boolean if a field has been set.
 
 ### GetName
 
@@ -74,6 +102,31 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
+### GetRange
+
+`func (o *VLANGroupRequest) GetRange() string`
+
+GetRange returns the Range field if non-nil, zero value otherwise.
+
+### GetRangeOk
+
+`func (o *VLANGroupRequest) GetRangeOk() (*string, bool)`
+
+GetRangeOk returns a tuple with the Range field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRange
+
+`func (o *VLANGroupRequest) SetRange(v string)`
+
+SetRange sets Range field to given value.
+
+### HasRange
+
+`func (o *VLANGroupRequest) HasRange() bool`
+
+HasRange returns a boolean if a field has been set.
+
 ### GetLocation
 
 `func (o *VLANGroupRequest) GetLocation() BulkWritableCircuitRequestTenant`
@@ -109,6 +162,31 @@ HasLocation returns a boolean if a field has been set.
 `func (o *VLANGroupRequest) UnsetLocation()`
 
 UnsetLocation ensures that no value is present for Location, not even an explicit nil
+### GetTags
+
+`func (o *VLANGroupRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *VLANGroupRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *VLANGroupRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *VLANGroupRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
 ### GetCustomFields
 
 `func (o *VLANGroupRequest) GetCustomFields() map[string]interface{}`
