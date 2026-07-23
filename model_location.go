@@ -22,7 +22,7 @@ var _ MappedNullable = &Location{}
 // Location Add a `tree_depth` field to non-nested model serializers based on django-tree-queries.
 type Location struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	// Human friendly display value
 	Display string `json:"display"`
 	Url string `json:"url"`
@@ -44,9 +44,9 @@ type Location struct {
 	PhysicalAddress *string `json:"physical_address,omitempty"`
 	ShippingAddress *string `json:"shipping_address,omitempty"`
 	// GPS coordinate (latitude)
-	Latitude NullableFloat64 `json:"latitude,omitempty" validate:"regexp=^-?\\\\d{0,2}(?:\\\\.\\\\d{0,6})?$"`
+	Latitude NullableFloat64 `json:"latitude,omitempty" validate:"regexp=^-?\\d{0\\,2}(?:\\.\\d{0\\,6})?$"`
 	// GPS coordinate (longitude)
-	Longitude NullableFloat64 `json:"longitude,omitempty" validate:"regexp=^-?\\\\d{0,3}(?:\\\\.\\\\d{0,6})?$"`
+	Longitude NullableFloat64 `json:"longitude,omitempty" validate:"regexp=^-?\\d{0\\,3}(?:\\.\\d{0\\,6})?$"`
 	ContactName *string `json:"contact_name,omitempty"`
 	ContactPhone *string `json:"contact_phone,omitempty"`
 	ContactEmail *string `json:"contact_email,omitempty"`

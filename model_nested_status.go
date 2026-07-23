@@ -21,7 +21,7 @@ var _ MappedNullable = &NestedStatus{}
 // NestedStatus Serializer for `Status` objects.
 type NestedStatus struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url string `json:"url"`
 	AdditionalProperties map[string]interface{}
 }

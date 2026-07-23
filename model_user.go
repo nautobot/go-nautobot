@@ -22,7 +22,7 @@ var _ MappedNullable = &User{}
 // User Extends the built-in ModelSerializer to enforce calling full_clean() on a copy of the associated instance during validation. (DRF does not do this by default; see https://github.com/encode/django-rest-framework/issues/3144)
 type User struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	// Human friendly display value
 	Display string `json:"display"`
 	Url string `json:"url"`
@@ -31,7 +31,7 @@ type User struct {
 	// Designates that this user has all permissions without explicitly assigning them.
 	IsSuperuser *bool `json:"is_superuser,omitempty"`
 	// Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.
-	Username string `json:"username" validate:"regexp=^[\\\\w.@+-]+$"`
+	Username string `json:"username" validate:"regexp=^[\\w.@+-]+$"`
 	FirstName *string `json:"first_name,omitempty"`
 	LastName *string `json:"last_name,omitempty"`
 	Email *string `json:"email,omitempty"`

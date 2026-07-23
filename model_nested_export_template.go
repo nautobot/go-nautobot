@@ -21,7 +21,7 @@ var _ MappedNullable = &NestedExportTemplate{}
 // NestedExportTemplate Extend ValidatedModelSerializer with a `relationships` field.
 type NestedExportTemplate struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url string `json:"url"`
 	AdditionalProperties map[string]interface{}
 }

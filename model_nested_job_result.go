@@ -21,7 +21,7 @@ var _ MappedNullable = &NestedJobResult{}
 // NestedJobResult Extends ModelSerializer to render any CustomFields and their values associated with an object.
 type NestedJobResult struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url string `json:"url"`
 	AdditionalProperties map[string]interface{}
 }

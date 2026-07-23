@@ -20,7 +20,7 @@ var _ MappedNullable = &BulkWritableRackReservationRequestUser{}
 // BulkWritableRackReservationRequestUser User to associate to reservations. If unspecified, the current user will be used.
 type BulkWritableRackReservationRequestUser struct {
 	Id *BulkWritableCableRequestStatusId `json:"id,omitempty"`
-	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url *string `json:"url,omitempty"`
 	AdditionalProperties map[string]interface{}
 }

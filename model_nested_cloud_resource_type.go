@@ -21,7 +21,7 @@ var _ MappedNullable = &NestedCloudResourceType{}
 // NestedCloudResourceType Base class to use for serializers based on OrganizationalModel or PrimaryModel.  Can also be used for models derived from BaseModel, so long as they support custom fields, notes, and relationships.
 type NestedCloudResourceType struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url string `json:"url"`
 	AdditionalProperties map[string]interface{}
 }

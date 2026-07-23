@@ -30,7 +30,7 @@ type PatchedWritablePowerPortTemplateRequest struct {
 	// Allocated power draw (watts)
 	AllocatedDraw NullableInt32 `json:"allocated_draw,omitempty"`
 	// Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95.
-	PowerFactor *float64 `json:"power_factor,omitempty" validate:"regexp=^-?\\\\d{0,2}(?:\\\\.\\\\d{0,2})?$"`
+	PowerFactor *float64 `json:"power_factor,omitempty" validate:"regexp=^-?\\d{0\\,2}(?:\\.\\d{0\\,2})?$"`
 	DeviceType NullableBulkWritableCircuitRequestTenant `json:"device_type,omitempty"`
 	ModuleType NullableBulkWritableCircuitRequestTenant `json:"module_type,omitempty"`
 	CustomFields map[string]interface{} `json:"custom_fields,omitempty"`

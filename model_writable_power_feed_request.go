@@ -32,6 +32,7 @@ type WritablePowerFeedRequest struct {
 	MaxUtilization *int32 `json:"max_utilization,omitempty"`
 	// Starting circuit breaker position in panel
 	BreakerPosition NullableInt32 `json:"breaker_position,omitempty"`
+	// Number of breaker poles
 	BreakerPoleCount NullableBreakerPoleCountEnum `json:"breaker_pole_count,omitempty"`
 	Comments *string `json:"comments,omitempty"`
 	Cable NullableBulkWritableCircuitRequestTenant `json:"cable,omitempty"`

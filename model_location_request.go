@@ -31,9 +31,9 @@ type LocationRequest struct {
 	PhysicalAddress *string `json:"physical_address,omitempty"`
 	ShippingAddress *string `json:"shipping_address,omitempty"`
 	// GPS coordinate (latitude)
-	Latitude NullableFloat64 `json:"latitude,omitempty" validate:"regexp=^-?\\\\d{0,2}(?:\\\\.\\\\d{0,6})?$"`
+	Latitude NullableFloat64 `json:"latitude,omitempty" validate:"regexp=^-?\\d{0\\,2}(?:\\.\\d{0\\,6})?$"`
 	// GPS coordinate (longitude)
-	Longitude NullableFloat64 `json:"longitude,omitempty" validate:"regexp=^-?\\\\d{0,3}(?:\\\\.\\\\d{0,6})?$"`
+	Longitude NullableFloat64 `json:"longitude,omitempty" validate:"regexp=^-?\\d{0\\,3}(?:\\.\\d{0\\,6})?$"`
 	ContactName *string `json:"contact_name,omitempty"`
 	ContactPhone *string `json:"contact_phone,omitempty"`
 	ContactEmail *string `json:"contact_email,omitempty"`

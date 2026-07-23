@@ -11,13 +11,13 @@ API version: 2.4.21 (2.4)
 package nautobot
 
 import (
-	"time"
 	"bytes"
 	"context"
 	"io"
 	"net/http"
 	"net/url"
 	"strings"
+	"time"
 	"reflect"
 )
 
@@ -1779,16 +1779,16 @@ func (a *TenancyAPIService) TenancyTenantGroupsListExecute(r ApiTenancyTenantGro
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2090,16 +2090,16 @@ func (a *TenancyAPIService) TenancyTenantGroupsNotesListExecute(r ApiTenancyTena
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -2378,16 +2378,16 @@ func (a *TenancyAPIService) TenancyTenantGroupsRetrieveExecute(r ApiTenancyTenan
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5177,16 +5177,16 @@ func (a *TenancyAPIService) TenancyTenantsListExecute(r ApiTenancyTenantsListReq
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5488,16 +5488,16 @@ func (a *TenancyAPIService) TenancyTenantsNotesListExecute(r ApiTenancyTenantsNo
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -5776,16 +5776,16 @@ func (a *TenancyAPIService) TenancyTenantsRetrieveExecute(r ApiTenancyTenantsRet
 	if r.depth != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", r.depth, "form", "")
 	} else {
-        var defaultValue int32 = 1
-        parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
-        r.depth = &defaultValue
+		var defaultValue int32 = 1
+		parameterAddToHeaderOrQuery(localVarQueryParams, "depth", defaultValue, "form", "")
+		r.depth = &defaultValue
 	}
 	if r.excludeM2m != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", r.excludeM2m, "form", "")
 	} else {
-        var defaultValue bool = false
-        parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
-        r.excludeM2m = &defaultValue
+		var defaultValue bool = false
+		parameterAddToHeaderOrQuery(localVarQueryParams, "exclude_m2m", defaultValue, "form", "")
+		r.excludeM2m = &defaultValue
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -21,7 +21,7 @@ var _ MappedNullable = &NestedModuleFamily{}
 // NestedModuleFamily API serializer for ModuleFamily objects.
 type NestedModuleFamily struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url string `json:"url"`
 	AdditionalProperties map[string]interface{}
 }

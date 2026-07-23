@@ -22,7 +22,7 @@ var _ MappedNullable = &PowerPortTemplate{}
 // PowerPortTemplate Base class to use for serializers based on OrganizationalModel or PrimaryModel.  Can also be used for models derived from BaseModel, so long as they support custom fields, notes, and relationships.
 type PowerPortTemplate struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	// Human friendly display value
 	Display string `json:"display"`
 	Url string `json:"url"`
@@ -38,7 +38,7 @@ type PowerPortTemplate struct {
 	// Allocated power draw (watts)
 	AllocatedDraw NullableInt32 `json:"allocated_draw,omitempty"`
 	// Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95.
-	PowerFactor *float64 `json:"power_factor,omitempty" validate:"regexp=^-?\\\\d{0,2}(?:\\\\.\\\\d{0,2})?$"`
+	PowerFactor *float64 `json:"power_factor,omitempty" validate:"regexp=^-?\\d{0\\,2}(?:\\.\\d{0\\,2})?$"`
 	DeviceType NullableBulkWritableCircuitRequestTenant `json:"device_type,omitempty"`
 	ModuleType NullableBulkWritableCircuitRequestTenant `json:"module_type,omitempty"`
 	Created NullableTime `json:"created"`

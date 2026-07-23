@@ -22,7 +22,7 @@ var _ MappedNullable = &Status{}
 // Status Serializer for `Status` objects.
 type Status struct {
 	Id *string `json:"id,omitempty"`
-	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType string `json:"object_type" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	// Human friendly display value
 	Display string `json:"display"`
 	Url string `json:"url"`

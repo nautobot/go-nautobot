@@ -20,7 +20,7 @@ var _ MappedNullable = &BulkWritableExternalIntegrationRequestSecretsGroup{}
 // BulkWritableExternalIntegrationRequestSecretsGroup Credentials used for authenticating with the remote system
 type BulkWritableExternalIntegrationRequestSecretsGroup struct {
 	Id *BulkWritableCableRequestStatusId `json:"id,omitempty"`
-	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url *string `json:"url,omitempty"`
 	AdditionalProperties map[string]interface{}
 }

@@ -20,7 +20,7 @@ var _ MappedNullable = &BulkWritableServiceRequestVirtualMachine{}
 // BulkWritableServiceRequestVirtualMachine Required if no device is specified
 type BulkWritableServiceRequestVirtualMachine struct {
 	Id *BulkWritableCableRequestStatusId `json:"id,omitempty"`
-	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url *string `json:"url,omitempty"`
 	AdditionalProperties map[string]interface{}
 }

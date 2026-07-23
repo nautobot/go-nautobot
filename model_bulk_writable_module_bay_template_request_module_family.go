@@ -20,7 +20,7 @@ var _ MappedNullable = &BulkWritableModuleBayTemplateRequestModuleFamily{}
 // BulkWritableModuleBayTemplateRequestModuleFamily Module family that can be installed in this bay. Leave blank for no restriction.
 type BulkWritableModuleBayTemplateRequestModuleFamily struct {
 	Id *BulkWritableCableRequestStatusId `json:"id,omitempty"`
-	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url *string `json:"url,omitempty"`
 	AdditionalProperties map[string]interface{}
 }

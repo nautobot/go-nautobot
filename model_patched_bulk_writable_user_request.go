@@ -27,7 +27,7 @@ type PatchedBulkWritableUserRequest struct {
 	// Designates that this user has all permissions without explicitly assigning them.
 	IsSuperuser *bool `json:"is_superuser,omitempty"`
 	// Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.
-	Username *string `json:"username,omitempty" validate:"regexp=^[\\\\w.@+-]+$"`
+	Username *string `json:"username,omitempty" validate:"regexp=^[\\w.@+-]+$"`
 	FirstName *string `json:"first_name,omitempty"`
 	LastName *string `json:"last_name,omitempty"`
 	Email *string `json:"email,omitempty"`

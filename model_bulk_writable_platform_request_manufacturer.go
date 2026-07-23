@@ -20,7 +20,7 @@ var _ MappedNullable = &BulkWritablePlatformRequestManufacturer{}
 // BulkWritablePlatformRequestManufacturer Optionally limit this platform to devices of a certain manufacturer
 type BulkWritablePlatformRequestManufacturer struct {
 	Id *BulkWritableCableRequestStatusId `json:"id,omitempty"`
-	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\\\.[a-z][a-z0-9_]+$"`
+	ObjectType *string `json:"object_type,omitempty" validate:"regexp=^[a-z][a-z0-9_]+\\.[a-z][a-z0-9_]+$"`
 	Url *string `json:"url,omitempty"`
 	AdditionalProperties map[string]interface{}
 }
