@@ -14,8 +14,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CloudAccount** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Prefixes** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -26,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewCloudNetwork
 
-`func NewCloudNetwork(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType BulkWritableCableRequestStatus, cloudAccount BulkWritableCableRequestStatus, prefixes []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudNetwork`
+`func NewCloudNetwork(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType BulkWritableCableRequestStatus, cloudAccount BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudNetwork`
 
 NewCloudNetwork instantiates a new CloudNetwork object
 This constructor will assign default values to properties that have it defined,
@@ -268,20 +267,20 @@ SetCloudAccount sets CloudAccount field to given value.
 
 ### GetParent
 
-`func (o *CloudNetwork) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *CloudNetwork) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *CloudNetwork) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CloudNetwork) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *CloudNetwork) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *CloudNetwork) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -301,26 +300,6 @@ HasParent returns a boolean if a field has been set.
 `func (o *CloudNetwork) UnsetParent()`
 
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
-### GetPrefixes
-
-`func (o *CloudNetwork) GetPrefixes() []BulkWritableCableRequestStatus`
-
-GetPrefixes returns the Prefixes field if non-nil, zero value otherwise.
-
-### GetPrefixesOk
-
-`func (o *CloudNetwork) GetPrefixesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetPrefixesOk returns a tuple with the Prefixes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPrefixes
-
-`func (o *CloudNetwork) SetPrefixes(v []BulkWritableCableRequestStatus)`
-
-SetPrefixes sets Prefixes field to given value.
-
-
 ### GetCreated
 
 `func (o *CloudNetwork) GetCreated() time.Time`

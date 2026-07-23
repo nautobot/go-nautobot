@@ -13,10 +13,10 @@ Name | Type | Description | Notes
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Provider** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CircuitType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -279,20 +279,20 @@ HasCircuitType returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *PatchedBulkWritableCircuitRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableCircuitRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *PatchedBulkWritableCircuitRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableCircuitRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *PatchedBulkWritableCircuitRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableCircuitRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -364,20 +364,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableCircuitRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableCircuitRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableCircuitRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableCircuitRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableCircuitRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableCircuitRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

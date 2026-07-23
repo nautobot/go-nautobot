@@ -26,10 +26,10 @@ Name | Type | Description | Notes
 **BreakerPosition** | Pointer to **NullableInt32** | Starting circuit breaker position in panel | [optional] 
 **AvailablePower** | **int32** |  | [readonly] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Cable** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Cable** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PowerPanel** | [**BulkWritablePowerFeedRequestPowerPanel**](BulkWritablePowerFeedRequestPowerPanel.md) |  | 
 **DestinationPanel** | Pointer to [**NullableBulkWritablePowerFeedRequestDestinationPanel**](BulkWritablePowerFeedRequestDestinationPanel.md) |  | [optional] 
-**Rack** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Rack** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -623,20 +623,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetCable
 
-`func (o *PowerFeed) GetCable() BulkWritableCircuitRequestTenant`
+`func (o *PowerFeed) GetCable() ApprovalWorkflowUser`
 
 GetCable returns the Cable field if non-nil, zero value otherwise.
 
 ### GetCableOk
 
-`func (o *PowerFeed) GetCableOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerFeed) GetCableOk() (*ApprovalWorkflowUser, bool)`
 
 GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCable
 
-`func (o *PowerFeed) SetCable(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerFeed) SetCable(v ApprovalWorkflowUser)`
 
 SetCable sets Cable field to given value.
 
@@ -713,20 +713,20 @@ HasDestinationPanel returns a boolean if a field has been set.
 UnsetDestinationPanel ensures that no value is present for DestinationPanel, not even an explicit nil
 ### GetRack
 
-`func (o *PowerFeed) GetRack() BulkWritableCircuitRequestTenant`
+`func (o *PowerFeed) GetRack() ApprovalWorkflowUser`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *PowerFeed) GetRackOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerFeed) GetRackOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *PowerFeed) SetRack(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerFeed) SetRack(v ApprovalWorkflowUser)`
 
 SetRack sets Rack field to given value.
 

@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 **DnsName** | Pointer to **string** | Hostname or FQDN (not case-sensitive) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableIPAddressRequestParent**](BulkWritableIPAddressRequestParent.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **NatInside** | Pointer to [**NullableNATInside**](NATInside.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -205,20 +205,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *IPAddressRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *IPAddressRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *IPAddressRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddressRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *IPAddressRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddressRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -275,20 +275,20 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetTenant
 
-`func (o *IPAddressRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *IPAddressRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *IPAddressRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddressRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *IPAddressRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddressRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -395,20 +395,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *IPAddressRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *IPAddressRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *IPAddressRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *IPAddressRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *IPAddressRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *IPAddressRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

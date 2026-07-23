@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **DataSchema** | **interface{}** | A JSON Schema document which is used to validate a config context object. | 
 **OwnerObjectId** | Pointer to **NullableString** |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -224,20 +224,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableConfigContextSchemaRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableConfigContextSchemaRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableConfigContextSchemaRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableConfigContextSchemaRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableConfigContextSchemaRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableConfigContextSchemaRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

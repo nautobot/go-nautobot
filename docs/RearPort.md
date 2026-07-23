@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Positions** | Pointer to **int32** |  | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -326,20 +326,20 @@ HasPositions returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *RearPort) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *RearPort) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *RearPort) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RearPort) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *RearPort) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *RearPort) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -361,20 +361,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetModule
 
-`func (o *RearPort) GetModule() BulkWritableCircuitRequestTenant`
+`func (o *RearPort) GetModule() ApprovalWorkflowUser`
 
 GetModule returns the Module field if non-nil, zero value otherwise.
 
 ### GetModuleOk
 
-`func (o *RearPort) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RearPort) GetModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModule
 
-`func (o *RearPort) SetModule(v BulkWritableCircuitRequestTenant)`
+`func (o *RearPort) SetModule(v ApprovalWorkflowUser)`
 
 SetModule sets Module field to given value.
 

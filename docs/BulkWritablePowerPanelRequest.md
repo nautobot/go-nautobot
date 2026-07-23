@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**RackGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**RackGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -181,20 +181,20 @@ SetLocation sets Location field to given value.
 
 ### GetRackGroup
 
-`func (o *BulkWritablePowerPanelRequest) GetRackGroup() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritablePowerPanelRequest) GetRackGroup() ApprovalWorkflowUser`
 
 GetRackGroup returns the RackGroup field if non-nil, zero value otherwise.
 
 ### GetRackGroupOk
 
-`func (o *BulkWritablePowerPanelRequest) GetRackGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritablePowerPanelRequest) GetRackGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackGroupOk returns a tuple with the RackGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRackGroup
 
-`func (o *BulkWritablePowerPanelRequest) SetRackGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritablePowerPanelRequest) SetRackGroup(v ApprovalWorkflowUser)`
 
 SetRackGroup sets RackGroup field to given value.
 
@@ -241,20 +241,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritablePowerPanelRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritablePowerPanelRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritablePowerPanelRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritablePowerPanelRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritablePowerPanelRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritablePowerPanelRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

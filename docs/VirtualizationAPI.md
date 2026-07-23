@@ -79,7 +79,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -145,7 +145,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -213,7 +213,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -281,7 +281,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -349,7 +349,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -420,12 +420,12 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
+	clustersIsnull := true // bool |  (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -486,7 +486,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -512,7 +512,7 @@ Other parameters are passed through a pointer to a apiVirtualizationClusterGroup
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
+ **clustersIsnull** | **bool** |  | 
  **clustersN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -573,7 +573,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -610,7 +610,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -684,7 +684,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -693,7 +693,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -764,7 +764,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -838,14 +838,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cluster group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -877,7 +877,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -914,7 +914,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -988,7 +988,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1054,7 +1054,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1122,7 +1122,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1190,7 +1190,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1258,7 +1258,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1329,12 +1329,12 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
+	clustersIsnull := true // bool |  (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -1395,7 +1395,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1421,7 +1421,7 @@ Other parameters are passed through a pointer to a apiVirtualizationClusterTypes
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
+ **clustersIsnull** | **bool** |  | 
  **clustersN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -1482,7 +1482,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1519,7 +1519,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1593,7 +1593,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1602,7 +1602,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1636,7 +1636,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1673,7 +1673,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1747,14 +1747,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cluster type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1786,7 +1786,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1823,7 +1823,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1897,7 +1897,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1963,7 +1963,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2031,7 +2031,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2099,7 +2099,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2167,7 +2167,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2238,20 +2238,20 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
-	clusterGroupIsnull := true // bool | Parent group (ID or name) is null (optional)
+	clusterGroupIsnull := true // bool | Parent cluster group (ID or name) is null (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
-	clusterGroupId := []string{"Inner_example"} // []string | Parent group (ID) - Deprecated (use group filter) (optional)
-	clusterGroupIdIsnull := true // bool | Parent group (ID) - Deprecated (use group filter) is null (optional)
-	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Parent group (ID) - Deprecated (use group filter) (optional)
+	clusterGroupId := []string{"Inner_example"} // []string | Parent cluster group (ID) - Deprecated (use cluster_group filter) (optional)
+	clusterGroupIdIsnull := true // bool | Parent cluster group (ID) - Deprecated (use cluster_group filter) is null (optional)
+	clusterGroupIdN := []string{"Inner_example"} // []string | Exclude Parent cluster group (ID) - Deprecated (use cluster_group filter) (optional)
 	clusterType := []string{"Inner_example"} // []string |  (optional)
 	clusterTypeN := []string{"Inner_example"} // []string |  (optional)
-	clusterTypeId := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use type filter) (optional)
-	clusterTypeIdN := []string{"Inner_example"} // []string | Exclude Cluster type (ID) - Deprecated (use type filter) (optional)
+	clusterTypeId := []string{"Inner_example"} // []string | Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
+	clusterTypeIdN := []string{"Inner_example"} // []string | Exclude Cluster type (ID) - Deprecated (use cluster_type filter) (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
 	commentsIe := []string{"Inner_example"} // []string |  (optional)
@@ -2277,7 +2277,7 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
+	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
@@ -2330,10 +2330,10 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
-	virtualMachinesIsnull := true // bool | Virtual machines (name or ID) is null (optional)
+	virtualMachinesIsnull := true // bool |  (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2359,15 +2359,15 @@ Other parameters are passed through a pointer to a apiVirtualizationClustersList
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clusterGroup** | **[]string** |  | 
- **clusterGroupIsnull** | **bool** | Parent group (ID or name) is null | 
+ **clusterGroupIsnull** | **bool** | Parent cluster group (ID or name) is null | 
  **clusterGroupN** | **[]string** |  | 
- **clusterGroupId** | **[]string** | Parent group (ID) - Deprecated (use group filter) | 
- **clusterGroupIdIsnull** | **bool** | Parent group (ID) - Deprecated (use group filter) is null | 
- **clusterGroupIdN** | **[]string** | Exclude Parent group (ID) - Deprecated (use group filter) | 
+ **clusterGroupId** | **[]string** | Parent cluster group (ID) - Deprecated (use cluster_group filter) | 
+ **clusterGroupIdIsnull** | **bool** | Parent cluster group (ID) - Deprecated (use cluster_group filter) is null | 
+ **clusterGroupIdN** | **[]string** | Exclude Parent cluster group (ID) - Deprecated (use cluster_group filter) | 
  **clusterType** | **[]string** |  | 
  **clusterTypeN** | **[]string** |  | 
- **clusterTypeId** | **[]string** | Cluster type (ID) - Deprecated (use type filter) | 
- **clusterTypeIdN** | **[]string** | Exclude Cluster type (ID) - Deprecated (use type filter) | 
+ **clusterTypeId** | **[]string** | Cluster type (ID) - Deprecated (use cluster_type filter) | 
+ **clusterTypeIdN** | **[]string** | Exclude Cluster type (ID) - Deprecated (use cluster_type filter) | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
  **commentsIe** | **[]string** |  | 
@@ -2393,7 +2393,7 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** | Devices (name or ID) is null | 
+ **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
@@ -2446,10 +2446,10 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **virtualMachines** | **[]string** |  | 
- **virtualMachinesIsnull** | **bool** | Virtual machines (name or ID) is null | 
+ **virtualMachinesIsnull** | **bool** |  | 
  **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2486,7 +2486,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2560,7 +2560,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2569,7 +2569,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2603,7 +2603,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2640,7 +2640,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2714,14 +2714,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cluster.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2753,7 +2753,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2790,7 +2790,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2864,7 +2864,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2930,7 +2930,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2998,7 +2998,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3066,7 +3066,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3134,7 +3134,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3204,18 +3204,18 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	bridge := []string{"Inner_example"} // []string |  (optional)
-	bridgeIsnull := true // bool | Bridge interface (name or ID) is null (optional)
+	bridgeIsnull := true // bool |  (optional)
 	bridgeN := []string{"Inner_example"} // []string |  (optional)
 	bridgedInterfaces := []string{"Inner_example"} // []string |  (optional)
-	bridgedInterfacesIsnull := true // bool | Bridged interfaces (name or ID) is null (optional)
+	bridgedInterfacesIsnull := true // bool |  (optional)
 	bridgedInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	childInterfaces := []string{"Inner_example"} // []string |  (optional)
-	childInterfacesIsnull := true // bool | Child interfaces (name or ID) is null (optional)
+	childInterfacesIsnull := true // bool |  (optional)
 	childInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	cluster := []string{"Inner_example"} // []string |  (optional)
 	clusterN := []string{"Inner_example"} // []string |  (optional)
@@ -3264,7 +3264,7 @@ func main() {
 	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
 	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
 	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
-	mode := []string{"Inner_example"} // []string |  (optional)
+	mode := []openapiclient.DcimInterfacesListModeParameterInner{openapiclient.dcim_interfaces_list_mode_parameter_inner("access")} // []DcimInterfacesListModeParameterInner |  (optional)
 	modeIc := []string{"Inner_example"} // []string |  (optional)
 	modeIe := []string{"Inner_example"} // []string |  (optional)
 	modeIew := []string{"Inner_example"} // []string |  (optional)
@@ -3301,7 +3301,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parentInterface := []string{"Inner_example"} // []string |  (optional)
-	parentInterfaceIsnull := true // bool | Parent interface (name or ID) is null (optional)
+	parentInterfaceIsnull := true // bool |  (optional)
 	parentInterfaceN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
@@ -3319,7 +3319,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	untaggedVlan := []string{"Inner_example"} // []string |  (optional)
-	untaggedVlanIsnull := true // bool | Untagged VLAN (VID or ID) is null (optional)
+	untaggedVlanIsnull := true // bool |  (optional)
 	untaggedVlanN := []string{"Inner_example"} // []string |  (optional)
 	virtualMachine := []string{"Inner_example"} // []string |  (optional)
 	virtualMachineN := []string{"Inner_example"} // []string |  (optional)
@@ -3327,7 +3327,7 @@ func main() {
 	virtualMachineIdN := []string{"Inner_example"} // []string | Exclude Virtual machine (ID) - Deprecated (use virtual_machine filter) (optional)
 	vlanId := "vlanId_example" // string | Any assigned VLAN (tagged or untagged) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3353,13 +3353,13 @@ Other parameters are passed through a pointer to a apiVirtualizationInterfacesLi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **bridge** | **[]string** |  | 
- **bridgeIsnull** | **bool** | Bridge interface (name or ID) is null | 
+ **bridgeIsnull** | **bool** |  | 
  **bridgeN** | **[]string** |  | 
  **bridgedInterfaces** | **[]string** |  | 
- **bridgedInterfacesIsnull** | **bool** | Bridged interfaces (name or ID) is null | 
+ **bridgedInterfacesIsnull** | **bool** |  | 
  **bridgedInterfacesN** | **[]string** |  | 
  **childInterfaces** | **[]string** |  | 
- **childInterfacesIsnull** | **bool** | Child interfaces (name or ID) is null | 
+ **childInterfacesIsnull** | **bool** |  | 
  **childInterfacesN** | **[]string** |  | 
  **cluster** | **[]string** |  | 
  **clusterN** | **[]string** |  | 
@@ -3408,7 +3408,7 @@ Name | Type | Description  | Notes
  **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
  **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
  **macAddressRe** | **[]string** | MAC address matches regex | 
- **mode** | **[]string** |  | 
+ **mode** | [**[]DcimInterfacesListModeParameterInner**](DcimInterfacesListModeParameterInner.md) |  | 
  **modeIc** | **[]string** |  | 
  **modeIe** | **[]string** |  | 
  **modeIew** | **[]string** |  | 
@@ -3445,7 +3445,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parentInterface** | **[]string** |  | 
- **parentInterfaceIsnull** | **bool** | Parent interface (name or ID) is null | 
+ **parentInterfaceIsnull** | **bool** |  | 
  **parentInterfaceN** | **[]string** |  | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
@@ -3463,7 +3463,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **untaggedVlan** | **[]string** |  | 
- **untaggedVlanIsnull** | **bool** | Untagged VLAN (VID or ID) is null | 
+ **untaggedVlanIsnull** | **bool** |  | 
  **untaggedVlanN** | **[]string** |  | 
  **virtualMachine** | **[]string** |  | 
  **virtualMachineN** | **[]string** |  | 
@@ -3471,7 +3471,7 @@ Name | Type | Description  | Notes
  **virtualMachineIdN** | **[]string** | Exclude Virtual machine (ID) - Deprecated (use virtual_machine filter) | 
  **vlanId** | **string** | Any assigned VLAN (tagged or untagged) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3508,7 +3508,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3582,7 +3582,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3591,7 +3591,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3625,7 +3625,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3662,7 +3662,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3736,14 +3736,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VM interface.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3775,7 +3775,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3812,7 +3812,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3886,7 +3886,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3952,7 +3952,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4020,7 +4020,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4088,7 +4088,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4156,7 +4156,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4211,7 +4211,7 @@ Name | Type | Description  | Notes
 
 ## VirtualizationVirtualMachinesList
 
-> PaginatedVirtualMachineList VirtualizationVirtualMachinesList(ctx).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedVirtualMachineList VirtualizationVirtualMachinesList(ctx).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4227,14 +4227,14 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	cluster := []string{"Inner_example"} // []string |  (optional)
 	clusterN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroup := []string{"Inner_example"} // []string |  (optional)
-	clusterGroupIsnull := true // bool | Cluster group (ID or name) is null (optional)
+	clusterGroupIsnull := true // bool |  (optional)
 	clusterGroupN := []string{"Inner_example"} // []string |  (optional)
 	clusterGroupId := []string{"Inner_example"} // []string | Cluster group (ID) - Deprecated (use cluster_group filter) (optional)
 	clusterGroupIdIsnull := true // bool | Cluster group (ID) - Deprecated (use cluster_group filter) is null (optional)
@@ -4288,7 +4288,7 @@ func main() {
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	interfaces := []string{"Inner_example"} // []string |  (optional)
-	interfacesIsnull := true // bool | Interfaces (name or ID) is null (optional)
+	interfacesIsnull := true // bool |  (optional)
 	interfacesN := []string{"Inner_example"} // []string |  (optional)
 	ipAddresses := []string{"Inner_example"} // []string | IP addresses (address or ID) (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -4346,7 +4346,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool | Platform (ID or name) is null (optional)
+	platformIsnull := true // bool |  (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	platformId := []*string{"Inner_example"} // []*string | Platform (ID) - Deprecated (use platform filter) (optional)
 	platformIdIsnull := true // bool | Platform (ID) - Deprecated (use platform filter) is null (optional)
@@ -4358,12 +4358,12 @@ func main() {
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
 	roleN := []string{"Inner_example"} // []string |  (optional)
 	services := []string{"Inner_example"} // []string |  (optional)
-	servicesIsnull := true // bool | Services (name or ID) is null (optional)
+	servicesIsnull := true // bool |  (optional)
 	servicesN := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
+	softwareVersionIsnull := true // bool |  (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -4390,12 +4390,15 @@ func main() {
 	vcpusLt := []int32{int32(123)} // []int32 |  (optional)
 	vcpusLte := []int32{int32(123)} // []int32 |  (optional)
 	vcpusN := []int32{int32(123)} // []int32 |  (optional)
+	vrfs := []string{"Inner_example"} // []string |  (optional)
+	vrfsIsnull := true // bool | VRFs (ID or RD) is null (optional)
+	vrfsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VirtualizationAPI.VirtualizationVirtualMachinesList(context.Background()).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.VirtualizationAPI.VirtualizationVirtualMachinesList(context.Background()).Cluster(cluster).ClusterN(clusterN).ClusterGroup(clusterGroup).ClusterGroupIsnull(clusterGroupIsnull).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdIsnull(clusterGroupIdIsnull).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).ClusterType(clusterType).ClusterTypeN(clusterTypeN).ClusterTypeId(clusterTypeId).ClusterTypeIdN(clusterTypeIdN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Disk(disk).DiskGt(diskGt).DiskGte(diskGte).DiskIsnull(diskIsnull).DiskLt(diskLt).DiskLte(diskLte).DiskN(diskN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasPrimaryIp(hasPrimaryIp).HasServices(hasServices).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Memory(memory).MemoryGt(memoryGt).MemoryGte(memoryGte).MemoryIsnull(memoryIsnull).MemoryLt(memoryLt).MemoryLte(memoryLte).MemoryN(memoryN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).PlatformId(platformId).PlatformIdIsnull(platformIdIsnull).PlatformIdN(platformIdN).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Services(services).ServicesIsnull(servicesIsnull).ServicesN(servicesN).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Vcpus(vcpus).VcpusGt(vcpusGt).VcpusGte(vcpusGte).VcpusIsnull(vcpusIsnull).VcpusLt(vcpusLt).VcpusLte(vcpusLte).VcpusN(vcpusN).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VirtualizationAPI.VirtualizationVirtualMachinesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4419,7 +4422,7 @@ Name | Type | Description  | Notes
  **cluster** | **[]string** |  | 
  **clusterN** | **[]string** |  | 
  **clusterGroup** | **[]string** |  | 
- **clusterGroupIsnull** | **bool** | Cluster group (ID or name) is null | 
+ **clusterGroupIsnull** | **bool** |  | 
  **clusterGroupN** | **[]string** |  | 
  **clusterGroupId** | **[]string** | Cluster group (ID) - Deprecated (use cluster_group filter) | 
  **clusterGroupIdIsnull** | **bool** | Cluster group (ID) - Deprecated (use cluster_group filter) is null | 
@@ -4473,7 +4476,7 @@ Name | Type | Description  | Notes
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **interfaces** | **[]string** |  | 
- **interfacesIsnull** | **bool** | Interfaces (name or ID) is null | 
+ **interfacesIsnull** | **bool** |  | 
  **interfacesN** | **[]string** |  | 
  **ipAddresses** | **[]string** | IP addresses (address or ID) | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
@@ -4531,7 +4534,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** | Platform (ID or name) is null | 
+ **platformIsnull** | **bool** |  | 
  **platformN** | **[]string** |  | 
  **platformId** | **[]string** | Platform (ID) - Deprecated (use platform filter) | 
  **platformIdIsnull** | **bool** | Platform (ID) - Deprecated (use platform filter) is null | 
@@ -4543,12 +4546,12 @@ Name | Type | Description  | Notes
  **roleIsnull** | **bool** | Role (name or ID) is null | 
  **roleN** | **[]string** |  | 
  **services** | **[]string** |  | 
- **servicesIsnull** | **bool** | Services (name or ID) is null | 
+ **servicesIsnull** | **bool** |  | 
  **servicesN** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
+ **softwareVersionIsnull** | **bool** |  | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
@@ -4575,8 +4578,11 @@ Name | Type | Description  | Notes
  **vcpusLt** | **[]int32** |  | 
  **vcpusLte** | **[]int32** |  | 
  **vcpusN** | **[]int32** |  | 
+ **vrfs** | **[]string** |  | 
+ **vrfsIsnull** | **bool** | VRFs (ID or RD) is null | 
+ **vrfsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4613,7 +4619,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4687,7 +4693,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4696,7 +4702,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4730,7 +4736,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4767,7 +4773,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4841,14 +4847,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual machine.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4880,7 +4886,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4917,7 +4923,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {

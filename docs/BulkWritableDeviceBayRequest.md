@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**InstalledDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**InstalledDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -145,20 +145,20 @@ SetDevice sets Device field to given value.
 
 ### GetInstalledDevice
 
-`func (o *BulkWritableDeviceBayRequest) GetInstalledDevice() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableDeviceBayRequest) GetInstalledDevice() ApprovalWorkflowUser`
 
 GetInstalledDevice returns the InstalledDevice field if non-nil, zero value otherwise.
 
 ### GetInstalledDeviceOk
 
-`func (o *BulkWritableDeviceBayRequest) GetInstalledDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableDeviceBayRequest) GetInstalledDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetInstalledDeviceOk returns a tuple with the InstalledDevice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInstalledDevice
 
-`func (o *BulkWritableDeviceBayRequest) SetInstalledDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableDeviceBayRequest) SetInstalledDevice(v ApprovalWorkflowUser)`
 
 SetInstalledDevice sets InstalledDevice field to given value.
 
@@ -205,20 +205,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableDeviceBayRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableDeviceBayRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableDeviceBayRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableDeviceBayRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableDeviceBayRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableDeviceBayRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

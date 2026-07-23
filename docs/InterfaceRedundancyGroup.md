@@ -9,14 +9,13 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**Protocol** | [**InterfaceRedundancyGroupProtocol**](InterfaceRedundancyGroupProtocol.md) |  | 
+**Protocol** | Pointer to [**InterfaceRedundancyGroupProtocol**](InterfaceRedundancyGroupProtocol.md) |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **ProtocolGroupId** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VirtualIp** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Interfaces** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VirtualIp** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **time.Time** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -27,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewInterfaceRedundancyGroup
 
-`func NewInterfaceRedundancyGroup(objectType string, display string, url string, naturalSlug string, protocol InterfaceRedundancyGroupProtocol, name string, status BulkWritableCableRequestStatus, interfaces []BulkWritableCableRequestStatus, created time.Time, lastUpdated NullableTime, notesUrl string, ) *InterfaceRedundancyGroup`
+`func NewInterfaceRedundancyGroup(objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, created time.Time, lastUpdated NullableTime, notesUrl string, ) *InterfaceRedundancyGroup`
 
 NewInterfaceRedundancyGroup instantiates a new InterfaceRedundancyGroup object
 This constructor will assign default values to properties that have it defined,
@@ -166,6 +165,11 @@ and a boolean to check if the value has been set.
 
 SetProtocol sets Protocol field to given value.
 
+### HasProtocol
+
+`func (o *InterfaceRedundancyGroup) HasProtocol() bool`
+
+HasProtocol returns a boolean if a field has been set.
 
 ### GetName
 
@@ -259,20 +263,20 @@ SetStatus sets Status field to given value.
 
 ### GetSecretsGroup
 
-`func (o *InterfaceRedundancyGroup) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *InterfaceRedundancyGroup) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *InterfaceRedundancyGroup) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InterfaceRedundancyGroup) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *InterfaceRedundancyGroup) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *InterfaceRedundancyGroup) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -294,20 +298,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetVirtualIp
 
-`func (o *InterfaceRedundancyGroup) GetVirtualIp() BulkWritableCircuitRequestTenant`
+`func (o *InterfaceRedundancyGroup) GetVirtualIp() ApprovalWorkflowUser`
 
 GetVirtualIp returns the VirtualIp field if non-nil, zero value otherwise.
 
 ### GetVirtualIpOk
 
-`func (o *InterfaceRedundancyGroup) GetVirtualIpOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InterfaceRedundancyGroup) GetVirtualIpOk() (*ApprovalWorkflowUser, bool)`
 
 GetVirtualIpOk returns a tuple with the VirtualIp field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualIp
 
-`func (o *InterfaceRedundancyGroup) SetVirtualIp(v BulkWritableCircuitRequestTenant)`
+`func (o *InterfaceRedundancyGroup) SetVirtualIp(v ApprovalWorkflowUser)`
 
 SetVirtualIp sets VirtualIp field to given value.
 
@@ -327,26 +331,6 @@ HasVirtualIp returns a boolean if a field has been set.
 `func (o *InterfaceRedundancyGroup) UnsetVirtualIp()`
 
 UnsetVirtualIp ensures that no value is present for VirtualIp, not even an explicit nil
-### GetInterfaces
-
-`func (o *InterfaceRedundancyGroup) GetInterfaces() []BulkWritableCableRequestStatus`
-
-GetInterfaces returns the Interfaces field if non-nil, zero value otherwise.
-
-### GetInterfacesOk
-
-`func (o *InterfaceRedundancyGroup) GetInterfacesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetInterfacesOk returns a tuple with the Interfaces field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetInterfaces
-
-`func (o *InterfaceRedundancyGroup) SetInterfaces(v []BulkWritableCableRequestStatus)`
-
-SetInterfaces sets Interfaces field to given value.
-
-
 ### GetCreated
 
 `func (o *InterfaceRedundancyGroup) GetCreated() time.Time`

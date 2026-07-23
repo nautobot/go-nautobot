@@ -7,12 +7,12 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **AssociatedObjectType** | **string** |  | 
 **AssociatedObjectId** | **string** |  | 
-**Contact** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Team** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -100,20 +100,20 @@ SetAssociatedObjectId sets AssociatedObjectId field to given value.
 
 ### GetContact
 
-`func (o *ContactAssociationRequest) GetContact() BulkWritableCircuitRequestTenant`
+`func (o *ContactAssociationRequest) GetContact() ApprovalWorkflowUser`
 
 GetContact returns the Contact field if non-nil, zero value otherwise.
 
 ### GetContactOk
 
-`func (o *ContactAssociationRequest) GetContactOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ContactAssociationRequest) GetContactOk() (*ApprovalWorkflowUser, bool)`
 
 GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContact
 
-`func (o *ContactAssociationRequest) SetContact(v BulkWritableCircuitRequestTenant)`
+`func (o *ContactAssociationRequest) SetContact(v ApprovalWorkflowUser)`
 
 SetContact sets Contact field to given value.
 
@@ -135,20 +135,20 @@ HasContact returns a boolean if a field has been set.
 UnsetContact ensures that no value is present for Contact, not even an explicit nil
 ### GetTeam
 
-`func (o *ContactAssociationRequest) GetTeam() BulkWritableCircuitRequestTenant`
+`func (o *ContactAssociationRequest) GetTeam() ApprovalWorkflowUser`
 
 GetTeam returns the Team field if non-nil, zero value otherwise.
 
 ### GetTeamOk
 
-`func (o *ContactAssociationRequest) GetTeamOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ContactAssociationRequest) GetTeamOk() (*ApprovalWorkflowUser, bool)`
 
 GetTeamOk returns a tuple with the Team field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTeam
 
-`func (o *ContactAssociationRequest) SetTeam(v BulkWritableCircuitRequestTenant)`
+`func (o *ContactAssociationRequest) SetTeam(v ApprovalWorkflowUser)`
 
 SetTeam sets Team field to given value.
 
@@ -235,20 +235,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *ContactAssociationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *ContactAssociationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *ContactAssociationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *ContactAssociationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *ContactAssociationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *ContactAssociationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

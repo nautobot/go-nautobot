@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Authentication** | [**AuthenticationEnum**](AuthenticationEnum.md) |  | 
 **Hidden** | Pointer to **bool** |  | [optional] 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -305,20 +305,20 @@ HasHidden returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
-`func (o *WirelessNetwork) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *WirelessNetwork) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *WirelessNetwork) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WirelessNetwork) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *WirelessNetwork) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *WirelessNetwork) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -340,20 +340,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetTenant
 
-`func (o *WirelessNetwork) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *WirelessNetwork) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *WirelessNetwork) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WirelessNetwork) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *WirelessNetwork) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *WirelessNetwork) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

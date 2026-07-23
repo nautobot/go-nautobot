@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Range** | Pointer to **string** | Permitted VID range(s) as comma-separated list, default &#39;1-4094&#39; if left blank. | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -241,20 +241,20 @@ HasRange returns a boolean if a field has been set.
 
 ### GetLocation
 
-`func (o *VLANGroup) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *VLANGroup) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *VLANGroup) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VLANGroup) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *VLANGroup) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *VLANGroup) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 

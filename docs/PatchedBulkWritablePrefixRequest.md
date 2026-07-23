@@ -11,15 +11,15 @@ Name | Type | Description | Notes
 **DateAllocated** | Pointer to **NullableTime** | Date this prefix was allocated to an RIR, reserved in IPAM, etc. | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritablePrefixRequestParent**](BulkWritablePrefixRequestParent.md) |  | [optional] 
 **Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Vlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Vlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Rir** | Pointer to [**NullableBulkWritablePrefixRequestRir**](BulkWritablePrefixRequestRir.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -232,20 +232,20 @@ HasStatus returns a boolean if a field has been set.
 
 ### GetRole
 
-`func (o *PatchedBulkWritablePrefixRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritablePrefixRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *PatchedBulkWritablePrefixRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritablePrefixRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *PatchedBulkWritablePrefixRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritablePrefixRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -327,20 +327,20 @@ HasNamespace returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *PatchedBulkWritablePrefixRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritablePrefixRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *PatchedBulkWritablePrefixRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritablePrefixRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *PatchedBulkWritablePrefixRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritablePrefixRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -362,20 +362,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetVlan
 
-`func (o *PatchedBulkWritablePrefixRequest) GetVlan() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritablePrefixRequest) GetVlan() ApprovalWorkflowUser`
 
 GetVlan returns the Vlan field if non-nil, zero value otherwise.
 
 ### GetVlanOk
 
-`func (o *PatchedBulkWritablePrefixRequest) GetVlanOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritablePrefixRequest) GetVlanOk() (*ApprovalWorkflowUser, bool)`
 
 GetVlanOk returns a tuple with the Vlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVlan
 
-`func (o *PatchedBulkWritablePrefixRequest) SetVlan(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritablePrefixRequest) SetVlan(v ApprovalWorkflowUser)`
 
 SetVlan sets Vlan field to given value.
 
@@ -482,20 +482,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritablePrefixRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritablePrefixRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritablePrefixRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritablePrefixRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritablePrefixRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritablePrefixRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

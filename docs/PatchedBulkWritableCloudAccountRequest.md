@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **AccountNumber** | Pointer to **string** | The account identifier of this Cloud Account. | [optional] 
 **Provider** | Pointer to [**BulkWritableCloudAccountRequestProvider**](BulkWritableCloudAccountRequestProvider.md) |  | [optional] 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -155,20 +155,20 @@ HasProvider returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
-`func (o *PatchedBulkWritableCloudAccountRequest) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableCloudAccountRequest) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *PatchedBulkWritableCloudAccountRequest) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableCloudAccountRequest) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *PatchedBulkWritableCloudAccountRequest) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableCloudAccountRequest) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -215,20 +215,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableCloudAccountRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableCloudAccountRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableCloudAccountRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableCloudAccountRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableCloudAccountRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableCloudAccountRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

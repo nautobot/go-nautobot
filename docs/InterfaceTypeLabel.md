@@ -9,6 +9,8 @@
 
 * `LINK_AGGREGATION_GROUP__LAG` (value: `"Link Aggregation Group (LAG)"`)
 
+* `TUNNEL` (value: `"Tunnel"`)
+
 * `_100_BASE_FX__10_100_ME_FIBER` (value: `"100BASE-FX (10/100ME FIBER)"`)
 
 * `_100_BASE_LFX__10_100_ME_FIBER` (value: `"100BASE-LFX (10/100ME FIBER)"`)

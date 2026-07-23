@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**InstalledDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**InstalledDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -236,20 +236,20 @@ SetDevice sets Device field to given value.
 
 ### GetInstalledDevice
 
-`func (o *DeviceBay) GetInstalledDevice() BulkWritableCircuitRequestTenant`
+`func (o *DeviceBay) GetInstalledDevice() ApprovalWorkflowUser`
 
 GetInstalledDevice returns the InstalledDevice field if non-nil, zero value otherwise.
 
 ### GetInstalledDeviceOk
 
-`func (o *DeviceBay) GetInstalledDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *DeviceBay) GetInstalledDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetInstalledDeviceOk returns a tuple with the InstalledDevice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInstalledDevice
 
-`func (o *DeviceBay) SetInstalledDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *DeviceBay) SetInstalledDevice(v ApprovalWorkflowUser)`
 
 SetInstalledDevice sets InstalledDevice field to given value.
 

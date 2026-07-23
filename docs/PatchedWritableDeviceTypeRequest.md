@@ -11,12 +11,12 @@ Name | Type | Description | Notes
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **UHeight** | Pointer to **int32** |  | [optional] 
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
-**SubdeviceRole** | Pointer to [**ParentChildStatus**](ParentChildStatus.md) |  | [optional] 
+**SubdeviceRole** | Pointer to [**ParentChildStatus1**](ParentChildStatus1.md) |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**DeviceFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -215,20 +215,20 @@ HasIsFullDepth returns a boolean if a field has been set.
 
 ### GetSubdeviceRole
 
-`func (o *PatchedWritableDeviceTypeRequest) GetSubdeviceRole() ParentChildStatus`
+`func (o *PatchedWritableDeviceTypeRequest) GetSubdeviceRole() ParentChildStatus1`
 
 GetSubdeviceRole returns the SubdeviceRole field if non-nil, zero value otherwise.
 
 ### GetSubdeviceRoleOk
 
-`func (o *PatchedWritableDeviceTypeRequest) GetSubdeviceRoleOk() (*ParentChildStatus, bool)`
+`func (o *PatchedWritableDeviceTypeRequest) GetSubdeviceRoleOk() (*ParentChildStatus1, bool)`
 
 GetSubdeviceRoleOk returns a tuple with the SubdeviceRole field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSubdeviceRole
 
-`func (o *PatchedWritableDeviceTypeRequest) SetSubdeviceRole(v ParentChildStatus)`
+`func (o *PatchedWritableDeviceTypeRequest) SetSubdeviceRole(v ParentChildStatus1)`
 
 SetSubdeviceRole sets SubdeviceRole field to given value.
 
@@ -290,20 +290,20 @@ HasManufacturer returns a boolean if a field has been set.
 
 ### GetDeviceFamily
 
-`func (o *PatchedWritableDeviceTypeRequest) GetDeviceFamily() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceTypeRequest) GetDeviceFamily() ApprovalWorkflowUser`
 
 GetDeviceFamily returns the DeviceFamily field if non-nil, zero value otherwise.
 
 ### GetDeviceFamilyOk
 
-`func (o *PatchedWritableDeviceTypeRequest) GetDeviceFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceTypeRequest) GetDeviceFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceFamilyOk returns a tuple with the DeviceFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamily
 
-`func (o *PatchedWritableDeviceTypeRequest) SetDeviceFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceTypeRequest) SetDeviceFamily(v ApprovalWorkflowUser)`
 
 SetDeviceFamily sets DeviceFamily field to given value.
 
@@ -350,20 +350,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedWritableDeviceTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedWritableDeviceTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedWritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedWritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedWritableDeviceTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedWritableDeviceTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

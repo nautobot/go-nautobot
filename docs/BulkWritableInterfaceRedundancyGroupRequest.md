@@ -5,22 +5,22 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**Protocol** | [**InterfaceRedundancyGroupProtocolChoices**](InterfaceRedundancyGroupProtocolChoices.md) |  | 
+**Protocol** | Pointer to [**InterfaceRedundancyGroupProtocolChoices**](InterfaceRedundancyGroupProtocolChoices.md) |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **ProtocolGroupId** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VirtualIp** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VirtualIp** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableInterfaceRedundancyGroupRequest
 
-`func NewBulkWritableInterfaceRedundancyGroupRequest(id string, protocol InterfaceRedundancyGroupProtocolChoices, name string, status BulkWritableCableRequestStatus, ) *BulkWritableInterfaceRedundancyGroupRequest`
+`func NewBulkWritableInterfaceRedundancyGroupRequest(id string, name string, status BulkWritableCableRequestStatus, ) *BulkWritableInterfaceRedundancyGroupRequest`
 
 NewBulkWritableInterfaceRedundancyGroupRequest instantiates a new BulkWritableInterfaceRedundancyGroupRequest object
 This constructor will assign default values to properties that have it defined,
@@ -74,6 +74,11 @@ and a boolean to check if the value has been set.
 
 SetProtocol sets Protocol field to given value.
 
+### HasProtocol
+
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) HasProtocol() bool`
+
+HasProtocol returns a boolean if a field has been set.
 
 ### GetName
 
@@ -167,20 +172,20 @@ SetStatus sets Status field to given value.
 
 ### GetSecretsGroup
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -202,20 +207,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetVirtualIp
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetVirtualIp() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetVirtualIp() ApprovalWorkflowUser`
 
 GetVirtualIp returns the VirtualIp field if non-nil, zero value otherwise.
 
 ### GetVirtualIpOk
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetVirtualIpOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetVirtualIpOk() (*ApprovalWorkflowUser, bool)`
 
 GetVirtualIpOk returns a tuple with the VirtualIp field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualIp
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetVirtualIp(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetVirtualIp(v ApprovalWorkflowUser)`
 
 SetVirtualIp sets VirtualIp field to given value.
 
@@ -262,20 +267,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableInterfaceRedundancyGroupRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

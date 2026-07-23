@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **CloudResourceType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CloudAccount** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -191,20 +191,20 @@ HasCloudAccount returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableCloudNetworkRequest) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableCloudNetworkRequest) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableCloudNetworkRequest) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -251,20 +251,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableCloudNetworkRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableCloudNetworkRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableCloudNetworkRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableCloudNetworkRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

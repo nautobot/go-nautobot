@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CloudAccount** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -181,20 +181,20 @@ SetCloudAccount sets CloudAccount field to given value.
 
 ### GetParent
 
-`func (o *CloudNetworkRequest) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *CloudNetworkRequest) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *CloudNetworkRequest) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CloudNetworkRequest) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *CloudNetworkRequest) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *CloudNetworkRequest) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -241,20 +241,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *CloudNetworkRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *CloudNetworkRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *CloudNetworkRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *CloudNetworkRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *CloudNetworkRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *CloudNetworkRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

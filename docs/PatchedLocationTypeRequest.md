@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Nestable** | Pointer to **bool** | Allow Locations of this type to be parents/children of other Locations of this same type | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -159,20 +159,20 @@ HasNestable returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *PatchedLocationTypeRequest) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *PatchedLocationTypeRequest) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *PatchedLocationTypeRequest) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedLocationTypeRequest) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *PatchedLocationTypeRequest) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedLocationTypeRequest) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -219,20 +219,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedLocationTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedLocationTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedLocationTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedLocationTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedLocationTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedLocationTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

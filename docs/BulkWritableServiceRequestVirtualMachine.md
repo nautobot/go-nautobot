@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | Pointer to [**BulkWritableCableRequestStatusId**](BulkWritableCableRequestStatusId.md) |  | [optional] 
+**Id** | Pointer to [**ApprovalWorkflowApprovalWorkflowDefinitionId**](ApprovalWorkflowApprovalWorkflowDefinitionId.md) |  | [optional] 
 **ObjectType** | Pointer to **string** |  | [optional] 
 **Url** | Pointer to **string** |  | [optional] 
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
-`func (o *BulkWritableServiceRequestVirtualMachine) GetId() BulkWritableCableRequestStatusId`
+`func (o *BulkWritableServiceRequestVirtualMachine) GetId() ApprovalWorkflowApprovalWorkflowDefinitionId`
 
 GetId returns the Id field if non-nil, zero value otherwise.
 
 ### GetIdOk
 
-`func (o *BulkWritableServiceRequestVirtualMachine) GetIdOk() (*BulkWritableCableRequestStatusId, bool)`
+`func (o *BulkWritableServiceRequestVirtualMachine) GetIdOk() (*ApprovalWorkflowApprovalWorkflowDefinitionId, bool)`
 
 GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetId
 
-`func (o *BulkWritableServiceRequestVirtualMachine) SetId(v BulkWritableCableRequestStatusId)`
+`func (o *BulkWritableServiceRequestVirtualMachine) SetId(v ApprovalWorkflowApprovalWorkflowDefinitionId)`
 
 SetId sets Id field to given value.
 

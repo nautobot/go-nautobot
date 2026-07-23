@@ -24,10 +24,10 @@ Name | Type | Description | Notes
 **OuterDepth** | Pointer to **NullableInt32** | Outer dimension of rack (depth) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **RackGroup** | Pointer to [**NullableBulkWritableRackRequestRackGroup**](BulkWritableRackRequestRackGroup.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -565,20 +565,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *Rack) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *Rack) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *Rack) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Rack) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *Rack) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *Rack) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -655,20 +655,20 @@ HasRackGroup returns a boolean if a field has been set.
 UnsetRackGroup ensures that no value is present for RackGroup, not even an explicit nil
 ### GetTenant
 
-`func (o *Rack) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Rack) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Rack) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Rack) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Rack) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Rack) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

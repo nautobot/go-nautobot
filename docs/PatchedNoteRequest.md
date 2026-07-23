@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **AssignedObjectType** | Pointer to **string** |  | [optional] 
 **AssignedObjectId** | Pointer to **string** |  | [optional] 
 **Note** | Pointer to **string** |  | [optional] 
-**User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -131,20 +131,20 @@ HasNote returns a boolean if a field has been set.
 
 ### GetUser
 
-`func (o *PatchedNoteRequest) GetUser() BulkWritableCircuitRequestTenant`
+`func (o *PatchedNoteRequest) GetUser() ApprovalWorkflowUser`
 
 GetUser returns the User field if non-nil, zero value otherwise.
 
 ### GetUserOk
 
-`func (o *PatchedNoteRequest) GetUserOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedNoteRequest) GetUserOk() (*ApprovalWorkflowUser, bool)`
 
 GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUser
 
-`func (o *PatchedNoteRequest) SetUser(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedNoteRequest) SetUser(v ApprovalWorkflowUser)`
 
 SetUser sets User field to given value.
 

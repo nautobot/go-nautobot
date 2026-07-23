@@ -18,25 +18,23 @@ Name | Type | Description | Notes
 **DateAllocated** | Pointer to **NullableTime** | Date this prefix was allocated to an RIR, reserved in IPAM, etc. | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritablePrefixRequestParent**](BulkWritablePrefixRequestParent.md) |  | [optional] 
 **Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Vlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Vlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Rir** | Pointer to [**NullableBulkWritablePrefixRequestRir**](BulkWritablePrefixRequestRir.md) |  | [optional] 
-**Locations** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Vrfs** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 
 ## Methods
 
 ### NewPrefix
 
-`func NewPrefix(objectType string, display string, url string, naturalSlug string, prefix string, network string, broadcast string, prefixLength int32, ipVersion int32, status BulkWritableCableRequestStatus, locations []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, vrfs []BulkWritableCableRequestStatus, ) *Prefix`
+`func NewPrefix(objectType string, display string, url string, naturalSlug string, prefix string, network string, broadcast string, prefixLength int32, ipVersion int32, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Prefix`
 
 NewPrefix instantiates a new Prefix object
 This constructor will assign default values to properties that have it defined,
@@ -363,20 +361,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *Prefix) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *Prefix) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *Prefix) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Prefix) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *Prefix) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *Prefix) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -458,20 +456,20 @@ HasNamespace returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *Prefix) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Prefix) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Prefix) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Prefix) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Prefix) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Prefix) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -493,20 +491,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetVlan
 
-`func (o *Prefix) GetVlan() BulkWritableCircuitRequestTenant`
+`func (o *Prefix) GetVlan() ApprovalWorkflowUser`
 
 GetVlan returns the Vlan field if non-nil, zero value otherwise.
 
 ### GetVlanOk
 
-`func (o *Prefix) GetVlanOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Prefix) GetVlanOk() (*ApprovalWorkflowUser, bool)`
 
 GetVlanOk returns a tuple with the Vlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVlan
 
-`func (o *Prefix) SetVlan(v BulkWritableCircuitRequestTenant)`
+`func (o *Prefix) SetVlan(v ApprovalWorkflowUser)`
 
 SetVlan sets Vlan field to given value.
 
@@ -561,26 +559,6 @@ HasRir returns a boolean if a field has been set.
 `func (o *Prefix) UnsetRir()`
 
 UnsetRir ensures that no value is present for Rir, not even an explicit nil
-### GetLocations
-
-`func (o *Prefix) GetLocations() []BulkWritableCableRequestStatus`
-
-GetLocations returns the Locations field if non-nil, zero value otherwise.
-
-### GetLocationsOk
-
-`func (o *Prefix) GetLocationsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetLocationsOk returns a tuple with the Locations field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLocations
-
-`func (o *Prefix) SetLocations(v []BulkWritableCableRequestStatus)`
-
-SetLocations sets Locations field to given value.
-
-
 ### GetCreated
 
 `func (o *Prefix) GetCreated() time.Time`
@@ -710,26 +688,6 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *Prefix) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
-
-### GetVrfs
-
-`func (o *Prefix) GetVrfs() []BulkWritableCableRequestStatus`
-
-GetVrfs returns the Vrfs field if non-nil, zero value otherwise.
-
-### GetVrfsOk
-
-`func (o *Prefix) GetVrfsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetVrfsOk returns a tuple with the Vrfs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVrfs
-
-`func (o *Prefix) SetVrfs(v []BulkWritableCableRequestStatus)`
-
-SetVrfs sets Vrfs field to given value.
-
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

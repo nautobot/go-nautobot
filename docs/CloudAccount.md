@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **AccountNumber** | **string** | The account identifier of this Cloud Account. | 
 **Provider** | [**BulkWritableCloudAccountRequestProvider**](BulkWritableCloudAccountRequestProvider.md) |  | 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -231,20 +231,20 @@ SetProvider sets Provider field to given value.
 
 ### GetSecretsGroup
 
-`func (o *CloudAccount) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *CloudAccount) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *CloudAccount) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CloudAccount) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *CloudAccount) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *CloudAccount) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 

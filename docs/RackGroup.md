@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **RackCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -246,20 +246,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *RackGroup) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *RackGroup) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *RackGroup) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RackGroup) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *RackGroup) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *RackGroup) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 

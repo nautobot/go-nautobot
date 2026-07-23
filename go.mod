@@ -1,4 +1,4 @@
-module github.com/nautobot/go-nautobot/v2
+module github.com/nautobot/go-nautobot/v3
 
 go 1.23
 

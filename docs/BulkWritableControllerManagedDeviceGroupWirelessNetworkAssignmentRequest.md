@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **ControllerManagedDeviceGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **WirelessNetwork** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Vlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Vlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -90,20 +90,20 @@ SetWirelessNetwork sets WirelessNetwork field to given value.
 
 ### GetVlan
 
-`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetVlan() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetVlan() ApprovalWorkflowUser`
 
 GetVlan returns the Vlan field if non-nil, zero value otherwise.
 
 ### GetVlanOk
 
-`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetVlanOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetVlanOk() (*ApprovalWorkflowUser, bool)`
 
 GetVlanOk returns a tuple with the Vlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVlan
 
-`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetVlan(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetVlan(v ApprovalWorkflowUser)`
 
 SetVlan sets Vlan field to given value.
 

@@ -86,7 +86,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -152,7 +152,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -220,7 +220,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -288,7 +288,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -356,7 +356,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -427,7 +427,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -501,7 +501,7 @@ func main() {
 	providerN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool | Secrets group (name or ID) is null (optional)
+	secretsGroupIsnull := true // bool |  (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
@@ -511,7 +511,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -606,7 +606,7 @@ Name | Type | Description  | Notes
  **providerN** | **[]string** |  | 
  **q** | **string** | Search | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** | Secrets group (name or ID) is null | 
+ **secretsGroupIsnull** | **bool** |  | 
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
@@ -616,7 +616,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -653,7 +653,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -727,7 +727,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -736,7 +736,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -770,7 +770,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -807,7 +807,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -881,14 +881,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud account.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -920,7 +920,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -957,7 +957,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1031,7 +1031,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1097,7 +1097,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1165,7 +1165,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1233,7 +1233,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1301,7 +1301,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1371,7 +1371,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1387,7 +1387,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1424,7 +1424,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1461,7 +1461,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1535,14 +1535,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network prefix assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1574,7 +1574,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1611,7 +1611,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1685,7 +1685,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1751,7 +1751,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1819,7 +1819,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1887,7 +1887,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1955,7 +1955,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2026,7 +2026,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2035,7 +2035,7 @@ func main() {
 	cloudResourceType := []string{"Inner_example"} // []string |  (optional)
 	cloudResourceTypeN := []string{"Inner_example"} // []string |  (optional)
 	cloudServices := []string{"Inner_example"} // []string |  (optional)
-	cloudServicesIsnull := true // bool | Cloud services (name or ID) is null (optional)
+	cloudServicesIsnull := true // bool |  (optional)
 	cloudServicesN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -2103,7 +2103,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2133,7 +2133,7 @@ Name | Type | Description  | Notes
  **cloudResourceType** | **[]string** |  | 
  **cloudResourceTypeN** | **[]string** |  | 
  **cloudServices** | **[]string** |  | 
- **cloudServicesIsnull** | **bool** | Cloud services (name or ID) is null | 
+ **cloudServicesIsnull** | **bool** |  | 
  **cloudServicesN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -2201,7 +2201,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2238,7 +2238,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2312,7 +2312,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2321,7 +2321,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2355,7 +2355,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2392,7 +2392,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2466,14 +2466,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2505,7 +2505,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2542,7 +2542,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2616,7 +2616,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2682,7 +2682,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2750,7 +2750,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2818,7 +2818,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2886,7 +2886,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2957,7 +2957,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3026,7 +3026,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3116,7 +3116,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3153,7 +3153,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3227,7 +3227,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3236,7 +3236,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3270,7 +3270,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3307,7 +3307,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3381,14 +3381,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud resource type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3420,7 +3420,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3457,7 +3457,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3531,7 +3531,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3597,7 +3597,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3665,7 +3665,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3733,7 +3733,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3801,7 +3801,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3871,7 +3871,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3887,7 +3887,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3924,7 +3924,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3961,7 +3961,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4035,14 +4035,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service network assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4074,7 +4074,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4111,7 +4111,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4185,7 +4185,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4251,7 +4251,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4319,7 +4319,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4387,7 +4387,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4455,7 +4455,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4526,12 +4526,12 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	cloudAccount := []string{"Inner_example"} // []string |  (optional)
-	cloudAccountIsnull := true // bool | Cloud account (name or ID) is null (optional)
+	cloudAccountIsnull := true // bool |  (optional)
 	cloudAccountN := []string{"Inner_example"} // []string |  (optional)
 	cloudNetworks := []string{"Inner_example"} // []string |  (optional)
 	cloudNetworksN := []string{"Inner_example"} // []string |  (optional)
@@ -4598,7 +4598,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4624,7 +4624,7 @@ Other parameters are passed through a pointer to a apiCloudCloudServicesListRequ
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cloudAccount** | **[]string** |  | 
- **cloudAccountIsnull** | **bool** | Cloud account (name or ID) is null | 
+ **cloudAccountIsnull** | **bool** |  | 
  **cloudAccountN** | **[]string** |  | 
  **cloudNetworks** | **[]string** |  | 
  **cloudNetworksN** | **[]string** |  | 
@@ -4691,7 +4691,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4728,7 +4728,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4802,7 +4802,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4811,7 +4811,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4845,7 +4845,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4882,7 +4882,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4956,14 +4956,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4995,7 +4995,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5032,7 +5032,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {

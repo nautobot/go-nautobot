@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -151,20 +151,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *BulkWritableConsolePortRequest) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableConsolePortRequest) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *BulkWritableConsolePortRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableConsolePortRequest) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *BulkWritableConsolePortRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableConsolePortRequest) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -186,20 +186,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetModule
 
-`func (o *BulkWritableConsolePortRequest) GetModule() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableConsolePortRequest) GetModule() ApprovalWorkflowUser`
 
 GetModule returns the Module field if non-nil, zero value otherwise.
 
 ### GetModuleOk
 
-`func (o *BulkWritableConsolePortRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableConsolePortRequest) GetModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModule
 
-`func (o *BulkWritableConsolePortRequest) SetModule(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableConsolePortRequest) SetModule(v ApprovalWorkflowUser)`
 
 SetModule sets Module field to given value.
 
@@ -246,20 +246,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableConsolePortRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableConsolePortRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableConsolePortRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableConsolePortRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableConsolePortRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableConsolePortRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

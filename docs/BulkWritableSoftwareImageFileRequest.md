@@ -12,10 +12,10 @@ Name | Type | Description | Notes
 **DownloadUrl** | Pointer to **string** |  | [optional] 
 **DefaultImage** | Pointer to **bool** | Is the default image for this software version | [optional] 
 **SoftwareVersion** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ExternalIntegration** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ExternalIntegration** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -234,20 +234,20 @@ SetSoftwareVersion sets SoftwareVersion field to given value.
 
 ### GetExternalIntegration
 
-`func (o *BulkWritableSoftwareImageFileRequest) GetExternalIntegration() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableSoftwareImageFileRequest) GetExternalIntegration() ApprovalWorkflowUser`
 
 GetExternalIntegration returns the ExternalIntegration field if non-nil, zero value otherwise.
 
 ### GetExternalIntegrationOk
 
-`func (o *BulkWritableSoftwareImageFileRequest) GetExternalIntegrationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableSoftwareImageFileRequest) GetExternalIntegrationOk() (*ApprovalWorkflowUser, bool)`
 
 GetExternalIntegrationOk returns a tuple with the ExternalIntegration field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetExternalIntegration
 
-`func (o *BulkWritableSoftwareImageFileRequest) SetExternalIntegration(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableSoftwareImageFileRequest) SetExternalIntegration(v ApprovalWorkflowUser)`
 
 SetExternalIntegration sets ExternalIntegration field to given value.
 
@@ -314,20 +314,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableSoftwareImageFileRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableSoftwareImageFileRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableSoftwareImageFileRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableSoftwareImageFileRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableSoftwareImageFileRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableSoftwareImageFileRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

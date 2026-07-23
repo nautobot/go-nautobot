@@ -18,8 +18,8 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -398,20 +398,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *ConsoleServerPort) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *ConsoleServerPort) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *ConsoleServerPort) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ConsoleServerPort) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *ConsoleServerPort) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *ConsoleServerPort) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -433,20 +433,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetModule
 
-`func (o *ConsoleServerPort) GetModule() BulkWritableCircuitRequestTenant`
+`func (o *ConsoleServerPort) GetModule() ApprovalWorkflowUser`
 
 GetModule returns the Module field if non-nil, zero value otherwise.
 
 ### GetModuleOk
 
-`func (o *ConsoleServerPort) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ConsoleServerPort) GetModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModule
 
-`func (o *ConsoleServerPort) SetModule(v BulkWritableCircuitRequestTenant)`
+`func (o *ConsoleServerPort) SetModule(v ApprovalWorkflowUser)`
 
 SetModule sets Module field to given value.
 

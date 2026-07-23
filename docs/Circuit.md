@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Provider** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CircuitType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CircuitTerminationA** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **CircuitTerminationZ** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
@@ -352,20 +352,20 @@ SetCircuitType sets CircuitType field to given value.
 
 ### GetTenant
 
-`func (o *Circuit) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Circuit) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Circuit) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Circuit) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Circuit) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Circuit) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

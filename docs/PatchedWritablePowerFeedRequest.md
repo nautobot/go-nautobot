@@ -16,13 +16,13 @@ Name | Type | Description | Notes
 **BreakerPosition** | Pointer to **NullableInt32** | Starting circuit breaker position in panel | [optional] 
 **BreakerPoleCount** | Pointer to [**NullableBreakerPoleCountEnum**](BreakerPoleCountEnum.md) | Number of breaker poles | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Cable** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Cable** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PowerPanel** | Pointer to [**BulkWritablePowerFeedRequestPowerPanel**](BulkWritablePowerFeedRequestPowerPanel.md) |  | [optional] 
 **DestinationPanel** | Pointer to [**NullableBulkWritablePowerFeedRequestDestinationPanel**](BulkWritablePowerFeedRequestDestinationPanel.md) |  | [optional] 
-**Rack** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Rack** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -366,20 +366,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetCable
 
-`func (o *PatchedWritablePowerFeedRequest) GetCable() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritablePowerFeedRequest) GetCable() ApprovalWorkflowUser`
 
 GetCable returns the Cable field if non-nil, zero value otherwise.
 
 ### GetCableOk
 
-`func (o *PatchedWritablePowerFeedRequest) GetCableOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritablePowerFeedRequest) GetCableOk() (*ApprovalWorkflowUser, bool)`
 
 GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCable
 
-`func (o *PatchedWritablePowerFeedRequest) SetCable(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritablePowerFeedRequest) SetCable(v ApprovalWorkflowUser)`
 
 SetCable sets Cable field to given value.
 
@@ -461,20 +461,20 @@ HasDestinationPanel returns a boolean if a field has been set.
 UnsetDestinationPanel ensures that no value is present for DestinationPanel, not even an explicit nil
 ### GetRack
 
-`func (o *PatchedWritablePowerFeedRequest) GetRack() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritablePowerFeedRequest) GetRack() ApprovalWorkflowUser`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *PatchedWritablePowerFeedRequest) GetRackOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritablePowerFeedRequest) GetRackOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *PatchedWritablePowerFeedRequest) SetRack(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritablePowerFeedRequest) SetRack(v ApprovalWorkflowUser)`
 
 SetRack sets Rack field to given value.
 
@@ -546,20 +546,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedWritablePowerFeedRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedWritablePowerFeedRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedWritablePowerFeedRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedWritablePowerFeedRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedWritablePowerFeedRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedWritablePowerFeedRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** | Route target value (formatted in accordance with RFC 4360) | 
 **Description** | Pointer to **string** |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -189,20 +189,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *RouteTarget) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *RouteTarget) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *RouteTarget) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RouteTarget) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *RouteTarget) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *RouteTarget) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

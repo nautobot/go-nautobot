@@ -8,13 +8,13 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **NullableString** |  | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this module | [optional] 
 **ModuleType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ParentModuleBay** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ParentModuleBay** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -153,20 +153,20 @@ SetModuleType sets ModuleType field to given value.
 
 ### GetParentModuleBay
 
-`func (o *ModuleRequest) GetParentModuleBay() BulkWritableCircuitRequestTenant`
+`func (o *ModuleRequest) GetParentModuleBay() ApprovalWorkflowUser`
 
 GetParentModuleBay returns the ParentModuleBay field if non-nil, zero value otherwise.
 
 ### GetParentModuleBayOk
 
-`func (o *ModuleRequest) GetParentModuleBayOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleRequest) GetParentModuleBayOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentModuleBayOk returns a tuple with the ParentModuleBay field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentModuleBay
 
-`func (o *ModuleRequest) SetParentModuleBay(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleRequest) SetParentModuleBay(v ApprovalWorkflowUser)`
 
 SetParentModuleBay sets ParentModuleBay field to given value.
 
@@ -208,20 +208,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *ModuleRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *ModuleRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *ModuleRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *ModuleRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -243,20 +243,20 @@ HasRole returns a boolean if a field has been set.
 UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetTenant
 
-`func (o *ModuleRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *ModuleRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *ModuleRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *ModuleRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -278,20 +278,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetLocation
 
-`func (o *ModuleRequest) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *ModuleRequest) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *ModuleRequest) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleRequest) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *ModuleRequest) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleRequest) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 
@@ -338,20 +338,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *ModuleRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *ModuleRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *ModuleRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *ModuleRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *ModuleRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *ModuleRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

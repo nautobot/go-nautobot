@@ -4,6 +4,54 @@ All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**ExtrasApprovalWorkflowDefinitionsBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsBulkDestroy) | **Delete** /extras/approval-workflow-definitions/ | 
+[**ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate) | **Patch** /extras/approval-workflow-definitions/ | 
+[**ExtrasApprovalWorkflowDefinitionsBulkUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsBulkUpdate) | **Put** /extras/approval-workflow-definitions/ | 
+[**ExtrasApprovalWorkflowDefinitionsCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsCreate) | **Post** /extras/approval-workflow-definitions/ | 
+[**ExtrasApprovalWorkflowDefinitionsDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsDestroy) | **Delete** /extras/approval-workflow-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowDefinitionsList**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsList) | **Get** /extras/approval-workflow-definitions/ | 
+[**ExtrasApprovalWorkflowDefinitionsNotesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsNotesCreate) | **Post** /extras/approval-workflow-definitions/{id}/notes/ | 
+[**ExtrasApprovalWorkflowDefinitionsNotesList**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsNotesList) | **Get** /extras/approval-workflow-definitions/{id}/notes/ | 
+[**ExtrasApprovalWorkflowDefinitionsPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsPartialUpdate) | **Patch** /extras/approval-workflow-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowDefinitionsRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsRetrieve) | **Get** /extras/approval-workflow-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowDefinitionsUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowDefinitionsUpdate) | **Put** /extras/approval-workflow-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsBulkDestroy) | **Delete** /extras/approval-workflow-stage-definitions/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate) | **Patch** /extras/approval-workflow-stage-definitions/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsBulkUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsBulkUpdate) | **Put** /extras/approval-workflow-stage-definitions/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsCreate) | **Post** /extras/approval-workflow-stage-definitions/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsDestroy) | **Delete** /extras/approval-workflow-stage-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsList**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsList) | **Get** /extras/approval-workflow-stage-definitions/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsNotesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsNotesCreate) | **Post** /extras/approval-workflow-stage-definitions/{id}/notes/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsNotesList**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsNotesList) | **Get** /extras/approval-workflow-stage-definitions/{id}/notes/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsPartialUpdate) | **Patch** /extras/approval-workflow-stage-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsRetrieve) | **Get** /extras/approval-workflow-stage-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowStageDefinitionsUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsUpdate) | **Put** /extras/approval-workflow-stage-definitions/{id}/ | 
+[**ExtrasApprovalWorkflowStagesApproveCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesApproveCreate) | **Post** /extras/approval-workflow-stages/{id}/approve/ | 
+[**ExtrasApprovalWorkflowStagesBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesBulkDestroy) | **Delete** /extras/approval-workflow-stages/ | 
+[**ExtrasApprovalWorkflowStagesBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesBulkPartialUpdate) | **Patch** /extras/approval-workflow-stages/ | 
+[**ExtrasApprovalWorkflowStagesBulkUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesBulkUpdate) | **Put** /extras/approval-workflow-stages/ | 
+[**ExtrasApprovalWorkflowStagesCommentCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesCommentCreate) | **Post** /extras/approval-workflow-stages/{id}/comment/ | 
+[**ExtrasApprovalWorkflowStagesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesCreate) | **Post** /extras/approval-workflow-stages/ | 
+[**ExtrasApprovalWorkflowStagesDenyCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesDenyCreate) | **Post** /extras/approval-workflow-stages/{id}/deny/ | 
+[**ExtrasApprovalWorkflowStagesDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesDestroy) | **Delete** /extras/approval-workflow-stages/{id}/ | 
+[**ExtrasApprovalWorkflowStagesList**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesList) | **Get** /extras/approval-workflow-stages/ | 
+[**ExtrasApprovalWorkflowStagesNotesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesNotesCreate) | **Post** /extras/approval-workflow-stages/{id}/notes/ | 
+[**ExtrasApprovalWorkflowStagesNotesList**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesNotesList) | **Get** /extras/approval-workflow-stages/{id}/notes/ | 
+[**ExtrasApprovalWorkflowStagesPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesPartialUpdate) | **Patch** /extras/approval-workflow-stages/{id}/ | 
+[**ExtrasApprovalWorkflowStagesRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesRetrieve) | **Get** /extras/approval-workflow-stages/{id}/ | 
+[**ExtrasApprovalWorkflowStagesUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesUpdate) | **Put** /extras/approval-workflow-stages/{id}/ | 
+[**ExtrasApprovalWorkflowsBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowsBulkDestroy) | **Delete** /extras/approval-workflows/ | 
+[**ExtrasApprovalWorkflowsBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowsBulkPartialUpdate) | **Patch** /extras/approval-workflows/ | 
+[**ExtrasApprovalWorkflowsBulkUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowsBulkUpdate) | **Put** /extras/approval-workflows/ | 
+[**ExtrasApprovalWorkflowsCancelCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowsCancelCreate) | **Post** /extras/approval-workflows/{id}/cancel/ | 
+[**ExtrasApprovalWorkflowsCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowsCreate) | **Post** /extras/approval-workflows/ | 
+[**ExtrasApprovalWorkflowsDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowsDestroy) | **Delete** /extras/approval-workflows/{id}/ | 
+[**ExtrasApprovalWorkflowsList**](ExtrasAPI.md#ExtrasApprovalWorkflowsList) | **Get** /extras/approval-workflows/ | 
+[**ExtrasApprovalWorkflowsNotesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowsNotesCreate) | **Post** /extras/approval-workflows/{id}/notes/ | 
+[**ExtrasApprovalWorkflowsNotesList**](ExtrasAPI.md#ExtrasApprovalWorkflowsNotesList) | **Get** /extras/approval-workflows/{id}/notes/ | 
+[**ExtrasApprovalWorkflowsPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowsPartialUpdate) | **Patch** /extras/approval-workflows/{id}/ | 
+[**ExtrasApprovalWorkflowsRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowsRetrieve) | **Get** /extras/approval-workflows/{id}/ | 
+[**ExtrasApprovalWorkflowsUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowsUpdate) | **Put** /extras/approval-workflows/{id}/ | 
 [**ExtrasComputedFieldsBulkDestroy**](ExtrasAPI.md#ExtrasComputedFieldsBulkDestroy) | **Delete** /extras/computed-fields/ | 
 [**ExtrasComputedFieldsBulkPartialUpdate**](ExtrasAPI.md#ExtrasComputedFieldsBulkPartialUpdate) | **Patch** /extras/computed-fields/ | 
 [**ExtrasComputedFieldsBulkUpdate**](ExtrasAPI.md#ExtrasComputedFieldsBulkUpdate) | **Put** /extras/computed-fields/ | 
@@ -320,9 +368,7 @@ Method | HTTP request | Description
 [**ExtrasSavedViewsPartialUpdate**](ExtrasAPI.md#ExtrasSavedViewsPartialUpdate) | **Patch** /extras/saved-views/{id}/ | 
 [**ExtrasSavedViewsRetrieve**](ExtrasAPI.md#ExtrasSavedViewsRetrieve) | **Get** /extras/saved-views/{id}/ | 
 [**ExtrasSavedViewsUpdate**](ExtrasAPI.md#ExtrasSavedViewsUpdate) | **Put** /extras/saved-views/{id}/ | 
-[**ExtrasScheduledJobsApproveCreate**](ExtrasAPI.md#ExtrasScheduledJobsApproveCreate) | **Post** /extras/scheduled-jobs/{id}/approve/ | 
 [**ExtrasScheduledJobsBulkDestroy**](ExtrasAPI.md#ExtrasScheduledJobsBulkDestroy) | **Delete** /extras/scheduled-jobs/ | 
-[**ExtrasScheduledJobsDenyCreate**](ExtrasAPI.md#ExtrasScheduledJobsDenyCreate) | **Post** /extras/scheduled-jobs/{id}/deny/ | 
 [**ExtrasScheduledJobsDestroy**](ExtrasAPI.md#ExtrasScheduledJobsDestroy) | **Delete** /extras/scheduled-jobs/{id}/ | 
 [**ExtrasScheduledJobsDryRunCreate**](ExtrasAPI.md#ExtrasScheduledJobsDryRunCreate) | **Post** /extras/scheduled-jobs/{id}/dry-run/ | 
 [**ExtrasScheduledJobsList**](ExtrasAPI.md#ExtrasScheduledJobsList) | **Get** /extras/scheduled-jobs/ | 
@@ -426,6 +472,3962 @@ Method | HTTP request | Description
 
 
 
+## ExtrasApprovalWorkflowDefinitionsBulkDestroy
+
+> ExtrasApprovalWorkflowDefinitionsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate
+
+> []ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate(ctx).PatchedBulkWritableApprovalWorkflowDefinitionRequest(patchedBulkWritableApprovalWorkflowDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableApprovalWorkflowDefinitionRequest := []openapiclient.PatchedBulkWritableApprovalWorkflowDefinitionRequest{*openapiclient.NewPatchedBulkWritableApprovalWorkflowDefinitionRequest("Id_example")} // []PatchedBulkWritableApprovalWorkflowDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate(context.Background()).PatchedBulkWritableApprovalWorkflowDefinitionRequest(patchedBulkWritableApprovalWorkflowDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate`: []ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableApprovalWorkflowDefinitionRequest** | [**[]PatchedBulkWritableApprovalWorkflowDefinitionRequest**](PatchedBulkWritableApprovalWorkflowDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsBulkUpdate
+
+> []ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsBulkUpdate(ctx).BulkWritableApprovalWorkflowDefinitionRequest(bulkWritableApprovalWorkflowDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableApprovalWorkflowDefinitionRequest := []openapiclient.BulkWritableApprovalWorkflowDefinitionRequest{*openapiclient.NewBulkWritableApprovalWorkflowDefinitionRequest("Id_example", "ModelContentType_example", "Name_example")} // []BulkWritableApprovalWorkflowDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkUpdate(context.Background()).BulkWritableApprovalWorkflowDefinitionRequest(bulkWritableApprovalWorkflowDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsBulkUpdate`: []ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableApprovalWorkflowDefinitionRequest** | [**[]BulkWritableApprovalWorkflowDefinitionRequest**](BulkWritableApprovalWorkflowDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsCreate
+
+> ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsCreate(ctx).ApprovalWorkflowDefinitionRequest(approvalWorkflowDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflowDefinitionRequest := *openapiclient.NewApprovalWorkflowDefinitionRequest("ModelContentType_example", "Name_example") // ApprovalWorkflowDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsCreate(context.Background()).ApprovalWorkflowDefinitionRequest(approvalWorkflowDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsCreate`: ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflowDefinitionRequest** | [**ApprovalWorkflowDefinitionRequest**](ApprovalWorkflowDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsDestroy
+
+> ExtrasApprovalWorkflowDefinitionsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsList
+
+> PaginatedApprovalWorkflowDefinitionList ExtrasApprovalWorkflowDefinitionsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ModelConstraints(modelConstraints).ModelContentType(modelContentType).ModelContentTypeN(modelContentTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	modelConstraints := []string{"Inner_example"} // []string |  (optional)
+	modelContentType := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Approval Workflow Definition (optional)
+	modelContentTypeN := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Approval Workflow Definition (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
+	weight := []int32{int32(123)} // []int32 |  (optional)
+	weightGt := []int32{int32(123)} // []int32 |  (optional)
+	weightGte := []int32{int32(123)} // []int32 |  (optional)
+	weightLt := []int32{int32(123)} // []int32 |  (optional)
+	weightLte := []int32{int32(123)} // []int32 |  (optional)
+	weightN := []int32{int32(123)} // []int32 |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ModelConstraints(modelConstraints).ModelContentType(modelContentType).ModelContentTypeN(modelContentTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Weight(weight).WeightGt(weightGt).WeightGte(weightGte).WeightLt(weightLt).WeightLte(weightLte).WeightN(weightN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsList`: PaginatedApprovalWorkflowDefinitionList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **modelConstraints** | **[]string** |  | 
+ **modelContentType** | **[]int32** | Object types allowed to be associated with this Approval Workflow Definition | 
+ **modelContentTypeN** | **[]int32** | Exclude Object types allowed to be associated with this Approval Workflow Definition | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **[]string** |  | 
+ **weight** | **[]int32** |  | 
+ **weightGt** | **[]int32** |  | 
+ **weightGte** | **[]int32** |  | 
+ **weightLt** | **[]int32** |  | 
+ **weightLte** | **[]int32** |  | 
+ **weightN** | **[]int32** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedApprovalWorkflowDefinitionList**](PaginatedApprovalWorkflowDefinitionList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsNotesCreate
+
+> Note ExtrasApprovalWorkflowDefinitionsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsNotesList
+
+> PaginatedNoteList ExtrasApprovalWorkflowDefinitionsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsPartialUpdate
+
+> ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsPartialUpdate(ctx, id).Format(format).PatchedApprovalWorkflowDefinitionRequest(patchedApprovalWorkflowDefinitionRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedApprovalWorkflowDefinitionRequest := *openapiclient.NewPatchedApprovalWorkflowDefinitionRequest() // PatchedApprovalWorkflowDefinitionRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsPartialUpdate(context.Background(), id).Format(format).PatchedApprovalWorkflowDefinitionRequest(patchedApprovalWorkflowDefinitionRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsPartialUpdate`: ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedApprovalWorkflowDefinitionRequest** | [**PatchedApprovalWorkflowDefinitionRequest**](PatchedApprovalWorkflowDefinitionRequest.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsRetrieve
+
+> ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsRetrieve`: ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowDefinitionsUpdate
+
+> ApprovalWorkflowDefinition ExtrasApprovalWorkflowDefinitionsUpdate(ctx, id).ApprovalWorkflowDefinitionRequest(approvalWorkflowDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Definition.
+	approvalWorkflowDefinitionRequest := *openapiclient.NewApprovalWorkflowDefinitionRequest("ModelContentType_example", "Name_example") // ApprovalWorkflowDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsUpdate(context.Background(), id).ApprovalWorkflowDefinitionRequest(approvalWorkflowDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowDefinitionsUpdate`: ApprovalWorkflowDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowDefinitionsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowDefinitionsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **approvalWorkflowDefinitionRequest** | [**ApprovalWorkflowDefinitionRequest**](ApprovalWorkflowDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowDefinition**](ApprovalWorkflowDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsBulkDestroy
+
+> ExtrasApprovalWorkflowStageDefinitionsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate
+
+> []ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate(ctx).PatchedBulkWritableApprovalWorkflowStageDefinitionRequest(patchedBulkWritableApprovalWorkflowStageDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableApprovalWorkflowStageDefinitionRequest := []openapiclient.PatchedBulkWritableApprovalWorkflowStageDefinitionRequest{*openapiclient.NewPatchedBulkWritableApprovalWorkflowStageDefinitionRequest("Id_example")} // []PatchedBulkWritableApprovalWorkflowStageDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate(context.Background()).PatchedBulkWritableApprovalWorkflowStageDefinitionRequest(patchedBulkWritableApprovalWorkflowStageDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate`: []ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableApprovalWorkflowStageDefinitionRequest** | [**[]PatchedBulkWritableApprovalWorkflowStageDefinitionRequest**](PatchedBulkWritableApprovalWorkflowStageDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsBulkUpdate
+
+> []ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsBulkUpdate(ctx).BulkWritableApprovalWorkflowStageDefinitionRequest(bulkWritableApprovalWorkflowStageDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableApprovalWorkflowStageDefinitionRequest := []openapiclient.BulkWritableApprovalWorkflowStageDefinitionRequest{*openapiclient.NewBulkWritableApprovalWorkflowStageDefinitionRequest("Id_example", "ApproverGroup_example", int32(123), "Name_example", int32(123), *openapiclient.NewApprovalWorkflowStageDefinitionApprovalWorkflowDefinition())} // []BulkWritableApprovalWorkflowStageDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkUpdate(context.Background()).BulkWritableApprovalWorkflowStageDefinitionRequest(bulkWritableApprovalWorkflowStageDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsBulkUpdate`: []ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableApprovalWorkflowStageDefinitionRequest** | [**[]BulkWritableApprovalWorkflowStageDefinitionRequest**](BulkWritableApprovalWorkflowStageDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsCreate
+
+> ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsCreate(ctx).ApprovalWorkflowStageDefinitionRequest(approvalWorkflowStageDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflowStageDefinitionRequest := *openapiclient.NewApprovalWorkflowStageDefinitionRequest("ApproverGroup_example", int32(123), "Name_example", int32(123), *openapiclient.NewApprovalWorkflowStageDefinitionApprovalWorkflowDefinition()) // ApprovalWorkflowStageDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsCreate(context.Background()).ApprovalWorkflowStageDefinitionRequest(approvalWorkflowStageDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsCreate`: ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflowStageDefinitionRequest** | [**ApprovalWorkflowStageDefinitionRequest**](ApprovalWorkflowStageDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsDestroy
+
+> ExtrasApprovalWorkflowStageDefinitionsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsList
+
+> PaginatedApprovalWorkflowStageDefinitionList ExtrasApprovalWorkflowStageDefinitionsList(ctx).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).ApproverGroup(approverGroup).ApproverGroupN(approverGroupN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DenialMessage(denialMessage).DenialMessageIc(denialMessageIc).DenialMessageIe(denialMessageIe).DenialMessageIew(denialMessageIew).DenialMessageIre(denialMessageIre).DenialMessageIsw(denialMessageIsw).DenialMessageN(denialMessageN).DenialMessageNic(denialMessageNic).DenialMessageNie(denialMessageNie).DenialMessageNiew(denialMessageNiew).DenialMessageNire(denialMessageNire).DenialMessageNisw(denialMessageNisw).DenialMessageNre(denialMessageNre).DenialMessageRe(denialMessageRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MinApprovers(minApprovers).MinApproversGt(minApproversGt).MinApproversGte(minApproversGte).MinApproversLt(minApproversLt).MinApproversLte(minApproversLte).MinApproversN(minApproversN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sequence(sequence).SequenceGt(sequenceGt).SequenceGte(sequenceGte).SequenceLt(sequenceLt).SequenceLte(sequenceLte).SequenceN(sequenceN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflow := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowDefinition := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowDefinitionN := []string{"Inner_example"} // []string |  (optional)
+	approverGroup := []int32{int32(123)} // []int32 |  (optional)
+	approverGroupN := []int32{int32(123)} // []int32 |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	denialMessage := []string{"Inner_example"} // []string |  (optional)
+	denialMessageIc := []string{"Inner_example"} // []string |  (optional)
+	denialMessageIe := []string{"Inner_example"} // []string |  (optional)
+	denialMessageIew := []string{"Inner_example"} // []string |  (optional)
+	denialMessageIre := []string{"Inner_example"} // []string |  (optional)
+	denialMessageIsw := []string{"Inner_example"} // []string |  (optional)
+	denialMessageN := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNic := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNie := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNiew := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNire := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNisw := []string{"Inner_example"} // []string |  (optional)
+	denialMessageNre := []string{"Inner_example"} // []string |  (optional)
+	denialMessageRe := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	minApprovers := []int32{int32(123)} // []int32 |  (optional)
+	minApproversGt := []int32{int32(123)} // []int32 |  (optional)
+	minApproversGte := []int32{int32(123)} // []int32 |  (optional)
+	minApproversLt := []int32{int32(123)} // []int32 |  (optional)
+	minApproversLte := []int32{int32(123)} // []int32 |  (optional)
+	minApproversN := []int32{int32(123)} // []int32 |  (optional)
+	name := []string{"Inner_example"} // []string |  (optional)
+	nameIc := []string{"Inner_example"} // []string |  (optional)
+	nameIe := []string{"Inner_example"} // []string |  (optional)
+	nameIew := []string{"Inner_example"} // []string |  (optional)
+	nameIre := []string{"Inner_example"} // []string |  (optional)
+	nameIsw := []string{"Inner_example"} // []string |  (optional)
+	nameN := []string{"Inner_example"} // []string |  (optional)
+	nameNic := []string{"Inner_example"} // []string |  (optional)
+	nameNie := []string{"Inner_example"} // []string |  (optional)
+	nameNiew := []string{"Inner_example"} // []string |  (optional)
+	nameNire := []string{"Inner_example"} // []string |  (optional)
+	nameNisw := []string{"Inner_example"} // []string |  (optional)
+	nameNre := []string{"Inner_example"} // []string |  (optional)
+	nameRe := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sequence := []int32{int32(123)} // []int32 |  (optional)
+	sequenceGt := []int32{int32(123)} // []int32 |  (optional)
+	sequenceGte := []int32{int32(123)} // []int32 |  (optional)
+	sequenceLt := []int32{int32(123)} // []int32 |  (optional)
+	sequenceLte := []int32{int32(123)} // []int32 |  (optional)
+	sequenceN := []int32{int32(123)} // []int32 |  (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsList(context.Background()).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).ApproverGroup(approverGroup).ApproverGroupN(approverGroupN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DenialMessage(denialMessage).DenialMessageIc(denialMessageIc).DenialMessageIe(denialMessageIe).DenialMessageIew(denialMessageIew).DenialMessageIre(denialMessageIre).DenialMessageIsw(denialMessageIsw).DenialMessageN(denialMessageN).DenialMessageNic(denialMessageNic).DenialMessageNie(denialMessageNie).DenialMessageNiew(denialMessageNiew).DenialMessageNire(denialMessageNire).DenialMessageNisw(denialMessageNisw).DenialMessageNre(denialMessageNre).DenialMessageRe(denialMessageRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MinApprovers(minApprovers).MinApproversGt(minApproversGt).MinApproversGte(minApproversGte).MinApproversLt(minApproversLt).MinApproversLte(minApproversLte).MinApproversN(minApproversN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sequence(sequence).SequenceGt(sequenceGt).SequenceGte(sequenceGte).SequenceLt(sequenceLt).SequenceLte(sequenceLte).SequenceN(sequenceN).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsList`: PaginatedApprovalWorkflowStageDefinitionList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflow** | **[]string** |  | 
+ **approvalWorkflowDefinition** | **[]string** |  | 
+ **approvalWorkflowDefinitionN** | **[]string** |  | 
+ **approverGroup** | **[]int32** |  | 
+ **approverGroupN** | **[]int32** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **denialMessage** | **[]string** |  | 
+ **denialMessageIc** | **[]string** |  | 
+ **denialMessageIe** | **[]string** |  | 
+ **denialMessageIew** | **[]string** |  | 
+ **denialMessageIre** | **[]string** |  | 
+ **denialMessageIsw** | **[]string** |  | 
+ **denialMessageN** | **[]string** |  | 
+ **denialMessageNic** | **[]string** |  | 
+ **denialMessageNie** | **[]string** |  | 
+ **denialMessageNiew** | **[]string** |  | 
+ **denialMessageNire** | **[]string** |  | 
+ **denialMessageNisw** | **[]string** |  | 
+ **denialMessageNre** | **[]string** |  | 
+ **denialMessageRe** | **[]string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **minApprovers** | **[]int32** |  | 
+ **minApproversGt** | **[]int32** |  | 
+ **minApproversGte** | **[]int32** |  | 
+ **minApproversLt** | **[]int32** |  | 
+ **minApproversLte** | **[]int32** |  | 
+ **minApproversN** | **[]int32** |  | 
+ **name** | **[]string** |  | 
+ **nameIc** | **[]string** |  | 
+ **nameIe** | **[]string** |  | 
+ **nameIew** | **[]string** |  | 
+ **nameIre** | **[]string** |  | 
+ **nameIsw** | **[]string** |  | 
+ **nameN** | **[]string** |  | 
+ **nameNic** | **[]string** |  | 
+ **nameNie** | **[]string** |  | 
+ **nameNiew** | **[]string** |  | 
+ **nameNire** | **[]string** |  | 
+ **nameNisw** | **[]string** |  | 
+ **nameNre** | **[]string** |  | 
+ **nameRe** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sequence** | **[]int32** |  | 
+ **sequenceGt** | **[]int32** |  | 
+ **sequenceGte** | **[]int32** |  | 
+ **sequenceLt** | **[]int32** |  | 
+ **sequenceLte** | **[]int32** |  | 
+ **sequenceN** | **[]int32** |  | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedApprovalWorkflowStageDefinitionList**](PaginatedApprovalWorkflowStageDefinitionList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsNotesCreate
+
+> Note ExtrasApprovalWorkflowStageDefinitionsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsNotesList
+
+> PaginatedNoteList ExtrasApprovalWorkflowStageDefinitionsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsPartialUpdate
+
+> ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsPartialUpdate(ctx, id).Format(format).PatchedApprovalWorkflowStageDefinitionRequest(patchedApprovalWorkflowStageDefinitionRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedApprovalWorkflowStageDefinitionRequest := *openapiclient.NewPatchedApprovalWorkflowStageDefinitionRequest() // PatchedApprovalWorkflowStageDefinitionRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsPartialUpdate(context.Background(), id).Format(format).PatchedApprovalWorkflowStageDefinitionRequest(patchedApprovalWorkflowStageDefinitionRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsPartialUpdate`: ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedApprovalWorkflowStageDefinitionRequest** | [**PatchedApprovalWorkflowStageDefinitionRequest**](PatchedApprovalWorkflowStageDefinitionRequest.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsRetrieve
+
+> ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsRetrieve`: ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStageDefinitionsUpdate
+
+> ApprovalWorkflowStageDefinition ExtrasApprovalWorkflowStageDefinitionsUpdate(ctx, id).ApprovalWorkflowStageDefinitionRequest(approvalWorkflowStageDefinitionRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Definition.
+	approvalWorkflowStageDefinitionRequest := *openapiclient.NewApprovalWorkflowStageDefinitionRequest("ApproverGroup_example", int32(123), "Name_example", int32(123), *openapiclient.NewApprovalWorkflowStageDefinitionApprovalWorkflowDefinition()) // ApprovalWorkflowStageDefinitionRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsUpdate(context.Background(), id).ApprovalWorkflowStageDefinitionRequest(approvalWorkflowStageDefinitionRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStageDefinitionsUpdate`: ApprovalWorkflowStageDefinition
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage Definition. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageDefinitionsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **approvalWorkflowStageDefinitionRequest** | [**ApprovalWorkflowStageDefinitionRequest**](ApprovalWorkflowStageDefinitionRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStageDefinition**](ApprovalWorkflowStageDefinition.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesApproveCreate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesApproveCreate(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesApproveCreate(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesApproveCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesApproveCreate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesApproveCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesApproveCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesBulkDestroy
+
+> ExtrasApprovalWorkflowStagesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesBulkPartialUpdate
+
+> []ApprovalWorkflowStage ExtrasApprovalWorkflowStagesBulkPartialUpdate(ctx).PatchedBulkWritableApprovalWorkflowStageRequest(patchedBulkWritableApprovalWorkflowStageRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableApprovalWorkflowStageRequest := []openapiclient.PatchedBulkWritableApprovalWorkflowStageRequest{*openapiclient.NewPatchedBulkWritableApprovalWorkflowStageRequest("Id_example")} // []PatchedBulkWritableApprovalWorkflowStageRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkPartialUpdate(context.Background()).PatchedBulkWritableApprovalWorkflowStageRequest(patchedBulkWritableApprovalWorkflowStageRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesBulkPartialUpdate`: []ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableApprovalWorkflowStageRequest** | [**[]PatchedBulkWritableApprovalWorkflowStageRequest**](PatchedBulkWritableApprovalWorkflowStageRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesBulkUpdate
+
+> []ApprovalWorkflowStage ExtrasApprovalWorkflowStagesBulkUpdate(ctx).BulkWritableApprovalWorkflowStageRequest(bulkWritableApprovalWorkflowStageRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableApprovalWorkflowStageRequest := []openapiclient.BulkWritableApprovalWorkflowStageRequest{*openapiclient.NewBulkWritableApprovalWorkflowStageRequest("Id_example", *openapiclient.NewApprovalWorkflowStageApprovalWorkflow())} // []BulkWritableApprovalWorkflowStageRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkUpdate(context.Background()).BulkWritableApprovalWorkflowStageRequest(bulkWritableApprovalWorkflowStageRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesBulkUpdate`: []ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableApprovalWorkflowStageRequest** | [**[]BulkWritableApprovalWorkflowStageRequest**](BulkWritableApprovalWorkflowStageRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesCommentCreate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesCommentCreate(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesCommentCreate(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesCommentCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesCommentCreate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesCommentCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesCommentCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesCreate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesCreate(ctx).ApprovalWorkflowStageRequest(approvalWorkflowStageRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow()) // ApprovalWorkflowStageRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesCreate(context.Background()).ApprovalWorkflowStageRequest(approvalWorkflowStageRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesCreate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflowStageRequest** | [**ApprovalWorkflowStageRequest**](ApprovalWorkflowStageRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesDenyCreate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesDenyCreate(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesDenyCreate(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesDenyCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesDenyCreate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesDenyCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesDenyCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesDestroy
+
+> ExtrasApprovalWorkflowStagesDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesList
+
+> PaginatedApprovalWorkflowStageList ExtrasApprovalWorkflowStagesList(ctx).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionIsnull(approvalWorkflowStageDefinitionIsnull).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflow := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowN := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowStageDefinition := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowStageDefinitionIsnull := true // bool |  (optional)
+	approvalWorkflowStageDefinitionN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDate := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateIsnull := true // bool |  (optional)
+	decisionDateLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateN := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateDay := time.Now() // string |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	pendingMyApprovals := true // bool | Filter by user's pending approvals (false returns completed approvals) (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	state := []openapiclient.ExtrasApprovalWorkflowStagesListStateParameterInner{openapiclient.extras_approval_workflow_stages_list_state_parameter_inner("Approved")} // []ExtrasApprovalWorkflowStagesListStateParameterInner | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied.   (optional)
+	stateIc := []string{"Inner_example"} // []string |  (optional)
+	stateIe := []string{"Inner_example"} // []string |  (optional)
+	stateIew := []string{"Inner_example"} // []string |  (optional)
+	stateIre := []string{"Inner_example"} // []string |  (optional)
+	stateIsw := []string{"Inner_example"} // []string |  (optional)
+	stateN := []string{"Inner_example"} // []string |  (optional)
+	stateNic := []string{"Inner_example"} // []string |  (optional)
+	stateNie := []string{"Inner_example"} // []string |  (optional)
+	stateNiew := []string{"Inner_example"} // []string |  (optional)
+	stateNire := []string{"Inner_example"} // []string |  (optional)
+	stateNisw := []string{"Inner_example"} // []string |  (optional)
+	stateNre := []string{"Inner_example"} // []string |  (optional)
+	stateRe := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesList(context.Background()).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionIsnull(approvalWorkflowStageDefinitionIsnull).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesList`: PaginatedApprovalWorkflowStageList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflow** | **[]string** |  | 
+ **approvalWorkflowN** | **[]string** |  | 
+ **approvalWorkflowStageDefinition** | **[]string** |  | 
+ **approvalWorkflowStageDefinitionIsnull** | **bool** |  | 
+ **approvalWorkflowStageDefinitionN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDate** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateGt** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateGte** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateIsnull** | **bool** |  | 
+ **decisionDateLt** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateLte** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateN** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateDay** | **string** |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **pendingMyApprovals** | **bool** | Filter by user&#39;s pending approvals (false returns completed approvals) | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **state** | [**[]ExtrasApprovalWorkflowStagesListStateParameterInner**](ExtrasApprovalWorkflowStagesListStateParameterInner.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied.   | 
+ **stateIc** | **[]string** |  | 
+ **stateIe** | **[]string** |  | 
+ **stateIew** | **[]string** |  | 
+ **stateIre** | **[]string** |  | 
+ **stateIsw** | **[]string** |  | 
+ **stateN** | **[]string** |  | 
+ **stateNic** | **[]string** |  | 
+ **stateNie** | **[]string** |  | 
+ **stateNiew** | **[]string** |  | 
+ **stateNire** | **[]string** |  | 
+ **stateNisw** | **[]string** |  | 
+ **stateNre** | **[]string** |  | 
+ **stateRe** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedApprovalWorkflowStageList**](PaginatedApprovalWorkflowStageList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesNotesCreate
+
+> Note ExtrasApprovalWorkflowStagesNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesNotesList
+
+> PaginatedNoteList ExtrasApprovalWorkflowStagesNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesPartialUpdate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesPartialUpdate(ctx, id).Format(format).PatchedApprovalWorkflowStageRequest(patchedApprovalWorkflowStageRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedApprovalWorkflowStageRequest := *openapiclient.NewPatchedApprovalWorkflowStageRequest() // PatchedApprovalWorkflowStageRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesPartialUpdate(context.Background(), id).Format(format).PatchedApprovalWorkflowStageRequest(patchedApprovalWorkflowStageRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesPartialUpdate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedApprovalWorkflowStageRequest** | [**PatchedApprovalWorkflowStageRequest**](PatchedApprovalWorkflowStageRequest.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesRetrieve
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesRetrieve`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowStagesUpdate
+
+> ApprovalWorkflowStage ExtrasApprovalWorkflowStagesUpdate(ctx, id).ApprovalWorkflowStageRequest(approvalWorkflowStageRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
+	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow()) // ApprovalWorkflowStageRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesUpdate(context.Background(), id).ApprovalWorkflowStageRequest(approvalWorkflowStageRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowStagesUpdate`: ApprovalWorkflowStage
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStagesUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow Stage. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStagesUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **approvalWorkflowStageRequest** | [**ApprovalWorkflowStageRequest**](ApprovalWorkflowStageRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflowStage**](ApprovalWorkflowStage.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsBulkDestroy
+
+> ExtrasApprovalWorkflowsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsBulkPartialUpdate
+
+> []ApprovalWorkflow ExtrasApprovalWorkflowsBulkPartialUpdate(ctx).PatchedBulkWritableApprovalWorkflowRequest(patchedBulkWritableApprovalWorkflowRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableApprovalWorkflowRequest := []openapiclient.PatchedBulkWritableApprovalWorkflowRequest{*openapiclient.NewPatchedBulkWritableApprovalWorkflowRequest("Id_example")} // []PatchedBulkWritableApprovalWorkflowRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkPartialUpdate(context.Background()).PatchedBulkWritableApprovalWorkflowRequest(patchedBulkWritableApprovalWorkflowRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsBulkPartialUpdate`: []ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableApprovalWorkflowRequest** | [**[]PatchedBulkWritableApprovalWorkflowRequest**](PatchedBulkWritableApprovalWorkflowRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsBulkUpdate
+
+> []ApprovalWorkflow ExtrasApprovalWorkflowsBulkUpdate(ctx).BulkWritableApprovalWorkflowRequest(bulkWritableApprovalWorkflowRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableApprovalWorkflowRequest := []openapiclient.BulkWritableApprovalWorkflowRequest{*openapiclient.NewBulkWritableApprovalWorkflowRequest("Id_example", "ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example")} // []BulkWritableApprovalWorkflowRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkUpdate(context.Background()).BulkWritableApprovalWorkflowRequest(bulkWritableApprovalWorkflowRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsBulkUpdate`: []ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableApprovalWorkflowRequest** | [**[]BulkWritableApprovalWorkflowRequest**](BulkWritableApprovalWorkflowRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsCancelCreate
+
+> ApprovalWorkflow ExtrasApprovalWorkflowsCancelCreate(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsCancelCreate(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsCancelCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsCancelCreate`: ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsCancelCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsCancelCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsCreate
+
+> ApprovalWorkflow ExtrasApprovalWorkflowsCreate(ctx).ApprovalWorkflowRequest(approvalWorkflowRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example") // ApprovalWorkflowRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsCreate(context.Background()).ApprovalWorkflowRequest(approvalWorkflowRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsCreate`: ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflowRequest** | [**ApprovalWorkflowRequest**](ApprovalWorkflowRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsDestroy
+
+> ExtrasApprovalWorkflowsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsList
+
+> PaginatedApprovalWorkflowList ExtrasApprovalWorkflowsList(ctx).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionIsnull(approvalWorkflowDefinitionIsnull).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	approvalWorkflowDefinition := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowDefinitionIsnull := true // bool |  (optional)
+	approvalWorkflowDefinitionN := []string{"Inner_example"} // []string |  (optional)
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	currentState := []openapiclient.ExtrasApprovalWorkflowStagesListStateParameterInner{openapiclient.extras_approval_workflow_stages_list_state_parameter_inner("Approved")} // []ExtrasApprovalWorkflowStagesListStateParameterInner | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled.   (optional)
+	currentStateIc := []string{"Inner_example"} // []string |  (optional)
+	currentStateIe := []string{"Inner_example"} // []string |  (optional)
+	currentStateIew := []string{"Inner_example"} // []string |  (optional)
+	currentStateIre := []string{"Inner_example"} // []string |  (optional)
+	currentStateIsw := []string{"Inner_example"} // []string |  (optional)
+	currentStateN := []string{"Inner_example"} // []string |  (optional)
+	currentStateNic := []string{"Inner_example"} // []string |  (optional)
+	currentStateNie := []string{"Inner_example"} // []string |  (optional)
+	currentStateNiew := []string{"Inner_example"} // []string |  (optional)
+	currentStateNire := []string{"Inner_example"} // []string |  (optional)
+	currentStateNisw := []string{"Inner_example"} // []string |  (optional)
+	currentStateNre := []string{"Inner_example"} // []string |  (optional)
+	currentStateRe := []string{"Inner_example"} // []string |  (optional)
+	decisionDate := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateIsnull := true // bool |  (optional)
+	decisionDateLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	decisionDateN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	objectUnderReviewContentType := []int32{int32(123)} // []int32 | Object types allowed to be associated with this Approval Workflow (optional)
+	objectUnderReviewContentTypeN := []int32{int32(123)} // []int32 | Exclude Object types allowed to be associated with this Approval Workflow (optional)
+	objectUnderReviewObjectId := []string{"Inner_example"} // []string |  (optional)
+	objectUnderReviewObjectIdN := []string{"Inner_example"} // []string |  (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
+	user := []string{"Inner_example"} // []string |  (optional)
+	userIsnull := true // bool |  (optional)
+	userN := []string{"Inner_example"} // []string |  (optional)
+	userName := []string{"Inner_example"} // []string |  (optional)
+	userNameIc := []string{"Inner_example"} // []string |  (optional)
+	userNameIe := []string{"Inner_example"} // []string |  (optional)
+	userNameIew := []string{"Inner_example"} // []string |  (optional)
+	userNameIre := []string{"Inner_example"} // []string |  (optional)
+	userNameIsw := []string{"Inner_example"} // []string |  (optional)
+	userNameN := []string{"Inner_example"} // []string |  (optional)
+	userNameNic := []string{"Inner_example"} // []string |  (optional)
+	userNameNie := []string{"Inner_example"} // []string |  (optional)
+	userNameNiew := []string{"Inner_example"} // []string |  (optional)
+	userNameNire := []string{"Inner_example"} // []string |  (optional)
+	userNameNisw := []string{"Inner_example"} // []string |  (optional)
+	userNameNre := []string{"Inner_example"} // []string |  (optional)
+	userNameRe := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsList(context.Background()).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionIsnull(approvalWorkflowDefinitionIsnull).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsList`: PaginatedApprovalWorkflowList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **approvalWorkflowDefinition** | **[]string** |  | 
+ **approvalWorkflowDefinitionIsnull** | **bool** |  | 
+ **approvalWorkflowDefinitionN** | **[]string** |  | 
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **currentState** | [**[]ExtrasApprovalWorkflowStagesListStateParameterInner**](ExtrasApprovalWorkflowStagesListStateParameterInner.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled.   | 
+ **currentStateIc** | **[]string** |  | 
+ **currentStateIe** | **[]string** |  | 
+ **currentStateIew** | **[]string** |  | 
+ **currentStateIre** | **[]string** |  | 
+ **currentStateIsw** | **[]string** |  | 
+ **currentStateN** | **[]string** |  | 
+ **currentStateNic** | **[]string** |  | 
+ **currentStateNie** | **[]string** |  | 
+ **currentStateNiew** | **[]string** |  | 
+ **currentStateNire** | **[]string** |  | 
+ **currentStateNisw** | **[]string** |  | 
+ **currentStateNre** | **[]string** |  | 
+ **currentStateRe** | **[]string** |  | 
+ **decisionDate** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateGt** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateGte** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateIsnull** | **bool** |  | 
+ **decisionDateLt** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateLte** | [**[]time.Time**](time.Time.md) |  | 
+ **decisionDateN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **objectUnderReviewContentType** | **[]int32** | Object types allowed to be associated with this Approval Workflow | 
+ **objectUnderReviewContentTypeN** | **[]int32** | Exclude Object types allowed to be associated with this Approval Workflow | 
+ **objectUnderReviewObjectId** | **[]string** |  | 
+ **objectUnderReviewObjectIdN** | **[]string** |  | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **[]string** |  | 
+ **user** | **[]string** |  | 
+ **userIsnull** | **bool** |  | 
+ **userN** | **[]string** |  | 
+ **userName** | **[]string** |  | 
+ **userNameIc** | **[]string** |  | 
+ **userNameIe** | **[]string** |  | 
+ **userNameIew** | **[]string** |  | 
+ **userNameIre** | **[]string** |  | 
+ **userNameIsw** | **[]string** |  | 
+ **userNameN** | **[]string** |  | 
+ **userNameNic** | **[]string** |  | 
+ **userNameNie** | **[]string** |  | 
+ **userNameNiew** | **[]string** |  | 
+ **userNameNire** | **[]string** |  | 
+ **userNameNisw** | **[]string** |  | 
+ **userNameNre** | **[]string** |  | 
+ **userNameRe** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedApprovalWorkflowList**](PaginatedApprovalWorkflowList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsNotesCreate
+
+> Note ExtrasApprovalWorkflowsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsNotesList
+
+> PaginatedNoteList ExtrasApprovalWorkflowsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsPartialUpdate
+
+> ApprovalWorkflow ExtrasApprovalWorkflowsPartialUpdate(ctx, id).Format(format).PatchedApprovalWorkflowRequest(patchedApprovalWorkflowRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedApprovalWorkflowRequest := *openapiclient.NewPatchedApprovalWorkflowRequest() // PatchedApprovalWorkflowRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsPartialUpdate(context.Background(), id).Format(format).PatchedApprovalWorkflowRequest(patchedApprovalWorkflowRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsPartialUpdate`: ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedApprovalWorkflowRequest** | [**PatchedApprovalWorkflowRequest**](PatchedApprovalWorkflowRequest.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsRetrieve
+
+> ApprovalWorkflow ExtrasApprovalWorkflowsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsRetrieve`: ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## ExtrasApprovalWorkflowsUpdate
+
+> ApprovalWorkflow ExtrasApprovalWorkflowsUpdate(ctx, id).ApprovalWorkflowRequest(approvalWorkflowRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
+	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example") // ApprovalWorkflowRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsUpdate(context.Background(), id).ApprovalWorkflowRequest(approvalWorkflowRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `ExtrasApprovalWorkflowsUpdate`: ApprovalWorkflow
+	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this Approval Workflow. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **approvalWorkflowRequest** | [**ApprovalWorkflowRequest**](ApprovalWorkflowRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**ApprovalWorkflow**](ApprovalWorkflow.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## ExtrasComputedFieldsBulkDestroy
 
 > ExtrasComputedFieldsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -443,7 +4445,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -509,7 +4511,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -577,7 +4579,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -645,7 +4647,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -713,7 +4715,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -783,7 +4785,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -867,7 +4869,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -972,7 +4974,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1009,7 +5011,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1083,7 +5085,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1092,7 +5094,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1126,7 +5128,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1163,7 +5165,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1237,14 +5239,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this computed field.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1276,7 +5278,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1313,7 +5315,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1387,7 +5389,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1453,7 +5455,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1521,7 +5523,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1589,7 +5591,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1657,7 +5659,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1727,7 +5729,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1778,7 +5780,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1850,7 +5852,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1887,7 +5889,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1961,7 +5963,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1970,7 +5972,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2004,7 +6006,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2041,7 +6043,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2115,14 +6117,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this config context schema.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2154,7 +6156,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2191,7 +6193,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2265,7 +6267,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2331,7 +6333,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2399,7 +6401,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2467,7 +6469,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2535,7 +6537,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2590,7 +6592,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasConfigContextsList
 
-> PaginatedConfigContextList ExtrasConfigContextsList(ctx).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdN(idN).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdN(ownerObjectIdN).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedConfigContextList ExtrasConfigContextsList(ctx).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceFamily(deviceFamily).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdN(idN).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdN(ownerObjectIdN).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -2605,7 +6607,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2618,6 +6620,8 @@ func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
+	deviceFamily := []string{"Inner_example"} // []string |  (optional)
+	deviceFamilyN := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	deviceType := []string{"Inner_example"} // []string |  (optional)
@@ -2665,8 +6669,8 @@ func main() {
 	schemaIsnull := true // bool | Schema (name or PK) is null (optional)
 	schemaN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
-	tag := []string{"Inner_example"} // []string | Tag (name) (optional)
-	tagN := []string{"Inner_example"} // []string | Exclude Tag (name) (optional)
+	tag := []string{"Inner_example"} // []string |  (optional)
+	tagN := []string{"Inner_example"} // []string |  (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
@@ -2679,11 +6683,11 @@ func main() {
 	tenantId := []string{"Inner_example"} // []string | Tenant (ID) - Deprecated (use tenant filter) (optional)
 	tenantIdN := []string{"Inner_example"} // []string | Exclude Tenant (ID) - Deprecated (use tenant filter) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextsList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdN(idN).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdN(ownerObjectIdN).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasConfigContextsList(context.Background()).ClusterGroup(clusterGroup).ClusterGroupN(clusterGroupN).ClusterGroupId(clusterGroupId).ClusterGroupIdN(clusterGroupIdN).ClusterId(clusterId).ClusterIdN(clusterIdN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DeviceFamily(deviceFamily).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DeviceTypeId(deviceTypeId).DeviceTypeIdN(deviceTypeIdN).Format(format).Id(id).IdN(idN).IsActive(isActive).Limit(limit).Location(location).LocationN(locationN).LocationId(locationId).LocationIdN(locationIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).OwnerContentType(ownerContentType).OwnerContentTypeIsnull(ownerContentTypeIsnull).OwnerContentTypeN(ownerContentTypeN).OwnerObjectId(ownerObjectId).OwnerObjectIdIsnull(ownerObjectIdIsnull).OwnerObjectIdN(ownerObjectIdN).Platform(platform).PlatformN(platformN).PlatformId(platformId).PlatformIdN(platformIdN).Q(q).Role(role).RoleN(roleN).Schema(schema).SchemaIsnull(schemaIsnull).SchemaN(schemaN).Sort(sort).Tag(tag).TagN(tagN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupN(tenantGroupN).TenantGroupId(tenantGroupId).TenantGroupIdN(tenantGroupIdN).TenantId(tenantId).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasConfigContextsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -2713,6 +6717,8 @@ Name | Type | Description  | Notes
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
+ **deviceFamily** | **[]string** |  | 
+ **deviceFamilyN** | **[]string** |  | 
  **deviceRedundancyGroup** | **[]string** |  | 
  **deviceRedundancyGroupN** | **[]string** |  | 
  **deviceType** | **[]string** |  | 
@@ -2760,8 +6766,8 @@ Name | Type | Description  | Notes
  **schemaIsnull** | **bool** | Schema (name or PK) is null | 
  **schemaN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
- **tag** | **[]string** | Tag (name) | 
- **tagN** | **[]string** | Exclude Tag (name) | 
+ **tag** | **[]string** |  | 
+ **tagN** | **[]string** |  | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
@@ -2774,7 +6780,7 @@ Name | Type | Description  | Notes
  **tenantId** | **[]string** | Tenant (ID) - Deprecated (use tenant filter) | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) - Deprecated (use tenant filter) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2811,7 +6817,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2885,7 +6891,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2894,7 +6900,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2928,7 +6934,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2965,7 +6971,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3039,14 +7045,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this config context.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3078,7 +7084,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3115,7 +7121,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3189,7 +7195,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3255,7 +7261,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3323,7 +7329,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3391,7 +7397,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3459,7 +7465,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3530,7 +7536,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3571,7 +7577,7 @@ func main() {
 	teamIsnull := true // bool | Team (name or ID) is null (optional)
 	teamN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3633,7 +7639,7 @@ Name | Type | Description  | Notes
  **teamIsnull** | **bool** | Team (name or ID) is null | 
  **teamN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3670,7 +7676,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3744,7 +7750,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3753,7 +7759,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3787,7 +7793,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3824,7 +7830,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3898,14 +7904,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this contact association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3937,7 +7943,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3974,7 +7980,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4048,7 +8054,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4114,7 +8120,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4182,7 +8188,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4250,7 +8256,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4318,7 +8324,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4389,7 +8395,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4494,7 +8500,7 @@ func main() {
 	teamsIsnull := true // bool | Team (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4620,7 +8626,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Team (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4657,7 +8663,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4731,7 +8737,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4740,7 +8746,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4774,7 +8780,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4811,7 +8817,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4885,14 +8891,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this contact.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4924,7 +8930,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4961,7 +8967,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5035,7 +9041,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5085,7 +9091,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5156,7 +9162,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5193,14 +9199,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := int32(56) // int32 | A unique integer value identifying this content type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5232,7 +9238,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5269,7 +9275,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5335,7 +9341,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5403,7 +9409,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5471,7 +9477,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5539,7 +9545,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5609,7 +9615,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5643,7 +9649,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5698,7 +9704,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5735,7 +9741,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5809,14 +9815,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this custom field choice.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5848,7 +9854,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5885,7 +9891,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5959,7 +9965,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6025,7 +10031,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6093,7 +10099,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6161,7 +10167,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6229,7 +10235,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6299,7 +10305,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6310,7 +10316,7 @@ func main() {
 	contentTypesN := []int32{int32(123)} // []int32 |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	filterLogic := []string{"Inner_example"} // []string | Loose matches any instance of a given string; Exact matches the entire field. (optional)
+	filterLogic := []openapiclient.ExtrasCustomFieldsListFilterLogicParameterInner{openapiclient.extras_custom_fields_list_filter_logic_parameter_inner("disabled")} // []ExtrasCustomFieldsListFilterLogicParameterInner | Loose matches any instance of a given string; Exact matches the entire field.   (optional)
 	filterLogicIc := []string{"Inner_example"} // []string |  (optional)
 	filterLogicIe := []string{"Inner_example"} // []string |  (optional)
 	filterLogicIew := []string{"Inner_example"} // []string |  (optional)
@@ -6370,7 +10376,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6402,7 +10408,7 @@ Name | Type | Description  | Notes
  **contentTypesN** | **[]int32** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **filterLogic** | **[]string** | Loose matches any instance of a given string; Exact matches the entire field. | 
+ **filterLogic** | [**[]ExtrasCustomFieldsListFilterLogicParameterInner**](ExtrasCustomFieldsListFilterLogicParameterInner.md) | Loose matches any instance of a given string; Exact matches the entire field.   | 
  **filterLogicIc** | **[]string** |  | 
  **filterLogicIe** | **[]string** |  | 
  **filterLogicIew** | **[]string** |  | 
@@ -6462,7 +10468,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6499,7 +10505,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6573,7 +10579,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6582,7 +10588,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6616,7 +10622,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6653,7 +10659,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6727,14 +10733,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this custom field.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6766,7 +10772,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6803,7 +10809,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6877,7 +10883,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6943,7 +10949,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7011,7 +11017,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7079,7 +11085,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7147,7 +11153,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7217,11 +11223,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	buttonClass := []string{"Inner_example"} // []string | The class of the first link in a group will be used for the dropdown button (optional)
+	buttonClass := []openapiclient.ExtrasCustomLinksListButtonClassParameterInner{openapiclient.extras_custom_links_list_button_class_parameter_inner("danger")} // []ExtrasCustomLinksListButtonClassParameterInner | The class of the first link in a group will be used for the dropdown button   (optional)
 	buttonClassIc := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIe := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIew := []string{"Inner_example"} // []string |  (optional)
@@ -7316,7 +11322,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7341,7 +11347,7 @@ Other parameters are passed through a pointer to a apiExtrasCustomLinksListReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **buttonClass** | **[]string** | The class of the first link in a group will be used for the dropdown button | 
+ **buttonClass** | [**[]ExtrasCustomLinksListButtonClassParameterInner**](ExtrasCustomLinksListButtonClassParameterInner.md) | The class of the first link in a group will be used for the dropdown button   | 
  **buttonClassIc** | **[]string** |  | 
  **buttonClassIe** | **[]string** |  | 
  **buttonClassIew** | **[]string** |  | 
@@ -7436,7 +11442,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7473,7 +11479,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7547,7 +11553,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7556,7 +11562,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7590,7 +11596,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7627,7 +11633,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7701,14 +11707,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this custom link.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7740,7 +11746,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7777,7 +11783,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7851,7 +11857,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7917,7 +11923,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7985,7 +11991,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8053,7 +12059,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8121,7 +12127,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8192,7 +12198,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8230,7 +12236,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -8289,7 +12295,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -8326,7 +12332,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8400,14 +12406,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this dynamic group membership.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -8439,7 +12445,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -8476,7 +12482,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8550,7 +12556,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8616,7 +12622,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8684,7 +12690,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8752,7 +12758,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8820,7 +12826,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8875,7 +12881,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasDynamicGroupsList
 
-> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).Ancestors(ancestors).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Descendants(descendants).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -8891,10 +12897,11 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
+	ancestors := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
@@ -8907,6 +12914,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	descendants := []string{"Inner_example"} // []string |  (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -8981,11 +12989,11 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).Ancestors(ancestors).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Descendants(descendants).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasDynamicGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -9006,6 +13014,7 @@ Other parameters are passed through a pointer to a apiExtrasDynamicGroupsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **ancestors** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
@@ -9018,6 +13027,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **descendants** | **[]string** |  | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -9092,7 +13102,7 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9129,14 +13139,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this dynamic group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9168,7 +13178,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9205,7 +13215,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9279,7 +13289,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9288,7 +13298,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9322,7 +13332,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9359,7 +13369,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9433,14 +13443,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this dynamic group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9472,7 +13482,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9509,7 +13519,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9583,7 +13593,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9649,7 +13659,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9717,7 +13727,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9785,7 +13795,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9853,7 +13863,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9923,7 +13933,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9965,7 +13975,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10028,7 +14038,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10065,7 +14075,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10139,7 +14149,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10148,7 +14158,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10182,7 +14192,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10219,7 +14229,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10293,14 +14303,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this export template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10332,7 +14342,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10369,7 +14379,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10443,7 +14453,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10509,7 +14519,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10577,7 +14587,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10645,7 +14655,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10713,7 +14723,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10784,7 +14794,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10818,7 +14828,7 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasSecretsGroup := true // bool | Has secrets group (optional)
 	headers := []string{"Inner_example"} // []string |  (optional)
-	httpMethod := []string{"Inner_example"} // []string |  (optional)
+	httpMethod := []openapiclient.ExtrasExternalIntegrationsListHttpMethodParameterInner{openapiclient.extras_external_integrations_list_http_method_parameter_inner("DELETE")} // []ExtrasExternalIntegrationsListHttpMethodParameterInner |  (optional)
 	httpMethodIc := []string{"Inner_example"} // []string |  (optional)
 	httpMethodIe := []string{"Inner_example"} // []string |  (optional)
 	httpMethodIew := []string{"Inner_example"} // []string |  (optional)
@@ -10890,7 +14900,7 @@ func main() {
 	timeoutN := []int32{int32(123)} // []int32 |  (optional)
 	verifySsl := true // bool |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10945,7 +14955,7 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasSecretsGroup** | **bool** | Has secrets group | 
  **headers** | **[]string** |  | 
- **httpMethod** | **[]string** |  | 
+ **httpMethod** | [**[]ExtrasExternalIntegrationsListHttpMethodParameterInner**](ExtrasExternalIntegrationsListHttpMethodParameterInner.md) |  | 
  **httpMethodIc** | **[]string** |  | 
  **httpMethodIe** | **[]string** |  | 
  **httpMethodIew** | **[]string** |  | 
@@ -11017,7 +15027,7 @@ Name | Type | Description  | Notes
  **timeoutN** | **[]int32** |  | 
  **verifySsl** | **bool** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11054,7 +15064,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11128,7 +15138,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11137,7 +15147,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11171,7 +15181,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11208,7 +15218,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11282,14 +15292,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this external integration.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11321,7 +15331,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11358,7 +15368,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11432,14 +15442,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this file proxy.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11471,7 +15481,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11509,7 +15519,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11547,7 +15557,7 @@ func main() {
 	uploadedAtLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	uploadedAtN := []time.Time{time.Now()} // []time.Time |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11606,7 +15616,7 @@ Name | Type | Description  | Notes
  **uploadedAtLte** | [**[]time.Time**](time.Time.md) |  | 
  **uploadedAtN** | [**[]time.Time**](time.Time.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11643,14 +15653,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this file proxy.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11682,7 +15692,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11719,7 +15729,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11785,7 +15795,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11853,7 +15863,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11921,7 +15931,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11989,7 +15999,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12060,7 +16070,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12160,7 +16170,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -12281,7 +16291,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -12318,7 +16328,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12392,7 +16402,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12401,7 +16411,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -12435,7 +16445,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -12472,7 +16482,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12546,14 +16556,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Git repository.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -12585,7 +16595,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -12622,7 +16632,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12694,7 +16704,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12768,7 +16778,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12834,7 +16844,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12902,7 +16912,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12970,7 +16980,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13038,7 +17048,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13108,7 +17118,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13142,7 +17152,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13197,7 +17207,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13234,7 +17244,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13308,7 +17318,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13317,7 +17327,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13351,7 +17361,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13388,7 +17398,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13462,14 +17472,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this GraphQL query.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13501,7 +17511,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13538,7 +17548,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13612,7 +17622,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13686,7 +17696,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13752,7 +17762,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13820,11 +17830,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableImageAttachmentRequest := []openapiclient.BulkWritableImageAttachmentRequest{*openapiclient.NewBulkWritableImageAttachmentRequest("Id_example", "ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123))} // []BulkWritableImageAttachmentRequest | 
+	bulkWritableImageAttachmentRequest := []openapiclient.BulkWritableImageAttachmentRequest{*openapiclient.NewBulkWritableImageAttachmentRequest("Id_example", "ContentType_example", "ObjectId_example", "TODO")} // []BulkWritableImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13888,11 +17898,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123)) // ImageAttachmentRequest | 
+	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO") // ImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13956,7 +17966,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14026,14 +18036,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	contentType := "contentType_example" // string |  (optional)
 	contentTypeN := "contentTypeN_example" // string |  (optional)
-	contentTypeId := int32(56) // int32 |  (optional)
-	contentTypeIdN := int32(56) // int32 |  (optional)
+	contentTypeId := []int32{int32(123)} // []int32 |  (optional)
+	contentTypeIdN := []int32{int32(123)} // []int32 |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
@@ -14058,7 +18068,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -14085,8 +18095,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contentType** | **string** |  | 
  **contentTypeN** | **string** |  | 
- **contentTypeId** | **int32** |  | 
- **contentTypeIdN** | **int32** |  | 
+ **contentTypeId** | **[]int32** |  | 
+ **contentTypeIdN** | **[]int32** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
@@ -14111,7 +18121,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -14148,7 +18158,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14222,14 +18232,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this image attachment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -14261,7 +18271,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -14298,12 +18308,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this image attachment.
-	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123)) // ImageAttachmentRequest | 
+	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO") // ImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14372,7 +18382,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14438,7 +18448,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14506,7 +18516,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14574,7 +18584,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14642,7 +18652,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14712,11 +18722,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	buttonClass := []string{"Inner_example"} // []string |  (optional)
+	buttonClass := []openapiclient.ExtrasCustomLinksListButtonClassParameterInner{openapiclient.extras_custom_links_list_button_class_parameter_inner("danger")} // []ExtrasCustomLinksListButtonClassParameterInner |  (optional)
 	buttonClassIc := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIe := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIew := []string{"Inner_example"} // []string |  (optional)
@@ -14800,7 +18810,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -14825,7 +18835,7 @@ Other parameters are passed through a pointer to a apiExtrasJobButtonsListReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **buttonClass** | **[]string** |  | 
+ **buttonClass** | [**[]ExtrasCustomLinksListButtonClassParameterInner**](ExtrasCustomLinksListButtonClassParameterInner.md) |  | 
  **buttonClassIc** | **[]string** |  | 
  **buttonClassIe** | **[]string** |  | 
  **buttonClassIew** | **[]string** |  | 
@@ -14909,7 +18919,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -14946,7 +18956,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15020,7 +19030,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15029,7 +19039,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15063,7 +19073,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15100,7 +19110,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15174,14 +19184,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job button.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15213,7 +19223,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15250,7 +19260,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15324,7 +19334,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15390,7 +19400,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15458,7 +19468,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15526,7 +19536,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15594,7 +19604,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15664,7 +19674,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15706,7 +19716,7 @@ func main() {
 	typeDelete := true // bool |  (optional)
 	typeUpdate := true // bool |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15769,7 +19779,7 @@ Name | Type | Description  | Notes
  **typeDelete** | **bool** |  | 
  **typeUpdate** | **bool** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15806,7 +19816,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15880,7 +19890,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15889,7 +19899,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15923,7 +19933,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15960,7 +19970,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16034,14 +20044,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job hook.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16073,7 +20083,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16110,7 +20120,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16185,7 +20195,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16226,10 +20236,10 @@ func main() {
 	groupingRe := []string{"Inner_example"} // []string |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	jobResult := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
-	jobResultN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
+	jobResult := []string{"Inner_example"} // []string |  (optional)
+	jobResultN := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	logLevel := []string{"Inner_example"} // []string |  (optional)
+	logLevel := []openapiclient.ExtrasJobLogsListLogLevelParameterInner{openapiclient.extras_job_logs_list_log_level_parameter_inner("critical")} // []ExtrasJobLogsListLogLevelParameterInner |  (optional)
 	logLevelIc := []string{"Inner_example"} // []string |  (optional)
 	logLevelIe := []string{"Inner_example"} // []string |  (optional)
 	logLevelIew := []string{"Inner_example"} // []string |  (optional)
@@ -16275,7 +20285,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16337,10 +20347,10 @@ Name | Type | Description  | Notes
  **groupingRe** | **[]string** |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
- **jobResult** | **string** |  | 
- **jobResultN** | **string** |  | 
+ **jobResult** | **[]string** |  | 
+ **jobResultN** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **logLevel** | **[]string** |  | 
+ **logLevel** | [**[]ExtrasJobLogsListLogLevelParameterInner**](ExtrasJobLogsListLogLevelParameterInner.md) |  | 
  **logLevelIc** | **[]string** |  | 
  **logLevelIe** | **[]string** |  | 
  **logLevelIew** | **[]string** |  | 
@@ -16386,7 +20396,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16423,14 +20433,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job log entry.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16462,7 +20472,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16499,7 +20509,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16565,7 +20575,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16633,7 +20643,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16701,7 +20711,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16769,7 +20779,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16839,7 +20849,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16855,7 +20865,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16892,7 +20902,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16929,7 +20939,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17003,14 +21013,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job queue assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -17042,7 +21052,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17079,7 +21089,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17153,7 +21163,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17219,7 +21229,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17287,7 +21297,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17355,7 +21365,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17423,7 +21433,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17494,7 +21504,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17586,7 +21596,7 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -17699,7 +21709,7 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17736,7 +21746,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17810,7 +21820,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17819,7 +21829,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -17853,7 +21863,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17890,7 +21900,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17964,14 +21974,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job queue.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18003,7 +22013,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18040,7 +22050,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18114,7 +22124,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18180,7 +22190,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18235,7 +22245,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobResultsList
 
-> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).HasJobConsoleEntries(hasJobConsoleEntries).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -18251,7 +22261,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18276,6 +22286,7 @@ func main() {
 	dateStartedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	dateStartedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasJobConsoleEntries := true // bool | Has Job Console Entries (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	jobModel := []string{"Inner_example"} // []string |  (optional)
@@ -18319,15 +22330,15 @@ func main() {
 	statusNisw := []string{"Inner_example"} // []string |  (optional)
 	statusNre := []string{"Inner_example"} // []string |  (optional)
 	statusRe := []string{"Inner_example"} // []string |  (optional)
-	user := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
+	user := []string{"Inner_example"} // []string |  (optional)
 	userIsnull := true // bool |  (optional)
-	userN := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string |  (optional)
+	userN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).HasJobConsoleEntries(hasJobConsoleEntries).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobResultsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -18369,6 +22380,7 @@ Name | Type | Description  | Notes
  **dateStartedLte** | [**[]time.Time**](time.Time.md) |  | 
  **dateStartedN** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasJobConsoleEntries** | **bool** | Has Job Console Entries | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **jobModel** | **[]string** |  | 
@@ -18412,11 +22424,11 @@ Name | Type | Description  | Notes
  **statusNisw** | **[]string** |  | 
  **statusNre** | **[]string** |  | 
  **statusRe** | **[]string** |  | 
- **user** | **string** |  | 
+ **user** | **[]string** |  | 
  **userIsnull** | **bool** |  | 
- **userN** | **string** |  | 
+ **userN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18453,14 +22465,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job result.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18492,7 +22504,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18529,14 +22541,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job result.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18568,7 +22580,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18605,7 +22617,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18671,7 +22683,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18739,7 +22751,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18807,7 +22819,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18877,7 +22889,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18932,7 +22944,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobsList
 
-> PaginatedJobList ExtrasJobsList(ctx).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedJobList ExtrasJobsList(ctx).ConsoleLogDefault(consoleLogDefault).ConsoleLogDefaultOverride(consoleLogDefaultOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -18947,12 +22959,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	approvalRequired := true // bool |  (optional)
-	approvalRequiredOverride := true // bool |  (optional)
+	consoleLogDefault := true // bool |  (optional)
+	consoleLogDefaultOverride := true // bool |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
@@ -19060,11 +23072,11 @@ func main() {
 	timeLimitN := []float32{float32(123)} // []float32 |  (optional)
 	timeLimitOverride := true // bool |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).ApprovalRequired(approvalRequired).ApprovalRequiredOverride(approvalRequiredOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).ConsoleLogDefault(consoleLogDefault).ConsoleLogDefaultOverride(consoleLogDefaultOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -19085,8 +23097,8 @@ Other parameters are passed through a pointer to a apiExtrasJobsListRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **approvalRequired** | **bool** |  | 
- **approvalRequiredOverride** | **bool** |  | 
+ **consoleLogDefault** | **bool** |  | 
+ **consoleLogDefaultOverride** | **bool** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
@@ -19194,7 +23206,7 @@ Name | Type | Description  | Notes
  **timeLimitN** | **[]float32** |  | 
  **timeLimitOverride** | **bool** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19231,7 +23243,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19305,7 +23317,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19379,7 +23391,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19388,7 +23400,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19422,7 +23434,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19459,7 +23471,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19468,7 +23480,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19502,7 +23514,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19539,7 +23551,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19613,7 +23625,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19687,14 +23699,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "id_example" // string | Unique object identifier, either a UUID primary key or a composite key.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19726,7 +23738,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19763,14 +23775,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	name := "name_example" // string | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19802,7 +23814,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19839,7 +23851,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19913,7 +23925,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19987,7 +23999,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20061,7 +24073,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20135,7 +24147,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20145,7 +24157,7 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20180,7 +24192,7 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20217,7 +24229,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20227,7 +24239,7 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20262,7 +24274,7 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20299,7 +24311,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20365,7 +24377,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20433,7 +24445,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20501,7 +24513,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20569,7 +24581,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20640,7 +24652,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20688,7 +24700,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20757,7 +24769,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20794,7 +24806,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20868,14 +24880,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20907,7 +24919,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20944,7 +24956,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21018,7 +25030,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21084,7 +25096,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21152,7 +25164,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21220,7 +25232,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21288,7 +25300,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21359,7 +25371,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21375,7 +25387,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
-	dataType := []string{"Inner_example"} // []string | The type of data allowed for any Metadata of this type. (optional)
+	dataType := []openapiclient.ExtrasMetadataTypesListDataTypeParameterInner{openapiclient.extras_metadata_types_list_data_type_parameter_inner("boolean")} // []ExtrasMetadataTypesListDataTypeParameterInner | The type of data allowed for any Metadata of this type.   (optional)
 	dataTypeIc := []string{"Inner_example"} // []string |  (optional)
 	dataTypeIe := []string{"Inner_example"} // []string |  (optional)
 	dataTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -21440,7 +25452,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21477,7 +25489,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
- **dataType** | **[]string** | The type of data allowed for any Metadata of this type. | 
+ **dataType** | [**[]ExtrasMetadataTypesListDataTypeParameterInner**](ExtrasMetadataTypesListDataTypeParameterInner.md) | The type of data allowed for any Metadata of this type.   | 
  **dataTypeIc** | **[]string** |  | 
  **dataTypeIe** | **[]string** |  | 
  **dataTypeIew** | **[]string** |  | 
@@ -21542,7 +25554,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21579,7 +25591,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21653,7 +25665,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21662,7 +25674,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21696,7 +25708,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21733,7 +25745,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21807,14 +25819,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21846,7 +25858,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21883,7 +25895,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21957,7 +25969,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22023,7 +26035,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22091,7 +26103,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22159,7 +26171,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22227,7 +26239,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22297,7 +26309,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22305,8 +26317,8 @@ func main() {
 	assignedObjectIdN := []string{"Inner_example"} // []string |  (optional)
 	assignedObjectType := "assignedObjectType_example" // string |  (optional)
 	assignedObjectTypeN := "assignedObjectTypeN_example" // string |  (optional)
-	assignedObjectTypeId := int32(56) // int32 |  (optional)
-	assignedObjectTypeIdN := int32(56) // int32 |  (optional)
+	assignedObjectTypeId := []int32{int32(123)} // []int32 |  (optional)
+	assignedObjectTypeIdN := []int32{int32(123)} // []int32 |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
@@ -22346,7 +26358,7 @@ func main() {
 	userNameNre := []string{"Inner_example"} // []string |  (optional)
 	userNameRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22375,8 +26387,8 @@ Name | Type | Description  | Notes
  **assignedObjectIdN** | **[]string** |  | 
  **assignedObjectType** | **string** |  | 
  **assignedObjectTypeN** | **string** |  | 
- **assignedObjectTypeId** | **int32** |  | 
- **assignedObjectTypeIdN** | **int32** |  | 
+ **assignedObjectTypeId** | **[]int32** |  | 
+ **assignedObjectTypeIdN** | **[]int32** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
@@ -22416,7 +26428,7 @@ Name | Type | Description  | Notes
  **userNameNre** | **[]string** |  | 
  **userNameRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22453,7 +26465,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22527,14 +26539,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this note.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22566,7 +26578,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22603,7 +26615,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22662,7 +26674,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasObjectChangesList
 
-> PaginatedObjectChangeList ExtrasObjectChangesList(ctx).Action(action).ActionIc(actionIc).ActionIe(actionIe).ActionIew(actionIew).ActionIre(actionIre).ActionIsw(actionIsw).ActionN(actionN).ActionNic(actionNic).ActionNie(actionNie).ActionNiew(actionNiew).ActionNire(actionNire).ActionNisw(actionNisw).ActionNre(actionNre).ActionRe(actionRe).ChangedObjectId(changedObjectId).ChangedObjectIdN(changedObjectIdN).ChangedObjectType(changedObjectType).ChangedObjectTypeIsnull(changedObjectTypeIsnull).ChangedObjectTypeN(changedObjectTypeN).ChangedObjectTypeId(changedObjectTypeId).ChangedObjectTypeIdIsnull(changedObjectTypeIdIsnull).ChangedObjectTypeIdN(changedObjectTypeIdN).Format(format).Id(id).IdN(idN).Limit(limit).ObjectRepr(objectRepr).ObjectReprIc(objectReprIc).ObjectReprIe(objectReprIe).ObjectReprIew(objectReprIew).ObjectReprIre(objectReprIre).ObjectReprIsw(objectReprIsw).ObjectReprN(objectReprN).ObjectReprNic(objectReprNic).ObjectReprNie(objectReprNie).ObjectReprNiew(objectReprNiew).ObjectReprNire(objectReprNire).ObjectReprNisw(objectReprNisw).ObjectReprNre(objectReprNre).ObjectReprRe(objectReprRe).Offset(offset).Q(q).RequestId(requestId).RequestIdN(requestIdN).Sort(sort).Time(time).TimeGt(timeGt).TimeGte(timeGte).TimeLt(timeLt).TimeLte(timeLte).TimeN(timeN).User(user).UserIsnull(userIsnull).UserN(userN).UserId(userId).UserIdIsnull(userIdIsnull).UserIdN(userIdN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedObjectChangeList ExtrasObjectChangesList(ctx).Action(action).ActionIc(actionIc).ActionIe(actionIe).ActionIew(actionIew).ActionIre(actionIre).ActionIsw(actionIsw).ActionN(actionN).ActionNic(actionNic).ActionNie(actionNie).ActionNiew(actionNiew).ActionNire(actionNire).ActionNisw(actionNisw).ActionNre(actionNre).ActionRe(actionRe).ChangeContext(changeContext).ChangeContextIc(changeContextIc).ChangeContextIe(changeContextIe).ChangeContextIew(changeContextIew).ChangeContextIre(changeContextIre).ChangeContextIsw(changeContextIsw).ChangeContextN(changeContextN).ChangeContextNic(changeContextNic).ChangeContextNie(changeContextNie).ChangeContextNiew(changeContextNiew).ChangeContextNire(changeContextNire).ChangeContextNisw(changeContextNisw).ChangeContextNre(changeContextNre).ChangeContextRe(changeContextRe).ChangeContextDetail(changeContextDetail).ChangeContextDetailIc(changeContextDetailIc).ChangeContextDetailIe(changeContextDetailIe).ChangeContextDetailIew(changeContextDetailIew).ChangeContextDetailIre(changeContextDetailIre).ChangeContextDetailIsw(changeContextDetailIsw).ChangeContextDetailN(changeContextDetailN).ChangeContextDetailNic(changeContextDetailNic).ChangeContextDetailNie(changeContextDetailNie).ChangeContextDetailNiew(changeContextDetailNiew).ChangeContextDetailNire(changeContextDetailNire).ChangeContextDetailNisw(changeContextDetailNisw).ChangeContextDetailNre(changeContextDetailNre).ChangeContextDetailRe(changeContextDetailRe).ChangedObjectId(changedObjectId).ChangedObjectIdN(changedObjectIdN).ChangedObjectType(changedObjectType).ChangedObjectTypeIsnull(changedObjectTypeIsnull).ChangedObjectTypeN(changedObjectTypeN).ChangedObjectTypeId(changedObjectTypeId).ChangedObjectTypeIdIsnull(changedObjectTypeIdIsnull).ChangedObjectTypeIdN(changedObjectTypeIdN).Format(format).Id(id).IdN(idN).Limit(limit).ObjectRepr(objectRepr).ObjectReprIc(objectReprIc).ObjectReprIe(objectReprIe).ObjectReprIew(objectReprIew).ObjectReprIre(objectReprIre).ObjectReprIsw(objectReprIsw).ObjectReprN(objectReprN).ObjectReprNic(objectReprNic).ObjectReprNie(objectReprNie).ObjectReprNiew(objectReprNiew).ObjectReprNire(objectReprNire).ObjectReprNisw(objectReprNisw).ObjectReprNre(objectReprNre).ObjectReprRe(objectReprRe).Offset(offset).Q(q).RequestId(requestId).RequestIdN(requestIdN).Sort(sort).Time(time).TimeGt(timeGt).TimeGte(timeGte).TimeLt(timeLt).TimeLte(timeLte).TimeN(timeN).User(user).UserIsnull(userIsnull).UserN(userN).UserId(userId).UserIdIsnull(userIdIsnull).UserIdN(userIdN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -22678,11 +26690,11 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	action := []string{"Inner_example"} // []string |  (optional)
+	action := []openapiclient.ExtrasObjectChangesListActionParameterInner{openapiclient.extras_object_changes_list_action_parameter_inner("create")} // []ExtrasObjectChangesListActionParameterInner |  (optional)
 	actionIc := []string{"Inner_example"} // []string |  (optional)
 	actionIe := []string{"Inner_example"} // []string |  (optional)
 	actionIew := []string{"Inner_example"} // []string |  (optional)
@@ -22696,14 +26708,42 @@ func main() {
 	actionNisw := []string{"Inner_example"} // []string |  (optional)
 	actionNre := []string{"Inner_example"} // []string |  (optional)
 	actionRe := []string{"Inner_example"} // []string |  (optional)
+	changeContext := []string{"Inner_example"} // []string | Change Context (optional)
+	changeContextIc := []string{"Inner_example"} // []string | Change Context contains (optional)
+	changeContextIe := []string{"Inner_example"} // []string | Change Context (optional)
+	changeContextIew := []string{"Inner_example"} // []string | Change Context ends with (optional)
+	changeContextIre := []string{"Inner_example"} // []string | Change Context matches regex (optional)
+	changeContextIsw := []string{"Inner_example"} // []string | Change Context starts with (optional)
+	changeContextN := []string{"Inner_example"} // []string | Exclude Change Context (optional)
+	changeContextNic := []string{"Inner_example"} // []string | Exclude Change Context contains (optional)
+	changeContextNie := []string{"Inner_example"} // []string | Exclude Change Context (optional)
+	changeContextNiew := []string{"Inner_example"} // []string | Exclude Change Context ends with (optional)
+	changeContextNire := []string{"Inner_example"} // []string | Exclude Change Context matches regex (optional)
+	changeContextNisw := []string{"Inner_example"} // []string | Exclude Change Context starts with (optional)
+	changeContextNre := []string{"Inner_example"} // []string | Exclude Change Context matches regex (optional)
+	changeContextRe := []string{"Inner_example"} // []string | Change Context matches regex (optional)
+	changeContextDetail := []string{"Inner_example"} // []string | Change Context Detail (optional)
+	changeContextDetailIc := []string{"Inner_example"} // []string | Change Context Detail contains (optional)
+	changeContextDetailIe := []string{"Inner_example"} // []string | Change Context Detail (optional)
+	changeContextDetailIew := []string{"Inner_example"} // []string | Change Context Detail ends with (optional)
+	changeContextDetailIre := []string{"Inner_example"} // []string | Change Context Detail matches regex (optional)
+	changeContextDetailIsw := []string{"Inner_example"} // []string | Change Context Detail starts with (optional)
+	changeContextDetailN := []string{"Inner_example"} // []string | Exclude Change Context Detail (optional)
+	changeContextDetailNic := []string{"Inner_example"} // []string | Exclude Change Context Detail contains (optional)
+	changeContextDetailNie := []string{"Inner_example"} // []string | Exclude Change Context Detail (optional)
+	changeContextDetailNiew := []string{"Inner_example"} // []string | Exclude Change Context Detail ends with (optional)
+	changeContextDetailNire := []string{"Inner_example"} // []string | Exclude Change Context Detail matches regex (optional)
+	changeContextDetailNisw := []string{"Inner_example"} // []string | Exclude Change Context Detail starts with (optional)
+	changeContextDetailNre := []string{"Inner_example"} // []string | Exclude Change Context Detail matches regex (optional)
+	changeContextDetailRe := []string{"Inner_example"} // []string | Change Context Detail matches regex (optional)
 	changedObjectId := []string{"Inner_example"} // []string |  (optional)
 	changedObjectIdN := []string{"Inner_example"} // []string |  (optional)
 	changedObjectType := "changedObjectType_example" // string |  (optional)
 	changedObjectTypeIsnull := true // bool |  (optional)
 	changedObjectTypeN := "changedObjectTypeN_example" // string |  (optional)
-	changedObjectTypeId := int32(56) // int32 |  (optional)
+	changedObjectTypeId := []*int32{int32(123)} // []*int32 |  (optional)
 	changedObjectTypeIdIsnull := true // bool |  (optional)
-	changedObjectTypeIdN := int32(56) // int32 |  (optional)
+	changedObjectTypeIdN := []*int32{int32(123)} // []*int32 |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
@@ -22754,11 +26794,11 @@ func main() {
 	userNameNre := []string{"Inner_example"} // []string |  (optional)
 	userNameRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectChangesList(context.Background()).Action(action).ActionIc(actionIc).ActionIe(actionIe).ActionIew(actionIew).ActionIre(actionIre).ActionIsw(actionIsw).ActionN(actionN).ActionNic(actionNic).ActionNie(actionNie).ActionNiew(actionNiew).ActionNire(actionNire).ActionNisw(actionNisw).ActionNre(actionNre).ActionRe(actionRe).ChangedObjectId(changedObjectId).ChangedObjectIdN(changedObjectIdN).ChangedObjectType(changedObjectType).ChangedObjectTypeIsnull(changedObjectTypeIsnull).ChangedObjectTypeN(changedObjectTypeN).ChangedObjectTypeId(changedObjectTypeId).ChangedObjectTypeIdIsnull(changedObjectTypeIdIsnull).ChangedObjectTypeIdN(changedObjectTypeIdN).Format(format).Id(id).IdN(idN).Limit(limit).ObjectRepr(objectRepr).ObjectReprIc(objectReprIc).ObjectReprIe(objectReprIe).ObjectReprIew(objectReprIew).ObjectReprIre(objectReprIre).ObjectReprIsw(objectReprIsw).ObjectReprN(objectReprN).ObjectReprNic(objectReprNic).ObjectReprNie(objectReprNie).ObjectReprNiew(objectReprNiew).ObjectReprNire(objectReprNire).ObjectReprNisw(objectReprNisw).ObjectReprNre(objectReprNre).ObjectReprRe(objectReprRe).Offset(offset).Q(q).RequestId(requestId).RequestIdN(requestIdN).Sort(sort).Time(time).TimeGt(timeGt).TimeGte(timeGte).TimeLt(timeLt).TimeLte(timeLte).TimeN(timeN).User(user).UserIsnull(userIsnull).UserN(userN).UserId(userId).UserIdIsnull(userIdIsnull).UserIdN(userIdN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasObjectChangesList(context.Background()).Action(action).ActionIc(actionIc).ActionIe(actionIe).ActionIew(actionIew).ActionIre(actionIre).ActionIsw(actionIsw).ActionN(actionN).ActionNic(actionNic).ActionNie(actionNie).ActionNiew(actionNiew).ActionNire(actionNire).ActionNisw(actionNisw).ActionNre(actionNre).ActionRe(actionRe).ChangeContext(changeContext).ChangeContextIc(changeContextIc).ChangeContextIe(changeContextIe).ChangeContextIew(changeContextIew).ChangeContextIre(changeContextIre).ChangeContextIsw(changeContextIsw).ChangeContextN(changeContextN).ChangeContextNic(changeContextNic).ChangeContextNie(changeContextNie).ChangeContextNiew(changeContextNiew).ChangeContextNire(changeContextNire).ChangeContextNisw(changeContextNisw).ChangeContextNre(changeContextNre).ChangeContextRe(changeContextRe).ChangeContextDetail(changeContextDetail).ChangeContextDetailIc(changeContextDetailIc).ChangeContextDetailIe(changeContextDetailIe).ChangeContextDetailIew(changeContextDetailIew).ChangeContextDetailIre(changeContextDetailIre).ChangeContextDetailIsw(changeContextDetailIsw).ChangeContextDetailN(changeContextDetailN).ChangeContextDetailNic(changeContextDetailNic).ChangeContextDetailNie(changeContextDetailNie).ChangeContextDetailNiew(changeContextDetailNiew).ChangeContextDetailNire(changeContextDetailNire).ChangeContextDetailNisw(changeContextDetailNisw).ChangeContextDetailNre(changeContextDetailNre).ChangeContextDetailRe(changeContextDetailRe).ChangedObjectId(changedObjectId).ChangedObjectIdN(changedObjectIdN).ChangedObjectType(changedObjectType).ChangedObjectTypeIsnull(changedObjectTypeIsnull).ChangedObjectTypeN(changedObjectTypeN).ChangedObjectTypeId(changedObjectTypeId).ChangedObjectTypeIdIsnull(changedObjectTypeIdIsnull).ChangedObjectTypeIdN(changedObjectTypeIdN).Format(format).Id(id).IdN(idN).Limit(limit).ObjectRepr(objectRepr).ObjectReprIc(objectReprIc).ObjectReprIe(objectReprIe).ObjectReprIew(objectReprIew).ObjectReprIre(objectReprIre).ObjectReprIsw(objectReprIsw).ObjectReprN(objectReprN).ObjectReprNic(objectReprNic).ObjectReprNie(objectReprNie).ObjectReprNiew(objectReprNiew).ObjectReprNire(objectReprNire).ObjectReprNisw(objectReprNisw).ObjectReprNre(objectReprNre).ObjectReprRe(objectReprRe).Offset(offset).Q(q).RequestId(requestId).RequestIdN(requestIdN).Sort(sort).Time(time).TimeGt(timeGt).TimeGte(timeGte).TimeLt(timeLt).TimeLte(timeLte).TimeN(timeN).User(user).UserIsnull(userIsnull).UserN(userN).UserId(userId).UserIdIsnull(userIdIsnull).UserIdN(userIdN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasObjectChangesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -22779,7 +26819,7 @@ Other parameters are passed through a pointer to a apiExtrasObjectChangesListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **action** | **[]string** |  | 
+ **action** | [**[]ExtrasObjectChangesListActionParameterInner**](ExtrasObjectChangesListActionParameterInner.md) |  | 
  **actionIc** | **[]string** |  | 
  **actionIe** | **[]string** |  | 
  **actionIew** | **[]string** |  | 
@@ -22793,14 +26833,42 @@ Name | Type | Description  | Notes
  **actionNisw** | **[]string** |  | 
  **actionNre** | **[]string** |  | 
  **actionRe** | **[]string** |  | 
+ **changeContext** | **[]string** | Change Context | 
+ **changeContextIc** | **[]string** | Change Context contains | 
+ **changeContextIe** | **[]string** | Change Context | 
+ **changeContextIew** | **[]string** | Change Context ends with | 
+ **changeContextIre** | **[]string** | Change Context matches regex | 
+ **changeContextIsw** | **[]string** | Change Context starts with | 
+ **changeContextN** | **[]string** | Exclude Change Context | 
+ **changeContextNic** | **[]string** | Exclude Change Context contains | 
+ **changeContextNie** | **[]string** | Exclude Change Context | 
+ **changeContextNiew** | **[]string** | Exclude Change Context ends with | 
+ **changeContextNire** | **[]string** | Exclude Change Context matches regex | 
+ **changeContextNisw** | **[]string** | Exclude Change Context starts with | 
+ **changeContextNre** | **[]string** | Exclude Change Context matches regex | 
+ **changeContextRe** | **[]string** | Change Context matches regex | 
+ **changeContextDetail** | **[]string** | Change Context Detail | 
+ **changeContextDetailIc** | **[]string** | Change Context Detail contains | 
+ **changeContextDetailIe** | **[]string** | Change Context Detail | 
+ **changeContextDetailIew** | **[]string** | Change Context Detail ends with | 
+ **changeContextDetailIre** | **[]string** | Change Context Detail matches regex | 
+ **changeContextDetailIsw** | **[]string** | Change Context Detail starts with | 
+ **changeContextDetailN** | **[]string** | Exclude Change Context Detail | 
+ **changeContextDetailNic** | **[]string** | Exclude Change Context Detail contains | 
+ **changeContextDetailNie** | **[]string** | Exclude Change Context Detail | 
+ **changeContextDetailNiew** | **[]string** | Exclude Change Context Detail ends with | 
+ **changeContextDetailNire** | **[]string** | Exclude Change Context Detail matches regex | 
+ **changeContextDetailNisw** | **[]string** | Exclude Change Context Detail starts with | 
+ **changeContextDetailNre** | **[]string** | Exclude Change Context Detail matches regex | 
+ **changeContextDetailRe** | **[]string** | Change Context Detail matches regex | 
  **changedObjectId** | **[]string** |  | 
  **changedObjectIdN** | **[]string** |  | 
  **changedObjectType** | **string** |  | 
  **changedObjectTypeIsnull** | **bool** |  | 
  **changedObjectTypeN** | **string** |  | 
- **changedObjectTypeId** | **int32** |  | 
+ **changedObjectTypeId** | **[]int32** |  | 
  **changedObjectTypeIdIsnull** | **bool** |  | 
- **changedObjectTypeIdN** | **int32** |  | 
+ **changedObjectTypeIdN** | **[]int32** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
@@ -22851,7 +26919,7 @@ Name | Type | Description  | Notes
  **userNameNre** | **[]string** |  | 
  **userNameRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22888,14 +26956,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object change.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22927,7 +26995,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22964,7 +27032,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23030,7 +27098,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23098,7 +27166,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23166,7 +27234,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23234,7 +27302,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23305,7 +27373,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23346,7 +27414,7 @@ func main() {
 	teamN := []string{"Inner_example"} // []string |  (optional)
 	value := TODO // interface{} | Relevant data value to an object field or a set of object fields (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -23408,7 +27476,7 @@ Name | Type | Description  | Notes
  **teamN** | **[]string** |  | 
  **value** | [**interface{}**](interface{}.md) | Relevant data value to an object field or a set of object fields | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -23445,7 +27513,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23519,14 +27587,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -23558,7 +27626,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -23595,7 +27663,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23669,7 +27737,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23735,7 +27803,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23803,7 +27871,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23871,7 +27939,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23939,7 +28007,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24009,7 +28077,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24032,7 +28100,7 @@ func main() {
 	sourceType := []int32{int32(123)} // []int32 |  (optional)
 	sourceTypeN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24076,7 +28144,7 @@ Name | Type | Description  | Notes
  **sourceType** | **[]int32** |  | 
  **sourceTypeN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24113,7 +28181,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24187,14 +28255,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this relationship association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24226,7 +28294,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24263,7 +28331,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24337,7 +28405,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24403,7 +28471,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24471,7 +28539,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24539,7 +28607,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24607,7 +28675,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24677,7 +28745,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24728,7 +28796,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []string{"Inner_example"} // []string | Cardinality of this relationship (optional)
+	type_ := []openapiclient.ExtrasRelationshipsListTypeParameterInner{openapiclient.extras_relationships_list_type_parameter_inner("many-to-many")} // []ExtrasRelationshipsListTypeParameterInner | Cardinality of this relationship   (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -24743,7 +28811,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24815,7 +28883,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | **[]string** | Cardinality of this relationship | 
+ **type_** | [**[]ExtrasRelationshipsListTypeParameterInner**](ExtrasRelationshipsListTypeParameterInner.md) | Cardinality of this relationship   | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -24830,7 +28898,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24867,7 +28935,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24941,7 +29009,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24950,7 +29018,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24984,7 +29052,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25021,7 +29089,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25095,14 +29163,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this relationship.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25134,7 +29202,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25171,7 +29239,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25245,7 +29313,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25311,7 +29379,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25379,7 +29447,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25447,7 +29515,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25515,7 +29583,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25586,7 +29654,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25657,7 +29725,7 @@ func main() {
 	weightLte := []int32{int32(123)} // []int32 |  (optional)
 	weightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25749,7 +29817,7 @@ Name | Type | Description  | Notes
  **weightLte** | **[]int32** |  | 
  **weightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25786,7 +29854,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25860,7 +29928,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25869,7 +29937,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25903,7 +29971,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25940,7 +30008,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26014,14 +30082,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this role.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26053,7 +30121,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26090,7 +30158,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26164,7 +30232,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26230,7 +30298,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26298,7 +30366,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26366,7 +30434,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26434,7 +30502,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26504,7 +30572,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26548,7 +30616,7 @@ func main() {
 	viewNre := []string{"Inner_example"} // []string |  (optional)
 	viewRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26613,7 +30681,7 @@ Name | Type | Description  | Notes
  **viewNre** | **[]string** |  | 
  **viewRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26650,7 +30718,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26724,14 +30792,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this saved view.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26763,7 +30831,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26800,7 +30868,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26857,80 +30925,6 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## ExtrasScheduledJobsApproveCreate
-
-> ScheduledJob ExtrasScheduledJobsApproveCreate(ctx, id).Force(force).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this scheduled job.
-	force := true // bool | force execution even if start time has passed (optional)
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsApproveCreate(context.Background(), id).Force(force).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasScheduledJobsApproveCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasScheduledJobsApproveCreate`: ScheduledJob
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasScheduledJobsApproveCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this scheduled job. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasScheduledJobsApproveCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **force** | **bool** | force execution even if start time has passed | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**ScheduledJob**](ScheduledJob.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## ExtrasScheduledJobsBulkDestroy
 
 > ExtrasScheduledJobsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -26948,7 +30942,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26997,78 +30991,6 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## ExtrasScheduledJobsDenyCreate
-
-> ScheduledJob ExtrasScheduledJobsDenyCreate(ctx, id).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this scheduled job.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsDenyCreate(context.Background(), id).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasScheduledJobsDenyCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasScheduledJobsDenyCreate`: ScheduledJob
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasScheduledJobsDenyCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this scheduled job. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasScheduledJobsDenyCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**ScheduledJob**](ScheduledJob.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## ExtrasScheduledJobsDestroy
 
 > ExtrasScheduledJobsDestroy(ctx, id).Format(format).Execute()
@@ -27086,7 +31008,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27156,7 +31078,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27213,7 +31135,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasScheduledJobsList
 
-> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -27229,10 +31151,25 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
+	approvalState := []string{"Inner_example"} // []string | Approval state (optional)
+	approvalStateIc := []string{"Inner_example"} // []string | Approval state contains (optional)
+	approvalStateIe := []string{"Inner_example"} // []string | Approval state (optional)
+	approvalStateIew := []string{"Inner_example"} // []string | Approval state ends with (optional)
+	approvalStateIre := []string{"Inner_example"} // []string | Approval state matches regex (optional)
+	approvalStateIsw := []string{"Inner_example"} // []string | Approval state starts with (optional)
+	approvalStateN := []string{"Inner_example"} // []string | Exclude Approval state (optional)
+	approvalStateNic := []string{"Inner_example"} // []string | Exclude Approval state contains (optional)
+	approvalStateNie := []string{"Inner_example"} // []string | Exclude Approval state (optional)
+	approvalStateNiew := []string{"Inner_example"} // []string | Exclude Approval state ends with (optional)
+	approvalStateNire := []string{"Inner_example"} // []string | Exclude Approval state matches regex (optional)
+	approvalStateNisw := []string{"Inner_example"} // []string | Exclude Approval state starts with (optional)
+	approvalStateNre := []string{"Inner_example"} // []string | Exclude Approval state matches regex (optional)
+	approvalStateRe := []string{"Inner_example"} // []string | Approval state matches regex (optional)
+	enabled := true // bool |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
@@ -27273,6 +31210,20 @@ func main() {
 	startTimeLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeN := []time.Time{time.Now()} // []time.Time |  (optional)
+	state := []string{"Inner_example"} // []string | Current state of the Scheduled Job (optional)
+	stateIc := []string{"Inner_example"} // []string |  (optional)
+	stateIe := []string{"Inner_example"} // []string |  (optional)
+	stateIew := []string{"Inner_example"} // []string |  (optional)
+	stateIre := []string{"Inner_example"} // []string |  (optional)
+	stateIsw := []string{"Inner_example"} // []string |  (optional)
+	stateN := []string{"Inner_example"} // []string |  (optional)
+	stateNic := []string{"Inner_example"} // []string |  (optional)
+	stateNie := []string{"Inner_example"} // []string |  (optional)
+	stateNiew := []string{"Inner_example"} // []string |  (optional)
+	stateNire := []string{"Inner_example"} // []string |  (optional)
+	stateNisw := []string{"Inner_example"} // []string |  (optional)
+	stateNre := []string{"Inner_example"} // []string |  (optional)
+	stateRe := []string{"Inner_example"} // []string |  (optional)
 	timeZone := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	timeZoneIc := []string{"Inner_example"} // []string | Time zone (optional)
 	timeZoneIe := []string{"Inner_example"} // []string | Time zone (optional)
@@ -27294,11 +31245,11 @@ func main() {
 	totalRunCountLte := []int32{int32(123)} // []int32 |  (optional)
 	totalRunCountN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasScheduledJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -27319,6 +31270,21 @@ Other parameters are passed through a pointer to a apiExtrasScheduledJobsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **approvalState** | **[]string** | Approval state | 
+ **approvalStateIc** | **[]string** | Approval state contains | 
+ **approvalStateIe** | **[]string** | Approval state | 
+ **approvalStateIew** | **[]string** | Approval state ends with | 
+ **approvalStateIre** | **[]string** | Approval state matches regex | 
+ **approvalStateIsw** | **[]string** | Approval state starts with | 
+ **approvalStateN** | **[]string** | Exclude Approval state | 
+ **approvalStateNic** | **[]string** | Exclude Approval state contains | 
+ **approvalStateNie** | **[]string** | Exclude Approval state | 
+ **approvalStateNiew** | **[]string** | Exclude Approval state ends with | 
+ **approvalStateNire** | **[]string** | Exclude Approval state matches regex | 
+ **approvalStateNisw** | **[]string** | Exclude Approval state starts with | 
+ **approvalStateNre** | **[]string** | Exclude Approval state matches regex | 
+ **approvalStateRe** | **[]string** | Approval state matches regex | 
+ **enabled** | **bool** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
@@ -27359,6 +31325,20 @@ Name | Type | Description  | Notes
  **startTimeLt** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeLte** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeN** | [**[]time.Time**](time.Time.md) |  | 
+ **state** | **[]string** | Current state of the Scheduled Job | 
+ **stateIc** | **[]string** |  | 
+ **stateIe** | **[]string** |  | 
+ **stateIew** | **[]string** |  | 
+ **stateIre** | **[]string** |  | 
+ **stateIsw** | **[]string** |  | 
+ **stateN** | **[]string** |  | 
+ **stateNic** | **[]string** |  | 
+ **stateNie** | **[]string** |  | 
+ **stateNiew** | **[]string** |  | 
+ **stateNire** | **[]string** |  | 
+ **stateNisw** | **[]string** |  | 
+ **stateNre** | **[]string** |  | 
+ **stateRe** | **[]string** |  | 
  **timeZone** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **timeZoneIc** | **[]string** | Time zone | 
  **timeZoneIe** | **[]string** | Time zone | 
@@ -27380,7 +31360,7 @@ Name | Type | Description  | Notes
  **totalRunCountLte** | **[]int32** |  | 
  **totalRunCountN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -27417,14 +31397,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this scheduled job.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -27456,7 +31436,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -27493,7 +31473,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27559,7 +31539,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27627,7 +31607,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27695,14 +31675,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this secret.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -27734,7 +31714,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -27771,7 +31751,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27839,7 +31819,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27909,7 +31889,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27975,7 +31955,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28043,7 +32023,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28111,7 +32091,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28179,7 +32159,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28249,7 +32229,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28295,7 +32275,7 @@ func main() {
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -28362,7 +32342,7 @@ Name | Type | Description  | Notes
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -28399,7 +32379,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28473,14 +32453,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this secrets group association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -28512,7 +32492,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -28549,7 +32529,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28623,7 +32603,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28689,7 +32669,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28757,7 +32737,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28825,7 +32805,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28893,7 +32873,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28964,7 +32944,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29014,7 +32994,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29085,7 +33065,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29122,7 +33102,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29196,7 +33176,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29205,7 +33185,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29239,7 +33219,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29276,7 +33256,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29350,14 +33330,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this secrets group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29389,7 +33369,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29426,7 +33406,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29485,7 +33465,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasSecretsList
 
-> PaginatedSecretList ExtrasSecretsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedSecretList ExtrasSecretsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).SecretsGroups(secretsGroups).SecretsGroupsIsnull(secretsGroupsIsnull).SecretsGroupsN(secretsGroupsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -29501,7 +33481,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29558,6 +33538,9 @@ func main() {
 	providerNre := []string{"Inner_example"} // []string |  (optional)
 	providerRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
+	secretsGroups := []string{"Inner_example"} // []string |  (optional)
+	secretsGroupsIsnull := true // bool | Groups (ID or name) is null (optional)
+	secretsGroupsN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
@@ -29566,11 +33549,11 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasSecretsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Provider(provider).ProviderIc(providerIc).ProviderIe(providerIe).ProviderIew(providerIew).ProviderIre(providerIre).ProviderIsw(providerIsw).ProviderN(providerN).ProviderNic(providerNic).ProviderNie(providerNie).ProviderNiew(providerNiew).ProviderNire(providerNire).ProviderNisw(providerNisw).ProviderNre(providerNre).ProviderRe(providerRe).Q(q).SecretsGroups(secretsGroups).SecretsGroupsIsnull(secretsGroupsIsnull).SecretsGroupsN(secretsGroupsN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasSecretsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -29644,6 +33627,9 @@ Name | Type | Description  | Notes
  **providerNre** | **[]string** |  | 
  **providerRe** | **[]string** |  | 
  **q** | **string** | Search | 
+ **secretsGroups** | **[]string** |  | 
+ **secretsGroupsIsnull** | **bool** | Groups (ID or name) is null | 
+ **secretsGroupsN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
@@ -29652,7 +33638,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29689,7 +33675,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29763,7 +33749,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29772,7 +33758,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29806,7 +33792,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29843,7 +33829,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29917,14 +33903,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this secret.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29956,7 +33942,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29993,7 +33979,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30067,7 +34053,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30133,7 +34119,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30201,7 +34187,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30269,7 +34255,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30337,7 +34323,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30408,7 +34394,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30440,7 +34426,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30493,7 +34479,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30530,7 +34516,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30604,7 +34590,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30613,7 +34599,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30647,7 +34633,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30684,7 +34670,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30758,14 +34744,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30797,7 +34783,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30834,7 +34820,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30908,7 +34894,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30974,7 +34960,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31042,7 +35028,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31110,7 +35096,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31178,7 +35164,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31249,7 +35235,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31313,7 +35299,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31398,7 +35384,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31435,7 +35421,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31509,7 +35495,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31518,7 +35504,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31552,7 +35538,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31589,7 +35575,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31663,14 +35649,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this status.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31702,7 +35688,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31739,7 +35725,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31813,7 +35799,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31879,7 +35865,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31947,7 +35933,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32015,7 +36001,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32083,7 +36069,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32154,7 +36140,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32218,7 +36204,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32303,7 +36289,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -32340,7 +36326,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32414,7 +36400,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32423,7 +36409,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32457,7 +36443,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -32494,7 +36480,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32568,14 +36554,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this tag.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32607,7 +36593,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -32644,7 +36630,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32718,7 +36704,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32784,7 +36770,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32852,7 +36838,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32920,7 +36906,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32988,7 +36974,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33059,7 +37045,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33163,7 +37149,7 @@ func main() {
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33288,7 +37274,7 @@ Name | Type | Description  | Notes
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33325,7 +37311,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33399,7 +37385,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33408,7 +37394,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33442,7 +37428,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33479,7 +37465,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33553,14 +37539,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this team.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33592,7 +37578,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33629,7 +37615,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33703,7 +37689,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33769,7 +37755,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33837,7 +37823,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33905,7 +37891,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33973,7 +37959,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34044,7 +38030,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34075,7 +38061,7 @@ func main() {
 	viewNameNre := []string{"Inner_example"} // []string |  (optional)
 	viewNameRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -34127,7 +38113,7 @@ Name | Type | Description  | Notes
  **viewNameNre** | **[]string** |  | 
  **viewNameRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34164,7 +38150,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34238,14 +38224,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -34277,7 +38263,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34314,7 +38300,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34388,7 +38374,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34454,7 +38440,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34522,7 +38508,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34590,7 +38576,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34658,7 +38644,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34728,7 +38714,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34782,7 +38768,7 @@ func main() {
 	typeDelete := true // bool |  (optional)
 	typeUpdate := true // bool |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -34857,7 +38843,7 @@ Name | Type | Description  | Notes
  **typeDelete** | **bool** |  | 
  **typeUpdate** | **bool** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34894,7 +38880,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34968,7 +38954,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34977,7 +38963,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -35011,7 +38997,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -35048,7 +39034,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35122,14 +39108,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this webhook.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -35161,7 +39147,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -35198,7 +39184,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {

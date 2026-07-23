@@ -17,24 +17,21 @@ Name | Type | Description | Notes
 **DnsName** | Pointer to **string** | Hostname or FQDN (not case-sensitive) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableIPAddressRequestParent**](BulkWritableIPAddressRequestParent.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **NatInside** | Pointer to [**NullableNATInside**](NATInside.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**NatOutsideList** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**Interfaces** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**VmInterfaces** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 
 ## Methods
 
 ### NewIPAddress
 
-`func NewIPAddress(objectType string, display string, url string, naturalSlug string, address string, host string, maskLength int32, ipVersion int32, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, natOutsideList []BulkWritableCableRequestStatus, interfaces []BulkWritableCableRequestStatus, vmInterfaces []BulkWritableCableRequestStatus, ) *IPAddress`
+`func NewIPAddress(objectType string, display string, url string, naturalSlug string, address string, host string, maskLength int32, ipVersion int32, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *IPAddress`
 
 NewIPAddress instantiates a new IPAddress object
 This constructor will assign default values to properties that have it defined,
@@ -331,20 +328,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *IPAddress) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *IPAddress) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *IPAddress) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddress) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *IPAddress) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddress) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -401,20 +398,20 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetTenant
 
-`func (o *IPAddress) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *IPAddress) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *IPAddress) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddress) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *IPAddress) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddress) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -598,66 +595,6 @@ SetCustomFields sets CustomFields field to given value.
 `func (o *IPAddress) HasCustomFields() bool`
 
 HasCustomFields returns a boolean if a field has been set.
-
-### GetNatOutsideList
-
-`func (o *IPAddress) GetNatOutsideList() []BulkWritableCableRequestStatus`
-
-GetNatOutsideList returns the NatOutsideList field if non-nil, zero value otherwise.
-
-### GetNatOutsideListOk
-
-`func (o *IPAddress) GetNatOutsideListOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetNatOutsideListOk returns a tuple with the NatOutsideList field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetNatOutsideList
-
-`func (o *IPAddress) SetNatOutsideList(v []BulkWritableCableRequestStatus)`
-
-SetNatOutsideList sets NatOutsideList field to given value.
-
-
-### GetInterfaces
-
-`func (o *IPAddress) GetInterfaces() []BulkWritableCableRequestStatus`
-
-GetInterfaces returns the Interfaces field if non-nil, zero value otherwise.
-
-### GetInterfacesOk
-
-`func (o *IPAddress) GetInterfacesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetInterfacesOk returns a tuple with the Interfaces field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetInterfaces
-
-`func (o *IPAddress) SetInterfaces(v []BulkWritableCableRequestStatus)`
-
-SetInterfaces sets Interfaces field to given value.
-
-
-### GetVmInterfaces
-
-`func (o *IPAddress) GetVmInterfaces() []BulkWritableCableRequestStatus`
-
-GetVmInterfaces returns the VmInterfaces field if non-nil, zero value otherwise.
-
-### GetVmInterfacesOk
-
-`func (o *IPAddress) GetVmInterfacesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetVmInterfacesOk returns a tuple with the VmInterfaces field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVmInterfaces
-
-`func (o *IPAddress) SetVmInterfaces(v []BulkWritableCableRequestStatus)`
-
-SetVmInterfaces sets VmInterfaces field to given value.
-
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -19,8 +19,7 @@ Name | Type | Description | Notes
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**DeviceFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**SoftwareImageFiles** | [**[]SoftwareImageFiles**](SoftwareImageFiles.md) |  | [readonly] 
+**DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -31,7 +30,7 @@ Name | Type | Description | Notes
 
 ### NewDeviceType
 
-`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
+`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
 
 NewDeviceType instantiates a new DeviceType object
 This constructor will assign default values to properties that have it defined,
@@ -413,20 +412,20 @@ SetManufacturer sets Manufacturer field to given value.
 
 ### GetDeviceFamily
 
-`func (o *DeviceType) GetDeviceFamily() BulkWritableCircuitRequestTenant`
+`func (o *DeviceType) GetDeviceFamily() ApprovalWorkflowUser`
 
 GetDeviceFamily returns the DeviceFamily field if non-nil, zero value otherwise.
 
 ### GetDeviceFamilyOk
 
-`func (o *DeviceType) GetDeviceFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *DeviceType) GetDeviceFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceFamilyOk returns a tuple with the DeviceFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamily
 
-`func (o *DeviceType) SetDeviceFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *DeviceType) SetDeviceFamily(v ApprovalWorkflowUser)`
 
 SetDeviceFamily sets DeviceFamily field to given value.
 
@@ -446,26 +445,6 @@ HasDeviceFamily returns a boolean if a field has been set.
 `func (o *DeviceType) UnsetDeviceFamily()`
 
 UnsetDeviceFamily ensures that no value is present for DeviceFamily, not even an explicit nil
-### GetSoftwareImageFiles
-
-`func (o *DeviceType) GetSoftwareImageFiles() []SoftwareImageFiles`
-
-GetSoftwareImageFiles returns the SoftwareImageFiles field if non-nil, zero value otherwise.
-
-### GetSoftwareImageFilesOk
-
-`func (o *DeviceType) GetSoftwareImageFilesOk() (*[]SoftwareImageFiles, bool)`
-
-GetSoftwareImageFilesOk returns a tuple with the SoftwareImageFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSoftwareImageFiles
-
-`func (o *DeviceType) SetSoftwareImageFiles(v []SoftwareImageFiles)`
-
-SetSoftwareImageFiles sets SoftwareImageFiles field to given value.
-
-
 ### GetCreated
 
 `func (o *DeviceType) GetCreated() time.Time`

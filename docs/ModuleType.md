@@ -9,11 +9,13 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**FrontImage** | Pointer to **NullableString** |  | [optional] 
+**RearImage** | Pointer to **NullableString** |  | [optional] 
 **Model** | **string** |  | 
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ModuleFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -144,6 +146,76 @@ and a boolean to check if the value has been set.
 SetNaturalSlug sets NaturalSlug field to given value.
 
 
+### GetFrontImage
+
+`func (o *ModuleType) GetFrontImage() string`
+
+GetFrontImage returns the FrontImage field if non-nil, zero value otherwise.
+
+### GetFrontImageOk
+
+`func (o *ModuleType) GetFrontImageOk() (*string, bool)`
+
+GetFrontImageOk returns a tuple with the FrontImage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFrontImage
+
+`func (o *ModuleType) SetFrontImage(v string)`
+
+SetFrontImage sets FrontImage field to given value.
+
+### HasFrontImage
+
+`func (o *ModuleType) HasFrontImage() bool`
+
+HasFrontImage returns a boolean if a field has been set.
+
+### SetFrontImageNil
+
+`func (o *ModuleType) SetFrontImageNil(b bool)`
+
+ SetFrontImageNil sets the value for FrontImage to be an explicit nil
+
+### UnsetFrontImage
+`func (o *ModuleType) UnsetFrontImage()`
+
+UnsetFrontImage ensures that no value is present for FrontImage, not even an explicit nil
+### GetRearImage
+
+`func (o *ModuleType) GetRearImage() string`
+
+GetRearImage returns the RearImage field if non-nil, zero value otherwise.
+
+### GetRearImageOk
+
+`func (o *ModuleType) GetRearImageOk() (*string, bool)`
+
+GetRearImageOk returns a tuple with the RearImage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRearImage
+
+`func (o *ModuleType) SetRearImage(v string)`
+
+SetRearImage sets RearImage field to given value.
+
+### HasRearImage
+
+`func (o *ModuleType) HasRearImage() bool`
+
+HasRearImage returns a boolean if a field has been set.
+
+### SetRearImageNil
+
+`func (o *ModuleType) SetRearImageNil(b bool)`
+
+ SetRearImageNil sets the value for RearImage to be an explicit nil
+
+### UnsetRearImage
+`func (o *ModuleType) UnsetRearImage()`
+
+UnsetRearImage ensures that no value is present for RearImage, not even an explicit nil
 ### GetModel
 
 `func (o *ModuleType) GetModel() string`
@@ -236,20 +308,20 @@ SetManufacturer sets Manufacturer field to given value.
 
 ### GetModuleFamily
 
-`func (o *ModuleType) GetModuleFamily() BulkWritableCircuitRequestTenant`
+`func (o *ModuleType) GetModuleFamily() ApprovalWorkflowUser`
 
 GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
 
 ### GetModuleFamilyOk
 
-`func (o *ModuleType) GetModuleFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleType) GetModuleFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleFamily
 
-`func (o *ModuleType) SetModuleFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleType) SetModuleFamily(v ApprovalWorkflowUser)`
 
 SetModuleFamily sets ModuleFamily field to given value.
 

@@ -1,0 +1,259 @@
+# PatchedBulkWritableRequiredValidationRuleRequest
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | 
+**ContentType** | Pointer to **string** |  | [optional] 
+**Name** | Pointer to **string** |  | [optional] 
+**Field** | Pointer to **string** |  | [optional] 
+**Enabled** | Pointer to **bool** |  | [optional] 
+**ErrorMessage** | Pointer to **string** | Optional error message to display when validation fails. | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+
+## Methods
+
+### NewPatchedBulkWritableRequiredValidationRuleRequest
+
+`func NewPatchedBulkWritableRequiredValidationRuleRequest(id string, ) *PatchedBulkWritableRequiredValidationRuleRequest`
+
+NewPatchedBulkWritableRequiredValidationRuleRequest instantiates a new PatchedBulkWritableRequiredValidationRuleRequest object
+This constructor will assign default values to properties that have it defined,
+and makes sure properties required by API are set, but the set of arguments
+will change when the set of required properties is changed
+
+### NewPatchedBulkWritableRequiredValidationRuleRequestWithDefaults
+
+`func NewPatchedBulkWritableRequiredValidationRuleRequestWithDefaults() *PatchedBulkWritableRequiredValidationRuleRequest`
+
+NewPatchedBulkWritableRequiredValidationRuleRequestWithDefaults instantiates a new PatchedBulkWritableRequiredValidationRuleRequest object
+This constructor will only assign default values to properties that have it defined,
+but it doesn't guarantee that properties required by API are set
+
+### GetId
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetId() string`
+
+GetId returns the Id field if non-nil, zero value otherwise.
+
+### GetIdOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetIdOk() (*string, bool)`
+
+GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetId
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetId(v string)`
+
+SetId sets Id field to given value.
+
+
+### GetContentType
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetContentType() string`
+
+GetContentType returns the ContentType field if non-nil, zero value otherwise.
+
+### GetContentTypeOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetContentTypeOk() (*string, bool)`
+
+GetContentTypeOk returns a tuple with the ContentType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetContentType
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetContentType(v string)`
+
+SetContentType sets ContentType field to given value.
+
+### HasContentType
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasContentType() bool`
+
+HasContentType returns a boolean if a field has been set.
+
+### GetName
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetName() string`
+
+GetName returns the Name field if non-nil, zero value otherwise.
+
+### GetNameOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetNameOk() (*string, bool)`
+
+GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetName
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetName(v string)`
+
+SetName sets Name field to given value.
+
+### HasName
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasName() bool`
+
+HasName returns a boolean if a field has been set.
+
+### GetField
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetField() string`
+
+GetField returns the Field field if non-nil, zero value otherwise.
+
+### GetFieldOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetFieldOk() (*string, bool)`
+
+GetFieldOk returns a tuple with the Field field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetField
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetField(v string)`
+
+SetField sets Field field to given value.
+
+### HasField
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasField() bool`
+
+HasField returns a boolean if a field has been set.
+
+### GetEnabled
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetEnabled() bool`
+
+GetEnabled returns the Enabled field if non-nil, zero value otherwise.
+
+### GetEnabledOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetEnabledOk() (*bool, bool)`
+
+GetEnabledOk returns a tuple with the Enabled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEnabled
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetEnabled(v bool)`
+
+SetEnabled sets Enabled field to given value.
+
+### HasEnabled
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasEnabled() bool`
+
+HasEnabled returns a boolean if a field has been set.
+
+### GetErrorMessage
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetErrorMessage() string`
+
+GetErrorMessage returns the ErrorMessage field if non-nil, zero value otherwise.
+
+### GetErrorMessageOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetErrorMessageOk() (*string, bool)`
+
+GetErrorMessageOk returns a tuple with the ErrorMessage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetErrorMessage
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetErrorMessage(v string)`
+
+SetErrorMessage sets ErrorMessage field to given value.
+
+### HasErrorMessage
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasErrorMessage() bool`
+
+HasErrorMessage returns a boolean if a field has been set.
+
+### GetTags
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetTags() []BulkWritableCableRequestStatus`
+
+GetTags returns the Tags field if non-nil, zero value otherwise.
+
+### GetTagsOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTags
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetTags(v []BulkWritableCableRequestStatus)`
+
+SetTags sets Tags field to given value.
+
+### HasTags
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasTags() bool`
+
+HasTags returns a boolean if a field has been set.
+
+### GetCustomFields
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetCustomFields() map[string]interface{}`
+
+GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
+
+### GetCustomFieldsOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+
+GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCustomFields
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetCustomFields(v map[string]interface{})`
+
+SetCustomFields sets CustomFields field to given value.
+
+### HasCustomFields
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasCustomFields() bool`
+
+HasCustomFields returns a boolean if a field has been set.
+
+### GetRelationships
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
+
+GetRelationships returns the Relationships field if non-nil, zero value otherwise.
+
+### GetRelationshipsOk
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
+
+GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRelationships
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
+
+SetRelationships sets Relationships field to given value.
+
+### HasRelationships
+
+`func (o *PatchedBulkWritableRequiredValidationRuleRequest) HasRelationships() bool`
+
+HasRelationships returns a boolean if a field has been set.
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

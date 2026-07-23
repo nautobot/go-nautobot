@@ -13,8 +13,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CloudAccount** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**CloudNetworks** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**CloudAccount** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -25,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewCloudService
 
-`func NewCloudService(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType BulkWritableCableRequestStatus, cloudNetworks []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudService`
+`func NewCloudService(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudService`
 
 NewCloudService instantiates a new CloudService object
 This constructor will assign default values to properties that have it defined,
@@ -247,20 +246,20 @@ SetCloudResourceType sets CloudResourceType field to given value.
 
 ### GetCloudAccount
 
-`func (o *CloudService) GetCloudAccount() BulkWritableCircuitRequestTenant`
+`func (o *CloudService) GetCloudAccount() ApprovalWorkflowUser`
 
 GetCloudAccount returns the CloudAccount field if non-nil, zero value otherwise.
 
 ### GetCloudAccountOk
 
-`func (o *CloudService) GetCloudAccountOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CloudService) GetCloudAccountOk() (*ApprovalWorkflowUser, bool)`
 
 GetCloudAccountOk returns a tuple with the CloudAccount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudAccount
 
-`func (o *CloudService) SetCloudAccount(v BulkWritableCircuitRequestTenant)`
+`func (o *CloudService) SetCloudAccount(v ApprovalWorkflowUser)`
 
 SetCloudAccount sets CloudAccount field to given value.
 
@@ -280,26 +279,6 @@ HasCloudAccount returns a boolean if a field has been set.
 `func (o *CloudService) UnsetCloudAccount()`
 
 UnsetCloudAccount ensures that no value is present for CloudAccount, not even an explicit nil
-### GetCloudNetworks
-
-`func (o *CloudService) GetCloudNetworks() []BulkWritableCableRequestStatus`
-
-GetCloudNetworks returns the CloudNetworks field if non-nil, zero value otherwise.
-
-### GetCloudNetworksOk
-
-`func (o *CloudService) GetCloudNetworksOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetCloudNetworksOk returns a tuple with the CloudNetworks field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCloudNetworks
-
-`func (o *CloudService) SetCloudNetworks(v []BulkWritableCableRequestStatus)`
-
-SetCloudNetworks sets CloudNetworks field to given value.
-
-
 ### GetCreated
 
 `func (o *CloudService) GetCreated() time.Time`

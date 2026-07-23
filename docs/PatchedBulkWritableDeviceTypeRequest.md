@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**DeviceFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -285,20 +285,20 @@ HasManufacturer returns a boolean if a field has been set.
 
 ### GetDeviceFamily
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) GetDeviceFamily() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableDeviceTypeRequest) GetDeviceFamily() ApprovalWorkflowUser`
 
 GetDeviceFamily returns the DeviceFamily field if non-nil, zero value otherwise.
 
 ### GetDeviceFamilyOk
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) GetDeviceFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableDeviceTypeRequest) GetDeviceFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceFamilyOk returns a tuple with the DeviceFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamily
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) SetDeviceFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableDeviceTypeRequest) SetDeviceFamily(v ApprovalWorkflowUser)`
 
 SetDeviceFamily sets DeviceFamily field to given value.
 
@@ -345,20 +345,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableDeviceTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableDeviceTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableDeviceTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

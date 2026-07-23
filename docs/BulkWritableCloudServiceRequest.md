@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CloudAccount** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**CloudAccount** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -155,20 +155,20 @@ SetCloudResourceType sets CloudResourceType field to given value.
 
 ### GetCloudAccount
 
-`func (o *BulkWritableCloudServiceRequest) GetCloudAccount() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableCloudServiceRequest) GetCloudAccount() ApprovalWorkflowUser`
 
 GetCloudAccount returns the CloudAccount field if non-nil, zero value otherwise.
 
 ### GetCloudAccountOk
 
-`func (o *BulkWritableCloudServiceRequest) GetCloudAccountOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableCloudServiceRequest) GetCloudAccountOk() (*ApprovalWorkflowUser, bool)`
 
 GetCloudAccountOk returns a tuple with the CloudAccount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudAccount
 
-`func (o *BulkWritableCloudServiceRequest) SetCloudAccount(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableCloudServiceRequest) SetCloudAccount(v ApprovalWorkflowUser)`
 
 SetCloudAccount sets CloudAccount field to given value.
 
@@ -215,20 +215,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableCloudServiceRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableCloudServiceRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableCloudServiceRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableCloudServiceRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableCloudServiceRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableCloudServiceRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

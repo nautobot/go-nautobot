@@ -11,15 +11,15 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** | Whether this job can be executed by users | [optional] 
 **HasSensitiveVariables** | Pointer to **bool** | Whether this job contains sensitive variables | [optional] 
 **IsSingleton** | Pointer to **bool** | Whether this job should fail to run if another instance of this job is already running | [optional] 
-**ApprovalRequired** | Pointer to **bool** | Whether the job requires approval from another user before running | [optional] 
+**ConsoleLogDefault** | Pointer to **bool** | Whether the job defaults to running with console log argument set to true | [optional] 
 **Hidden** | Pointer to **bool** | Whether the job defaults to not being shown in the UI | [optional] 
 **DryrunDefault** | Pointer to **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] 
 **SoftTimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **TimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
+**ConsoleLogDefaultOverride** | Pointer to **bool** | If set, the configured console log default will remain even if the underlying Job source code changes | [optional] 
 **DescriptionOverride** | Pointer to **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] 
-**ApprovalRequiredOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **DryrunDefaultOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **HiddenOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **SoftTimeLimitOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
@@ -31,7 +31,7 @@ Name | Type | Description | Notes
 **DefaultJobQueue** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -222,30 +222,30 @@ SetIsSingleton sets IsSingleton field to given value.
 
 HasIsSingleton returns a boolean if a field has been set.
 
-### GetApprovalRequired
+### GetConsoleLogDefault
 
-`func (o *PatchedBulkWritableJobRequest) GetApprovalRequired() bool`
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefault() bool`
 
-GetApprovalRequired returns the ApprovalRequired field if non-nil, zero value otherwise.
+GetConsoleLogDefault returns the ConsoleLogDefault field if non-nil, zero value otherwise.
 
-### GetApprovalRequiredOk
+### GetConsoleLogDefaultOk
 
-`func (o *PatchedBulkWritableJobRequest) GetApprovalRequiredOk() (*bool, bool)`
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOk() (*bool, bool)`
 
-GetApprovalRequiredOk returns a tuple with the ApprovalRequired field if it's non-nil, zero value otherwise
+GetConsoleLogDefaultOk returns a tuple with the ConsoleLogDefault field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetApprovalRequired
+### SetConsoleLogDefault
 
-`func (o *PatchedBulkWritableJobRequest) SetApprovalRequired(v bool)`
+`func (o *PatchedBulkWritableJobRequest) SetConsoleLogDefault(v bool)`
 
-SetApprovalRequired sets ApprovalRequired field to given value.
+SetConsoleLogDefault sets ConsoleLogDefault field to given value.
 
-### HasApprovalRequired
+### HasConsoleLogDefault
 
-`func (o *PatchedBulkWritableJobRequest) HasApprovalRequired() bool`
+`func (o *PatchedBulkWritableJobRequest) HasConsoleLogDefault() bool`
 
-HasApprovalRequired returns a boolean if a field has been set.
+HasConsoleLogDefault returns a boolean if a field has been set.
 
 ### GetHidden
 
@@ -397,6 +397,31 @@ SetNameOverride sets NameOverride field to given value.
 
 HasNameOverride returns a boolean if a field has been set.
 
+### GetConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOverride() bool`
+
+GetConsoleLogDefaultOverride returns the ConsoleLogDefaultOverride field if non-nil, zero value otherwise.
+
+### GetConsoleLogDefaultOverrideOk
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOverrideOk() (*bool, bool)`
+
+GetConsoleLogDefaultOverrideOk returns a tuple with the ConsoleLogDefaultOverride field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) SetConsoleLogDefaultOverride(v bool)`
+
+SetConsoleLogDefaultOverride sets ConsoleLogDefaultOverride field to given value.
+
+### HasConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) HasConsoleLogDefaultOverride() bool`
+
+HasConsoleLogDefaultOverride returns a boolean if a field has been set.
+
 ### GetDescriptionOverride
 
 `func (o *PatchedBulkWritableJobRequest) GetDescriptionOverride() bool`
@@ -421,31 +446,6 @@ SetDescriptionOverride sets DescriptionOverride field to given value.
 `func (o *PatchedBulkWritableJobRequest) HasDescriptionOverride() bool`
 
 HasDescriptionOverride returns a boolean if a field has been set.
-
-### GetApprovalRequiredOverride
-
-`func (o *PatchedBulkWritableJobRequest) GetApprovalRequiredOverride() bool`
-
-GetApprovalRequiredOverride returns the ApprovalRequiredOverride field if non-nil, zero value otherwise.
-
-### GetApprovalRequiredOverrideOk
-
-`func (o *PatchedBulkWritableJobRequest) GetApprovalRequiredOverrideOk() (*bool, bool)`
-
-GetApprovalRequiredOverrideOk returns a tuple with the ApprovalRequiredOverride field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetApprovalRequiredOverride
-
-`func (o *PatchedBulkWritableJobRequest) SetApprovalRequiredOverride(v bool)`
-
-SetApprovalRequiredOverride sets ApprovalRequiredOverride field to given value.
-
-### HasApprovalRequiredOverride
-
-`func (o *PatchedBulkWritableJobRequest) HasApprovalRequiredOverride() bool`
-
-HasApprovalRequiredOverride returns a boolean if a field has been set.
 
 ### GetDryrunDefaultOverride
 
@@ -724,20 +724,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableJobRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableJobRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableJobRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableJobRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableJobRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableJobRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

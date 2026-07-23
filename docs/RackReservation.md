@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **Units** | **interface{}** | List of rack unit numbers to reserve | 
 **Description** | **string** |  | 
 **Rack** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -216,20 +216,20 @@ SetRack sets Rack field to given value.
 
 ### GetTenant
 
-`func (o *RackReservation) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *RackReservation) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *RackReservation) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RackReservation) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *RackReservation) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *RackReservation) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

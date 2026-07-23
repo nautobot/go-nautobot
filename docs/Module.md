@@ -12,11 +12,11 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **NullableString** |  | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this module | [optional] 
 **ModuleType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ParentModuleBay** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ParentModuleBay** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -239,20 +239,20 @@ SetModuleType sets ModuleType field to given value.
 
 ### GetParentModuleBay
 
-`func (o *Module) GetParentModuleBay() BulkWritableCircuitRequestTenant`
+`func (o *Module) GetParentModuleBay() ApprovalWorkflowUser`
 
 GetParentModuleBay returns the ParentModuleBay field if non-nil, zero value otherwise.
 
 ### GetParentModuleBayOk
 
-`func (o *Module) GetParentModuleBayOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Module) GetParentModuleBayOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentModuleBayOk returns a tuple with the ParentModuleBay field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentModuleBay
 
-`func (o *Module) SetParentModuleBay(v BulkWritableCircuitRequestTenant)`
+`func (o *Module) SetParentModuleBay(v ApprovalWorkflowUser)`
 
 SetParentModuleBay sets ParentModuleBay field to given value.
 
@@ -294,20 +294,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *Module) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *Module) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *Module) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Module) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *Module) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *Module) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -329,20 +329,20 @@ HasRole returns a boolean if a field has been set.
 UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetTenant
 
-`func (o *Module) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Module) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Module) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Module) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Module) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Module) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -364,20 +364,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetLocation
 
-`func (o *Module) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *Module) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *Module) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Module) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *Module) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *Module) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 

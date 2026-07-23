@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -262,20 +262,20 @@ SetStatus sets Status field to given value.
 
 ### GetSecretsGroup
 
-`func (o *DeviceRedundancyGroup) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *DeviceRedundancyGroup) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *DeviceRedundancyGroup) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *DeviceRedundancyGroup) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *DeviceRedundancyGroup) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *DeviceRedundancyGroup) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 

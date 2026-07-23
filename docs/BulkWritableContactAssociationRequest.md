@@ -7,12 +7,12 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AssociatedObjectType** | **string** |  | 
 **AssociatedObjectId** | **string** |  | 
-**Contact** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Team** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -95,20 +95,20 @@ SetAssociatedObjectId sets AssociatedObjectId field to given value.
 
 ### GetContact
 
-`func (o *BulkWritableContactAssociationRequest) GetContact() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableContactAssociationRequest) GetContact() ApprovalWorkflowUser`
 
 GetContact returns the Contact field if non-nil, zero value otherwise.
 
 ### GetContactOk
 
-`func (o *BulkWritableContactAssociationRequest) GetContactOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetContactOk() (*ApprovalWorkflowUser, bool)`
 
 GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContact
 
-`func (o *BulkWritableContactAssociationRequest) SetContact(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableContactAssociationRequest) SetContact(v ApprovalWorkflowUser)`
 
 SetContact sets Contact field to given value.
 
@@ -130,20 +130,20 @@ HasContact returns a boolean if a field has been set.
 UnsetContact ensures that no value is present for Contact, not even an explicit nil
 ### GetTeam
 
-`func (o *BulkWritableContactAssociationRequest) GetTeam() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableContactAssociationRequest) GetTeam() ApprovalWorkflowUser`
 
 GetTeam returns the Team field if non-nil, zero value otherwise.
 
 ### GetTeamOk
 
-`func (o *BulkWritableContactAssociationRequest) GetTeamOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetTeamOk() (*ApprovalWorkflowUser, bool)`
 
 GetTeamOk returns a tuple with the Team field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTeam
 
-`func (o *BulkWritableContactAssociationRequest) SetTeam(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableContactAssociationRequest) SetTeam(v ApprovalWorkflowUser)`
 
 SetTeam sets Team field to given value.
 
@@ -230,20 +230,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableContactAssociationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableContactAssociationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableContactAssociationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableContactAssociationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableContactAssociationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **Clusters** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **TenantGroups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tenants** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceFamilies** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -527,6 +528,31 @@ SetTenants sets Tenants field to given value.
 `func (o *PatchedBulkWritableConfigContextRequest) HasTenants() bool`
 
 HasTenants returns a boolean if a field has been set.
+
+### GetDeviceFamilies
+
+`func (o *PatchedBulkWritableConfigContextRequest) GetDeviceFamilies() []BulkWritableCableRequestStatus`
+
+GetDeviceFamilies returns the DeviceFamilies field if non-nil, zero value otherwise.
+
+### GetDeviceFamiliesOk
+
+`func (o *PatchedBulkWritableConfigContextRequest) GetDeviceFamiliesOk() (*[]BulkWritableCableRequestStatus, bool)`
+
+GetDeviceFamiliesOk returns a tuple with the DeviceFamilies field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDeviceFamilies
+
+`func (o *PatchedBulkWritableConfigContextRequest) SetDeviceFamilies(v []BulkWritableCableRequestStatus)`
+
+SetDeviceFamilies sets DeviceFamilies field to given value.
+
+### HasDeviceFamilies
+
+`func (o *PatchedBulkWritableConfigContextRequest) HasDeviceFamilies() bool`
+
+HasDeviceFamilies returns a boolean if a field has been set.
 
 ### GetTags
 

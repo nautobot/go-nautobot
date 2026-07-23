@@ -12,15 +12,15 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
 **VirtualMachine** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**UntaggedVlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Vrf** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**UntaggedVlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Vrf** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **TaggedVlans** | Pointer to [**[]TaggedVLANs**](TaggedVLANs.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -254,20 +254,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *WritableVMInterfaceRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *WritableVMInterfaceRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *WritableVMInterfaceRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WritableVMInterfaceRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *WritableVMInterfaceRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *WritableVMInterfaceRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -379,20 +379,20 @@ SetVirtualMachine sets VirtualMachine field to given value.
 
 ### GetUntaggedVlan
 
-`func (o *WritableVMInterfaceRequest) GetUntaggedVlan() BulkWritableCircuitRequestTenant`
+`func (o *WritableVMInterfaceRequest) GetUntaggedVlan() ApprovalWorkflowUser`
 
 GetUntaggedVlan returns the UntaggedVlan field if non-nil, zero value otherwise.
 
 ### GetUntaggedVlanOk
 
-`func (o *WritableVMInterfaceRequest) GetUntaggedVlanOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WritableVMInterfaceRequest) GetUntaggedVlanOk() (*ApprovalWorkflowUser, bool)`
 
 GetUntaggedVlanOk returns a tuple with the UntaggedVlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUntaggedVlan
 
-`func (o *WritableVMInterfaceRequest) SetUntaggedVlan(v BulkWritableCircuitRequestTenant)`
+`func (o *WritableVMInterfaceRequest) SetUntaggedVlan(v ApprovalWorkflowUser)`
 
 SetUntaggedVlan sets UntaggedVlan field to given value.
 
@@ -414,20 +414,20 @@ HasUntaggedVlan returns a boolean if a field has been set.
 UnsetUntaggedVlan ensures that no value is present for UntaggedVlan, not even an explicit nil
 ### GetVrf
 
-`func (o *WritableVMInterfaceRequest) GetVrf() BulkWritableCircuitRequestTenant`
+`func (o *WritableVMInterfaceRequest) GetVrf() ApprovalWorkflowUser`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *WritableVMInterfaceRequest) GetVrfOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WritableVMInterfaceRequest) GetVrfOk() (*ApprovalWorkflowUser, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *WritableVMInterfaceRequest) SetVrf(v BulkWritableCircuitRequestTenant)`
+`func (o *WritableVMInterfaceRequest) SetVrf(v ApprovalWorkflowUser)`
 
 SetVrf sets Vrf field to given value.
 
@@ -499,20 +499,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *WritableVMInterfaceRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *WritableVMInterfaceRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *WritableVMInterfaceRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *WritableVMInterfaceRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *WritableVMInterfaceRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *WritableVMInterfaceRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

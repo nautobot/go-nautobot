@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
 **Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**RackGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**RackGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -298,20 +298,20 @@ SetLocation sets Location field to given value.
 
 ### GetRackGroup
 
-`func (o *PowerPanel) GetRackGroup() BulkWritableCircuitRequestTenant`
+`func (o *PowerPanel) GetRackGroup() ApprovalWorkflowUser`
 
 GetRackGroup returns the RackGroup field if non-nil, zero value otherwise.
 
 ### GetRackGroupOk
 
-`func (o *PowerPanel) GetRackGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerPanel) GetRackGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackGroupOk returns a tuple with the RackGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRackGroup
 
-`func (o *PowerPanel) SetRackGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerPanel) SetRackGroup(v ApprovalWorkflowUser)`
 
 SetRackGroup sets RackGroup field to given value.
 

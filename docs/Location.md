@@ -29,10 +29,10 @@ Name | Type | Description | Notes
 **ContactPhone** | Pointer to **string** |  | [optional] 
 **ContactEmail** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **LocationType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -705,20 +705,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *Location) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *Location) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *Location) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Location) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *Location) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *Location) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -780,20 +780,20 @@ SetStatus sets Status field to given value.
 
 ### GetTenant
 
-`func (o *Location) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Location) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Location) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Location) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Location) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Location) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 

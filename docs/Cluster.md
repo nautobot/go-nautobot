@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Comments** | Pointer to **string** |  | [optional] 
 **ClusterType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ClusterGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ClusterGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -264,20 +264,20 @@ SetClusterType sets ClusterType field to given value.
 
 ### GetClusterGroup
 
-`func (o *Cluster) GetClusterGroup() BulkWritableCircuitRequestTenant`
+`func (o *Cluster) GetClusterGroup() ApprovalWorkflowUser`
 
 GetClusterGroup returns the ClusterGroup field if non-nil, zero value otherwise.
 
 ### GetClusterGroupOk
 
-`func (o *Cluster) GetClusterGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Cluster) GetClusterGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetClusterGroupOk returns a tuple with the ClusterGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusterGroup
 
-`func (o *Cluster) SetClusterGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *Cluster) SetClusterGroup(v ApprovalWorkflowUser)`
 
 SetClusterGroup sets ClusterGroup field to given value.
 
@@ -299,20 +299,20 @@ HasClusterGroup returns a boolean if a field has been set.
 UnsetClusterGroup ensures that no value is present for ClusterGroup, not even an explicit nil
 ### GetTenant
 
-`func (o *Cluster) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Cluster) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Cluster) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Cluster) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Cluster) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Cluster) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -334,20 +334,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetLocation
 
-`func (o *Cluster) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *Cluster) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *Cluster) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Cluster) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *Cluster) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *Cluster) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 

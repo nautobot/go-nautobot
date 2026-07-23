@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **ObjectRepr** | **string** |  | [readonly] 
 **ObjectData** | **interface{}** |  | [readonly] 
 **ObjectDataV2** | **interface{}** |  | [readonly] 
-**User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -476,20 +476,20 @@ SetObjectDataV2 sets ObjectDataV2 field to given value.
 UnsetObjectDataV2 ensures that no value is present for ObjectDataV2, not even an explicit nil
 ### GetUser
 
-`func (o *ObjectChange) GetUser() BulkWritableCircuitRequestTenant`
+`func (o *ObjectChange) GetUser() ApprovalWorkflowUser`
 
 GetUser returns the User field if non-nil, zero value otherwise.
 
 ### GetUserOk
 
-`func (o *ObjectChange) GetUserOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ObjectChange) GetUserOk() (*ApprovalWorkflowUser, bool)`
 
 GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUser
 
-`func (o *ObjectChange) SetUser(v BulkWritableCircuitRequestTenant)`
+`func (o *ObjectChange) SetUser(v ApprovalWorkflowUser)`
 
 SetUser sets User field to given value.
 

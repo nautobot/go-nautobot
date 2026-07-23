@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **Slug** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **RemoteUrl** | **string** | Only HTTP and HTTPS URLs are presently supported | 
 **Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
-**CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**CurrentHead** | **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [readonly] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 
 ### NewGitRepository
 
-`func NewGitRepository(objectType string, display string, url string, naturalSlug string, name string, remoteUrl string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GitRepository`
+`func NewGitRepository(objectType string, display string, url string, naturalSlug string, name string, remoteUrl string, currentHead string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GitRepository`
 
 NewGitRepository instantiates a new GitRepository object
 This constructor will assign default values to properties that have it defined,
@@ -280,28 +280,23 @@ and a boolean to check if the value has been set.
 
 SetCurrentHead sets CurrentHead field to given value.
 
-### HasCurrentHead
-
-`func (o *GitRepository) HasCurrentHead() bool`
-
-HasCurrentHead returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
-`func (o *GitRepository) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *GitRepository) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *GitRepository) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *GitRepository) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *GitRepository) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *GitRepository) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 

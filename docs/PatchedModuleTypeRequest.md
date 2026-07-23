@@ -5,13 +5,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
+**FrontImage** | Pointer to ***os.File** |  | [optional] 
+**RearImage** | Pointer to ***os.File** |  | [optional] 
 **Model** | Pointer to **string** |  | [optional] 
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **Manufacturer** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**ModuleFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ModuleFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -57,6 +59,56 @@ SetId sets Id field to given value.
 `func (o *PatchedModuleTypeRequest) HasId() bool`
 
 HasId returns a boolean if a field has been set.
+
+### GetFrontImage
+
+`func (o *PatchedModuleTypeRequest) GetFrontImage() *os.File`
+
+GetFrontImage returns the FrontImage field if non-nil, zero value otherwise.
+
+### GetFrontImageOk
+
+`func (o *PatchedModuleTypeRequest) GetFrontImageOk() (**os.File, bool)`
+
+GetFrontImageOk returns a tuple with the FrontImage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFrontImage
+
+`func (o *PatchedModuleTypeRequest) SetFrontImage(v *os.File)`
+
+SetFrontImage sets FrontImage field to given value.
+
+### HasFrontImage
+
+`func (o *PatchedModuleTypeRequest) HasFrontImage() bool`
+
+HasFrontImage returns a boolean if a field has been set.
+
+### GetRearImage
+
+`func (o *PatchedModuleTypeRequest) GetRearImage() *os.File`
+
+GetRearImage returns the RearImage field if non-nil, zero value otherwise.
+
+### GetRearImageOk
+
+`func (o *PatchedModuleTypeRequest) GetRearImageOk() (**os.File, bool)`
+
+GetRearImageOk returns a tuple with the RearImage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetRearImage
+
+`func (o *PatchedModuleTypeRequest) SetRearImage(v *os.File)`
+
+SetRearImage sets RearImage field to given value.
+
+### HasRearImage
+
+`func (o *PatchedModuleTypeRequest) HasRearImage() bool`
+
+HasRearImage returns a boolean if a field has been set.
 
 ### GetModel
 
@@ -160,20 +212,20 @@ HasManufacturer returns a boolean if a field has been set.
 
 ### GetModuleFamily
 
-`func (o *PatchedModuleTypeRequest) GetModuleFamily() BulkWritableCircuitRequestTenant`
+`func (o *PatchedModuleTypeRequest) GetModuleFamily() ApprovalWorkflowUser`
 
 GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
 
 ### GetModuleFamilyOk
 
-`func (o *PatchedModuleTypeRequest) GetModuleFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedModuleTypeRequest) GetModuleFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleFamily
 
-`func (o *PatchedModuleTypeRequest) SetModuleFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedModuleTypeRequest) SetModuleFamily(v ApprovalWorkflowUser)`
 
 SetModuleFamily sets ModuleFamily field to given value.
 
@@ -220,20 +272,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedModuleTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedModuleTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedModuleTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedModuleTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedModuleTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedModuleTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

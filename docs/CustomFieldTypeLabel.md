@@ -11,6 +11,8 @@
 
 * `DATE` (value: `"Date"`)
 
+* `DATE_TIME` (value: `"Date/time"`)
+
 * `URL` (value: `"URL"`)
 
 * `SELECTION` (value: `"Selection"`)

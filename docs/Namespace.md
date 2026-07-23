@@ -11,7 +11,8 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -189,20 +190,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetLocation
 
-`func (o *Namespace) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *Namespace) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *Namespace) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Namespace) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *Namespace) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *Namespace) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 
@@ -222,6 +223,41 @@ HasLocation returns a boolean if a field has been set.
 `func (o *Namespace) UnsetLocation()`
 
 UnsetLocation ensures that no value is present for Location, not even an explicit nil
+### GetTenant
+
+`func (o *Namespace) GetTenant() ApprovalWorkflowUser`
+
+GetTenant returns the Tenant field if non-nil, zero value otherwise.
+
+### GetTenantOk
+
+`func (o *Namespace) GetTenantOk() (*ApprovalWorkflowUser, bool)`
+
+GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTenant
+
+`func (o *Namespace) SetTenant(v ApprovalWorkflowUser)`
+
+SetTenant sets Tenant field to given value.
+
+### HasTenant
+
+`func (o *Namespace) HasTenant() bool`
+
+HasTenant returns a boolean if a field has been set.
+
+### SetTenantNil
+
+`func (o *Namespace) SetTenantNil(b bool)`
+
+ SetTenantNil sets the value for Tenant to be an explicit nil
+
+### UnsetTenant
+`func (o *Namespace) UnsetTenant()`
+
+UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetCreated
 
 `func (o *Namespace) GetCreated() time.Time`

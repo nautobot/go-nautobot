@@ -3,6 +3,8 @@
 ## Enum
 
 
+* `DATA_VALIDATION_DATA_COMPLIANCE_RULE` (value: `"data_validation.data_compliance_rule"`)
+
 * `EXTRAS_CONFIGCONTEXT` (value: `"extras.configcontext"`)
 
 * `EXTRAS_CONFIGCONTEXTSCHEMA` (value: `"extras.configcontextschema"`)

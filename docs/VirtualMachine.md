@@ -17,16 +17,15 @@ Name | Type | Description | Notes
 **Disk** | Pointer to **NullableInt32** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **LocalConfigContextSchema** | Pointer to [**NullableBulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequestConfigContextSchema.md) |  | [optional] 
-**LocalConfigContextDataOwnerContentType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**LocalConfigContextDataOwnerContentType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Cluster** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Platform** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Platform** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PrimaryIp4** | Pointer to [**NullablePrimaryIPv4**](PrimaryIPv4.md) |  | [optional] 
 **PrimaryIp6** | Pointer to [**NullablePrimaryIPv6**](PrimaryIPv6.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableVirtualMachineRequestSoftwareVersion**](BulkWritableVirtualMachineRequestSoftwareVersion.md) |  | [optional] 
-**SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this virtual machine | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
@@ -414,20 +413,20 @@ HasLocalConfigContextSchema returns a boolean if a field has been set.
 UnsetLocalConfigContextSchema ensures that no value is present for LocalConfigContextSchema, not even an explicit nil
 ### GetLocalConfigContextDataOwnerContentType
 
-`func (o *VirtualMachine) GetLocalConfigContextDataOwnerContentType() BulkWritableCircuitRequestTenant`
+`func (o *VirtualMachine) GetLocalConfigContextDataOwnerContentType() ApprovalWorkflowUser`
 
 GetLocalConfigContextDataOwnerContentType returns the LocalConfigContextDataOwnerContentType field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOwnerContentTypeOk
 
-`func (o *VirtualMachine) GetLocalConfigContextDataOwnerContentTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VirtualMachine) GetLocalConfigContextDataOwnerContentTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocalConfigContextDataOwnerContentTypeOk returns a tuple with the LocalConfigContextDataOwnerContentType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextDataOwnerContentType
 
-`func (o *VirtualMachine) SetLocalConfigContextDataOwnerContentType(v BulkWritableCircuitRequestTenant)`
+`func (o *VirtualMachine) SetLocalConfigContextDataOwnerContentType(v ApprovalWorkflowUser)`
 
 SetLocalConfigContextDataOwnerContentType sets LocalConfigContextDataOwnerContentType field to given value.
 
@@ -469,20 +468,20 @@ SetCluster sets Cluster field to given value.
 
 ### GetTenant
 
-`func (o *VirtualMachine) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *VirtualMachine) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *VirtualMachine) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VirtualMachine) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *VirtualMachine) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *VirtualMachine) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -504,20 +503,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetPlatform
 
-`func (o *VirtualMachine) GetPlatform() BulkWritableCircuitRequestTenant`
+`func (o *VirtualMachine) GetPlatform() ApprovalWorkflowUser`
 
 GetPlatform returns the Platform field if non-nil, zero value otherwise.
 
 ### GetPlatformOk
 
-`func (o *VirtualMachine) GetPlatformOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VirtualMachine) GetPlatformOk() (*ApprovalWorkflowUser, bool)`
 
 GetPlatformOk returns a tuple with the Platform field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlatform
 
-`func (o *VirtualMachine) SetPlatform(v BulkWritableCircuitRequestTenant)`
+`func (o *VirtualMachine) SetPlatform(v ApprovalWorkflowUser)`
 
 SetPlatform sets Platform field to given value.
 
@@ -559,20 +558,20 @@ SetStatus sets Status field to given value.
 
 ### GetRole
 
-`func (o *VirtualMachine) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *VirtualMachine) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *VirtualMachine) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VirtualMachine) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *VirtualMachine) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *VirtualMachine) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -697,31 +696,6 @@ HasSoftwareVersion returns a boolean if a field has been set.
 `func (o *VirtualMachine) UnsetSoftwareVersion()`
 
 UnsetSoftwareVersion ensures that no value is present for SoftwareVersion, not even an explicit nil
-### GetSoftwareImageFiles
-
-`func (o *VirtualMachine) GetSoftwareImageFiles() []SoftwareImageFiles`
-
-GetSoftwareImageFiles returns the SoftwareImageFiles field if non-nil, zero value otherwise.
-
-### GetSoftwareImageFilesOk
-
-`func (o *VirtualMachine) GetSoftwareImageFilesOk() (*[]SoftwareImageFiles, bool)`
-
-GetSoftwareImageFilesOk returns a tuple with the SoftwareImageFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSoftwareImageFiles
-
-`func (o *VirtualMachine) SetSoftwareImageFiles(v []SoftwareImageFiles)`
-
-SetSoftwareImageFiles sets SoftwareImageFiles field to given value.
-
-### HasSoftwareImageFiles
-
-`func (o *VirtualMachine) HasSoftwareImageFiles() bool`
-
-HasSoftwareImageFiles returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *VirtualMachine) GetCreated() time.Time`

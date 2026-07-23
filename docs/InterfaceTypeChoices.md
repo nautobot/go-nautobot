@@ -9,6 +9,8 @@
 
 * `LAG` (value: `"lag"`)
 
+* `TUNNEL` (value: `"tunnel"`)
+
 * `_100BASE_FX` (value: `"100base-fx"`)
 
 * `_100BASE_LFX` (value: `"100base-lfx"`)
@@ -171,7 +173,7 @@
 
 * `_64GFC_SFPP` (value: `"64gfc-sfpp"`)
 
-* `_128GFC_SFP28` (value: `"128gfc-sfp28"`)
+* `_128GFC_QSFP28` (value: `"128gfc-qsfp28"`)
 
 * `INFINIBAND_SDR` (value: `"infiniband-sdr"`)
 

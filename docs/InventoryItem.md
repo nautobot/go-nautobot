@@ -17,11 +17,10 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **string** |  | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this item | [optional] 
 **Discovered** | Pointer to **bool** | This item was automatically discovered | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Manufacturer** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Manufacturer** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableInventoryItemRequestSoftwareVersion**](BulkWritableInventoryItemRequestSoftwareVersion.md) |  | [optional] 
-**SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this inventory item | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -364,20 +363,20 @@ HasDiscovered returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *InventoryItem) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *InventoryItem) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *InventoryItem) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InventoryItem) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *InventoryItem) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *InventoryItem) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -419,20 +418,20 @@ SetDevice sets Device field to given value.
 
 ### GetManufacturer
 
-`func (o *InventoryItem) GetManufacturer() BulkWritableCircuitRequestTenant`
+`func (o *InventoryItem) GetManufacturer() ApprovalWorkflowUser`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *InventoryItem) GetManufacturerOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InventoryItem) GetManufacturerOk() (*ApprovalWorkflowUser, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *InventoryItem) SetManufacturer(v BulkWritableCircuitRequestTenant)`
+`func (o *InventoryItem) SetManufacturer(v ApprovalWorkflowUser)`
 
 SetManufacturer sets Manufacturer field to given value.
 
@@ -487,31 +486,6 @@ HasSoftwareVersion returns a boolean if a field has been set.
 `func (o *InventoryItem) UnsetSoftwareVersion()`
 
 UnsetSoftwareVersion ensures that no value is present for SoftwareVersion, not even an explicit nil
-### GetSoftwareImageFiles
-
-`func (o *InventoryItem) GetSoftwareImageFiles() []SoftwareImageFiles`
-
-GetSoftwareImageFiles returns the SoftwareImageFiles field if non-nil, zero value otherwise.
-
-### GetSoftwareImageFilesOk
-
-`func (o *InventoryItem) GetSoftwareImageFilesOk() (*[]SoftwareImageFiles, bool)`
-
-GetSoftwareImageFilesOk returns a tuple with the SoftwareImageFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSoftwareImageFiles
-
-`func (o *InventoryItem) SetSoftwareImageFiles(v []SoftwareImageFiles)`
-
-SetSoftwareImageFiles sets SoftwareImageFiles field to given value.
-
-### HasSoftwareImageFiles
-
-`func (o *InventoryItem) HasSoftwareImageFiles() bool`
-
-HasSoftwareImageFiles returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *InventoryItem) GetCreated() time.Time`

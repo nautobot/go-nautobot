@@ -19,10 +19,10 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
-**PowerPort** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**PowerPort** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -425,20 +425,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *PowerOutlet) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutlet) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *PowerOutlet) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutlet) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *PowerOutlet) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutlet) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -460,20 +460,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetModule
 
-`func (o *PowerOutlet) GetModule() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutlet) GetModule() ApprovalWorkflowUser`
 
 GetModule returns the Module field if non-nil, zero value otherwise.
 
 ### GetModuleOk
 
-`func (o *PowerOutlet) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutlet) GetModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModule
 
-`func (o *PowerOutlet) SetModule(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutlet) SetModule(v ApprovalWorkflowUser)`
 
 SetModule sets Module field to given value.
 
@@ -525,20 +525,20 @@ SetCable sets Cable field to given value.
 UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetPowerPort
 
-`func (o *PowerOutlet) GetPowerPort() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutlet) GetPowerPort() ApprovalWorkflowUser`
 
 GetPowerPort returns the PowerPort field if non-nil, zero value otherwise.
 
 ### GetPowerPortOk
 
-`func (o *PowerOutlet) GetPowerPortOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutlet) GetPowerPortOk() (*ApprovalWorkflowUser, bool)`
 
 GetPowerPortOk returns a tuple with the PowerPort field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPowerPort
 
-`func (o *PowerOutlet) SetPowerPort(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutlet) SetPowerPort(v ApprovalWorkflowUser)`
 
 SetPowerPort sets PowerPort field to given value.
 

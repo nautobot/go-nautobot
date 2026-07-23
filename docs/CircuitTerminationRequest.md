@@ -12,12 +12,12 @@ Name | Type | Description | Notes
 **PpInfo** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Circuit** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ProviderNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**CloudNetwork** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ProviderNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**CloudNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -250,20 +250,20 @@ SetCircuit sets Circuit field to given value.
 
 ### GetLocation
 
-`func (o *CircuitTerminationRequest) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *CircuitTerminationRequest) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *CircuitTerminationRequest) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CircuitTerminationRequest) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *CircuitTerminationRequest) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *CircuitTerminationRequest) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 
@@ -285,20 +285,20 @@ HasLocation returns a boolean if a field has been set.
 UnsetLocation ensures that no value is present for Location, not even an explicit nil
 ### GetProviderNetwork
 
-`func (o *CircuitTerminationRequest) GetProviderNetwork() BulkWritableCircuitRequestTenant`
+`func (o *CircuitTerminationRequest) GetProviderNetwork() ApprovalWorkflowUser`
 
 GetProviderNetwork returns the ProviderNetwork field if non-nil, zero value otherwise.
 
 ### GetProviderNetworkOk
 
-`func (o *CircuitTerminationRequest) GetProviderNetworkOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CircuitTerminationRequest) GetProviderNetworkOk() (*ApprovalWorkflowUser, bool)`
 
 GetProviderNetworkOk returns a tuple with the ProviderNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetProviderNetwork
 
-`func (o *CircuitTerminationRequest) SetProviderNetwork(v BulkWritableCircuitRequestTenant)`
+`func (o *CircuitTerminationRequest) SetProviderNetwork(v ApprovalWorkflowUser)`
 
 SetProviderNetwork sets ProviderNetwork field to given value.
 
@@ -320,20 +320,20 @@ HasProviderNetwork returns a boolean if a field has been set.
 UnsetProviderNetwork ensures that no value is present for ProviderNetwork, not even an explicit nil
 ### GetCloudNetwork
 
-`func (o *CircuitTerminationRequest) GetCloudNetwork() BulkWritableCircuitRequestTenant`
+`func (o *CircuitTerminationRequest) GetCloudNetwork() ApprovalWorkflowUser`
 
 GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
 
 ### GetCloudNetworkOk
 
-`func (o *CircuitTerminationRequest) GetCloudNetworkOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CircuitTerminationRequest) GetCloudNetworkOk() (*ApprovalWorkflowUser, bool)`
 
 GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudNetwork
 
-`func (o *CircuitTerminationRequest) SetCloudNetwork(v BulkWritableCircuitRequestTenant)`
+`func (o *CircuitTerminationRequest) SetCloudNetwork(v ApprovalWorkflowUser)`
 
 SetCloudNetwork sets CloudNetwork field to given value.
 
@@ -405,20 +405,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *CircuitTerminationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *CircuitTerminationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *CircuitTerminationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *CircuitTerminationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *CircuitTerminationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *CircuitTerminationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

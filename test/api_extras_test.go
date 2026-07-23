@@ -14,13 +14,637 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func Test_nautobot_ExtrasAPIService(t *testing.T) {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsBulkDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkDestroy(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkPartialUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsBulkUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsBulkUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsCreate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsDestroy(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsList(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsNotesCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsNotesList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsNotesList(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsPartialUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsRetrieve", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsRetrieve(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowDefinitionsUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowDefinitionsUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsBulkDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkDestroy(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkPartialUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsBulkUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsBulkUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsCreate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsDestroy(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsList(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsNotesCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsNotesList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsNotesList(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsPartialUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsRetrieve", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsRetrieve(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStageDefinitionsUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageDefinitionsUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesApproveCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesApproveCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesBulkDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkDestroy(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesBulkPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkPartialUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesBulkUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesBulkUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesCommentCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesCommentCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesCreate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesDenyCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesDenyCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesDestroy(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesList(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesNotesCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesNotesCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesNotesList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesNotesList(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesPartialUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesRetrieve", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesRetrieve(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowStagesUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsBulkDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkDestroy(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsBulkPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkPartialUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsBulkUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsBulkUpdate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsCancelCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsCancelCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsCreate(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsDestroy", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsDestroy(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsList(context.Background()).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsNotesCreate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsNotesCreate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsNotesList", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsNotesList(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsPartialUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsPartialUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsRetrieve", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsRetrieve(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test ExtrasAPIService ExtrasApprovalWorkflowsUpdate", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		var id string
+
+		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsUpdate(context.Background(), id).Execute()
+
+		require.Nil(t, err)
+		require.NotNil(t, resp)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
 
 	t.Run("Test ExtrasAPIService ExtrasComputedFieldsBulkDestroy", func(t *testing.T) {
 
@@ -4097,20 +4721,6 @@ func Test_nautobot_ExtrasAPIService(t *testing.T) {
 
 	})
 
-	t.Run("Test ExtrasAPIService ExtrasScheduledJobsApproveCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasScheduledJobsApproveCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
 	t.Run("Test ExtrasAPIService ExtrasScheduledJobsBulkDestroy", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test
@@ -4118,20 +4728,6 @@ func Test_nautobot_ExtrasAPIService(t *testing.T) {
 		httpRes, err := apiClient.ExtrasAPI.ExtrasScheduledJobsBulkDestroy(context.Background()).Execute()
 
 		require.Nil(t, err)
-		assert.Equal(t, 200, httpRes.StatusCode)
-
-	})
-
-	t.Run("Test ExtrasAPIService ExtrasScheduledJobsDenyCreate", func(t *testing.T) {
-
-		t.Skip("skip test")  // remove to run test
-
-		var id string
-
-		resp, httpRes, err := apiClient.ExtrasAPI.ExtrasScheduledJobsDenyCreate(context.Background(), id).Execute()
-
-		require.Nil(t, err)
-		require.NotNil(t, resp)
 		assert.Equal(t, 200, httpRes.StatusCode)
 
 	})

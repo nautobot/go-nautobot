@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Domain** | Pointer to **string** |  | [optional] 
-**Master** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Master** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -108,20 +108,20 @@ HasDomain returns a boolean if a field has been set.
 
 ### GetMaster
 
-`func (o *PatchedVirtualChassisRequest) GetMaster() BulkWritableCircuitRequestTenant`
+`func (o *PatchedVirtualChassisRequest) GetMaster() ApprovalWorkflowUser`
 
 GetMaster returns the Master field if non-nil, zero value otherwise.
 
 ### GetMasterOk
 
-`func (o *PatchedVirtualChassisRequest) GetMasterOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedVirtualChassisRequest) GetMasterOk() (*ApprovalWorkflowUser, bool)`
 
 GetMasterOk returns a tuple with the Master field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMaster
 
-`func (o *PatchedVirtualChassisRequest) SetMaster(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedVirtualChassisRequest) SetMaster(v ApprovalWorkflowUser)`
 
 SetMaster sets Master field to given value.
 
@@ -168,20 +168,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedVirtualChassisRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedVirtualChassisRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedVirtualChassisRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedVirtualChassisRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedVirtualChassisRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedVirtualChassisRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

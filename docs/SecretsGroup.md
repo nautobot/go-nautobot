@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**Secrets** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -21,7 +20,7 @@ Name | Type | Description | Notes
 
 ### NewSecretsGroup
 
-`func NewSecretsGroup(objectType string, display string, url string, naturalSlug string, name string, secrets []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *SecretsGroup`
+`func NewSecretsGroup(objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *SecretsGroup`
 
 NewSecretsGroup instantiates a new SecretsGroup object
 This constructor will assign default values to properties that have it defined,
@@ -185,26 +184,6 @@ SetDescription sets Description field to given value.
 `func (o *SecretsGroup) HasDescription() bool`
 
 HasDescription returns a boolean if a field has been set.
-
-### GetSecrets
-
-`func (o *SecretsGroup) GetSecrets() []BulkWritableCableRequestStatus`
-
-GetSecrets returns the Secrets field if non-nil, zero value otherwise.
-
-### GetSecretsOk
-
-`func (o *SecretsGroup) GetSecretsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetSecretsOk returns a tuple with the Secrets field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSecrets
-
-`func (o *SecretsGroup) SetSecrets(v []BulkWritableCableRequestStatus)`
-
-SetSecrets sets Secrets field to given value.
-
 
 ### GetCreated
 

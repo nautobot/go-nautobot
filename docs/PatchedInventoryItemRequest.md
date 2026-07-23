@@ -12,13 +12,13 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **string** |  | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this item | [optional] 
 **Discovered** | Pointer to **bool** | This item was automatically discovered | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Device** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Manufacturer** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Manufacturer** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableInventoryItemRequestSoftwareVersion**](BulkWritableInventoryItemRequestSoftwareVersion.md) |  | [optional] 
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this inventory item | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 **Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
@@ -252,20 +252,20 @@ HasDiscovered returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *PatchedInventoryItemRequest) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *PatchedInventoryItemRequest) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *PatchedInventoryItemRequest) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedInventoryItemRequest) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *PatchedInventoryItemRequest) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedInventoryItemRequest) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -312,20 +312,20 @@ HasDevice returns a boolean if a field has been set.
 
 ### GetManufacturer
 
-`func (o *PatchedInventoryItemRequest) GetManufacturer() BulkWritableCircuitRequestTenant`
+`func (o *PatchedInventoryItemRequest) GetManufacturer() ApprovalWorkflowUser`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *PatchedInventoryItemRequest) GetManufacturerOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedInventoryItemRequest) GetManufacturerOk() (*ApprovalWorkflowUser, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *PatchedInventoryItemRequest) SetManufacturer(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedInventoryItemRequest) SetManufacturer(v ApprovalWorkflowUser)`
 
 SetManufacturer sets Manufacturer field to given value.
 
@@ -432,20 +432,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedInventoryItemRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedInventoryItemRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedInventoryItemRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedInventoryItemRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedInventoryItemRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedInventoryItemRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
