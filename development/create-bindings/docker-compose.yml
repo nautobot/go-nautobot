@@ -3,6 +3,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+      args:
+        OPENAPI_GENERATOR_VERSION: ${OPENAPI_GENERATOR_VERSION}
     environment:
       - NAUTOBOT_VER=${NAUTOBOT_VER}
     volumes:
