@@ -25,18 +25,17 @@ Name | Type | Description | Notes
 **DateChanged** | **time.Time** | Datetime that this scheduled job was last modified | [readonly] 
 **Description** | Pointer to **string** | Detailed description about the details of this scheduled job | [optional] 
 **ApprovalRequired** | Pointer to **bool** |  | [optional] 
-**ApprovedAt** | **NullableTime** | Datetime that the schedule was approved | [readonly] 
+**DecisionDate** | **NullableTime** | Datetime that the schedule was approved or denied | [readonly] 
 **Crontab** | Pointer to **string** | Cronjob syntax string for custom scheduling | [optional] 
-**JobModel** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**JobModel** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **JobQueue** | Pointer to [**NullableJobQueueOverride**](JobQueueOverride.md) |  | [optional] 
 **User** | Pointer to [**NullableScheduledJobUser**](ScheduledJobUser.md) |  | [optional] 
-**ApprovedByUser** | Pointer to [**NullableScheduledJobApprovedByUser**](ScheduledJobApprovedByUser.md) |  | [optional] 
 
 ## Methods
 
 ### NewScheduledJob
 
-`func NewScheduledJob(objectType string, display string, url string, naturalSlug string, queue string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, approvedAt NullableTime, ) *ScheduledJob`
+`func NewScheduledJob(objectType string, display string, url string, naturalSlug string, queue string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, decisionDate NullableTime, ) *ScheduledJob`
 
 NewScheduledJob instantiates a new ScheduledJob object
 This constructor will assign default values to properties that have it defined,
@@ -561,36 +560,36 @@ SetApprovalRequired sets ApprovalRequired field to given value.
 
 HasApprovalRequired returns a boolean if a field has been set.
 
-### GetApprovedAt
+### GetDecisionDate
 
-`func (o *ScheduledJob) GetApprovedAt() time.Time`
+`func (o *ScheduledJob) GetDecisionDate() time.Time`
 
-GetApprovedAt returns the ApprovedAt field if non-nil, zero value otherwise.
+GetDecisionDate returns the DecisionDate field if non-nil, zero value otherwise.
 
-### GetApprovedAtOk
+### GetDecisionDateOk
 
-`func (o *ScheduledJob) GetApprovedAtOk() (*time.Time, bool)`
+`func (o *ScheduledJob) GetDecisionDateOk() (*time.Time, bool)`
 
-GetApprovedAtOk returns a tuple with the ApprovedAt field if it's non-nil, zero value otherwise
+GetDecisionDateOk returns a tuple with the DecisionDate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetApprovedAt
+### SetDecisionDate
 
-`func (o *ScheduledJob) SetApprovedAt(v time.Time)`
+`func (o *ScheduledJob) SetDecisionDate(v time.Time)`
 
-SetApprovedAt sets ApprovedAt field to given value.
+SetDecisionDate sets DecisionDate field to given value.
 
 
-### SetApprovedAtNil
+### SetDecisionDateNil
 
-`func (o *ScheduledJob) SetApprovedAtNil(b bool)`
+`func (o *ScheduledJob) SetDecisionDateNil(b bool)`
 
- SetApprovedAtNil sets the value for ApprovedAt to be an explicit nil
+ SetDecisionDateNil sets the value for DecisionDate to be an explicit nil
 
-### UnsetApprovedAt
-`func (o *ScheduledJob) UnsetApprovedAt()`
+### UnsetDecisionDate
+`func (o *ScheduledJob) UnsetDecisionDate()`
 
-UnsetApprovedAt ensures that no value is present for ApprovedAt, not even an explicit nil
+UnsetDecisionDate ensures that no value is present for DecisionDate, not even an explicit nil
 ### GetCrontab
 
 `func (o *ScheduledJob) GetCrontab() string`
@@ -618,20 +617,20 @@ HasCrontab returns a boolean if a field has been set.
 
 ### GetJobModel
 
-`func (o *ScheduledJob) GetJobModel() BulkWritableCircuitRequestTenant`
+`func (o *ScheduledJob) GetJobModel() ApprovalWorkflowUser`
 
 GetJobModel returns the JobModel field if non-nil, zero value otherwise.
 
 ### GetJobModelOk
 
-`func (o *ScheduledJob) GetJobModelOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ScheduledJob) GetJobModelOk() (*ApprovalWorkflowUser, bool)`
 
 GetJobModelOk returns a tuple with the JobModel field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJobModel
 
-`func (o *ScheduledJob) SetJobModel(v BulkWritableCircuitRequestTenant)`
+`func (o *ScheduledJob) SetJobModel(v ApprovalWorkflowUser)`
 
 SetJobModel sets JobModel field to given value.
 
@@ -721,41 +720,6 @@ HasUser returns a boolean if a field has been set.
 `func (o *ScheduledJob) UnsetUser()`
 
 UnsetUser ensures that no value is present for User, not even an explicit nil
-### GetApprovedByUser
-
-`func (o *ScheduledJob) GetApprovedByUser() ScheduledJobApprovedByUser`
-
-GetApprovedByUser returns the ApprovedByUser field if non-nil, zero value otherwise.
-
-### GetApprovedByUserOk
-
-`func (o *ScheduledJob) GetApprovedByUserOk() (*ScheduledJobApprovedByUser, bool)`
-
-GetApprovedByUserOk returns a tuple with the ApprovedByUser field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetApprovedByUser
-
-`func (o *ScheduledJob) SetApprovedByUser(v ScheduledJobApprovedByUser)`
-
-SetApprovedByUser sets ApprovedByUser field to given value.
-
-### HasApprovedByUser
-
-`func (o *ScheduledJob) HasApprovedByUser() bool`
-
-HasApprovedByUser returns a boolean if a field has been set.
-
-### SetApprovedByUserNil
-
-`func (o *ScheduledJob) SetApprovedByUserNil(b bool)`
-
- SetApprovedByUserNil sets the value for ApprovedByUser to be an explicit nil
-
-### UnsetApprovedByUser
-`func (o *ScheduledJob) UnsetApprovedByUser()`
-
-UnsetApprovedByUser ensures that no value is present for ApprovedByUser, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

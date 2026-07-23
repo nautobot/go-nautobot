@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **RequiresFirstPartyModules** | Pointer to **bool** | This bay will only accept modules from the same manufacturer as the parent device or module | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayTemplateRequestModuleFamily**](BulkWritableModuleBayTemplateRequestModuleFamily.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
@@ -288,20 +288,20 @@ HasRequiresFirstPartyModules returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *ModuleBayTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *ModuleBayTemplate) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *ModuleBayTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleBayTemplate) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *ModuleBayTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleBayTemplate) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -323,20 +323,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *ModuleBayTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *ModuleBayTemplate) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *ModuleBayTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleBayTemplate) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *ModuleBayTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleBayTemplate) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 

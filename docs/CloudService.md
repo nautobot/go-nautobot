@@ -12,20 +12,19 @@ Name | Type | Description | Notes
 **ExtraConfig** | Pointer to **interface{}** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CloudAccount** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**CloudNetworks** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**CloudResourceType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CloudAccount** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewCloudService
 
-`func NewCloudService(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType BulkWritableCableRequestStatus, cloudNetworks []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudService`
+`func NewCloudService(objectType string, display string, url string, naturalSlug string, name string, cloudResourceType ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CloudService`
 
 NewCloudService instantiates a new CloudService object
 This constructor will assign default values to properties that have it defined,
@@ -227,40 +226,40 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetCloudResourceType
 
-`func (o *CloudService) GetCloudResourceType() BulkWritableCableRequestStatus`
+`func (o *CloudService) GetCloudResourceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCloudResourceType returns the CloudResourceType field if non-nil, zero value otherwise.
 
 ### GetCloudResourceTypeOk
 
-`func (o *CloudService) GetCloudResourceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *CloudService) GetCloudResourceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCloudResourceTypeOk returns a tuple with the CloudResourceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudResourceType
 
-`func (o *CloudService) SetCloudResourceType(v BulkWritableCableRequestStatus)`
+`func (o *CloudService) SetCloudResourceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCloudResourceType sets CloudResourceType field to given value.
 
 
 ### GetCloudAccount
 
-`func (o *CloudService) GetCloudAccount() BulkWritableCircuitRequestTenant`
+`func (o *CloudService) GetCloudAccount() ApprovalWorkflowUser`
 
 GetCloudAccount returns the CloudAccount field if non-nil, zero value otherwise.
 
 ### GetCloudAccountOk
 
-`func (o *CloudService) GetCloudAccountOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *CloudService) GetCloudAccountOk() (*ApprovalWorkflowUser, bool)`
 
 GetCloudAccountOk returns a tuple with the CloudAccount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudAccount
 
-`func (o *CloudService) SetCloudAccount(v BulkWritableCircuitRequestTenant)`
+`func (o *CloudService) SetCloudAccount(v ApprovalWorkflowUser)`
 
 SetCloudAccount sets CloudAccount field to given value.
 
@@ -280,26 +279,6 @@ HasCloudAccount returns a boolean if a field has been set.
 `func (o *CloudService) UnsetCloudAccount()`
 
 UnsetCloudAccount ensures that no value is present for CloudAccount, not even an explicit nil
-### GetCloudNetworks
-
-`func (o *CloudService) GetCloudNetworks() []BulkWritableCableRequestStatus`
-
-GetCloudNetworks returns the CloudNetworks field if non-nil, zero value otherwise.
-
-### GetCloudNetworksOk
-
-`func (o *CloudService) GetCloudNetworksOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetCloudNetworksOk returns a tuple with the CloudNetworks field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCloudNetworks
-
-`func (o *CloudService) SetCloudNetworks(v []BulkWritableCableRequestStatus)`
-
-SetCloudNetworks sets CloudNetworks field to given value.
-
-
 ### GetCreated
 
 `func (o *CloudService) GetCreated() time.Time`
@@ -407,20 +386,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *CloudService) GetTags() []BulkWritableCableRequestStatus`
+`func (o *CloudService) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *CloudService) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *CloudService) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *CloudService) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *CloudService) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

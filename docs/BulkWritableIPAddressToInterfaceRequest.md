@@ -12,15 +12,15 @@ Name | Type | Description | Notes
 **IsPrimary** | Pointer to **bool** | Is primary address on interface | [optional] 
 **IsSecondary** | Pointer to **bool** | Is secondary address on interface | [optional] 
 **IsStandby** | Pointer to **bool** | Is standby address on interface | [optional] 
-**IpAddress** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Interface** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VmInterface** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**IpAddress** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Interface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VmInterface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableIPAddressToInterfaceRequest
 
-`func NewBulkWritableIPAddressToInterfaceRequest(id string, ipAddress BulkWritableCableRequestStatus, ) *BulkWritableIPAddressToInterfaceRequest`
+`func NewBulkWritableIPAddressToInterfaceRequest(id string, ipAddress ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableIPAddressToInterfaceRequest`
 
 NewBulkWritableIPAddressToInterfaceRequest instantiates a new BulkWritableIPAddressToInterfaceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -232,40 +232,40 @@ HasIsStandby returns a boolean if a field has been set.
 
 ### GetIpAddress
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetIpAddress() BulkWritableCableRequestStatus`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetIpAddress() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetIpAddress returns the IpAddress field if non-nil, zero value otherwise.
 
 ### GetIpAddressOk
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetIpAddressOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetIpAddressOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIpAddress
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) SetIpAddress(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) SetIpAddress(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetIpAddress sets IpAddress field to given value.
 
 
 ### GetInterface
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetInterface() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetInterface() ApprovalWorkflowUser`
 
 GetInterface returns the Interface field if non-nil, zero value otherwise.
 
 ### GetInterfaceOk
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetInterfaceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetInterfaceOk() (*ApprovalWorkflowUser, bool)`
 
 GetInterfaceOk returns a tuple with the Interface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInterface
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) SetInterface(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) SetInterface(v ApprovalWorkflowUser)`
 
 SetInterface sets Interface field to given value.
 
@@ -287,20 +287,20 @@ HasInterface returns a boolean if a field has been set.
 UnsetInterface ensures that no value is present for Interface, not even an explicit nil
 ### GetVmInterface
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetVmInterface() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetVmInterface() ApprovalWorkflowUser`
 
 GetVmInterface returns the VmInterface field if non-nil, zero value otherwise.
 
 ### GetVmInterfaceOk
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) GetVmInterfaceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) GetVmInterfaceOk() (*ApprovalWorkflowUser, bool)`
 
 GetVmInterfaceOk returns a tuple with the VmInterface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVmInterface
 
-`func (o *BulkWritableIPAddressToInterfaceRequest) SetVmInterface(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableIPAddressToInterfaceRequest) SetVmInterface(v ApprovalWorkflowUser)`
 
 SetVmInterface sets VmInterface field to given value.
 

@@ -7,12 +7,12 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AssociatedObjectType** | Pointer to **string** |  | [optional] 
 **AssociatedObjectId** | Pointer to **string** |  | [optional] 
-**Contact** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Team** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Role** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Role** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Status** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -105,20 +105,20 @@ HasAssociatedObjectId returns a boolean if a field has been set.
 
 ### GetContact
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetContact() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetContact() ApprovalWorkflowUser`
 
 GetContact returns the Contact field if non-nil, zero value otherwise.
 
 ### GetContactOk
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetContactOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetContactOk() (*ApprovalWorkflowUser, bool)`
 
 GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContact
 
-`func (o *PatchedBulkWritableContactAssociationRequest) SetContact(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableContactAssociationRequest) SetContact(v ApprovalWorkflowUser)`
 
 SetContact sets Contact field to given value.
 
@@ -140,20 +140,20 @@ HasContact returns a boolean if a field has been set.
 UnsetContact ensures that no value is present for Contact, not even an explicit nil
 ### GetTeam
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetTeam() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetTeam() ApprovalWorkflowUser`
 
 GetTeam returns the Team field if non-nil, zero value otherwise.
 
 ### GetTeamOk
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetTeamOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetTeamOk() (*ApprovalWorkflowUser, bool)`
 
 GetTeamOk returns a tuple with the Team field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTeam
 
-`func (o *PatchedBulkWritableContactAssociationRequest) SetTeam(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableContactAssociationRequest) SetTeam(v ApprovalWorkflowUser)`
 
 SetTeam sets Team field to given value.
 
@@ -175,20 +175,20 @@ HasTeam returns a boolean if a field has been set.
 UnsetTeam ensures that no value is present for Team, not even an explicit nil
 ### GetRole
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetRole() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetRole() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetRoleOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetRoleOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *PatchedBulkWritableContactAssociationRequest) SetRole(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableContactAssociationRequest) SetRole(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRole sets Role field to given value.
 
@@ -200,20 +200,20 @@ HasRole returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *PatchedBulkWritableContactAssociationRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableContactAssociationRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -250,20 +250,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableContactAssociationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableContactAssociationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableContactAssociationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableContactAssociationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

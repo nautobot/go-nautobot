@@ -81,6 +81,12 @@
 
 * `CS` (value: `"cs"`)
 
+* `CS_PC` (value: `"cs-pc"`)
+
+* `CS_UPC` (value: `"cs-upc"`)
+
+* `CS_APC` (value: `"cs-apc"`)
+
 * `SN` (value: `"sn"`)
 
 * `SMA_905` (value: `"sma-905"`)

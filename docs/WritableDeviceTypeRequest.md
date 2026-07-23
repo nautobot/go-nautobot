@@ -13,17 +13,17 @@ Name | Type | Description | Notes
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
 **SubdeviceRole** | Pointer to [**ParentChildStatus**](ParentChildStatus.md) |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**DeviceFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Manufacturer** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritableDeviceTypeRequest
 
-`func NewWritableDeviceTypeRequest(model string, manufacturer BulkWritableCableRequestStatus, ) *WritableDeviceTypeRequest`
+`func NewWritableDeviceTypeRequest(model string, manufacturer ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritableDeviceTypeRequest`
 
 NewWritableDeviceTypeRequest instantiates a new WritableDeviceTypeRequest object
 This constructor will assign default values to properties that have it defined,
@@ -260,40 +260,40 @@ HasComments returns a boolean if a field has been set.
 
 ### GetManufacturer
 
-`func (o *WritableDeviceTypeRequest) GetManufacturer() BulkWritableCableRequestStatus`
+`func (o *WritableDeviceTypeRequest) GetManufacturer() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *WritableDeviceTypeRequest) GetManufacturerOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritableDeviceTypeRequest) GetManufacturerOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *WritableDeviceTypeRequest) SetManufacturer(v BulkWritableCableRequestStatus)`
+`func (o *WritableDeviceTypeRequest) SetManufacturer(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetManufacturer sets Manufacturer field to given value.
 
 
 ### GetDeviceFamily
 
-`func (o *WritableDeviceTypeRequest) GetDeviceFamily() BulkWritableCircuitRequestTenant`
+`func (o *WritableDeviceTypeRequest) GetDeviceFamily() ApprovalWorkflowUser`
 
 GetDeviceFamily returns the DeviceFamily field if non-nil, zero value otherwise.
 
 ### GetDeviceFamilyOk
 
-`func (o *WritableDeviceTypeRequest) GetDeviceFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *WritableDeviceTypeRequest) GetDeviceFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceFamilyOk returns a tuple with the DeviceFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamily
 
-`func (o *WritableDeviceTypeRequest) SetDeviceFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *WritableDeviceTypeRequest) SetDeviceFamily(v ApprovalWorkflowUser)`
 
 SetDeviceFamily sets DeviceFamily field to given value.
 
@@ -340,20 +340,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *WritableDeviceTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *WritableDeviceTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *WritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *WritableDeviceTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *WritableDeviceTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *WritableDeviceTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -365,20 +365,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritableDeviceTypeRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *WritableDeviceTypeRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritableDeviceTypeRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *WritableDeviceTypeRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritableDeviceTypeRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *WritableDeviceTypeRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

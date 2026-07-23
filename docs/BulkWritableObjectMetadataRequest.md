@@ -9,15 +9,15 @@ Name | Type | Description | Notes
 **Value** | Pointer to **interface{}** |  | [optional] 
 **ScopedFields** | Pointer to **interface{}** | List of scoped fields, only direct fields on the model | [optional] 
 **AssignedObjectId** | **string** |  | 
-**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Contact** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Team** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableObjectMetadataRequest
 
-`func NewBulkWritableObjectMetadataRequest(id string, assignedObjectType string, assignedObjectId string, metadataType BulkWritableCableRequestStatus, ) *BulkWritableObjectMetadataRequest`
+`func NewBulkWritableObjectMetadataRequest(id string, assignedObjectType string, assignedObjectId string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableObjectMetadataRequest`
 
 NewBulkWritableObjectMetadataRequest instantiates a new BulkWritableObjectMetadataRequest object
 This constructor will assign default values to properties that have it defined,
@@ -164,40 +164,40 @@ SetAssignedObjectId sets AssignedObjectId field to given value.
 
 ### GetMetadataType
 
-`func (o *BulkWritableObjectMetadataRequest) GetMetadataType() BulkWritableCableRequestStatus`
+`func (o *BulkWritableObjectMetadataRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *BulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *BulkWritableObjectMetadataRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableObjectMetadataRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetMetadataType sets MetadataType field to given value.
 
 
 ### GetContact
 
-`func (o *BulkWritableObjectMetadataRequest) GetContact() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableObjectMetadataRequest) GetContact() ApprovalWorkflowUser`
 
 GetContact returns the Contact field if non-nil, zero value otherwise.
 
 ### GetContactOk
 
-`func (o *BulkWritableObjectMetadataRequest) GetContactOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableObjectMetadataRequest) GetContactOk() (*ApprovalWorkflowUser, bool)`
 
 GetContactOk returns a tuple with the Contact field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContact
 
-`func (o *BulkWritableObjectMetadataRequest) SetContact(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableObjectMetadataRequest) SetContact(v ApprovalWorkflowUser)`
 
 SetContact sets Contact field to given value.
 
@@ -219,20 +219,20 @@ HasContact returns a boolean if a field has been set.
 UnsetContact ensures that no value is present for Contact, not even an explicit nil
 ### GetTeam
 
-`func (o *BulkWritableObjectMetadataRequest) GetTeam() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableObjectMetadataRequest) GetTeam() ApprovalWorkflowUser`
 
 GetTeam returns the Team field if non-nil, zero value otherwise.
 
 ### GetTeamOk
 
-`func (o *BulkWritableObjectMetadataRequest) GetTeamOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableObjectMetadataRequest) GetTeamOk() (*ApprovalWorkflowUser, bool)`
 
 GetTeamOk returns a tuple with the Team field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTeam
 
-`func (o *BulkWritableObjectMetadataRequest) SetTeam(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableObjectMetadataRequest) SetTeam(v ApprovalWorkflowUser)`
 
 SetTeam sets Team field to given value.
 

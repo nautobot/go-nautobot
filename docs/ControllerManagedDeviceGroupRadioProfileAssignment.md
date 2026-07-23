@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**ControllerManagedDeviceGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**RadioProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**ControllerManagedDeviceGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**RadioProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewControllerManagedDeviceGroupRadioProfileAssignment
 
-`func NewControllerManagedDeviceGroupRadioProfileAssignment(objectType string, display string, url string, naturalSlug string, controllerManagedDeviceGroup BulkWritableCableRequestStatus, radioProfile BulkWritableCableRequestStatus, ) *ControllerManagedDeviceGroupRadioProfileAssignment`
+`func NewControllerManagedDeviceGroupRadioProfileAssignment(objectType string, display string, url string, naturalSlug string, controllerManagedDeviceGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, radioProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ControllerManagedDeviceGroupRadioProfileAssignment`
 
 NewControllerManagedDeviceGroupRadioProfileAssignment instantiates a new ControllerManagedDeviceGroupRadioProfileAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -138,40 +138,40 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroup() BulkWritableCableRequestStatus`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetControllerManagedDeviceGroup(v BulkWritableCableRequestStatus)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetControllerManagedDeviceGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
 
 ### GetRadioProfile
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfile() BulkWritableCableRequestStatus`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRadioProfile returns the RadioProfile field if non-nil, zero value otherwise.
 
 ### GetRadioProfileOk
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRadioProfileOk returns a tuple with the RadioProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRadioProfile
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetRadioProfile(v BulkWritableCableRequestStatus)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetRadioProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRadioProfile sets RadioProfile field to given value.
 

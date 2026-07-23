@@ -101,6 +101,15 @@ Method | HTTP request | Description
 [**DcimDeviceBaysPartialUpdate**](DcimAPI.md#DcimDeviceBaysPartialUpdate) | **Patch** /dcim/device-bays/{id}/ | 
 [**DcimDeviceBaysRetrieve**](DcimAPI.md#DcimDeviceBaysRetrieve) | **Get** /dcim/device-bays/{id}/ | 
 [**DcimDeviceBaysUpdate**](DcimAPI.md#DcimDeviceBaysUpdate) | **Put** /dcim/device-bays/{id}/ | 
+[**DcimDeviceClusterAssignmentsBulkDestroy**](DcimAPI.md#DcimDeviceClusterAssignmentsBulkDestroy) | **Delete** /dcim/device-cluster-assignments/ | 
+[**DcimDeviceClusterAssignmentsBulkPartialUpdate**](DcimAPI.md#DcimDeviceClusterAssignmentsBulkPartialUpdate) | **Patch** /dcim/device-cluster-assignments/ | 
+[**DcimDeviceClusterAssignmentsBulkUpdate**](DcimAPI.md#DcimDeviceClusterAssignmentsBulkUpdate) | **Put** /dcim/device-cluster-assignments/ | 
+[**DcimDeviceClusterAssignmentsCreate**](DcimAPI.md#DcimDeviceClusterAssignmentsCreate) | **Post** /dcim/device-cluster-assignments/ | 
+[**DcimDeviceClusterAssignmentsDestroy**](DcimAPI.md#DcimDeviceClusterAssignmentsDestroy) | **Delete** /dcim/device-cluster-assignments/{id}/ | 
+[**DcimDeviceClusterAssignmentsList**](DcimAPI.md#DcimDeviceClusterAssignmentsList) | **Get** /dcim/device-cluster-assignments/ | 
+[**DcimDeviceClusterAssignmentsPartialUpdate**](DcimAPI.md#DcimDeviceClusterAssignmentsPartialUpdate) | **Patch** /dcim/device-cluster-assignments/{id}/ | 
+[**DcimDeviceClusterAssignmentsRetrieve**](DcimAPI.md#DcimDeviceClusterAssignmentsRetrieve) | **Get** /dcim/device-cluster-assignments/{id}/ | 
+[**DcimDeviceClusterAssignmentsUpdate**](DcimAPI.md#DcimDeviceClusterAssignmentsUpdate) | **Put** /dcim/device-cluster-assignments/{id}/ | 
 [**DcimDeviceFamiliesBulkDestroy**](DcimAPI.md#DcimDeviceFamiliesBulkDestroy) | **Delete** /dcim/device-families/ | 
 [**DcimDeviceFamiliesBulkPartialUpdate**](DcimAPI.md#DcimDeviceFamiliesBulkPartialUpdate) | **Patch** /dcim/device-families/ | 
 [**DcimDeviceFamiliesBulkUpdate**](DcimAPI.md#DcimDeviceFamiliesBulkUpdate) | **Put** /dcim/device-families/ | 
@@ -261,6 +270,7 @@ Method | HTTP request | Description
 [**DcimLocationsNotesList**](DcimAPI.md#DcimLocationsNotesList) | **Get** /dcim/locations/{id}/notes/ | 
 [**DcimLocationsPartialUpdate**](DcimAPI.md#DcimLocationsPartialUpdate) | **Patch** /dcim/locations/{id}/ | 
 [**DcimLocationsRetrieve**](DcimAPI.md#DcimLocationsRetrieve) | **Get** /dcim/locations/{id}/ | 
+[**DcimLocationsStatsList**](DcimAPI.md#DcimLocationsStatsList) | **Get** /dcim/locations/{id}/stats/ | 
 [**DcimLocationsUpdate**](DcimAPI.md#DcimLocationsUpdate) | **Put** /dcim/locations/{id}/ | 
 [**DcimManufacturersBulkDestroy**](DcimAPI.md#DcimManufacturersBulkDestroy) | **Delete** /dcim/manufacturers/ | 
 [**DcimManufacturersBulkPartialUpdate**](DcimAPI.md#DcimManufacturersBulkPartialUpdate) | **Patch** /dcim/manufacturers/ | 
@@ -522,7 +532,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -588,7 +598,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -656,11 +666,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableCableRequest := []openapiclient.BulkWritableCableRequest{*openapiclient.NewBulkWritableCableRequest("Id_example", "TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCableRequest | 
+	bulkWritableCableRequest := []openapiclient.BulkWritableCableRequest{*openapiclient.NewBulkWritableCableRequest("Id_example", "TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -724,11 +734,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableCableRequest | 
+	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -792,7 +802,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -863,7 +873,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -891,7 +901,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
-	device := []string{"Inner_example"} // []string | Device (name) (optional)
+	device := []string{"Inner_example"} // []string |  (optional)
 	deviceId := []*string{"Inner_example"} // []*string | Device (ID) (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
@@ -941,12 +951,12 @@ func main() {
 	lengthUnitNre := []string{"Inner_example"} // []string |  (optional)
 	lengthUnitRe := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	location := []string{"Inner_example"} // []string | Location (name) (optional)
-	locationId := []string{"Inner_example"} // []string | Location (ID) (optional)
+	location := []string{"Inner_example"} // []string |  (optional)
+	locationId := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
-	rack := []string{"Inner_example"} // []string | Rack (name) (optional)
-	rackId := []string{"Inner_example"} // []string | Rack (ID) (optional)
+	rack := []string{"Inner_example"} // []string |  (optional)
+	rackId := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
 	statusN := []string{"Inner_example"} // []string |  (optional)
@@ -956,8 +966,8 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	tenant := []string{"Inner_example"} // []string | Tenant (name) (optional)
-	tenantId := []string{"Inner_example"} // []string | Tenant (ID) (optional)
+	tenant := []string{"Inner_example"} // []string |  (optional)
+	tenantId := []string{"Inner_example"} // []string |  (optional)
 	terminationAId := []string{"Inner_example"} // []string |  (optional)
 	terminationAIdN := []string{"Inner_example"} // []string |  (optional)
 	terminationAType := []int32{int32(123)} // []int32 |  (optional)
@@ -982,7 +992,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1031,7 +1041,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
- **device** | **[]string** | Device (name) | 
+ **device** | **[]string** |  | 
  **deviceId** | **[]string** | Device (ID) | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
@@ -1081,12 +1091,12 @@ Name | Type | Description  | Notes
  **lengthUnitNre** | **[]string** |  | 
  **lengthUnitRe** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **location** | **[]string** | Location (name) | 
- **locationId** | **[]string** | Location (ID) | 
+ **location** | **[]string** |  | 
+ **locationId** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
- **rack** | **[]string** | Rack (name) | 
- **rackId** | **[]string** | Rack (ID) | 
+ **rack** | **[]string** |  | 
+ **rackId** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
  **statusN** | **[]string** |  | 
@@ -1096,8 +1106,8 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **tenant** | **[]string** | Tenant (name) | 
- **tenantId** | **[]string** | Tenant (ID) | 
+ **tenant** | **[]string** |  | 
+ **tenantId** | **[]string** |  | 
  **terminationAId** | **[]string** |  | 
  **terminationAIdN** | **[]string** |  | 
  **terminationAType** | **[]int32** |  | 
@@ -1122,7 +1132,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1159,7 +1169,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1233,7 +1243,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1242,7 +1252,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1276,7 +1286,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1313,7 +1323,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1387,14 +1397,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cable.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1426,7 +1436,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1463,12 +1473,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cable.
-	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableCableRequest | 
+	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1537,7 +1547,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1545,7 +1555,7 @@ func main() {
 	peerInterface := "peerInterface_example" // string | The name of the peer interface
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1574,7 +1584,7 @@ Name | Type | Description  | Notes
  **peerInterface** | **string** | The name of the peer interface | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1611,7 +1621,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1647,7 +1657,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -1704,7 +1714,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -1741,7 +1751,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1807,7 +1817,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1875,7 +1885,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -1943,7 +1953,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2011,7 +2021,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2081,7 +2091,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2165,7 +2175,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2270,7 +2280,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2307,7 +2317,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2381,14 +2391,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console port template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -2420,7 +2430,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -2457,7 +2467,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2531,7 +2541,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2597,7 +2607,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2665,7 +2675,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2733,7 +2743,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2801,7 +2811,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2871,7 +2881,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -2961,7 +2971,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3072,7 +3082,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3109,7 +3119,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3183,7 +3193,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3192,7 +3202,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3226,7 +3236,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3263,7 +3273,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3337,14 +3347,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3376,7 +3386,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3413,14 +3423,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -3452,7 +3462,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -3489,7 +3499,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3563,7 +3573,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3629,7 +3639,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3697,7 +3707,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3765,7 +3775,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3833,7 +3843,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3903,7 +3913,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -3987,7 +3997,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4092,7 +4102,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4129,7 +4139,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4203,14 +4213,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console server port template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4242,7 +4252,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4279,7 +4289,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4353,7 +4363,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4419,7 +4429,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4487,7 +4497,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4555,7 +4565,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4623,7 +4633,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4693,7 +4703,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -4783,7 +4793,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -4894,7 +4904,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -4931,7 +4941,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5005,7 +5015,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5014,7 +5024,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5048,7 +5058,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5085,7 +5095,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5159,14 +5169,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console server port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5198,7 +5208,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5235,14 +5245,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this console server port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5274,7 +5284,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5311,7 +5321,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5385,7 +5395,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5451,7 +5461,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5519,7 +5529,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5587,7 +5597,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5655,7 +5665,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5726,7 +5736,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -5819,7 +5829,7 @@ func main() {
 	wirelessNetworks := []string{"Inner_example"} // []string |  (optional)
 	wirelessNetworksN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -5933,7 +5943,7 @@ Name | Type | Description  | Notes
  **wirelessNetworks** | **[]string** |  | 
  **wirelessNetworksN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -5970,7 +5980,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6044,7 +6054,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6053,7 +6063,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6087,7 +6097,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6124,7 +6134,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6198,14 +6208,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller managed device group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6237,7 +6247,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6274,7 +6284,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6348,7 +6358,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6414,7 +6424,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6482,11 +6492,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableControllerRequest := []openapiclient.BulkWritableControllerRequest{*openapiclient.NewBulkWritableControllerRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableControllerRequest | 
+	bulkWritableControllerRequest := []openapiclient.BulkWritableControllerRequest{*openapiclient.NewBulkWritableControllerRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -6550,11 +6560,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerRequest | 
+	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -6618,7 +6628,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6689,7 +6699,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -6698,10 +6708,10 @@ func main() {
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
 	controllerDevice := []string{"Inner_example"} // []string |  (optional)
-	controllerDeviceIsnull := true // bool | Controller device (name or ID) is null (optional)
+	controllerDeviceIsnull := true // bool |  (optional)
 	controllerDeviceN := []string{"Inner_example"} // []string |  (optional)
 	controllerDeviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
-	controllerDeviceRedundancyGroupIsnull := true // bool | Controller device redundancy group (name or ID) is null (optional)
+	controllerDeviceRedundancyGroupIsnull := true // bool |  (optional)
 	controllerDeviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -6727,7 +6737,7 @@ func main() {
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	externalIntegration := []string{"Inner_example"} // []string |  (optional)
-	externalIntegrationIsnull := true // bool | External integration (name or ID) is null (optional)
+	externalIntegrationIsnull := true // bool |  (optional)
 	externalIntegrationN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
@@ -6758,7 +6768,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool | Platform (name or ID) is null (optional)
+	platformIsnull := true // bool |  (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
@@ -6785,7 +6795,7 @@ func main() {
 	wirelessNetworks := []string{"Inner_example"} // []string |  (optional)
 	wirelessNetworksN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -6815,10 +6825,10 @@ Name | Type | Description  | Notes
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
  **controllerDevice** | **[]string** |  | 
- **controllerDeviceIsnull** | **bool** | Controller device (name or ID) is null | 
+ **controllerDeviceIsnull** | **bool** |  | 
  **controllerDeviceN** | **[]string** |  | 
  **controllerDeviceRedundancyGroup** | **[]string** |  | 
- **controllerDeviceRedundancyGroupIsnull** | **bool** | Controller device redundancy group (name or ID) is null | 
+ **controllerDeviceRedundancyGroupIsnull** | **bool** |  | 
  **controllerDeviceRedundancyGroupN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -6844,7 +6854,7 @@ Name | Type | Description  | Notes
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
  **externalIntegration** | **[]string** |  | 
- **externalIntegrationIsnull** | **bool** | External integration (name or ID) is null | 
+ **externalIntegrationIsnull** | **bool** |  | 
  **externalIntegrationN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
@@ -6875,7 +6885,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** | Platform (name or ID) is null | 
+ **platformIsnull** | **bool** |  | 
  **platformN** | **[]string** |  | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
@@ -6902,7 +6912,7 @@ Name | Type | Description  | Notes
  **wirelessNetworks** | **[]string** |  | 
  **wirelessNetworksN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -6939,7 +6949,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7013,7 +7023,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7022,7 +7032,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7056,7 +7066,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7093,7 +7103,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7167,14 +7177,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7206,7 +7216,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7243,12 +7253,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller.
-	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerRequest | 
+	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7317,7 +7327,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7383,7 +7393,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7451,11 +7461,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceBayTemplateRequest := []openapiclient.BulkWritableDeviceBayTemplateRequest{*openapiclient.NewBulkWritableDeviceBayTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceBayTemplateRequest | 
+	bulkWritableDeviceBayTemplateRequest := []openapiclient.BulkWritableDeviceBayTemplateRequest{*openapiclient.NewBulkWritableDeviceBayTemplateRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7519,11 +7529,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayTemplateRequest | 
+	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7587,7 +7597,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7657,7 +7667,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7721,7 +7731,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7806,7 +7816,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7843,7 +7853,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -7917,14 +7927,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -7956,7 +7966,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -7993,12 +8003,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay template.
-	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayTemplateRequest | 
+	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8067,7 +8077,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8133,7 +8143,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8201,11 +8211,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceBayRequest := []openapiclient.BulkWritableDeviceBayRequest{*openapiclient.NewBulkWritableDeviceBayRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceBayRequest | 
+	bulkWritableDeviceBayRequest := []openapiclient.BulkWritableDeviceBayRequest{*openapiclient.NewBulkWritableDeviceBayRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8269,11 +8279,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayRequest | 
+	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8337,7 +8347,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8407,7 +8417,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8436,7 +8446,7 @@ func main() {
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	installedDevice := []string{"Inner_example"} // []string |  (optional)
-	installedDeviceIsnull := true // bool | Installed device (name or ID) is null (optional)
+	installedDeviceIsnull := true // bool |  (optional)
 	installedDeviceN := []string{"Inner_example"} // []string |  (optional)
 	label := []string{"Inner_example"} // []string |  (optional)
 	labelIc := []string{"Inner_example"} // []string |  (optional)
@@ -8479,7 +8489,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -8529,7 +8539,7 @@ Name | Type | Description  | Notes
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **installedDevice** | **[]string** |  | 
- **installedDeviceIsnull** | **bool** | Installed device (name or ID) is null | 
+ **installedDeviceIsnull** | **bool** |  | 
  **installedDeviceN** | **[]string** |  | 
  **label** | **[]string** |  | 
  **labelIc** | **[]string** |  | 
@@ -8572,7 +8582,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -8609,7 +8619,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8683,7 +8693,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8692,7 +8702,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -8726,7 +8736,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -8763,7 +8773,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -8837,14 +8847,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -8876,7 +8886,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -8913,12 +8923,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay.
-	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayRequest | 
+	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8970,6 +8980,665 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## DcimDeviceClusterAssignmentsBulkDestroy
+
+> DcimDeviceClusterAssignmentsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsBulkPartialUpdate
+
+> []DeviceClusterAssignment DcimDeviceClusterAssignmentsBulkPartialUpdate(ctx).PatchedBulkWritableDeviceClusterAssignmentRequest(patchedBulkWritableDeviceClusterAssignmentRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableDeviceClusterAssignmentRequest := []openapiclient.PatchedBulkWritableDeviceClusterAssignmentRequest{*openapiclient.NewPatchedBulkWritableDeviceClusterAssignmentRequest("Id_example")} // []PatchedBulkWritableDeviceClusterAssignmentRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsBulkPartialUpdate(context.Background()).PatchedBulkWritableDeviceClusterAssignmentRequest(patchedBulkWritableDeviceClusterAssignmentRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsBulkPartialUpdate`: []DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableDeviceClusterAssignmentRequest** | [**[]PatchedBulkWritableDeviceClusterAssignmentRequest**](PatchedBulkWritableDeviceClusterAssignmentRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsBulkUpdate
+
+> []DeviceClusterAssignment DcimDeviceClusterAssignmentsBulkUpdate(ctx).BulkWritableDeviceClusterAssignmentRequest(bulkWritableDeviceClusterAssignmentRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableDeviceClusterAssignmentRequest := []openapiclient.BulkWritableDeviceClusterAssignmentRequest{*openapiclient.NewBulkWritableDeviceClusterAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceClusterAssignmentRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsBulkUpdate(context.Background()).BulkWritableDeviceClusterAssignmentRequest(bulkWritableDeviceClusterAssignmentRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsBulkUpdate`: []DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableDeviceClusterAssignmentRequest** | [**[]BulkWritableDeviceClusterAssignmentRequest**](BulkWritableDeviceClusterAssignmentRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsCreate
+
+> DeviceClusterAssignment DcimDeviceClusterAssignmentsCreate(ctx).DeviceClusterAssignmentRequest(deviceClusterAssignmentRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceClusterAssignmentRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsCreate(context.Background()).DeviceClusterAssignmentRequest(deviceClusterAssignmentRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsCreate`: DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **deviceClusterAssignmentRequest** | [**DeviceClusterAssignmentRequest**](DeviceClusterAssignmentRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsDestroy
+
+> DcimDeviceClusterAssignmentsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device cluster assignment.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this device cluster assignment. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsList
+
+> PaginatedDeviceClusterAssignmentList DcimDeviceClusterAssignmentsList(ctx).Cluster(cluster).ClusterN(clusterN).Created(created).Device(device).DeviceN(deviceN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	cluster := []string{"Inner_example"} // []string |  (optional)
+	clusterN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	device := []string{"Inner_example"} // []string |  (optional)
+	deviceN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsList(context.Background()).Cluster(cluster).ClusterN(clusterN).Created(created).Device(device).DeviceN(deviceN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).Limit(limit).Offset(offset).Q(q).Sort(sort).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsList`: PaginatedDeviceClusterAssignmentList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cluster** | **[]string** |  | 
+ **clusterN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **device** | **[]string** |  | 
+ **deviceN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedDeviceClusterAssignmentList**](PaginatedDeviceClusterAssignmentList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsPartialUpdate
+
+> DeviceClusterAssignment DcimDeviceClusterAssignmentsPartialUpdate(ctx, id).Format(format).PatchedDeviceClusterAssignmentRequest(patchedDeviceClusterAssignmentRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device cluster assignment.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedDeviceClusterAssignmentRequest := *openapiclient.NewPatchedDeviceClusterAssignmentRequest() // PatchedDeviceClusterAssignmentRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsPartialUpdate(context.Background(), id).Format(format).PatchedDeviceClusterAssignmentRequest(patchedDeviceClusterAssignmentRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsPartialUpdate`: DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this device cluster assignment. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedDeviceClusterAssignmentRequest** | [**PatchedDeviceClusterAssignmentRequest**](PatchedDeviceClusterAssignmentRequest.md) |  | 
+
+### Return type
+
+[**DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsRetrieve
+
+> DeviceClusterAssignment DcimDeviceClusterAssignmentsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device cluster assignment.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsRetrieve`: DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this device cluster assignment. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimDeviceClusterAssignmentsUpdate
+
+> DeviceClusterAssignment DcimDeviceClusterAssignmentsUpdate(ctx, id).DeviceClusterAssignmentRequest(deviceClusterAssignmentRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device cluster assignment.
+	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceClusterAssignmentRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimDeviceClusterAssignmentsUpdate(context.Background(), id).DeviceClusterAssignmentRequest(deviceClusterAssignmentRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDeviceClusterAssignmentsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimDeviceClusterAssignmentsUpdate`: DeviceClusterAssignment
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimDeviceClusterAssignmentsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this device cluster assignment. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimDeviceClusterAssignmentsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **deviceClusterAssignmentRequest** | [**DeviceClusterAssignmentRequest**](DeviceClusterAssignmentRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**DeviceClusterAssignment**](DeviceClusterAssignment.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## DcimDeviceFamiliesBulkDestroy
 
 > DcimDeviceFamiliesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
@@ -8987,7 +9656,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9053,7 +9722,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9121,7 +9790,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9189,7 +9858,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9257,7 +9926,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9328,7 +9997,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9357,7 +10026,7 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
+	deviceTypesIsnull := true // bool |  (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
@@ -9397,7 +10066,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9447,7 +10116,7 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
+ **deviceTypesIsnull** | **bool** |  | 
  **deviceTypesN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
@@ -9487,7 +10156,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9524,7 +10193,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9598,7 +10267,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9607,7 +10276,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9641,7 +10310,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9678,7 +10347,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9752,14 +10421,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device family.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -9791,7 +10460,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -9828,7 +10497,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9902,7 +10571,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -9968,7 +10637,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10036,11 +10705,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceRedundancyGroupRequest := []openapiclient.BulkWritableDeviceRedundancyGroupRequest{*openapiclient.NewBulkWritableDeviceRedundancyGroupRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceRedundancyGroupRequest | 
+	bulkWritableDeviceRedundancyGroupRequest := []openapiclient.BulkWritableDeviceRedundancyGroupRequest{*openapiclient.NewBulkWritableDeviceRedundancyGroupRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10104,11 +10773,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRedundancyGroupRequest | 
+	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10172,7 +10841,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10243,7 +10912,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10301,7 +10970,7 @@ func main() {
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool | Secrets group (name or ID) is null (optional)
+	secretsGroupIsnull := true // bool |  (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -10313,7 +10982,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10392,7 +11061,7 @@ Name | Type | Description  | Notes
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** | Secrets group (name or ID) is null | 
+ **secretsGroupIsnull** | **bool** |  | 
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
@@ -10404,7 +11073,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10441,7 +11110,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10515,7 +11184,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10524,7 +11193,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10558,7 +11227,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10595,7 +11264,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10669,14 +11338,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device redundancy group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -10708,7 +11377,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -10745,12 +11414,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device redundancy group.
-	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRedundancyGroupRequest | 
+	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10819,7 +11488,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10885,7 +11554,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -10953,11 +11622,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceTypeRequest := []openapiclient.BulkWritableDeviceTypeRequest{*openapiclient.NewBulkWritableDeviceTypeRequest("Id_example", "Model_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceTypeRequest | 
+	bulkWritableDeviceTypeRequest := []openapiclient.BulkWritableDeviceTypeRequest{*openapiclient.NewBulkWritableDeviceTypeRequest("Id_example", "Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11021,11 +11690,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceTypeRequest | 
+	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11089,7 +11758,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11160,7 +11829,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11197,11 +11866,11 @@ func main() {
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	deviceBayTemplates := []string{"Inner_example"} // []string |  (optional)
-	deviceBayTemplatesIsnull := true // bool | Device bay templates (name or ID) is null (optional)
+	deviceBayTemplatesIsnull := true // bool |  (optional)
 	deviceBayTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	deviceBays := true // bool | Has device bays (optional)
 	deviceFamily := []string{"Inner_example"} // []string |  (optional)
-	deviceFamilyIsnull := true // bool | Device family (name or ID) is null (optional)
+	deviceFamilyIsnull := true // bool |  (optional)
 	deviceFamilyN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
 	devicesIsnull := true // bool |  (optional)
@@ -11315,7 +11984,7 @@ func main() {
 	uHeightLte := []int32{int32(123)} // []int32 |  (optional)
 	uHeightN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11373,11 +12042,11 @@ Name | Type | Description  | Notes
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **deviceBayTemplates** | **[]string** |  | 
- **deviceBayTemplatesIsnull** | **bool** | Device bay templates (name or ID) is null | 
+ **deviceBayTemplatesIsnull** | **bool** |  | 
  **deviceBayTemplatesN** | **[]string** |  | 
  **deviceBays** | **bool** | Has device bays | 
  **deviceFamily** | **[]string** |  | 
- **deviceFamilyIsnull** | **bool** | Device family (name or ID) is null | 
+ **deviceFamilyIsnull** | **bool** |  | 
  **deviceFamilyN** | **[]string** |  | 
  **devices** | **[]string** |  | 
  **devicesIsnull** | **bool** |  | 
@@ -11491,7 +12160,7 @@ Name | Type | Description  | Notes
  **uHeightLte** | **[]int32** |  | 
  **uHeightN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11528,7 +12197,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11602,7 +12271,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11611,7 +12280,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11645,7 +12314,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11682,7 +12351,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11756,14 +12425,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -11795,7 +12464,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -11832,7 +12501,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11898,7 +12567,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -11966,11 +12635,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceTypeToSoftwareImageFileRequest := []openapiclient.BulkWritableDeviceTypeToSoftwareImageFileRequest{*openapiclient.NewBulkWritableDeviceTypeToSoftwareImageFileRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceTypeToSoftwareImageFileRequest | 
+	bulkWritableDeviceTypeToSoftwareImageFileRequest := []openapiclient.BulkWritableDeviceTypeToSoftwareImageFileRequest{*openapiclient.NewBulkWritableDeviceTypeToSoftwareImageFileRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12034,11 +12703,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceTypeToSoftwareImageFileRequest | 
+	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12102,7 +12771,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12173,7 +12842,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12203,7 +12872,7 @@ func main() {
 	softwareImageFileN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -12254,7 +12923,7 @@ Name | Type | Description  | Notes
  **softwareImageFileN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -12291,7 +12960,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12365,14 +13034,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type to software image file mapping.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -12404,7 +13073,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -12441,12 +13110,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type to software image file mapping.
-	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceTypeToSoftwareImageFileRequest | 
+	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12515,12 +13184,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type.
-	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceTypeRequest | 
+	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12589,7 +13258,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12655,7 +13324,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12723,11 +13392,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableDeviceRequest := []openapiclient.BulkWritableDeviceRequest{*openapiclient.NewBulkWritableDeviceRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceRequest | 
+	bulkWritableDeviceRequest := []openapiclient.BulkWritableDeviceRequest{*openapiclient.NewBulkWritableDeviceRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12791,11 +13460,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRequest | 
+	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12859,7 +13528,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12914,7 +13583,7 @@ Name | Type | Description  | Notes
 
 ## DcimDevicesList
 
-> PaginatedDeviceList DcimDevicesList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRadioProfiles(hasRadioProfiles).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).HasWirelessNetworks(hasWirelessNetworks).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RadioProfiles(radioProfiles).RadioProfilesN(radioProfilesN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).WirelessNetworks(wirelessNetworks).WirelessNetworksN(wirelessNetworksN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedDeviceList DcimDevicesList(ctx).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterN(clusterN).Clusters(clusters).ClustersN(clustersN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRadioProfiles(hasRadioProfiles).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).HasWirelessNetworks(hasWirelessNetworks).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RadioProfiles(radioProfiles).RadioProfilesN(radioProfilesN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).WirelessNetworks(wirelessNetworks).WirelessNetworksN(wirelessNetworksN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -12930,7 +13599,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -12950,8 +13619,9 @@ func main() {
 	assetTagNre := []string{"Inner_example"} // []string |  (optional)
 	assetTagRe := []string{"Inner_example"} // []string |  (optional)
 	cluster := []string{"Inner_example"} // []string |  (optional)
-	clusterIsnull := true // bool | VM cluster (name or ID) is null (optional)
 	clusterN := []string{"Inner_example"} // []string |  (optional)
+	clusters := []string{"Inner_example"} // []string |  (optional)
+	clustersN := []string{"Inner_example"} // []string |  (optional)
 	consolePorts := []string{"Inner_example"} // []string |  (optional)
 	consolePortsIsnull := true // bool | Console Ports (name or ID) is null (optional)
 	consolePortsN := []string{"Inner_example"} // []string |  (optional)
@@ -12964,7 +13634,7 @@ func main() {
 	controller := []string{"Inner_example"} // []string |  (optional)
 	controllerN := []string{"Inner_example"} // []string |  (optional)
 	controllerManagedDeviceGroup := []string{"Inner_example"} // []string |  (optional)
-	controllerManagedDeviceGroupIsnull := true // bool | Controller Managed Device Groups (name or ID) is null (optional)
+	controllerManagedDeviceGroupIsnull := true // bool |  (optional)
 	controllerManagedDeviceGroupN := []string{"Inner_example"} // []string |  (optional)
 	created := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -12973,14 +13643,14 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
-	deviceBays := []string{"Inner_example"} // []string | Device Bays (optional)
-	deviceBaysIsnull := true // bool | Device Bays is null (optional)
-	deviceBaysN := []string{"Inner_example"} // []string | Exclude Device Bays (optional)
+	deviceBays := []string{"Inner_example"} // []string |  (optional)
+	deviceBaysIsnull := true // bool |  (optional)
+	deviceBaysN := []string{"Inner_example"} // []string |  (optional)
 	deviceFamily := []string{"Inner_example"} // []string |  (optional)
 	deviceFamilyIsnull := true // bool | Device family (name or ID) is null (optional)
 	deviceFamilyN := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroup := []string{"Inner_example"} // []string |  (optional)
-	deviceRedundancyGroupIsnull := true // bool | Device Redundancy Groups (name or ID) is null (optional)
+	deviceRedundancyGroupIsnull := true // bool |  (optional)
 	deviceRedundancyGroupN := []string{"Inner_example"} // []string |  (optional)
 	deviceRedundancyGroupPriority := []int32{int32(123)} // []int32 |  (optional)
 	deviceRedundancyGroupPriorityGt := []int32{int32(123)} // []int32 |  (optional)
@@ -13089,7 +13759,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platform := []string{"Inner_example"} // []string |  (optional)
-	platformIsnull := true // bool | Platform (name or ID) is null (optional)
+	platformIsnull := true // bool |  (optional)
 	platformN := []string{"Inner_example"} // []string |  (optional)
 	position := []int32{int32(123)} // []int32 |  (optional)
 	positionGt := []int32{int32(123)} // []int32 |  (optional)
@@ -13106,7 +13776,7 @@ func main() {
 	powerPortsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rack := []string{"Inner_example"} // []string |  (optional)
-	rackIsnull := true // bool | Rack (name or ID) is null (optional)
+	rackIsnull := true // bool |  (optional)
 	rackN := []string{"Inner_example"} // []string |  (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
 	rackGroupIsnull := true // bool | Rack group (name or ID) is null (optional)
@@ -13119,7 +13789,7 @@ func main() {
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleN := []string{"Inner_example"} // []string |  (optional)
 	secretsGroup := []string{"Inner_example"} // []string |  (optional)
-	secretsGroupIsnull := true // bool | Secrets group (name or ID) is null (optional)
+	secretsGroupIsnull := true // bool |  (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	serial := []string{"Inner_example"} // []string |  (optional)
 	serialIc := []string{"Inner_example"} // []string |  (optional)
@@ -13138,7 +13808,7 @@ func main() {
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
+	softwareVersionIsnull := true // bool |  (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -13173,17 +13843,20 @@ func main() {
 	vcPriorityLte := []int32{int32(123)} // []int32 |  (optional)
 	vcPriorityN := []int32{int32(123)} // []int32 |  (optional)
 	virtualChassis := []string{"Inner_example"} // []string |  (optional)
-	virtualChassisIsnull := true // bool | Virtual chassis (name or ID) is null (optional)
+	virtualChassisIsnull := true // bool |  (optional)
 	virtualChassisN := []string{"Inner_example"} // []string |  (optional)
 	virtualChassisMember := true // bool | Is a virtual chassis member (optional)
+	vrfs := []string{"Inner_example"} // []string |  (optional)
+	vrfsIsnull := true // bool | VRFs (ID or RD) is null (optional)
+	vrfsN := []string{"Inner_example"} // []string |  (optional)
 	wirelessNetworks := []string{"Inner_example"} // []string |  (optional)
 	wirelessNetworksN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterIsnull(clusterIsnull).ClusterN(clusterN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRadioProfiles(hasRadioProfiles).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).HasWirelessNetworks(hasWirelessNetworks).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RadioProfiles(radioProfiles).RadioProfilesN(radioProfilesN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).WirelessNetworks(wirelessNetworks).WirelessNetworksN(wirelessNetworksN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimDevicesList(context.Background()).AssetTag(assetTag).AssetTagIc(assetTagIc).AssetTagIe(assetTagIe).AssetTagIew(assetTagIew).AssetTagIre(assetTagIre).AssetTagIsnull(assetTagIsnull).AssetTagIsw(assetTagIsw).AssetTagN(assetTagN).AssetTagNic(assetTagNic).AssetTagNie(assetTagNie).AssetTagNiew(assetTagNiew).AssetTagNire(assetTagNire).AssetTagNisw(assetTagNisw).AssetTagNre(assetTagNre).AssetTagRe(assetTagRe).Cluster(cluster).ClusterN(clusterN).Clusters(clusters).ClustersN(clustersN).ConsolePorts(consolePorts).ConsolePortsIsnull(consolePortsIsnull).ConsolePortsN(consolePortsN).ConsoleServerPorts(consoleServerPorts).ConsoleServerPortsIsnull(consoleServerPortsIsnull).ConsoleServerPortsN(consoleServerPortsN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Controller(controller).ControllerN(controllerN).ControllerManagedDeviceGroup(controllerManagedDeviceGroup).ControllerManagedDeviceGroupIsnull(controllerManagedDeviceGroupIsnull).ControllerManagedDeviceGroupN(controllerManagedDeviceGroupN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DeviceBays(deviceBays).DeviceBaysIsnull(deviceBaysIsnull).DeviceBaysN(deviceBaysN).DeviceFamily(deviceFamily).DeviceFamilyIsnull(deviceFamilyIsnull).DeviceFamilyN(deviceFamilyN).DeviceRedundancyGroup(deviceRedundancyGroup).DeviceRedundancyGroupIsnull(deviceRedundancyGroupIsnull).DeviceRedundancyGroupN(deviceRedundancyGroupN).DeviceRedundancyGroupPriority(deviceRedundancyGroupPriority).DeviceRedundancyGroupPriorityGt(deviceRedundancyGroupPriorityGt).DeviceRedundancyGroupPriorityGte(deviceRedundancyGroupPriorityGte).DeviceRedundancyGroupPriorityIsnull(deviceRedundancyGroupPriorityIsnull).DeviceRedundancyGroupPriorityLt(deviceRedundancyGroupPriorityLt).DeviceRedundancyGroupPriorityLte(deviceRedundancyGroupPriorityLte).DeviceRedundancyGroupPriorityN(deviceRedundancyGroupPriorityN).DeviceType(deviceType).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Face(face).FaceIc(faceIc).FaceIe(faceIe).FaceIew(faceIew).FaceIre(faceIre).FaceIsw(faceIsw).FaceN(faceN).FaceNic(faceNic).FaceNie(faceNie).FaceNiew(faceNiew).FaceNire(faceNire).FaceNisw(faceNisw).FaceNre(faceNre).FaceRe(faceRe).Format(format).FrontPorts(frontPorts).FrontPortsIsnull(frontPortsIsnull).FrontPortsN(frontPortsN).HasConsolePorts(hasConsolePorts).HasConsoleServerPorts(hasConsoleServerPorts).HasDeviceBays(hasDeviceBays).HasEmptyModuleBays(hasEmptyModuleBays).HasFrontPorts(hasFrontPorts).HasInterfaces(hasInterfaces).HasIpAddresses(hasIpAddresses).HasModuleBays(hasModuleBays).HasModules(hasModules).HasPowerOutlets(hasPowerOutlets).HasPowerPorts(hasPowerPorts).HasPrimaryIp(hasPrimaryIp).HasRadioProfiles(hasRadioProfiles).HasRearPorts(hasRearPorts).HasSoftwareImageFiles(hasSoftwareImageFiles).HasSoftwareVersion(hasSoftwareVersion).HasWirelessNetworks(hasWirelessNetworks).Id(id).IdN(idN).Interfaces(interfaces).InterfacesIsnull(interfacesIsnull).InterfacesN(interfacesN).IpAddresses(ipAddresses).IsFullDepth(isFullDepth).IsVirtualChassisMember(isVirtualChassisMember).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).LocalConfigContextData(localConfigContextData).LocalConfigContextSchema(localConfigContextSchema).LocalConfigContextSchemaIsnull(localConfigContextSchemaIsnull).LocalConfigContextSchemaN(localConfigContextSchemaN).LocalConfigContextSchemaId(localConfigContextSchemaId).LocalConfigContextSchemaIdIsnull(localConfigContextSchemaIdIsnull).LocalConfigContextSchemaIdN(localConfigContextSchemaIdN).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).Manufacturer(manufacturer).ManufacturerN(manufacturerN).ModuleBays(moduleBays).ModuleBaysIsnull(moduleBaysIsnull).ModuleBaysN(moduleBaysN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsnull(nameIsnull).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Platform(platform).PlatformIsnull(platformIsnull).PlatformN(platformN).Position(position).PositionGt(positionGt).PositionGte(positionGte).PositionIsnull(positionIsnull).PositionLt(positionLt).PositionLte(positionLte).PositionN(positionN).PowerOutlets(powerOutlets).PowerOutletsIsnull(powerOutletsIsnull).PowerOutletsN(powerOutletsN).PowerPorts(powerPorts).PowerPortsIsnull(powerPortsIsnull).PowerPortsN(powerPortsN).Q(q).Rack(rack).RackIsnull(rackIsnull).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).RadioProfiles(radioProfiles).RadioProfilesN(radioProfilesN).RearPorts(rearPorts).RearPortsIsnull(rearPortsIsnull).RearPortsN(rearPortsN).Role(role).RoleN(roleN).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Serial(serial).SerialIc(serialIc).SerialIe(serialIe).SerialIew(serialIew).SerialIre(serialIre).SerialIsw(serialIsw).SerialN(serialN).SerialNic(serialNic).SerialNie(serialNie).SerialNiew(serialNiew).SerialNire(serialNire).SerialNisw(serialNisw).SerialNre(serialNre).SerialRe(serialRe).SoftwareImageFiles(softwareImageFiles).SoftwareImageFilesN(softwareImageFilesN).SoftwareVersion(softwareVersion).SoftwareVersionIsnull(softwareVersionIsnull).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VcPosition(vcPosition).VcPositionGt(vcPositionGt).VcPositionGte(vcPositionGte).VcPositionIsnull(vcPositionIsnull).VcPositionLt(vcPositionLt).VcPositionLte(vcPositionLte).VcPositionN(vcPositionN).VcPriority(vcPriority).VcPriorityGt(vcPriorityGt).VcPriorityGte(vcPriorityGte).VcPriorityIsnull(vcPriorityIsnull).VcPriorityLt(vcPriorityLt).VcPriorityLte(vcPriorityLte).VcPriorityN(vcPriorityN).VirtualChassis(virtualChassis).VirtualChassisIsnull(virtualChassisIsnull).VirtualChassisN(virtualChassisN).VirtualChassisMember(virtualChassisMember).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).WirelessNetworks(wirelessNetworks).WirelessNetworksN(wirelessNetworksN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimDevicesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13220,8 +13893,9 @@ Name | Type | Description  | Notes
  **assetTagNre** | **[]string** |  | 
  **assetTagRe** | **[]string** |  | 
  **cluster** | **[]string** |  | 
- **clusterIsnull** | **bool** | VM cluster (name or ID) is null | 
  **clusterN** | **[]string** |  | 
+ **clusters** | **[]string** |  | 
+ **clustersN** | **[]string** |  | 
  **consolePorts** | **[]string** |  | 
  **consolePortsIsnull** | **bool** | Console Ports (name or ID) is null | 
  **consolePortsN** | **[]string** |  | 
@@ -13234,7 +13908,7 @@ Name | Type | Description  | Notes
  **controller** | **[]string** |  | 
  **controllerN** | **[]string** |  | 
  **controllerManagedDeviceGroup** | **[]string** |  | 
- **controllerManagedDeviceGroupIsnull** | **bool** | Controller Managed Device Groups (name or ID) is null | 
+ **controllerManagedDeviceGroupIsnull** | **bool** |  | 
  **controllerManagedDeviceGroupN** | **[]string** |  | 
  **created** | [**[]time.Time**](time.Time.md) |  | 
  **createdGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -13243,14 +13917,14 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
- **deviceBays** | **[]string** | Device Bays | 
- **deviceBaysIsnull** | **bool** | Device Bays is null | 
- **deviceBaysN** | **[]string** | Exclude Device Bays | 
+ **deviceBays** | **[]string** |  | 
+ **deviceBaysIsnull** | **bool** |  | 
+ **deviceBaysN** | **[]string** |  | 
  **deviceFamily** | **[]string** |  | 
  **deviceFamilyIsnull** | **bool** | Device family (name or ID) is null | 
  **deviceFamilyN** | **[]string** |  | 
  **deviceRedundancyGroup** | **[]string** |  | 
- **deviceRedundancyGroupIsnull** | **bool** | Device Redundancy Groups (name or ID) is null | 
+ **deviceRedundancyGroupIsnull** | **bool** |  | 
  **deviceRedundancyGroupN** | **[]string** |  | 
  **deviceRedundancyGroupPriority** | **[]int32** |  | 
  **deviceRedundancyGroupPriorityGt** | **[]int32** |  | 
@@ -13359,7 +14033,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platform** | **[]string** |  | 
- **platformIsnull** | **bool** | Platform (name or ID) is null | 
+ **platformIsnull** | **bool** |  | 
  **platformN** | **[]string** |  | 
  **position** | **[]int32** |  | 
  **positionGt** | **[]int32** |  | 
@@ -13376,7 +14050,7 @@ Name | Type | Description  | Notes
  **powerPortsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rack** | **[]string** |  | 
- **rackIsnull** | **bool** | Rack (name or ID) is null | 
+ **rackIsnull** | **bool** |  | 
  **rackN** | **[]string** |  | 
  **rackGroup** | **[]string** |  | 
  **rackGroupIsnull** | **bool** | Rack group (name or ID) is null | 
@@ -13389,7 +14063,7 @@ Name | Type | Description  | Notes
  **role** | **[]string** |  | 
  **roleN** | **[]string** |  | 
  **secretsGroup** | **[]string** |  | 
- **secretsGroupIsnull** | **bool** | Secrets group (name or ID) is null | 
+ **secretsGroupIsnull** | **bool** |  | 
  **secretsGroupN** | **[]string** |  | 
  **serial** | **[]string** |  | 
  **serialIc** | **[]string** |  | 
@@ -13408,7 +14082,7 @@ Name | Type | Description  | Notes
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
+ **softwareVersionIsnull** | **bool** |  | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
@@ -13443,13 +14117,16 @@ Name | Type | Description  | Notes
  **vcPriorityLte** | **[]int32** |  | 
  **vcPriorityN** | **[]int32** |  | 
  **virtualChassis** | **[]string** |  | 
- **virtualChassisIsnull** | **bool** | Virtual chassis (name or ID) is null | 
+ **virtualChassisIsnull** | **bool** |  | 
  **virtualChassisN** | **[]string** |  | 
  **virtualChassisMember** | **bool** | Is a virtual chassis member | 
+ **vrfs** | **[]string** |  | 
+ **vrfsIsnull** | **bool** | VRFs (ID or RD) is null | 
+ **vrfsN** | **[]string** |  | 
  **wirelessNetworks** | **[]string** |  | 
  **wirelessNetworksN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13486,7 +14163,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13494,7 +14171,7 @@ func main() {
 	method := "method_example" // string | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13527,7 +14204,7 @@ Name | Type | Description  | Notes
  **method** | **string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13564,7 +14241,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13638,7 +14315,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13647,7 +14324,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13681,7 +14358,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13718,7 +14395,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -13792,14 +14469,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -13831,7 +14508,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -13868,12 +14545,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device.
-	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRequest | 
+	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13942,7 +14619,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14008,7 +14685,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14076,11 +14753,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortTemplateRequest | 
+	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14144,11 +14821,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14212,7 +14889,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14282,7 +14959,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14353,8 +15030,8 @@ func main() {
 	rearPortPositionLt := []int32{int32(123)} // []int32 |  (optional)
 	rearPortPositionLte := []int32{int32(123)} // []int32 |  (optional)
 	rearPortPositionN := []int32{int32(123)} // []int32 |  (optional)
-	rearPortTemplate := []string{"Inner_example"} // []string | Rear port template (optional)
-	rearPortTemplateN := []string{"Inner_example"} // []string | Rear port template (optional)
+	rearPortTemplate := []string{"Inner_example"} // []string |  (optional)
+	rearPortTemplateN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
@@ -14374,7 +15051,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -14466,8 +15143,8 @@ Name | Type | Description  | Notes
  **rearPortPositionLt** | **[]int32** |  | 
  **rearPortPositionLte** | **[]int32** |  | 
  **rearPortPositionN** | **[]int32** |  | 
- **rearPortTemplate** | **[]string** | Rear port template | 
- **rearPortTemplateN** | **[]string** | Rear port template | 
+ **rearPortTemplate** | **[]string** |  | 
+ **rearPortTemplateN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
@@ -14487,7 +15164,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -14524,7 +15201,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14598,14 +15275,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -14637,7 +15314,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -14674,12 +15351,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port template.
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14748,7 +15425,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14814,7 +15491,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -14882,11 +15559,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortRequest | 
+	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14950,11 +15627,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15018,7 +15695,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15088,7 +15765,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15185,7 +15862,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15303,7 +15980,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15340,7 +16017,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15414,7 +16091,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15423,7 +16100,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15457,7 +16134,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15494,7 +16171,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15568,7 +16245,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15577,7 +16254,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15611,7 +16288,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15648,14 +16325,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15687,7 +16364,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15724,12 +16401,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port.
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15798,7 +16475,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15820,7 +16497,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -15863,7 +16540,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -15900,7 +16577,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -15966,7 +16643,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16034,11 +16711,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableInterfaceRedundancyGroupAssociationRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupAssociationRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupAssociationRequest("Id_example", int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRedundancyGroupAssociationRequest | 
+	bulkWritableInterfaceRedundancyGroupAssociationRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupAssociationRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupAssociationRequest("Id_example", int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16102,11 +16779,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceRedundancyGroupAssociationRequest | 
+	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16170,7 +16847,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16240,7 +16917,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16262,7 +16939,7 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16305,7 +16982,7 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16342,7 +17019,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16416,7 +17093,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16425,7 +17102,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16459,7 +17136,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16496,7 +17173,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16570,14 +17247,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group association.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -16609,7 +17286,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -16646,12 +17323,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group association.
-	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceRedundancyGroupAssociationRequest | 
+	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16720,7 +17397,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16786,7 +17463,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -16854,11 +17531,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableInterfaceRedundancyGroupRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupRequest("Id_example", openapiclient.InterfaceRedundancyGroupProtocolChoices("hsrp"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRedundancyGroupRequest | 
+	bulkWritableInterfaceRedundancyGroupRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupRequest("Id_example", openapiclient.InterfaceRedundancyGroupProtocolChoices("hsrp"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16922,11 +17599,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRedundancyGroupRequest | 
+	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16990,7 +17667,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17045,7 +17722,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfaceRedundancyGroupsList
 
-> PaginatedInterfaceRedundancyGroupList DcimInterfaceRedundancyGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedInterfaceRedundancyGroupList DcimInterfaceRedundancyGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -17060,13 +17737,20 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -17086,6 +17770,15 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
+	interfaces := []string{"Inner_example"} // []string |  (optional)
+	interfacesN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -17135,6 +17828,8 @@ func main() {
 	secretsGroupIsnull := true // bool |  (optional)
 	secretsGroupN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	status := []string{"Inner_example"} // []string |  (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
@@ -17143,11 +17838,11 @@ func main() {
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	virtualIp := []string{"Inner_example"} // []string | Virtual IP Address (address or ID) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfaceRedundancyGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfaceRedundancyGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Protocol(protocol).ProtocolIc(protocolIc).ProtocolIe(protocolIe).ProtocolIew(protocolIew).ProtocolIre(protocolIre).ProtocolIsw(protocolIsw).ProtocolN(protocolN).ProtocolNic(protocolNic).ProtocolNie(protocolNie).ProtocolNiew(protocolNiew).ProtocolNire(protocolNire).ProtocolNisw(protocolNisw).ProtocolNre(protocolNre).ProtocolRe(protocolRe).ProtocolGroupId(protocolGroupId).ProtocolGroupIdIc(protocolGroupIdIc).ProtocolGroupIdIe(protocolGroupIdIe).ProtocolGroupIdIew(protocolGroupIdIew).ProtocolGroupIdIre(protocolGroupIdIre).ProtocolGroupIdIsw(protocolGroupIdIsw).ProtocolGroupIdN(protocolGroupIdN).ProtocolGroupIdNic(protocolGroupIdNic).ProtocolGroupIdNie(protocolGroupIdNie).ProtocolGroupIdNiew(protocolGroupIdNiew).ProtocolGroupIdNire(protocolGroupIdNire).ProtocolGroupIdNisw(protocolGroupIdNisw).ProtocolGroupIdNre(protocolGroupIdNre).ProtocolGroupIdRe(protocolGroupIdRe).Q(q).SecretsGroup(secretsGroup).SecretsGroupIsnull(secretsGroupIsnull).SecretsGroupN(secretsGroupN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).VirtualIp(virtualIp).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfaceRedundancyGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -17171,6 +17866,12 @@ Name | Type | Description  | Notes
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -17190,6 +17891,15 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
+ **interfaces** | **[]string** |  | 
+ **interfacesN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -17239,6 +17949,8 @@ Name | Type | Description  | Notes
  **secretsGroupIsnull** | **bool** |  | 
  **secretsGroupN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **status** | **[]string** |  | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
@@ -17247,7 +17959,7 @@ Name | Type | Description  | Notes
  **teamsN** | **[]string** |  | 
  **virtualIp** | **[]string** | Virtual IP Address (address or ID) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17284,7 +17996,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17358,7 +18070,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17367,7 +18079,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -17401,7 +18113,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17438,7 +18150,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17512,14 +18224,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -17551,7 +18263,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -17588,12 +18300,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group.
-	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRedundancyGroupRequest | 
+	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -17662,7 +18374,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17728,7 +18440,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17796,7 +18508,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17864,7 +18576,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -17932,7 +18644,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18002,7 +18714,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18087,7 +18799,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18193,7 +18905,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18230,7 +18942,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18304,14 +19016,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18343,7 +19055,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18380,7 +19092,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18454,7 +19166,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18520,7 +19232,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18588,11 +19300,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableInterfaceVDCAssignmentRequest := []openapiclient.BulkWritableInterfaceVDCAssignmentRequest{*openapiclient.NewBulkWritableInterfaceVDCAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceVDCAssignmentRequest | 
+	bulkWritableInterfaceVDCAssignmentRequest := []openapiclient.BulkWritableInterfaceVDCAssignmentRequest{*openapiclient.NewBulkWritableInterfaceVDCAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18656,11 +19368,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceVDCAssignmentRequest | 
+	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18724,7 +19436,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18795,7 +19507,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18816,7 +19528,7 @@ func main() {
 	virtualDeviceContext := []string{"Inner_example"} // []string |  (optional)
 	virtualDeviceContextN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -18858,7 +19570,7 @@ Name | Type | Description  | Notes
  **virtualDeviceContext** | **[]string** |  | 
  **virtualDeviceContextN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -18895,7 +19607,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -18969,14 +19681,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface vdc assignment.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19008,7 +19720,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19045,12 +19757,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface vdc assignment.
-	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceVDCAssignmentRequest | 
+	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19119,7 +19831,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19185,7 +19897,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19253,11 +19965,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRequest | 
+	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19321,11 +20033,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19389,7 +20101,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19444,7 +20156,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfacesList
 
-> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -19459,21 +20171,21 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	bridge := []string{"Inner_example"} // []string |  (optional)
-	bridgeIsnull := true // bool | Bridge interface (name or ID) is null (optional)
+	bridgeIsnull := true // bool |  (optional)
 	bridgeN := []string{"Inner_example"} // []string |  (optional)
 	bridgedInterfaces := []string{"Inner_example"} // []string |  (optional)
-	bridgedInterfacesIsnull := true // bool | Bridged interfaces (name or ID) is null (optional)
+	bridgedInterfacesIsnull := true // bool |  (optional)
 	bridgedInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	cable := []string{"Inner_example"} // []string | Cable (optional)
 	cableIsnull := true // bool |  (optional)
 	cableN := []string{"Inner_example"} // []string | Cable (optional)
 	childInterfaces := []string{"Inner_example"} // []string |  (optional)
-	childInterfacesIsnull := true // bool | Child interfaces (name or ID) is null (optional)
+	childInterfacesIsnull := true // bool |  (optional)
 	childInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	connected := true // bool | Connected status (bool) (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
@@ -19496,6 +20208,20 @@ func main() {
 	device := []string{"Inner_example"} // []string |  (optional)
 	deviceId := []string{"Inner_example"} // []string | Device (ID)  (deprecated, use \"device\" filter instead) (optional)
 	deviceWithCommonVc := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | Virtual Chassis member Device (ID) (optional)
+	duplex := []string{"Inner_example"} // []string |  (optional)
+	duplexIc := []string{"Inner_example"} // []string |  (optional)
+	duplexIe := []string{"Inner_example"} // []string |  (optional)
+	duplexIew := []string{"Inner_example"} // []string |  (optional)
+	duplexIre := []string{"Inner_example"} // []string |  (optional)
+	duplexIsw := []string{"Inner_example"} // []string |  (optional)
+	duplexN := []string{"Inner_example"} // []string |  (optional)
+	duplexNic := []string{"Inner_example"} // []string |  (optional)
+	duplexNie := []string{"Inner_example"} // []string |  (optional)
+	duplexNiew := []string{"Inner_example"} // []string |  (optional)
+	duplexNire := []string{"Inner_example"} // []string |  (optional)
+	duplexNisw := []string{"Inner_example"} // []string |  (optional)
+	duplexNre := []string{"Inner_example"} // []string |  (optional)
+	duplexRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	enabled := true // bool |  (optional)
@@ -19529,7 +20255,7 @@ func main() {
 	labelNre := []string{"Inner_example"} // []string |  (optional)
 	labelRe := []string{"Inner_example"} // []string |  (optional)
 	lag := []string{"Inner_example"} // []string |  (optional)
-	lagIsnull := true // bool | LAG interface (name or ID) is null (optional)
+	lagIsnull := true // bool |  (optional)
 	lagN := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	location := []string{"Inner_example"} // []string |  (optional)
@@ -19549,7 +20275,7 @@ func main() {
 	macAddressNre := []string{"Inner_example"} // []string |  (optional)
 	macAddressRe := []string{"Inner_example"} // []string |  (optional)
 	memberInterfaces := []string{"Inner_example"} // []string |  (optional)
-	memberInterfacesIsnull := true // bool | Member interfaces (name or ID) is null (optional)
+	memberInterfacesIsnull := true // bool |  (optional)
 	memberInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	mgmtOnly := true // bool |  (optional)
 	mode := []string{"Inner_example"} // []string |  (optional)
@@ -19592,13 +20318,20 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parentInterface := []string{"Inner_example"} // []string |  (optional)
-	parentInterfaceIsnull := true // bool | Parent interface (name or ID) is null (optional)
+	parentInterfaceIsnull := true // bool |  (optional)
 	parentInterfaceN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
 	roleN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	speed := []int32{int32(123)} // []int32 |  (optional)
+	speedGt := []int32{int32(123)} // []int32 |  (optional)
+	speedGte := []int32{int32(123)} // []int32 |  (optional)
+	speedIsnull := true // bool |  (optional)
+	speedLt := []int32{int32(123)} // []int32 |  (optional)
+	speedLte := []int32{int32(123)} // []int32 |  (optional)
+	speedN := []int32{int32(123)} // []int32 |  (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
 	statusN := []string{"Inner_example"} // []string |  (optional)
 	taggedVlans := []string{"Inner_example"} // []string |  (optional)
@@ -19624,19 +20357,19 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	untaggedVlan := []string{"Inner_example"} // []string |  (optional)
-	untaggedVlanIsnull := true // bool | Untagged VLAN (VID or ID) is null (optional)
+	untaggedVlanIsnull := true // bool |  (optional)
 	untaggedVlanN := []string{"Inner_example"} // []string |  (optional)
 	virtualDeviceContexts := []string{"Inner_example"} // []string |  (optional)
-	virtualDeviceContextsIsnull := true // bool | Virtual Device Context (name or ID) is null (optional)
+	virtualDeviceContextsIsnull := true // bool |  (optional)
 	virtualDeviceContextsN := []string{"Inner_example"} // []string |  (optional)
 	vlan := float32(8.14) // float32 | Assigned VID (optional)
 	vlanId := "vlanId_example" // string | Assigned VLAN (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -19658,16 +20391,16 @@ Other parameters are passed through a pointer to a apiDcimInterfacesListRequest 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **bridge** | **[]string** |  | 
- **bridgeIsnull** | **bool** | Bridge interface (name or ID) is null | 
+ **bridgeIsnull** | **bool** |  | 
  **bridgeN** | **[]string** |  | 
  **bridgedInterfaces** | **[]string** |  | 
- **bridgedInterfacesIsnull** | **bool** | Bridged interfaces (name or ID) is null | 
+ **bridgedInterfacesIsnull** | **bool** |  | 
  **bridgedInterfacesN** | **[]string** |  | 
  **cable** | **[]string** | Cable | 
  **cableIsnull** | **bool** |  | 
  **cableN** | **[]string** | Cable | 
  **childInterfaces** | **[]string** |  | 
- **childInterfacesIsnull** | **bool** | Child interfaces (name or ID) is null | 
+ **childInterfacesIsnull** | **bool** |  | 
  **childInterfacesN** | **[]string** |  | 
  **connected** | **bool** | Connected status (bool) | 
  **contacts** | **[]string** |  | 
@@ -19690,6 +20423,20 @@ Name | Type | Description  | Notes
  **device** | **[]string** |  | 
  **deviceId** | **[]string** | Device (ID)  (deprecated, use \&quot;device\&quot; filter instead) | 
  **deviceWithCommonVc** | **string** | Virtual Chassis member Device (ID) | 
+ **duplex** | **[]string** |  | 
+ **duplexIc** | **[]string** |  | 
+ **duplexIe** | **[]string** |  | 
+ **duplexIew** | **[]string** |  | 
+ **duplexIre** | **[]string** |  | 
+ **duplexIsw** | **[]string** |  | 
+ **duplexN** | **[]string** |  | 
+ **duplexNic** | **[]string** |  | 
+ **duplexNie** | **[]string** |  | 
+ **duplexNiew** | **[]string** |  | 
+ **duplexNire** | **[]string** |  | 
+ **duplexNisw** | **[]string** |  | 
+ **duplexNre** | **[]string** |  | 
+ **duplexRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
  **enabled** | **bool** |  | 
@@ -19723,7 +20470,7 @@ Name | Type | Description  | Notes
  **labelNre** | **[]string** |  | 
  **labelRe** | **[]string** |  | 
  **lag** | **[]string** |  | 
- **lagIsnull** | **bool** | LAG interface (name or ID) is null | 
+ **lagIsnull** | **bool** |  | 
  **lagN** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **location** | **[]string** |  | 
@@ -19743,7 +20490,7 @@ Name | Type | Description  | Notes
  **macAddressNre** | **[]string** |  | 
  **macAddressRe** | **[]string** |  | 
  **memberInterfaces** | **[]string** |  | 
- **memberInterfacesIsnull** | **bool** | Member interfaces (name or ID) is null | 
+ **memberInterfacesIsnull** | **bool** |  | 
  **memberInterfacesN** | **[]string** |  | 
  **mgmtOnly** | **bool** |  | 
  **mode** | **[]string** |  | 
@@ -19786,13 +20533,20 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parentInterface** | **[]string** |  | 
- **parentInterfaceIsnull** | **bool** | Parent interface (name or ID) is null | 
+ **parentInterfaceIsnull** | **bool** |  | 
  **parentInterfaceN** | **[]string** |  | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** | Role (name or ID) is null | 
  **roleN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **speed** | **[]int32** |  | 
+ **speedGt** | **[]int32** |  | 
+ **speedGte** | **[]int32** |  | 
+ **speedIsnull** | **bool** |  | 
+ **speedLt** | **[]int32** |  | 
+ **speedLte** | **[]int32** |  | 
+ **speedN** | **[]int32** |  | 
  **status** | **[]string** |  | 
  **statusN** | **[]string** |  | 
  **taggedVlans** | **[]string** |  | 
@@ -19818,15 +20572,15 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **untaggedVlan** | **[]string** |  | 
- **untaggedVlanIsnull** | **bool** | Untagged VLAN (VID or ID) is null | 
+ **untaggedVlanIsnull** | **bool** |  | 
  **untaggedVlanN** | **[]string** |  | 
  **virtualDeviceContexts** | **[]string** |  | 
- **virtualDeviceContextsIsnull** | **bool** | Virtual Device Context (name or ID) is null | 
+ **virtualDeviceContextsIsnull** | **bool** |  | 
  **virtualDeviceContextsN** | **[]string** |  | 
  **vlan** | **float32** | Assigned VID | 
  **vlanId** | **string** | Assigned VLAN | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -19863,7 +20617,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19937,7 +20691,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -19946,7 +20700,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -19980,7 +20734,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20017,7 +20771,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20091,14 +20845,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20130,7 +20884,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20167,14 +20921,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20206,7 +20960,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20243,12 +20997,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface.
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20317,7 +21071,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20383,7 +21137,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20451,11 +21205,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableInventoryItemRequest := []openapiclient.BulkWritableInventoryItemRequest{*openapiclient.NewBulkWritableInventoryItemRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInventoryItemRequest | 
+	bulkWritableInventoryItemRequest := []openapiclient.BulkWritableInventoryItemRequest{*openapiclient.NewBulkWritableInventoryItemRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20519,11 +21273,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // InventoryItemRequest | 
+	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20587,7 +21341,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20657,7 +21411,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -20725,7 +21479,7 @@ func main() {
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	manufacturer := []string{"Inner_example"} // []string |  (optional)
-	manufacturerIsnull := true // bool | Manufacturer (name or ID) is null (optional)
+	manufacturerIsnull := true // bool |  (optional)
 	manufacturerN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -20777,7 +21531,7 @@ func main() {
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
-	softwareVersionIsnull := true // bool | Software version (version or ID) is null (optional)
+	softwareVersionIsnull := true // bool |  (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
@@ -20787,7 +21541,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -20876,7 +21630,7 @@ Name | Type | Description  | Notes
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **manufacturer** | **[]string** |  | 
- **manufacturerIsnull** | **bool** | Manufacturer (name or ID) is null | 
+ **manufacturerIsnull** | **bool** |  | 
  **manufacturerN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -20928,7 +21682,7 @@ Name | Type | Description  | Notes
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **softwareVersion** | **[]string** |  | 
- **softwareVersionIsnull** | **bool** | Software version (version or ID) is null | 
+ **softwareVersionIsnull** | **bool** |  | 
  **softwareVersionN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
@@ -20938,7 +21692,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -20975,7 +21729,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21049,7 +21803,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21058,7 +21812,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21092,7 +21846,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21129,7 +21883,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21203,14 +21957,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this inventory item.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21242,7 +21996,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21279,12 +22033,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this inventory item.
-	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // InventoryItemRequest | 
+	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -21353,7 +22107,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21419,7 +22173,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21487,7 +22241,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21555,7 +22309,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21623,7 +22377,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21694,7 +22448,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21762,7 +22516,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -21851,7 +22605,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -21888,7 +22642,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21962,7 +22716,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -21971,7 +22725,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22005,7 +22759,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22042,7 +22796,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22116,14 +22870,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this location type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22155,7 +22909,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -22192,7 +22946,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22266,7 +23020,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22332,7 +23086,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22400,11 +23154,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableLocationRequest := []openapiclient.BulkWritableLocationRequest{*openapiclient.NewBulkWritableLocationRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableLocationRequest | 
+	bulkWritableLocationRequest := []openapiclient.BulkWritableLocationRequest{*openapiclient.NewBulkWritableLocationRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableLocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -22468,11 +23222,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LocationRequest | 
+	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -22536,7 +23290,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22607,7 +23361,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -22623,7 +23377,7 @@ func main() {
 	circuitTerminationsIsnull := true // bool |  (optional)
 	circuitTerminationsN := []string{"Inner_example"} // []string |  (optional)
 	clusters := []string{"Inner_example"} // []string |  (optional)
-	clustersIsnull := true // bool | Clusters (name or ID) is null (optional)
+	clustersIsnull := true // bool |  (optional)
 	clustersN := []string{"Inner_example"} // []string |  (optional)
 	comments := []string{"Inner_example"} // []string |  (optional)
 	commentsIc := []string{"Inner_example"} // []string |  (optional)
@@ -22708,7 +23462,7 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
+	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
@@ -22795,17 +23549,17 @@ func main() {
 	physicalAddressNre := []string{"Inner_example"} // []string |  (optional)
 	physicalAddressRe := []string{"Inner_example"} // []string |  (optional)
 	powerPanels := []string{"Inner_example"} // []string |  (optional)
-	powerPanelsIsnull := true // bool | Power panels (name or ID) is null (optional)
+	powerPanelsIsnull := true // bool |  (optional)
 	powerPanelsN := []string{"Inner_example"} // []string |  (optional)
 	prefixes := []string{"Inner_example"} // []string |  (optional)
 	prefixesIsnull := true // bool |  (optional)
 	prefixesN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rackGroups := []string{"Inner_example"} // []string |  (optional)
-	rackGroupsIsnull := true // bool | Rack groups (name or ID) is null (optional)
+	rackGroupsIsnull := true // bool |  (optional)
 	rackGroupsN := []string{"Inner_example"} // []string |  (optional)
 	racks := []string{"Inner_example"} // []string |  (optional)
-	racksIsnull := true // bool | Rack (name or ID) is null (optional)
+	racksIsnull := true // bool |  (optional)
 	racksN := []string{"Inner_example"} // []string |  (optional)
 	shippingAddress := []string{"Inner_example"} // []string |  (optional)
 	shippingAddressIc := []string{"Inner_example"} // []string |  (optional)
@@ -22861,7 +23615,7 @@ func main() {
 	vlansIsnull := true // bool | Tagged VLANs (VID or ID) is null (optional)
 	vlansN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -22898,7 +23652,7 @@ Name | Type | Description  | Notes
  **circuitTerminationsIsnull** | **bool** |  | 
  **circuitTerminationsN** | **[]string** |  | 
  **clusters** | **[]string** |  | 
- **clustersIsnull** | **bool** | Clusters (name or ID) is null | 
+ **clustersIsnull** | **bool** |  | 
  **clustersN** | **[]string** |  | 
  **comments** | **[]string** |  | 
  **commentsIc** | **[]string** |  | 
@@ -22983,7 +23737,7 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** | Devices (name or ID) is null | 
+ **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
@@ -23070,17 +23824,17 @@ Name | Type | Description  | Notes
  **physicalAddressNre** | **[]string** |  | 
  **physicalAddressRe** | **[]string** |  | 
  **powerPanels** | **[]string** |  | 
- **powerPanelsIsnull** | **bool** | Power panels (name or ID) is null | 
+ **powerPanelsIsnull** | **bool** |  | 
  **powerPanelsN** | **[]string** |  | 
  **prefixes** | **[]string** |  | 
  **prefixesIsnull** | **bool** |  | 
  **prefixesN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rackGroups** | **[]string** |  | 
- **rackGroupsIsnull** | **bool** | Rack groups (name or ID) is null | 
+ **rackGroupsIsnull** | **bool** |  | 
  **rackGroupsN** | **[]string** |  | 
  **racks** | **[]string** |  | 
- **racksIsnull** | **bool** | Rack (name or ID) is null | 
+ **racksIsnull** | **bool** |  | 
  **racksN** | **[]string** |  | 
  **shippingAddress** | **[]string** |  | 
  **shippingAddressIc** | **[]string** |  | 
@@ -23136,7 +23890,7 @@ Name | Type | Description  | Notes
  **vlansIsnull** | **bool** | Tagged VLANs (VID or ID) is null | 
  **vlansN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -23173,7 +23927,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23247,7 +24001,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23256,7 +24010,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -23290,7 +24044,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -23327,7 +24081,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23401,14 +24155,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this location.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -23440,11 +24194,91 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## DcimLocationsStatsList
+
+> PaginatedStatsList DcimLocationsStatsList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this location.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.DcimAPI.DcimLocationsStatsList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimLocationsStatsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `DcimLocationsStatsList`: PaginatedStatsList
+	fmt.Fprintf(os.Stdout, "Response from `DcimAPI.DcimLocationsStatsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this location. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiDcimLocationsStatsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedStatsList**](PaginatedStatsList.md)
 
 ### Authorization
 
@@ -23477,12 +24311,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this location.
-	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LocationRequest | 
+	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -23551,7 +24385,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23617,7 +24451,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23685,7 +24519,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23753,7 +24587,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23821,7 +24655,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23892,7 +24726,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -23921,7 +24755,7 @@ func main() {
 	descriptionNre := []string{"Inner_example"} // []string |  (optional)
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
+	deviceTypesIsnull := true // bool |  (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
@@ -23932,7 +24766,7 @@ func main() {
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	inventoryItems := []string{"Inner_example"} // []string |  (optional)
-	inventoryItemsIsnull := true // bool | Inventory items (name or ID) is null (optional)
+	inventoryItemsIsnull := true // bool |  (optional)
 	inventoryItemsN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -23958,7 +24792,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	platforms := []string{"Inner_example"} // []string |  (optional)
-	platformsIsnull := true // bool | Platforms (name or ID) is null (optional)
+	platformsIsnull := true // bool |  (optional)
 	platformsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
@@ -23966,7 +24800,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24016,7 +24850,7 @@ Name | Type | Description  | Notes
  **descriptionNre** | **[]string** |  | 
  **descriptionRe** | **[]string** |  | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
+ **deviceTypesIsnull** | **bool** |  | 
  **deviceTypesN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
@@ -24027,7 +24861,7 @@ Name | Type | Description  | Notes
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **inventoryItems** | **[]string** |  | 
- **inventoryItemsIsnull** | **bool** | Inventory items (name or ID) is null | 
+ **inventoryItemsIsnull** | **bool** |  | 
  **inventoryItemsN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -24053,7 +24887,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **platforms** | **[]string** |  | 
- **platformsIsnull** | **bool** | Platforms (name or ID) is null | 
+ **platformsIsnull** | **bool** |  | 
  **platformsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
@@ -24061,7 +24895,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24098,7 +24932,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24172,7 +25006,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24181,7 +25015,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24215,7 +25049,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24252,7 +25086,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24326,14 +25160,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this manufacturer.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -24365,7 +25199,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -24402,7 +25236,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24476,7 +25310,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24542,7 +25376,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24610,7 +25444,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24678,7 +25512,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24746,7 +25580,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24817,7 +25651,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -24878,7 +25712,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	moduleFamily := []string{"Inner_example"} // []string |  (optional)
-	moduleFamilyIsnull := true // bool | Module family (name or ID) is null (optional)
+	moduleFamilyIsnull := true // bool |  (optional)
 	moduleFamilyN := []string{"Inner_example"} // []string |  (optional)
 	moduleType := []string{"Inner_example"} // []string |  (optional)
 	moduleTypeIsnull := true // bool | Module type (model or ID) is null (optional)
@@ -24919,7 +25753,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25001,7 +25835,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **moduleFamily** | **[]string** |  | 
- **moduleFamilyIsnull** | **bool** | Module family (name or ID) is null | 
+ **moduleFamilyIsnull** | **bool** |  | 
  **moduleFamilyN** | **[]string** |  | 
  **moduleType** | **[]string** |  | 
  **moduleTypeIsnull** | **bool** | Module type (model or ID) is null | 
@@ -25042,7 +25876,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25079,7 +25913,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25153,14 +25987,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25192,7 +26026,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25229,7 +26063,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25303,7 +26137,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25369,7 +26203,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25437,7 +26271,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25505,7 +26339,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25573,7 +26407,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25644,7 +26478,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25680,9 +26514,9 @@ func main() {
 	hasParentModule := true // bool | Has parent module (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	installedModule := []string{"Inner_example"} // []string | Installed module (ID) (optional)
-	installedModuleIsnull := true // bool | Installed module (ID) is null (optional)
-	installedModuleN := []string{"Inner_example"} // []string | Exclude Installed module (ID) (optional)
+	installedModule := []string{"Inner_example"} // []string |  (optional)
+	installedModuleIsnull := true // bool |  (optional)
+	installedModuleN := []string{"Inner_example"} // []string |  (optional)
 	label := []string{"Inner_example"} // []string |  (optional)
 	labelIc := []string{"Inner_example"} // []string |  (optional)
 	labelIe := []string{"Inner_example"} // []string |  (optional)
@@ -25706,7 +26540,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	moduleFamily := []string{"Inner_example"} // []string |  (optional)
-	moduleFamilyIsnull := true // bool | Module family (name or ID) is null (optional)
+	moduleFamilyIsnull := true // bool |  (optional)
 	moduleFamilyN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -25724,11 +26558,11 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parentDevice := []string{"Inner_example"} // []string |  (optional)
-	parentDeviceIsnull := true // bool | Parent device (name or ID) is null (optional)
+	parentDeviceIsnull := true // bool |  (optional)
 	parentDeviceN := []string{"Inner_example"} // []string |  (optional)
-	parentModule := []string{"Inner_example"} // []string | Parent module (ID) (optional)
-	parentModuleIsnull := true // bool | Parent module (ID) is null (optional)
-	parentModuleN := []string{"Inner_example"} // []string | Exclude Parent module (ID) (optional)
+	parentModule := []string{"Inner_example"} // []string |  (optional)
+	parentModuleIsnull := true // bool |  (optional)
+	parentModuleN := []string{"Inner_example"} // []string |  (optional)
 	position := []string{"Inner_example"} // []string |  (optional)
 	positionIc := []string{"Inner_example"} // []string |  (optional)
 	positionIe := []string{"Inner_example"} // []string |  (optional)
@@ -25753,7 +26587,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -25810,9 +26644,9 @@ Name | Type | Description  | Notes
  **hasParentModule** | **bool** | Has parent module | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
- **installedModule** | **[]string** | Installed module (ID) | 
- **installedModuleIsnull** | **bool** | Installed module (ID) is null | 
- **installedModuleN** | **[]string** | Exclude Installed module (ID) | 
+ **installedModule** | **[]string** |  | 
+ **installedModuleIsnull** | **bool** |  | 
+ **installedModuleN** | **[]string** |  | 
  **label** | **[]string** |  | 
  **labelIc** | **[]string** |  | 
  **labelIe** | **[]string** |  | 
@@ -25836,7 +26670,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **moduleFamily** | **[]string** |  | 
- **moduleFamilyIsnull** | **bool** | Module family (name or ID) is null | 
+ **moduleFamilyIsnull** | **bool** |  | 
  **moduleFamilyN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -25854,11 +26688,11 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parentDevice** | **[]string** |  | 
- **parentDeviceIsnull** | **bool** | Parent device (name or ID) is null | 
+ **parentDeviceIsnull** | **bool** |  | 
  **parentDeviceN** | **[]string** |  | 
- **parentModule** | **[]string** | Parent module (ID) | 
- **parentModuleIsnull** | **bool** | Parent module (ID) is null | 
- **parentModuleN** | **[]string** | Exclude Parent module (ID) | 
+ **parentModule** | **[]string** |  | 
+ **parentModuleIsnull** | **bool** |  | 
+ **parentModuleN** | **[]string** |  | 
  **position** | **[]string** |  | 
  **positionIc** | **[]string** |  | 
  **positionIe** | **[]string** |  | 
@@ -25883,7 +26717,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -25920,7 +26754,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -25994,7 +26828,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26003,7 +26837,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26037,7 +26871,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26074,7 +26908,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26148,14 +26982,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module bay.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26187,7 +27021,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26224,7 +27058,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26298,7 +27132,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26364,7 +27198,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26432,7 +27266,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26500,7 +27334,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26568,7 +27402,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26639,7 +27473,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26682,7 +27516,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	moduleBayId := [][]string{[]string{"Inner_example"}} // [][]string |  (optional)
 	moduleTypes := []string{"Inner_example"} // []string |  (optional)
-	moduleTypesIsnull := true // bool | Module types (model or ID) is null (optional)
+	moduleTypesIsnull := true // bool |  (optional)
 	moduleTypesN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -26708,7 +27542,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26772,7 +27606,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **moduleBayId** | **[][]string** |  | 
  **moduleTypes** | **[]string** |  | 
- **moduleTypesIsnull** | **bool** | Module types (model or ID) is null | 
+ **moduleTypesIsnull** | **bool** |  | 
  **moduleTypesN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -26798,7 +27632,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26835,7 +27669,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26909,7 +27743,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -26918,7 +27752,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -26952,7 +27786,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -26989,7 +27823,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27063,14 +27897,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module family.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -27102,7 +27936,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -27139,7 +27973,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27213,7 +28047,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27279,7 +28113,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27347,11 +28181,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableModuleTypeRequest := []openapiclient.BulkWritableModuleTypeRequest{*openapiclient.NewBulkWritableModuleTypeRequest("Id_example", "Model_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleTypeRequest | 
+	bulkWritableModuleTypeRequest := []openapiclient.BulkWritableModuleTypeRequest{*openapiclient.NewBulkWritableModuleTypeRequest("Id_example", "Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27415,11 +28249,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27483,7 +28317,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27554,7 +28388,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27637,7 +28471,7 @@ func main() {
 	moduleBayTemplatesIsnull := true // bool |  (optional)
 	moduleBayTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	moduleFamily := []string{"Inner_example"} // []string |  (optional)
-	moduleFamilyIsnull := true // bool | Module family (name or ID) is null (optional)
+	moduleFamilyIsnull := true // bool |  (optional)
 	moduleFamilyN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	partNumber := []string{"Inner_example"} // []string |  (optional)
@@ -27672,7 +28506,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -27776,7 +28610,7 @@ Name | Type | Description  | Notes
  **moduleBayTemplatesIsnull** | **bool** |  | 
  **moduleBayTemplatesN** | **[]string** |  | 
  **moduleFamily** | **[]string** |  | 
- **moduleFamilyIsnull** | **bool** | Module family (name or ID) is null | 
+ **moduleFamilyIsnull** | **bool** |  | 
  **moduleFamilyN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **partNumber** | **[]string** |  | 
@@ -27811,7 +28645,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -27848,7 +28682,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27922,7 +28756,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -27931,7 +28765,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -27965,7 +28799,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -28002,7 +28836,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28076,14 +28910,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -28115,7 +28949,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -28152,12 +28986,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
-	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28226,7 +29060,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28292,7 +29126,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28360,11 +29194,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableModuleRequest := []openapiclient.BulkWritableModuleRequest{*openapiclient.NewBulkWritableModuleRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleRequest | 
+	bulkWritableModuleRequest := []openapiclient.BulkWritableModuleRequest{*openapiclient.NewBulkWritableModuleRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28428,11 +29262,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28496,7 +29330,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28567,7 +29401,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28662,9 +29496,9 @@ func main() {
 	moduleType := []string{"Inner_example"} // []string |  (optional)
 	moduleTypeN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	parentModuleBay := []string{"Inner_example"} // []string | Parent Module Bay (optional)
-	parentModuleBayIsnull := true // bool | Parent Module Bay is null (optional)
-	parentModuleBayN := []string{"Inner_example"} // []string | Exclude Parent Module Bay (optional)
+	parentModuleBay := []string{"Inner_example"} // []string |  (optional)
+	parentModuleBayIsnull := true // bool |  (optional)
+	parentModuleBayN := []string{"Inner_example"} // []string |  (optional)
 	powerOutlets := []string{"Inner_example"} // []string |  (optional)
 	powerOutletsIsnull := true // bool | Power Outlets (name or ID) is null (optional)
 	powerOutletsN := []string{"Inner_example"} // []string |  (optional)
@@ -28712,7 +29546,7 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -28828,9 +29662,9 @@ Name | Type | Description  | Notes
  **moduleType** | **[]string** |  | 
  **moduleTypeN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **parentModuleBay** | **[]string** | Parent Module Bay | 
- **parentModuleBayIsnull** | **bool** | Parent Module Bay is null | 
- **parentModuleBayN** | **[]string** | Exclude Parent Module Bay | 
+ **parentModuleBay** | **[]string** |  | 
+ **parentModuleBayIsnull** | **bool** |  | 
+ **parentModuleBayN** | **[]string** |  | 
  **powerOutlets** | **[]string** |  | 
  **powerOutletsIsnull** | **bool** | Power Outlets (name or ID) is null | 
  **powerOutletsN** | **[]string** |  | 
@@ -28878,7 +29712,7 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -28915,7 +29749,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28989,7 +29823,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -28998,7 +29832,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29032,7 +29866,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29069,7 +29903,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29143,14 +29977,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29182,7 +30016,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29219,12 +30053,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
-	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29293,7 +30127,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29359,7 +30193,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29427,7 +30261,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29495,7 +30329,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29563,7 +30397,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29634,7 +30468,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29681,7 +30515,7 @@ func main() {
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	manufacturer := []string{"Inner_example"} // []string |  (optional)
-	manufacturerIsnull := true // bool | Manufacturer (name or ID) is null (optional)
+	manufacturerIsnull := true // bool |  (optional)
 	manufacturerN := []string{"Inner_example"} // []string |  (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
@@ -29736,7 +30570,7 @@ func main() {
 	virtualMachinesIsnull := true // bool |  (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -29804,7 +30638,7 @@ Name | Type | Description  | Notes
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
  **manufacturer** | **[]string** |  | 
- **manufacturerIsnull** | **bool** | Manufacturer (name or ID) is null | 
+ **manufacturerIsnull** | **bool** |  | 
  **manufacturerN** | **[]string** |  | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
@@ -29859,7 +30693,7 @@ Name | Type | Description  | Notes
  **virtualMachinesIsnull** | **bool** |  | 
  **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -29896,7 +30730,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29970,7 +30804,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -29979,7 +30813,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30013,7 +30847,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30050,7 +30884,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30124,14 +30958,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this platform.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30163,7 +30997,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30200,7 +31034,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30274,7 +31108,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30310,7 +31144,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -30367,7 +31201,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -30404,7 +31238,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30470,7 +31304,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30538,11 +31372,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritablePowerFeedRequest := []openapiclient.BulkWritablePowerFeedRequest{*openapiclient.NewBulkWritablePowerFeedRequest("Id_example", "Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerFeedRequest | 
+	bulkWritablePowerFeedRequest := []openapiclient.BulkWritablePowerFeedRequest{*openapiclient.NewBulkWritablePowerFeedRequest("Id_example", "Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30606,11 +31440,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerFeedRequest | 
+	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30674,7 +31508,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30745,7 +31579,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -30883,7 +31717,7 @@ func main() {
 	powerPathRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rack := []string{"Inner_example"} // []string |  (optional)
-	rackIsnull := true // bool | Rack (name or ID) is null (optional)
+	rackIsnull := true // bool |  (optional)
 	rackN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -30929,7 +31763,7 @@ func main() {
 	voltageLte := []int32{int32(123)} // []int32 |  (optional)
 	voltageN := []int32{int32(123)} // []int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31088,7 +31922,7 @@ Name | Type | Description  | Notes
  **powerPathRe** | **[]string** |  | 
  **q** | **string** | Search | 
  **rack** | **[]string** |  | 
- **rackIsnull** | **bool** | Rack (name or ID) is null | 
+ **rackIsnull** | **bool** |  | 
  **rackN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
@@ -31134,7 +31968,7 @@ Name | Type | Description  | Notes
  **voltageLte** | **[]int32** |  | 
  **voltageN** | **[]int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31171,7 +32005,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31245,7 +32079,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31254,7 +32088,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31288,7 +32122,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31325,7 +32159,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31399,14 +32233,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power feed.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31438,7 +32272,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31475,14 +32309,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power feed.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -31514,7 +32348,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -31551,12 +32385,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power feed.
-	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerFeedRequest | 
+	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -31625,7 +32459,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31691,7 +32525,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31759,7 +32593,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31827,7 +32661,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31895,7 +32729,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -31965,7 +32799,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32044,7 +32878,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string | Name (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerPortTemplate := []string{"Inner_example"} // []string |  (optional)
-	powerPortTemplateIsnull := true // bool | Power port template (name or ID) is null (optional)
+	powerPortTemplateIsnull := true // bool |  (optional)
 	powerPortTemplateN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
@@ -32066,7 +32900,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32166,7 +33000,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** | Name | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerPortTemplate** | **[]string** |  | 
- **powerPortTemplateIsnull** | **bool** | Power port template (name or ID) is null | 
+ **powerPortTemplateIsnull** | **bool** |  | 
  **powerPortTemplateN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
@@ -32188,7 +33022,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -32225,7 +33059,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32299,14 +33133,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power outlet template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32338,7 +33172,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -32375,7 +33209,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32449,7 +33283,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32515,7 +33349,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32583,7 +33417,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32651,7 +33485,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32719,7 +33553,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32789,7 +33623,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -32870,9 +33704,9 @@ func main() {
 	nameNre := []string{"Inner_example"} // []string |  (optional)
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	powerPort := []string{"Inner_example"} // []string | Power port (optional)
+	powerPort := []string{"Inner_example"} // []string |  (optional)
 	powerPortIsnull := true // bool |  (optional)
-	powerPortN := []string{"Inner_example"} // []string | Power port (optional)
+	powerPortN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
@@ -32896,7 +33730,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -32998,9 +33832,9 @@ Name | Type | Description  | Notes
  **nameNre** | **[]string** |  | 
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **powerPort** | **[]string** | Power port | 
+ **powerPort** | **[]string** |  | 
  **powerPortIsnull** | **bool** |  | 
- **powerPortN** | **[]string** | Power port | 
+ **powerPortN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **tags** | **[]string** |  | 
@@ -33024,7 +33858,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33061,7 +33895,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33135,7 +33969,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33144,7 +33978,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33178,7 +34012,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33215,7 +34049,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33289,14 +34123,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power outlet.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33328,7 +34162,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33365,14 +34199,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power outlet.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -33404,7 +34238,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -33441,7 +34275,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33515,7 +34349,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33581,7 +34415,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33649,11 +34483,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritablePowerPanelRequest := []openapiclient.BulkWritablePowerPanelRequest{*openapiclient.NewBulkWritablePowerPanelRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerPanelRequest | 
+	bulkWritablePowerPanelRequest := []openapiclient.BulkWritablePowerPanelRequest{*openapiclient.NewBulkWritablePowerPanelRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -33717,11 +34551,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPanelRequest | 
+	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -33785,7 +34619,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -33840,7 +34674,7 @@ Name | Type | Description  | Notes
 
 ## DcimPowerPanelsList
 
-> PaginatedPowerPanelList DcimPowerPanelsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasFeeders(hasFeeders).HasPowerFeeds(hasPowerFeeds).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PanelType(panelType).PanelTypeIc(panelTypeIc).PanelTypeIe(panelTypeIe).PanelTypeIew(panelTypeIew).PanelTypeIre(panelTypeIre).PanelTypeIsw(panelTypeIsw).PanelTypeN(panelTypeN).PanelTypeNic(panelTypeNic).PanelTypeNie(panelTypeNie).PanelTypeNiew(panelTypeNiew).PanelTypeNire(panelTypeNire).PanelTypeNisw(panelTypeNisw).PanelTypeNre(panelTypeNre).PanelTypeRe(panelTypeRe).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).PowerPath(powerPath).PowerPathIc(powerPathIc).PowerPathIe(powerPathIe).PowerPathIew(powerPathIew).PowerPathIre(powerPathIre).PowerPathIsw(powerPathIsw).PowerPathN(powerPathN).PowerPathNic(powerPathNic).PowerPathNie(powerPathNie).PowerPathNiew(powerPathNiew).PowerPathNire(powerPathNire).PowerPathNisw(powerPathNisw).PowerPathNre(powerPathNre).PowerPathRe(powerPathRe).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedPowerPanelList DcimPowerPanelsList(ctx).BreakerPositionCount(breakerPositionCount).BreakerPositionCountGt(breakerPositionCountGt).BreakerPositionCountGte(breakerPositionCountGte).BreakerPositionCountIsnull(breakerPositionCountIsnull).BreakerPositionCountLt(breakerPositionCountLt).BreakerPositionCountLte(breakerPositionCountLte).BreakerPositionCountN(breakerPositionCountN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasFeeders(hasFeeders).HasPowerFeeds(hasPowerFeeds).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PanelType(panelType).PanelTypeIc(panelTypeIc).PanelTypeIe(panelTypeIe).PanelTypeIew(panelTypeIew).PanelTypeIre(panelTypeIre).PanelTypeIsw(panelTypeIsw).PanelTypeN(panelTypeN).PanelTypeNic(panelTypeNic).PanelTypeNie(panelTypeNie).PanelTypeNiew(panelTypeNiew).PanelTypeNire(panelTypeNire).PanelTypeNisw(panelTypeNisw).PanelTypeNre(panelTypeNre).PanelTypeRe(panelTypeRe).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).PowerPath(powerPath).PowerPathIc(powerPathIc).PowerPathIe(powerPathIe).PowerPathIew(powerPathIew).PowerPathIre(powerPathIre).PowerPathIsw(powerPathIsw).PowerPathN(powerPathN).PowerPathNic(powerPathNic).PowerPathNie(powerPathNie).PowerPathNiew(powerPathNiew).PowerPathNire(powerPathNire).PowerPathNisw(powerPathNisw).PowerPathNre(powerPathNre).PowerPathRe(powerPathRe).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -33856,10 +34690,17 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
+	breakerPositionCount := []int32{int32(123)} // []int32 |  (optional)
+	breakerPositionCountGt := []int32{int32(123)} // []int32 |  (optional)
+	breakerPositionCountGte := []int32{int32(123)} // []int32 |  (optional)
+	breakerPositionCountIsnull := true // bool |  (optional)
+	breakerPositionCountLt := []int32{int32(123)} // []int32 |  (optional)
+	breakerPositionCountLte := []int32{int32(123)} // []int32 |  (optional)
+	breakerPositionCountN := []int32{int32(123)} // []int32 |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
@@ -33917,7 +34758,7 @@ func main() {
 	panelTypeNre := []string{"Inner_example"} // []string |  (optional)
 	panelTypeRe := []string{"Inner_example"} // []string |  (optional)
 	powerFeeds := []string{"Inner_example"} // []string |  (optional)
-	powerFeedsIsnull := true // bool | Power feeds (name or ID) is null (optional)
+	powerFeedsIsnull := true // bool |  (optional)
 	powerFeedsN := []string{"Inner_example"} // []string |  (optional)
 	powerPath := []string{"Inner_example"} // []string | Physical power distribution redundancy path. (optional)
 	powerPathIc := []string{"Inner_example"} // []string |  (optional)
@@ -33945,11 +34786,11 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimPowerPanelsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasFeeders(hasFeeders).HasPowerFeeds(hasPowerFeeds).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PanelType(panelType).PanelTypeIc(panelTypeIc).PanelTypeIe(panelTypeIe).PanelTypeIew(panelTypeIew).PanelTypeIre(panelTypeIre).PanelTypeIsw(panelTypeIsw).PanelTypeN(panelTypeN).PanelTypeNic(panelTypeNic).PanelTypeNie(panelTypeNie).PanelTypeNiew(panelTypeNiew).PanelTypeNire(panelTypeNire).PanelTypeNisw(panelTypeNisw).PanelTypeNre(panelTypeNre).PanelTypeRe(panelTypeRe).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).PowerPath(powerPath).PowerPathIc(powerPathIc).PowerPathIe(powerPathIe).PowerPathIew(powerPathIew).PowerPathIre(powerPathIre).PowerPathIsw(powerPathIsw).PowerPathN(powerPathN).PowerPathNic(powerPathNic).PowerPathNie(powerPathNie).PowerPathNiew(powerPathNiew).PowerPathNire(powerPathNire).PowerPathNisw(powerPathNisw).PowerPathNre(powerPathNre).PowerPathRe(powerPathRe).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimPowerPanelsList(context.Background()).BreakerPositionCount(breakerPositionCount).BreakerPositionCountGt(breakerPositionCountGt).BreakerPositionCountGte(breakerPositionCountGte).BreakerPositionCountIsnull(breakerPositionCountIsnull).BreakerPositionCountLt(breakerPositionCountLt).BreakerPositionCountLte(breakerPositionCountLte).BreakerPositionCountN(breakerPositionCountN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasFeeders(hasFeeders).HasPowerFeeds(hasPowerFeeds).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PanelType(panelType).PanelTypeIc(panelTypeIc).PanelTypeIe(panelTypeIe).PanelTypeIew(panelTypeIew).PanelTypeIre(panelTypeIre).PanelTypeIsw(panelTypeIsw).PanelTypeN(panelTypeN).PanelTypeNic(panelTypeNic).PanelTypeNie(panelTypeNie).PanelTypeNiew(panelTypeNiew).PanelTypeNire(panelTypeNire).PanelTypeNisw(panelTypeNisw).PanelTypeNre(panelTypeNre).PanelTypeRe(panelTypeRe).PowerFeeds(powerFeeds).PowerFeedsIsnull(powerFeedsIsnull).PowerFeedsN(powerFeedsN).PowerPath(powerPath).PowerPathIc(powerPathIc).PowerPathIe(powerPathIe).PowerPathIew(powerPathIew).PowerPathIre(powerPathIre).PowerPathIsw(powerPathIsw).PowerPathN(powerPathN).PowerPathNic(powerPathNic).PowerPathNie(powerPathNie).PowerPathNiew(powerPathNiew).PowerPathNire(powerPathNire).PowerPathNisw(powerPathNisw).PowerPathNre(powerPathNre).PowerPathRe(powerPathRe).Q(q).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimPowerPanelsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -33970,6 +34811,13 @@ Other parameters are passed through a pointer to a apiDcimPowerPanelsListRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **breakerPositionCount** | **[]int32** |  | 
+ **breakerPositionCountGt** | **[]int32** |  | 
+ **breakerPositionCountGte** | **[]int32** |  | 
+ **breakerPositionCountIsnull** | **bool** |  | 
+ **breakerPositionCountLt** | **[]int32** |  | 
+ **breakerPositionCountLte** | **[]int32** |  | 
+ **breakerPositionCountN** | **[]int32** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
@@ -34027,7 +34875,7 @@ Name | Type | Description  | Notes
  **panelTypeNre** | **[]string** |  | 
  **panelTypeRe** | **[]string** |  | 
  **powerFeeds** | **[]string** |  | 
- **powerFeedsIsnull** | **bool** | Power feeds (name or ID) is null | 
+ **powerFeedsIsnull** | **bool** |  | 
  **powerFeedsN** | **[]string** |  | 
  **powerPath** | **[]string** | Physical power distribution redundancy path. | 
  **powerPathIc** | **[]string** |  | 
@@ -34055,7 +34903,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34092,7 +34940,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34166,7 +35014,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34175,7 +35023,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -34209,7 +35057,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34246,7 +35094,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34320,14 +35168,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power panel.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -34359,7 +35207,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -34396,12 +35244,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power panel.
-	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPanelRequest | 
+	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34470,7 +35318,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34536,7 +35384,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34604,7 +35452,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34672,7 +35520,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34740,7 +35588,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34810,7 +35658,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -34890,7 +35738,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string | Name (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerOutletTemplates := []string{"Inner_example"} // []string |  (optional)
-	powerOutletTemplatesIsnull := true // bool | Power outlet templates (name or ID) is null (optional)
+	powerOutletTemplatesIsnull := true // bool |  (optional)
 	powerOutletTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
@@ -34912,7 +35760,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -35013,7 +35861,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** | Name | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerOutletTemplates** | **[]string** |  | 
- **powerOutletTemplatesIsnull** | **bool** | Power outlet templates (name or ID) is null | 
+ **powerOutletTemplatesIsnull** | **bool** |  | 
  **powerOutletTemplatesN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
@@ -35035,7 +35883,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -35072,7 +35920,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35146,14 +35994,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power port template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -35185,7 +36033,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -35222,7 +36070,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35296,7 +36144,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35362,7 +36210,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35430,7 +36278,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35498,7 +36346,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35566,7 +36414,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35636,7 +36484,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35719,7 +36567,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	powerOutlets := []string{"Inner_example"} // []string |  (optional)
-	powerOutletsIsnull := true // bool | Power outlets (name or ID) is null (optional)
+	powerOutletsIsnull := true // bool |  (optional)
 	powerOutletsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
@@ -35744,7 +36592,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -35848,7 +36696,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **powerOutlets** | **[]string** |  | 
- **powerOutletsIsnull** | **bool** | Power outlets (name or ID) is null | 
+ **powerOutletsIsnull** | **bool** |  | 
  **powerOutletsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
@@ -35873,7 +36721,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -35910,7 +36758,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35984,7 +36832,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -35993,7 +36841,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -36027,7 +36875,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -36064,7 +36912,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36138,14 +36986,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -36177,7 +37025,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -36214,14 +37062,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -36253,7 +37101,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -36290,7 +37138,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36364,7 +37212,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36430,7 +37278,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36498,11 +37346,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableRackGroupRequest := []openapiclient.BulkWritableRackGroupRequest{*openapiclient.NewBulkWritableRackGroupRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackGroupRequest | 
+	bulkWritableRackGroupRequest := []openapiclient.BulkWritableRackGroupRequest{*openapiclient.NewBulkWritableRackGroupRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -36566,11 +37414,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackGroupRequest | 
+	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -36634,7 +37482,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36705,13 +37553,13 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	ancestors := []string{"Inner_example"} // []string |  (optional)
 	children := []string{"Inner_example"} // []string |  (optional)
-	childrenIsnull := true // bool | Children (name or ID) is null (optional)
+	childrenIsnull := true // bool |  (optional)
 	childrenN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -36771,10 +37619,10 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	parent := []string{"Inner_example"} // []string |  (optional)
-	parentIsnull := true // bool | Parent (name or ID) is null (optional)
+	parentIsnull := true // bool |  (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	powerPanels := []string{"Inner_example"} // []string |  (optional)
-	powerPanelsIsnull := true // bool | Power panels (name or ID) is null (optional)
+	powerPanelsIsnull := true // bool |  (optional)
 	powerPanelsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	racks := []string{"Inner_example"} // []string |  (optional)
@@ -36785,7 +37633,7 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -36812,7 +37660,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ancestors** | **[]string** |  | 
  **children** | **[]string** |  | 
- **childrenIsnull** | **bool** | Children (name or ID) is null | 
+ **childrenIsnull** | **bool** |  | 
  **childrenN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -36872,10 +37720,10 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **parent** | **[]string** |  | 
- **parentIsnull** | **bool** | Parent (name or ID) is null | 
+ **parentIsnull** | **bool** |  | 
  **parentN** | **[]string** |  | 
  **powerPanels** | **[]string** |  | 
- **powerPanelsIsnull** | **bool** | Power panels (name or ID) is null | 
+ **powerPanelsIsnull** | **bool** |  | 
  **powerPanelsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **racks** | **[]string** |  | 
@@ -36886,7 +37734,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -36923,7 +37771,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -36997,7 +37845,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37006,7 +37854,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -37040,7 +37888,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -37077,7 +37925,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37151,14 +37999,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack group.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -37190,7 +38038,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -37227,12 +38075,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack group.
-	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackGroupRequest | 
+	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -37301,7 +38149,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37367,7 +38215,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37435,11 +38283,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackReservationRequest | 
+	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -37503,11 +38351,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -37571,7 +38419,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37626,7 +38474,7 @@ Name | Type | Description  | Notes
 
 ## DcimRackReservationsList
 
-> PaginatedRackReservationList DcimRackReservationsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedRackReservationList DcimRackReservationsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -37642,7 +38490,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37683,6 +38531,8 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	location := []string{"Inner_example"} // []string |  (optional)
+	locationN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	q := "q_example" // string | Search (optional)
 	rack := []string{"Inner_example"} // []string |  (optional)
@@ -37709,11 +38559,11 @@ func main() {
 	user := []string{"Inner_example"} // []string |  (optional)
 	userN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimRackReservationsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimRackReservationsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Offset(offset).Q(q).Rack(rack).RackN(rackN).RackGroup(rackGroup).RackGroupIsnull(rackGroupIsnull).RackGroupN(rackGroupN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimRackReservationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -37771,6 +38621,8 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
+ **location** | **[]string** |  | 
+ **locationN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **q** | **string** | Search | 
  **rack** | **[]string** |  | 
@@ -37797,7 +38649,7 @@ Name | Type | Description  | Notes
  **user** | **[]string** |  | 
  **userN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -37834,7 +38686,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37908,7 +38760,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -37917,7 +38769,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -37951,7 +38803,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -37988,7 +38840,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38062,14 +38914,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack reservation.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -38101,7 +38953,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -38138,12 +38990,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack reservation.
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38212,7 +39064,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38278,7 +39130,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38346,11 +39198,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableRackRequest := []openapiclient.BulkWritableRackRequest{*openapiclient.NewBulkWritableRackRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackRequest | 
+	bulkWritableRackRequest := []openapiclient.BulkWritableRackRequest{*openapiclient.NewBulkWritableRackRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38414,11 +39266,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRackRequest | 
+	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38482,7 +39334,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38552,7 +39404,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38572,7 +39424,7 @@ func main() {
 	unitHeight := int32(56) // int32 |  (optional)
 	unitWidth := int32(56) // int32 |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -38617,7 +39469,7 @@ Name | Type | Description  | Notes
  **unitHeight** | **int32** |  | 
  **unitWidth** | **int32** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -38655,7 +39507,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -38779,7 +39631,7 @@ func main() {
 	outerWidthLte := []int32{int32(123)} // []int32 |  (optional)
 	outerWidthN := []int32{int32(123)} // []int32 |  (optional)
 	powerFeeds := []string{"Inner_example"} // []string |  (optional)
-	powerFeedsIsnull := true // bool | Power feeds (name or ID) is null (optional)
+	powerFeedsIsnull := true // bool |  (optional)
 	powerFeedsN := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	rackGroup := []string{"Inner_example"} // []string |  (optional)
@@ -38858,7 +39710,7 @@ func main() {
 	widthNre := []string{"Inner_example"} // []string |  (optional)
 	widthRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -39003,7 +39855,7 @@ Name | Type | Description  | Notes
  **outerWidthLte** | **[]int32** |  | 
  **outerWidthN** | **[]int32** |  | 
  **powerFeeds** | **[]string** |  | 
- **powerFeedsIsnull** | **bool** | Power feeds (name or ID) is null | 
+ **powerFeedsIsnull** | **bool** |  | 
  **powerFeedsN** | **[]string** |  | 
  **q** | **string** | Search | 
  **rackGroup** | **[]string** |  | 
@@ -39082,7 +39934,7 @@ Name | Type | Description  | Notes
  **widthNre** | **[]string** |  | 
  **widthRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -39119,7 +39971,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39193,7 +40045,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39202,7 +40054,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -39236,7 +40088,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -39273,7 +40125,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39347,14 +40199,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -39386,7 +40238,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -39423,12 +40275,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack.
-	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRackRequest | 
+	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -39497,7 +40349,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39563,7 +40415,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39631,7 +40483,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39699,7 +40551,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39767,7 +40619,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39837,7 +40689,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -39864,9 +40716,9 @@ func main() {
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	frontPortTemplates := []string{"Inner_example"} // []string | Front port templates (optional)
+	frontPortTemplates := []string{"Inner_example"} // []string |  (optional)
 	frontPortTemplatesIsnull := true // bool |  (optional)
-	frontPortTemplatesN := []string{"Inner_example"} // []string | Front port templates (optional)
+	frontPortTemplatesN := []string{"Inner_example"} // []string |  (optional)
 	hasDeviceType := true // bool | Has device type (optional)
 	hasFrontPortTemplates := true // bool | Has front port templates (optional)
 	hasModuleType := true // bool | Has module type (optional)
@@ -39931,7 +40783,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -39979,9 +40831,9 @@ Name | Type | Description  | Notes
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **frontPortTemplates** | **[]string** | Front port templates | 
+ **frontPortTemplates** | **[]string** |  | 
  **frontPortTemplatesIsnull** | **bool** |  | 
- **frontPortTemplatesN** | **[]string** | Front port templates | 
+ **frontPortTemplatesN** | **[]string** |  | 
  **hasDeviceType** | **bool** | Has device type | 
  **hasFrontPortTemplates** | **bool** | Has front port templates | 
  **hasModuleType** | **bool** | Has module type | 
@@ -40046,7 +40898,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -40083,7 +40935,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40157,14 +41009,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rear port template.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -40196,7 +41048,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -40233,7 +41085,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40307,7 +41159,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40373,7 +41225,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40441,7 +41293,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40509,7 +41361,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40577,7 +41429,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40647,7 +41499,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40676,7 +41528,7 @@ func main() {
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	frontPorts := []string{"Inner_example"} // []string |  (optional)
-	frontPortsIsnull := true // bool | Front ports (name or ID) is null (optional)
+	frontPortsIsnull := true // bool |  (optional)
 	frontPortsN := []string{"Inner_example"} // []string |  (optional)
 	hasCable := true // bool | Has cable (optional)
 	hasFrontPorts := true // bool | Has front ports (optional)
@@ -40746,7 +41598,7 @@ func main() {
 	typeNre := []string{"Inner_example"} // []string |  (optional)
 	typeRe := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -40796,7 +41648,7 @@ Name | Type | Description  | Notes
  **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **frontPorts** | **[]string** |  | 
- **frontPortsIsnull** | **bool** | Front ports (name or ID) is null | 
+ **frontPortsIsnull** | **bool** |  | 
  **frontPortsN** | **[]string** |  | 
  **hasCable** | **bool** | Has cable | 
  **hasFrontPorts** | **bool** | Has front ports | 
@@ -40866,7 +41718,7 @@ Name | Type | Description  | Notes
  **typeNre** | **[]string** |  | 
  **typeRe** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -40903,7 +41755,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40977,7 +41829,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -40986,7 +41838,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -41020,7 +41872,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -41057,7 +41909,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41131,7 +41983,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41140,7 +41992,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -41174,7 +42026,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -41211,14 +42063,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rear port.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -41250,7 +42102,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -41287,7 +42139,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41361,7 +42213,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41427,7 +42279,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41495,11 +42347,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableSoftwareImageFileRequest := []openapiclient.BulkWritableSoftwareImageFileRequest{*openapiclient.NewBulkWritableSoftwareImageFileRequest("Id_example", "ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableSoftwareImageFileRequest | 
+	bulkWritableSoftwareImageFileRequest := []openapiclient.BulkWritableSoftwareImageFileRequest{*openapiclient.NewBulkWritableSoftwareImageFileRequest("Id_example", "ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -41563,11 +42415,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareImageFileRequest | 
+	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -41631,7 +42483,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41686,7 +42538,7 @@ Name | Type | Description  | Notes
 
 ## DcimSoftwareImageFilesList
 
-> PaginatedSoftwareImageFileList DcimSoftwareImageFilesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdN(idN).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedSoftwareImageFileList DcimSoftwareImageFilesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdN(idN).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).SoftwareVersionPlatform(softwareVersionPlatform).SoftwareVersionPlatformN(softwareVersionPlatformN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -41702,7 +42554,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -41718,10 +42570,10 @@ func main() {
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	defaultImage := true // bool | Is default image for associated software version (optional)
 	deviceTypes := []string{"Inner_example"} // []string |  (optional)
-	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
+	deviceTypesIsnull := true // bool |  (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
+	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	downloadUrl := []string{"Inner_example"} // []string |  (optional)
 	downloadUrlIc := []string{"Inner_example"} // []string |  (optional)
@@ -41740,7 +42592,7 @@ func main() {
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	externalIntegration := []string{"Inner_example"} // []string |  (optional)
-	externalIntegrationIsnull := true // bool | External integration (name or ID) is null (optional)
+	externalIntegrationIsnull := true // bool |  (optional)
 	externalIntegrationN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDeviceTypes := true // bool | Has device types (optional)
@@ -41808,6 +42660,8 @@ func main() {
 	q := "q_example" // string | Search (optional)
 	softwareVersion := []string{"Inner_example"} // []string |  (optional)
 	softwareVersionN := []string{"Inner_example"} // []string |  (optional)
+	softwareVersionPlatform := []string{"Inner_example"} // []string |  (optional)
+	softwareVersionPlatformN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
 	statusN := []string{"Inner_example"} // []string |  (optional)
@@ -41818,11 +42672,11 @@ func main() {
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimSoftwareImageFilesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdN(idN).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimSoftwareImageFilesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DefaultImage(defaultImage).DeviceTypes(deviceTypes).DeviceTypesIsnull(deviceTypesIsnull).DeviceTypesN(deviceTypesN).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DownloadUrl(downloadUrl).DownloadUrlIc(downloadUrlIc).DownloadUrlIe(downloadUrlIe).DownloadUrlIew(downloadUrlIew).DownloadUrlIre(downloadUrlIre).DownloadUrlIsw(downloadUrlIsw).DownloadUrlN(downloadUrlN).DownloadUrlNic(downloadUrlNic).DownloadUrlNie(downloadUrlNie).DownloadUrlNiew(downloadUrlNiew).DownloadUrlNire(downloadUrlNire).DownloadUrlNisw(downloadUrlNisw).DownloadUrlNre(downloadUrlNre).DownloadUrlRe(downloadUrlRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExternalIntegration(externalIntegration).ExternalIntegrationIsnull(externalIntegrationIsnull).ExternalIntegrationN(externalIntegrationN).Format(format).HasDeviceTypes(hasDeviceTypes).HasDevices(hasDevices).HashingAlgorithm(hashingAlgorithm).HashingAlgorithmIc(hashingAlgorithmIc).HashingAlgorithmIe(hashingAlgorithmIe).HashingAlgorithmIew(hashingAlgorithmIew).HashingAlgorithmIre(hashingAlgorithmIre).HashingAlgorithmIsw(hashingAlgorithmIsw).HashingAlgorithmN(hashingAlgorithmN).HashingAlgorithmNic(hashingAlgorithmNic).HashingAlgorithmNie(hashingAlgorithmNie).HashingAlgorithmNiew(hashingAlgorithmNiew).HashingAlgorithmNire(hashingAlgorithmNire).HashingAlgorithmNisw(hashingAlgorithmNisw).HashingAlgorithmNre(hashingAlgorithmNre).HashingAlgorithmRe(hashingAlgorithmRe).Id(id).IdN(idN).ImageFileChecksum(imageFileChecksum).ImageFileChecksumIc(imageFileChecksumIc).ImageFileChecksumIe(imageFileChecksumIe).ImageFileChecksumIew(imageFileChecksumIew).ImageFileChecksumIre(imageFileChecksumIre).ImageFileChecksumIsw(imageFileChecksumIsw).ImageFileChecksumN(imageFileChecksumN).ImageFileChecksumNic(imageFileChecksumNic).ImageFileChecksumNie(imageFileChecksumNie).ImageFileChecksumNiew(imageFileChecksumNiew).ImageFileChecksumNire(imageFileChecksumNire).ImageFileChecksumNisw(imageFileChecksumNisw).ImageFileChecksumNre(imageFileChecksumNre).ImageFileChecksumRe(imageFileChecksumRe).ImageFileName(imageFileName).ImageFileNameIc(imageFileNameIc).ImageFileNameIe(imageFileNameIe).ImageFileNameIew(imageFileNameIew).ImageFileNameIre(imageFileNameIre).ImageFileNameIsw(imageFileNameIsw).ImageFileNameN(imageFileNameN).ImageFileNameNic(imageFileNameNic).ImageFileNameNie(imageFileNameNie).ImageFileNameNiew(imageFileNameNiew).ImageFileNameNire(imageFileNameNire).ImageFileNameNisw(imageFileNameNisw).ImageFileNameNre(imageFileNameNre).ImageFileNameRe(imageFileNameRe).ImageFileSize(imageFileSize).ImageFileSizeGt(imageFileSizeGt).ImageFileSizeGte(imageFileSizeGte).ImageFileSizeIsnull(imageFileSizeIsnull).ImageFileSizeLt(imageFileSizeLt).ImageFileSizeLte(imageFileSizeLte).ImageFileSizeN(imageFileSizeN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).SoftwareVersion(softwareVersion).SoftwareVersionN(softwareVersionN).SoftwareVersionPlatform(softwareVersionPlatform).SoftwareVersionPlatformN(softwareVersionPlatformN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimSoftwareImageFilesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -41855,10 +42709,10 @@ Name | Type | Description  | Notes
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **defaultImage** | **bool** | Is default image for associated software version | 
  **deviceTypes** | **[]string** |  | 
- **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
+ **deviceTypesIsnull** | **bool** |  | 
  **deviceTypesN** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** | Devices (name or ID) is null | 
+ **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
  **downloadUrl** | **[]string** |  | 
  **downloadUrlIc** | **[]string** |  | 
@@ -41877,7 +42731,7 @@ Name | Type | Description  | Notes
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
  **externalIntegration** | **[]string** |  | 
- **externalIntegrationIsnull** | **bool** | External integration (name or ID) is null | 
+ **externalIntegrationIsnull** | **bool** |  | 
  **externalIntegrationN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDeviceTypes** | **bool** | Has device types | 
@@ -41945,6 +42799,8 @@ Name | Type | Description  | Notes
  **q** | **string** | Search | 
  **softwareVersion** | **[]string** |  | 
  **softwareVersionN** | **[]string** |  | 
+ **softwareVersionPlatform** | **[]string** |  | 
+ **softwareVersionPlatformN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
  **statusN** | **[]string** |  | 
@@ -41955,7 +42811,7 @@ Name | Type | Description  | Notes
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -41992,7 +42848,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42066,7 +42922,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42075,7 +42931,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -42109,7 +42965,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -42146,7 +43002,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42220,14 +43076,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software image file.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -42259,7 +43115,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -42296,12 +43152,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software image file.
-	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareImageFileRequest | 
+	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -42370,7 +43226,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42436,7 +43292,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42504,11 +43360,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableSoftwareVersionRequest := []openapiclient.BulkWritableSoftwareVersionRequest{*openapiclient.NewBulkWritableSoftwareVersionRequest("Id_example", "Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableSoftwareVersionRequest | 
+	bulkWritableSoftwareVersionRequest := []openapiclient.BulkWritableSoftwareVersionRequest{*openapiclient.NewBulkWritableSoftwareVersionRequest("Id_example", "Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableSoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -42572,11 +43428,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareVersionRequest | 
+	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -42640,7 +43496,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42711,7 +43567,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -42743,7 +43599,7 @@ func main() {
 	deviceTypesIsnull := true // bool | Device types (model or ID) is null (optional)
 	deviceTypesN := []string{"Inner_example"} // []string |  (optional)
 	devices := []string{"Inner_example"} // []string |  (optional)
-	devicesIsnull := true // bool | Devices (name or ID) is null (optional)
+	devicesIsnull := true // bool |  (optional)
 	devicesN := []string{"Inner_example"} // []string |  (optional)
 	documentationUrl := []string{"Inner_example"} // []string |  (optional)
 	documentationUrlIc := []string{"Inner_example"} // []string |  (optional)
@@ -42776,7 +43632,7 @@ func main() {
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	inventoryItems := []string{"Inner_example"} // []string |  (optional)
-	inventoryItemsIsnull := true // bool | Inventory items (name or ID) is null (optional)
+	inventoryItemsIsnull := true // bool |  (optional)
 	inventoryItemsN := []string{"Inner_example"} // []string |  (optional)
 	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
@@ -42800,7 +43656,7 @@ func main() {
 	releaseDateLte := []string{time.Now()} // []string |  (optional)
 	releaseDateN := []string{time.Now()} // []string |  (optional)
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
-	softwareImageFilesIsnull := true // bool | Software image files (image file name or ID) is null (optional)
+	softwareImageFilesIsnull := true // bool |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
@@ -42826,10 +43682,10 @@ func main() {
 	versionNre := []string{"Inner_example"} // []string |  (optional)
 	versionRe := []string{"Inner_example"} // []string |  (optional)
 	virtualMachines := []string{"Inner_example"} // []string |  (optional)
-	virtualMachinesIsnull := true // bool | Virtual machines (name or ID) is null (optional)
+	virtualMachinesIsnull := true // bool |  (optional)
 	virtualMachinesN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -42882,7 +43738,7 @@ Name | Type | Description  | Notes
  **deviceTypesIsnull** | **bool** | Device types (model or ID) is null | 
  **deviceTypesN** | **[]string** |  | 
  **devices** | **[]string** |  | 
- **devicesIsnull** | **bool** | Devices (name or ID) is null | 
+ **devicesIsnull** | **bool** |  | 
  **devicesN** | **[]string** |  | 
  **documentationUrl** | **[]string** |  | 
  **documentationUrlIc** | **[]string** |  | 
@@ -42915,7 +43771,7 @@ Name | Type | Description  | Notes
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **inventoryItems** | **[]string** |  | 
- **inventoryItemsIsnull** | **bool** | Inventory items (name or ID) is null | 
+ **inventoryItemsIsnull** | **bool** |  | 
  **inventoryItemsN** | **[]string** |  | 
  **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
@@ -42939,7 +43795,7 @@ Name | Type | Description  | Notes
  **releaseDateLte** | **[]string** |  | 
  **releaseDateN** | **[]string** |  | 
  **softwareImageFiles** | **[]string** |  | 
- **softwareImageFilesIsnull** | **bool** | Software image files (image file name or ID) is null | 
+ **softwareImageFilesIsnull** | **bool** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
@@ -42965,10 +43821,10 @@ Name | Type | Description  | Notes
  **versionNre** | **[]string** |  | 
  **versionRe** | **[]string** |  | 
  **virtualMachines** | **[]string** |  | 
- **virtualMachinesIsnull** | **bool** | Virtual machines (name or ID) is null | 
+ **virtualMachinesIsnull** | **bool** |  | 
  **virtualMachinesN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -43005,7 +43861,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43079,7 +43935,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43088,7 +43944,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -43122,7 +43978,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -43159,7 +44015,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43233,14 +44089,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software version.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -43272,7 +44128,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -43309,12 +44165,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software version.
-	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareVersionRequest | 
+	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -43383,7 +44239,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43449,7 +44305,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43517,7 +44373,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43585,7 +44441,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43653,7 +44509,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43708,7 +44564,7 @@ Name | Type | Description  | Notes
 
 ## DcimVirtualChassisList
 
-> PaginatedVirtualChassisList DcimVirtualChassisList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedVirtualChassisList DcimVirtualChassisList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -43724,7 +44580,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -43769,7 +44625,7 @@ func main() {
 	location := []string{"Inner_example"} // []string |  (optional)
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	master := []string{"Inner_example"} // []string |  (optional)
-	masterIsnull := true // bool | Master (name or ID) is null (optional)
+	masterIsnull := true // bool |  (optional)
 	masterN := []string{"Inner_example"} // []string |  (optional)
 	members := []string{"Inner_example"} // []string |  (optional)
 	membersIsnull := true // bool | Device members (name or ID) is null (optional)
@@ -43800,12 +44656,15 @@ func main() {
 	tenant := []string{"Inner_example"} // []string |  (optional)
 	tenantIsnull := true // bool | Tenant (name or ID) is null (optional)
 	tenantN := []string{"Inner_example"} // []string |  (optional)
+	tenantGroup := []string{"Inner_example"} // []string |  (optional)
+	tenantGroupIsnull := true // bool | Tenant Group (name or ID) is null (optional)
+	tenantGroupN := []string{"Inner_example"} // []string |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimVirtualChassisList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimVirtualChassisList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Domain(domain).DomainIc(domainIc).DomainIe(domainIe).DomainIew(domainIew).DomainIre(domainIre).DomainIsw(domainIsw).DomainN(domainN).DomainNic(domainNic).DomainNie(domainNie).DomainNiew(domainNiew).DomainNire(domainNire).DomainNisw(domainNisw).DomainNre(domainNre).DomainRe(domainRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasMembers(hasMembers).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Master(master).MasterIsnull(masterIsnull).MasterN(masterN).Members(members).MembersIsnull(membersIsnull).MembersN(membersN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimVirtualChassisList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -43867,7 +44726,7 @@ Name | Type | Description  | Notes
  **location** | **[]string** |  | 
  **locationN** | **[]string** |  | 
  **master** | **[]string** |  | 
- **masterIsnull** | **bool** | Master (name or ID) is null | 
+ **masterIsnull** | **bool** |  | 
  **masterN** | **[]string** |  | 
  **members** | **[]string** |  | 
  **membersIsnull** | **bool** | Device members (name or ID) is null | 
@@ -43898,8 +44757,11 @@ Name | Type | Description  | Notes
  **tenant** | **[]string** |  | 
  **tenantIsnull** | **bool** | Tenant (name or ID) is null | 
  **tenantN** | **[]string** |  | 
+ **tenantGroup** | **[]string** |  | 
+ **tenantGroupIsnull** | **bool** | Tenant Group (name or ID) is null | 
+ **tenantGroupN** | **[]string** |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -43936,7 +44798,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44010,7 +44872,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44019,7 +44881,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -44053,7 +44915,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -44090,7 +44952,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44164,14 +45026,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual chassis.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -44203,7 +45065,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -44240,7 +45102,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44314,7 +45176,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44380,7 +45242,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44448,11 +45310,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	bulkWritableVirtualDeviceContextRequest := []openapiclient.BulkWritableVirtualDeviceContextRequest{*openapiclient.NewBulkWritableVirtualDeviceContextRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVirtualDeviceContextRequest | 
+	bulkWritableVirtualDeviceContextRequest := []openapiclient.BulkWritableVirtualDeviceContextRequest{*openapiclient.NewBulkWritableVirtualDeviceContextRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -44516,11 +45378,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
-	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualDeviceContextRequest | 
+	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -44584,7 +45446,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44639,7 +45501,7 @@ Name | Type | Description  | Notes
 
 ## DcimVirtualDeviceContextsList
 
-> PaginatedVirtualDeviceContextList DcimVirtualDeviceContextsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).Id(id).IdN(idN).Identifier(identifier).IdentifierGt(identifierGt).IdentifierGte(identifierGte).IdentifierIsnull(identifierIsnull).IdentifierLt(identifierLt).IdentifierLte(identifierLte).IdentifierN(identifierN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedVirtualDeviceContextList DcimVirtualDeviceContextsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasTenant(hasTenant).Id(id).IdN(idN).Identifier(identifier).IdentifierGt(identifierGt).IdentifierGte(identifierGte).IdentifierIsnull(identifierIsnull).IdentifierLt(identifierLt).IdentifierLte(identifierLte).IdentifierN(identifierN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -44655,7 +45517,7 @@ import (
 	"fmt"
 	"os"
     "time"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44690,6 +45552,7 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasInterfaces := true // bool | Has Interfaces (optional)
 	hasPrimaryIp := true // bool | Has a primary IP (optional)
+	hasTenant := true // bool | Has tenant (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	identifier := []int32{int32(123)} // []int32 |  (optional)
@@ -44749,11 +45612,11 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimVirtualDeviceContextsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).Id(id).IdN(idN).Identifier(identifier).IdentifierGt(identifierGt).IdentifierGte(identifierGte).IdentifierIsnull(identifierIsnull).IdentifierLt(identifierLt).IdentifierLte(identifierLte).IdentifierN(identifierN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimVirtualDeviceContextsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceN(deviceN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasInterfaces(hasInterfaces).HasPrimaryIp(hasPrimaryIp).HasTenant(hasTenant).Id(id).IdN(idN).Identifier(identifier).IdentifierGt(identifierGt).IdentifierGte(identifierGte).IdentifierIsnull(identifierIsnull).IdentifierLt(identifierLt).IdentifierLte(identifierLte).IdentifierN(identifierN).Interfaces(interfaces).InterfacesN(interfacesN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PrimaryIp4(primaryIp4).PrimaryIp6(primaryIp6).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimVirtualDeviceContextsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -44805,6 +45668,7 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasInterfaces** | **bool** | Has Interfaces | 
  **hasPrimaryIp** | **bool** | Has a primary IP | 
+ **hasTenant** | **bool** | Has tenant | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **identifier** | **[]int32** |  | 
@@ -44864,7 +45728,7 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -44901,7 +45765,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44975,7 +45839,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -44984,7 +45848,7 @@ func main() {
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -45018,7 +45882,7 @@ Name | Type | Description  | Notes
  **limit** | **int32** | Number of results to return per page. | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -45055,7 +45919,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
@@ -45129,14 +45993,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual device context.
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -45168,7 +46032,7 @@ Name | Type | Description  | Notes
 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 
@@ -45205,12 +46069,12 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual device context.
-	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualDeviceContextRequest | 
+	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

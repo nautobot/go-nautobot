@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**Vrf** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Prefix** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Vrf** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Prefix** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewVRFPrefixAssignmentRequest
 
-`func NewVRFPrefixAssignmentRequest(vrf BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *VRFPrefixAssignmentRequest`
+`func NewVRFPrefixAssignmentRequest(vrf ApprovalWorkflowStageResponseApprovalWorkflowStage, prefix ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VRFPrefixAssignmentRequest`
 
 NewVRFPrefixAssignmentRequest instantiates a new VRFPrefixAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -54,40 +54,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetVrf
 
-`func (o *VRFPrefixAssignmentRequest) GetVrf() BulkWritableCableRequestStatus`
+`func (o *VRFPrefixAssignmentRequest) GetVrf() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *VRFPrefixAssignmentRequest) GetVrfOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VRFPrefixAssignmentRequest) GetVrfOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *VRFPrefixAssignmentRequest) SetVrf(v BulkWritableCableRequestStatus)`
+`func (o *VRFPrefixAssignmentRequest) SetVrf(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVrf sets Vrf field to given value.
 
 
 ### GetPrefix
 
-`func (o *VRFPrefixAssignmentRequest) GetPrefix() BulkWritableCableRequestStatus`
+`func (o *VRFPrefixAssignmentRequest) GetPrefix() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetPrefix returns the Prefix field if non-nil, zero value otherwise.
 
 ### GetPrefixOk
 
-`func (o *VRFPrefixAssignmentRequest) GetPrefixOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VRFPrefixAssignmentRequest) GetPrefixOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetPrefixOk returns a tuple with the Prefix field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrefix
 
-`func (o *VRFPrefixAssignmentRequest) SetPrefix(v BulkWritableCableRequestStatus)`
+`func (o *VRFPrefixAssignmentRequest) SetPrefix(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetPrefix sets Prefix field to given value.
 

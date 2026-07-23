@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **IsActive** | Pointer to **bool** | Designates whether this user should be treated as active. Unselect this instead of deleting accounts. | [optional] 
 **DateJoined** | Pointer to **time.Time** |  | [optional] 
 **ConfigData** | Pointer to **interface{}** |  | [optional] 
-**Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) | The groups this user belongs to. A user will get all permissions granted to each of their groups. | [optional] 
+**Groups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) | The groups this user belongs to. A user will get all permissions granted to each of their groups. | [optional] 
 
 ## Methods
 
@@ -364,20 +364,20 @@ HasConfigData returns a boolean if a field has been set.
 UnsetConfigData ensures that no value is present for ConfigData, not even an explicit nil
 ### GetGroups
 
-`func (o *PatchedBulkWritableUserRequest) GetGroups() []BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableUserRequest) GetGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetGroups returns the Groups field if non-nil, zero value otherwise.
 
 ### GetGroupsOk
 
-`func (o *PatchedBulkWritableUserRequest) GetGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableUserRequest) GetGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroups
 
-`func (o *PatchedBulkWritableUserRequest) SetGroups(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableUserRequest) SetGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetGroups sets Groups field to given value.
 

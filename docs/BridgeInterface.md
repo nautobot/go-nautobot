@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | Pointer to [**BulkWritableCableRequestStatusId**](BulkWritableCableRequestStatusId.md) |  | [optional] 
+**Id** | Pointer to [**ApprovalWorkflowApprovalWorkflowDefinitionId**](ApprovalWorkflowApprovalWorkflowDefinitionId.md) |  | [optional] 
 **ObjectType** | Pointer to **string** |  | [optional] 
 **Url** | Pointer to **string** |  | [optional] 
 
@@ -29,20 +29,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetId
 
-`func (o *BridgeInterface) GetId() BulkWritableCableRequestStatusId`
+`func (o *BridgeInterface) GetId() ApprovalWorkflowApprovalWorkflowDefinitionId`
 
 GetId returns the Id field if non-nil, zero value otherwise.
 
 ### GetIdOk
 
-`func (o *BridgeInterface) GetIdOk() (*BulkWritableCableRequestStatusId, bool)`
+`func (o *BridgeInterface) GetIdOk() (*ApprovalWorkflowApprovalWorkflowDefinitionId, bool)`
 
 GetIdOk returns a tuple with the Id field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetId
 
-`func (o *BridgeInterface) SetId(v BulkWritableCableRequestStatusId)`
+`func (o *BridgeInterface) SetId(v ApprovalWorkflowApprovalWorkflowDefinitionId)`
 
 SetId sets Id field to given value.
 

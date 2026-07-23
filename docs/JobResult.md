@@ -22,18 +22,22 @@ Name | Type | Description | Notes
 **CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
 **Traceback** | Pointer to **NullableString** |  | [optional] 
 **Meta** | **interface{}** |  | [readonly] 
-**JobModel** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**User** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ScheduledJob** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DebugLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**SuccessLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**InfoLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**WarningLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**ErrorLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**JobModel** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ScheduledJob** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **ComputedFields** | **map[string]interface{}** |  | [readonly] 
-**Files** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
 
 ## Methods
 
 ### NewJobResult
 
-`func NewJobResult(objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, computedFields map[string]interface{}, files []BulkWritableCableRequestStatus, ) *JobResult`
+`func NewJobResult(objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, computedFields map[string]interface{}, ) *JobResult`
 
 NewJobResult instantiates a new JobResult object
 This constructor will assign default values to properties that have it defined,
@@ -553,22 +557,197 @@ SetMeta sets Meta field to given value.
 `func (o *JobResult) UnsetMeta()`
 
 UnsetMeta ensures that no value is present for Meta, not even an explicit nil
+### GetDebugLogCount
+
+`func (o *JobResult) GetDebugLogCount() int32`
+
+GetDebugLogCount returns the DebugLogCount field if non-nil, zero value otherwise.
+
+### GetDebugLogCountOk
+
+`func (o *JobResult) GetDebugLogCountOk() (*int32, bool)`
+
+GetDebugLogCountOk returns a tuple with the DebugLogCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDebugLogCount
+
+`func (o *JobResult) SetDebugLogCount(v int32)`
+
+SetDebugLogCount sets DebugLogCount field to given value.
+
+### HasDebugLogCount
+
+`func (o *JobResult) HasDebugLogCount() bool`
+
+HasDebugLogCount returns a boolean if a field has been set.
+
+### SetDebugLogCountNil
+
+`func (o *JobResult) SetDebugLogCountNil(b bool)`
+
+ SetDebugLogCountNil sets the value for DebugLogCount to be an explicit nil
+
+### UnsetDebugLogCount
+`func (o *JobResult) UnsetDebugLogCount()`
+
+UnsetDebugLogCount ensures that no value is present for DebugLogCount, not even an explicit nil
+### GetSuccessLogCount
+
+`func (o *JobResult) GetSuccessLogCount() int32`
+
+GetSuccessLogCount returns the SuccessLogCount field if non-nil, zero value otherwise.
+
+### GetSuccessLogCountOk
+
+`func (o *JobResult) GetSuccessLogCountOk() (*int32, bool)`
+
+GetSuccessLogCountOk returns a tuple with the SuccessLogCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSuccessLogCount
+
+`func (o *JobResult) SetSuccessLogCount(v int32)`
+
+SetSuccessLogCount sets SuccessLogCount field to given value.
+
+### HasSuccessLogCount
+
+`func (o *JobResult) HasSuccessLogCount() bool`
+
+HasSuccessLogCount returns a boolean if a field has been set.
+
+### SetSuccessLogCountNil
+
+`func (o *JobResult) SetSuccessLogCountNil(b bool)`
+
+ SetSuccessLogCountNil sets the value for SuccessLogCount to be an explicit nil
+
+### UnsetSuccessLogCount
+`func (o *JobResult) UnsetSuccessLogCount()`
+
+UnsetSuccessLogCount ensures that no value is present for SuccessLogCount, not even an explicit nil
+### GetInfoLogCount
+
+`func (o *JobResult) GetInfoLogCount() int32`
+
+GetInfoLogCount returns the InfoLogCount field if non-nil, zero value otherwise.
+
+### GetInfoLogCountOk
+
+`func (o *JobResult) GetInfoLogCountOk() (*int32, bool)`
+
+GetInfoLogCountOk returns a tuple with the InfoLogCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetInfoLogCount
+
+`func (o *JobResult) SetInfoLogCount(v int32)`
+
+SetInfoLogCount sets InfoLogCount field to given value.
+
+### HasInfoLogCount
+
+`func (o *JobResult) HasInfoLogCount() bool`
+
+HasInfoLogCount returns a boolean if a field has been set.
+
+### SetInfoLogCountNil
+
+`func (o *JobResult) SetInfoLogCountNil(b bool)`
+
+ SetInfoLogCountNil sets the value for InfoLogCount to be an explicit nil
+
+### UnsetInfoLogCount
+`func (o *JobResult) UnsetInfoLogCount()`
+
+UnsetInfoLogCount ensures that no value is present for InfoLogCount, not even an explicit nil
+### GetWarningLogCount
+
+`func (o *JobResult) GetWarningLogCount() int32`
+
+GetWarningLogCount returns the WarningLogCount field if non-nil, zero value otherwise.
+
+### GetWarningLogCountOk
+
+`func (o *JobResult) GetWarningLogCountOk() (*int32, bool)`
+
+GetWarningLogCountOk returns a tuple with the WarningLogCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetWarningLogCount
+
+`func (o *JobResult) SetWarningLogCount(v int32)`
+
+SetWarningLogCount sets WarningLogCount field to given value.
+
+### HasWarningLogCount
+
+`func (o *JobResult) HasWarningLogCount() bool`
+
+HasWarningLogCount returns a boolean if a field has been set.
+
+### SetWarningLogCountNil
+
+`func (o *JobResult) SetWarningLogCountNil(b bool)`
+
+ SetWarningLogCountNil sets the value for WarningLogCount to be an explicit nil
+
+### UnsetWarningLogCount
+`func (o *JobResult) UnsetWarningLogCount()`
+
+UnsetWarningLogCount ensures that no value is present for WarningLogCount, not even an explicit nil
+### GetErrorLogCount
+
+`func (o *JobResult) GetErrorLogCount() int32`
+
+GetErrorLogCount returns the ErrorLogCount field if non-nil, zero value otherwise.
+
+### GetErrorLogCountOk
+
+`func (o *JobResult) GetErrorLogCountOk() (*int32, bool)`
+
+GetErrorLogCountOk returns a tuple with the ErrorLogCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetErrorLogCount
+
+`func (o *JobResult) SetErrorLogCount(v int32)`
+
+SetErrorLogCount sets ErrorLogCount field to given value.
+
+### HasErrorLogCount
+
+`func (o *JobResult) HasErrorLogCount() bool`
+
+HasErrorLogCount returns a boolean if a field has been set.
+
+### SetErrorLogCountNil
+
+`func (o *JobResult) SetErrorLogCountNil(b bool)`
+
+ SetErrorLogCountNil sets the value for ErrorLogCount to be an explicit nil
+
+### UnsetErrorLogCount
+`func (o *JobResult) UnsetErrorLogCount()`
+
+UnsetErrorLogCount ensures that no value is present for ErrorLogCount, not even an explicit nil
 ### GetJobModel
 
-`func (o *JobResult) GetJobModel() BulkWritableCircuitRequestTenant`
+`func (o *JobResult) GetJobModel() ApprovalWorkflowUser`
 
 GetJobModel returns the JobModel field if non-nil, zero value otherwise.
 
 ### GetJobModelOk
 
-`func (o *JobResult) GetJobModelOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *JobResult) GetJobModelOk() (*ApprovalWorkflowUser, bool)`
 
 GetJobModelOk returns a tuple with the JobModel field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJobModel
 
-`func (o *JobResult) SetJobModel(v BulkWritableCircuitRequestTenant)`
+`func (o *JobResult) SetJobModel(v ApprovalWorkflowUser)`
 
 SetJobModel sets JobModel field to given value.
 
@@ -590,20 +769,20 @@ HasJobModel returns a boolean if a field has been set.
 UnsetJobModel ensures that no value is present for JobModel, not even an explicit nil
 ### GetUser
 
-`func (o *JobResult) GetUser() BulkWritableCircuitRequestTenant`
+`func (o *JobResult) GetUser() ApprovalWorkflowUser`
 
 GetUser returns the User field if non-nil, zero value otherwise.
 
 ### GetUserOk
 
-`func (o *JobResult) GetUserOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *JobResult) GetUserOk() (*ApprovalWorkflowUser, bool)`
 
 GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUser
 
-`func (o *JobResult) SetUser(v BulkWritableCircuitRequestTenant)`
+`func (o *JobResult) SetUser(v ApprovalWorkflowUser)`
 
 SetUser sets User field to given value.
 
@@ -625,20 +804,20 @@ HasUser returns a boolean if a field has been set.
 UnsetUser ensures that no value is present for User, not even an explicit nil
 ### GetScheduledJob
 
-`func (o *JobResult) GetScheduledJob() BulkWritableCircuitRequestTenant`
+`func (o *JobResult) GetScheduledJob() ApprovalWorkflowUser`
 
 GetScheduledJob returns the ScheduledJob field if non-nil, zero value otherwise.
 
 ### GetScheduledJobOk
 
-`func (o *JobResult) GetScheduledJobOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *JobResult) GetScheduledJobOk() (*ApprovalWorkflowUser, bool)`
 
 GetScheduledJobOk returns a tuple with the ScheduledJob field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetScheduledJob
 
-`func (o *JobResult) SetScheduledJob(v BulkWritableCircuitRequestTenant)`
+`func (o *JobResult) SetScheduledJob(v ApprovalWorkflowUser)`
 
 SetScheduledJob sets ScheduledJob field to given value.
 
@@ -701,26 +880,6 @@ and a boolean to check if the value has been set.
 `func (o *JobResult) SetComputedFields(v map[string]interface{})`
 
 SetComputedFields sets ComputedFields field to given value.
-
-
-### GetFiles
-
-`func (o *JobResult) GetFiles() []BulkWritableCableRequestStatus`
-
-GetFiles returns the Files field if non-nil, zero value otherwise.
-
-### GetFilesOk
-
-`func (o *JobResult) GetFilesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetFilesOk returns a tuple with the Files field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetFiles
-
-`func (o *JobResult) SetFiles(v []BulkWritableCableRequestStatus)`
-
-SetFiles sets Files field to given value.
 
 
 

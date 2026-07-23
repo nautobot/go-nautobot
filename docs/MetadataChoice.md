@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Value** | **string** |  | 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 
 ### NewMetadataChoice
 
-`func NewMetadataChoice(objectType string, display string, url string, naturalSlug string, value string, metadataType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *MetadataChoice`
+`func NewMetadataChoice(objectType string, display string, url string, naturalSlug string, value string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, ) *MetadataChoice`
 
 NewMetadataChoice instantiates a new MetadataChoice object
 This constructor will assign default values to properties that have it defined,
@@ -186,20 +186,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetMetadataType
 
-`func (o *MetadataChoice) GetMetadataType() BulkWritableCableRequestStatus`
+`func (o *MetadataChoice) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *MetadataChoice) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *MetadataChoice) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *MetadataChoice) SetMetadataType(v BulkWritableCableRequestStatus)`
+`func (o *MetadataChoice) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetMetadataType sets MetadataType field to given value.
 

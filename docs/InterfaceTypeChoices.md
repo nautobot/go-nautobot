@@ -9,6 +9,8 @@
 
 * `LAG` (value: `"lag"`)
 
+* `TUNNEL` (value: `"tunnel"`)
+
 * `_100BASE_FX` (value: `"100base-fx"`)
 
 * `_100BASE_LFX` (value: `"100base-lfx"`)

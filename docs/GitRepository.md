@@ -15,12 +15,12 @@ Name | Type | Description | Notes
 **RemoteUrl** | **string** | Only HTTP and HTTPS URLs are presently supported | 
 **Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
 **CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -288,20 +288,20 @@ HasCurrentHead returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
-`func (o *GitRepository) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *GitRepository) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *GitRepository) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *GitRepository) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *GitRepository) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *GitRepository) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -428,20 +428,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *GitRepository) GetTags() []BulkWritableCableRequestStatus`
+`func (o *GitRepository) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *GitRepository) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *GitRepository) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *GitRepository) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *GitRepository) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

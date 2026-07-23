@@ -1,0 +1,87 @@
+---
+x-nautobot-base: &nautobot-base
+  image: "ghcr.io/nautobot/nautobot:${NAUTOBOT_VER}-py${PYTHON_VER}"
+  env_file:
+    - "./nautobot_dev.env"
+  tty: true
+  volumes:
+    - "./nautobot_config.py:/opt/nautobot/nautobot_config.py"
+
+services:
+  get-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      nautobot:
+        condition: "service_healthy"
+    environment:
+      - NAUTOBOT_VER=${NAUTOBOT_VER}
+    volumes:
+      - "../../:/client"
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+  nautobot:
+    healthcheck:
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 15
+      test:
+        - "CMD"
+        - "curl"
+        - "-f"
+        - "http://localhost:8080/health/"
+    command: "nautobot-server runserver 0.0.0.0:8080"
+    # No host port publish needed: the get-api container reaches Nautobot over the
+    # internal compose network (http://nautobot:8080). Publishing 8080 to the host
+    # collides with a locally running Nautobot dev stack.
+    depends_on:
+      redis:
+        condition: "service_started"
+      db:
+        condition: "service_healthy"
+    <<: *nautobot-base
+  # NOTE: I'ts not necessary to have the worker running
+  # celery_worker:
+  #   healthcheck:
+  #     interval: "30s"
+  #     timeout: "10s"
+  #     start_period: "30s"
+  #     retries: 3
+  #     test: ["CMD", "nautobot-server", "health_check"]
+  #   depends_on:
+  #     nautobot:
+  #       condition: "service_healthy"
+  #     db:
+  #       condition: "service_healthy"
+  #   entrypoint:
+  #     - "sh"
+  #     - "-c"  # this is to evaluate the $NAUTOBOT_LOG_LEVEL from the env
+  #     - "nautobot-server celery worker -B -l $$NAUTOBOT_LOG_LEVEL"  # $$ because of docker-compose
+  #   <<: *nautobot-base
+  db:
+    image: "postgres:17-alpine"
+    env_file:
+      - "nautobot_dev.env"
+    volumes:
+      - "postgres_data:/var/lib/postgresql/data"
+    # ports:
+    #   - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: "pg_isready --username=$$POSTGRES_USER --dbname=$$POSTGRES_DB"
+      interval: "10s"
+      timeout: "5s"
+      retries: 10
+  redis:
+    image: "redis:6-alpine"
+    command:
+      - "sh"
+      - "-c"  # this is to evaluate the $REDIS_PASSWORD from the env
+      - "redis-server --appendonly yes --requirepass $$NAUTOBOT_REDIS_PASSWORD"
+    env_file:
+      - "nautobot_dev.env"
+
+volumes:
+  postgres_data: {}

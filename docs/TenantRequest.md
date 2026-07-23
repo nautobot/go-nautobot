@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**TenantGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**TenantGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -129,20 +129,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetTenantGroup
 
-`func (o *TenantRequest) GetTenantGroup() BulkWritableCircuitRequestTenant`
+`func (o *TenantRequest) GetTenantGroup() ApprovalWorkflowUser`
 
 GetTenantGroup returns the TenantGroup field if non-nil, zero value otherwise.
 
 ### GetTenantGroupOk
 
-`func (o *TenantRequest) GetTenantGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *TenantRequest) GetTenantGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantGroupOk returns a tuple with the TenantGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenantGroup
 
-`func (o *TenantRequest) SetTenantGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *TenantRequest) SetTenantGroup(v ApprovalWorkflowUser)`
 
 SetTenantGroup sets TenantGroup field to given value.
 
@@ -164,20 +164,20 @@ HasTenantGroup returns a boolean if a field has been set.
 UnsetTenantGroup ensures that no value is present for TenantGroup, not even an explicit nil
 ### GetTags
 
-`func (o *TenantRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *TenantRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *TenantRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *TenantRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *TenantRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *TenantRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -214,20 +214,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *TenantRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *TenantRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *TenantRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *TenantRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *TenantRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *TenantRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

@@ -13,16 +13,13 @@ on:
 jobs:
   release-go-nautobot:
     runs-on: ubuntu-latest
-    env:
-      NAUTOBOT_VER: "${{ github.event.inputs.tag }}"
-      PYTHON_VER: "3.11"
     steps:
       - name: "Get go-nautobot generator code"
         uses: actions/checkout@v3
       - name: "Start Nautobot and Generator"
         run: |
           cd development
-          docker compose --project-name go_nautobot -f docker-compose.yml up --build --abort-on-container-exit
+          make
       - name: "Commit Changes"
         run: |
           TAG=v$( cat api/nautobot_version )

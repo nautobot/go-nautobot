@@ -12,15 +12,15 @@ Name | Type | Description | Notes
 **IsPrimary** | Pointer to **bool** | Is primary address on interface | [optional] 
 **IsSecondary** | Pointer to **bool** | Is secondary address on interface | [optional] 
 **IsStandby** | Pointer to **bool** | Is standby address on interface | [optional] 
-**IpAddress** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Interface** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VmInterface** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**IpAddress** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Interface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VmInterface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
 ### NewIPAddressToInterfaceRequest
 
-`func NewIPAddressToInterfaceRequest(ipAddress BulkWritableCableRequestStatus, ) *IPAddressToInterfaceRequest`
+`func NewIPAddressToInterfaceRequest(ipAddress ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *IPAddressToInterfaceRequest`
 
 NewIPAddressToInterfaceRequest instantiates a new IPAddressToInterfaceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -237,40 +237,40 @@ HasIsStandby returns a boolean if a field has been set.
 
 ### GetIpAddress
 
-`func (o *IPAddressToInterfaceRequest) GetIpAddress() BulkWritableCableRequestStatus`
+`func (o *IPAddressToInterfaceRequest) GetIpAddress() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetIpAddress returns the IpAddress field if non-nil, zero value otherwise.
 
 ### GetIpAddressOk
 
-`func (o *IPAddressToInterfaceRequest) GetIpAddressOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *IPAddressToInterfaceRequest) GetIpAddressOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIpAddress
 
-`func (o *IPAddressToInterfaceRequest) SetIpAddress(v BulkWritableCableRequestStatus)`
+`func (o *IPAddressToInterfaceRequest) SetIpAddress(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetIpAddress sets IpAddress field to given value.
 
 
 ### GetInterface
 
-`func (o *IPAddressToInterfaceRequest) GetInterface() BulkWritableCircuitRequestTenant`
+`func (o *IPAddressToInterfaceRequest) GetInterface() ApprovalWorkflowUser`
 
 GetInterface returns the Interface field if non-nil, zero value otherwise.
 
 ### GetInterfaceOk
 
-`func (o *IPAddressToInterfaceRequest) GetInterfaceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddressToInterfaceRequest) GetInterfaceOk() (*ApprovalWorkflowUser, bool)`
 
 GetInterfaceOk returns a tuple with the Interface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInterface
 
-`func (o *IPAddressToInterfaceRequest) SetInterface(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddressToInterfaceRequest) SetInterface(v ApprovalWorkflowUser)`
 
 SetInterface sets Interface field to given value.
 
@@ -292,20 +292,20 @@ HasInterface returns a boolean if a field has been set.
 UnsetInterface ensures that no value is present for Interface, not even an explicit nil
 ### GetVmInterface
 
-`func (o *IPAddressToInterfaceRequest) GetVmInterface() BulkWritableCircuitRequestTenant`
+`func (o *IPAddressToInterfaceRequest) GetVmInterface() ApprovalWorkflowUser`
 
 GetVmInterface returns the VmInterface field if non-nil, zero value otherwise.
 
 ### GetVmInterfaceOk
 
-`func (o *IPAddressToInterfaceRequest) GetVmInterfaceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *IPAddressToInterfaceRequest) GetVmInterfaceOk() (*ApprovalWorkflowUser, bool)`
 
 GetVmInterfaceOk returns a tuple with the VmInterface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVmInterface
 
-`func (o *IPAddressToInterfaceRequest) SetVmInterface(v BulkWritableCircuitRequestTenant)`
+`func (o *IPAddressToInterfaceRequest) SetVmInterface(v ApprovalWorkflowUser)`
 
 SetVmInterface sets VmInterface field to given value.
 

@@ -8,14 +8,14 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Status** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ImportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**ExportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Status** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Namespace** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ImportTargets** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**ExportTargets** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -143,20 +143,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *VRFRequest) GetStatus() BulkWritableCircuitRequestTenant`
+`func (o *VRFRequest) GetStatus() ApprovalWorkflowUser`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *VRFRequest) GetStatusOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VRFRequest) GetStatusOk() (*ApprovalWorkflowUser, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *VRFRequest) SetStatus(v BulkWritableCircuitRequestTenant)`
+`func (o *VRFRequest) SetStatus(v ApprovalWorkflowUser)`
 
 SetStatus sets Status field to given value.
 
@@ -178,20 +178,20 @@ HasStatus returns a boolean if a field has been set.
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetNamespace
 
-`func (o *VRFRequest) GetNamespace() BulkWritableCableRequestStatus`
+`func (o *VRFRequest) GetNamespace() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetNamespace returns the Namespace field if non-nil, zero value otherwise.
 
 ### GetNamespaceOk
 
-`func (o *VRFRequest) GetNamespaceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VRFRequest) GetNamespaceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetNamespaceOk returns a tuple with the Namespace field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNamespace
 
-`func (o *VRFRequest) SetNamespace(v BulkWritableCableRequestStatus)`
+`func (o *VRFRequest) SetNamespace(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetNamespace sets Namespace field to given value.
 
@@ -203,20 +203,20 @@ HasNamespace returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *VRFRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *VRFRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *VRFRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VRFRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *VRFRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *VRFRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -238,20 +238,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetImportTargets
 
-`func (o *VRFRequest) GetImportTargets() []BulkWritableCableRequestStatus`
+`func (o *VRFRequest) GetImportTargets() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetImportTargets returns the ImportTargets field if non-nil, zero value otherwise.
 
 ### GetImportTargetsOk
 
-`func (o *VRFRequest) GetImportTargetsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VRFRequest) GetImportTargetsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetImportTargetsOk returns a tuple with the ImportTargets field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetImportTargets
 
-`func (o *VRFRequest) SetImportTargets(v []BulkWritableCableRequestStatus)`
+`func (o *VRFRequest) SetImportTargets(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetImportTargets sets ImportTargets field to given value.
 
@@ -263,20 +263,20 @@ HasImportTargets returns a boolean if a field has been set.
 
 ### GetExportTargets
 
-`func (o *VRFRequest) GetExportTargets() []BulkWritableCableRequestStatus`
+`func (o *VRFRequest) GetExportTargets() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetExportTargets returns the ExportTargets field if non-nil, zero value otherwise.
 
 ### GetExportTargetsOk
 
-`func (o *VRFRequest) GetExportTargetsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VRFRequest) GetExportTargetsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetExportTargetsOk returns a tuple with the ExportTargets field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetExportTargets
 
-`func (o *VRFRequest) SetExportTargets(v []BulkWritableCableRequestStatus)`
+`func (o *VRFRequest) SetExportTargets(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetExportTargets sets ExportTargets field to given value.
 
@@ -288,20 +288,20 @@ HasExportTargets returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *VRFRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VRFRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VRFRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VRFRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VRFRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VRFRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -338,20 +338,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *VRFRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *VRFRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *VRFRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *VRFRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *VRFRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *VRFRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

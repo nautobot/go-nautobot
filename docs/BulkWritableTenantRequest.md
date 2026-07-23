@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**TenantGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**TenantGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -124,20 +124,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetTenantGroup
 
-`func (o *BulkWritableTenantRequest) GetTenantGroup() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableTenantRequest) GetTenantGroup() ApprovalWorkflowUser`
 
 GetTenantGroup returns the TenantGroup field if non-nil, zero value otherwise.
 
 ### GetTenantGroupOk
 
-`func (o *BulkWritableTenantRequest) GetTenantGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableTenantRequest) GetTenantGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantGroupOk returns a tuple with the TenantGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenantGroup
 
-`func (o *BulkWritableTenantRequest) SetTenantGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableTenantRequest) SetTenantGroup(v ApprovalWorkflowUser)`
 
 SetTenantGroup sets TenantGroup field to given value.
 
@@ -159,20 +159,20 @@ HasTenantGroup returns a boolean if a field has been set.
 UnsetTenantGroup ensures that no value is present for TenantGroup, not even an explicit nil
 ### GetTags
 
-`func (o *BulkWritableTenantRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableTenantRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableTenantRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableTenantRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableTenantRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableTenantRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -209,20 +209,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableTenantRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableTenantRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableTenantRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableTenantRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableTenantRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableTenantRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

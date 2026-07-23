@@ -8,16 +8,16 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Provider** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Provider** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableProviderNetworkRequest
 
-`func NewBulkWritableProviderNetworkRequest(id string, name string, provider BulkWritableCableRequestStatus, ) *BulkWritableProviderNetworkRequest`
+`func NewBulkWritableProviderNetworkRequest(id string, name string, provider ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableProviderNetworkRequest`
 
 NewBulkWritableProviderNetworkRequest instantiates a new BulkWritableProviderNetworkRequest object
 This constructor will assign default values to properties that have it defined,
@@ -124,40 +124,40 @@ HasComments returns a boolean if a field has been set.
 
 ### GetProvider
 
-`func (o *BulkWritableProviderNetworkRequest) GetProvider() BulkWritableCableRequestStatus`
+`func (o *BulkWritableProviderNetworkRequest) GetProvider() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetProvider returns the Provider field if non-nil, zero value otherwise.
 
 ### GetProviderOk
 
-`func (o *BulkWritableProviderNetworkRequest) GetProviderOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableProviderNetworkRequest) GetProviderOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetProvider
 
-`func (o *BulkWritableProviderNetworkRequest) SetProvider(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableProviderNetworkRequest) SetProvider(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetProvider sets Provider field to given value.
 
 
 ### GetTags
 
-`func (o *BulkWritableProviderNetworkRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableProviderNetworkRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableProviderNetworkRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableProviderNetworkRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableProviderNetworkRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableProviderNetworkRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -194,20 +194,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableProviderNetworkRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableProviderNetworkRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableProviderNetworkRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableProviderNetworkRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableProviderNetworkRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableProviderNetworkRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

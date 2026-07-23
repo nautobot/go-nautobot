@@ -10,12 +10,12 @@ Name | Type | Description | Notes
 **Position** | Pointer to **string** | The position of the module bay within the parent device/module | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**ParentDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ParentModule** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ParentDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ParentModule** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayRequestModuleFamily**](BulkWritableModuleBayRequestModuleFamily.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -178,20 +178,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetParentDevice
 
-`func (o *BulkWritableModuleBayRequest) GetParentDevice() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableModuleBayRequest) GetParentDevice() ApprovalWorkflowUser`
 
 GetParentDevice returns the ParentDevice field if non-nil, zero value otherwise.
 
 ### GetParentDeviceOk
 
-`func (o *BulkWritableModuleBayRequest) GetParentDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableModuleBayRequest) GetParentDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentDeviceOk returns a tuple with the ParentDevice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentDevice
 
-`func (o *BulkWritableModuleBayRequest) SetParentDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableModuleBayRequest) SetParentDevice(v ApprovalWorkflowUser)`
 
 SetParentDevice sets ParentDevice field to given value.
 
@@ -213,20 +213,20 @@ HasParentDevice returns a boolean if a field has been set.
 UnsetParentDevice ensures that no value is present for ParentDevice, not even an explicit nil
 ### GetParentModule
 
-`func (o *BulkWritableModuleBayRequest) GetParentModule() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableModuleBayRequest) GetParentModule() ApprovalWorkflowUser`
 
 GetParentModule returns the ParentModule field if non-nil, zero value otherwise.
 
 ### GetParentModuleOk
 
-`func (o *BulkWritableModuleBayRequest) GetParentModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableModuleBayRequest) GetParentModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentModuleOk returns a tuple with the ParentModule field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentModule
 
-`func (o *BulkWritableModuleBayRequest) SetParentModule(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableModuleBayRequest) SetParentModule(v ApprovalWorkflowUser)`
 
 SetParentModule sets ParentModule field to given value.
 
@@ -308,20 +308,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableModuleBayRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableModuleBayRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableModuleBayRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableModuleBayRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableModuleBayRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableModuleBayRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -333,20 +333,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableModuleBayRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableModuleBayRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableModuleBayRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableModuleBayRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableModuleBayRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableModuleBayRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

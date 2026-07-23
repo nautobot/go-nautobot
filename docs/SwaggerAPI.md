@@ -25,14 +25,14 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v2"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
 )
 
 func main() {
 	format := openapiclient.swagger_retrieve_format_parameter("json") // SwaggerRetrieveFormatParameter |  (optional)
 	lang := openapiclient.swagger_retrieve_lang_parameter("af") // SwaggerRetrieveLangParameter |  (optional)
 	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional) (default to false)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
  **format** | [**SwaggerRetrieveFormatParameter**](SwaggerRetrieveFormatParameter.md) |  | 
  **lang** | [**SwaggerRetrieveLangParameter**](SwaggerRetrieveLangParameter.md) |  | 
  **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | [default to false]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
 
 ### Return type
 

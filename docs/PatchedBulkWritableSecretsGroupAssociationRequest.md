@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AccessType** | Pointer to [**AccessTypeEnum**](AccessTypeEnum.md) |  | [optional] 
 **SecretType** | Pointer to [**SecretTypeEnum**](SecretTypeEnum.md) |  | [optional] 
-**SecretsGroup** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Secret** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Secret** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -101,20 +101,20 @@ HasSecretType returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretsGroup() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretsGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretsGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretsGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) SetSecretsGroup(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) SetSecretsGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -126,20 +126,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 
 ### GetSecret
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecret() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecret() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetSecret returns the Secret field if non-nil, zero value otherwise.
 
 ### GetSecretOk
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) GetSecretOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecret
 
-`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) SetSecret(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableSecretsGroupAssociationRequest) SetSecret(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetSecret sets Secret field to given value.
 

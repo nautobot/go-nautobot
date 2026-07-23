@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Name** | Pointer to **string** |  | [optional] 
 **Domain** | Pointer to **string** |  | [optional] 
-**Master** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Master** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -103,20 +103,20 @@ HasDomain returns a boolean if a field has been set.
 
 ### GetMaster
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetMaster() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetMaster() ApprovalWorkflowUser`
 
 GetMaster returns the Master field if non-nil, zero value otherwise.
 
 ### GetMasterOk
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetMasterOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetMasterOk() (*ApprovalWorkflowUser, bool)`
 
 GetMasterOk returns a tuple with the Master field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMaster
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) SetMaster(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) SetMaster(v ApprovalWorkflowUser)`
 
 SetMaster sets Master field to given value.
 
@@ -163,20 +163,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -188,20 +188,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableVirtualChassisRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableVirtualChassisRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
