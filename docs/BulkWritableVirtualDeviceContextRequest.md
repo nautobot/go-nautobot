@@ -8,21 +8,21 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Identifier** | Pointer to **NullableInt32** | Unique identifier provided by the platform being virtualized (Example: Nexus VDC Identifier) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PrimaryIp4** | Pointer to [**NullablePrimaryIPv4**](PrimaryIPv4.md) |  | [optional] 
 **PrimaryIp6** | Pointer to [**NullablePrimaryIPv6**](PrimaryIPv6.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableVirtualDeviceContextRequest
 
-`func NewBulkWritableVirtualDeviceContextRequest(id string, name string, device BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *BulkWritableVirtualDeviceContextRequest`
+`func NewBulkWritableVirtualDeviceContextRequest(id string, name string, device ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableVirtualDeviceContextRequest`
 
 NewBulkWritableVirtualDeviceContextRequest instantiates a new BulkWritableVirtualDeviceContextRequest object
 This constructor will assign default values to properties that have it defined,
@@ -139,60 +139,60 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetDevice() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetDeviceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetDevice(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDevice sets Device field to given value.
 
 
 ### GetStatus
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetRole
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -284,20 +284,20 @@ HasPrimaryIp6 returns a boolean if a field has been set.
 UnsetPrimaryIp6 ensures that no value is present for PrimaryIp6, not even an explicit nil
 ### GetTenant
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -344,20 +344,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -369,20 +369,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableVirtualDeviceContextRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableVirtualDeviceContextRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableVirtualDeviceContextRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableVirtualDeviceContextRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

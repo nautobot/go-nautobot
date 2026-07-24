@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AssociatedObjectType** | Pointer to **string** |  | [optional] 
 **AssociatedObjectId** | Pointer to **string** |  | [optional] 
-**DynamicGroup** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DynamicGroup** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -102,20 +102,20 @@ HasAssociatedObjectId returns a boolean if a field has been set.
 
 ### GetDynamicGroup
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetDynamicGroup() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetDynamicGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDynamicGroup returns the DynamicGroup field if non-nil, zero value otherwise.
 
 ### GetDynamicGroupOk
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetDynamicGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetDynamicGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDynamicGroupOk returns a tuple with the DynamicGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDynamicGroup
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) SetDynamicGroup(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) SetDynamicGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDynamicGroup sets DynamicGroup field to given value.
 
@@ -152,20 +152,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableStaticGroupAssociationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableStaticGroupAssociationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

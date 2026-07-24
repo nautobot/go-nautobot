@@ -17,12 +17,11 @@ Name | Type | Description | Notes
 **TxPowerMax** | Pointer to **NullableInt32** |  | [optional] 
 **RegulatoryDomain** | [**RegulatoryDomainEnum**](RegulatoryDomainEnum.md) |  | 
 **RxPowerMin** | Pointer to **NullableInt32** |  | [optional] 
-**SupportedDataRates** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -368,31 +367,6 @@ HasRxPowerMin returns a boolean if a field has been set.
 `func (o *RadioProfile) UnsetRxPowerMin()`
 
 UnsetRxPowerMin ensures that no value is present for RxPowerMin, not even an explicit nil
-### GetSupportedDataRates
-
-`func (o *RadioProfile) GetSupportedDataRates() []BulkWritableCableRequestStatus`
-
-GetSupportedDataRates returns the SupportedDataRates field if non-nil, zero value otherwise.
-
-### GetSupportedDataRatesOk
-
-`func (o *RadioProfile) GetSupportedDataRatesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetSupportedDataRatesOk returns a tuple with the SupportedDataRates field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSupportedDataRates
-
-`func (o *RadioProfile) SetSupportedDataRates(v []BulkWritableCableRequestStatus)`
-
-SetSupportedDataRates sets SupportedDataRates field to given value.
-
-### HasSupportedDataRates
-
-`func (o *RadioProfile) HasSupportedDataRates() bool`
-
-HasSupportedDataRates returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *RadioProfile) GetCreated() time.Time`
@@ -500,20 +474,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *RadioProfile) GetTags() []BulkWritableCableRequestStatus`
+`func (o *RadioProfile) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *RadioProfile) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *RadioProfile) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *RadioProfile) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *RadioProfile) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

@@ -15,8 +15,10 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** |  | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Speed** | Pointer to **NullableInt32** |  | [optional] 
+**Duplex** | Pointer to [**BulkWritableInterfaceTemplateRequestDuplex**](BulkWritableInterfaceTemplateRequestDuplex.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -280,22 +282,82 @@ SetMgmtOnly sets MgmtOnly field to given value.
 
 HasMgmtOnly returns a boolean if a field has been set.
 
+### GetSpeed
+
+`func (o *InterfaceTemplate) GetSpeed() int32`
+
+GetSpeed returns the Speed field if non-nil, zero value otherwise.
+
+### GetSpeedOk
+
+`func (o *InterfaceTemplate) GetSpeedOk() (*int32, bool)`
+
+GetSpeedOk returns a tuple with the Speed field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpeed
+
+`func (o *InterfaceTemplate) SetSpeed(v int32)`
+
+SetSpeed sets Speed field to given value.
+
+### HasSpeed
+
+`func (o *InterfaceTemplate) HasSpeed() bool`
+
+HasSpeed returns a boolean if a field has been set.
+
+### SetSpeedNil
+
+`func (o *InterfaceTemplate) SetSpeedNil(b bool)`
+
+ SetSpeedNil sets the value for Speed to be an explicit nil
+
+### UnsetSpeed
+`func (o *InterfaceTemplate) UnsetSpeed()`
+
+UnsetSpeed ensures that no value is present for Speed, not even an explicit nil
+### GetDuplex
+
+`func (o *InterfaceTemplate) GetDuplex() BulkWritableInterfaceTemplateRequestDuplex`
+
+GetDuplex returns the Duplex field if non-nil, zero value otherwise.
+
+### GetDuplexOk
+
+`func (o *InterfaceTemplate) GetDuplexOk() (*BulkWritableInterfaceTemplateRequestDuplex, bool)`
+
+GetDuplexOk returns a tuple with the Duplex field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDuplex
+
+`func (o *InterfaceTemplate) SetDuplex(v BulkWritableInterfaceTemplateRequestDuplex)`
+
+SetDuplex sets Duplex field to given value.
+
+### HasDuplex
+
+`func (o *InterfaceTemplate) HasDuplex() bool`
+
+HasDuplex returns a boolean if a field has been set.
+
 ### GetDeviceType
 
-`func (o *InterfaceTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *InterfaceTemplate) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *InterfaceTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InterfaceTemplate) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *InterfaceTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *InterfaceTemplate) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -317,20 +379,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *InterfaceTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *InterfaceTemplate) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *InterfaceTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InterfaceTemplate) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *InterfaceTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *InterfaceTemplate) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 

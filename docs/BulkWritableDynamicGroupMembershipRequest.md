@@ -7,14 +7,14 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Operator** | [**OperatorEnum**](OperatorEnum.md) |  | 
 **Weight** | **int32** |  | 
-**Group** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ParentGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Group** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**ParentGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableDynamicGroupMembershipRequest
 
-`func NewBulkWritableDynamicGroupMembershipRequest(id string, operator OperatorEnum, weight int32, group BulkWritableCableRequestStatus, parentGroup BulkWritableCableRequestStatus, ) *BulkWritableDynamicGroupMembershipRequest`
+`func NewBulkWritableDynamicGroupMembershipRequest(id string, operator OperatorEnum, weight int32, group ApprovalWorkflowStageResponseApprovalWorkflowStage, parentGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableDynamicGroupMembershipRequest`
 
 NewBulkWritableDynamicGroupMembershipRequest instantiates a new BulkWritableDynamicGroupMembershipRequest object
 This constructor will assign default values to properties that have it defined,
@@ -91,40 +91,40 @@ SetWeight sets Weight field to given value.
 
 ### GetGroup
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) GetGroup() BulkWritableCableRequestStatus`
+`func (o *BulkWritableDynamicGroupMembershipRequest) GetGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetGroup returns the Group field if non-nil, zero value otherwise.
 
 ### GetGroupOk
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) GetGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableDynamicGroupMembershipRequest) GetGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetGroupOk returns a tuple with the Group field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroup
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) SetGroup(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableDynamicGroupMembershipRequest) SetGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetGroup sets Group field to given value.
 
 
 ### GetParentGroup
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) GetParentGroup() BulkWritableCableRequestStatus`
+`func (o *BulkWritableDynamicGroupMembershipRequest) GetParentGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetParentGroup returns the ParentGroup field if non-nil, zero value otherwise.
 
 ### GetParentGroupOk
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) GetParentGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableDynamicGroupMembershipRequest) GetParentGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetParentGroupOk returns a tuple with the ParentGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentGroup
 
-`func (o *BulkWritableDynamicGroupMembershipRequest) SetParentGroup(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableDynamicGroupMembershipRequest) SetParentGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetParentGroup sets ParentGroup field to given value.
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Nestable** | Pointer to **bool** | Allow Locations of this type to be parents/children of other Locations of this same type | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -271,20 +271,20 @@ HasNestable returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *LocationType) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *LocationType) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *LocationType) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *LocationType) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *LocationType) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *LocationType) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 

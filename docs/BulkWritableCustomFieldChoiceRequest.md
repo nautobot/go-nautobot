@@ -7,13 +7,13 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Value** | **string** |  | 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**CustomField** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomField** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableCustomFieldChoiceRequest
 
-`func NewBulkWritableCustomFieldChoiceRequest(id string, value string, customField BulkWritableCableRequestStatus, ) *BulkWritableCustomFieldChoiceRequest`
+`func NewBulkWritableCustomFieldChoiceRequest(id string, value string, customField ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCustomFieldChoiceRequest`
 
 NewBulkWritableCustomFieldChoiceRequest instantiates a new BulkWritableCustomFieldChoiceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -95,20 +95,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetCustomField
 
-`func (o *BulkWritableCustomFieldChoiceRequest) GetCustomField() BulkWritableCableRequestStatus`
+`func (o *BulkWritableCustomFieldChoiceRequest) GetCustomField() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCustomField returns the CustomField field if non-nil, zero value otherwise.
 
 ### GetCustomFieldOk
 
-`func (o *BulkWritableCustomFieldChoiceRequest) GetCustomFieldOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableCustomFieldChoiceRequest) GetCustomFieldOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCustomFieldOk returns a tuple with the CustomField field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomField
 
-`func (o *BulkWritableCustomFieldChoiceRequest) SetCustomField(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableCustomFieldChoiceRequest) SetCustomField(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCustomField sets CustomField field to given value.
 

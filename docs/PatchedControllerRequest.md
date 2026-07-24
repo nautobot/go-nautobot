@@ -8,17 +8,17 @@ Name | Type | Description | Notes
 **Capabilities** | Pointer to [**[]CapabilitiesEnum**](CapabilitiesEnum.md) |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Location** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Platform** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ExternalIntegration** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ControllerDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ControllerDeviceRedundancyGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Status** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Location** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Platform** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ExternalIntegration** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ControllerDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ControllerDeviceRedundancyGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -151,20 +151,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *PatchedControllerRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *PatchedControllerRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *PatchedControllerRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedControllerRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *PatchedControllerRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *PatchedControllerRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -176,20 +176,20 @@ HasStatus returns a boolean if a field has been set.
 
 ### GetLocation
 
-`func (o *PatchedControllerRequest) GetLocation() BulkWritableCableRequestStatus`
+`func (o *PatchedControllerRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *PatchedControllerRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedControllerRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *PatchedControllerRequest) SetLocation(v BulkWritableCableRequestStatus)`
+`func (o *PatchedControllerRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocation sets Location field to given value.
 
@@ -201,20 +201,20 @@ HasLocation returns a boolean if a field has been set.
 
 ### GetPlatform
 
-`func (o *PatchedControllerRequest) GetPlatform() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetPlatform() ApprovalWorkflowUser`
 
 GetPlatform returns the Platform field if non-nil, zero value otherwise.
 
 ### GetPlatformOk
 
-`func (o *PatchedControllerRequest) GetPlatformOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetPlatformOk() (*ApprovalWorkflowUser, bool)`
 
 GetPlatformOk returns a tuple with the Platform field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlatform
 
-`func (o *PatchedControllerRequest) SetPlatform(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetPlatform(v ApprovalWorkflowUser)`
 
 SetPlatform sets Platform field to given value.
 
@@ -236,20 +236,20 @@ HasPlatform returns a boolean if a field has been set.
 UnsetPlatform ensures that no value is present for Platform, not even an explicit nil
 ### GetRole
 
-`func (o *PatchedControllerRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *PatchedControllerRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *PatchedControllerRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -271,20 +271,20 @@ HasRole returns a boolean if a field has been set.
 UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetTenant
 
-`func (o *PatchedControllerRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *PatchedControllerRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *PatchedControllerRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -306,20 +306,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetExternalIntegration
 
-`func (o *PatchedControllerRequest) GetExternalIntegration() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetExternalIntegration() ApprovalWorkflowUser`
 
 GetExternalIntegration returns the ExternalIntegration field if non-nil, zero value otherwise.
 
 ### GetExternalIntegrationOk
 
-`func (o *PatchedControllerRequest) GetExternalIntegrationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetExternalIntegrationOk() (*ApprovalWorkflowUser, bool)`
 
 GetExternalIntegrationOk returns a tuple with the ExternalIntegration field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetExternalIntegration
 
-`func (o *PatchedControllerRequest) SetExternalIntegration(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetExternalIntegration(v ApprovalWorkflowUser)`
 
 SetExternalIntegration sets ExternalIntegration field to given value.
 
@@ -341,20 +341,20 @@ HasExternalIntegration returns a boolean if a field has been set.
 UnsetExternalIntegration ensures that no value is present for ExternalIntegration, not even an explicit nil
 ### GetControllerDevice
 
-`func (o *PatchedControllerRequest) GetControllerDevice() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetControllerDevice() ApprovalWorkflowUser`
 
 GetControllerDevice returns the ControllerDevice field if non-nil, zero value otherwise.
 
 ### GetControllerDeviceOk
 
-`func (o *PatchedControllerRequest) GetControllerDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetControllerDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetControllerDeviceOk returns a tuple with the ControllerDevice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerDevice
 
-`func (o *PatchedControllerRequest) SetControllerDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetControllerDevice(v ApprovalWorkflowUser)`
 
 SetControllerDevice sets ControllerDevice field to given value.
 
@@ -376,20 +376,20 @@ HasControllerDevice returns a boolean if a field has been set.
 UnsetControllerDevice ensures that no value is present for ControllerDevice, not even an explicit nil
 ### GetControllerDeviceRedundancyGroup
 
-`func (o *PatchedControllerRequest) GetControllerDeviceRedundancyGroup() BulkWritableCircuitRequestTenant`
+`func (o *PatchedControllerRequest) GetControllerDeviceRedundancyGroup() ApprovalWorkflowUser`
 
 GetControllerDeviceRedundancyGroup returns the ControllerDeviceRedundancyGroup field if non-nil, zero value otherwise.
 
 ### GetControllerDeviceRedundancyGroupOk
 
-`func (o *PatchedControllerRequest) GetControllerDeviceRedundancyGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedControllerRequest) GetControllerDeviceRedundancyGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetControllerDeviceRedundancyGroupOk returns a tuple with the ControllerDeviceRedundancyGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerDeviceRedundancyGroup
 
-`func (o *PatchedControllerRequest) SetControllerDeviceRedundancyGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedControllerRequest) SetControllerDeviceRedundancyGroup(v ApprovalWorkflowUser)`
 
 SetControllerDeviceRedundancyGroup sets ControllerDeviceRedundancyGroup field to given value.
 
@@ -436,20 +436,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedControllerRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedControllerRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedControllerRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedControllerRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedControllerRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedControllerRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -461,20 +461,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedControllerRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedControllerRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedControllerRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedControllerRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedControllerRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedControllerRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

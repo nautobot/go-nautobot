@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **RackCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewRackGroup
 
-`func NewRackGroup(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, location BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackGroup`
+`func NewRackGroup(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, location ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RackGroup`
 
 NewRackGroup instantiates a new RackGroup object
 This constructor will assign default values to properties that have it defined,
@@ -246,20 +246,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *RackGroup) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *RackGroup) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *RackGroup) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RackGroup) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *RackGroup) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *RackGroup) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -281,20 +281,20 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetLocation
 
-`func (o *RackGroup) GetLocation() BulkWritableCableRequestStatus`
+`func (o *RackGroup) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *RackGroup) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *RackGroup) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *RackGroup) SetLocation(v BulkWritableCableRequestStatus)`
+`func (o *RackGroup) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocation sets Location field to given value.
 

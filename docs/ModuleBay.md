@@ -14,14 +14,14 @@ Name | Type | Description | Notes
 **Position** | Pointer to **string** | The position of the module bay within the parent device/module | [optional] 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**ParentDevice** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ParentModule** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**ParentDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ParentModule** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayRequestModuleFamily**](BulkWritableModuleBayRequestModuleFamily.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -269,20 +269,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetParentDevice
 
-`func (o *ModuleBay) GetParentDevice() BulkWritableCircuitRequestTenant`
+`func (o *ModuleBay) GetParentDevice() ApprovalWorkflowUser`
 
 GetParentDevice returns the ParentDevice field if non-nil, zero value otherwise.
 
 ### GetParentDeviceOk
 
-`func (o *ModuleBay) GetParentDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleBay) GetParentDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentDeviceOk returns a tuple with the ParentDevice field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentDevice
 
-`func (o *ModuleBay) SetParentDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleBay) SetParentDevice(v ApprovalWorkflowUser)`
 
 SetParentDevice sets ParentDevice field to given value.
 
@@ -304,20 +304,20 @@ HasParentDevice returns a boolean if a field has been set.
 UnsetParentDevice ensures that no value is present for ParentDevice, not even an explicit nil
 ### GetParentModule
 
-`func (o *ModuleBay) GetParentModule() BulkWritableCircuitRequestTenant`
+`func (o *ModuleBay) GetParentModule() ApprovalWorkflowUser`
 
 GetParentModule returns the ParentModule field if non-nil, zero value otherwise.
 
 ### GetParentModuleOk
 
-`func (o *ModuleBay) GetParentModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *ModuleBay) GetParentModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentModuleOk returns a tuple with the ParentModule field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentModule
 
-`func (o *ModuleBay) SetParentModule(v BulkWritableCircuitRequestTenant)`
+`func (o *ModuleBay) SetParentModule(v ApprovalWorkflowUser)`
 
 SetParentModule sets ParentModule field to given value.
 
@@ -479,20 +479,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *ModuleBay) GetTags() []BulkWritableCableRequestStatus`
+`func (o *ModuleBay) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *ModuleBay) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *ModuleBay) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *ModuleBay) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *ModuleBay) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

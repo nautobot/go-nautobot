@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** |  | 
 **UploadedAt** | **time.Time** |  | [readonly] 
-**JobResult** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**JobResult** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -179,20 +179,20 @@ SetUploadedAt sets UploadedAt field to given value.
 
 ### GetJobResult
 
-`func (o *FileProxy) GetJobResult() BulkWritableCircuitRequestTenant`
+`func (o *FileProxy) GetJobResult() ApprovalWorkflowUser`
 
 GetJobResult returns the JobResult field if non-nil, zero value otherwise.
 
 ### GetJobResultOk
 
-`func (o *FileProxy) GetJobResultOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *FileProxy) GetJobResultOk() (*ApprovalWorkflowUser, bool)`
 
 GetJobResultOk returns a tuple with the JobResult field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJobResult
 
-`func (o *FileProxy) SetJobResult(v BulkWritableCircuitRequestTenant)`
+`func (o *FileProxy) SetJobResult(v ApprovalWorkflowUser)`
 
 SetJobResult sets JobResult field to given value.
 

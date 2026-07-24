@@ -18,20 +18,19 @@ Name | Type | Description | Notes
 **UHeight** | Pointer to **int32** |  | [optional] 
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**DeviceFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**SoftwareImageFiles** | [**[]SoftwareImageFiles**](SoftwareImageFiles.md) |  | [readonly] 
+**Manufacturer** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewDeviceType
 
-`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, softwareImageFiles []SoftwareImageFiles, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
+`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
 
 NewDeviceType instantiates a new DeviceType object
 This constructor will assign default values to properties that have it defined,
@@ -393,40 +392,40 @@ HasComments returns a boolean if a field has been set.
 
 ### GetManufacturer
 
-`func (o *DeviceType) GetManufacturer() BulkWritableCableRequestStatus`
+`func (o *DeviceType) GetManufacturer() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *DeviceType) GetManufacturerOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceType) GetManufacturerOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *DeviceType) SetManufacturer(v BulkWritableCableRequestStatus)`
+`func (o *DeviceType) SetManufacturer(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetManufacturer sets Manufacturer field to given value.
 
 
 ### GetDeviceFamily
 
-`func (o *DeviceType) GetDeviceFamily() BulkWritableCircuitRequestTenant`
+`func (o *DeviceType) GetDeviceFamily() ApprovalWorkflowUser`
 
 GetDeviceFamily returns the DeviceFamily field if non-nil, zero value otherwise.
 
 ### GetDeviceFamilyOk
 
-`func (o *DeviceType) GetDeviceFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *DeviceType) GetDeviceFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceFamilyOk returns a tuple with the DeviceFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamily
 
-`func (o *DeviceType) SetDeviceFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *DeviceType) SetDeviceFamily(v ApprovalWorkflowUser)`
 
 SetDeviceFamily sets DeviceFamily field to given value.
 
@@ -446,26 +445,6 @@ HasDeviceFamily returns a boolean if a field has been set.
 `func (o *DeviceType) UnsetDeviceFamily()`
 
 UnsetDeviceFamily ensures that no value is present for DeviceFamily, not even an explicit nil
-### GetSoftwareImageFiles
-
-`func (o *DeviceType) GetSoftwareImageFiles() []SoftwareImageFiles`
-
-GetSoftwareImageFiles returns the SoftwareImageFiles field if non-nil, zero value otherwise.
-
-### GetSoftwareImageFilesOk
-
-`func (o *DeviceType) GetSoftwareImageFilesOk() (*[]SoftwareImageFiles, bool)`
-
-GetSoftwareImageFilesOk returns a tuple with the SoftwareImageFiles field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetSoftwareImageFiles
-
-`func (o *DeviceType) SetSoftwareImageFiles(v []SoftwareImageFiles)`
-
-SetSoftwareImageFiles sets SoftwareImageFiles field to given value.
-
-
 ### GetCreated
 
 `func (o *DeviceType) GetCreated() time.Time`
@@ -573,20 +552,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *DeviceType) GetTags() []BulkWritableCableRequestStatus`
+`func (o *DeviceType) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *DeviceType) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceType) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *DeviceType) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *DeviceType) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

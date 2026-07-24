@@ -1,0 +1,14 @@
+services:
+  oapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        OPENAPI_GENERATOR_VERSION: ${OPENAPI_GENERATOR_VERSION}
+    environment:
+      - NAUTOBOT_VER=${NAUTOBOT_VER}
+    volumes:
+      - "../../:/client"
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8

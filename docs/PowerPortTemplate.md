@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **MaximumDraw** | Pointer to **NullableInt32** | Maximum power draw (watts) | [optional] 
 **AllocatedDraw** | Pointer to **NullableInt32** | Allocated power draw (watts) | [optional] 
 **PowerFactor** | Pointer to **float64** | Power factor (0.01-1.00) for converting between watts (W) and volt-amps (VA). Defaults to 0.95. | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -359,20 +359,20 @@ HasPowerFactor returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *PowerPortTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *PowerPortTemplate) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PowerPortTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerPortTemplate) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PowerPortTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerPortTemplate) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -394,20 +394,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *PowerPortTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *PowerPortTemplate) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *PowerPortTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerPortTemplate) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *PowerPortTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerPortTemplate) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 

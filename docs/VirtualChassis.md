@@ -12,12 +12,12 @@ Name | Type | Description | Notes
 **MemberCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
 **Domain** | Pointer to **string** |  | [optional] 
-**Master** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Master** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -215,20 +215,20 @@ HasDomain returns a boolean if a field has been set.
 
 ### GetMaster
 
-`func (o *VirtualChassis) GetMaster() BulkWritableCircuitRequestTenant`
+`func (o *VirtualChassis) GetMaster() ApprovalWorkflowUser`
 
 GetMaster returns the Master field if non-nil, zero value otherwise.
 
 ### GetMasterOk
 
-`func (o *VirtualChassis) GetMasterOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VirtualChassis) GetMasterOk() (*ApprovalWorkflowUser, bool)`
 
 GetMasterOk returns a tuple with the Master field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMaster
 
-`func (o *VirtualChassis) SetMaster(v BulkWritableCircuitRequestTenant)`
+`func (o *VirtualChassis) SetMaster(v ApprovalWorkflowUser)`
 
 SetMaster sets Master field to given value.
 
@@ -355,20 +355,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *VirtualChassis) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VirtualChassis) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VirtualChassis) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VirtualChassis) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VirtualChassis) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VirtualChassis) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

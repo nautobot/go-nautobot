@@ -15,8 +15,6 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Actions** | **interface{}** | The list of actions granted by this permission | 
 **Constraints** | Pointer to **interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
-**Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Users** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 
@@ -299,56 +297,6 @@ HasConstraints returns a boolean if a field has been set.
 `func (o *ObjectPermission) UnsetConstraints()`
 
 UnsetConstraints ensures that no value is present for Constraints, not even an explicit nil
-### GetGroups
-
-`func (o *ObjectPermission) GetGroups() []BulkWritableCableRequestStatus`
-
-GetGroups returns the Groups field if non-nil, zero value otherwise.
-
-### GetGroupsOk
-
-`func (o *ObjectPermission) GetGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetGroups
-
-`func (o *ObjectPermission) SetGroups(v []BulkWritableCableRequestStatus)`
-
-SetGroups sets Groups field to given value.
-
-### HasGroups
-
-`func (o *ObjectPermission) HasGroups() bool`
-
-HasGroups returns a boolean if a field has been set.
-
-### GetUsers
-
-`func (o *ObjectPermission) GetUsers() []BulkWritableCableRequestStatus`
-
-GetUsers returns the Users field if non-nil, zero value otherwise.
-
-### GetUsersOk
-
-`func (o *ObjectPermission) GetUsersOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetUsersOk returns a tuple with the Users field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetUsers
-
-`func (o *ObjectPermission) SetUsers(v []BulkWritableCableRequestStatus)`
-
-SetUsers sets Users field to given value.
-
-### HasUsers
-
-`func (o *ObjectPermission) HasUsers() bool`
-
-HasUsers returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *ObjectPermission) GetCreated() time.Time`

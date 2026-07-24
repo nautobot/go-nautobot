@@ -14,12 +14,11 @@ Name | Type | Description | Notes
 **Email** | Pointer to **string** |  | [optional] [default to ""]
 **Address** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Contacts** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -265,31 +264,6 @@ SetComments sets Comments field to given value.
 
 HasComments returns a boolean if a field has been set.
 
-### GetContacts
-
-`func (o *Team) GetContacts() []BulkWritableCableRequestStatus`
-
-GetContacts returns the Contacts field if non-nil, zero value otherwise.
-
-### GetContactsOk
-
-`func (o *Team) GetContactsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetContactsOk returns a tuple with the Contacts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetContacts
-
-`func (o *Team) SetContacts(v []BulkWritableCableRequestStatus)`
-
-SetContacts sets Contacts field to given value.
-
-### HasContacts
-
-`func (o *Team) HasContacts() bool`
-
-HasContacts returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *Team) GetCreated() time.Time`
@@ -397,20 +371,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *Team) GetTags() []BulkWritableCableRequestStatus`
+`func (o *Team) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Team) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *Team) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Team) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *Team) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

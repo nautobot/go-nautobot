@@ -8,17 +8,17 @@ Name | Type | Description | Notes
 **Model** | **string** |  | 
 **PartNumber** | Pointer to **string** | Discrete part number (optional) | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ModuleFamily** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Manufacturer** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**ModuleFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableModuleTypeRequest
 
-`func NewBulkWritableModuleTypeRequest(id string, model string, manufacturer BulkWritableCableRequestStatus, ) *BulkWritableModuleTypeRequest`
+`func NewBulkWritableModuleTypeRequest(id string, model string, manufacturer ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableModuleTypeRequest`
 
 NewBulkWritableModuleTypeRequest instantiates a new BulkWritableModuleTypeRequest object
 This constructor will assign default values to properties that have it defined,
@@ -125,40 +125,40 @@ HasComments returns a boolean if a field has been set.
 
 ### GetManufacturer
 
-`func (o *BulkWritableModuleTypeRequest) GetManufacturer() BulkWritableCableRequestStatus`
+`func (o *BulkWritableModuleTypeRequest) GetManufacturer() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *BulkWritableModuleTypeRequest) GetManufacturerOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableModuleTypeRequest) GetManufacturerOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *BulkWritableModuleTypeRequest) SetManufacturer(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableModuleTypeRequest) SetManufacturer(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetManufacturer sets Manufacturer field to given value.
 
 
 ### GetModuleFamily
 
-`func (o *BulkWritableModuleTypeRequest) GetModuleFamily() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableModuleTypeRequest) GetModuleFamily() ApprovalWorkflowUser`
 
 GetModuleFamily returns the ModuleFamily field if non-nil, zero value otherwise.
 
 ### GetModuleFamilyOk
 
-`func (o *BulkWritableModuleTypeRequest) GetModuleFamilyOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableModuleTypeRequest) GetModuleFamilyOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleFamilyOk returns a tuple with the ModuleFamily field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleFamily
 
-`func (o *BulkWritableModuleTypeRequest) SetModuleFamily(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableModuleTypeRequest) SetModuleFamily(v ApprovalWorkflowUser)`
 
 SetModuleFamily sets ModuleFamily field to given value.
 
@@ -205,20 +205,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableModuleTypeRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableModuleTypeRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableModuleTypeRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableModuleTypeRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableModuleTypeRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableModuleTypeRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -230,20 +230,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableModuleTypeRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableModuleTypeRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableModuleTypeRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableModuleTypeRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableModuleTypeRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableModuleTypeRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

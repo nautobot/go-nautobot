@@ -7,19 +7,19 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Name** | **string** |  | 
 **Comments** | Pointer to **string** |  | [optional] 
-**ClusterType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**ClusterGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ClusterType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**ClusterGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableClusterRequest
 
-`func NewBulkWritableClusterRequest(id string, name string, clusterType BulkWritableCableRequestStatus, ) *BulkWritableClusterRequest`
+`func NewBulkWritableClusterRequest(id string, name string, clusterType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableClusterRequest`
 
 NewBulkWritableClusterRequest instantiates a new BulkWritableClusterRequest object
 This constructor will assign default values to properties that have it defined,
@@ -101,40 +101,40 @@ HasComments returns a boolean if a field has been set.
 
 ### GetClusterType
 
-`func (o *BulkWritableClusterRequest) GetClusterType() BulkWritableCableRequestStatus`
+`func (o *BulkWritableClusterRequest) GetClusterType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetClusterType returns the ClusterType field if non-nil, zero value otherwise.
 
 ### GetClusterTypeOk
 
-`func (o *BulkWritableClusterRequest) GetClusterTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableClusterRequest) GetClusterTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetClusterTypeOk returns a tuple with the ClusterType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusterType
 
-`func (o *BulkWritableClusterRequest) SetClusterType(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableClusterRequest) SetClusterType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetClusterType sets ClusterType field to given value.
 
 
 ### GetClusterGroup
 
-`func (o *BulkWritableClusterRequest) GetClusterGroup() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableClusterRequest) GetClusterGroup() ApprovalWorkflowUser`
 
 GetClusterGroup returns the ClusterGroup field if non-nil, zero value otherwise.
 
 ### GetClusterGroupOk
 
-`func (o *BulkWritableClusterRequest) GetClusterGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableClusterRequest) GetClusterGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetClusterGroupOk returns a tuple with the ClusterGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusterGroup
 
-`func (o *BulkWritableClusterRequest) SetClusterGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableClusterRequest) SetClusterGroup(v ApprovalWorkflowUser)`
 
 SetClusterGroup sets ClusterGroup field to given value.
 
@@ -156,20 +156,20 @@ HasClusterGroup returns a boolean if a field has been set.
 UnsetClusterGroup ensures that no value is present for ClusterGroup, not even an explicit nil
 ### GetTenant
 
-`func (o *BulkWritableClusterRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableClusterRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *BulkWritableClusterRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableClusterRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *BulkWritableClusterRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableClusterRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -191,20 +191,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetLocation
 
-`func (o *BulkWritableClusterRequest) GetLocation() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableClusterRequest) GetLocation() ApprovalWorkflowUser`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *BulkWritableClusterRequest) GetLocationOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableClusterRequest) GetLocationOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *BulkWritableClusterRequest) SetLocation(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableClusterRequest) SetLocation(v ApprovalWorkflowUser)`
 
 SetLocation sets Location field to given value.
 
@@ -226,20 +226,20 @@ HasLocation returns a boolean if a field has been set.
 UnsetLocation ensures that no value is present for Location, not even an explicit nil
 ### GetTags
 
-`func (o *BulkWritableClusterRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableClusterRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableClusterRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableClusterRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableClusterRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableClusterRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -276,20 +276,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableClusterRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableClusterRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableClusterRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableClusterRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableClusterRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableClusterRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

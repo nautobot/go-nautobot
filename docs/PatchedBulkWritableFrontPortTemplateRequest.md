@@ -10,11 +10,11 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **RearPortPosition** | Pointer to **int32** |  | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**RearPortTemplate** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**RearPortTemplate** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -182,20 +182,20 @@ HasRearPortPosition returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -217,20 +217,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 
@@ -252,20 +252,20 @@ HasModuleType returns a boolean if a field has been set.
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetRearPortTemplate
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRearPortTemplate() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRearPortTemplate() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRearPortTemplate returns the RearPortTemplate field if non-nil, zero value otherwise.
 
 ### GetRearPortTemplateOk
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRearPortTemplateOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRearPortTemplateOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRearPortTemplateOk returns a tuple with the RearPortTemplate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRearPortTemplate
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetRearPortTemplate(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetRearPortTemplate(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRearPortTemplate sets RearPortTemplate field to given value.
 
@@ -302,20 +302,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableFrontPortTemplateRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**PowerPortTemplate** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**PowerPortTemplate** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
@@ -288,20 +288,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *PowerOutletTemplate) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutletTemplate) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PowerOutletTemplate) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutletTemplate) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PowerOutletTemplate) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutletTemplate) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -323,20 +323,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *PowerOutletTemplate) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutletTemplate) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *PowerOutletTemplate) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutletTemplate) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *PowerOutletTemplate) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutletTemplate) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 
@@ -358,20 +358,20 @@ HasModuleType returns a boolean if a field has been set.
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetPowerPortTemplate
 
-`func (o *PowerOutletTemplate) GetPowerPortTemplate() BulkWritableCircuitRequestTenant`
+`func (o *PowerOutletTemplate) GetPowerPortTemplate() ApprovalWorkflowUser`
 
 GetPowerPortTemplate returns the PowerPortTemplate field if non-nil, zero value otherwise.
 
 ### GetPowerPortTemplateOk
 
-`func (o *PowerOutletTemplate) GetPowerPortTemplateOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerOutletTemplate) GetPowerPortTemplateOk() (*ApprovalWorkflowUser, bool)`
 
 GetPowerPortTemplateOk returns a tuple with the PowerPortTemplate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPowerPortTemplate
 
-`func (o *PowerOutletTemplate) SetPowerPortTemplate(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerOutletTemplate) SetPowerPortTemplate(v ApprovalWorkflowUser)`
 
 SetPowerPortTemplate sets PowerPortTemplate field to given value.
 

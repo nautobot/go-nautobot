@@ -17,27 +17,26 @@ Name | Type | Description | Notes
 **VcPriority** | Pointer to **NullableInt32** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
 **LocalConfigContextSchema** | Pointer to [**NullableBulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequestConfigContextSchema.md) |  | [optional] 
-**LocalConfigContextDataOwnerContentType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**DeviceType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Role** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Platform** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Location** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Rack** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**LocalConfigContextDataOwnerContentType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**DeviceType** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Status** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Role** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Platform** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Location** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Rack** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PrimaryIp4** | Pointer to [**NullablePrimaryIPv4**](PrimaryIPv4.md) |  | [optional] 
 **PrimaryIp6** | Pointer to [**NullablePrimaryIPv6**](PrimaryIPv6.md) |  | [optional] 
-**Cluster** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VirtualChassis** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**DeviceRedundancyGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**VirtualChassis** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**DeviceRedundancyGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableDeviceRequestSoftwareVersion**](BulkWritableDeviceRequestSoftwareVersion.md) |  | [optional] 
-**SecretsGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ControllerManagedDeviceGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ControllerManagedDeviceGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this device | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**ParentBay** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**ParentBay** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -475,20 +474,20 @@ HasLocalConfigContextSchema returns a boolean if a field has been set.
 UnsetLocalConfigContextSchema ensures that no value is present for LocalConfigContextSchema, not even an explicit nil
 ### GetLocalConfigContextDataOwnerContentType
 
-`func (o *PatchedWritableDeviceRequest) GetLocalConfigContextDataOwnerContentType() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetLocalConfigContextDataOwnerContentType() ApprovalWorkflowUser`
 
 GetLocalConfigContextDataOwnerContentType returns the LocalConfigContextDataOwnerContentType field if non-nil, zero value otherwise.
 
 ### GetLocalConfigContextDataOwnerContentTypeOk
 
-`func (o *PatchedWritableDeviceRequest) GetLocalConfigContextDataOwnerContentTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetLocalConfigContextDataOwnerContentTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetLocalConfigContextDataOwnerContentTypeOk returns a tuple with the LocalConfigContextDataOwnerContentType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocalConfigContextDataOwnerContentType
 
-`func (o *PatchedWritableDeviceRequest) SetLocalConfigContextDataOwnerContentType(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetLocalConfigContextDataOwnerContentType(v ApprovalWorkflowUser)`
 
 SetLocalConfigContextDataOwnerContentType sets LocalConfigContextDataOwnerContentType field to given value.
 
@@ -510,20 +509,20 @@ HasLocalConfigContextDataOwnerContentType returns a boolean if a field has been 
 UnsetLocalConfigContextDataOwnerContentType ensures that no value is present for LocalConfigContextDataOwnerContentType, not even an explicit nil
 ### GetDeviceType
 
-`func (o *PatchedWritableDeviceRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableDeviceRequest) GetDeviceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedWritableDeviceRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableDeviceRequest) GetDeviceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedWritableDeviceRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableDeviceRequest) SetDeviceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -535,20 +534,20 @@ HasDeviceType returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *PatchedWritableDeviceRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableDeviceRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *PatchedWritableDeviceRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableDeviceRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *PatchedWritableDeviceRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableDeviceRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -560,20 +559,20 @@ HasStatus returns a boolean if a field has been set.
 
 ### GetRole
 
-`func (o *PatchedWritableDeviceRequest) GetRole() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableDeviceRequest) GetRole() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *PatchedWritableDeviceRequest) GetRoleOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableDeviceRequest) GetRoleOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *PatchedWritableDeviceRequest) SetRole(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableDeviceRequest) SetRole(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRole sets Role field to given value.
 
@@ -585,20 +584,20 @@ HasRole returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *PatchedWritableDeviceRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *PatchedWritableDeviceRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *PatchedWritableDeviceRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -620,20 +619,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetPlatform
 
-`func (o *PatchedWritableDeviceRequest) GetPlatform() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetPlatform() ApprovalWorkflowUser`
 
 GetPlatform returns the Platform field if non-nil, zero value otherwise.
 
 ### GetPlatformOk
 
-`func (o *PatchedWritableDeviceRequest) GetPlatformOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetPlatformOk() (*ApprovalWorkflowUser, bool)`
 
 GetPlatformOk returns a tuple with the Platform field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlatform
 
-`func (o *PatchedWritableDeviceRequest) SetPlatform(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetPlatform(v ApprovalWorkflowUser)`
 
 SetPlatform sets Platform field to given value.
 
@@ -655,20 +654,20 @@ HasPlatform returns a boolean if a field has been set.
 UnsetPlatform ensures that no value is present for Platform, not even an explicit nil
 ### GetLocation
 
-`func (o *PatchedWritableDeviceRequest) GetLocation() BulkWritableCableRequestStatus`
+`func (o *PatchedWritableDeviceRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *PatchedWritableDeviceRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableDeviceRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *PatchedWritableDeviceRequest) SetLocation(v BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableDeviceRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocation sets Location field to given value.
 
@@ -680,20 +679,20 @@ HasLocation returns a boolean if a field has been set.
 
 ### GetRack
 
-`func (o *PatchedWritableDeviceRequest) GetRack() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetRack() ApprovalWorkflowUser`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *PatchedWritableDeviceRequest) GetRackOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetRackOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *PatchedWritableDeviceRequest) SetRack(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetRack(v ApprovalWorkflowUser)`
 
 SetRack sets Rack field to given value.
 
@@ -783,57 +782,22 @@ HasPrimaryIp6 returns a boolean if a field has been set.
 `func (o *PatchedWritableDeviceRequest) UnsetPrimaryIp6()`
 
 UnsetPrimaryIp6 ensures that no value is present for PrimaryIp6, not even an explicit nil
-### GetCluster
-
-`func (o *PatchedWritableDeviceRequest) GetCluster() BulkWritableCircuitRequestTenant`
-
-GetCluster returns the Cluster field if non-nil, zero value otherwise.
-
-### GetClusterOk
-
-`func (o *PatchedWritableDeviceRequest) GetClusterOk() (*BulkWritableCircuitRequestTenant, bool)`
-
-GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCluster
-
-`func (o *PatchedWritableDeviceRequest) SetCluster(v BulkWritableCircuitRequestTenant)`
-
-SetCluster sets Cluster field to given value.
-
-### HasCluster
-
-`func (o *PatchedWritableDeviceRequest) HasCluster() bool`
-
-HasCluster returns a boolean if a field has been set.
-
-### SetClusterNil
-
-`func (o *PatchedWritableDeviceRequest) SetClusterNil(b bool)`
-
- SetClusterNil sets the value for Cluster to be an explicit nil
-
-### UnsetCluster
-`func (o *PatchedWritableDeviceRequest) UnsetCluster()`
-
-UnsetCluster ensures that no value is present for Cluster, not even an explicit nil
 ### GetVirtualChassis
 
-`func (o *PatchedWritableDeviceRequest) GetVirtualChassis() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetVirtualChassis() ApprovalWorkflowUser`
 
 GetVirtualChassis returns the VirtualChassis field if non-nil, zero value otherwise.
 
 ### GetVirtualChassisOk
 
-`func (o *PatchedWritableDeviceRequest) GetVirtualChassisOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetVirtualChassisOk() (*ApprovalWorkflowUser, bool)`
 
 GetVirtualChassisOk returns a tuple with the VirtualChassis field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualChassis
 
-`func (o *PatchedWritableDeviceRequest) SetVirtualChassis(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetVirtualChassis(v ApprovalWorkflowUser)`
 
 SetVirtualChassis sets VirtualChassis field to given value.
 
@@ -855,20 +819,20 @@ HasVirtualChassis returns a boolean if a field has been set.
 UnsetVirtualChassis ensures that no value is present for VirtualChassis, not even an explicit nil
 ### GetDeviceRedundancyGroup
 
-`func (o *PatchedWritableDeviceRequest) GetDeviceRedundancyGroup() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetDeviceRedundancyGroup() ApprovalWorkflowUser`
 
 GetDeviceRedundancyGroup returns the DeviceRedundancyGroup field if non-nil, zero value otherwise.
 
 ### GetDeviceRedundancyGroupOk
 
-`func (o *PatchedWritableDeviceRequest) GetDeviceRedundancyGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetDeviceRedundancyGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceRedundancyGroupOk returns a tuple with the DeviceRedundancyGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceRedundancyGroup
 
-`func (o *PatchedWritableDeviceRequest) SetDeviceRedundancyGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetDeviceRedundancyGroup(v ApprovalWorkflowUser)`
 
 SetDeviceRedundancyGroup sets DeviceRedundancyGroup field to given value.
 
@@ -925,20 +889,20 @@ HasSoftwareVersion returns a boolean if a field has been set.
 UnsetSoftwareVersion ensures that no value is present for SoftwareVersion, not even an explicit nil
 ### GetSecretsGroup
 
-`func (o *PatchedWritableDeviceRequest) GetSecretsGroup() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetSecretsGroup() ApprovalWorkflowUser`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *PatchedWritableDeviceRequest) GetSecretsGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetSecretsGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *PatchedWritableDeviceRequest) SetSecretsGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetSecretsGroup(v ApprovalWorkflowUser)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
@@ -960,20 +924,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetControllerManagedDeviceGroup
 
-`func (o *PatchedWritableDeviceRequest) GetControllerManagedDeviceGroup() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetControllerManagedDeviceGroup() ApprovalWorkflowUser`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *PatchedWritableDeviceRequest) GetControllerManagedDeviceGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *PatchedWritableDeviceRequest) SetControllerManagedDeviceGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetControllerManagedDeviceGroup(v ApprovalWorkflowUser)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
@@ -1045,20 +1009,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedWritableDeviceRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedWritableDeviceRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedWritableDeviceRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedWritableDeviceRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedWritableDeviceRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedWritableDeviceRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -1070,20 +1034,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedWritableDeviceRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedWritableDeviceRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedWritableDeviceRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedWritableDeviceRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedWritableDeviceRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedWritableDeviceRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -1095,20 +1059,20 @@ HasTags returns a boolean if a field has been set.
 
 ### GetParentBay
 
-`func (o *PatchedWritableDeviceRequest) GetParentBay() BulkWritableCircuitRequestTenant`
+`func (o *PatchedWritableDeviceRequest) GetParentBay() ApprovalWorkflowUser`
 
 GetParentBay returns the ParentBay field if non-nil, zero value otherwise.
 
 ### GetParentBayOk
 
-`func (o *PatchedWritableDeviceRequest) GetParentBayOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedWritableDeviceRequest) GetParentBayOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentBayOk returns a tuple with the ParentBay field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParentBay
 
-`func (o *PatchedWritableDeviceRequest) SetParentBay(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedWritableDeviceRequest) SetParentBay(v ApprovalWorkflowUser)`
 
 SetParentBay sets ParentBay field to given value.
 

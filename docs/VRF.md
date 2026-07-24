@@ -12,18 +12,12 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Status** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Devices** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**VirtualMachines** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**VirtualDeviceContexts** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**Prefixes** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
-**ImportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**ExportTargets** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Status** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Namespace** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -31,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewVRF
 
-`func NewVRF(objectType string, display string, url string, naturalSlug string, name string, devices []BulkWritableCableRequestStatus, virtualMachines []BulkWritableCableRequestStatus, virtualDeviceContexts []BulkWritableCableRequestStatus, prefixes []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VRF`
+`func NewVRF(objectType string, display string, url string, naturalSlug string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *VRF`
 
 NewVRF instantiates a new VRF object
 This constructor will assign default values to properties that have it defined,
@@ -233,20 +227,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *VRF) GetStatus() BulkWritableCircuitRequestTenant`
+`func (o *VRF) GetStatus() ApprovalWorkflowUser`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *VRF) GetStatusOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VRF) GetStatusOk() (*ApprovalWorkflowUser, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *VRF) SetStatus(v BulkWritableCircuitRequestTenant)`
+`func (o *VRF) SetStatus(v ApprovalWorkflowUser)`
 
 SetStatus sets Status field to given value.
 
@@ -268,20 +262,20 @@ HasStatus returns a boolean if a field has been set.
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetNamespace
 
-`func (o *VRF) GetNamespace() BulkWritableCableRequestStatus`
+`func (o *VRF) GetNamespace() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetNamespace returns the Namespace field if non-nil, zero value otherwise.
 
 ### GetNamespaceOk
 
-`func (o *VRF) GetNamespaceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VRF) GetNamespaceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetNamespaceOk returns a tuple with the Namespace field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNamespace
 
-`func (o *VRF) SetNamespace(v BulkWritableCableRequestStatus)`
+`func (o *VRF) SetNamespace(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetNamespace sets Namespace field to given value.
 
@@ -293,20 +287,20 @@ HasNamespace returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *VRF) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *VRF) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *VRF) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VRF) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *VRF) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *VRF) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -326,136 +320,6 @@ HasTenant returns a boolean if a field has been set.
 `func (o *VRF) UnsetTenant()`
 
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
-### GetDevices
-
-`func (o *VRF) GetDevices() []BulkWritableCableRequestStatus`
-
-GetDevices returns the Devices field if non-nil, zero value otherwise.
-
-### GetDevicesOk
-
-`func (o *VRF) GetDevicesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetDevicesOk returns a tuple with the Devices field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetDevices
-
-`func (o *VRF) SetDevices(v []BulkWritableCableRequestStatus)`
-
-SetDevices sets Devices field to given value.
-
-
-### GetVirtualMachines
-
-`func (o *VRF) GetVirtualMachines() []BulkWritableCableRequestStatus`
-
-GetVirtualMachines returns the VirtualMachines field if non-nil, zero value otherwise.
-
-### GetVirtualMachinesOk
-
-`func (o *VRF) GetVirtualMachinesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetVirtualMachinesOk returns a tuple with the VirtualMachines field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVirtualMachines
-
-`func (o *VRF) SetVirtualMachines(v []BulkWritableCableRequestStatus)`
-
-SetVirtualMachines sets VirtualMachines field to given value.
-
-
-### GetVirtualDeviceContexts
-
-`func (o *VRF) GetVirtualDeviceContexts() []BulkWritableCableRequestStatus`
-
-GetVirtualDeviceContexts returns the VirtualDeviceContexts field if non-nil, zero value otherwise.
-
-### GetVirtualDeviceContextsOk
-
-`func (o *VRF) GetVirtualDeviceContextsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetVirtualDeviceContextsOk returns a tuple with the VirtualDeviceContexts field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetVirtualDeviceContexts
-
-`func (o *VRF) SetVirtualDeviceContexts(v []BulkWritableCableRequestStatus)`
-
-SetVirtualDeviceContexts sets VirtualDeviceContexts field to given value.
-
-
-### GetPrefixes
-
-`func (o *VRF) GetPrefixes() []BulkWritableCableRequestStatus`
-
-GetPrefixes returns the Prefixes field if non-nil, zero value otherwise.
-
-### GetPrefixesOk
-
-`func (o *VRF) GetPrefixesOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetPrefixesOk returns a tuple with the Prefixes field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPrefixes
-
-`func (o *VRF) SetPrefixes(v []BulkWritableCableRequestStatus)`
-
-SetPrefixes sets Prefixes field to given value.
-
-
-### GetImportTargets
-
-`func (o *VRF) GetImportTargets() []BulkWritableCableRequestStatus`
-
-GetImportTargets returns the ImportTargets field if non-nil, zero value otherwise.
-
-### GetImportTargetsOk
-
-`func (o *VRF) GetImportTargetsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetImportTargetsOk returns a tuple with the ImportTargets field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetImportTargets
-
-`func (o *VRF) SetImportTargets(v []BulkWritableCableRequestStatus)`
-
-SetImportTargets sets ImportTargets field to given value.
-
-### HasImportTargets
-
-`func (o *VRF) HasImportTargets() bool`
-
-HasImportTargets returns a boolean if a field has been set.
-
-### GetExportTargets
-
-`func (o *VRF) GetExportTargets() []BulkWritableCableRequestStatus`
-
-GetExportTargets returns the ExportTargets field if non-nil, zero value otherwise.
-
-### GetExportTargetsOk
-
-`func (o *VRF) GetExportTargetsOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetExportTargetsOk returns a tuple with the ExportTargets field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetExportTargets
-
-`func (o *VRF) SetExportTargets(v []BulkWritableCableRequestStatus)`
-
-SetExportTargets sets ExportTargets field to given value.
-
-### HasExportTargets
-
-`func (o *VRF) HasExportTargets() bool`
-
-HasExportTargets returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *VRF) GetCreated() time.Time`
@@ -518,20 +382,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *VRF) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VRF) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VRF) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VRF) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VRF) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VRF) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

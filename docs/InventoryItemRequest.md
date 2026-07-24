@@ -12,20 +12,20 @@ Name | Type | Description | Notes
 **Serial** | Pointer to **string** |  | [optional] 
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this item | [optional] 
 **Discovered** | Pointer to **bool** | This item was automatically discovered | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Manufacturer** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Device** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Manufacturer** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableInventoryItemRequestSoftwareVersion**](BulkWritableInventoryItemRequestSoftwareVersion.md) |  | [optional] 
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this inventory item | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewInventoryItemRequest
 
-`func NewInventoryItemRequest(name string, device BulkWritableCableRequestStatus, ) *InventoryItemRequest`
+`func NewInventoryItemRequest(name string, device ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *InventoryItemRequest`
 
 NewInventoryItemRequest instantiates a new InventoryItemRequest object
 This constructor will assign default values to properties that have it defined,
@@ -247,20 +247,20 @@ HasDiscovered returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *InventoryItemRequest) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *InventoryItemRequest) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *InventoryItemRequest) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InventoryItemRequest) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *InventoryItemRequest) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *InventoryItemRequest) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -282,40 +282,40 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetDevice
 
-`func (o *InventoryItemRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *InventoryItemRequest) GetDevice() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *InventoryItemRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *InventoryItemRequest) GetDeviceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *InventoryItemRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *InventoryItemRequest) SetDevice(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDevice sets Device field to given value.
 
 
 ### GetManufacturer
 
-`func (o *InventoryItemRequest) GetManufacturer() BulkWritableCircuitRequestTenant`
+`func (o *InventoryItemRequest) GetManufacturer() ApprovalWorkflowUser`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *InventoryItemRequest) GetManufacturerOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *InventoryItemRequest) GetManufacturerOk() (*ApprovalWorkflowUser, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *InventoryItemRequest) SetManufacturer(v BulkWritableCircuitRequestTenant)`
+`func (o *InventoryItemRequest) SetManufacturer(v ApprovalWorkflowUser)`
 
 SetManufacturer sets Manufacturer field to given value.
 
@@ -422,20 +422,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *InventoryItemRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *InventoryItemRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *InventoryItemRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *InventoryItemRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *InventoryItemRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *InventoryItemRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -447,20 +447,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *InventoryItemRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *InventoryItemRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *InventoryItemRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *InventoryItemRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *InventoryItemRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *InventoryItemRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

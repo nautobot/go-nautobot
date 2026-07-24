@@ -8,15 +8,15 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DeviceType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewDeviceBayTemplateRequest
 
-`func NewDeviceBayTemplateRequest(name string, deviceType BulkWritableCableRequestStatus, ) *DeviceBayTemplateRequest`
+`func NewDeviceBayTemplateRequest(name string, deviceType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *DeviceBayTemplateRequest`
 
 NewDeviceBayTemplateRequest instantiates a new DeviceBayTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -128,20 +128,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *DeviceBayTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
+`func (o *DeviceBayTemplateRequest) GetDeviceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *DeviceBayTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceBayTemplateRequest) GetDeviceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *DeviceBayTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
+`func (o *DeviceBayTemplateRequest) SetDeviceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -173,20 +173,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *DeviceBayTemplateRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *DeviceBayTemplateRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *DeviceBayTemplateRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *DeviceBayTemplateRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *DeviceBayTemplateRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *DeviceBayTemplateRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

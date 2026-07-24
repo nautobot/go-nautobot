@@ -26,22 +26,22 @@ Name | Type | Description | Notes
 **BreakerPosition** | Pointer to **NullableInt32** | Starting circuit breaker position in panel | [optional] 
 **AvailablePower** | **int32** |  | [readonly] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Cable** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Cable** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PowerPanel** | [**BulkWritablePowerFeedRequestPowerPanel**](BulkWritablePowerFeedRequestPowerPanel.md) |  | 
 **DestinationPanel** | Pointer to [**NullableBulkWritablePowerFeedRequestDestinationPanel**](BulkWritablePowerFeedRequestDestinationPanel.md) |  | [optional] 
-**Rack** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Rack** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewPowerFeed
 
-`func NewPowerFeed(objectType string, display string, url string, naturalSlug string, cablePeerType NullableString, cablePeer NullableCableTermination, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, name string, availablePower int32, powerPanel BulkWritablePowerFeedRequestPowerPanel, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerFeed`
+`func NewPowerFeed(objectType string, display string, url string, naturalSlug string, cablePeerType NullableString, cablePeer NullableCableTermination, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, name string, availablePower int32, powerPanel BulkWritablePowerFeedRequestPowerPanel, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *PowerFeed`
 
 NewPowerFeed instantiates a new PowerFeed object
 This constructor will assign default values to properties that have it defined,
@@ -623,20 +623,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetCable
 
-`func (o *PowerFeed) GetCable() BulkWritableCircuitRequestTenant`
+`func (o *PowerFeed) GetCable() ApprovalWorkflowUser`
 
 GetCable returns the Cable field if non-nil, zero value otherwise.
 
 ### GetCableOk
 
-`func (o *PowerFeed) GetCableOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerFeed) GetCableOk() (*ApprovalWorkflowUser, bool)`
 
 GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCable
 
-`func (o *PowerFeed) SetCable(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerFeed) SetCable(v ApprovalWorkflowUser)`
 
 SetCable sets Cable field to given value.
 
@@ -713,20 +713,20 @@ HasDestinationPanel returns a boolean if a field has been set.
 UnsetDestinationPanel ensures that no value is present for DestinationPanel, not even an explicit nil
 ### GetRack
 
-`func (o *PowerFeed) GetRack() BulkWritableCircuitRequestTenant`
+`func (o *PowerFeed) GetRack() ApprovalWorkflowUser`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *PowerFeed) GetRackOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PowerFeed) GetRackOk() (*ApprovalWorkflowUser, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *PowerFeed) SetRack(v BulkWritableCircuitRequestTenant)`
+`func (o *PowerFeed) SetRack(v ApprovalWorkflowUser)`
 
 SetRack sets Rack field to given value.
 
@@ -748,20 +748,20 @@ HasRack returns a boolean if a field has been set.
 UnsetRack ensures that no value is present for Rack, not even an explicit nil
 ### GetStatus
 
-`func (o *PowerFeed) GetStatus() BulkWritableCableRequestStatus`
+`func (o *PowerFeed) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *PowerFeed) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PowerFeed) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *PowerFeed) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *PowerFeed) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -873,20 +873,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PowerFeed) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PowerFeed) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PowerFeed) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PowerFeed) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PowerFeed) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PowerFeed) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

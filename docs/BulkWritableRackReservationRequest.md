@@ -7,18 +7,18 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Units** | **interface{}** | List of rack unit numbers to reserve | 
 **Description** | **string** |  | 
-**Rack** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Rack** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableRackReservationRequest
 
-`func NewBulkWritableRackReservationRequest(id string, units interface{}, description string, rack BulkWritableCableRequestStatus, ) *BulkWritableRackReservationRequest`
+`func NewBulkWritableRackReservationRequest(id string, units interface{}, description string, rack ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableRackReservationRequest`
 
 NewBulkWritableRackReservationRequest instantiates a new BulkWritableRackReservationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -105,40 +105,40 @@ SetDescription sets Description field to given value.
 
 ### GetRack
 
-`func (o *BulkWritableRackReservationRequest) GetRack() BulkWritableCableRequestStatus`
+`func (o *BulkWritableRackReservationRequest) GetRack() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *BulkWritableRackReservationRequest) GetRackOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableRackReservationRequest) GetRackOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *BulkWritableRackReservationRequest) SetRack(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableRackReservationRequest) SetRack(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRack sets Rack field to given value.
 
 
 ### GetTenant
 
-`func (o *BulkWritableRackReservationRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableRackReservationRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *BulkWritableRackReservationRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableRackReservationRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *BulkWritableRackReservationRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableRackReservationRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -210,20 +210,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableRackReservationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableRackReservationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableRackReservationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableRackReservationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableRackReservationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableRackReservationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -235,20 +235,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableRackReservationRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableRackReservationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableRackReservationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableRackReservationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableRackReservationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableRackReservationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

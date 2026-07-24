@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Vrf** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VirtualMachine** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**VirtualDeviceContext** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Vrf** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VirtualMachine** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**VirtualDeviceContext** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
@@ -113,20 +113,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetVrf
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrf() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrf() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVrf(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVrf(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVrf sets Vrf field to given value.
 
@@ -138,20 +138,20 @@ HasVrf returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -173,20 +173,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetVirtualMachine
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualMachine() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualMachine() ApprovalWorkflowUser`
 
 GetVirtualMachine returns the VirtualMachine field if non-nil, zero value otherwise.
 
 ### GetVirtualMachineOk
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualMachineOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualMachineOk() (*ApprovalWorkflowUser, bool)`
 
 GetVirtualMachineOk returns a tuple with the VirtualMachine field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualMachine
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVirtualMachine(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVirtualMachine(v ApprovalWorkflowUser)`
 
 SetVirtualMachine sets VirtualMachine field to given value.
 
@@ -208,20 +208,20 @@ HasVirtualMachine returns a boolean if a field has been set.
 UnsetVirtualMachine ensures that no value is present for VirtualMachine, not even an explicit nil
 ### GetVirtualDeviceContext
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContext() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContext() ApprovalWorkflowUser`
 
 GetVirtualDeviceContext returns the VirtualDeviceContext field if non-nil, zero value otherwise.
 
 ### GetVirtualDeviceContextOk
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContextOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVirtualDeviceContextOk() (*ApprovalWorkflowUser, bool)`
 
 GetVirtualDeviceContextOk returns a tuple with the VirtualDeviceContext field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualDeviceContext
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVirtualDeviceContext(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVirtualDeviceContext(v ApprovalWorkflowUser)`
 
 SetVirtualDeviceContext sets VirtualDeviceContext field to given value.
 

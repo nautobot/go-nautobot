@@ -8,31 +8,33 @@ Name | Type | Description | Notes
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
 **Mode** | Pointer to [**InterfaceModeChoices**](InterfaceModeChoices.md) |  | [optional] 
 **MacAddress** | Pointer to **NullableString** |  | [optional] 
+**Speed** | Pointer to **NullableInt32** |  | [optional] 
+**Duplex** | Pointer to [**DuplexEnum**](DuplexEnum.md) |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** | This interface is used only for out-of-band management | [optional] 
-**Device** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Module** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
 **Lag** | Pointer to [**NullableParentLAG**](ParentLAG.md) |  | [optional] 
-**UntaggedVlan** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Vrf** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**UntaggedVlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Vrf** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **TaggedVlans** | Pointer to [**[]TaggedVLANs**](TaggedVLANs.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableInterfaceRequest
 
-`func NewBulkWritableInterfaceRequest(id string, type_ InterfaceTypeChoices, name string, status BulkWritableCableRequestStatus, ) *BulkWritableInterfaceRequest`
+`func NewBulkWritableInterfaceRequest(id string, type_ InterfaceTypeChoices, name string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableInterfaceRequest`
 
 NewBulkWritableInterfaceRequest instantiates a new BulkWritableInterfaceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -147,6 +149,66 @@ HasMacAddress returns a boolean if a field has been set.
 `func (o *BulkWritableInterfaceRequest) UnsetMacAddress()`
 
 UnsetMacAddress ensures that no value is present for MacAddress, not even an explicit nil
+### GetSpeed
+
+`func (o *BulkWritableInterfaceRequest) GetSpeed() int32`
+
+GetSpeed returns the Speed field if non-nil, zero value otherwise.
+
+### GetSpeedOk
+
+`func (o *BulkWritableInterfaceRequest) GetSpeedOk() (*int32, bool)`
+
+GetSpeedOk returns a tuple with the Speed field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpeed
+
+`func (o *BulkWritableInterfaceRequest) SetSpeed(v int32)`
+
+SetSpeed sets Speed field to given value.
+
+### HasSpeed
+
+`func (o *BulkWritableInterfaceRequest) HasSpeed() bool`
+
+HasSpeed returns a boolean if a field has been set.
+
+### SetSpeedNil
+
+`func (o *BulkWritableInterfaceRequest) SetSpeedNil(b bool)`
+
+ SetSpeedNil sets the value for Speed to be an explicit nil
+
+### UnsetSpeed
+`func (o *BulkWritableInterfaceRequest) UnsetSpeed()`
+
+UnsetSpeed ensures that no value is present for Speed, not even an explicit nil
+### GetDuplex
+
+`func (o *BulkWritableInterfaceRequest) GetDuplex() DuplexEnum`
+
+GetDuplex returns the Duplex field if non-nil, zero value otherwise.
+
+### GetDuplexOk
+
+`func (o *BulkWritableInterfaceRequest) GetDuplexOk() (*DuplexEnum, bool)`
+
+GetDuplexOk returns a tuple with the Duplex field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDuplex
+
+`func (o *BulkWritableInterfaceRequest) SetDuplex(v DuplexEnum)`
+
+SetDuplex sets Duplex field to given value.
+
+### HasDuplex
+
+`func (o *BulkWritableInterfaceRequest) HasDuplex() bool`
+
+HasDuplex returns a boolean if a field has been set.
+
 ### GetName
 
 `func (o *BulkWritableInterfaceRequest) GetName() string`
@@ -304,20 +366,20 @@ HasMgmtOnly returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *BulkWritableInterfaceRequest) GetDevice() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRequest) GetDevice() ApprovalWorkflowUser`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *BulkWritableInterfaceRequest) GetDeviceOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRequest) GetDeviceOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *BulkWritableInterfaceRequest) SetDevice(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRequest) SetDevice(v ApprovalWorkflowUser)`
 
 SetDevice sets Device field to given value.
 
@@ -339,20 +401,20 @@ HasDevice returns a boolean if a field has been set.
 UnsetDevice ensures that no value is present for Device, not even an explicit nil
 ### GetModule
 
-`func (o *BulkWritableInterfaceRequest) GetModule() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRequest) GetModule() ApprovalWorkflowUser`
 
 GetModule returns the Module field if non-nil, zero value otherwise.
 
 ### GetModuleOk
 
-`func (o *BulkWritableInterfaceRequest) GetModuleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRequest) GetModuleOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleOk returns a tuple with the Module field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModule
 
-`func (o *BulkWritableInterfaceRequest) SetModule(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRequest) SetModule(v ApprovalWorkflowUser)`
 
 SetModule sets Module field to given value.
 
@@ -374,40 +436,40 @@ HasModule returns a boolean if a field has been set.
 UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetStatus
 
-`func (o *BulkWritableInterfaceRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *BulkWritableInterfaceRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableInterfaceRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableInterfaceRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableInterfaceRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableInterfaceRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetRole
 
-`func (o *BulkWritableInterfaceRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *BulkWritableInterfaceRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *BulkWritableInterfaceRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -534,20 +596,20 @@ HasLag returns a boolean if a field has been set.
 UnsetLag ensures that no value is present for Lag, not even an explicit nil
 ### GetUntaggedVlan
 
-`func (o *BulkWritableInterfaceRequest) GetUntaggedVlan() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRequest) GetUntaggedVlan() ApprovalWorkflowUser`
 
 GetUntaggedVlan returns the UntaggedVlan field if non-nil, zero value otherwise.
 
 ### GetUntaggedVlanOk
 
-`func (o *BulkWritableInterfaceRequest) GetUntaggedVlanOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRequest) GetUntaggedVlanOk() (*ApprovalWorkflowUser, bool)`
 
 GetUntaggedVlanOk returns a tuple with the UntaggedVlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUntaggedVlan
 
-`func (o *BulkWritableInterfaceRequest) SetUntaggedVlan(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRequest) SetUntaggedVlan(v ApprovalWorkflowUser)`
 
 SetUntaggedVlan sets UntaggedVlan field to given value.
 
@@ -569,20 +631,20 @@ HasUntaggedVlan returns a boolean if a field has been set.
 UnsetUntaggedVlan ensures that no value is present for UntaggedVlan, not even an explicit nil
 ### GetVrf
 
-`func (o *BulkWritableInterfaceRequest) GetVrf() BulkWritableCircuitRequestTenant`
+`func (o *BulkWritableInterfaceRequest) GetVrf() ApprovalWorkflowUser`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *BulkWritableInterfaceRequest) GetVrfOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *BulkWritableInterfaceRequest) GetVrfOk() (*ApprovalWorkflowUser, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *BulkWritableInterfaceRequest) SetVrf(v BulkWritableCircuitRequestTenant)`
+`func (o *BulkWritableInterfaceRequest) SetVrf(v ApprovalWorkflowUser)`
 
 SetVrf sets Vrf field to given value.
 
@@ -654,20 +716,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *BulkWritableInterfaceRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *BulkWritableInterfaceRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *BulkWritableInterfaceRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *BulkWritableInterfaceRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *BulkWritableInterfaceRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *BulkWritableInterfaceRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 
@@ -679,20 +741,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableInterfaceRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableInterfaceRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableInterfaceRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableInterfaceRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableInterfaceRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableInterfaceRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

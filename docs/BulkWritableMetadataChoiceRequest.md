@@ -7,13 +7,13 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Value** | **string** |  | 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableMetadataChoiceRequest
 
-`func NewBulkWritableMetadataChoiceRequest(id string, value string, metadataType BulkWritableCableRequestStatus, ) *BulkWritableMetadataChoiceRequest`
+`func NewBulkWritableMetadataChoiceRequest(id string, value string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableMetadataChoiceRequest`
 
 NewBulkWritableMetadataChoiceRequest instantiates a new BulkWritableMetadataChoiceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -95,20 +95,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetMetadataType
 
-`func (o *BulkWritableMetadataChoiceRequest) GetMetadataType() BulkWritableCableRequestStatus`
+`func (o *BulkWritableMetadataChoiceRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *BulkWritableMetadataChoiceRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableMetadataChoiceRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *BulkWritableMetadataChoiceRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableMetadataChoiceRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetMetadataType sets MetadataType field to given value.
 

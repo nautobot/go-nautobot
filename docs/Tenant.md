@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **CircuitCount** | Pointer to **int32** |  | [optional] [readonly] 
 **DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
 **IpaddressCount** | Pointer to **int32** |  | [optional] [readonly] 
+**NamespaceCount** | Pointer to **int32** |  | [optional] [readonly] 
 **PrefixCount** | Pointer to **int32** |  | [optional] [readonly] 
 **RackCount** | Pointer to **int32** |  | [optional] [readonly] 
 **VirtualmachineCount** | Pointer to **int32** |  | [optional] [readonly] 
@@ -21,10 +22,10 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**TenantGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**TenantGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -226,6 +227,31 @@ SetIpaddressCount sets IpaddressCount field to given value.
 `func (o *Tenant) HasIpaddressCount() bool`
 
 HasIpaddressCount returns a boolean if a field has been set.
+
+### GetNamespaceCount
+
+`func (o *Tenant) GetNamespaceCount() int32`
+
+GetNamespaceCount returns the NamespaceCount field if non-nil, zero value otherwise.
+
+### GetNamespaceCountOk
+
+`func (o *Tenant) GetNamespaceCountOk() (*int32, bool)`
+
+GetNamespaceCountOk returns a tuple with the NamespaceCount field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNamespaceCount
+
+`func (o *Tenant) SetNamespaceCount(v int32)`
+
+SetNamespaceCount sets NamespaceCount field to given value.
+
+### HasNamespaceCount
+
+`func (o *Tenant) HasNamespaceCount() bool`
+
+HasNamespaceCount returns a boolean if a field has been set.
 
 ### GetPrefixCount
 
@@ -449,20 +475,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetTenantGroup
 
-`func (o *Tenant) GetTenantGroup() BulkWritableCircuitRequestTenant`
+`func (o *Tenant) GetTenantGroup() ApprovalWorkflowUser`
 
 GetTenantGroup returns the TenantGroup field if non-nil, zero value otherwise.
 
 ### GetTenantGroupOk
 
-`func (o *Tenant) GetTenantGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Tenant) GetTenantGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantGroupOk returns a tuple with the TenantGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenantGroup
 
-`func (o *Tenant) SetTenantGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *Tenant) SetTenantGroup(v ApprovalWorkflowUser)`
 
 SetTenantGroup sets TenantGroup field to given value.
 
@@ -544,20 +570,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *Tenant) GetTags() []BulkWritableCableRequestStatus`
+`func (o *Tenant) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Tenant) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *Tenant) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Tenant) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *Tenant) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

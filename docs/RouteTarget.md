@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Name** | **string** | Route target value (formatted in accordance with RFC 4360) | 
 **Description** | Pointer to **string** |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -189,20 +189,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetTenant
 
-`func (o *RouteTarget) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *RouteTarget) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *RouteTarget) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *RouteTarget) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *RouteTarget) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *RouteTarget) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -284,20 +284,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *RouteTarget) GetTags() []BulkWritableCableRequestStatus`
+`func (o *RouteTarget) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *RouteTarget) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *RouteTarget) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *RouteTarget) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *RouteTarget) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

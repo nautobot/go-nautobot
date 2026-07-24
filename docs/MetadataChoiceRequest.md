@@ -7,13 +7,13 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Value** | **string** |  | 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewMetadataChoiceRequest
 
-`func NewMetadataChoiceRequest(value string, metadataType BulkWritableCableRequestStatus, ) *MetadataChoiceRequest`
+`func NewMetadataChoiceRequest(value string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *MetadataChoiceRequest`
 
 NewMetadataChoiceRequest instantiates a new MetadataChoiceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -100,20 +100,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetMetadataType
 
-`func (o *MetadataChoiceRequest) GetMetadataType() BulkWritableCableRequestStatus`
+`func (o *MetadataChoiceRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *MetadataChoiceRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *MetadataChoiceRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *MetadataChoiceRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
+`func (o *MetadataChoiceRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetMetadataType sets MetadataType field to given value.
 

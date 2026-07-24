@@ -29,21 +29,21 @@ Name | Type | Description | Notes
 **ContactPhone** | Pointer to **string** |  | [optional] 
 **ContactEmail** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Parent** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**LocationType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**LocationType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewLocation
 
-`func NewLocation(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, locationType BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Location`
+`func NewLocation(objectType string, display string, url string, naturalSlug string, treeDepth NullableInt32, name string, locationType ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Location`
 
 NewLocation instantiates a new Location object
 This constructor will assign default values to properties that have it defined,
@@ -705,20 +705,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetParent
 
-`func (o *Location) GetParent() BulkWritableCircuitRequestTenant`
+`func (o *Location) GetParent() ApprovalWorkflowUser`
 
 GetParent returns the Parent field if non-nil, zero value otherwise.
 
 ### GetParentOk
 
-`func (o *Location) GetParentOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Location) GetParentOk() (*ApprovalWorkflowUser, bool)`
 
 GetParentOk returns a tuple with the Parent field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetParent
 
-`func (o *Location) SetParent(v BulkWritableCircuitRequestTenant)`
+`func (o *Location) SetParent(v ApprovalWorkflowUser)`
 
 SetParent sets Parent field to given value.
 
@@ -740,60 +740,60 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetLocationType
 
-`func (o *Location) GetLocationType() BulkWritableCableRequestStatus`
+`func (o *Location) GetLocationType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocationType returns the LocationType field if non-nil, zero value otherwise.
 
 ### GetLocationTypeOk
 
-`func (o *Location) GetLocationTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *Location) GetLocationTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationTypeOk returns a tuple with the LocationType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocationType
 
-`func (o *Location) SetLocationType(v BulkWritableCableRequestStatus)`
+`func (o *Location) SetLocationType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocationType sets LocationType field to given value.
 
 
 ### GetStatus
 
-`func (o *Location) GetStatus() BulkWritableCableRequestStatus`
+`func (o *Location) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *Location) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *Location) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *Location) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *Location) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetTenant
 
-`func (o *Location) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *Location) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *Location) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *Location) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *Location) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *Location) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -920,20 +920,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *Location) GetTags() []BulkWritableCableRequestStatus`
+`func (o *Location) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Location) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *Location) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Location) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *Location) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

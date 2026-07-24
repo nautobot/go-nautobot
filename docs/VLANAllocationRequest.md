@@ -6,21 +6,21 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
 **Vid** | Pointer to **int32** |  | [optional] 
-**VlanGroup** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**VlanGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Name** | **string** |  | 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Role** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewVLANAllocationRequest
 
-`func NewVLANAllocationRequest(name string, status BulkWritableCableRequestStatus, ) *VLANAllocationRequest`
+`func NewVLANAllocationRequest(name string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VLANAllocationRequest`
 
 NewVLANAllocationRequest instantiates a new VLANAllocationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -87,20 +87,20 @@ HasVid returns a boolean if a field has been set.
 
 ### GetVlanGroup
 
-`func (o *VLANAllocationRequest) GetVlanGroup() BulkWritableCircuitRequestTenant`
+`func (o *VLANAllocationRequest) GetVlanGroup() ApprovalWorkflowUser`
 
 GetVlanGroup returns the VlanGroup field if non-nil, zero value otherwise.
 
 ### GetVlanGroupOk
 
-`func (o *VLANAllocationRequest) GetVlanGroupOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VLANAllocationRequest) GetVlanGroupOk() (*ApprovalWorkflowUser, bool)`
 
 GetVlanGroupOk returns a tuple with the VlanGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVlanGroup
 
-`func (o *VLANAllocationRequest) SetVlanGroup(v BulkWritableCircuitRequestTenant)`
+`func (o *VLANAllocationRequest) SetVlanGroup(v ApprovalWorkflowUser)`
 
 SetVlanGroup sets VlanGroup field to given value.
 
@@ -142,40 +142,40 @@ SetName sets Name field to given value.
 
 ### GetStatus
 
-`func (o *VLANAllocationRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *VLANAllocationRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *VLANAllocationRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VLANAllocationRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *VLANAllocationRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *VLANAllocationRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetRole
 
-`func (o *VLANAllocationRequest) GetRole() BulkWritableCircuitRequestTenant`
+`func (o *VLANAllocationRequest) GetRole() ApprovalWorkflowUser`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *VLANAllocationRequest) GetRoleOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VLANAllocationRequest) GetRoleOk() (*ApprovalWorkflowUser, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *VLANAllocationRequest) SetRole(v BulkWritableCircuitRequestTenant)`
+`func (o *VLANAllocationRequest) SetRole(v ApprovalWorkflowUser)`
 
 SetRole sets Role field to given value.
 
@@ -197,20 +197,20 @@ HasRole returns a boolean if a field has been set.
 UnsetRole ensures that no value is present for Role, not even an explicit nil
 ### GetTenant
 
-`func (o *VLANAllocationRequest) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *VLANAllocationRequest) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *VLANAllocationRequest) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *VLANAllocationRequest) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *VLANAllocationRequest) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *VLANAllocationRequest) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -257,20 +257,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *VLANAllocationRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VLANAllocationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VLANAllocationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VLANAllocationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VLANAllocationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VLANAllocationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
@@ -307,20 +307,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *VLANAllocationRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *VLANAllocationRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *VLANAllocationRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *VLANAllocationRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *VLANAllocationRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *VLANAllocationRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

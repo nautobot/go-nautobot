@@ -14,19 +14,18 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **GroupType** | Pointer to [**GroupTypeEnum**](GroupTypeEnum.md) |  | [optional] 
 **Filter** | Pointer to **interface{}** | A JSON-encoded dictionary of filter parameters defining membership of this group | [optional] 
-**Tenant** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**Children** | [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [readonly] 
+**Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewDynamicGroup
 
-`func NewDynamicGroup(objectType string, display string, url string, naturalSlug string, contentType string, name string, children []BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DynamicGroup`
+`func NewDynamicGroup(objectType string, display string, url string, naturalSlug string, contentType string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DynamicGroup`
 
 NewDynamicGroup instantiates a new DynamicGroup object
 This constructor will assign default values to properties that have it defined,
@@ -273,20 +272,20 @@ HasFilter returns a boolean if a field has been set.
 UnsetFilter ensures that no value is present for Filter, not even an explicit nil
 ### GetTenant
 
-`func (o *DynamicGroup) GetTenant() BulkWritableCircuitRequestTenant`
+`func (o *DynamicGroup) GetTenant() ApprovalWorkflowUser`
 
 GetTenant returns the Tenant field if non-nil, zero value otherwise.
 
 ### GetTenantOk
 
-`func (o *DynamicGroup) GetTenantOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *DynamicGroup) GetTenantOk() (*ApprovalWorkflowUser, bool)`
 
 GetTenantOk returns a tuple with the Tenant field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenant
 
-`func (o *DynamicGroup) SetTenant(v BulkWritableCircuitRequestTenant)`
+`func (o *DynamicGroup) SetTenant(v ApprovalWorkflowUser)`
 
 SetTenant sets Tenant field to given value.
 
@@ -306,26 +305,6 @@ HasTenant returns a boolean if a field has been set.
 `func (o *DynamicGroup) UnsetTenant()`
 
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
-### GetChildren
-
-`func (o *DynamicGroup) GetChildren() []BulkWritableCableRequestStatus`
-
-GetChildren returns the Children field if non-nil, zero value otherwise.
-
-### GetChildrenOk
-
-`func (o *DynamicGroup) GetChildrenOk() (*[]BulkWritableCableRequestStatus, bool)`
-
-GetChildrenOk returns a tuple with the Children field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetChildren
-
-`func (o *DynamicGroup) SetChildren(v []BulkWritableCableRequestStatus)`
-
-SetChildren sets Children field to given value.
-
-
 ### GetCreated
 
 `func (o *DynamicGroup) GetCreated() time.Time`
@@ -433,20 +412,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *DynamicGroup) GetTags() []BulkWritableCableRequestStatus`
+`func (o *DynamicGroup) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *DynamicGroup) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *DynamicGroup) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *DynamicGroup) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *DynamicGroup) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

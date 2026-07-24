@@ -10,10 +10,12 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** |  | [optional] 
-**DeviceType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
-**ModuleType** | Pointer to [**NullableBulkWritableCircuitRequestTenant**](BulkWritableCircuitRequestTenant.md) |  | [optional] 
+**Speed** | Pointer to **NullableInt32** |  | [optional] 
+**Duplex** | Pointer to [**BulkWritableInterfaceTemplateRequestDuplex**](BulkWritableInterfaceTemplateRequestDuplex.md) |  | [optional] 
+**DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Relationships** | Pointer to [**map[string]BulkWritableCableRequestRelationshipsValue**](BulkWritableCableRequestRelationshipsValue.md) |  | [optional] 
+**Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
@@ -179,22 +181,82 @@ SetMgmtOnly sets MgmtOnly field to given value.
 
 HasMgmtOnly returns a boolean if a field has been set.
 
+### GetSpeed
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetSpeed() int32`
+
+GetSpeed returns the Speed field if non-nil, zero value otherwise.
+
+### GetSpeedOk
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetSpeedOk() (*int32, bool)`
+
+GetSpeedOk returns a tuple with the Speed field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSpeed
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetSpeed(v int32)`
+
+SetSpeed sets Speed field to given value.
+
+### HasSpeed
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) HasSpeed() bool`
+
+HasSpeed returns a boolean if a field has been set.
+
+### SetSpeedNil
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetSpeedNil(b bool)`
+
+ SetSpeedNil sets the value for Speed to be an explicit nil
+
+### UnsetSpeed
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) UnsetSpeed()`
+
+UnsetSpeed ensures that no value is present for Speed, not even an explicit nil
+### GetDuplex
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDuplex() BulkWritableInterfaceTemplateRequestDuplex`
+
+GetDuplex returns the Duplex field if non-nil, zero value otherwise.
+
+### GetDuplexOk
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDuplexOk() (*BulkWritableInterfaceTemplateRequestDuplex, bool)`
+
+GetDuplexOk returns a tuple with the Duplex field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDuplex
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetDuplex(v BulkWritableInterfaceTemplateRequestDuplex)`
+
+SetDuplex sets Duplex field to given value.
+
+### HasDuplex
+
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) HasDuplex() bool`
+
+HasDuplex returns a boolean if a field has been set.
+
 ### GetDeviceType
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDeviceType() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDeviceType() ApprovalWorkflowUser`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDeviceTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetDeviceTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetDeviceType(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetDeviceType(v ApprovalWorkflowUser)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -216,20 +278,20 @@ HasDeviceType returns a boolean if a field has been set.
 UnsetDeviceType ensures that no value is present for DeviceType, not even an explicit nil
 ### GetModuleType
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetModuleType() BulkWritableCircuitRequestTenant`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetModuleType() ApprovalWorkflowUser`
 
 GetModuleType returns the ModuleType field if non-nil, zero value otherwise.
 
 ### GetModuleTypeOk
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetModuleTypeOk() (*BulkWritableCircuitRequestTenant, bool)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetModuleTypeOk() (*ApprovalWorkflowUser, bool)`
 
 GetModuleTypeOk returns a tuple with the ModuleType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetModuleType
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetModuleType(v BulkWritableCircuitRequestTenant)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetModuleType(v ApprovalWorkflowUser)`
 
 SetModuleType sets ModuleType field to given value.
 
@@ -276,20 +338,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetRelationships
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetRelationships() map[string]BulkWritableCableRequestRelationshipsValue`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetRelationships() map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue`
 
 GetRelationships returns the Relationships field if non-nil, zero value otherwise.
 
 ### GetRelationshipsOk
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetRelationshipsOk() (*map[string]BulkWritableCableRequestRelationshipsValue, bool)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) GetRelationshipsOk() (*map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue, bool)`
 
 GetRelationshipsOk returns a tuple with the Relationships field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationships
 
-`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetRelationships(v map[string]BulkWritableCableRequestRelationshipsValue)`
+`func (o *PatchedBulkWritableInterfaceTemplateRequest) SetRelationships(v map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue)`
 
 SetRelationships sets Relationships field to given value.
 

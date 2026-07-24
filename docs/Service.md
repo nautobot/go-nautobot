@@ -15,10 +15,9 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **Device** | Pointer to [**NullableBulkWritableServiceRequestDevice**](BulkWritableServiceRequestDevice.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableBulkWritableServiceRequestVirtualMachine**](BulkWritableServiceRequestVirtualMachine.md) |  | [optional] 
-**IpAddresses** | Pointer to [**[]IPAddresses**](IPAddresses.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -306,31 +305,6 @@ HasVirtualMachine returns a boolean if a field has been set.
 `func (o *Service) UnsetVirtualMachine()`
 
 UnsetVirtualMachine ensures that no value is present for VirtualMachine, not even an explicit nil
-### GetIpAddresses
-
-`func (o *Service) GetIpAddresses() []IPAddresses`
-
-GetIpAddresses returns the IpAddresses field if non-nil, zero value otherwise.
-
-### GetIpAddressesOk
-
-`func (o *Service) GetIpAddressesOk() (*[]IPAddresses, bool)`
-
-GetIpAddressesOk returns a tuple with the IpAddresses field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetIpAddresses
-
-`func (o *Service) SetIpAddresses(v []IPAddresses)`
-
-SetIpAddresses sets IpAddresses field to given value.
-
-### HasIpAddresses
-
-`func (o *Service) HasIpAddresses() bool`
-
-HasIpAddresses returns a boolean if a field has been set.
-
 ### GetCreated
 
 `func (o *Service) GetCreated() time.Time`
@@ -393,20 +367,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *Service) GetTags() []BulkWritableCableRequestStatus`
+`func (o *Service) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Service) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *Service) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Service) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *Service) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 
