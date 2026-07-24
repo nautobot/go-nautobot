@@ -15,10 +15,10 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **ErrorMessage** | Pointer to **string** | Optional error message to display when validation fails. | [optional] 
 **RegularExpression** | **string** |  | 
-**ContextProcessing** | Pointer to **bool** | When enabled, the regular expression value is first processed as a Jinja2 template with access to the context of the data being validated in a variable named &lt;code&gt;object&lt;/code&gt;. | [optional] 
+**ContextProcessing** | Pointer to **bool** | When enabled, the regular expression value is first processed as a Jinja2 template with access to the object being validated in a variable named &lt;code&gt;obj&lt;/code&gt;. | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -363,20 +363,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *RegularExpressionValidationRule) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *RegularExpressionValidationRule) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *RegularExpressionValidationRule) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *RegularExpressionValidationRule) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *RegularExpressionValidationRule) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *RegularExpressionValidationRule) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

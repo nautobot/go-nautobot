@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **TenantGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -570,20 +570,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *Tenant) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Tenant) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Tenant) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Tenant) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Tenant) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Tenant) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

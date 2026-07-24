@@ -10,12 +10,12 @@ Name | Type | Description | Notes
 **Type** | Pointer to [**IPAddressTypeChoices**](IPAddressTypeChoices.md) |  | [optional] 
 **DnsName** | Pointer to **string** | Hostname or FQDN (not case-sensitive) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableIPAddressRequestParent**](BulkWritableIPAddressRequestParent.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **NatInside** | Pointer to [**NullableNATInside**](NATInside.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewIPAddressRequest
 
-`func NewIPAddressRequest(address string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *IPAddressRequest`
+`func NewIPAddressRequest(address string, status BulkWritableCableRequestStatus, ) *IPAddressRequest`
 
 NewIPAddressRequest instantiates a new IPAddressRequest object
 This constructor will assign default values to properties that have it defined,
@@ -185,20 +185,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *IPAddressRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *IPAddressRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *IPAddressRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *IPAddressRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *IPAddressRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *IPAddressRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -345,20 +345,20 @@ HasNatInside returns a boolean if a field has been set.
 UnsetNatInside ensures that no value is present for NatInside, not even an explicit nil
 ### GetTags
 
-`func (o *IPAddressRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *IPAddressRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *IPAddressRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *IPAddressRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *IPAddressRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *IPAddressRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

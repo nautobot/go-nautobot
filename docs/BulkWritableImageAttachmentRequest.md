@@ -8,15 +8,13 @@ Name | Type | Description | Notes
 **ContentType** | **string** |  | 
 **ObjectId** | **string** |  | 
 **Image** | ***os.File** |  | 
-**ImageHeight** | **int32** |  | 
-**ImageWidth** | **int32** |  | 
 **Name** | Pointer to **string** |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableImageAttachmentRequest
 
-`func NewBulkWritableImageAttachmentRequest(id string, contentType string, objectId string, image *os.File, imageHeight int32, imageWidth int32, ) *BulkWritableImageAttachmentRequest`
+`func NewBulkWritableImageAttachmentRequest(id string, contentType string, objectId string, image *os.File, ) *BulkWritableImageAttachmentRequest`
 
 NewBulkWritableImageAttachmentRequest instantiates a new BulkWritableImageAttachmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -109,46 +107,6 @@ and a boolean to check if the value has been set.
 `func (o *BulkWritableImageAttachmentRequest) SetImage(v *os.File)`
 
 SetImage sets Image field to given value.
-
-
-### GetImageHeight
-
-`func (o *BulkWritableImageAttachmentRequest) GetImageHeight() int32`
-
-GetImageHeight returns the ImageHeight field if non-nil, zero value otherwise.
-
-### GetImageHeightOk
-
-`func (o *BulkWritableImageAttachmentRequest) GetImageHeightOk() (*int32, bool)`
-
-GetImageHeightOk returns a tuple with the ImageHeight field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetImageHeight
-
-`func (o *BulkWritableImageAttachmentRequest) SetImageHeight(v int32)`
-
-SetImageHeight sets ImageHeight field to given value.
-
-
-### GetImageWidth
-
-`func (o *BulkWritableImageAttachmentRequest) GetImageWidth() int32`
-
-GetImageWidth returns the ImageWidth field if non-nil, zero value otherwise.
-
-### GetImageWidthOk
-
-`func (o *BulkWritableImageAttachmentRequest) GetImageWidthOk() (*int32, bool)`
-
-GetImageWidthOk returns a tuple with the ImageWidth field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetImageWidth
-
-`func (o *BulkWritableImageAttachmentRequest) SetImageWidth(v int32)`
-
-SetImageWidth sets ImageWidth field to given value.
 
 
 ### GetName

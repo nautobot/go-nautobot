@@ -14,16 +14,16 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** |  | [optional] 
 **Color** | Pointer to **string** | RGB color in hexadecimal (e.g. 00ff00) | [optional] 
 **Length** | Pointer to **NullableInt32** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableCableRequest
 
-`func NewBulkWritableCableRequest(id string, terminationAType string, terminationBType string, terminationAId string, terminationBId string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCableRequest`
+`func NewBulkWritableCableRequest(id string, terminationAType string, terminationBType string, terminationAId string, terminationBId string, status BulkWritableCableRequestStatus, ) *BulkWritableCableRequest`
 
 NewBulkWritableCableRequest instantiates a new BulkWritableCableRequest object
 This constructor will assign default values to properties that have it defined,
@@ -275,20 +275,20 @@ HasLength returns a boolean if a field has been set.
 UnsetLength ensures that no value is present for Length, not even an explicit nil
 ### GetStatus
 
-`func (o *BulkWritableCableRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCableRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableCableRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCableRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableCableRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCableRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -345,20 +345,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableCableRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCableRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableCableRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCableRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableCableRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCableRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

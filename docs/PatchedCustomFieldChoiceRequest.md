@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Value** | Pointer to **string** |  | [optional] 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**CustomField** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CustomField** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -105,20 +105,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetCustomField
 
-`func (o *PatchedCustomFieldChoiceRequest) GetCustomField() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedCustomFieldChoiceRequest) GetCustomField() BulkWritableCableRequestStatus`
 
 GetCustomField returns the CustomField field if non-nil, zero value otherwise.
 
 ### GetCustomFieldOk
 
-`func (o *PatchedCustomFieldChoiceRequest) GetCustomFieldOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedCustomFieldChoiceRequest) GetCustomFieldOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCustomFieldOk returns a tuple with the CustomField field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomField
 
-`func (o *PatchedCustomFieldChoiceRequest) SetCustomField(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedCustomFieldChoiceRequest) SetCustomField(v BulkWritableCableRequestStatus)`
 
 SetCustomField sets CustomField field to given value.
 

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
+**PortType** | Pointer to [**PortTypeChoices**](PortTypeChoices.md) |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -75,6 +76,31 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
+
+### GetPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) GetPortType() PortTypeChoices`
+
+GetPortType returns the PortType field if non-nil, zero value otherwise.
+
+### GetPortTypeOk
+
+`func (o *BulkWritableInterfaceTemplateRequest) GetPortTypeOk() (*PortTypeChoices, bool)`
+
+GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) SetPortType(v PortTypeChoices)`
+
+SetPortType sets PortType field to given value.
+
+### HasPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) HasPortType() bool`
+
+HasPortType returns a boolean if a field has been set.
 
 ### GetName
 

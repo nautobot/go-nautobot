@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**DeviceType** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**SoftwareImageFile** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**DeviceType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**SoftwareImageFile** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -54,20 +54,20 @@ HasId returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetDeviceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetDeviceType() BulkWritableCableRequestStatus`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetDeviceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) SetDeviceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
 
 SetDeviceType sets DeviceType field to given value.
 
@@ -79,20 +79,20 @@ HasDeviceType returns a boolean if a field has been set.
 
 ### GetSoftwareImageFile
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetSoftwareImageFile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetSoftwareImageFile() BulkWritableCableRequestStatus`
 
 GetSoftwareImageFile returns the SoftwareImageFile field if non-nil, zero value otherwise.
 
 ### GetSoftwareImageFileOk
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetSoftwareImageFileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) GetSoftwareImageFileOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetSoftwareImageFileOk returns a tuple with the SoftwareImageFile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSoftwareImageFile
 
-`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) SetSoftwareImageFile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedDeviceTypeToSoftwareImageFileRequest) SetSoftwareImageFile(v BulkWritableCableRequestStatus)`
 
 SetSoftwareImageFile sets SoftwareImageFile field to given value.
 

@@ -10,11 +10,10 @@ Name | Type | Description | Notes
 **Slug** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **RemoteUrl** | **string** | Only HTTP and HTTPS URLs are presently supported | 
 **Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
-**CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -170,31 +169,6 @@ SetBranch sets Branch field to given value.
 
 HasBranch returns a boolean if a field has been set.
 
-### GetCurrentHead
-
-`func (o *BulkWritableGitRepositoryRequest) GetCurrentHead() string`
-
-GetCurrentHead returns the CurrentHead field if non-nil, zero value otherwise.
-
-### GetCurrentHeadOk
-
-`func (o *BulkWritableGitRepositoryRequest) GetCurrentHeadOk() (*string, bool)`
-
-GetCurrentHeadOk returns a tuple with the CurrentHead field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCurrentHead
-
-`func (o *BulkWritableGitRepositoryRequest) SetCurrentHead(v string)`
-
-SetCurrentHead sets CurrentHead field to given value.
-
-### HasCurrentHead
-
-`func (o *BulkWritableGitRepositoryRequest) HasCurrentHead() bool`
-
-HasCurrentHead returns a boolean if a field has been set.
-
 ### GetSecretsGroup
 
 `func (o *BulkWritableGitRepositoryRequest) GetSecretsGroup() ApprovalWorkflowUser`
@@ -282,20 +256,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableGitRepositoryRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableGitRepositoryRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableGitRepositoryRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableGitRepositoryRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableGitRepositoryRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableGitRepositoryRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

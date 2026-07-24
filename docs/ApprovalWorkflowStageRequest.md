@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | [optional] 
 **ApprovalWorkflow** | [**ApprovalWorkflowStageApprovalWorkflow**](ApprovalWorkflowStageApprovalWorkflow.md) |  | 
-**ApprovalWorkflowStageDefinition** | [**ApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | 
+**ApprovalWorkflowStageDefinition** | Pointer to [**NullableApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 ### NewApprovalWorkflowStageRequest
 
-`func NewApprovalWorkflowStageRequest(approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, approvalWorkflowStageDefinition ApprovalWorkflowStageApprovalWorkflowStageDefinition, ) *ApprovalWorkflowStageRequest`
+`func NewApprovalWorkflowStageRequest(approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, ) *ApprovalWorkflowStageRequest`
 
 NewApprovalWorkflowStageRequest instantiates a new ApprovalWorkflowStageRequest object
 This constructor will assign default values to properties that have it defined,
@@ -119,7 +119,22 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowStageDefinition sets ApprovalWorkflowStageDefinition field to given value.
 
+### HasApprovalWorkflowStageDefinition
 
+`func (o *ApprovalWorkflowStageRequest) HasApprovalWorkflowStageDefinition() bool`
+
+HasApprovalWorkflowStageDefinition returns a boolean if a field has been set.
+
+### SetApprovalWorkflowStageDefinitionNil
+
+`func (o *ApprovalWorkflowStageRequest) SetApprovalWorkflowStageDefinitionNil(b bool)`
+
+ SetApprovalWorkflowStageDefinitionNil sets the value for ApprovalWorkflowStageDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowStageDefinition
+`func (o *ApprovalWorkflowStageRequest) UnsetApprovalWorkflowStageDefinition()`
+
+UnsetApprovalWorkflowStageDefinition ensures that no value is present for ApprovalWorkflowStageDefinition, not even an explicit nil
 ### GetCustomFields
 
 `func (o *ApprovalWorkflowStageRequest) GetCustomFields() map[string]interface{}`

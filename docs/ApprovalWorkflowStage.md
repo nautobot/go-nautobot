@@ -10,9 +10,10 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **DecisionDate** | **NullableTime** |  | [readonly] 
+**Responses** | [**[]ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md) |  | [readonly] 
 **State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | [optional] 
 **ApprovalWorkflow** | [**ApprovalWorkflowStageApprovalWorkflow**](ApprovalWorkflowStageApprovalWorkflow.md) |  | 
-**ApprovalWorkflowStageDefinition** | [**ApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | 
+**ApprovalWorkflowStageDefinition** | Pointer to [**NullableApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewApprovalWorkflowStage
 
-`func NewApprovalWorkflowStage(objectType string, display string, url string, naturalSlug string, decisionDate NullableTime, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, approvalWorkflowStageDefinition ApprovalWorkflowStageApprovalWorkflowStageDefinition, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflowStage`
+`func NewApprovalWorkflowStage(objectType string, display string, url string, naturalSlug string, decisionDate NullableTime, responses []ApprovalWorkflowStageResponse, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflowStage`
 
 NewApprovalWorkflowStage instantiates a new ApprovalWorkflowStage object
 This constructor will assign default values to properties that have it defined,
@@ -172,6 +173,26 @@ SetDecisionDate sets DecisionDate field to given value.
 `func (o *ApprovalWorkflowStage) UnsetDecisionDate()`
 
 UnsetDecisionDate ensures that no value is present for DecisionDate, not even an explicit nil
+### GetResponses
+
+`func (o *ApprovalWorkflowStage) GetResponses() []ApprovalWorkflowStageResponse`
+
+GetResponses returns the Responses field if non-nil, zero value otherwise.
+
+### GetResponsesOk
+
+`func (o *ApprovalWorkflowStage) GetResponsesOk() (*[]ApprovalWorkflowStageResponse, bool)`
+
+GetResponsesOk returns a tuple with the Responses field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetResponses
+
+`func (o *ApprovalWorkflowStage) SetResponses(v []ApprovalWorkflowStageResponse)`
+
+SetResponses sets Responses field to given value.
+
+
 ### GetState
 
 `func (o *ApprovalWorkflowStage) GetState() ApprovalWorkflowStateChoices`
@@ -236,7 +257,22 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowStageDefinition sets ApprovalWorkflowStageDefinition field to given value.
 
+### HasApprovalWorkflowStageDefinition
 
+`func (o *ApprovalWorkflowStage) HasApprovalWorkflowStageDefinition() bool`
+
+HasApprovalWorkflowStageDefinition returns a boolean if a field has been set.
+
+### SetApprovalWorkflowStageDefinitionNil
+
+`func (o *ApprovalWorkflowStage) SetApprovalWorkflowStageDefinitionNil(b bool)`
+
+ SetApprovalWorkflowStageDefinitionNil sets the value for ApprovalWorkflowStageDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowStageDefinition
+`func (o *ApprovalWorkflowStage) UnsetApprovalWorkflowStageDefinition()`
+
+UnsetApprovalWorkflowStageDefinition ensures that no value is present for ApprovalWorkflowStageDefinition, not even an explicit nil
 ### GetCreated
 
 `func (o *ApprovalWorkflowStage) GetCreated() time.Time`

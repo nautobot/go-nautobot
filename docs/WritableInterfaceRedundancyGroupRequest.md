@@ -7,20 +7,20 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**Protocol** | Pointer to [**RedundancyProtocol**](RedundancyProtocol.md) |  | [optional] 
+**Protocol** | Pointer to [**RedundancyProtocol1**](RedundancyProtocol1.md) |  | [optional] 
 **ProtocolGroupId** | Pointer to **string** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualIp** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritableInterfaceRedundancyGroupRequest
 
-`func NewWritableInterfaceRedundancyGroupRequest(name string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritableInterfaceRedundancyGroupRequest`
+`func NewWritableInterfaceRedundancyGroupRequest(name string, status BulkWritableCableRequestStatus, ) *WritableInterfaceRedundancyGroupRequest`
 
 NewWritableInterfaceRedundancyGroupRequest instantiates a new WritableInterfaceRedundancyGroupRequest object
 This constructor will assign default values to properties that have it defined,
@@ -107,20 +107,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetProtocol
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetProtocol() RedundancyProtocol`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetProtocol() RedundancyProtocol1`
 
 GetProtocol returns the Protocol field if non-nil, zero value otherwise.
 
 ### GetProtocolOk
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetProtocolOk() (*RedundancyProtocol, bool)`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetProtocolOk() (*RedundancyProtocol1, bool)`
 
 GetProtocolOk returns a tuple with the Protocol field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetProtocol
 
-`func (o *WritableInterfaceRedundancyGroupRequest) SetProtocol(v RedundancyProtocol)`
+`func (o *WritableInterfaceRedundancyGroupRequest) SetProtocol(v RedundancyProtocol1)`
 
 SetProtocol sets Protocol field to given value.
 
@@ -157,20 +157,20 @@ HasProtocolGroupId returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *WritableInterfaceRedundancyGroupRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableInterfaceRedundancyGroupRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -297,20 +297,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritableInterfaceRedundancyGroupRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableInterfaceRedundancyGroupRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritableInterfaceRedundancyGroupRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableInterfaceRedundancyGroupRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

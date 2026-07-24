@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **AssociatedObjectId** | **string** |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Role** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 
 ### NewContactAssociationRequest
 
-`func NewContactAssociationRequest(associatedObjectType string, associatedObjectId string, role ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ContactAssociationRequest`
+`func NewContactAssociationRequest(associatedObjectType string, associatedObjectId string, role BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *ContactAssociationRequest`
 
 NewContactAssociationRequest instantiates a new ContactAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -170,40 +170,40 @@ HasTeam returns a boolean if a field has been set.
 UnsetTeam ensures that no value is present for Team, not even an explicit nil
 ### GetRole
 
-`func (o *ContactAssociationRequest) GetRole() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ContactAssociationRequest) GetRole() BulkWritableCableRequestStatus`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *ContactAssociationRequest) GetRoleOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ContactAssociationRequest) GetRoleOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *ContactAssociationRequest) SetRole(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ContactAssociationRequest) SetRole(v BulkWritableCableRequestStatus)`
 
 SetRole sets Role field to given value.
 
 
 ### GetStatus
 
-`func (o *ContactAssociationRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ContactAssociationRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *ContactAssociationRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ContactAssociationRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *ContactAssociationRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ContactAssociationRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 

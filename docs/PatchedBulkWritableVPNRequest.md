@@ -8,12 +8,15 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **VpnId** | Pointer to **string** |  | [optional] 
+**ServiceType** | Pointer to [**BulkWritableVPNRequestServiceType**](BulkWritableVPNRequestServiceType.md) |  | [optional] 
+**ExtraAttributes** | Pointer to **interface{}** | Free-form scalar service metadata only; not for references to real Nautobot objects. | [optional] 
 **VpnProfile** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**Status** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -129,6 +132,66 @@ SetVpnId sets VpnId field to given value.
 
 HasVpnId returns a boolean if a field has been set.
 
+### GetServiceType
+
+`func (o *PatchedBulkWritableVPNRequest) GetServiceType() BulkWritableVPNRequestServiceType`
+
+GetServiceType returns the ServiceType field if non-nil, zero value otherwise.
+
+### GetServiceTypeOk
+
+`func (o *PatchedBulkWritableVPNRequest) GetServiceTypeOk() (*BulkWritableVPNRequestServiceType, bool)`
+
+GetServiceTypeOk returns a tuple with the ServiceType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServiceType
+
+`func (o *PatchedBulkWritableVPNRequest) SetServiceType(v BulkWritableVPNRequestServiceType)`
+
+SetServiceType sets ServiceType field to given value.
+
+### HasServiceType
+
+`func (o *PatchedBulkWritableVPNRequest) HasServiceType() bool`
+
+HasServiceType returns a boolean if a field has been set.
+
+### GetExtraAttributes
+
+`func (o *PatchedBulkWritableVPNRequest) GetExtraAttributes() interface{}`
+
+GetExtraAttributes returns the ExtraAttributes field if non-nil, zero value otherwise.
+
+### GetExtraAttributesOk
+
+`func (o *PatchedBulkWritableVPNRequest) GetExtraAttributesOk() (*interface{}, bool)`
+
+GetExtraAttributesOk returns a tuple with the ExtraAttributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExtraAttributes
+
+`func (o *PatchedBulkWritableVPNRequest) SetExtraAttributes(v interface{})`
+
+SetExtraAttributes sets ExtraAttributes field to given value.
+
+### HasExtraAttributes
+
+`func (o *PatchedBulkWritableVPNRequest) HasExtraAttributes() bool`
+
+HasExtraAttributes returns a boolean if a field has been set.
+
+### SetExtraAttributesNil
+
+`func (o *PatchedBulkWritableVPNRequest) SetExtraAttributesNil(b bool)`
+
+ SetExtraAttributesNil sets the value for ExtraAttributes to be an explicit nil
+
+### UnsetExtraAttributes
+`func (o *PatchedBulkWritableVPNRequest) UnsetExtraAttributes()`
+
+UnsetExtraAttributes ensures that no value is present for ExtraAttributes, not even an explicit nil
 ### GetVpnProfile
 
 `func (o *PatchedBulkWritableVPNRequest) GetVpnProfile() ApprovalWorkflowUser`
@@ -234,6 +297,41 @@ HasTenant returns a boolean if a field has been set.
 `func (o *PatchedBulkWritableVPNRequest) UnsetTenant()`
 
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
+### GetStatus
+
+`func (o *PatchedBulkWritableVPNRequest) GetStatus() ApprovalWorkflowUser`
+
+GetStatus returns the Status field if non-nil, zero value otherwise.
+
+### GetStatusOk
+
+`func (o *PatchedBulkWritableVPNRequest) GetStatusOk() (*ApprovalWorkflowUser, bool)`
+
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatus
+
+`func (o *PatchedBulkWritableVPNRequest) SetStatus(v ApprovalWorkflowUser)`
+
+SetStatus sets Status field to given value.
+
+### HasStatus
+
+`func (o *PatchedBulkWritableVPNRequest) HasStatus() bool`
+
+HasStatus returns a boolean if a field has been set.
+
+### SetStatusNil
+
+`func (o *PatchedBulkWritableVPNRequest) SetStatusNil(b bool)`
+
+ SetStatusNil sets the value for Status to be an explicit nil
+
+### UnsetStatus
+`func (o *PatchedBulkWritableVPNRequest) UnsetStatus()`
+
+UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedBulkWritableVPNRequest) GetCustomFields() map[string]interface{}`
@@ -286,20 +384,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableVPNRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableVPNRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableVPNRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableVPNRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableVPNRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableVPNRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

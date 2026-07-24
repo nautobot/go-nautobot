@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Actions** | **interface{}** | The list of actions granted by this permission | 
 **Constraints** | Pointer to **interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
-**Groups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Users** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Users** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -215,20 +215,20 @@ HasConstraints returns a boolean if a field has been set.
 UnsetConstraints ensures that no value is present for Constraints, not even an explicit nil
 ### GetGroups
 
-`func (o *ObjectPermissionRequest) GetGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ObjectPermissionRequest) GetGroups() []BulkWritableCableRequestStatus`
 
 GetGroups returns the Groups field if non-nil, zero value otherwise.
 
 ### GetGroupsOk
 
-`func (o *ObjectPermissionRequest) GetGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ObjectPermissionRequest) GetGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroups
 
-`func (o *ObjectPermissionRequest) SetGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ObjectPermissionRequest) SetGroups(v []BulkWritableCableRequestStatus)`
 
 SetGroups sets Groups field to given value.
 
@@ -240,20 +240,20 @@ HasGroups returns a boolean if a field has been set.
 
 ### GetUsers
 
-`func (o *ObjectPermissionRequest) GetUsers() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ObjectPermissionRequest) GetUsers() []BulkWritableCableRequestStatus`
 
 GetUsers returns the Users field if non-nil, zero value otherwise.
 
 ### GetUsersOk
 
-`func (o *ObjectPermissionRequest) GetUsersOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ObjectPermissionRequest) GetUsersOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetUsersOk returns a tuple with the Users field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUsers
 
-`func (o *ObjectPermissionRequest) SetUsers(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ObjectPermissionRequest) SetUsers(v []BulkWritableCableRequestStatus)`
 
 SetUsers sets Users field to given value.
 

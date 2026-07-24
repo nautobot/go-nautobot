@@ -12,10 +12,10 @@ Name | Type | Description | Notes
 **RearPortPosition** | Pointer to **int32** |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**RearPort** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**RearPort** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -253,20 +253,20 @@ HasModule returns a boolean if a field has been set.
 UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetRearPort
 
-`func (o *PatchedBulkWritableFrontPortRequest) GetRearPort() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableFrontPortRequest) GetRearPort() BulkWritableCableRequestStatus`
 
 GetRearPort returns the RearPort field if non-nil, zero value otherwise.
 
 ### GetRearPortOk
 
-`func (o *PatchedBulkWritableFrontPortRequest) GetRearPortOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableFrontPortRequest) GetRearPortOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRearPortOk returns a tuple with the RearPort field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRearPort
 
-`func (o *PatchedBulkWritableFrontPortRequest) SetRearPort(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableFrontPortRequest) SetRearPort(v BulkWritableCableRequestStatus)`
 
 SetRearPort sets RearPort field to given value.
 
@@ -328,20 +328,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableFrontPortRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableFrontPortRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableFrontPortRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableFrontPortRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableFrontPortRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableFrontPortRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

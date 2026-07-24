@@ -14,14 +14,14 @@ Name | Type | Description | Notes
 **Message** | Pointer to **string** |  | [optional] 
 **LogObject** | Pointer to **string** |  | [optional] 
 **AbsoluteUrl** | Pointer to **string** |  | [optional] 
-**JobResult** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**JobResult** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | Pointer to **time.Time** |  | [optional] 
 
 ## Methods
 
 ### NewJobLogEntry
 
-`func NewJobLogEntry(objectType string, display string, url string, naturalSlug string, jobResult ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *JobLogEntry`
+`func NewJobLogEntry(objectType string, display string, url string, naturalSlug string, jobResult BulkWritableCableRequestStatus, ) *JobLogEntry`
 
 NewJobLogEntry instantiates a new JobLogEntry object
 This constructor will assign default values to properties that have it defined,
@@ -268,20 +268,20 @@ HasAbsoluteUrl returns a boolean if a field has been set.
 
 ### GetJobResult
 
-`func (o *JobLogEntry) GetJobResult() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *JobLogEntry) GetJobResult() BulkWritableCableRequestStatus`
 
 GetJobResult returns the JobResult field if non-nil, zero value otherwise.
 
 ### GetJobResultOk
 
-`func (o *JobLogEntry) GetJobResultOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *JobLogEntry) GetJobResultOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetJobResultOk returns a tuple with the JobResult field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJobResult
 
-`func (o *JobLogEntry) SetJobResult(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *JobLogEntry) SetJobResult(v BulkWritableCableRequestStatus)`
 
 SetJobResult sets JobResult field to given value.
 

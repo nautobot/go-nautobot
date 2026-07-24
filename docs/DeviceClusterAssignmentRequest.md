@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**Device** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Cluster** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Cluster** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewDeviceClusterAssignmentRequest
 
-`func NewDeviceClusterAssignmentRequest(device ApprovalWorkflowStageResponseApprovalWorkflowStage, cluster ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *DeviceClusterAssignmentRequest`
+`func NewDeviceClusterAssignmentRequest(device BulkWritableCableRequestStatus, cluster BulkWritableCableRequestStatus, ) *DeviceClusterAssignmentRequest`
 
 NewDeviceClusterAssignmentRequest instantiates a new DeviceClusterAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -54,40 +54,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *DeviceClusterAssignmentRequest) GetDevice() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *DeviceClusterAssignmentRequest) GetDevice() BulkWritableCableRequestStatus`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *DeviceClusterAssignmentRequest) GetDeviceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *DeviceClusterAssignmentRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *DeviceClusterAssignmentRequest) SetDevice(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *DeviceClusterAssignmentRequest) SetDevice(v BulkWritableCableRequestStatus)`
 
 SetDevice sets Device field to given value.
 
 
 ### GetCluster
 
-`func (o *DeviceClusterAssignmentRequest) GetCluster() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *DeviceClusterAssignmentRequest) GetCluster() BulkWritableCableRequestStatus`
 
 GetCluster returns the Cluster field if non-nil, zero value otherwise.
 
 ### GetClusterOk
 
-`func (o *DeviceClusterAssignmentRequest) GetClusterOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *DeviceClusterAssignmentRequest) GetClusterOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetClusterOk returns a tuple with the Cluster field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCluster
 
-`func (o *DeviceClusterAssignmentRequest) SetCluster(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *DeviceClusterAssignmentRequest) SetCluster(v BulkWritableCableRequestStatus)`
 
 SetCluster sets Cluster field to given value.
 

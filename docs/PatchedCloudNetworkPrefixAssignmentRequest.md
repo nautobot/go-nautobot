@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**CloudNetwork** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Prefix** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CloudNetwork** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Prefix** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -54,20 +54,20 @@ HasId returns a boolean if a field has been set.
 
 ### GetCloudNetwork
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetCloudNetwork() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetCloudNetwork() BulkWritableCableRequestStatus`
 
 GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
 
 ### GetCloudNetworkOk
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetCloudNetworkOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetCloudNetworkOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudNetwork
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) SetCloudNetwork(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) SetCloudNetwork(v BulkWritableCableRequestStatus)`
 
 SetCloudNetwork sets CloudNetwork field to given value.
 
@@ -79,20 +79,20 @@ HasCloudNetwork returns a boolean if a field has been set.
 
 ### GetPrefix
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetPrefix() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetPrefix() BulkWritableCableRequestStatus`
 
 GetPrefix returns the Prefix field if non-nil, zero value otherwise.
 
 ### GetPrefixOk
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetPrefixOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) GetPrefixOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetPrefixOk returns a tuple with the Prefix field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrefix
 
-`func (o *PatchedCloudNetworkPrefixAssignmentRequest) SetPrefix(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedCloudNetworkPrefixAssignmentRequest) SetPrefix(v BulkWritableCableRequestStatus)`
 
 SetPrefix sets Prefix field to given value.
 
