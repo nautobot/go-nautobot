@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **IsPrimary** | Pointer to **bool** | Is primary address on interface | [optional] 
 **IsSecondary** | Pointer to **bool** | Is secondary address on interface | [optional] 
 **IsStandby** | Pointer to **bool** | Is standby address on interface | [optional] 
-**IpAddress** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**IpAddress** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Interface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VmInterface** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewIPAddressToInterface
 
-`func NewIPAddressToInterface(objectType string, display string, url string, naturalSlug string, ipAddress ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *IPAddressToInterface`
+`func NewIPAddressToInterface(objectType string, display string, url string, naturalSlug string, ipAddress BulkWritableCableRequestStatus, ) *IPAddressToInterface`
 
 NewIPAddressToInterface instantiates a new IPAddressToInterface object
 This constructor will assign default values to properties that have it defined,
@@ -321,20 +321,20 @@ HasIsStandby returns a boolean if a field has been set.
 
 ### GetIpAddress
 
-`func (o *IPAddressToInterface) GetIpAddress() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *IPAddressToInterface) GetIpAddress() BulkWritableCableRequestStatus`
 
 GetIpAddress returns the IpAddress field if non-nil, zero value otherwise.
 
 ### GetIpAddressOk
 
-`func (o *IPAddressToInterface) GetIpAddressOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *IPAddressToInterface) GetIpAddressOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIpAddress
 
-`func (o *IPAddressToInterface) SetIpAddress(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *IPAddressToInterface) SetIpAddress(v BulkWritableCableRequestStatus)`
 
 SetIpAddress sets IpAddress field to given value.
 

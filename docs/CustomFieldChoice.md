@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Value** | **string** |  | 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**CustomField** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CustomField** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 
 ### NewCustomFieldChoice
 
-`func NewCustomFieldChoice(objectType string, display string, url string, naturalSlug string, value string, customField ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, ) *CustomFieldChoice`
+`func NewCustomFieldChoice(objectType string, display string, url string, naturalSlug string, value string, customField BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *CustomFieldChoice`
 
 NewCustomFieldChoice instantiates a new CustomFieldChoice object
 This constructor will assign default values to properties that have it defined,
@@ -186,20 +186,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetCustomField
 
-`func (o *CustomFieldChoice) GetCustomField() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *CustomFieldChoice) GetCustomField() BulkWritableCableRequestStatus`
 
 GetCustomField returns the CustomField field if non-nil, zero value otherwise.
 
 ### GetCustomFieldOk
 
-`func (o *CustomFieldChoice) GetCustomFieldOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *CustomFieldChoice) GetCustomFieldOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCustomFieldOk returns a tuple with the CustomField field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomField
 
-`func (o *CustomFieldChoice) SetCustomField(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *CustomFieldChoice) SetCustomField(v BulkWritableCableRequestStatus)`
 
 SetCustomField sets CustomField field to given value.
 

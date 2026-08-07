@@ -55,6 +55,17 @@ Method | HTTP request | Description
 [**VpnVpnProfilesPartialUpdate**](VpnAPI.md#VpnVpnProfilesPartialUpdate) | **Patch** /vpn/vpn-profiles/{id}/ | 
 [**VpnVpnProfilesRetrieve**](VpnAPI.md#VpnVpnProfilesRetrieve) | **Get** /vpn/vpn-profiles/{id}/ | 
 [**VpnVpnProfilesUpdate**](VpnAPI.md#VpnVpnProfilesUpdate) | **Put** /vpn/vpn-profiles/{id}/ | 
+[**VpnVpnTerminationsBulkDestroy**](VpnAPI.md#VpnVpnTerminationsBulkDestroy) | **Delete** /vpn/vpn-terminations/ | 
+[**VpnVpnTerminationsBulkPartialUpdate**](VpnAPI.md#VpnVpnTerminationsBulkPartialUpdate) | **Patch** /vpn/vpn-terminations/ | 
+[**VpnVpnTerminationsBulkUpdate**](VpnAPI.md#VpnVpnTerminationsBulkUpdate) | **Put** /vpn/vpn-terminations/ | 
+[**VpnVpnTerminationsCreate**](VpnAPI.md#VpnVpnTerminationsCreate) | **Post** /vpn/vpn-terminations/ | 
+[**VpnVpnTerminationsDestroy**](VpnAPI.md#VpnVpnTerminationsDestroy) | **Delete** /vpn/vpn-terminations/{id}/ | 
+[**VpnVpnTerminationsList**](VpnAPI.md#VpnVpnTerminationsList) | **Get** /vpn/vpn-terminations/ | 
+[**VpnVpnTerminationsNotesCreate**](VpnAPI.md#VpnVpnTerminationsNotesCreate) | **Post** /vpn/vpn-terminations/{id}/notes/ | 
+[**VpnVpnTerminationsNotesList**](VpnAPI.md#VpnVpnTerminationsNotesList) | **Get** /vpn/vpn-terminations/{id}/notes/ | 
+[**VpnVpnTerminationsPartialUpdate**](VpnAPI.md#VpnVpnTerminationsPartialUpdate) | **Patch** /vpn/vpn-terminations/{id}/ | 
+[**VpnVpnTerminationsRetrieve**](VpnAPI.md#VpnVpnTerminationsRetrieve) | **Get** /vpn/vpn-terminations/{id}/ | 
+[**VpnVpnTerminationsUpdate**](VpnAPI.md#VpnVpnTerminationsUpdate) | **Put** /vpn/vpn-terminations/{id}/ | 
 [**VpnVpnTunnelEndpointsBulkDestroy**](VpnAPI.md#VpnVpnTunnelEndpointsBulkDestroy) | **Delete** /vpn/vpn-tunnel-endpoints/ | 
 [**VpnVpnTunnelEndpointsBulkPartialUpdate**](VpnAPI.md#VpnVpnTunnelEndpointsBulkPartialUpdate) | **Patch** /vpn/vpn-tunnel-endpoints/ | 
 [**VpnVpnTunnelEndpointsBulkUpdate**](VpnAPI.md#VpnVpnTunnelEndpointsBulkUpdate) | **Put** /vpn/vpn-tunnel-endpoints/ | 
@@ -454,7 +465,7 @@ import (
 
 func main() {
 	aggressiveMode := true // bool |  (optional)
-	authenticationMethod := []string{"Inner_example"} // []string | PSK, RSA, ECDSA, Certificate (optional)
+	authenticationMethod := []openapiclient.VpnVpnPhase1PoliciesListAuthenticationMethodParameterInner{openapiclient.vpn_vpn_phase_1_policies_list_authentication_method_parameter_inner("Certificate")} // []VpnVpnPhase1PoliciesListAuthenticationMethodParameterInner | PSK, RSA, ECDSA, Certificate   (optional)
 	authenticationMethodIc := []string{"Inner_example"} // []string |  (optional)
 	authenticationMethodIe := []string{"Inner_example"} // []string |  (optional)
 	authenticationMethodIew := []string{"Inner_example"} // []string |  (optional)
@@ -499,7 +510,7 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
-	ikeVersion := []string{"Inner_example"} // []string |  (optional)
+	ikeVersion := []openapiclient.VpnVpnPhase1PoliciesListIkeVersionParameterInner{openapiclient.vpn_vpn_phase_1_policies_list_ike_version_parameter_inner("IKEv1")} // []VpnVpnPhase1PoliciesListIkeVersionParameterInner |  (optional)
 	ikeVersionIc := []string{"Inner_example"} // []string |  (optional)
 	ikeVersionIe := []string{"Inner_example"} // []string |  (optional)
 	ikeVersionIew := []string{"Inner_example"} // []string |  (optional)
@@ -598,7 +609,7 @@ Other parameters are passed through a pointer to a apiVpnVpnPhase1PoliciesListRe
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **aggressiveMode** | **bool** |  | 
- **authenticationMethod** | **[]string** | PSK, RSA, ECDSA, Certificate | 
+ **authenticationMethod** | [**[]VpnVpnPhase1PoliciesListAuthenticationMethodParameterInner**](VpnVpnPhase1PoliciesListAuthenticationMethodParameterInner.md) | PSK, RSA, ECDSA, Certificate   | 
  **authenticationMethodIc** | **[]string** |  | 
  **authenticationMethodIe** | **[]string** |  | 
  **authenticationMethodIew** | **[]string** |  | 
@@ -643,7 +654,7 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
- **ikeVersion** | **[]string** |  | 
+ **ikeVersion** | [**[]VpnVpnPhase1PoliciesListIkeVersionParameterInner**](VpnVpnPhase1PoliciesListIkeVersionParameterInner.md) |  | 
  **ikeVersionIc** | **[]string** |  | 
  **ikeVersionIe** | **[]string** |  | 
  **ikeVersionIew** | **[]string** |  | 
@@ -2220,7 +2231,7 @@ import (
 )
 
 func main() {
-	bulkWritableVPNProfilePhase1PolicyAssignmentRequest := []openapiclient.BulkWritableVPNProfilePhase1PolicyAssignmentRequest{*openapiclient.NewBulkWritableVPNProfilePhase1PolicyAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVPNProfilePhase1PolicyAssignmentRequest | 
+	bulkWritableVPNProfilePhase1PolicyAssignmentRequest := []openapiclient.BulkWritableVPNProfilePhase1PolicyAssignmentRequest{*openapiclient.NewBulkWritableVPNProfilePhase1PolicyAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVPNProfilePhase1PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2288,7 +2299,7 @@ import (
 )
 
 func main() {
-	vPNProfilePhase1PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase1PolicyAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNProfilePhase1PolicyAssignmentRequest | 
+	vPNProfilePhase1PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase1PolicyAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VPNProfilePhase1PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2679,7 +2690,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vpn profile phase1 policy assignment.
-	vPNProfilePhase1PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase1PolicyAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNProfilePhase1PolicyAssignmentRequest | 
+	vPNProfilePhase1PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase1PolicyAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VPNProfilePhase1PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2886,7 +2897,7 @@ import (
 )
 
 func main() {
-	bulkWritableVPNProfilePhase2PolicyAssignmentRequest := []openapiclient.BulkWritableVPNProfilePhase2PolicyAssignmentRequest{*openapiclient.NewBulkWritableVPNProfilePhase2PolicyAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVPNProfilePhase2PolicyAssignmentRequest | 
+	bulkWritableVPNProfilePhase2PolicyAssignmentRequest := []openapiclient.BulkWritableVPNProfilePhase2PolicyAssignmentRequest{*openapiclient.NewBulkWritableVPNProfilePhase2PolicyAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVPNProfilePhase2PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2954,7 +2965,7 @@ import (
 )
 
 func main() {
-	vPNProfilePhase2PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase2PolicyAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNProfilePhase2PolicyAssignmentRequest | 
+	vPNProfilePhase2PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase2PolicyAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VPNProfilePhase2PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3345,7 +3356,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vpn profile phase2 policy assignment.
-	vPNProfilePhase2PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase2PolicyAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNProfilePhase2PolicyAssignmentRequest | 
+	vPNProfilePhase2PolicyAssignmentRequest := *openapiclient.NewVPNProfilePhase2PolicyAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VPNProfilePhase2PolicyAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4361,6 +4372,879 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**VPNProfile**](VPNProfile.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsBulkDestroy
+
+> VpnVpnTerminationsBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.VpnAPI.VpnVpnTerminationsBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsBulkDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsBulkDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsBulkPartialUpdate
+
+> []VPNTermination VpnVpnTerminationsBulkPartialUpdate(ctx).PatchedBulkWritableVPNTerminationRequest(patchedBulkWritableVPNTerminationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	patchedBulkWritableVPNTerminationRequest := []openapiclient.PatchedBulkWritableVPNTerminationRequest{*openapiclient.NewPatchedBulkWritableVPNTerminationRequest("Id_example")} // []PatchedBulkWritableVPNTerminationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsBulkPartialUpdate(context.Background()).PatchedBulkWritableVPNTerminationRequest(patchedBulkWritableVPNTerminationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsBulkPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsBulkPartialUpdate`: []VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsBulkPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsBulkPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **patchedBulkWritableVPNTerminationRequest** | [**[]PatchedBulkWritableVPNTerminationRequest**](PatchedBulkWritableVPNTerminationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]VPNTermination**](VPNTermination.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsBulkUpdate
+
+> []VPNTermination VpnVpnTerminationsBulkUpdate(ctx).BulkWritableVPNTerminationRequest(bulkWritableVPNTerminationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	bulkWritableVPNTerminationRequest := []openapiclient.BulkWritableVPNTerminationRequest{*openapiclient.NewBulkWritableVPNTerminationRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVPNTerminationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsBulkUpdate(context.Background()).BulkWritableVPNTerminationRequest(bulkWritableVPNTerminationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsBulkUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsBulkUpdate`: []VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsBulkUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsBulkUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bulkWritableVPNTerminationRequest** | [**[]BulkWritableVPNTerminationRequest**](BulkWritableVPNTerminationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**[]VPNTermination**](VPNTermination.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsCreate
+
+> VPNTermination VpnVpnTerminationsCreate(ctx).VPNTerminationRequest(vPNTerminationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	vPNTerminationRequest := *openapiclient.NewVPNTerminationRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // VPNTerminationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsCreate(context.Background()).VPNTerminationRequest(vPNTerminationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsCreate`: VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vPNTerminationRequest** | [**VPNTerminationRequest**](VPNTerminationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**VPNTermination**](VPNTermination.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsDestroy
+
+> VpnVpnTerminationsDestroy(ctx, id).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	r, err := apiClient.VpnAPI.VpnVpnTerminationsDestroy(context.Background(), id).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsDestroy``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsDestroyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsList
+
+> PaginatedVPNTerminationList VpnVpnTerminationsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Vlan(vlan).VlanIsnull(vlanIsnull).VlanN(vlanN).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Vpn(vpn).VpnN(vpnN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+    "time"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	contacts := []string{"Inner_example"} // []string |  (optional)
+	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
+	contactsN := []string{"Inner_example"} // []string |  (optional)
+	created := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdIsnull := true // bool |  (optional)
+	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
+	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
+	idN := []string{"Inner_example"} // []string |  (optional)
+	interface_ := []string{"Inner_example"} // []string |  (optional)
+	interfaceIsnull := true // bool | Interface (name or ID) is null (optional)
+	interfaceN := []string{"Inner_example"} // []string |  (optional)
+	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedIsnull := true // bool |  (optional)
+	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
+	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	q := "q_example" // string | Search (optional)
+	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	tags := []string{"Inner_example"} // []string |  (optional)
+	tagsIsnull := true // bool |  (optional)
+	tagsN := []string{"Inner_example"} // []string |  (optional)
+	teams := []string{"Inner_example"} // []string |  (optional)
+	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
+	teamsN := []string{"Inner_example"} // []string |  (optional)
+	vlan := []string{"Inner_example"} // []string |  (optional)
+	vlanIsnull := true // bool | VLAN (VID or ID) is null (optional)
+	vlanN := []string{"Inner_example"} // []string |  (optional)
+	vmInterface := []string{"Inner_example"} // []string |  (optional)
+	vmInterfaceIsnull := true // bool | VM Interface (name or ID) is null (optional)
+	vmInterfaceN := []string{"Inner_example"} // []string |  (optional)
+	vpn := []string{"Inner_example"} // []string |  (optional)
+	vpnN := []string{"Inner_example"} // []string |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).Interface_(interface_).InterfaceIsnull(interfaceIsnull).InterfaceN(interfaceN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Vlan(vlan).VlanIsnull(vlanIsnull).VlanN(vlanN).VmInterface(vmInterface).VmInterfaceIsnull(vmInterfaceIsnull).VmInterfaceN(vmInterfaceN).Vpn(vpn).VpnN(vpnN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsList`: PaginatedVPNTerminationList
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contacts** | **[]string** |  | 
+ **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
+ **contactsN** | **[]string** |  | 
+ **created** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdGte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdIsnull** | **bool** |  | 
+ **createdLt** | [**[]time.Time**](time.Time.md) |  | 
+ **createdLte** | [**[]time.Time**](time.Time.md) |  | 
+ **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **dynamicGroups** | **[]string** |  | 
+ **dynamicGroupsN** | **[]string** |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
+ **idN** | **[]string** |  | 
+ **interface_** | **[]string** |  | 
+ **interfaceIsnull** | **bool** | Interface (name or ID) is null | 
+ **interfaceN** | **[]string** |  | 
+ **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedIsnull** | **bool** |  | 
+ **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
+ **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **q** | **string** | Search | 
+ **sort** | **string** | Which field to use when ordering the results. | 
+ **tags** | **[]string** |  | 
+ **tagsIsnull** | **bool** |  | 
+ **tagsN** | **[]string** |  | 
+ **teams** | **[]string** |  | 
+ **teamsIsnull** | **bool** | Teams (name or ID) is null | 
+ **teamsN** | **[]string** |  | 
+ **vlan** | **[]string** |  | 
+ **vlanIsnull** | **bool** | VLAN (VID or ID) is null | 
+ **vlanN** | **[]string** |  | 
+ **vmInterface** | **[]string** |  | 
+ **vmInterfaceIsnull** | **bool** | VM Interface (name or ID) is null | 
+ **vmInterfaceN** | **[]string** |  | 
+ **vpn** | **[]string** |  | 
+ **vpnN** | **[]string** |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedVPNTerminationList**](PaginatedVPNTerminationList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsNotesCreate
+
+> Note VpnVpnTerminationsNotesCreate(ctx, id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	noteInputRequest := *openapiclient.NewNoteInputRequest("Note_example") // NoteInputRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsNotesCreate(context.Background(), id).NoteInputRequest(noteInputRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsNotesCreate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsNotesCreate`: Note
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsNotesCreate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsNotesCreateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **noteInputRequest** | [**NoteInputRequest**](NoteInputRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsNotesList
+
+> PaginatedNoteList VpnVpnTerminationsNotesList(ctx, id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	limit := int32(56) // int32 | Number of results to return per page. (optional)
+	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsNotesList(context.Background(), id).Format(format).Limit(limit).Offset(offset).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsNotesList``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsNotesList`: PaginatedNoteList
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsNotesList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsNotesListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **limit** | **int32** | Number of results to return per page. | 
+ **offset** | **int32** | The initial index from which to return the results. | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**PaginatedNoteList**](PaginatedNoteList.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsPartialUpdate
+
+> VPNTermination VpnVpnTerminationsPartialUpdate(ctx, id).Format(format).PatchedVPNTerminationRequest(patchedVPNTerminationRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	patchedVPNTerminationRequest := *openapiclient.NewPatchedVPNTerminationRequest() // PatchedVPNTerminationRequest |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsPartialUpdate(context.Background(), id).Format(format).PatchedVPNTerminationRequest(patchedVPNTerminationRequest).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsPartialUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsPartialUpdate`: VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsPartialUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsPartialUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **patchedVPNTerminationRequest** | [**PatchedVPNTerminationRequest**](PatchedVPNTerminationRequest.md) |  | 
+
+### Return type
+
+[**VPNTermination**](VPNTermination.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/csv
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsRetrieve
+
+> VPNTermination VpnVpnTerminationsRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
+	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsRetrieve``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsRetrieve`: VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsRetrieve`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsRetrieveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **depth** | **int32** | Serializer Depth | [default to 1]
+ **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
+
+### Return type
+
+[**VPNTermination**](VPNTermination.md)
+
+### Authorization
+
+[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/csv
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## VpnVpnTerminationsUpdate
+
+> VPNTermination VpnVpnTerminationsUpdate(ctx, id).VPNTerminationRequest(vPNTerminationRequest).Format(format).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	openapiclient "github.com/nautobot/go-nautobot/v3"
+)
+
+func main() {
+	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Termination.
+	vPNTerminationRequest := *openapiclient.NewVPNTerminationRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // VPNTerminationRequest | 
+	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+
+	configuration := openapiclient.NewConfiguration()
+	apiClient := openapiclient.NewAPIClient(configuration)
+	resp, r, err := apiClient.VpnAPI.VpnVpnTerminationsUpdate(context.Background(), id).VPNTerminationRequest(vPNTerminationRequest).Format(format).Execute()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnTerminationsUpdate``: %v\n", err)
+		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+	}
+	// response from `VpnVpnTerminationsUpdate`: VPNTermination
+	fmt.Fprintf(os.Stdout, "Response from `VpnAPI.VpnVpnTerminationsUpdate`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+**id** | **string** | A UUID string identifying this VPN Termination. | 
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiVpnVpnTerminationsUpdateRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+
+ **vPNTerminationRequest** | [**VPNTerminationRequest**](VPNTerminationRequest.md) |  | 
+ **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+
+### Return type
+
+[**VPNTermination**](VPNTermination.md)
 
 ### Authorization
 
@@ -5512,7 +6396,7 @@ import (
 )
 
 func main() {
-	bulkWritableVPNTunnelRequest := []openapiclient.BulkWritableVPNTunnelRequest{*openapiclient.NewBulkWritableVPNTunnelRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVPNTunnelRequest | 
+	bulkWritableVPNTunnelRequest := []openapiclient.BulkWritableVPNTunnelRequest{*openapiclient.NewBulkWritableVPNTunnelRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVPNTunnelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5580,7 +6464,7 @@ import (
 )
 
 func main() {
-	vPNTunnelRequest := *openapiclient.NewVPNTunnelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNTunnelRequest | 
+	vPNTunnelRequest := *openapiclient.NewVPNTunnelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // VPNTunnelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5745,7 +6629,7 @@ func main() {
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	encapsulation := []string{"Inner_example"} // []string |  (optional)
+	encapsulation := []openapiclient.VpnVpnTunnelsListEncapsulationParameterInner{openapiclient.vpn_vpn_tunnels_list_encapsulation_parameter_inner("EoIP")} // []VpnVpnTunnelsListEncapsulationParameterInner |  (optional)
 	encapsulationIc := []string{"Inner_example"} // []string |  (optional)
 	encapsulationIe := []string{"Inner_example"} // []string |  (optional)
 	encapsulationIew := []string{"Inner_example"} // []string |  (optional)
@@ -5888,7 +6772,7 @@ Name | Type | Description  | Notes
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **encapsulation** | **[]string** |  | 
+ **encapsulation** | [**[]VpnVpnTunnelsListEncapsulationParameterInner**](VpnVpnTunnelsListEncapsulationParameterInner.md) |  | 
  **encapsulationIc** | **[]string** |  | 
  **encapsulationIe** | **[]string** |  | 
  **encapsulationIew** | **[]string** |  | 
@@ -6326,7 +7210,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VPN Tunnel.
-	vPNTunnelRequest := *openapiclient.NewVPNTunnelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VPNTunnelRequest | 
+	vPNTunnelRequest := *openapiclient.NewVPNTunnelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // VPNTunnelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -6720,7 +7604,7 @@ Name | Type | Description  | Notes
 
 ## VpnVpnsList
 
-> PaginatedVPNList VpnVpnsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VpnId(vpnId).VpnIdIc(vpnIdIc).VpnIdIe(vpnIdIe).VpnIdIew(vpnIdIew).VpnIdIre(vpnIdIre).VpnIdIsw(vpnIdIsw).VpnIdN(vpnIdN).VpnIdNic(vpnIdNic).VpnIdNie(vpnIdNie).VpnIdNiew(vpnIdNiew).VpnIdNire(vpnIdNire).VpnIdNisw(vpnIdNisw).VpnIdNre(vpnIdNre).VpnIdRe(vpnIdRe).VpnProfile(vpnProfile).VpnProfileIsnull(vpnProfileIsnull).VpnProfileN(vpnProfileN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedVPNList VpnVpnsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExtraAttributes(extraAttributes).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).ServiceType(serviceType).ServiceTypeIc(serviceTypeIc).ServiceTypeIe(serviceTypeIe).ServiceTypeIew(serviceTypeIew).ServiceTypeIre(serviceTypeIre).ServiceTypeIsw(serviceTypeIsw).ServiceTypeN(serviceTypeN).ServiceTypeNic(serviceTypeNic).ServiceTypeNie(serviceTypeNie).ServiceTypeNiew(serviceTypeNiew).ServiceTypeNire(serviceTypeNire).ServiceTypeNisw(serviceTypeNisw).ServiceTypeNre(serviceTypeNre).ServiceTypeRe(serviceTypeRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VpnId(vpnId).VpnIdIc(vpnIdIc).VpnIdIe(vpnIdIe).VpnIdIew(vpnIdIew).VpnIdIre(vpnIdIre).VpnIdIsw(vpnIdIsw).VpnIdN(vpnIdN).VpnIdNic(vpnIdNic).VpnIdNie(vpnIdNie).VpnIdNiew(vpnIdNiew).VpnIdNire(vpnIdNire).VpnIdNisw(vpnIdNisw).VpnIdNre(vpnIdNre).VpnIdRe(vpnIdRe).VpnProfile(vpnProfile).VpnProfileIsnull(vpnProfileIsnull).VpnProfileN(vpnProfileN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -6766,6 +7650,7 @@ func main() {
 	descriptionRe := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
+	extraAttributes := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
@@ -6796,7 +7681,24 @@ func main() {
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool |  (optional)
 	roleN := []string{"Inner_example"} // []string |  (optional)
+	serviceType := []openapiclient.VpnVpnsListServiceTypeParameterInner{openapiclient.vpn_vpns_list_service_type_parameter_inner("E-LAN")} // []VpnVpnsListServiceTypeParameterInner | Optional classification of this VPN service, for example IPSec or VXLAN-EVPN.   (optional)
+	serviceTypeIc := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeIe := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeIew := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeIre := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeIsw := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeN := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNic := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNie := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNiew := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNire := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNisw := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeNre := []string{"Inner_example"} // []string |  (optional)
+	serviceTypeRe := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
+	status := []string{"Inner_example"} // []string |  (optional)
+	statusIsnull := true // bool |  (optional)
+	statusN := []string{"Inner_example"} // []string |  (optional)
 	tags := []string{"Inner_example"} // []string |  (optional)
 	tagsIsnull := true // bool |  (optional)
 	tagsN := []string{"Inner_example"} // []string |  (optional)
@@ -6813,19 +7715,19 @@ func main() {
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	vpnId := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdIc := []string{"Inner_example"} // []string | VPN ID (optional)
+	vpnIdIc := []string{"Inner_example"} // []string | VPN ID contains (optional)
 	vpnIdIe := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdIew := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdIre := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdIsw := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdN := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNic := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNie := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNiew := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNire := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNisw := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdNre := []string{"Inner_example"} // []string | VPN ID (optional)
-	vpnIdRe := []string{"Inner_example"} // []string | VPN ID (optional)
+	vpnIdIew := []string{"Inner_example"} // []string | VPN ID ends with (optional)
+	vpnIdIre := []string{"Inner_example"} // []string | VPN ID matches regex (optional)
+	vpnIdIsw := []string{"Inner_example"} // []string | VPN ID starts with (optional)
+	vpnIdN := []string{"Inner_example"} // []string | Exclude VPN ID (optional)
+	vpnIdNic := []string{"Inner_example"} // []string | Exclude VPN ID contains (optional)
+	vpnIdNie := []string{"Inner_example"} // []string | Exclude VPN ID (optional)
+	vpnIdNiew := []string{"Inner_example"} // []string | Exclude VPN ID ends with (optional)
+	vpnIdNire := []string{"Inner_example"} // []string | Exclude VPN ID matches regex (optional)
+	vpnIdNisw := []string{"Inner_example"} // []string | Exclude VPN ID starts with (optional)
+	vpnIdNre := []string{"Inner_example"} // []string | Exclude VPN ID matches regex (optional)
+	vpnIdRe := []string{"Inner_example"} // []string | VPN ID matches regex (optional)
 	vpnProfile := []string{"Inner_example"} // []string |  (optional)
 	vpnProfileIsnull := true // bool | VPN Profile (name or ID) is null (optional)
 	vpnProfileN := []string{"Inner_example"} // []string |  (optional)
@@ -6834,7 +7736,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.VpnAPI.VpnVpnsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VpnId(vpnId).VpnIdIc(vpnIdIc).VpnIdIe(vpnIdIe).VpnIdIew(vpnIdIew).VpnIdIre(vpnIdIre).VpnIdIsw(vpnIdIsw).VpnIdN(vpnIdN).VpnIdNic(vpnIdNic).VpnIdNie(vpnIdNie).VpnIdNiew(vpnIdNiew).VpnIdNire(vpnIdNire).VpnIdNisw(vpnIdNisw).VpnIdNre(vpnIdNre).VpnIdRe(vpnIdRe).VpnProfile(vpnProfile).VpnProfileIsnull(vpnProfileIsnull).VpnProfileN(vpnProfileN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.VpnAPI.VpnVpnsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).ExtraAttributes(extraAttributes).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).ServiceType(serviceType).ServiceTypeIc(serviceTypeIc).ServiceTypeIe(serviceTypeIe).ServiceTypeIew(serviceTypeIew).ServiceTypeIre(serviceTypeIre).ServiceTypeIsw(serviceTypeIsw).ServiceTypeN(serviceTypeN).ServiceTypeNic(serviceTypeNic).ServiceTypeNie(serviceTypeNie).ServiceTypeNiew(serviceTypeNiew).ServiceTypeNire(serviceTypeNire).ServiceTypeNisw(serviceTypeNisw).ServiceTypeNre(serviceTypeNre).ServiceTypeRe(serviceTypeRe).Sort(sort).Status(status).StatusIsnull(statusIsnull).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).VpnId(vpnId).VpnIdIc(vpnIdIc).VpnIdIe(vpnIdIe).VpnIdIew(vpnIdIew).VpnIdIre(vpnIdIre).VpnIdIsw(vpnIdIsw).VpnIdN(vpnIdN).VpnIdNic(vpnIdNic).VpnIdNie(vpnIdNie).VpnIdNiew(vpnIdNiew).VpnIdNire(vpnIdNire).VpnIdNisw(vpnIdNisw).VpnIdNre(vpnIdNre).VpnIdRe(vpnIdRe).VpnProfile(vpnProfile).VpnProfileIsnull(vpnProfileIsnull).VpnProfileN(vpnProfileN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `VpnAPI.VpnVpnsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -6881,6 +7783,7 @@ Name | Type | Description  | Notes
  **descriptionRe** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
+ **extraAttributes** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
@@ -6911,7 +7814,24 @@ Name | Type | Description  | Notes
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** |  | 
  **roleN** | **[]string** |  | 
+ **serviceType** | [**[]VpnVpnsListServiceTypeParameterInner**](VpnVpnsListServiceTypeParameterInner.md) | Optional classification of this VPN service, for example IPSec or VXLAN-EVPN.   | 
+ **serviceTypeIc** | **[]string** |  | 
+ **serviceTypeIe** | **[]string** |  | 
+ **serviceTypeIew** | **[]string** |  | 
+ **serviceTypeIre** | **[]string** |  | 
+ **serviceTypeIsw** | **[]string** |  | 
+ **serviceTypeN** | **[]string** |  | 
+ **serviceTypeNic** | **[]string** |  | 
+ **serviceTypeNie** | **[]string** |  | 
+ **serviceTypeNiew** | **[]string** |  | 
+ **serviceTypeNire** | **[]string** |  | 
+ **serviceTypeNisw** | **[]string** |  | 
+ **serviceTypeNre** | **[]string** |  | 
+ **serviceTypeRe** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
+ **status** | **[]string** |  | 
+ **statusIsnull** | **bool** |  | 
+ **statusN** | **[]string** |  | 
  **tags** | **[]string** |  | 
  **tagsIsnull** | **bool** |  | 
  **tagsN** | **[]string** |  | 
@@ -6928,19 +7848,19 @@ Name | Type | Description  | Notes
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **vpnId** | **[]string** | VPN ID | 
- **vpnIdIc** | **[]string** | VPN ID | 
+ **vpnIdIc** | **[]string** | VPN ID contains | 
  **vpnIdIe** | **[]string** | VPN ID | 
- **vpnIdIew** | **[]string** | VPN ID | 
- **vpnIdIre** | **[]string** | VPN ID | 
- **vpnIdIsw** | **[]string** | VPN ID | 
- **vpnIdN** | **[]string** | VPN ID | 
- **vpnIdNic** | **[]string** | VPN ID | 
- **vpnIdNie** | **[]string** | VPN ID | 
- **vpnIdNiew** | **[]string** | VPN ID | 
- **vpnIdNire** | **[]string** | VPN ID | 
- **vpnIdNisw** | **[]string** | VPN ID | 
- **vpnIdNre** | **[]string** | VPN ID | 
- **vpnIdRe** | **[]string** | VPN ID | 
+ **vpnIdIew** | **[]string** | VPN ID ends with | 
+ **vpnIdIre** | **[]string** | VPN ID matches regex | 
+ **vpnIdIsw** | **[]string** | VPN ID starts with | 
+ **vpnIdN** | **[]string** | Exclude VPN ID | 
+ **vpnIdNic** | **[]string** | Exclude VPN ID contains | 
+ **vpnIdNie** | **[]string** | Exclude VPN ID | 
+ **vpnIdNiew** | **[]string** | Exclude VPN ID ends with | 
+ **vpnIdNire** | **[]string** | Exclude VPN ID matches regex | 
+ **vpnIdNisw** | **[]string** | Exclude VPN ID starts with | 
+ **vpnIdNre** | **[]string** | Exclude VPN ID matches regex | 
+ **vpnIdRe** | **[]string** | VPN ID matches regex | 
  **vpnProfile** | **[]string** |  | 
  **vpnProfileIsnull** | **bool** | VPN Profile (name or ID) is null | 
  **vpnProfileN** | **[]string** |  | 

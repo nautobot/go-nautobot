@@ -456,7 +456,7 @@ func main() {
 	certificateFilePathNisw := []string{"Inner_example"} // []string |  (optional)
 	certificateFilePathNre := []string{"Inner_example"} // []string |  (optional)
 	certificateFilePathRe := []string{"Inner_example"} // []string |  (optional)
-	certificateType := []string{"Inner_example"} // []string |  (optional)
+	certificateType := []openapiclient.LoadBalancersCertificateProfilesListCertificateTypeParameterInner{openapiclient.load_balancers_certificate_profiles_list_certificate_type_parameter_inner("client")} // []LoadBalancersCertificateProfilesListCertificateTypeParameterInner |  (optional)
 	certificateTypeIc := []string{"Inner_example"} // []string |  (optional)
 	certificateTypeIe := []string{"Inner_example"} // []string |  (optional)
 	certificateTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -620,7 +620,7 @@ Name | Type | Description  | Notes
  **certificateFilePathNisw** | **[]string** |  | 
  **certificateFilePathNre** | **[]string** |  | 
  **certificateFilePathRe** | **[]string** |  | 
- **certificateType** | **[]string** |  | 
+ **certificateType** | [**[]LoadBalancersCertificateProfilesListCertificateTypeParameterInner**](LoadBalancersCertificateProfilesListCertificateTypeParameterInner.md) |  | 
  **certificateTypeIc** | **[]string** |  | 
  **certificateTypeIe** | **[]string** |  | 
  **certificateTypeIew** | **[]string** |  | 
@@ -1518,7 +1518,7 @@ func main() {
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	healthCheckType := []string{"Inner_example"} // []string |  (optional)
+	healthCheckType := []openapiclient.LoadBalancersHealthCheckMonitorsListHealthCheckTypeParameterInner{openapiclient.load_balancers_health_check_monitors_list_health_check_type_parameter_inner("custom")} // []LoadBalancersHealthCheckMonitorsListHealthCheckTypeParameterInner |  (optional)
 	healthCheckTypeIc := []string{"Inner_example"} // []string |  (optional)
 	healthCheckTypeIe := []string{"Inner_example"} // []string |  (optional)
 	healthCheckTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -1641,7 +1641,7 @@ Name | Type | Description  | Notes
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **healthCheckType** | **[]string** |  | 
+ **healthCheckType** | [**[]LoadBalancersHealthCheckMonitorsListHealthCheckTypeParameterInner**](LoadBalancersHealthCheckMonitorsListHealthCheckTypeParameterInner.md) |  | 
  **healthCheckTypeIc** | **[]string** |  | 
  **healthCheckTypeIe** | **[]string** |  | 
  **healthCheckTypeIew** | **[]string** |  | 
@@ -2279,7 +2279,7 @@ import (
 )
 
 func main() {
-	bulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest := []openapiclient.BulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest{*openapiclient.NewBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
+	bulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest := []openapiclient.BulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest{*openapiclient.NewBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2347,7 +2347,7 @@ import (
 )
 
 func main() {
-	loadBalancerPoolMemberCertificateProfileAssignmentRequest := *openapiclient.NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
+	loadBalancerPoolMemberCertificateProfileAssignmentRequest := *openapiclient.NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2724,7 +2724,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this load balancer pool member certificate profile assignment.
-	loadBalancerPoolMemberCertificateProfileAssignmentRequest := *openapiclient.NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
+	loadBalancerPoolMemberCertificateProfileAssignmentRequest := *openapiclient.NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LoadBalancerPoolMemberCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2931,7 +2931,7 @@ import (
 )
 
 func main() {
-	bulkWritableLoadBalancerPoolMemberRequest := []openapiclient.BulkWritableLoadBalancerPoolMemberRequest{*openapiclient.NewBulkWritableLoadBalancerPoolMemberRequest("Id_example", int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableLoadBalancerPoolMemberRequest | 
+	bulkWritableLoadBalancerPoolMemberRequest := []openapiclient.BulkWritableLoadBalancerPoolMemberRequest{*openapiclient.NewBulkWritableLoadBalancerPoolMemberRequest("Id_example", int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableLoadBalancerPoolMemberRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2999,7 +2999,7 @@ import (
 )
 
 func main() {
-	loadBalancerPoolMemberRequest := *openapiclient.NewLoadBalancerPoolMemberRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LoadBalancerPoolMemberRequest | 
+	loadBalancerPoolMemberRequest := *openapiclient.NewLoadBalancerPoolMemberRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LoadBalancerPoolMemberRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3657,7 +3657,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Load Balancer Pool Member.
-	loadBalancerPoolMemberRequest := *openapiclient.NewLoadBalancerPoolMemberRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LoadBalancerPoolMemberRequest | 
+	loadBalancerPoolMemberRequest := *openapiclient.NewLoadBalancerPoolMemberRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LoadBalancerPoolMemberRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4097,7 +4097,7 @@ func main() {
 	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	loadBalancingAlgorithm := []string{"Inner_example"} // []string |  (optional)
+	loadBalancingAlgorithm := []openapiclient.LoadBalancersLoadBalancerPoolsListLoadBalancingAlgorithmParameterInner{openapiclient.load_balancers_load_balancer_pools_list_load_balancing_algorithm_parameter_inner("custom_load")} // []LoadBalancersLoadBalancerPoolsListLoadBalancingAlgorithmParameterInner |  (optional)
 	loadBalancingAlgorithmIc := []string{"Inner_example"} // []string |  (optional)
 	loadBalancingAlgorithmIe := []string{"Inner_example"} // []string |  (optional)
 	loadBalancingAlgorithmIew := []string{"Inner_example"} // []string |  (optional)
@@ -4195,7 +4195,7 @@ Name | Type | Description  | Notes
  **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
  **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **loadBalancingAlgorithm** | **[]string** |  | 
+ **loadBalancingAlgorithm** | [**[]LoadBalancersLoadBalancerPoolsListLoadBalancingAlgorithmParameterInner**](LoadBalancersLoadBalancerPoolsListLoadBalancingAlgorithmParameterInner.md) |  | 
  **loadBalancingAlgorithmIc** | **[]string** |  | 
  **loadBalancingAlgorithmIe** | **[]string** |  | 
  **loadBalancingAlgorithmIew** | **[]string** |  | 
@@ -4795,7 +4795,7 @@ import (
 )
 
 func main() {
-	bulkWritableVirtualServerCertificateProfileAssignmentRequest := []openapiclient.BulkWritableVirtualServerCertificateProfileAssignmentRequest{*openapiclient.NewBulkWritableVirtualServerCertificateProfileAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVirtualServerCertificateProfileAssignmentRequest | 
+	bulkWritableVirtualServerCertificateProfileAssignmentRequest := []openapiclient.BulkWritableVirtualServerCertificateProfileAssignmentRequest{*openapiclient.NewBulkWritableVirtualServerCertificateProfileAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVirtualServerCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4863,7 +4863,7 @@ import (
 )
 
 func main() {
-	virtualServerCertificateProfileAssignmentRequest := *openapiclient.NewVirtualServerCertificateProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualServerCertificateProfileAssignmentRequest | 
+	virtualServerCertificateProfileAssignmentRequest := *openapiclient.NewVirtualServerCertificateProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualServerCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5240,7 +5240,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual server certificate profile assignment.
-	virtualServerCertificateProfileAssignmentRequest := *openapiclient.NewVirtualServerCertificateProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualServerCertificateProfileAssignmentRequest | 
+	virtualServerCertificateProfileAssignmentRequest := *openapiclient.NewVirtualServerCertificateProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualServerCertificateProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5447,7 +5447,7 @@ import (
 )
 
 func main() {
-	bulkWritableVirtualServerRequest := []openapiclient.BulkWritableVirtualServerRequest{*openapiclient.NewBulkWritableVirtualServerRequest("Id_example", "Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVirtualServerRequest | 
+	bulkWritableVirtualServerRequest := []openapiclient.BulkWritableVirtualServerRequest{*openapiclient.NewBulkWritableVirtualServerRequest("Id_example", "Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVirtualServerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5515,7 +5515,7 @@ import (
 )
 
 func main() {
-	virtualServerRequest := *openapiclient.NewVirtualServerRequest("Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualServerRequest | 
+	virtualServerRequest := *openapiclient.NewVirtualServerRequest("Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualServerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5695,7 +5695,7 @@ func main() {
 	loadBalancerPool := []string{"Inner_example"} // []string |  (optional)
 	loadBalancerPoolIsnull := true // bool | Load Balancer Pool (name or ID) is null (optional)
 	loadBalancerPoolN := []string{"Inner_example"} // []string |  (optional)
-	loadBalancerType := []string{"Inner_example"} // []string |  (optional)
+	loadBalancerType := []openapiclient.LoadBalancersVirtualServersListLoadBalancerTypeParameterInner{openapiclient.load_balancers_virtual_servers_list_load_balancer_type_parameter_inner("dns")} // []LoadBalancersVirtualServersListLoadBalancerTypeParameterInner |  (optional)
 	loadBalancerTypeIc := []string{"Inner_example"} // []string |  (optional)
 	loadBalancerTypeIe := []string{"Inner_example"} // []string |  (optional)
 	loadBalancerTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -5731,7 +5731,7 @@ func main() {
 	portLt := []int32{int32(123)} // []int32 |  (optional)
 	portLte := []int32{int32(123)} // []int32 |  (optional)
 	portN := []int32{int32(123)} // []int32 |  (optional)
-	protocol := []string{"Inner_example"} // []string |  (optional)
+	protocol := []openapiclient.LoadBalancersVirtualServersListProtocolParameterInner{openapiclient.load_balancers_virtual_servers_list_protocol_parameter_inner("Any")} // []LoadBalancersVirtualServersListProtocolParameterInner |  (optional)
 	protocolIc := []string{"Inner_example"} // []string |  (optional)
 	protocolIe := []string{"Inner_example"} // []string |  (optional)
 	protocolIew := []string{"Inner_example"} // []string |  (optional)
@@ -5750,7 +5750,7 @@ func main() {
 	sourceNatPool := []string{"Inner_example"} // []string |  (optional)
 	sourceNatPoolIsnull := true // bool | Source NAT Pool (ID or network string) is null (optional)
 	sourceNatPoolN := []string{"Inner_example"} // []string |  (optional)
-	sourceNatType := []string{"Inner_example"} // []string |  (optional)
+	sourceNatType := []openapiclient.LoadBalancersVirtualServersListSourceNatTypeParameterInner{openapiclient.load_balancers_virtual_servers_list_source_nat_type_parameter_inner("auto")} // []LoadBalancersVirtualServersListSourceNatTypeParameterInner |  (optional)
 	sourceNatTypeIc := []string{"Inner_example"} // []string |  (optional)
 	sourceNatTypeIe := []string{"Inner_example"} // []string |  (optional)
 	sourceNatTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -5852,7 +5852,7 @@ Name | Type | Description  | Notes
  **loadBalancerPool** | **[]string** |  | 
  **loadBalancerPoolIsnull** | **bool** | Load Balancer Pool (name or ID) is null | 
  **loadBalancerPoolN** | **[]string** |  | 
- **loadBalancerType** | **[]string** |  | 
+ **loadBalancerType** | [**[]LoadBalancersVirtualServersListLoadBalancerTypeParameterInner**](LoadBalancersVirtualServersListLoadBalancerTypeParameterInner.md) |  | 
  **loadBalancerTypeIc** | **[]string** |  | 
  **loadBalancerTypeIe** | **[]string** |  | 
  **loadBalancerTypeIew** | **[]string** |  | 
@@ -5888,7 +5888,7 @@ Name | Type | Description  | Notes
  **portLt** | **[]int32** |  | 
  **portLte** | **[]int32** |  | 
  **portN** | **[]int32** |  | 
- **protocol** | **[]string** |  | 
+ **protocol** | [**[]LoadBalancersVirtualServersListProtocolParameterInner**](LoadBalancersVirtualServersListProtocolParameterInner.md) |  | 
  **protocolIc** | **[]string** |  | 
  **protocolIe** | **[]string** |  | 
  **protocolIew** | **[]string** |  | 
@@ -5907,7 +5907,7 @@ Name | Type | Description  | Notes
  **sourceNatPool** | **[]string** |  | 
  **sourceNatPoolIsnull** | **bool** | Source NAT Pool (ID or network string) is null | 
  **sourceNatPoolN** | **[]string** |  | 
- **sourceNatType** | **[]string** |  | 
+ **sourceNatType** | [**[]LoadBalancersVirtualServersListSourceNatTypeParameterInner**](LoadBalancersVirtualServersListSourceNatTypeParameterInner.md) |  | 
  **sourceNatTypeIc** | **[]string** |  | 
  **sourceNatTypeIe** | **[]string** |  | 
  **sourceNatTypeIew** | **[]string** |  | 
@@ -6289,7 +6289,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Virtual Server.
-	virtualServerRequest := *openapiclient.NewVirtualServerRequest("Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualServerRequest | 
+	virtualServerRequest := *openapiclient.NewVirtualServerRequest("Name_example", openapiclient.BulkWritableVirtualServerRequest_protocol("tcp"), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualServerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

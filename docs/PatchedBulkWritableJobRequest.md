@@ -11,12 +11,14 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** | Whether this job can be executed by users | [optional] 
 **HasSensitiveVariables** | Pointer to **bool** | Whether this job contains sensitive variables | [optional] 
 **IsSingleton** | Pointer to **bool** | Whether this job should fail to run if another instance of this job is already running | [optional] 
+**ConsoleLogDefault** | Pointer to **bool** | Whether the job defaults to running with console log argument set to true | [optional] 
 **Hidden** | Pointer to **bool** | Whether the job defaults to not being shown in the UI | [optional] 
 **DryrunDefault** | Pointer to **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] 
 **SoftTimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will receive a &lt;code&gt;SoftTimeLimitExceeded&lt;/code&gt; exception.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **TimeLimit** | Pointer to **float64** | Maximum runtime in seconds before the job will be forcibly terminated.&lt;br&gt;Set to 0 to use Nautobot system default | [optional] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
+**ConsoleLogDefaultOverride** | Pointer to **bool** | If set, the configured console log default will remain even if the underlying Job source code changes | [optional] 
 **DescriptionOverride** | Pointer to **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] 
 **DryrunDefaultOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **HiddenOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
@@ -26,8 +28,8 @@ Name | Type | Description | Notes
 **JobQueuesOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **DefaultJobQueueOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **IsSingletonOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
-**DefaultJobQueue** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**DefaultJobQueue** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -220,6 +222,31 @@ SetIsSingleton sets IsSingleton field to given value.
 
 HasIsSingleton returns a boolean if a field has been set.
 
+### GetConsoleLogDefault
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefault() bool`
+
+GetConsoleLogDefault returns the ConsoleLogDefault field if non-nil, zero value otherwise.
+
+### GetConsoleLogDefaultOk
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOk() (*bool, bool)`
+
+GetConsoleLogDefaultOk returns a tuple with the ConsoleLogDefault field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleLogDefault
+
+`func (o *PatchedBulkWritableJobRequest) SetConsoleLogDefault(v bool)`
+
+SetConsoleLogDefault sets ConsoleLogDefault field to given value.
+
+### HasConsoleLogDefault
+
+`func (o *PatchedBulkWritableJobRequest) HasConsoleLogDefault() bool`
+
+HasConsoleLogDefault returns a boolean if a field has been set.
+
 ### GetHidden
 
 `func (o *PatchedBulkWritableJobRequest) GetHidden() bool`
@@ -369,6 +396,31 @@ SetNameOverride sets NameOverride field to given value.
 `func (o *PatchedBulkWritableJobRequest) HasNameOverride() bool`
 
 HasNameOverride returns a boolean if a field has been set.
+
+### GetConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOverride() bool`
+
+GetConsoleLogDefaultOverride returns the ConsoleLogDefaultOverride field if non-nil, zero value otherwise.
+
+### GetConsoleLogDefaultOverrideOk
+
+`func (o *PatchedBulkWritableJobRequest) GetConsoleLogDefaultOverrideOk() (*bool, bool)`
+
+GetConsoleLogDefaultOverrideOk returns a tuple with the ConsoleLogDefaultOverride field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) SetConsoleLogDefaultOverride(v bool)`
+
+SetConsoleLogDefaultOverride sets ConsoleLogDefaultOverride field to given value.
+
+### HasConsoleLogDefaultOverride
+
+`func (o *PatchedBulkWritableJobRequest) HasConsoleLogDefaultOverride() bool`
+
+HasConsoleLogDefaultOverride returns a boolean if a field has been set.
 
 ### GetDescriptionOverride
 
@@ -597,20 +649,20 @@ HasIsSingletonOverride returns a boolean if a field has been set.
 
 ### GetDefaultJobQueue
 
-`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueue() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueue() BulkWritableCableRequestStatus`
 
 GetDefaultJobQueue returns the DefaultJobQueue field if non-nil, zero value otherwise.
 
 ### GetDefaultJobQueueOk
 
-`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueueOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableJobRequest) GetDefaultJobQueueOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDefaultJobQueueOk returns a tuple with the DefaultJobQueue field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDefaultJobQueue
 
-`func (o *PatchedBulkWritableJobRequest) SetDefaultJobQueue(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableJobRequest) SetDefaultJobQueue(v BulkWritableCableRequestStatus)`
 
 SetDefaultJobQueue sets DefaultJobQueue field to given value.
 
@@ -622,20 +674,20 @@ HasDefaultJobQueue returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableJobRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableJobRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableJobRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableJobRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableJobRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableJobRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

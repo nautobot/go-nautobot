@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **ValidatedAttributeValue** | Pointer to **string** |  | [optional] 
 **Valid** | Pointer to **bool** |  | [optional] 
 **Message** | Pointer to **string** |  | [optional] 
-**ContentType** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**ContentType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -237,20 +237,20 @@ HasMessage returns a boolean if a field has been set.
 
 ### GetContentType
 
-`func (o *PatchedDataComplianceRequest) GetContentType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedDataComplianceRequest) GetContentType() BulkWritableCableRequestStatus`
 
 GetContentType returns the ContentType field if non-nil, zero value otherwise.
 
 ### GetContentTypeOk
 
-`func (o *PatchedDataComplianceRequest) GetContentTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedDataComplianceRequest) GetContentTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetContentTypeOk returns a tuple with the ContentType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContentType
 
-`func (o *PatchedDataComplianceRequest) SetContentType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedDataComplianceRequest) SetContentType(v BulkWritableCableRequestStatus)`
 
 SetContentType sets ContentType field to given value.
 

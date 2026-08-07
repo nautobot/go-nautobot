@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **DestinationType** | **string** |  | 
 **SourceId** | **string** |  | 
 **DestinationId** | **string** |  | 
-**Relationship** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Relationship** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableRelationshipAssociationRequest
 
-`func NewBulkWritableRelationshipAssociationRequest(id string, sourceType string, destinationType string, sourceId string, destinationId string, relationship ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableRelationshipAssociationRequest`
+`func NewBulkWritableRelationshipAssociationRequest(id string, sourceType string, destinationType string, sourceId string, destinationId string, relationship BulkWritableCableRequestStatus, ) *BulkWritableRelationshipAssociationRequest`
 
 NewBulkWritableRelationshipAssociationRequest instantiates a new BulkWritableRelationshipAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -132,20 +132,20 @@ SetDestinationId sets DestinationId field to given value.
 
 ### GetRelationship
 
-`func (o *BulkWritableRelationshipAssociationRequest) GetRelationship() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableRelationshipAssociationRequest) GetRelationship() BulkWritableCableRequestStatus`
 
 GetRelationship returns the Relationship field if non-nil, zero value otherwise.
 
 ### GetRelationshipOk
 
-`func (o *BulkWritableRelationshipAssociationRequest) GetRelationshipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableRelationshipAssociationRequest) GetRelationshipOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRelationshipOk returns a tuple with the Relationship field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationship
 
-`func (o *BulkWritableRelationshipAssociationRequest) SetRelationship(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableRelationshipAssociationRequest) SetRelationship(v BulkWritableCableRequestStatus)`
 
 SetRelationship sets Relationship field to given value.
 

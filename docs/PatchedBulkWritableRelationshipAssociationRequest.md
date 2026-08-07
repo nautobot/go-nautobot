@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **DestinationType** | Pointer to **string** |  | [optional] 
 **SourceId** | Pointer to **string** |  | [optional] 
 **DestinationId** | Pointer to **string** |  | [optional] 
-**Relationship** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Relationship** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -152,20 +152,20 @@ HasDestinationId returns a boolean if a field has been set.
 
 ### GetRelationship
 
-`func (o *PatchedBulkWritableRelationshipAssociationRequest) GetRelationship() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableRelationshipAssociationRequest) GetRelationship() BulkWritableCableRequestStatus`
 
 GetRelationship returns the Relationship field if non-nil, zero value otherwise.
 
 ### GetRelationshipOk
 
-`func (o *PatchedBulkWritableRelationshipAssociationRequest) GetRelationshipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableRelationshipAssociationRequest) GetRelationshipOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRelationshipOk returns a tuple with the Relationship field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationship
 
-`func (o *PatchedBulkWritableRelationshipAssociationRequest) SetRelationship(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableRelationshipAssociationRequest) SetRelationship(v BulkWritableCableRequestStatus)`
 
 SetRelationship sets Relationship field to given value.
 
