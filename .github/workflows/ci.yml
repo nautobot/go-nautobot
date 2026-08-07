@@ -17,8 +17,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Get go-nautobot code"
-        uses: actions/checkout@v3
-      - name: "Run tests"
+        uses: actions/checkout@v4
+      - name: "Regenerate bindings and run tests"
         run: |
           cd development
-          make
+          make ci
+      - name: "Check that generated code matches the committed tree"
+        run: |
+          git add -A
+          if ! git diff --cached --quiet; then
+            echo "::error::Generated code differs from what is committed. Run 'cd development && make' locally and commit the result."
+            git diff --cached --stat
+            exit 1
+          fi
