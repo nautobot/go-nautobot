@@ -4,7 +4,19 @@ set -euxo pipefail
 echo "Updating go-nautobot version"
 
 VERSION_FILE="../../api/nautobot_version"
+
+# Sourcing local_dev.env would overwrite a NAUTOBOT_VER supplied by the
+# environment (CI, or the release workflow's `tag` input), so remember any
+# externally provided value and restore it afterwards. The file remains the
+# default when nothing is set externally. This keeps this step consistent with
+# get-api and create-bindings, where the shell environment already takes
+# precedence over --env-file during docker-compose interpolation.
+EXTERNAL_NAUTOBOT_VER="${NAUTOBOT_VER:-}"
 . "../local_dev.env"
+if [ -n "$EXTERNAL_NAUTOBOT_VER" ]; then
+    NAUTOBOT_VER="$EXTERNAL_NAUTOBOT_VER"
+fi
+
 CURRENT_VERSION=$(head -n 1 $VERSION_FILE)
 CURRENT_MAJOR_MINOR_VER=${CURRENT_VERSION%.*}
 
