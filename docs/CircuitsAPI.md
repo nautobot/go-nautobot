@@ -218,7 +218,7 @@ import (
 )
 
 func main() {
-	bulkWritableCircuitTerminationRequest := []openapiclient.BulkWritableCircuitTerminationRequest{*openapiclient.NewBulkWritableCircuitTerminationRequest("Id_example", openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCircuitTerminationRequest | 
+	bulkWritableCircuitTerminationRequest := []openapiclient.BulkWritableCircuitTerminationRequest{*openapiclient.NewBulkWritableCircuitTerminationRequest("Id_example", openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -286,7 +286,7 @@ import (
 )
 
 func main() {
-	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitTerminationRequest | 
+	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -493,7 +493,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	termSide := []openapiclient.Termination{openapiclient.Termination("A")} // []Termination |  (optional)
+	termSide := []string{"Inner_example"} // []string |  (optional)
 	termSideIc := []string{"Inner_example"} // []string |  (optional)
 	termSideIe := []string{"Inner_example"} // []string |  (optional)
 	termSideIew := []string{"Inner_example"} // []string |  (optional)
@@ -623,7 +623,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **termSide** | [**[]Termination**](Termination.md) |  | 
+ **termSide** | **[]string** |  | 
  **termSideIc** | **[]string** |  | 
  **termSideIe** | **[]string** |  | 
  **termSideIew** | **[]string** |  | 
@@ -1081,7 +1081,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this circuit termination.
-	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitTerminationRequest | 
+	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2189,7 +2189,7 @@ import (
 )
 
 func main() {
-	bulkWritableCircuitRequest := []openapiclient.BulkWritableCircuitRequest{*openapiclient.NewBulkWritableCircuitRequest("Id_example", "Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCircuitRequest | 
+	bulkWritableCircuitRequest := []openapiclient.BulkWritableCircuitRequest{*openapiclient.NewBulkWritableCircuitRequest("Id_example", "Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2257,7 +2257,7 @@ import (
 )
 
 func main() {
-	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitRequest | 
+	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3013,7 +3013,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this circuit.
-	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitRequest | 
+	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3220,7 +3220,7 @@ import (
 )
 
 func main() {
-	bulkWritableProviderNetworkRequest := []openapiclient.BulkWritableProviderNetworkRequest{*openapiclient.NewBulkWritableProviderNetworkRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableProviderNetworkRequest | 
+	bulkWritableProviderNetworkRequest := []openapiclient.BulkWritableProviderNetworkRequest{*openapiclient.NewBulkWritableProviderNetworkRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3288,7 +3288,7 @@ import (
 )
 
 func main() {
-	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ProviderNetworkRequest | 
+	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3960,7 +3960,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this provider network.
-	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ProviderNetworkRequest | 
+	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

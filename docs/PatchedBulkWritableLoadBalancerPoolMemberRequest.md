@@ -8,14 +8,14 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Optional label for the load balancer pool member. | [optional] 
 **Port** | Pointer to **int32** |  | [optional] 
 **SslOffload** | Pointer to **bool** |  | [optional] 
-**IpAddress** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**LoadBalancerPool** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**IpAddress** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**LoadBalancerPool** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **HealthCheckMonitor** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Status** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Status** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -133,20 +133,20 @@ HasSslOffload returns a boolean if a field has been set.
 
 ### GetIpAddress
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetIpAddress() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetIpAddress() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetIpAddress returns the IpAddress field if non-nil, zero value otherwise.
 
 ### GetIpAddressOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetIpAddressOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetIpAddressOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetIpAddressOk returns a tuple with the IpAddress field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetIpAddress
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetIpAddress(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetIpAddress(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetIpAddress sets IpAddress field to given value.
 
@@ -158,20 +158,20 @@ HasIpAddress returns a boolean if a field has been set.
 
 ### GetLoadBalancerPool
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetLoadBalancerPool() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetLoadBalancerPool() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLoadBalancerPool returns the LoadBalancerPool field if non-nil, zero value otherwise.
 
 ### GetLoadBalancerPoolOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetLoadBalancerPoolOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetLoadBalancerPoolOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLoadBalancerPoolOk returns a tuple with the LoadBalancerPool field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLoadBalancerPool
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetLoadBalancerPool(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetLoadBalancerPool(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLoadBalancerPool sets LoadBalancerPool field to given value.
 
@@ -253,20 +253,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetStatus
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -328,20 +328,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

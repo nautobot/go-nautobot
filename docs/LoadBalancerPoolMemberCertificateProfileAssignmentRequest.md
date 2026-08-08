@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**LoadBalancerPoolMember** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CertificateProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**LoadBalancerPoolMember** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CertificateProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest
 
-`func NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(loadBalancerPoolMember BulkWritableCableRequestStatus, certificateProfile BulkWritableCableRequestStatus, ) *LoadBalancerPoolMemberCertificateProfileAssignmentRequest`
+`func NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest(loadBalancerPoolMember ApprovalWorkflowStageResponseApprovalWorkflowStage, certificateProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *LoadBalancerPoolMemberCertificateProfileAssignmentRequest`
 
 NewLoadBalancerPoolMemberCertificateProfileAssignmentRequest instantiates a new LoadBalancerPoolMemberCertificateProfileAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -54,40 +54,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetLoadBalancerPoolMember
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMember() BulkWritableCableRequestStatus`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMember() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLoadBalancerPoolMember returns the LoadBalancerPoolMember field if non-nil, zero value otherwise.
 
 ### GetLoadBalancerPoolMemberOk
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMemberOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMemberOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLoadBalancerPoolMemberOk returns a tuple with the LoadBalancerPoolMember field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLoadBalancerPoolMember
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetLoadBalancerPoolMember(v BulkWritableCableRequestStatus)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetLoadBalancerPoolMember(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLoadBalancerPoolMember sets LoadBalancerPoolMember field to given value.
 
 
 ### GetCertificateProfile
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfile() BulkWritableCableRequestStatus`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCertificateProfile returns the CertificateProfile field if non-nil, zero value otherwise.
 
 ### GetCertificateProfileOk
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCertificateProfileOk returns a tuple with the CertificateProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCertificateProfile
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetCertificateProfile(v BulkWritableCableRequestStatus)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetCertificateProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCertificateProfile sets CertificateProfile field to given value.
 

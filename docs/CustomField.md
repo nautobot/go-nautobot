@@ -23,7 +23,6 @@ Name | Type | Description | Notes
 **ValidationMaximum** | Pointer to **NullableInt64** | Maximum allowed value (for numeric fields) or length (for text fields). | [optional] 
 **ValidationRegex** | Pointer to **string** | Regular expression to enforce on text field values. Use ^ and $ to force matching of entire string. For example, &lt;code&gt;^[A-Z]{3}$&lt;/code&gt; will limit values to exactly three uppercase letters. Regular expression on select and multi-select will be applied at &lt;code&gt;Custom Field Choices&lt;/code&gt; definition. | [optional] 
 **AdvancedUi** | Pointer to **bool** | Hide this field from the object&#39;s primary information tab. It will appear in the \&quot;Advanced\&quot; tab instead. | [optional] 
-**ScopeFilter** | Pointer to **interface{}** | A JSON-encoded dictionary of filter parameters defining possible objects that can use this custom field. | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
@@ -517,41 +516,6 @@ SetAdvancedUi sets AdvancedUi field to given value.
 
 HasAdvancedUi returns a boolean if a field has been set.
 
-### GetScopeFilter
-
-`func (o *CustomField) GetScopeFilter() interface{}`
-
-GetScopeFilter returns the ScopeFilter field if non-nil, zero value otherwise.
-
-### GetScopeFilterOk
-
-`func (o *CustomField) GetScopeFilterOk() (*interface{}, bool)`
-
-GetScopeFilterOk returns a tuple with the ScopeFilter field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetScopeFilter
-
-`func (o *CustomField) SetScopeFilter(v interface{})`
-
-SetScopeFilter sets ScopeFilter field to given value.
-
-### HasScopeFilter
-
-`func (o *CustomField) HasScopeFilter() bool`
-
-HasScopeFilter returns a boolean if a field has been set.
-
-### SetScopeFilterNil
-
-`func (o *CustomField) SetScopeFilterNil(b bool)`
-
- SetScopeFilterNil sets the value for ScopeFilter to be an explicit nil
-
-### UnsetScopeFilter
-`func (o *CustomField) UnsetScopeFilter()`
-
-UnsetScopeFilter ensures that no value is present for ScopeFilter, not even an explicit nil
 ### GetCreated
 
 `func (o *CustomField) GetCreated() time.Time`

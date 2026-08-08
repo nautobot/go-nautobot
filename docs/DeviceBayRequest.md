@@ -8,17 +8,17 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Device** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **InstalledDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewDeviceBayRequest
 
-`func NewDeviceBayRequest(name string, device BulkWritableCableRequestStatus, ) *DeviceBayRequest`
+`func NewDeviceBayRequest(name string, device ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *DeviceBayRequest`
 
 NewDeviceBayRequest instantiates a new DeviceBayRequest object
 This constructor will assign default values to properties that have it defined,
@@ -130,20 +130,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDevice
 
-`func (o *DeviceBayRequest) GetDevice() BulkWritableCableRequestStatus`
+`func (o *DeviceBayRequest) GetDevice() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *DeviceBayRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceBayRequest) GetDeviceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *DeviceBayRequest) SetDevice(v BulkWritableCableRequestStatus)`
+`func (o *DeviceBayRequest) SetDevice(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDevice sets Device field to given value.
 
@@ -235,20 +235,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *DeviceBayRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *DeviceBayRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *DeviceBayRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceBayRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *DeviceBayRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *DeviceBayRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

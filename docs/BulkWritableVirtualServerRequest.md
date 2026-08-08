@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **LoadBalancerType** | Pointer to [**BulkWritableVirtualServerRequestLoadBalancerType**](BulkWritableVirtualServerRequestLoadBalancerType.md) |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **SslOffload** | Pointer to **bool** |  | [optional] 
-**Vip** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Vip** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **SourceNatPool** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **DeviceRedundancyGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
@@ -23,13 +23,13 @@ Name | Type | Description | Notes
 **HealthCheckMonitor** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableVirtualServerRequest
 
-`func NewBulkWritableVirtualServerRequest(id string, name string, protocol BulkWritableVirtualServerRequestProtocol, vip BulkWritableCableRequestStatus, ) *BulkWritableVirtualServerRequest`
+`func NewBulkWritableVirtualServerRequest(id string, name string, protocol BulkWritableVirtualServerRequestProtocol, vip ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableVirtualServerRequest`
 
 NewBulkWritableVirtualServerRequest instantiates a new BulkWritableVirtualServerRequest object
 This constructor will assign default values to properties that have it defined,
@@ -241,20 +241,20 @@ HasSslOffload returns a boolean if a field has been set.
 
 ### GetVip
 
-`func (o *BulkWritableVirtualServerRequest) GetVip() BulkWritableCableRequestStatus`
+`func (o *BulkWritableVirtualServerRequest) GetVip() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVip returns the Vip field if non-nil, zero value otherwise.
 
 ### GetVipOk
 
-`func (o *BulkWritableVirtualServerRequest) GetVipOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableVirtualServerRequest) GetVipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVipOk returns a tuple with the Vip field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVip
 
-`func (o *BulkWritableVirtualServerRequest) SetVip(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableVirtualServerRequest) SetVip(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVip sets Vip field to given value.
 
@@ -591,20 +591,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableVirtualServerRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableVirtualServerRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableVirtualServerRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableVirtualServerRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableVirtualServerRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableVirtualServerRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

@@ -8,18 +8,18 @@ Name | Type | Description | Notes
 **ExtraConfig** | Pointer to **interface{}** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**CloudResourceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CloudAccount** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CloudResourceType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CloudAccount** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewCloudNetworkRequest
 
-`func NewCloudNetworkRequest(name string, cloudResourceType BulkWritableCableRequestStatus, cloudAccount BulkWritableCableRequestStatus, ) *CloudNetworkRequest`
+`func NewCloudNetworkRequest(name string, cloudResourceType ApprovalWorkflowStageResponseApprovalWorkflowStage, cloudAccount ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *CloudNetworkRequest`
 
 NewCloudNetworkRequest instantiates a new CloudNetworkRequest object
 This constructor will assign default values to properties that have it defined,
@@ -141,40 +141,40 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetCloudResourceType
 
-`func (o *CloudNetworkRequest) GetCloudResourceType() BulkWritableCableRequestStatus`
+`func (o *CloudNetworkRequest) GetCloudResourceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCloudResourceType returns the CloudResourceType field if non-nil, zero value otherwise.
 
 ### GetCloudResourceTypeOk
 
-`func (o *CloudNetworkRequest) GetCloudResourceTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *CloudNetworkRequest) GetCloudResourceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCloudResourceTypeOk returns a tuple with the CloudResourceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudResourceType
 
-`func (o *CloudNetworkRequest) SetCloudResourceType(v BulkWritableCableRequestStatus)`
+`func (o *CloudNetworkRequest) SetCloudResourceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCloudResourceType sets CloudResourceType field to given value.
 
 
 ### GetCloudAccount
 
-`func (o *CloudNetworkRequest) GetCloudAccount() BulkWritableCableRequestStatus`
+`func (o *CloudNetworkRequest) GetCloudAccount() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCloudAccount returns the CloudAccount field if non-nil, zero value otherwise.
 
 ### GetCloudAccountOk
 
-`func (o *CloudNetworkRequest) GetCloudAccountOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *CloudNetworkRequest) GetCloudAccountOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCloudAccountOk returns a tuple with the CloudAccount field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudAccount
 
-`func (o *CloudNetworkRequest) SetCloudAccount(v BulkWritableCableRequestStatus)`
+`func (o *CloudNetworkRequest) SetCloudAccount(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCloudAccount sets CloudAccount field to given value.
 
@@ -266,20 +266,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *CloudNetworkRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *CloudNetworkRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *CloudNetworkRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *CloudNetworkRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *CloudNetworkRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *CloudNetworkRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

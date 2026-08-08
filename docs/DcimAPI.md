@@ -670,7 +670,7 @@ import (
 )
 
 func main() {
-	bulkWritableCableRequest := []openapiclient.BulkWritableCableRequest{*openapiclient.NewBulkWritableCableRequest("Id_example", "TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCableRequest | 
+	bulkWritableCableRequest := []openapiclient.BulkWritableCableRequest{*openapiclient.NewBulkWritableCableRequest("Id_example", "TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -738,7 +738,7 @@ import (
 )
 
 func main() {
-	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableCableRequest | 
+	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -936,7 +936,7 @@ func main() {
 	lengthLt := []int32{int32(123)} // []int32 |  (optional)
 	lengthLte := []int32{int32(123)} // []int32 |  (optional)
 	lengthN := []int32{int32(123)} // []int32 |  (optional)
-	lengthUnit := []openapiclient.DcimCablesListLengthUnitParameterInner{openapiclient.dcim_cables_list_length_unit_parameter_inner("cm")} // []DcimCablesListLengthUnitParameterInner |  (optional)
+	lengthUnit := []string{"Inner_example"} // []string |  (optional)
 	lengthUnitIc := []string{"Inner_example"} // []string |  (optional)
 	lengthUnitIe := []string{"Inner_example"} // []string |  (optional)
 	lengthUnitIew := []string{"Inner_example"} // []string |  (optional)
@@ -1076,7 +1076,7 @@ Name | Type | Description  | Notes
  **lengthLt** | **[]int32** |  | 
  **lengthLte** | **[]int32** |  | 
  **lengthN** | **[]int32** |  | 
- **lengthUnit** | [**[]DcimCablesListLengthUnitParameterInner**](DcimCablesListLengthUnitParameterInner.md) |  | 
+ **lengthUnit** | **[]string** |  | 
  **lengthUnitIc** | **[]string** |  | 
  **lengthUnitIe** | **[]string** |  | 
  **lengthUnitIew** | **[]string** |  | 
@@ -1478,7 +1478,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cable.
-	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableCableRequest | 
+	writableCableRequest := *openapiclient.NewWritableCableRequest("TerminationAType_example", "TerminationBType_example", "TerminationAId_example", "TerminationBId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableCableRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2160,7 +2160,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimConsolePortTemplatesListTypeParameterInner{openapiclient.dcim_console_port_templates_list_type_parameter_inner("Other")} // []DcimConsolePortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -2265,7 +2265,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimConsolePortTemplatesListTypeParameterInner**](DcimConsolePortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -3982,7 +3982,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimConsolePortTemplatesListTypeParameterInner{openapiclient.dcim_console_port_templates_list_type_parameter_inner("Other")} // []DcimConsolePortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -4087,7 +4087,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimConsolePortTemplatesListTypeParameterInner**](DcimConsolePortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -6496,7 +6496,7 @@ import (
 )
 
 func main() {
-	bulkWritableControllerRequest := []openapiclient.BulkWritableControllerRequest{*openapiclient.NewBulkWritableControllerRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableControllerRequest | 
+	bulkWritableControllerRequest := []openapiclient.BulkWritableControllerRequest{*openapiclient.NewBulkWritableControllerRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -6564,7 +6564,7 @@ import (
 )
 
 func main() {
-	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerRequest | 
+	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7258,7 +7258,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller.
-	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerRequest | 
+	controllerRequest := *openapiclient.NewControllerRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7465,7 +7465,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceBayTemplateRequest := []openapiclient.BulkWritableDeviceBayTemplateRequest{*openapiclient.NewBulkWritableDeviceBayTemplateRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceBayTemplateRequest | 
+	bulkWritableDeviceBayTemplateRequest := []openapiclient.BulkWritableDeviceBayTemplateRequest{*openapiclient.NewBulkWritableDeviceBayTemplateRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7533,7 +7533,7 @@ import (
 )
 
 func main() {
-	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayTemplateRequest | 
+	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8008,7 +8008,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay template.
-	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayTemplateRequest | 
+	deviceBayTemplateRequest := *openapiclient.NewDeviceBayTemplateRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8215,7 +8215,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceBayRequest := []openapiclient.BulkWritableDeviceBayRequest{*openapiclient.NewBulkWritableDeviceBayRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceBayRequest | 
+	bulkWritableDeviceBayRequest := []openapiclient.BulkWritableDeviceBayRequest{*openapiclient.NewBulkWritableDeviceBayRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8283,7 +8283,7 @@ import (
 )
 
 func main() {
-	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayRequest | 
+	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8928,7 +8928,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device bay.
-	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceBayRequest | 
+	deviceBayRequest := *openapiclient.NewDeviceBayRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceBayRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9135,7 +9135,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceClusterAssignmentRequest := []openapiclient.BulkWritableDeviceClusterAssignmentRequest{*openapiclient.NewBulkWritableDeviceClusterAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceClusterAssignmentRequest | 
+	bulkWritableDeviceClusterAssignmentRequest := []openapiclient.BulkWritableDeviceClusterAssignmentRequest{*openapiclient.NewBulkWritableDeviceClusterAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceClusterAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9203,7 +9203,7 @@ import (
 )
 
 func main() {
-	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceClusterAssignmentRequest | 
+	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceClusterAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9587,7 +9587,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device cluster assignment.
-	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceClusterAssignmentRequest | 
+	deviceClusterAssignmentRequest := *openapiclient.NewDeviceClusterAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceClusterAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10709,7 +10709,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceRedundancyGroupRequest := []openapiclient.BulkWritableDeviceRedundancyGroupRequest{*openapiclient.NewBulkWritableDeviceRedundancyGroupRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceRedundancyGroupRequest | 
+	bulkWritableDeviceRedundancyGroupRequest := []openapiclient.BulkWritableDeviceRedundancyGroupRequest{*openapiclient.NewBulkWritableDeviceRedundancyGroupRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10777,7 +10777,7 @@ import (
 )
 
 func main() {
-	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRedundancyGroupRequest | 
+	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10928,7 +10928,7 @@ func main() {
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	failoverStrategy := []openapiclient.DcimDeviceRedundancyGroupsListFailoverStrategyParameterInner{openapiclient.dcim_device_redundancy_groups_list_failover_strategy_parameter_inner("")} // []DcimDeviceRedundancyGroupsListFailoverStrategyParameterInner |  (optional)
+	failoverStrategy := []string{"Inner_example"} // []string |  (optional)
 	failoverStrategyIc := []string{"Inner_example"} // []string |  (optional)
 	failoverStrategyIe := []string{"Inner_example"} // []string |  (optional)
 	failoverStrategyIew := []string{"Inner_example"} // []string |  (optional)
@@ -11019,7 +11019,7 @@ Name | Type | Description  | Notes
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **failoverStrategy** | [**[]DcimDeviceRedundancyGroupsListFailoverStrategyParameterInner**](DcimDeviceRedundancyGroupsListFailoverStrategyParameterInner.md) |  | 
+ **failoverStrategy** | **[]string** |  | 
  **failoverStrategyIc** | **[]string** |  | 
  **failoverStrategyIe** | **[]string** |  | 
  **failoverStrategyIew** | **[]string** |  | 
@@ -11419,7 +11419,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device redundancy group.
-	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRedundancyGroupRequest | 
+	writableDeviceRedundancyGroupRequest := *openapiclient.NewWritableDeviceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11626,7 +11626,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceTypeRequest := []openapiclient.BulkWritableDeviceTypeRequest{*openapiclient.NewBulkWritableDeviceTypeRequest("Id_example", "Model_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceTypeRequest | 
+	bulkWritableDeviceTypeRequest := []openapiclient.BulkWritableDeviceTypeRequest{*openapiclient.NewBulkWritableDeviceTypeRequest("Id_example", "Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11694,7 +11694,7 @@ import (
 )
 
 func main() {
-	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceTypeRequest | 
+	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11957,7 +11957,7 @@ func main() {
 	softwareImageFiles := []string{"Inner_example"} // []string |  (optional)
 	softwareImageFilesN := []string{"Inner_example"} // []string |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
-	subdeviceRole := []openapiclient.ParentChildStatus{openapiclient.Parent_child_status("child")} // []ParentChildStatus | Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.   (optional)
+	subdeviceRole := []string{"Inner_example"} // []string | Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child. (optional)
 	subdeviceRoleIc := []string{"Inner_example"} // []string |  (optional)
 	subdeviceRoleIe := []string{"Inner_example"} // []string |  (optional)
 	subdeviceRoleIew := []string{"Inner_example"} // []string |  (optional)
@@ -12133,7 +12133,7 @@ Name | Type | Description  | Notes
  **softwareImageFiles** | **[]string** |  | 
  **softwareImageFilesN** | **[]string** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
- **subdeviceRole** | [**[]ParentChildStatus**](ParentChildStatus.md) | Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.   | 
+ **subdeviceRole** | **[]string** | Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child. | 
  **subdeviceRoleIc** | **[]string** |  | 
  **subdeviceRoleIe** | **[]string** |  | 
  **subdeviceRoleIew** | **[]string** |  | 
@@ -12639,7 +12639,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceTypeToSoftwareImageFileRequest := []openapiclient.BulkWritableDeviceTypeToSoftwareImageFileRequest{*openapiclient.NewBulkWritableDeviceTypeToSoftwareImageFileRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceTypeToSoftwareImageFileRequest | 
+	bulkWritableDeviceTypeToSoftwareImageFileRequest := []openapiclient.BulkWritableDeviceTypeToSoftwareImageFileRequest{*openapiclient.NewBulkWritableDeviceTypeToSoftwareImageFileRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12707,7 +12707,7 @@ import (
 )
 
 func main() {
-	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceTypeToSoftwareImageFileRequest | 
+	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13115,7 +13115,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type to software image file mapping.
-	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DeviceTypeToSoftwareImageFileRequest | 
+	deviceTypeToSoftwareImageFileRequest := *openapiclient.NewDeviceTypeToSoftwareImageFileRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DeviceTypeToSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13189,7 +13189,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device type.
-	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceTypeRequest | 
+	writableDeviceTypeRequest := *openapiclient.NewWritableDeviceTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13396,7 +13396,7 @@ import (
 )
 
 func main() {
-	bulkWritableDeviceRequest := []openapiclient.BulkWritableDeviceRequest{*openapiclient.NewBulkWritableDeviceRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDeviceRequest | 
+	bulkWritableDeviceRequest := []openapiclient.BulkWritableDeviceRequest{*openapiclient.NewBulkWritableDeviceRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13464,7 +13464,7 @@ import (
 )
 
 func main() {
-	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRequest | 
+	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13663,7 +13663,7 @@ func main() {
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	face := []openapiclient.RackFace{openapiclient.Rack_face("front")} // []RackFace |  (optional)
+	face := []string{"Inner_example"} // []string |  (optional)
 	faceIc := []string{"Inner_example"} // []string |  (optional)
 	faceIe := []string{"Inner_example"} // []string |  (optional)
 	faceIew := []string{"Inner_example"} // []string |  (optional)
@@ -13937,7 +13937,7 @@ Name | Type | Description  | Notes
  **deviceTypeN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **face** | [**[]RackFace**](RackFace.md) |  | 
+ **face** | **[]string** |  | 
  **faceIc** | **[]string** |  | 
  **faceIe** | **[]string** |  | 
  **faceIew** | **[]string** |  | 
@@ -14550,7 +14550,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this device.
-	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableDeviceRequest | 
+	writableDeviceRequest := *openapiclient.NewWritableDeviceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableDeviceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14757,7 +14757,7 @@ import (
 )
 
 func main() {
-	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortTemplateRequest | 
+	bulkWritableFrontPortTemplateRequest := []openapiclient.BulkWritableFrontPortTemplateRequest{*openapiclient.NewBulkWritableFrontPortTemplateRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -14825,7 +14825,7 @@ import (
 )
 
 func main() {
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15036,7 +15036,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimFrontPortTemplatesListTypeParameterInner{openapiclient.dcim_front_port_templates_list_type_parameter_inner("Copper")} // []DcimFrontPortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -15149,7 +15149,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimFrontPortTemplatesListTypeParameterInner**](DcimFrontPortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -15356,7 +15356,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port template.
-	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortTemplateRequest | 
+	writableFrontPortTemplateRequest := *openapiclient.NewWritableFrontPortTemplateRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortTemplateRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15563,7 +15563,7 @@ import (
 )
 
 func main() {
-	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableFrontPortRequest | 
+	bulkWritableFrontPortRequest := []openapiclient.BulkWritableFrontPortRequest{*openapiclient.NewBulkWritableFrontPortRequest("Id_example", openapiclient.PortTypeChoices("8p8c"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15631,7 +15631,7 @@ import (
 )
 
 func main() {
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -15847,7 +15847,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimFrontPortTemplatesListTypeParameterInner{openapiclient.dcim_front_port_templates_list_type_parameter_inner("Copper")} // []DcimFrontPortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -15965,7 +15965,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimFrontPortTemplatesListTypeParameterInner**](DcimFrontPortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -16406,7 +16406,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this front port.
-	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableFrontPortRequest | 
+	writableFrontPortRequest := *openapiclient.NewWritableFrontPortRequest("Name_example", openapiclient.PortTypeChoices("8p8c"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableFrontPortRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16715,7 +16715,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceRedundancyGroupAssociationRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupAssociationRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupAssociationRequest("Id_example", int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRedundancyGroupAssociationRequest | 
+	bulkWritableInterfaceRedundancyGroupAssociationRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupAssociationRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupAssociationRequest("Id_example", int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -16783,7 +16783,7 @@ import (
 )
 
 func main() {
-	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceRedundancyGroupAssociationRequest | 
+	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -17328,7 +17328,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group association.
-	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceRedundancyGroupAssociationRequest | 
+	interfaceRedundancyGroupAssociationRequest := *openapiclient.NewInterfaceRedundancyGroupAssociationRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceRedundancyGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -17535,7 +17535,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceRedundancyGroupRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRedundancyGroupRequest | 
+	bulkWritableInterfaceRedundancyGroupRequest := []openapiclient.BulkWritableInterfaceRedundancyGroupRequest{*openapiclient.NewBulkWritableInterfaceRedundancyGroupRequest("Id_example", openapiclient.InterfaceRedundancyGroupProtocolChoices("hsrp"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -17603,7 +17603,7 @@ import (
 )
 
 func main() {
-	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRedundancyGroupRequest | 
+	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -17795,7 +17795,7 @@ func main() {
 	nameNre := []string{"Inner_example"} // []string |  (optional)
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	protocol := []openapiclient.RedundancyProtocol{openapiclient.Redundancy_Protocol("carp")} // []RedundancyProtocol |  (optional)
+	protocol := []string{"Inner_example"} // []string |  (optional)
 	protocolIc := []string{"Inner_example"} // []string |  (optional)
 	protocolIe := []string{"Inner_example"} // []string |  (optional)
 	protocolIew := []string{"Inner_example"} // []string |  (optional)
@@ -17916,7 +17916,7 @@ Name | Type | Description  | Notes
  **nameNre** | **[]string** |  | 
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **protocol** | [**[]RedundancyProtocol**](RedundancyProtocol.md) |  | 
+ **protocol** | **[]string** |  | 
  **protocolIc** | **[]string** |  | 
  **protocolIe** | **[]string** |  | 
  **protocolIew** | **[]string** |  | 
@@ -18305,7 +18305,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface redundancy group.
-	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRedundancyGroupRequest | 
+	writableInterfaceRedundancyGroupRequest := *openapiclient.NewWritableInterfaceRedundancyGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRedundancyGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18699,7 +18699,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfaceTemplatesList
 
-> PaginatedInterfaceTemplateList DcimInterfaceTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdN(idN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PortType(portType).PortTypeIc(portTypeIc).PortTypeIe(portTypeIe).PortTypeIew(portTypeIew).PortTypeIre(portTypeIre).PortTypeIsw(portTypeIsw).PortTypeN(portTypeN).PortTypeNic(portTypeNic).PortTypeNie(portTypeNie).PortTypeNiew(portTypeNiew).PortTypeNire(portTypeNire).PortTypeNisw(portTypeNisw).PortTypeNre(portTypeNre).PortTypeRe(portTypeRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedInterfaceTemplateList DcimInterfaceTemplatesList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdN(idN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -18779,26 +18779,12 @@ func main() {
 	nameNre := []string{"Inner_example"} // []string | Name (optional)
 	nameRe := []string{"Inner_example"} // []string | Name (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	portType := []openapiclient.DcimFrontPortTemplatesListTypeParameterInner{openapiclient.dcim_front_port_templates_list_type_parameter_inner("Copper")} // []DcimFrontPortTemplatesListTypeParameterInner | Physical connector type   (optional)
-	portTypeIc := []string{"Inner_example"} // []string |  (optional)
-	portTypeIe := []string{"Inner_example"} // []string |  (optional)
-	portTypeIew := []string{"Inner_example"} // []string |  (optional)
-	portTypeIre := []string{"Inner_example"} // []string |  (optional)
-	portTypeIsw := []string{"Inner_example"} // []string |  (optional)
-	portTypeN := []string{"Inner_example"} // []string |  (optional)
-	portTypeNic := []string{"Inner_example"} // []string |  (optional)
-	portTypeNie := []string{"Inner_example"} // []string |  (optional)
-	portTypeNiew := []string{"Inner_example"} // []string |  (optional)
-	portTypeNire := []string{"Inner_example"} // []string |  (optional)
-	portTypeNisw := []string{"Inner_example"} // []string |  (optional)
-	portTypeNre := []string{"Inner_example"} // []string |  (optional)
-	portTypeRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimInterfaceTemplatesListTypeParameterInner{openapiclient.dcim_interface_templates_list_type_parameter_inner("ATM")} // []DcimInterfaceTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -18817,7 +18803,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfaceTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdN(idN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).PortType(portType).PortTypeIc(portTypeIc).PortTypeIe(portTypeIe).PortTypeIew(portTypeIew).PortTypeIre(portTypeIre).PortTypeIsw(portTypeIsw).PortTypeN(portTypeN).PortTypeNic(portTypeNic).PortTypeNie(portTypeNie).PortTypeNiew(portTypeNiew).PortTypeNire(portTypeNire).PortTypeNisw(portTypeNisw).PortTypeNre(portTypeNre).PortTypeRe(portTypeRe).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfaceTemplatesList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DeviceType(deviceType).DeviceTypeIsnull(deviceTypeIsnull).DeviceTypeN(deviceTypeN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasDeviceType(hasDeviceType).HasModuleType(hasModuleType).Id(id).IdN(idN).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Limit(limit).MgmtOnly(mgmtOnly).ModuleType(moduleType).ModuleTypeIsnull(moduleTypeIsnull).ModuleTypeN(moduleTypeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfaceTemplatesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -18899,26 +18885,12 @@ Name | Type | Description  | Notes
  **nameNre** | **[]string** | Name | 
  **nameRe** | **[]string** | Name | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **portType** | [**[]DcimFrontPortTemplatesListTypeParameterInner**](DcimFrontPortTemplatesListTypeParameterInner.md) | Physical connector type   | 
- **portTypeIc** | **[]string** |  | 
- **portTypeIe** | **[]string** |  | 
- **portTypeIew** | **[]string** |  | 
- **portTypeIre** | **[]string** |  | 
- **portTypeIsw** | **[]string** |  | 
- **portTypeN** | **[]string** |  | 
- **portTypeNic** | **[]string** |  | 
- **portTypeNie** | **[]string** |  | 
- **portTypeNiew** | **[]string** |  | 
- **portTypeNire** | **[]string** |  | 
- **portTypeNisw** | **[]string** |  | 
- **portTypeNre** | **[]string** |  | 
- **portTypeRe** | **[]string** |  | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimInterfaceTemplatesListTypeParameterInner**](DcimInterfaceTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -19332,7 +19304,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceVDCAssignmentRequest := []openapiclient.BulkWritableInterfaceVDCAssignmentRequest{*openapiclient.NewBulkWritableInterfaceVDCAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceVDCAssignmentRequest | 
+	bulkWritableInterfaceVDCAssignmentRequest := []openapiclient.BulkWritableInterfaceVDCAssignmentRequest{*openapiclient.NewBulkWritableInterfaceVDCAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19400,7 +19372,7 @@ import (
 )
 
 func main() {
-	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceVDCAssignmentRequest | 
+	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19790,7 +19762,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface vdc assignment.
-	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // InterfaceVDCAssignmentRequest | 
+	interfaceVDCAssignmentRequest := *openapiclient.NewInterfaceVDCAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InterfaceVDCAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19997,7 +19969,7 @@ import (
 )
 
 func main() {
-	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInterfaceRequest | 
+	bulkWritableInterfaceRequest := []openapiclient.BulkWritableInterfaceRequest{*openapiclient.NewBulkWritableInterfaceRequest("Id_example", openapiclient.InterfaceTypeChoices("virtual"), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20065,7 +20037,7 @@ import (
 )
 
 func main() {
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -20184,7 +20156,7 @@ Name | Type | Description  | Notes
 
 ## DcimInterfacesList
 
-> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).PortType(portType).PortTypeIc(portTypeIc).PortTypeIe(portTypeIe).PortTypeIew(portTypeIew).PortTypeIre(portTypeIre).PortTypeIsw(portTypeIsw).PortTypeN(portTypeN).PortTypeNic(portTypeNic).PortTypeNie(portTypeNie).PortTypeNiew(portTypeNiew).PortTypeNire(portTypeNire).PortTypeNisw(portTypeNisw).PortTypeNre(portTypeNre).PortTypeRe(portTypeRe).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedInterfaceList DcimInterfacesList(ctx).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -20306,7 +20278,7 @@ func main() {
 	memberInterfacesIsnull := true // bool |  (optional)
 	memberInterfacesN := []string{"Inner_example"} // []string |  (optional)
 	mgmtOnly := true // bool |  (optional)
-	mode := []openapiclient.DcimInterfacesListModeParameterInner{openapiclient.dcim_interfaces_list_mode_parameter_inner("access")} // []DcimInterfacesListModeParameterInner |  (optional)
+	mode := []string{"Inner_example"} // []string |  (optional)
 	modeIc := []string{"Inner_example"} // []string |  (optional)
 	modeIe := []string{"Inner_example"} // []string |  (optional)
 	modeIew := []string{"Inner_example"} // []string |  (optional)
@@ -20348,20 +20320,6 @@ func main() {
 	parentInterface := []string{"Inner_example"} // []string |  (optional)
 	parentInterfaceIsnull := true // bool |  (optional)
 	parentInterfaceN := []string{"Inner_example"} // []string |  (optional)
-	portType := []string{"Inner_example"} // []string | Physical connector type (optional)
-	portTypeIc := []string{"Inner_example"} // []string |  (optional)
-	portTypeIe := []string{"Inner_example"} // []string |  (optional)
-	portTypeIew := []string{"Inner_example"} // []string |  (optional)
-	portTypeIre := []string{"Inner_example"} // []string |  (optional)
-	portTypeIsw := []string{"Inner_example"} // []string |  (optional)
-	portTypeN := []string{"Inner_example"} // []string |  (optional)
-	portTypeNic := []string{"Inner_example"} // []string |  (optional)
-	portTypeNie := []string{"Inner_example"} // []string |  (optional)
-	portTypeNiew := []string{"Inner_example"} // []string |  (optional)
-	portTypeNire := []string{"Inner_example"} // []string |  (optional)
-	portTypeNisw := []string{"Inner_example"} // []string |  (optional)
-	portTypeNre := []string{"Inner_example"} // []string |  (optional)
-	portTypeRe := []string{"Inner_example"} // []string |  (optional)
 	q := "q_example" // string | Search (optional)
 	role := []string{"Inner_example"} // []string |  (optional)
 	roleIsnull := true // bool | Role (name or ID) is null (optional)
@@ -20411,7 +20369,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).PortType(portType).PortTypeIc(portTypeIc).PortTypeIe(portTypeIe).PortTypeIew(portTypeIew).PortTypeIre(portTypeIre).PortTypeIsw(portTypeIsw).PortTypeN(portTypeN).PortTypeNic(portTypeNic).PortTypeNie(portTypeNie).PortTypeNiew(portTypeNiew).PortTypeNire(portTypeNire).PortTypeNisw(portTypeNisw).PortTypeNre(portTypeNre).PortTypeRe(portTypeRe).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimInterfacesList(context.Background()).Bridge(bridge).BridgeIsnull(bridgeIsnull).BridgeN(bridgeN).BridgedInterfaces(bridgedInterfaces).BridgedInterfacesIsnull(bridgedInterfacesIsnull).BridgedInterfacesN(bridgedInterfacesN).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).ChildInterfaces(childInterfaces).ChildInterfacesIsnull(childInterfacesIsnull).ChildInterfacesN(childInterfacesN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Device(device).DeviceId(deviceId).DeviceWithCommonVc(deviceWithCommonVc).Duplex(duplex).DuplexIc(duplexIc).DuplexIe(duplexIe).DuplexIew(duplexIew).DuplexIre(duplexIre).DuplexIsw(duplexIsw).DuplexN(duplexN).DuplexNic(duplexNic).DuplexNie(duplexNie).DuplexNiew(duplexNiew).DuplexNire(duplexNire).DuplexNisw(duplexNisw).DuplexNre(duplexNre).DuplexRe(duplexRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).HasBridgedInterfaces(hasBridgedInterfaces).HasCable(hasCable).HasChildInterfaces(hasChildInterfaces).HasIpAddresses(hasIpAddresses).HasMemberInterfaces(hasMemberInterfaces).HasTaggedVlans(hasTaggedVlans).HasVirtualDeviceContexts(hasVirtualDeviceContexts).Id(id).IdN(idN).InterfaceRedundancyGroups(interfaceRedundancyGroups).InterfaceRedundancyGroupsIsnull(interfaceRedundancyGroupsIsnull).InterfaceRedundancyGroupsN(interfaceRedundancyGroupsN).IpAddresses(ipAddresses).Kind(kind).Label(label).LabelIc(labelIc).LabelIe(labelIe).LabelIew(labelIew).LabelIre(labelIre).LabelIsw(labelIsw).LabelN(labelN).LabelNic(labelNic).LabelNie(labelNie).LabelNiew(labelNiew).LabelNire(labelNire).LabelNisw(labelNisw).LabelNre(labelNre).LabelRe(labelRe).Lag(lag).LagIsnull(lagIsnull).LagN(lagN).Limit(limit).Location(location).LocationN(locationN).MacAddress(macAddress).MacAddressIc(macAddressIc).MacAddressIe(macAddressIe).MacAddressIew(macAddressIew).MacAddressIre(macAddressIre).MacAddressIsw(macAddressIsw).MacAddressN(macAddressN).MacAddressNic(macAddressNic).MacAddressNie(macAddressNie).MacAddressNiew(macAddressNiew).MacAddressNire(macAddressNire).MacAddressNisw(macAddressNisw).MacAddressNre(macAddressNre).MacAddressRe(macAddressRe).MemberInterfaces(memberInterfaces).MemberInterfacesIsnull(memberInterfacesIsnull).MemberInterfacesN(memberInterfacesN).MgmtOnly(mgmtOnly).Mode(mode).ModeIc(modeIc).ModeIe(modeIe).ModeIew(modeIew).ModeIre(modeIre).ModeIsw(modeIsw).ModeN(modeN).ModeNic(modeNic).ModeNie(modeNie).ModeNiew(modeNiew).ModeNire(modeNire).ModeNisw(modeNisw).ModeNre(modeNre).ModeRe(modeRe).Module(module).ModuleIsnull(moduleIsnull).ModuleN(moduleN).Mtu(mtu).MtuGt(mtuGt).MtuGte(mtuGte).MtuIsnull(mtuIsnull).MtuLt(mtuLt).MtuLte(mtuLte).MtuN(mtuN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).ParentInterface(parentInterface).ParentInterfaceIsnull(parentInterfaceIsnull).ParentInterfaceN(parentInterfaceN).Q(q).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Speed(speed).SpeedGt(speedGt).SpeedGte(speedGte).SpeedIsnull(speedIsnull).SpeedLt(speedLt).SpeedLte(speedLte).SpeedN(speedN).Status(status).StatusN(statusN).TaggedVlans(taggedVlans).TaggedVlansN(taggedVlansN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).UntaggedVlan(untaggedVlan).UntaggedVlanIsnull(untaggedVlanIsnull).UntaggedVlanN(untaggedVlanN).VirtualDeviceContexts(virtualDeviceContexts).VirtualDeviceContextsIsnull(virtualDeviceContextsIsnull).VirtualDeviceContextsN(virtualDeviceContextsN).Vlan(vlan).VlanId(vlanId).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimInterfacesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -20535,7 +20493,7 @@ Name | Type | Description  | Notes
  **memberInterfacesIsnull** | **bool** |  | 
  **memberInterfacesN** | **[]string** |  | 
  **mgmtOnly** | **bool** |  | 
- **mode** | [**[]DcimInterfacesListModeParameterInner**](DcimInterfacesListModeParameterInner.md) |  | 
+ **mode** | **[]string** |  | 
  **modeIc** | **[]string** |  | 
  **modeIe** | **[]string** |  | 
  **modeIew** | **[]string** |  | 
@@ -20577,20 +20535,6 @@ Name | Type | Description  | Notes
  **parentInterface** | **[]string** |  | 
  **parentInterfaceIsnull** | **bool** |  | 
  **parentInterfaceN** | **[]string** |  | 
- **portType** | **[]string** | Physical connector type | 
- **portTypeIc** | **[]string** |  | 
- **portTypeIe** | **[]string** |  | 
- **portTypeIew** | **[]string** |  | 
- **portTypeIre** | **[]string** |  | 
- **portTypeIsw** | **[]string** |  | 
- **portTypeN** | **[]string** |  | 
- **portTypeNic** | **[]string** |  | 
- **portTypeNie** | **[]string** |  | 
- **portTypeNiew** | **[]string** |  | 
- **portTypeNire** | **[]string** |  | 
- **portTypeNisw** | **[]string** |  | 
- **portTypeNre** | **[]string** |  | 
- **portTypeRe** | **[]string** |  | 
  **q** | **string** | Search | 
  **role** | **[]string** |  | 
  **roleIsnull** | **bool** | Role (name or ID) is null | 
@@ -21058,7 +21002,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this interface.
-	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableInterfaceRequest | 
+	writableInterfaceRequest := *openapiclient.NewWritableInterfaceRequest("Name_example", openapiclient.InterfaceTypeChoices("virtual"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -21265,7 +21209,7 @@ import (
 )
 
 func main() {
-	bulkWritableInventoryItemRequest := []openapiclient.BulkWritableInventoryItemRequest{*openapiclient.NewBulkWritableInventoryItemRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableInventoryItemRequest | 
+	bulkWritableInventoryItemRequest := []openapiclient.BulkWritableInventoryItemRequest{*openapiclient.NewBulkWritableInventoryItemRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableInventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -21333,7 +21277,7 @@ import (
 )
 
 func main() {
-	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // InventoryItemRequest | 
+	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -22094,7 +22038,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this inventory item.
-	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // InventoryItemRequest | 
+	inventoryItemRequest := *openapiclient.NewInventoryItemRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // InventoryItemRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -23214,7 +23158,7 @@ import (
 )
 
 func main() {
-	bulkWritableLocationRequest := []openapiclient.BulkWritableLocationRequest{*openapiclient.NewBulkWritableLocationRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableLocationRequest | 
+	bulkWritableLocationRequest := []openapiclient.BulkWritableLocationRequest{*openapiclient.NewBulkWritableLocationRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableLocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -23282,7 +23226,7 @@ import (
 )
 
 func main() {
-	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LocationRequest | 
+	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -23401,7 +23345,7 @@ Name | Type | Description  | Notes
 
 ## DcimLocationsList
 
-> PaginatedLocationList DcimLocationsList(ctx).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MaxDepth(maxDepth).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedLocationList DcimLocationsList(ctx).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -23572,7 +23516,6 @@ func main() {
 	longitudeLt := []float32{float32(123)} // []float32 |  (optional)
 	longitudeLte := []float32{float32(123)} // []float32 |  (optional)
 	longitudeN := []float32{float32(123)} // []float32 |  (optional)
-	maxDepth := float32(8.14) // float32 | Maximum nesting depth within parent Locations (optional)
 	name := []string{"Inner_example"} // []string |  (optional)
 	nameIc := []string{"Inner_example"} // []string |  (optional)
 	nameIe := []string{"Inner_example"} // []string |  (optional)
@@ -23676,7 +23619,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DcimAPI.DcimLocationsList(context.Background()).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).MaxDepth(maxDepth).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.DcimAPI.DcimLocationsList(context.Background()).Asn(asn).AsnGt(asnGt).AsnGte(asnGte).AsnIsnull(asnIsnull).AsnLt(asnLt).AsnLte(asnLte).AsnN(asnN).ChildLocationType(childLocationType).CircuitTerminations(circuitTerminations).CircuitTerminationsIsnull(circuitTerminationsIsnull).CircuitTerminationsN(circuitTerminationsN).Clusters(clusters).ClustersIsnull(clustersIsnull).ClustersN(clustersN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).ContactEmail(contactEmail).ContactEmailIc(contactEmailIc).ContactEmailIe(contactEmailIe).ContactEmailIew(contactEmailIew).ContactEmailIre(contactEmailIre).ContactEmailIsw(contactEmailIsw).ContactEmailN(contactEmailN).ContactEmailNic(contactEmailNic).ContactEmailNie(contactEmailNie).ContactEmailNiew(contactEmailNiew).ContactEmailNire(contactEmailNire).ContactEmailNisw(contactEmailNisw).ContactEmailNre(contactEmailNre).ContactEmailRe(contactEmailRe).ContactName(contactName).ContactNameIc(contactNameIc).ContactNameIe(contactNameIe).ContactNameIew(contactNameIew).ContactNameIre(contactNameIre).ContactNameIsw(contactNameIsw).ContactNameN(contactNameN).ContactNameNic(contactNameNic).ContactNameNie(contactNameNie).ContactNameNiew(contactNameNiew).ContactNameNire(contactNameNire).ContactNameNisw(contactNameNisw).ContactNameNre(contactNameNre).ContactNameRe(contactNameRe).ContactPhone(contactPhone).ContactPhoneIc(contactPhoneIc).ContactPhoneIe(contactPhoneIe).ContactPhoneIew(contactPhoneIew).ContactPhoneIre(contactPhoneIre).ContactPhoneIsw(contactPhoneIsw).ContactPhoneN(contactPhoneN).ContactPhoneNic(contactPhoneNic).ContactPhoneNie(contactPhoneNie).ContactPhoneNiew(contactPhoneNiew).ContactPhoneNire(contactPhoneNire).ContactPhoneNisw(contactPhoneNisw).ContactPhoneNre(contactPhoneNre).ContactPhoneRe(contactPhoneRe).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Devices(devices).DevicesIsnull(devicesIsnull).DevicesN(devicesN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Facility(facility).FacilityIc(facilityIc).FacilityIe(facilityIe).FacilityIew(facilityIew).FacilityIre(facilityIre).FacilityIsw(facilityIsw).FacilityN(facilityN).FacilityNic(facilityNic).FacilityNie(facilityNie).FacilityNiew(facilityNiew).FacilityNire(facilityNire).FacilityNisw(facilityNisw).FacilityNre(facilityNre).FacilityRe(facilityRe).Format(format).HasCircuitTerminations(hasCircuitTerminations).HasClusters(hasClusters).HasDevices(hasDevices).HasPowerPanels(hasPowerPanels).HasPrefixes(hasPrefixes).HasRackGroups(hasRackGroups).HasRacks(hasRacks).HasVlanGroups(hasVlanGroups).HasVlans(hasVlans).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Latitude(latitude).LatitudeGt(latitudeGt).LatitudeGte(latitudeGte).LatitudeIsnull(latitudeIsnull).LatitudeLt(latitudeLt).LatitudeLte(latitudeLte).LatitudeN(latitudeN).Limit(limit).LocationType(locationType).LocationTypeN(locationTypeN).Longitude(longitude).LongitudeGt(longitudeGt).LongitudeGte(longitudeGte).LongitudeIsnull(longitudeIsnull).LongitudeLt(longitudeLt).LongitudeLte(longitudeLte).LongitudeN(longitudeN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).PhysicalAddress(physicalAddress).PhysicalAddressIc(physicalAddressIc).PhysicalAddressIe(physicalAddressIe).PhysicalAddressIew(physicalAddressIew).PhysicalAddressIre(physicalAddressIre).PhysicalAddressIsw(physicalAddressIsw).PhysicalAddressN(physicalAddressN).PhysicalAddressNic(physicalAddressNic).PhysicalAddressNie(physicalAddressNie).PhysicalAddressNiew(physicalAddressNiew).PhysicalAddressNire(physicalAddressNire).PhysicalAddressNisw(physicalAddressNisw).PhysicalAddressNre(physicalAddressNre).PhysicalAddressRe(physicalAddressRe).PowerPanels(powerPanels).PowerPanelsIsnull(powerPanelsIsnull).PowerPanelsN(powerPanelsN).Prefixes(prefixes).PrefixesIsnull(prefixesIsnull).PrefixesN(prefixesN).Q(q).RackGroups(rackGroups).RackGroupsIsnull(rackGroupsIsnull).RackGroupsN(rackGroupsN).Racks(racks).RacksIsnull(racksIsnull).RacksN(racksN).ShippingAddress(shippingAddress).ShippingAddressIc(shippingAddressIc).ShippingAddressIe(shippingAddressIe).ShippingAddressIew(shippingAddressIew).ShippingAddressIre(shippingAddressIre).ShippingAddressIsw(shippingAddressIsw).ShippingAddressN(shippingAddressN).ShippingAddressNic(shippingAddressNic).ShippingAddressNie(shippingAddressNie).ShippingAddressNiew(shippingAddressNiew).ShippingAddressNire(shippingAddressNire).ShippingAddressNisw(shippingAddressNisw).ShippingAddressNre(shippingAddressNre).ShippingAddressRe(shippingAddressRe).Sort(sort).Status(status).StatusN(statusN).Subtree(subtree).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).VlanGroups(vlanGroups).VlanGroupsIsnull(vlanGroupsIsnull).VlanGroupsN(vlanGroupsN).Vlans(vlans).VlansIsnull(vlansIsnull).VlansN(vlansN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DcimAPI.DcimLocationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -23848,7 +23791,6 @@ Name | Type | Description  | Notes
  **longitudeLt** | **[]float32** |  | 
  **longitudeLte** | **[]float32** |  | 
  **longitudeN** | **[]float32** |  | 
- **maxDepth** | **float32** | Maximum nesting depth within parent Locations | 
  **name** | **[]string** |  | 
  **nameIc** | **[]string** |  | 
  **nameIe** | **[]string** |  | 
@@ -24374,7 +24316,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this location.
-	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // LocationRequest | 
+	locationRequest := *openapiclient.NewLocationRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // LocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28243,7 +28185,7 @@ import (
 )
 
 func main() {
-	bulkWritableModuleTypeRequest := []openapiclient.BulkWritableModuleTypeRequest{*openapiclient.NewBulkWritableModuleTypeRequest("Id_example", "Model_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleTypeRequest | 
+	bulkWritableModuleTypeRequest := []openapiclient.BulkWritableModuleTypeRequest{*openapiclient.NewBulkWritableModuleTypeRequest("Id_example", "Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28311,7 +28253,7 @@ import (
 )
 
 func main() {
-	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29049,7 +28991,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module type.
-	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleTypeRequest | 
+	moduleTypeRequest := *openapiclient.NewModuleTypeRequest("Model_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleTypeRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29256,7 +29198,7 @@ import (
 )
 
 func main() {
-	bulkWritableModuleRequest := []openapiclient.BulkWritableModuleRequest{*openapiclient.NewBulkWritableModuleRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableModuleRequest | 
+	bulkWritableModuleRequest := []openapiclient.BulkWritableModuleRequest{*openapiclient.NewBulkWritableModuleRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29324,7 +29266,7 @@ import (
 )
 
 func main() {
-	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -30116,7 +30058,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this module.
-	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ModuleRequest | 
+	moduleRequest := *openapiclient.NewModuleRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ModuleRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -31434,7 +31376,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerFeedRequest := []openapiclient.BulkWritablePowerFeedRequest{*openapiclient.NewBulkWritablePowerFeedRequest("Id_example", "Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerFeedRequest | 
+	bulkWritablePowerFeedRequest := []openapiclient.BulkWritablePowerFeedRequest{*openapiclient.NewBulkWritablePowerFeedRequest("Id_example", "Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -31502,7 +31444,7 @@ import (
 )
 
 func main() {
-	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerFeedRequest | 
+	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -31653,7 +31595,7 @@ func main() {
 	availablePowerLt := []int32{int32(123)} // []int32 |  (optional)
 	availablePowerLte := []int32{int32(123)} // []int32 |  (optional)
 	availablePowerN := []int32{int32(123)} // []int32 |  (optional)
-	breakerPoleCount := []openapiclient.DcimPowerFeedsListBreakerPoleCountParameterInner{openapiclient.dcim_power_feeds_list_breaker_pole_count_parameter_inner(1)} // []DcimPowerFeedsListBreakerPoleCountParameterInner | Number of breaker poles   (optional)
+	breakerPoleCount := []*int32{int32(123)} // []*int32 | Number of breaker poles (optional)
 	breakerPoleCountIc := []string{"Inner_example"} // []string |  (optional)
 	breakerPoleCountIe := []string{"Inner_example"} // []string |  (optional)
 	breakerPoleCountIew := []string{"Inner_example"} // []string |  (optional)
@@ -31743,7 +31685,7 @@ func main() {
 	nameNre := []string{"Inner_example"} // []string |  (optional)
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	phase := []openapiclient.DcimPowerFeedsListPhaseParameterInner{openapiclient.dcim_power_feeds_list_phase_parameter_inner("single-phase")} // []DcimPowerFeedsListPhaseParameterInner |  (optional)
+	phase := []string{"Inner_example"} // []string |  (optional)
 	phaseIc := []string{"Inner_example"} // []string |  (optional)
 	phaseIe := []string{"Inner_example"} // []string |  (optional)
 	phaseIew := []string{"Inner_example"} // []string |  (optional)
@@ -31759,7 +31701,7 @@ func main() {
 	phaseRe := []string{"Inner_example"} // []string |  (optional)
 	powerPanel := []string{"Inner_example"} // []string |  (optional)
 	powerPanelN := []string{"Inner_example"} // []string |  (optional)
-	powerPath := []openapiclient.DcimPowerFeedsListPowerPathParameterInner{openapiclient.dcim_power_feeds_list_power_path_parameter_inner("a")} // []DcimPowerFeedsListPowerPathParameterInner | Physical power distribution redundancy path.   (optional)
+	powerPath := []string{"Inner_example"} // []string | Physical power distribution redundancy path. (optional)
 	powerPathIc := []string{"Inner_example"} // []string |  (optional)
 	powerPathIe := []string{"Inner_example"} // []string |  (optional)
 	powerPathIew := []string{"Inner_example"} // []string |  (optional)
@@ -31780,7 +31722,7 @@ func main() {
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
 	status := []string{"Inner_example"} // []string |  (optional)
 	statusN := []string{"Inner_example"} // []string |  (optional)
-	supply := []openapiclient.DcimPowerFeedsListSupplyParameterInner{openapiclient.dcim_power_feeds_list_supply_parameter_inner("ac")} // []DcimPowerFeedsListSupplyParameterInner |  (optional)
+	supply := []string{"Inner_example"} // []string |  (optional)
 	supplyIc := []string{"Inner_example"} // []string |  (optional)
 	supplyIe := []string{"Inner_example"} // []string |  (optional)
 	supplyIew := []string{"Inner_example"} // []string |  (optional)
@@ -31800,7 +31742,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimPowerFeedsListTypeParameterInner{openapiclient.dcim_power_feeds_list_type_parameter_inner("primary")} // []DcimPowerFeedsListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -31858,7 +31800,7 @@ Name | Type | Description  | Notes
  **availablePowerLt** | **[]int32** |  | 
  **availablePowerLte** | **[]int32** |  | 
  **availablePowerN** | **[]int32** |  | 
- **breakerPoleCount** | [**[]DcimPowerFeedsListBreakerPoleCountParameterInner**](DcimPowerFeedsListBreakerPoleCountParameterInner.md) | Number of breaker poles   | 
+ **breakerPoleCount** | **[]int32** | Number of breaker poles | 
  **breakerPoleCountIc** | **[]string** |  | 
  **breakerPoleCountIe** | **[]string** |  | 
  **breakerPoleCountIew** | **[]string** |  | 
@@ -31948,7 +31890,7 @@ Name | Type | Description  | Notes
  **nameNre** | **[]string** |  | 
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **phase** | [**[]DcimPowerFeedsListPhaseParameterInner**](DcimPowerFeedsListPhaseParameterInner.md) |  | 
+ **phase** | **[]string** |  | 
  **phaseIc** | **[]string** |  | 
  **phaseIe** | **[]string** |  | 
  **phaseIew** | **[]string** |  | 
@@ -31964,7 +31906,7 @@ Name | Type | Description  | Notes
  **phaseRe** | **[]string** |  | 
  **powerPanel** | **[]string** |  | 
  **powerPanelN** | **[]string** |  | 
- **powerPath** | [**[]DcimPowerFeedsListPowerPathParameterInner**](DcimPowerFeedsListPowerPathParameterInner.md) | Physical power distribution redundancy path.   | 
+ **powerPath** | **[]string** | Physical power distribution redundancy path. | 
  **powerPathIc** | **[]string** |  | 
  **powerPathIe** | **[]string** |  | 
  **powerPathIew** | **[]string** |  | 
@@ -31985,7 +31927,7 @@ Name | Type | Description  | Notes
  **sort** | **string** | Which field to use when ordering the results. | 
  **status** | **[]string** |  | 
  **statusN** | **[]string** |  | 
- **supply** | [**[]DcimPowerFeedsListSupplyParameterInner**](DcimPowerFeedsListSupplyParameterInner.md) |  | 
+ **supply** | **[]string** |  | 
  **supplyIc** | **[]string** |  | 
  **supplyIe** | **[]string** |  | 
  **supplyIew** | **[]string** |  | 
@@ -32005,7 +31947,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimPowerFeedsListTypeParameterInner**](DcimPowerFeedsListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -32448,7 +32390,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power feed.
-	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerFeedRequest | 
+	writablePowerFeedRequest := *openapiclient.NewWritablePowerFeedRequest("Name_example", *openapiclient.NewBulkWritablePowerFeedRequestPowerPanel(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerFeedRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -32883,7 +32825,7 @@ func main() {
 	deviceTypeN := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	feedLeg := []openapiclient.DcimPowerOutletTemplatesListFeedLegParameterInner{openapiclient.dcim_power_outlet_templates_list_feed_leg_parameter_inner("A")} // []DcimPowerOutletTemplatesListFeedLegParameterInner | Phase (for three-phase feeds)   (optional)
+	feedLeg := []string{"Inner_example"} // []string | Phase (for three-phase feeds) (optional)
 	feedLegIc := []string{"Inner_example"} // []string |  (optional)
 	feedLegIe := []string{"Inner_example"} // []string |  (optional)
 	feedLegIew := []string{"Inner_example"} // []string |  (optional)
@@ -32943,7 +32885,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimPowerOutletTemplatesListTypeParameterInner{openapiclient.dcim_power_outlet_templates_list_type_parameter_inner("California Style")} // []DcimPowerOutletTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -33005,7 +32947,7 @@ Name | Type | Description  | Notes
  **deviceTypeN** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **feedLeg** | [**[]DcimPowerOutletTemplatesListFeedLegParameterInner**](DcimPowerOutletTemplatesListFeedLegParameterInner.md) | Phase (for three-phase feeds)   | 
+ **feedLeg** | **[]string** | Phase (for three-phase feeds) | 
  **feedLegIc** | **[]string** |  | 
  **feedLegIe** | **[]string** |  | 
  **feedLegIew** | **[]string** |  | 
@@ -33065,7 +33007,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimPowerOutletTemplatesListTypeParameterInner**](DcimPowerOutletTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -33709,7 +33651,7 @@ func main() {
 	device := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	feedLeg := []openapiclient.DcimPowerOutletTemplatesListFeedLegParameterInner{openapiclient.dcim_power_outlet_templates_list_feed_leg_parameter_inner("A")} // []DcimPowerOutletTemplatesListFeedLegParameterInner | Phase (for three-phase feeds)   (optional)
+	feedLeg := []string{"Inner_example"} // []string | Phase (for three-phase feeds) (optional)
 	feedLegIc := []string{"Inner_example"} // []string |  (optional)
 	feedLegIe := []string{"Inner_example"} // []string |  (optional)
 	feedLegIew := []string{"Inner_example"} // []string |  (optional)
@@ -33837,7 +33779,7 @@ Name | Type | Description  | Notes
  **device** | **[]string** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **feedLeg** | [**[]DcimPowerOutletTemplatesListFeedLegParameterInner**](DcimPowerOutletTemplatesListFeedLegParameterInner.md) | Phase (for three-phase feeds)   | 
+ **feedLeg** | **[]string** | Phase (for three-phase feeds) | 
  **feedLegIc** | **[]string** |  | 
  **feedLegIe** | **[]string** |  | 
  **feedLegIew** | **[]string** |  | 
@@ -34545,7 +34487,7 @@ import (
 )
 
 func main() {
-	bulkWritablePowerPanelRequest := []openapiclient.BulkWritablePowerPanelRequest{*openapiclient.NewBulkWritablePowerPanelRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePowerPanelRequest | 
+	bulkWritablePowerPanelRequest := []openapiclient.BulkWritablePowerPanelRequest{*openapiclient.NewBulkWritablePowerPanelRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34613,7 +34555,7 @@ import (
 )
 
 func main() {
-	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPanelRequest | 
+	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34801,7 +34743,7 @@ func main() {
 	nameNre := []string{"Inner_example"} // []string |  (optional)
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	panelType := []openapiclient.DcimPowerPanelsListPanelTypeParameterInner{openapiclient.dcim_power_panels_list_panel_type_parameter_inner("generator")} // []DcimPowerPanelsListPanelTypeParameterInner |  (optional)
+	panelType := []string{"Inner_example"} // []string |  (optional)
 	panelTypeIc := []string{"Inner_example"} // []string |  (optional)
 	panelTypeIe := []string{"Inner_example"} // []string |  (optional)
 	panelTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -34818,7 +34760,7 @@ func main() {
 	powerFeeds := []string{"Inner_example"} // []string |  (optional)
 	powerFeedsIsnull := true // bool |  (optional)
 	powerFeedsN := []string{"Inner_example"} // []string |  (optional)
-	powerPath := []openapiclient.DcimPowerFeedsListPowerPathParameterInner{openapiclient.dcim_power_feeds_list_power_path_parameter_inner("a")} // []DcimPowerFeedsListPowerPathParameterInner | Physical power distribution redundancy path.   (optional)
+	powerPath := []string{"Inner_example"} // []string | Physical power distribution redundancy path. (optional)
 	powerPathIc := []string{"Inner_example"} // []string |  (optional)
 	powerPathIe := []string{"Inner_example"} // []string |  (optional)
 	powerPathIew := []string{"Inner_example"} // []string |  (optional)
@@ -34918,7 +34860,7 @@ Name | Type | Description  | Notes
  **nameNre** | **[]string** |  | 
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
- **panelType** | [**[]DcimPowerPanelsListPanelTypeParameterInner**](DcimPowerPanelsListPanelTypeParameterInner.md) |  | 
+ **panelType** | **[]string** |  | 
  **panelTypeIc** | **[]string** |  | 
  **panelTypeIe** | **[]string** |  | 
  **panelTypeIew** | **[]string** |  | 
@@ -34935,7 +34877,7 @@ Name | Type | Description  | Notes
  **powerFeeds** | **[]string** |  | 
  **powerFeedsIsnull** | **bool** |  | 
  **powerFeedsN** | **[]string** |  | 
- **powerPath** | [**[]DcimPowerFeedsListPowerPathParameterInner**](DcimPowerFeedsListPowerPathParameterInner.md) | Physical power distribution redundancy path.   | 
+ **powerPath** | **[]string** | Physical power distribution redundancy path. | 
  **powerPathIc** | **[]string** |  | 
  **powerPathIe** | **[]string** |  | 
  **powerPathIew** | **[]string** |  | 
@@ -35307,7 +35249,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this power panel.
-	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePowerPanelRequest | 
+	writablePowerPanelRequest := *openapiclient.NewWritablePowerPanelRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePowerPanelRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -35803,7 +35745,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimPowerPortTemplatesListTypeParameterInner{openapiclient.dcim_power_port_templates_list_type_parameter_inner("California Style")} // []DcimPowerPortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -35926,7 +35868,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimPowerPortTemplatesListTypeParameterInner**](DcimPowerPortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -37408,7 +37350,7 @@ import (
 )
 
 func main() {
-	bulkWritableRackGroupRequest := []openapiclient.BulkWritableRackGroupRequest{*openapiclient.NewBulkWritableRackGroupRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackGroupRequest | 
+	bulkWritableRackGroupRequest := []openapiclient.BulkWritableRackGroupRequest{*openapiclient.NewBulkWritableRackGroupRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -37476,7 +37418,7 @@ import (
 )
 
 func main() {
-	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackGroupRequest | 
+	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38138,7 +38080,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack group.
-	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackGroupRequest | 
+	rackGroupRequest := *openapiclient.NewRackGroupRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackGroupRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38345,7 +38287,7 @@ import (
 )
 
 func main() {
-	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackReservationRequest | 
+	bulkWritableRackReservationRequest := []openapiclient.BulkWritableRackReservationRequest{*openapiclient.NewBulkWritableRackReservationRequest("Id_example", interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38413,7 +38355,7 @@ import (
 )
 
 func main() {
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -39053,7 +38995,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack reservation.
-	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RackReservationRequest | 
+	rackReservationRequest := *openapiclient.NewRackReservationRequest(interface{}(123), "Description_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RackReservationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -39260,7 +39202,7 @@ import (
 )
 
 func main() {
-	bulkWritableRackRequest := []openapiclient.BulkWritableRackRequest{*openapiclient.NewBulkWritableRackRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRackRequest | 
+	bulkWritableRackRequest := []openapiclient.BulkWritableRackRequest{*openapiclient.NewBulkWritableRackRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -39328,7 +39270,7 @@ import (
 )
 
 func main() {
-	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRackRequest | 
+	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -39667,7 +39609,7 @@ func main() {
 	outerDepthLt := []int32{int32(123)} // []int32 |  (optional)
 	outerDepthLte := []int32{int32(123)} // []int32 |  (optional)
 	outerDepthN := []int32{int32(123)} // []int32 |  (optional)
-	outerUnit := []openapiclient.DcimRacksListOuterUnitParameterInner{openapiclient.dcim_racks_list_outer_unit_parameter_inner("in")} // []DcimRacksListOuterUnitParameterInner |  (optional)
+	outerUnit := []string{"Inner_example"} // []string |  (optional)
 	outerUnitIc := []string{"Inner_example"} // []string |  (optional)
 	outerUnitIe := []string{"Inner_example"} // []string |  (optional)
 	outerUnitIew := []string{"Inner_example"} // []string |  (optional)
@@ -39891,7 +39833,7 @@ Name | Type | Description  | Notes
  **outerDepthLt** | **[]int32** |  | 
  **outerDepthLte** | **[]int32** |  | 
  **outerDepthN** | **[]int32** |  | 
- **outerUnit** | [**[]DcimRacksListOuterUnitParameterInner**](DcimRacksListOuterUnitParameterInner.md) |  | 
+ **outerUnit** | **[]string** |  | 
  **outerUnitIc** | **[]string** |  | 
  **outerUnitIe** | **[]string** |  | 
  **outerUnitIew** | **[]string** |  | 
@@ -40338,7 +40280,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this rack.
-	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableRackRequest | 
+	writableRackRequest := *openapiclient.NewWritableRackRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableRackRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -40826,7 +40768,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimFrontPortTemplatesListTypeParameterInner{openapiclient.dcim_front_port_templates_list_type_parameter_inner("Copper")} // []DcimFrontPortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -40941,7 +40883,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimFrontPortTemplatesListTypeParameterInner**](DcimFrontPortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -41641,7 +41583,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []openapiclient.DcimFrontPortTemplatesListTypeParameterInner{openapiclient.dcim_front_port_templates_list_type_parameter_inner("Copper")} // []DcimFrontPortTemplatesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -41761,7 +41703,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | [**[]DcimFrontPortTemplatesListTypeParameterInner**](DcimFrontPortTemplatesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -42409,7 +42351,7 @@ import (
 )
 
 func main() {
-	bulkWritableSoftwareImageFileRequest := []openapiclient.BulkWritableSoftwareImageFileRequest{*openapiclient.NewBulkWritableSoftwareImageFileRequest("Id_example", "ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableSoftwareImageFileRequest | 
+	bulkWritableSoftwareImageFileRequest := []openapiclient.BulkWritableSoftwareImageFileRequest{*openapiclient.NewBulkWritableSoftwareImageFileRequest("Id_example", "ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableSoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -42477,7 +42419,7 @@ import (
 )
 
 func main() {
-	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareImageFileRequest | 
+	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -42655,7 +42597,7 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasDeviceTypes := true // bool | Has device types (optional)
 	hasDevices := true // bool | Has devices (optional)
-	hashingAlgorithm := []openapiclient.DcimSoftwareImageFilesListHashingAlgorithmParameterInner{openapiclient.dcim_software_image_files_list_hashing_algorithm_parameter_inner("blake2")} // []DcimSoftwareImageFilesListHashingAlgorithmParameterInner | Hashing algorithm for image file checksum   (optional)
+	hashingAlgorithm := []string{"Inner_example"} // []string | Hashing algorithm for image file checksum (optional)
 	hashingAlgorithmIc := []string{"Inner_example"} // []string |  (optional)
 	hashingAlgorithmIe := []string{"Inner_example"} // []string |  (optional)
 	hashingAlgorithmIew := []string{"Inner_example"} // []string |  (optional)
@@ -42794,7 +42736,7 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasDeviceTypes** | **bool** | Has device types | 
  **hasDevices** | **bool** | Has devices | 
- **hashingAlgorithm** | [**[]DcimSoftwareImageFilesListHashingAlgorithmParameterInner**](DcimSoftwareImageFilesListHashingAlgorithmParameterInner.md) | Hashing algorithm for image file checksum   | 
+ **hashingAlgorithm** | **[]string** | Hashing algorithm for image file checksum | 
  **hashingAlgorithmIc** | **[]string** |  | 
  **hashingAlgorithmIe** | **[]string** |  | 
  **hashingAlgorithmIew** | **[]string** |  | 
@@ -43215,7 +43157,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software image file.
-	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareImageFileRequest | 
+	softwareImageFileRequest := *openapiclient.NewSoftwareImageFileRequest("ImageFileName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareImageFileRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -43422,7 +43364,7 @@ import (
 )
 
 func main() {
-	bulkWritableSoftwareVersionRequest := []openapiclient.BulkWritableSoftwareVersionRequest{*openapiclient.NewBulkWritableSoftwareVersionRequest("Id_example", "Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableSoftwareVersionRequest | 
+	bulkWritableSoftwareVersionRequest := []openapiclient.BulkWritableSoftwareVersionRequest{*openapiclient.NewBulkWritableSoftwareVersionRequest("Id_example", "Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableSoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -43490,7 +43432,7 @@ import (
 )
 
 func main() {
-	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareVersionRequest | 
+	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -44228,7 +44170,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this software version.
-	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SoftwareVersionRequest | 
+	softwareVersionRequest := *openapiclient.NewSoftwareVersionRequest("Version_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SoftwareVersionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -45372,7 +45314,7 @@ import (
 )
 
 func main() {
-	bulkWritableVirtualDeviceContextRequest := []openapiclient.BulkWritableVirtualDeviceContextRequest{*openapiclient.NewBulkWritableVirtualDeviceContextRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVirtualDeviceContextRequest | 
+	bulkWritableVirtualDeviceContextRequest := []openapiclient.BulkWritableVirtualDeviceContextRequest{*openapiclient.NewBulkWritableVirtualDeviceContextRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -45440,7 +45382,7 @@ import (
 )
 
 func main() {
-	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualDeviceContextRequest | 
+	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -46132,7 +46074,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual device context.
-	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualDeviceContextRequest | 
+	virtualDeviceContextRequest := *openapiclient.NewVirtualDeviceContextRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualDeviceContextRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

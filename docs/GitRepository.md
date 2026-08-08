@@ -14,19 +14,19 @@ Name | Type | Description | Notes
 **Slug** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **RemoteUrl** | **string** | Only HTTP and HTTPS URLs are presently supported | 
 **Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
-**CurrentHead** | **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [readonly] 
+**CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewGitRepository
 
-`func NewGitRepository(objectType string, display string, url string, naturalSlug string, name string, remoteUrl string, currentHead string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GitRepository`
+`func NewGitRepository(objectType string, display string, url string, naturalSlug string, name string, remoteUrl string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *GitRepository`
 
 NewGitRepository instantiates a new GitRepository object
 This constructor will assign default values to properties that have it defined,
@@ -280,6 +280,11 @@ and a boolean to check if the value has been set.
 
 SetCurrentHead sets CurrentHead field to given value.
 
+### HasCurrentHead
+
+`func (o *GitRepository) HasCurrentHead() bool`
+
+HasCurrentHead returns a boolean if a field has been set.
 
 ### GetSecretsGroup
 
@@ -423,20 +428,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *GitRepository) GetTags() []BulkWritableCableRequestStatus`
+`func (o *GitRepository) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *GitRepository) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *GitRepository) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *GitRepository) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *GitRepository) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

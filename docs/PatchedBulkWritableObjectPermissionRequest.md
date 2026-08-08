@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Actions** | Pointer to **interface{}** | The list of actions granted by this permission | [optional] 
 **Constraints** | Pointer to **interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
-**Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**Users** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Groups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Users** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -225,20 +225,20 @@ HasConstraints returns a boolean if a field has been set.
 UnsetConstraints ensures that no value is present for Constraints, not even an explicit nil
 ### GetGroups
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) GetGroups() []BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableObjectPermissionRequest) GetGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetGroups returns the Groups field if non-nil, zero value otherwise.
 
 ### GetGroupsOk
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) GetGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableObjectPermissionRequest) GetGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroups
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) SetGroups(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableObjectPermissionRequest) SetGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetGroups sets Groups field to given value.
 
@@ -250,20 +250,20 @@ HasGroups returns a boolean if a field has been set.
 
 ### GetUsers
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) GetUsers() []BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableObjectPermissionRequest) GetUsers() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetUsers returns the Users field if non-nil, zero value otherwise.
 
 ### GetUsersOk
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) GetUsersOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableObjectPermissionRequest) GetUsersOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetUsersOk returns a tuple with the Users field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUsers
 
-`func (o *PatchedBulkWritableObjectPermissionRequest) SetUsers(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableObjectPermissionRequest) SetUsers(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetUsers sets Users field to given value.
 

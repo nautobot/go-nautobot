@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**Vlan** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Vlan** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Location** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewVLANLocationAssignmentRequest
 
-`func NewVLANLocationAssignmentRequest(vlan BulkWritableCableRequestStatus, location BulkWritableCableRequestStatus, ) *VLANLocationAssignmentRequest`
+`func NewVLANLocationAssignmentRequest(vlan ApprovalWorkflowStageResponseApprovalWorkflowStage, location ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VLANLocationAssignmentRequest`
 
 NewVLANLocationAssignmentRequest instantiates a new VLANLocationAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -54,40 +54,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetVlan
 
-`func (o *VLANLocationAssignmentRequest) GetVlan() BulkWritableCableRequestStatus`
+`func (o *VLANLocationAssignmentRequest) GetVlan() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVlan returns the Vlan field if non-nil, zero value otherwise.
 
 ### GetVlanOk
 
-`func (o *VLANLocationAssignmentRequest) GetVlanOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VLANLocationAssignmentRequest) GetVlanOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVlanOk returns a tuple with the Vlan field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVlan
 
-`func (o *VLANLocationAssignmentRequest) SetVlan(v BulkWritableCableRequestStatus)`
+`func (o *VLANLocationAssignmentRequest) SetVlan(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVlan sets Vlan field to given value.
 
 
 ### GetLocation
 
-`func (o *VLANLocationAssignmentRequest) GetLocation() BulkWritableCableRequestStatus`
+`func (o *VLANLocationAssignmentRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *VLANLocationAssignmentRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VLANLocationAssignmentRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *VLANLocationAssignmentRequest) SetLocation(v BulkWritableCableRequestStatus)`
+`func (o *VLANLocationAssignmentRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocation sets Location field to given value.
 

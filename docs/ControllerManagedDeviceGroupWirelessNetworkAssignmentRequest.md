@@ -5,15 +5,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**ControllerManagedDeviceGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**WirelessNetwork** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**ControllerManagedDeviceGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**WirelessNetwork** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Vlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
 
 ### NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest
 
-`func NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(controllerManagedDeviceGroup BulkWritableCableRequestStatus, wirelessNetwork BulkWritableCableRequestStatus, ) *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest`
+`func NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(controllerManagedDeviceGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, wirelessNetwork ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest`
 
 NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest instantiates a new ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -55,40 +55,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroup() BulkWritableCableRequestStatus`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetControllerManagedDeviceGroup(v BulkWritableCableRequestStatus)`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetControllerManagedDeviceGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
 
 ### GetWirelessNetwork
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetwork() BulkWritableCableRequestStatus`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetwork() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetWirelessNetwork returns the WirelessNetwork field if non-nil, zero value otherwise.
 
 ### GetWirelessNetworkOk
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetworkOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetworkOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetWirelessNetworkOk returns a tuple with the WirelessNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetWirelessNetwork
 
-`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetWirelessNetwork(v BulkWritableCableRequestStatus)`
+`func (o *ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetWirelessNetwork(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetWirelessNetwork sets WirelessNetwork field to given value.
 

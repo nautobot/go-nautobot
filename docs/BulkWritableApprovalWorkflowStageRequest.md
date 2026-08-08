@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | [optional] 
 **ApprovalWorkflow** | [**ApprovalWorkflowStageApprovalWorkflow**](ApprovalWorkflowStageApprovalWorkflow.md) |  | 
-**ApprovalWorkflowStageDefinition** | Pointer to [**NullableApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
+**ApprovalWorkflowStageDefinition** | [**ApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableApprovalWorkflowStageRequest
 
-`func NewBulkWritableApprovalWorkflowStageRequest(id string, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, ) *BulkWritableApprovalWorkflowStageRequest`
+`func NewBulkWritableApprovalWorkflowStageRequest(id string, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, approvalWorkflowStageDefinition ApprovalWorkflowStageApprovalWorkflowStageDefinition, ) *BulkWritableApprovalWorkflowStageRequest`
 
 NewBulkWritableApprovalWorkflowStageRequest instantiates a new BulkWritableApprovalWorkflowStageRequest object
 This constructor will assign default values to properties that have it defined,
@@ -114,22 +114,7 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowStageDefinition sets ApprovalWorkflowStageDefinition field to given value.
 
-### HasApprovalWorkflowStageDefinition
 
-`func (o *BulkWritableApprovalWorkflowStageRequest) HasApprovalWorkflowStageDefinition() bool`
-
-HasApprovalWorkflowStageDefinition returns a boolean if a field has been set.
-
-### SetApprovalWorkflowStageDefinitionNil
-
-`func (o *BulkWritableApprovalWorkflowStageRequest) SetApprovalWorkflowStageDefinitionNil(b bool)`
-
- SetApprovalWorkflowStageDefinitionNil sets the value for ApprovalWorkflowStageDefinition to be an explicit nil
-
-### UnsetApprovalWorkflowStageDefinition
-`func (o *BulkWritableApprovalWorkflowStageRequest) UnsetApprovalWorkflowStageDefinition()`
-
-UnsetApprovalWorkflowStageDefinition ensures that no value is present for ApprovalWorkflowStageDefinition, not even an explicit nil
 ### GetCustomFields
 
 `func (o *BulkWritableApprovalWorkflowStageRequest) GetCustomFields() map[string]interface{}`

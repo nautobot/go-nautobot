@@ -2035,7 +2035,7 @@ import (
 )
 
 func main() {
-	bulkWritableClusterRequest := []openapiclient.BulkWritableClusterRequest{*openapiclient.NewBulkWritableClusterRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableClusterRequest | 
+	bulkWritableClusterRequest := []openapiclient.BulkWritableClusterRequest{*openapiclient.NewBulkWritableClusterRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableClusterRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2103,7 +2103,7 @@ import (
 )
 
 func main() {
-	clusterRequest := *openapiclient.NewClusterRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ClusterRequest | 
+	clusterRequest := *openapiclient.NewClusterRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ClusterRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2795,7 +2795,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cluster.
-	clusterRequest := *openapiclient.NewClusterRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ClusterRequest | 
+	clusterRequest := *openapiclient.NewClusterRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ClusterRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3002,7 +3002,7 @@ import (
 )
 
 func main() {
-	bulkWritableVMInterfaceRequest := []openapiclient.BulkWritableVMInterfaceRequest{*openapiclient.NewBulkWritableVMInterfaceRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVMInterfaceRequest | 
+	bulkWritableVMInterfaceRequest := []openapiclient.BulkWritableVMInterfaceRequest{*openapiclient.NewBulkWritableVMInterfaceRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVMInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3070,7 +3070,7 @@ import (
 )
 
 func main() {
-	writableVMInterfaceRequest := *openapiclient.NewWritableVMInterfaceRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableVMInterfaceRequest | 
+	writableVMInterfaceRequest := *openapiclient.NewWritableVMInterfaceRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableVMInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3264,7 +3264,7 @@ func main() {
 	macAddressNisw := []string{"Inner_example"} // []string | Exclude MAC address starts with (optional)
 	macAddressNre := []string{"Inner_example"} // []string | Exclude MAC address matches regex (optional)
 	macAddressRe := []string{"Inner_example"} // []string | MAC address matches regex (optional)
-	mode := []openapiclient.DcimInterfacesListModeParameterInner{openapiclient.dcim_interfaces_list_mode_parameter_inner("access")} // []DcimInterfacesListModeParameterInner |  (optional)
+	mode := []string{"Inner_example"} // []string |  (optional)
 	modeIc := []string{"Inner_example"} // []string |  (optional)
 	modeIe := []string{"Inner_example"} // []string |  (optional)
 	modeIew := []string{"Inner_example"} // []string |  (optional)
@@ -3408,7 +3408,7 @@ Name | Type | Description  | Notes
  **macAddressNisw** | **[]string** | Exclude MAC address starts with | 
  **macAddressNre** | **[]string** | Exclude MAC address matches regex | 
  **macAddressRe** | **[]string** | MAC address matches regex | 
- **mode** | [**[]DcimInterfacesListModeParameterInner**](DcimInterfacesListModeParameterInner.md) |  | 
+ **mode** | **[]string** |  | 
  **modeIc** | **[]string** |  | 
  **modeIe** | **[]string** |  | 
  **modeIew** | **[]string** |  | 
@@ -3817,7 +3817,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VM interface.
-	writableVMInterfaceRequest := *openapiclient.NewWritableVMInterfaceRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // WritableVMInterfaceRequest | 
+	writableVMInterfaceRequest := *openapiclient.NewWritableVMInterfaceRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritableVMInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4024,7 +4024,7 @@ import (
 )
 
 func main() {
-	bulkWritableVirtualMachineRequest := []openapiclient.BulkWritableVirtualMachineRequest{*openapiclient.NewBulkWritableVirtualMachineRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVirtualMachineRequest | 
+	bulkWritableVirtualMachineRequest := []openapiclient.BulkWritableVirtualMachineRequest{*openapiclient.NewBulkWritableVirtualMachineRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVirtualMachineRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4092,7 +4092,7 @@ import (
 )
 
 func main() {
-	virtualMachineRequest := *openapiclient.NewVirtualMachineRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualMachineRequest | 
+	virtualMachineRequest := *openapiclient.NewVirtualMachineRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualMachineRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4928,7 +4928,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this virtual machine.
-	virtualMachineRequest := *openapiclient.NewVirtualMachineRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VirtualMachineRequest | 
+	virtualMachineRequest := *openapiclient.NewVirtualMachineRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VirtualMachineRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

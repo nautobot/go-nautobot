@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**CloudNetwork** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CloudService** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CloudNetwork** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CloudService** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableCloudServiceNetworkAssignmentRequest
 
-`func NewBulkWritableCloudServiceNetworkAssignmentRequest(id string, cloudNetwork BulkWritableCableRequestStatus, cloudService BulkWritableCableRequestStatus, ) *BulkWritableCloudServiceNetworkAssignmentRequest`
+`func NewBulkWritableCloudServiceNetworkAssignmentRequest(id string, cloudNetwork ApprovalWorkflowStageResponseApprovalWorkflowStage, cloudService ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCloudServiceNetworkAssignmentRequest`
 
 NewBulkWritableCloudServiceNetworkAssignmentRequest instantiates a new BulkWritableCloudServiceNetworkAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -49,40 +49,40 @@ SetId sets Id field to given value.
 
 ### GetCloudNetwork
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudNetwork() BulkWritableCableRequestStatus`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudNetwork() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
 
 ### GetCloudNetworkOk
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudNetworkOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudNetworkOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudNetwork
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) SetCloudNetwork(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) SetCloudNetwork(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCloudNetwork sets CloudNetwork field to given value.
 
 
 ### GetCloudService
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudService() BulkWritableCableRequestStatus`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudService() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCloudService returns the CloudService field if non-nil, zero value otherwise.
 
 ### GetCloudServiceOk
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudServiceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) GetCloudServiceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCloudServiceOk returns a tuple with the CloudService field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudService
 
-`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) SetCloudService(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableCloudServiceNetworkAssignmentRequest) SetCloudService(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCloudService sets CloudService field to given value.
 

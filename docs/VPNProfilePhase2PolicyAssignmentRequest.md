@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**VpnProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**VpnPhase2Policy** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**VpnProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**VpnPhase2Policy** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 ### NewVPNProfilePhase2PolicyAssignmentRequest
 
-`func NewVPNProfilePhase2PolicyAssignmentRequest(vpnProfile BulkWritableCableRequestStatus, vpnPhase2Policy BulkWritableCableRequestStatus, ) *VPNProfilePhase2PolicyAssignmentRequest`
+`func NewVPNProfilePhase2PolicyAssignmentRequest(vpnProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, vpnPhase2Policy ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VPNProfilePhase2PolicyAssignmentRequest`
 
 NewVPNProfilePhase2PolicyAssignmentRequest instantiates a new VPNProfilePhase2PolicyAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -82,40 +82,40 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetVpnProfile
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnProfile() BulkWritableCableRequestStatus`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVpnProfile returns the VpnProfile field if non-nil, zero value otherwise.
 
 ### GetVpnProfileOk
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVpnProfileOk returns a tuple with the VpnProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVpnProfile
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) SetVpnProfile(v BulkWritableCableRequestStatus)`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) SetVpnProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVpnProfile sets VpnProfile field to given value.
 
 
 ### GetVpnPhase2Policy
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnPhase2Policy() BulkWritableCableRequestStatus`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnPhase2Policy() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVpnPhase2Policy returns the VpnPhase2Policy field if non-nil, zero value otherwise.
 
 ### GetVpnPhase2PolicyOk
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnPhase2PolicyOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) GetVpnPhase2PolicyOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVpnPhase2PolicyOk returns a tuple with the VpnPhase2Policy field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVpnPhase2Policy
 
-`func (o *VPNProfilePhase2PolicyAssignmentRequest) SetVpnPhase2Policy(v BulkWritableCableRequestStatus)`
+`func (o *VPNProfilePhase2PolicyAssignmentRequest) SetVpnPhase2Policy(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVpnPhase2Policy sets VpnPhase2Policy field to given value.
 

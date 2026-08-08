@@ -173,7 +173,7 @@
 
 * `_64GFC_SFPP` (value: `"64gfc-sfpp"`)
 
-* `_128GFC_QSFP28` (value: `"128gfc-qsfp28"`)
+* `_128GFC_SFP28` (value: `"128gfc-sfp28"`)
 
 * `INFINIBAND_SDR` (value: `"infiniband-sdr"`)
 

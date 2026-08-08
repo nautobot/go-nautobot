@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **ContentType** | **string** |  | 
 **ObjectId** | **string** |  | 
 **Image** | **string** |  | 
-**ImageHeight** | **int32** |  | [readonly] 
-**ImageWidth** | **int32** |  | [readonly] 
+**ImageHeight** | **int32** |  | 
+**ImageWidth** | **int32** |  | 
 **Name** | Pointer to **string** |  | [optional] 
 **Created** | **time.Time** |  | [readonly] 
 

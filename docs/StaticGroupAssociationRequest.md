@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **AssociatedObjectType** | **string** |  | 
 **AssociatedObjectId** | **string** |  | 
-**DynamicGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**DynamicGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 ### NewStaticGroupAssociationRequest
 
-`func NewStaticGroupAssociationRequest(associatedObjectType string, associatedObjectId string, dynamicGroup BulkWritableCableRequestStatus, ) *StaticGroupAssociationRequest`
+`func NewStaticGroupAssociationRequest(associatedObjectType string, associatedObjectId string, dynamicGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *StaticGroupAssociationRequest`
 
 NewStaticGroupAssociationRequest instantiates a new StaticGroupAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -97,20 +97,20 @@ SetAssociatedObjectId sets AssociatedObjectId field to given value.
 
 ### GetDynamicGroup
 
-`func (o *StaticGroupAssociationRequest) GetDynamicGroup() BulkWritableCableRequestStatus`
+`func (o *StaticGroupAssociationRequest) GetDynamicGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetDynamicGroup returns the DynamicGroup field if non-nil, zero value otherwise.
 
 ### GetDynamicGroupOk
 
-`func (o *StaticGroupAssociationRequest) GetDynamicGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *StaticGroupAssociationRequest) GetDynamicGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetDynamicGroupOk returns a tuple with the DynamicGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDynamicGroup
 
-`func (o *StaticGroupAssociationRequest) SetDynamicGroup(v BulkWritableCableRequestStatus)`
+`func (o *StaticGroupAssociationRequest) SetDynamicGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetDynamicGroup sets DynamicGroup field to given value.
 

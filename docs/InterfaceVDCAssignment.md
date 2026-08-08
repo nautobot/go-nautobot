@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**VirtualDeviceContext** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Interface** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**VirtualDeviceContext** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Interface** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewInterfaceVDCAssignment
 
-`func NewInterfaceVDCAssignment(objectType string, display string, url string, naturalSlug string, virtualDeviceContext BulkWritableCableRequestStatus, interface_ BulkWritableCableRequestStatus, ) *InterfaceVDCAssignment`
+`func NewInterfaceVDCAssignment(objectType string, display string, url string, naturalSlug string, virtualDeviceContext ApprovalWorkflowStageResponseApprovalWorkflowStage, interface_ ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *InterfaceVDCAssignment`
 
 NewInterfaceVDCAssignment instantiates a new InterfaceVDCAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -138,40 +138,40 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetVirtualDeviceContext
 
-`func (o *InterfaceVDCAssignment) GetVirtualDeviceContext() BulkWritableCableRequestStatus`
+`func (o *InterfaceVDCAssignment) GetVirtualDeviceContext() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVirtualDeviceContext returns the VirtualDeviceContext field if non-nil, zero value otherwise.
 
 ### GetVirtualDeviceContextOk
 
-`func (o *InterfaceVDCAssignment) GetVirtualDeviceContextOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *InterfaceVDCAssignment) GetVirtualDeviceContextOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVirtualDeviceContextOk returns a tuple with the VirtualDeviceContext field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualDeviceContext
 
-`func (o *InterfaceVDCAssignment) SetVirtualDeviceContext(v BulkWritableCableRequestStatus)`
+`func (o *InterfaceVDCAssignment) SetVirtualDeviceContext(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVirtualDeviceContext sets VirtualDeviceContext field to given value.
 
 
 ### GetInterface
 
-`func (o *InterfaceVDCAssignment) GetInterface() BulkWritableCableRequestStatus`
+`func (o *InterfaceVDCAssignment) GetInterface() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetInterface returns the Interface field if non-nil, zero value otherwise.
 
 ### GetInterfaceOk
 
-`func (o *InterfaceVDCAssignment) GetInterfaceOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *InterfaceVDCAssignment) GetInterfaceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetInterfaceOk returns a tuple with the Interface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInterface
 
-`func (o *InterfaceVDCAssignment) SetInterface(v BulkWritableCableRequestStatus)`
+`func (o *InterfaceVDCAssignment) SetInterface(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetInterface sets Interface field to given value.
 

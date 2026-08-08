@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **LoadBalancerType** | Pointer to [**BulkWritableVirtualServerRequestLoadBalancerType**](BulkWritableVirtualServerRequestLoadBalancerType.md) |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
 **SslOffload** | Pointer to **bool** |  | [optional] 
-**Vip** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Vip** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **SourceNatPool** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **DeviceRedundancyGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
@@ -23,13 +23,13 @@ Name | Type | Description | Notes
 **HealthCheckMonitor** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewVirtualServerRequest
 
-`func NewVirtualServerRequest(name string, protocol BulkWritableVirtualServerRequestProtocol, vip BulkWritableCableRequestStatus, ) *VirtualServerRequest`
+`func NewVirtualServerRequest(name string, protocol BulkWritableVirtualServerRequestProtocol, vip ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VirtualServerRequest`
 
 NewVirtualServerRequest instantiates a new VirtualServerRequest object
 This constructor will assign default values to properties that have it defined,
@@ -246,20 +246,20 @@ HasSslOffload returns a boolean if a field has been set.
 
 ### GetVip
 
-`func (o *VirtualServerRequest) GetVip() BulkWritableCableRequestStatus`
+`func (o *VirtualServerRequest) GetVip() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVip returns the Vip field if non-nil, zero value otherwise.
 
 ### GetVipOk
 
-`func (o *VirtualServerRequest) GetVipOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VirtualServerRequest) GetVipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVipOk returns a tuple with the Vip field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVip
 
-`func (o *VirtualServerRequest) SetVip(v BulkWritableCableRequestStatus)`
+`func (o *VirtualServerRequest) SetVip(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVip sets Vip field to given value.
 
@@ -596,20 +596,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *VirtualServerRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VirtualServerRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VirtualServerRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VirtualServerRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VirtualServerRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VirtualServerRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | Pointer to [**IpamServicesListProtocolParameterInner**](IpamServicesListProtocolParameterInner.md) |  | [optional] 
+**Value** | Pointer to [**ServiceProtocolValue**](ServiceProtocolValue.md) |  | [optional] 
 **Label** | Pointer to [**ServiceProtocolLabel**](ServiceProtocolLabel.md) |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
-`func (o *ServiceProtocol) GetValue() IpamServicesListProtocolParameterInner`
+`func (o *ServiceProtocol) GetValue() ServiceProtocolValue`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *ServiceProtocol) GetValueOk() (*IpamServicesListProtocolParameterInner, bool)`
+`func (o *ServiceProtocol) GetValueOk() (*ServiceProtocolValue, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *ServiceProtocol) SetValue(v IpamServicesListProtocolParameterInner)`
+`func (o *ServiceProtocol) SetValue(v ServiceProtocolValue)`
 
 SetValue sets Value field to given value.
 

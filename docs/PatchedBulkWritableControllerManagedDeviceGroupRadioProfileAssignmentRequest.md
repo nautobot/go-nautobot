@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**ControllerManagedDeviceGroup** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**RadioProfile** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ControllerManagedDeviceGroup** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**RadioProfile** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -49,20 +49,20 @@ SetId sets Id field to given value.
 
 ### GetControllerManagedDeviceGroup
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetControllerManagedDeviceGroup() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetControllerManagedDeviceGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetControllerManagedDeviceGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) SetControllerManagedDeviceGroup(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) SetControllerManagedDeviceGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
@@ -74,20 +74,20 @@ HasControllerManagedDeviceGroup returns a boolean if a field has been set.
 
 ### GetRadioProfile
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetRadioProfile() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetRadioProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRadioProfile returns the RadioProfile field if non-nil, zero value otherwise.
 
 ### GetRadioProfileOk
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetRadioProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) GetRadioProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRadioProfileOk returns a tuple with the RadioProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRadioProfile
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) SetRadioProfile(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest) SetRadioProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRadioProfile sets RadioProfile field to given value.
 

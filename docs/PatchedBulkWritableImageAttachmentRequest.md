@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **ContentType** | Pointer to **string** |  | [optional] 
 **ObjectId** | Pointer to **string** |  | [optional] 
 **Image** | Pointer to ***os.File** |  | [optional] 
+**ImageHeight** | Pointer to **int32** |  | [optional] 
+**ImageWidth** | Pointer to **int32** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
 
 ## Methods
@@ -123,6 +125,56 @@ SetImage sets Image field to given value.
 `func (o *PatchedBulkWritableImageAttachmentRequest) HasImage() bool`
 
 HasImage returns a boolean if a field has been set.
+
+### GetImageHeight
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) GetImageHeight() int32`
+
+GetImageHeight returns the ImageHeight field if non-nil, zero value otherwise.
+
+### GetImageHeightOk
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) GetImageHeightOk() (*int32, bool)`
+
+GetImageHeightOk returns a tuple with the ImageHeight field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetImageHeight
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) SetImageHeight(v int32)`
+
+SetImageHeight sets ImageHeight field to given value.
+
+### HasImageHeight
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) HasImageHeight() bool`
+
+HasImageHeight returns a boolean if a field has been set.
+
+### GetImageWidth
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) GetImageWidth() int32`
+
+GetImageWidth returns the ImageWidth field if non-nil, zero value otherwise.
+
+### GetImageWidthOk
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) GetImageWidthOk() (*int32, bool)`
+
+GetImageWidthOk returns a tuple with the ImageWidth field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetImageWidth
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) SetImageWidth(v int32)`
+
+SetImageWidth sets ImageWidth field to given value.
+
+### HasImageWidth
+
+`func (o *PatchedBulkWritableImageAttachmentRequest) HasImageWidth() bool`
+
+HasImageWidth returns a boolean if a field has been set.
 
 ### GetName
 

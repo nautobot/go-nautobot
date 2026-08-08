@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
-**PortType** | Pointer to [**PatchedWritableInterfaceRequestPortType**](PatchedWritableInterfaceRequestPortType.md) |  | [optional] 
 **MgmtOnly** | Pointer to **bool** |  | [optional] 
 **Speed** | Pointer to **NullableInt32** |  | [optional] 
 **Duplex** | Pointer to [**BulkWritableInterfaceTemplateRequestDuplex**](BulkWritableInterfaceTemplateRequestDuplex.md) |  | [optional] 
@@ -151,31 +150,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-
-### GetPortType
-
-`func (o *WritableInterfaceTemplateRequest) GetPortType() PatchedWritableInterfaceRequestPortType`
-
-GetPortType returns the PortType field if non-nil, zero value otherwise.
-
-### GetPortTypeOk
-
-`func (o *WritableInterfaceTemplateRequest) GetPortTypeOk() (*PatchedWritableInterfaceRequestPortType, bool)`
-
-GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPortType
-
-`func (o *WritableInterfaceTemplateRequest) SetPortType(v PatchedWritableInterfaceRequestPortType)`
-
-SetPortType sets PortType field to given value.
-
-### HasPortType
-
-`func (o *WritableInterfaceTemplateRequest) HasPortType() bool`
-
-HasPortType returns a boolean if a field has been set.
 
 ### GetMgmtOnly
 

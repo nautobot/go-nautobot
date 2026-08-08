@@ -213,7 +213,7 @@ import (
 )
 
 func main() {
-	bulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest := []openapiclient.BulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest{*openapiclient.NewBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
+	bulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest := []openapiclient.BulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest{*openapiclient.NewBulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -281,7 +281,7 @@ import (
 )
 
 func main() {
-	controllerManagedDeviceGroupRadioProfileAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupRadioProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
+	controllerManagedDeviceGroupRadioProfileAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupRadioProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -660,7 +660,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller managed device group radio profile assignment.
-	controllerManagedDeviceGroupRadioProfileAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupRadioProfileAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
+	controllerManagedDeviceGroupRadioProfileAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupRadioProfileAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerManagedDeviceGroupRadioProfileAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -867,7 +867,7 @@ import (
 )
 
 func main() {
-	bulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest := []openapiclient.BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest{*openapiclient.NewBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
+	bulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest := []openapiclient.BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest{*openapiclient.NewBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -935,7 +935,7 @@ import (
 )
 
 func main() {
-	controllerManagedDeviceGroupWirelessNetworkAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
+	controllerManagedDeviceGroupWirelessNetworkAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1320,7 +1320,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this controller managed device group wireless network assignment.
-	controllerManagedDeviceGroupWirelessNetworkAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
+	controllerManagedDeviceGroupWirelessNetworkAssignmentRequest := *openapiclient.NewControllerManagedDeviceGroupWirelessNetworkAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ControllerManagedDeviceGroupWirelessNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2776,7 +2776,7 @@ func main() {
 	rateLte := []int32{int32(123)} // []int32 |  (optional)
 	rateN := []int32{int32(123)} // []int32 |  (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
-	standard := []openapiclient.WirelessSupportedDataRatesListStandardParameterInner{openapiclient.wireless_supported_data_rates_list_standard_parameter_inner("802.11a")} // []WirelessSupportedDataRatesListStandardParameterInner |  (optional)
+	standard := []string{"Inner_example"} // []string |  (optional)
 	standardIc := []string{"Inner_example"} // []string |  (optional)
 	standardIe := []string{"Inner_example"} // []string |  (optional)
 	standardIew := []string{"Inner_example"} // []string |  (optional)
@@ -2865,7 +2865,7 @@ Name | Type | Description  | Notes
  **rateLte** | **[]int32** |  | 
  **rateN** | **[]int32** |  | 
  **sort** | **string** | Which field to use when ordering the results. | 
- **standard** | [**[]WirelessSupportedDataRatesListStandardParameterInner**](WirelessSupportedDataRatesListStandardParameterInner.md) |  | 
+ **standard** | **[]string** |  | 
  **standardIc** | **[]string** |  | 
  **standardIe** | **[]string** |  | 
  **standardIew** | **[]string** |  | 
