@@ -11,11 +11,11 @@ Name | Type | Description | Notes
 **XconnectId** | Pointer to **string** |  | [optional] 
 **PpInfo** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Circuit** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Circuit** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CloudNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableCircuitTerminationRequest
 
-`func NewBulkWritableCircuitTerminationRequest(id string, termSide TermSideEnum, circuit BulkWritableCableRequestStatus, ) *BulkWritableCircuitTerminationRequest`
+`func NewBulkWritableCircuitTerminationRequest(id string, termSide TermSideEnum, circuit ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCircuitTerminationRequest`
 
 NewBulkWritableCircuitTerminationRequest instantiates a new BulkWritableCircuitTerminationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -225,20 +225,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetCircuit
 
-`func (o *BulkWritableCircuitTerminationRequest) GetCircuit() BulkWritableCableRequestStatus`
+`func (o *BulkWritableCircuitTerminationRequest) GetCircuit() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCircuit returns the Circuit field if non-nil, zero value otherwise.
 
 ### GetCircuitOk
 
-`func (o *BulkWritableCircuitTerminationRequest) GetCircuitOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableCircuitTerminationRequest) GetCircuitOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCircuitOk returns a tuple with the Circuit field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCircuit
 
-`func (o *BulkWritableCircuitTerminationRequest) SetCircuit(v BulkWritableCableRequestStatus)`
+`func (o *BulkWritableCircuitTerminationRequest) SetCircuit(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCircuit sets Circuit field to given value.
 
@@ -350,20 +350,20 @@ HasCloudNetwork returns a boolean if a field has been set.
 UnsetCloudNetwork ensures that no value is present for CloudNetwork, not even an explicit nil
 ### GetTags
 
-`func (o *BulkWritableCircuitTerminationRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *BulkWritableCircuitTerminationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableCircuitTerminationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *BulkWritableCircuitTerminationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableCircuitTerminationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *BulkWritableCircuitTerminationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

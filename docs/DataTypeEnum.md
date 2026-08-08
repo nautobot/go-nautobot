@@ -11,8 +11,6 @@
 
 * `DATE` (value: `"date"`)
 
-* `DATETIME` (value: `"datetime"`)
-
 * `URL` (value: `"url"`)
 
 * `SELECT` (value: `"select"`)
@@ -24,6 +22,8 @@
 * `MARKDOWN` (value: `"markdown"`)
 
 * `CONTACT_OR_TEAM` (value: `"contact-or-team"`)
+
+* `DATETIME` (value: `"datetime"`)
 
 * `FLOAT` (value: `"float"`)
 

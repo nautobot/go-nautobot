@@ -13,19 +13,19 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewDeviceRedundancyGroup
 
-`func NewDeviceRedundancyGroup(objectType string, display string, url string, naturalSlug string, name string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceRedundancyGroup`
+`func NewDeviceRedundancyGroup(objectType string, display string, url string, naturalSlug string, name string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceRedundancyGroup`
 
 NewDeviceRedundancyGroup instantiates a new DeviceRedundancyGroup object
 This constructor will assign default values to properties that have it defined,
@@ -242,20 +242,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *DeviceRedundancyGroup) GetStatus() BulkWritableCableRequestStatus`
+`func (o *DeviceRedundancyGroup) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *DeviceRedundancyGroup) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceRedundancyGroup) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *DeviceRedundancyGroup) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *DeviceRedundancyGroup) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -402,20 +402,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *DeviceRedundancyGroup) GetTags() []BulkWritableCableRequestStatus`
+`func (o *DeviceRedundancyGroup) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *DeviceRedundancyGroup) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *DeviceRedundancyGroup) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *DeviceRedundancyGroup) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *DeviceRedundancyGroup) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

@@ -217,7 +217,7 @@ import (
 )
 
 func main() {
-	bulkWritableDataComplianceRequest := []openapiclient.BulkWritableDataComplianceRequest{*openapiclient.NewBulkWritableDataComplianceRequest("Id_example", "ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDataComplianceRequest | 
+	bulkWritableDataComplianceRequest := []openapiclient.BulkWritableDataComplianceRequest{*openapiclient.NewBulkWritableDataComplianceRequest("Id_example", "ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDataComplianceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -285,7 +285,7 @@ import (
 )
 
 func main() {
-	dataComplianceRequest := *openapiclient.NewDataComplianceRequest("ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewBulkWritableCableRequestStatus()) // DataComplianceRequest | 
+	dataComplianceRequest := *openapiclient.NewDataComplianceRequest("ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DataComplianceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -804,7 +804,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this data compliance.
-	dataComplianceRequest := *openapiclient.NewDataComplianceRequest("ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewBulkWritableCableRequestStatus()) // DataComplianceRequest | 
+	dataComplianceRequest := *openapiclient.NewDataComplianceRequest("ComplianceClassName_example", "ObjectId_example", false, *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DataComplianceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

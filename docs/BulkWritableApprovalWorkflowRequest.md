@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **ObjectUnderReviewContentType** | **string** |  | 
 **ObjectUnderReviewObjectId** | **string** |  | 
 **CurrentState** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | [optional] 
-**ApprovalWorkflowDefinition** | Pointer to [**NullableApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
+**ApprovalWorkflowDefinition** | [**ApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableApprovalWorkflowRequest
 
-`func NewBulkWritableApprovalWorkflowRequest(id string, objectUnderReviewContentType string, objectUnderReviewObjectId string, ) *BulkWritableApprovalWorkflowRequest`
+`func NewBulkWritableApprovalWorkflowRequest(id string, objectUnderReviewContentType string, objectUnderReviewObjectId string, approvalWorkflowDefinition ApprovalWorkflowApprovalWorkflowDefinition, ) *BulkWritableApprovalWorkflowRequest`
 
 NewBulkWritableApprovalWorkflowRequest instantiates a new BulkWritableApprovalWorkflowRequest object
 This constructor will assign default values to properties that have it defined,
@@ -136,22 +136,7 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowDefinition sets ApprovalWorkflowDefinition field to given value.
 
-### HasApprovalWorkflowDefinition
 
-`func (o *BulkWritableApprovalWorkflowRequest) HasApprovalWorkflowDefinition() bool`
-
-HasApprovalWorkflowDefinition returns a boolean if a field has been set.
-
-### SetApprovalWorkflowDefinitionNil
-
-`func (o *BulkWritableApprovalWorkflowRequest) SetApprovalWorkflowDefinitionNil(b bool)`
-
- SetApprovalWorkflowDefinitionNil sets the value for ApprovalWorkflowDefinition to be an explicit nil
-
-### UnsetApprovalWorkflowDefinition
-`func (o *BulkWritableApprovalWorkflowRequest) UnsetApprovalWorkflowDefinition()`
-
-UnsetApprovalWorkflowDefinition ensures that no value is present for ApprovalWorkflowDefinition, not even an explicit nil
 ### GetUser
 
 `func (o *BulkWritableApprovalWorkflowRequest) GetUser() ApprovalWorkflowUser`

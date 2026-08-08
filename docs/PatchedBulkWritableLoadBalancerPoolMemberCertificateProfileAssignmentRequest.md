@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**LoadBalancerPoolMember** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**CertificateProfile** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**LoadBalancerPoolMember** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CertificateProfile** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -49,20 +49,20 @@ SetId sets Id field to given value.
 
 ### GetLoadBalancerPoolMember
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMember() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMember() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLoadBalancerPoolMember returns the LoadBalancerPoolMember field if non-nil, zero value otherwise.
 
 ### GetLoadBalancerPoolMemberOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMemberOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetLoadBalancerPoolMemberOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLoadBalancerPoolMemberOk returns a tuple with the LoadBalancerPoolMember field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLoadBalancerPoolMember
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetLoadBalancerPoolMember(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetLoadBalancerPoolMember(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLoadBalancerPoolMember sets LoadBalancerPoolMember field to given value.
 
@@ -74,20 +74,20 @@ HasLoadBalancerPoolMember returns a boolean if a field has been set.
 
 ### GetCertificateProfile
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfile() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCertificateProfile returns the CertificateProfile field if non-nil, zero value otherwise.
 
 ### GetCertificateProfileOk
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCertificateProfileOk returns a tuple with the CertificateProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCertificateProfile
 
-`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetCertificateProfile(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableLoadBalancerPoolMemberCertificateProfileAssignmentRequest) SetCertificateProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCertificateProfile sets CertificateProfile field to given value.
 

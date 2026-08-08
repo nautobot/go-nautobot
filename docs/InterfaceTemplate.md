@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **Type** | [**InterfaceType**](InterfaceType.md) |  | 
-**PortType** | Pointer to [**FrontPortType**](FrontPortType.md) |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -187,31 +186,6 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
-
-### GetPortType
-
-`func (o *InterfaceTemplate) GetPortType() FrontPortType`
-
-GetPortType returns the PortType field if non-nil, zero value otherwise.
-
-### GetPortTypeOk
-
-`func (o *InterfaceTemplate) GetPortTypeOk() (*FrontPortType, bool)`
-
-GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPortType
-
-`func (o *InterfaceTemplate) SetPortType(v FrontPortType)`
-
-SetPortType sets PortType field to given value.
-
-### HasPortType
-
-`func (o *InterfaceTemplate) HasPortType() bool`
-
-HasPortType returns a boolean if a field has been set.
 
 ### GetName
 

@@ -11,8 +11,6 @@
 
 * `DATE` (value: `"date"`)
 
-* `DATETIME` (value: `"datetime"`)
-
 * `URL` (value: `"url"`)
 
 * `SELECT` (value: `"select"`)

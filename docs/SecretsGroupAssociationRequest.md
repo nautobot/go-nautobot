@@ -7,14 +7,14 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **AccessType** | [**AccessTypeEnum**](AccessTypeEnum.md) |  | 
 **SecretType** | [**SecretTypeEnum**](SecretTypeEnum.md) |  | 
-**SecretsGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Secret** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**SecretsGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Secret** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewSecretsGroupAssociationRequest
 
-`func NewSecretsGroupAssociationRequest(accessType AccessTypeEnum, secretType SecretTypeEnum, secretsGroup BulkWritableCableRequestStatus, secret BulkWritableCableRequestStatus, ) *SecretsGroupAssociationRequest`
+`func NewSecretsGroupAssociationRequest(accessType AccessTypeEnum, secretType SecretTypeEnum, secretsGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, secret ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *SecretsGroupAssociationRequest`
 
 NewSecretsGroupAssociationRequest instantiates a new SecretsGroupAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -96,40 +96,40 @@ SetSecretType sets SecretType field to given value.
 
 ### GetSecretsGroup
 
-`func (o *SecretsGroupAssociationRequest) GetSecretsGroup() BulkWritableCableRequestStatus`
+`func (o *SecretsGroupAssociationRequest) GetSecretsGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetSecretsGroup returns the SecretsGroup field if non-nil, zero value otherwise.
 
 ### GetSecretsGroupOk
 
-`func (o *SecretsGroupAssociationRequest) GetSecretsGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SecretsGroupAssociationRequest) GetSecretsGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetSecretsGroupOk returns a tuple with the SecretsGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecretsGroup
 
-`func (o *SecretsGroupAssociationRequest) SetSecretsGroup(v BulkWritableCableRequestStatus)`
+`func (o *SecretsGroupAssociationRequest) SetSecretsGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetSecretsGroup sets SecretsGroup field to given value.
 
 
 ### GetSecret
 
-`func (o *SecretsGroupAssociationRequest) GetSecret() BulkWritableCableRequestStatus`
+`func (o *SecretsGroupAssociationRequest) GetSecret() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetSecret returns the Secret field if non-nil, zero value otherwise.
 
 ### GetSecretOk
 
-`func (o *SecretsGroupAssociationRequest) GetSecretOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SecretsGroupAssociationRequest) GetSecretOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetSecretOk returns a tuple with the Secret field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSecret
 
-`func (o *SecretsGroupAssociationRequest) SetSecret(v BulkWritableCableRequestStatus)`
+`func (o *SecretsGroupAssociationRequest) SetSecret(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetSecret sets Secret field to given value.
 

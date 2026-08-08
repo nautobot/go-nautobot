@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **ProtectedPrefixesDg** | Pointer to [**[]ProtectedPrefixesDynamicGroup**](ProtectedPrefixesDynamicGroup.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
@@ -435,20 +435,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *VPNTunnelEndpointRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *VPNTunnelEndpointRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VPNTunnelEndpointRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *VPNTunnelEndpointRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VPNTunnelEndpointRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *VPNTunnelEndpointRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

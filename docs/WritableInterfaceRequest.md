@@ -14,12 +14,11 @@ Name | Type | Description | Notes
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
 **Mode** | Pointer to [**PatchedWritableInterfaceRequestMode**](PatchedWritableInterfaceRequestMode.md) |  | [optional] 
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
-**PortType** | Pointer to [**PatchedWritableInterfaceRequestPortType**](PatchedWritableInterfaceRequestPortType.md) |  | [optional] 
 **MgmtOnly** | Pointer to **bool** | This interface is used only for out-of-band management | [optional] 
 **Duplex** | Pointer to [**BulkWritableInterfaceTemplateRequestDuplex**](BulkWritableInterfaceTemplateRequestDuplex.md) |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
@@ -29,13 +28,13 @@ Name | Type | Description | Notes
 **TaggedVlans** | Pointer to [**[]TaggedVLANs**](TaggedVLANs.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritableInterfaceRequest
 
-`func NewWritableInterfaceRequest(name string, type_ InterfaceTypeChoices, status BulkWritableCableRequestStatus, ) *WritableInterfaceRequest`
+`func NewWritableInterfaceRequest(name string, type_ InterfaceTypeChoices, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritableInterfaceRequest`
 
 NewWritableInterfaceRequest instantiates a new WritableInterfaceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -320,31 +319,6 @@ and a boolean to check if the value has been set.
 SetType sets Type field to given value.
 
 
-### GetPortType
-
-`func (o *WritableInterfaceRequest) GetPortType() PatchedWritableInterfaceRequestPortType`
-
-GetPortType returns the PortType field if non-nil, zero value otherwise.
-
-### GetPortTypeOk
-
-`func (o *WritableInterfaceRequest) GetPortTypeOk() (*PatchedWritableInterfaceRequestPortType, bool)`
-
-GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetPortType
-
-`func (o *WritableInterfaceRequest) SetPortType(v PatchedWritableInterfaceRequestPortType)`
-
-SetPortType sets PortType field to given value.
-
-### HasPortType
-
-`func (o *WritableInterfaceRequest) HasPortType() bool`
-
-HasPortType returns a boolean if a field has been set.
-
 ### GetMgmtOnly
 
 `func (o *WritableInterfaceRequest) GetMgmtOnly() bool`
@@ -467,20 +441,20 @@ HasModule returns a boolean if a field has been set.
 UnsetModule ensures that no value is present for Module, not even an explicit nil
 ### GetStatus
 
-`func (o *WritableInterfaceRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *WritableInterfaceRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *WritableInterfaceRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritableInterfaceRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *WritableInterfaceRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *WritableInterfaceRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -772,20 +746,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritableInterfaceRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *WritableInterfaceRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritableInterfaceRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *WritableInterfaceRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritableInterfaceRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *WritableInterfaceRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

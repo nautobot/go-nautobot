@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**VirtualServer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**CertificateProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**VirtualServer** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CertificateProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewVirtualServerCertificateProfileAssignmentRequest
 
-`func NewVirtualServerCertificateProfileAssignmentRequest(virtualServer BulkWritableCableRequestStatus, certificateProfile BulkWritableCableRequestStatus, ) *VirtualServerCertificateProfileAssignmentRequest`
+`func NewVirtualServerCertificateProfileAssignmentRequest(virtualServer ApprovalWorkflowStageResponseApprovalWorkflowStage, certificateProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VirtualServerCertificateProfileAssignmentRequest`
 
 NewVirtualServerCertificateProfileAssignmentRequest instantiates a new VirtualServerCertificateProfileAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -54,40 +54,40 @@ HasId returns a boolean if a field has been set.
 
 ### GetVirtualServer
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) GetVirtualServer() BulkWritableCableRequestStatus`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) GetVirtualServer() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVirtualServer returns the VirtualServer field if non-nil, zero value otherwise.
 
 ### GetVirtualServerOk
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) GetVirtualServerOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) GetVirtualServerOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVirtualServerOk returns a tuple with the VirtualServer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVirtualServer
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) SetVirtualServer(v BulkWritableCableRequestStatus)`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) SetVirtualServer(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVirtualServer sets VirtualServer field to given value.
 
 
 ### GetCertificateProfile
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) GetCertificateProfile() BulkWritableCableRequestStatus`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) GetCertificateProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCertificateProfile returns the CertificateProfile field if non-nil, zero value otherwise.
 
 ### GetCertificateProfileOk
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) GetCertificateProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCertificateProfileOk returns a tuple with the CertificateProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCertificateProfile
 
-`func (o *VirtualServerCertificateProfileAssignmentRequest) SetCertificateProfile(v BulkWritableCableRequestStatus)`
+`func (o *VirtualServerCertificateProfileAssignmentRequest) SetCertificateProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCertificateProfile sets CertificateProfile field to given value.
 

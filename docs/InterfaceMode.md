@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | Pointer to [**DcimInterfacesListModeParameterInner**](DcimInterfacesListModeParameterInner.md) |  | [optional] 
+**Value** | Pointer to [**InterfaceModeValue**](InterfaceModeValue.md) |  | [optional] 
 **Label** | Pointer to [**InterfaceModeLabel**](InterfaceModeLabel.md) |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
-`func (o *InterfaceMode) GetValue() DcimInterfacesListModeParameterInner`
+`func (o *InterfaceMode) GetValue() InterfaceModeValue`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *InterfaceMode) GetValueOk() (*DcimInterfacesListModeParameterInner, bool)`
+`func (o *InterfaceMode) GetValueOk() (*InterfaceModeValue, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *InterfaceMode) SetValue(v DcimInterfacesListModeParameterInner)`
+`func (o *InterfaceMode) SetValue(v InterfaceModeValue)`
 
 SetValue sets Value field to given value.
 

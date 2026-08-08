@@ -11,18 +11,18 @@ Name | Type | Description | Notes
 **ImageFileSize** | Pointer to **NullableInt64** | Image file size in bytes | [optional] 
 **DownloadUrl** | Pointer to **string** |  | [optional] 
 **DefaultImage** | Pointer to **bool** | Is the default image for this software version | [optional] 
-**SoftwareVersion** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**SoftwareVersion** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **ExternalIntegration** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewSoftwareImageFileRequest
 
-`func NewSoftwareImageFileRequest(imageFileName string, softwareVersion BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *SoftwareImageFileRequest`
+`func NewSoftwareImageFileRequest(imageFileName string, softwareVersion ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *SoftwareImageFileRequest`
 
 NewSoftwareImageFileRequest instantiates a new SoftwareImageFileRequest object
 This constructor will assign default values to properties that have it defined,
@@ -219,20 +219,20 @@ HasDefaultImage returns a boolean if a field has been set.
 
 ### GetSoftwareVersion
 
-`func (o *SoftwareImageFileRequest) GetSoftwareVersion() BulkWritableCableRequestStatus`
+`func (o *SoftwareImageFileRequest) GetSoftwareVersion() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetSoftwareVersion returns the SoftwareVersion field if non-nil, zero value otherwise.
 
 ### GetSoftwareVersionOk
 
-`func (o *SoftwareImageFileRequest) GetSoftwareVersionOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareImageFileRequest) GetSoftwareVersionOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetSoftwareVersionOk returns a tuple with the SoftwareVersion field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSoftwareVersion
 
-`func (o *SoftwareImageFileRequest) SetSoftwareVersion(v BulkWritableCableRequestStatus)`
+`func (o *SoftwareImageFileRequest) SetSoftwareVersion(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetSoftwareVersion sets SoftwareVersion field to given value.
 
@@ -274,20 +274,20 @@ HasExternalIntegration returns a boolean if a field has been set.
 UnsetExternalIntegration ensures that no value is present for ExternalIntegration, not even an explicit nil
 ### GetStatus
 
-`func (o *SoftwareImageFileRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *SoftwareImageFileRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *SoftwareImageFileRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareImageFileRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *SoftwareImageFileRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *SoftwareImageFileRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -344,20 +344,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *SoftwareImageFileRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *SoftwareImageFileRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *SoftwareImageFileRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareImageFileRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *SoftwareImageFileRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *SoftwareImageFileRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

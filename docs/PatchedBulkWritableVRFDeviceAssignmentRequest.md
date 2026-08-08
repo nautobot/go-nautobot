@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Vrf** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Vrf** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualDeviceContext** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
@@ -113,20 +113,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetVrf
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrf() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrf() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVrf(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableVRFDeviceAssignmentRequest) SetVrf(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetVrf sets Vrf field to given value.
 

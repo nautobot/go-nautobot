@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **ObjectUnderReviewContentType** | Pointer to **string** |  | [optional] 
 **ObjectUnderReviewObjectId** | Pointer to **string** |  | [optional] 
 **CurrentState** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | [optional] 
-**ApprovalWorkflowDefinition** | Pointer to [**NullableApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
+**ApprovalWorkflowDefinition** | Pointer to [**ApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
@@ -157,16 +157,6 @@ SetApprovalWorkflowDefinition sets ApprovalWorkflowDefinition field to given val
 
 HasApprovalWorkflowDefinition returns a boolean if a field has been set.
 
-### SetApprovalWorkflowDefinitionNil
-
-`func (o *PatchedApprovalWorkflowRequest) SetApprovalWorkflowDefinitionNil(b bool)`
-
- SetApprovalWorkflowDefinitionNil sets the value for ApprovalWorkflowDefinition to be an explicit nil
-
-### UnsetApprovalWorkflowDefinition
-`func (o *PatchedApprovalWorkflowRequest) UnsetApprovalWorkflowDefinition()`
-
-UnsetApprovalWorkflowDefinition ensures that no value is present for ApprovalWorkflowDefinition, not even an explicit nil
 ### GetUser
 
 `func (o *PatchedApprovalWorkflowRequest) GetUser() ApprovalWorkflowUser`

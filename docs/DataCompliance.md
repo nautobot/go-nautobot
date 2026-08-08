@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **ValidatedAttributeValue** | Pointer to **string** |  | [optional] 
 **Valid** | **bool** |  | 
 **Message** | Pointer to **string** |  | [optional] 
-**ContentType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**ContentType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **NotesUrl** | **string** |  | [readonly] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 
@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewDataCompliance
 
-`func NewDataCompliance(objectType string, display string, url string, naturalSlug string, complianceClassName string, lastValidationDate time.Time, objectId string, valid bool, contentType BulkWritableCableRequestStatus, notesUrl string, ) *DataCompliance`
+`func NewDataCompliance(objectType string, display string, url string, naturalSlug string, complianceClassName string, lastValidationDate time.Time, objectId string, valid bool, contentType ApprovalWorkflowStageResponseApprovalWorkflowStage, notesUrl string, ) *DataCompliance`
 
 NewDataCompliance instantiates a new DataCompliance object
 This constructor will assign default values to properties that have it defined,
@@ -327,20 +327,20 @@ HasMessage returns a boolean if a field has been set.
 
 ### GetContentType
 
-`func (o *DataCompliance) GetContentType() BulkWritableCableRequestStatus`
+`func (o *DataCompliance) GetContentType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetContentType returns the ContentType field if non-nil, zero value otherwise.
 
 ### GetContentTypeOk
 
-`func (o *DataCompliance) GetContentTypeOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *DataCompliance) GetContentTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetContentTypeOk returns a tuple with the ContentType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContentType
 
-`func (o *DataCompliance) SetContentType(v BulkWritableCableRequestStatus)`
+`func (o *DataCompliance) SetContentType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetContentType sets ContentType field to given value.
 

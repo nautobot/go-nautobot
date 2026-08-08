@@ -7,16 +7,19 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
-**User** | [**User**](User.md) |  | [readonly] 
+**Url** | **string** |  | [readonly] 
+**NaturalSlug** | **string** |  | [readonly] 
 **Comments** | Pointer to **string** | User comments to explain the decision that he/she made | [optional] 
-**State** | [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | User response to this approval workflow stage instance. Eligible values are: Pending, Comment, Approved, Denied. | [readonly] 
+**State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | User response to this approval workflow stage instance. Eligible values are: Pending, Comment, Approved, Denied. | [optional] 
+**ApprovalWorkflowStage** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**User** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 
 ## Methods
 
 ### NewApprovalWorkflowStageResponse
 
-`func NewApprovalWorkflowStageResponse(objectType string, display string, user User, state ApprovalWorkflowStateChoices, lastUpdated NullableTime, ) *ApprovalWorkflowStageResponse`
+`func NewApprovalWorkflowStageResponse(objectType string, display string, url string, naturalSlug string, approvalWorkflowStage ApprovalWorkflowStageResponseApprovalWorkflowStage, user ApprovalWorkflowStageResponseApprovalWorkflowStage, lastUpdated NullableTime, ) *ApprovalWorkflowStageResponse`
 
 NewApprovalWorkflowStageResponse instantiates a new ApprovalWorkflowStageResponse object
 This constructor will assign default values to properties that have it defined,
@@ -96,24 +99,44 @@ and a boolean to check if the value has been set.
 SetDisplay sets Display field to given value.
 
 
-### GetUser
+### GetUrl
 
-`func (o *ApprovalWorkflowStageResponse) GetUser() User`
+`func (o *ApprovalWorkflowStageResponse) GetUrl() string`
 
-GetUser returns the User field if non-nil, zero value otherwise.
+GetUrl returns the Url field if non-nil, zero value otherwise.
 
-### GetUserOk
+### GetUrlOk
 
-`func (o *ApprovalWorkflowStageResponse) GetUserOk() (*User, bool)`
+`func (o *ApprovalWorkflowStageResponse) GetUrlOk() (*string, bool)`
 
-GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
+GetUrlOk returns a tuple with the Url field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetUser
+### SetUrl
 
-`func (o *ApprovalWorkflowStageResponse) SetUser(v User)`
+`func (o *ApprovalWorkflowStageResponse) SetUrl(v string)`
 
-SetUser sets User field to given value.
+SetUrl sets Url field to given value.
+
+
+### GetNaturalSlug
+
+`func (o *ApprovalWorkflowStageResponse) GetNaturalSlug() string`
+
+GetNaturalSlug returns the NaturalSlug field if non-nil, zero value otherwise.
+
+### GetNaturalSlugOk
+
+`func (o *ApprovalWorkflowStageResponse) GetNaturalSlugOk() (*string, bool)`
+
+GetNaturalSlugOk returns a tuple with the NaturalSlug field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNaturalSlug
+
+`func (o *ApprovalWorkflowStageResponse) SetNaturalSlug(v string)`
+
+SetNaturalSlug sets NaturalSlug field to given value.
 
 
 ### GetComments
@@ -159,6 +182,51 @@ and a boolean to check if the value has been set.
 `func (o *ApprovalWorkflowStageResponse) SetState(v ApprovalWorkflowStateChoices)`
 
 SetState sets State field to given value.
+
+### HasState
+
+`func (o *ApprovalWorkflowStageResponse) HasState() bool`
+
+HasState returns a boolean if a field has been set.
+
+### GetApprovalWorkflowStage
+
+`func (o *ApprovalWorkflowStageResponse) GetApprovalWorkflowStage() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+
+GetApprovalWorkflowStage returns the ApprovalWorkflowStage field if non-nil, zero value otherwise.
+
+### GetApprovalWorkflowStageOk
+
+`func (o *ApprovalWorkflowStageResponse) GetApprovalWorkflowStageOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+
+GetApprovalWorkflowStageOk returns a tuple with the ApprovalWorkflowStage field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetApprovalWorkflowStage
+
+`func (o *ApprovalWorkflowStageResponse) SetApprovalWorkflowStage(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+
+SetApprovalWorkflowStage sets ApprovalWorkflowStage field to given value.
+
+
+### GetUser
+
+`func (o *ApprovalWorkflowStageResponse) GetUser() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+
+GetUser returns the User field if non-nil, zero value otherwise.
+
+### GetUserOk
+
+`func (o *ApprovalWorkflowStageResponse) GetUserOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+
+GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetUser
+
+`func (o *ApprovalWorkflowStageResponse) SetUser(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+
+SetUser sets User field to given value.
 
 
 ### GetLastUpdated

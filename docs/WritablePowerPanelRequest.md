@@ -9,17 +9,17 @@ Name | Type | Description | Notes
 **PanelType** | Pointer to [**PatchedWritablePowerPanelRequestPanelType**](PatchedWritablePowerPanelRequestPanelType.md) |  | [optional] 
 **BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
 **PowerPath** | Pointer to [**PatchedWritablePowerFeedRequestPowerPath**](PatchedWritablePowerFeedRequestPowerPath.md) |  | [optional] 
-**Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Location** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **RackGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritablePowerPanelRequest
 
-`func NewWritablePowerPanelRequest(name string, location BulkWritableCableRequestStatus, ) *WritablePowerPanelRequest`
+`func NewWritablePowerPanelRequest(name string, location ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritablePowerPanelRequest`
 
 NewWritablePowerPanelRequest instantiates a new WritablePowerPanelRequest object
 This constructor will assign default values to properties that have it defined,
@@ -166,20 +166,20 @@ HasPowerPath returns a boolean if a field has been set.
 
 ### GetLocation
 
-`func (o *WritablePowerPanelRequest) GetLocation() BulkWritableCableRequestStatus`
+`func (o *WritablePowerPanelRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *WritablePowerPanelRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *WritablePowerPanelRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *WritablePowerPanelRequest) SetLocation(v BulkWritableCableRequestStatus)`
+`func (o *WritablePowerPanelRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetLocation sets Location field to given value.
 
@@ -271,20 +271,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritablePowerPanelRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *WritablePowerPanelRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritablePowerPanelRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *WritablePowerPanelRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritablePowerPanelRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *WritablePowerPanelRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

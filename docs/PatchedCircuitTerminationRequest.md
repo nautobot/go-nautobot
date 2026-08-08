@@ -11,11 +11,11 @@ Name | Type | Description | Notes
 **XconnectId** | Pointer to **string** |  | [optional] 
 **PpInfo** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Circuit** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Circuit** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CloudNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -235,20 +235,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetCircuit
 
-`func (o *PatchedCircuitTerminationRequest) GetCircuit() BulkWritableCableRequestStatus`
+`func (o *PatchedCircuitTerminationRequest) GetCircuit() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetCircuit returns the Circuit field if non-nil, zero value otherwise.
 
 ### GetCircuitOk
 
-`func (o *PatchedCircuitTerminationRequest) GetCircuitOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedCircuitTerminationRequest) GetCircuitOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetCircuitOk returns a tuple with the Circuit field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCircuit
 
-`func (o *PatchedCircuitTerminationRequest) SetCircuit(v BulkWritableCableRequestStatus)`
+`func (o *PatchedCircuitTerminationRequest) SetCircuit(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetCircuit sets Circuit field to given value.
 
@@ -365,20 +365,20 @@ HasCloudNetwork returns a boolean if a field has been set.
 UnsetCloudNetwork ensures that no value is present for CloudNetwork, not even an explicit nil
 ### GetTags
 
-`func (o *PatchedCircuitTerminationRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *PatchedCircuitTerminationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedCircuitTerminationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedCircuitTerminationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedCircuitTerminationRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *PatchedCircuitTerminationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

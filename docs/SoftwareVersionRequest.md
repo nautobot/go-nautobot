@@ -12,17 +12,17 @@ Name | Type | Description | Notes
 **DocumentationUrl** | Pointer to **string** |  | [optional] 
 **LongTermSupport** | Pointer to **bool** | Is a Long Term Support version | [optional] 
 **PreRelease** | Pointer to **bool** | Is a Pre-Release version | [optional] 
-**Platform** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
-**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Platform** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 
 ## Methods
 
 ### NewSoftwareVersionRequest
 
-`func NewSoftwareVersionRequest(version string, platform BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *SoftwareVersionRequest`
+`func NewSoftwareVersionRequest(version string, platform ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *SoftwareVersionRequest`
 
 NewSoftwareVersionRequest instantiates a new SoftwareVersionRequest object
 This constructor will assign default values to properties that have it defined,
@@ -254,40 +254,40 @@ HasPreRelease returns a boolean if a field has been set.
 
 ### GetPlatform
 
-`func (o *SoftwareVersionRequest) GetPlatform() BulkWritableCableRequestStatus`
+`func (o *SoftwareVersionRequest) GetPlatform() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetPlatform returns the Platform field if non-nil, zero value otherwise.
 
 ### GetPlatformOk
 
-`func (o *SoftwareVersionRequest) GetPlatformOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareVersionRequest) GetPlatformOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetPlatformOk returns a tuple with the Platform field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlatform
 
-`func (o *SoftwareVersionRequest) SetPlatform(v BulkWritableCableRequestStatus)`
+`func (o *SoftwareVersionRequest) SetPlatform(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetPlatform sets Platform field to given value.
 
 
 ### GetStatus
 
-`func (o *SoftwareVersionRequest) GetStatus() BulkWritableCableRequestStatus`
+`func (o *SoftwareVersionRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *SoftwareVersionRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareVersionRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *SoftwareVersionRequest) SetStatus(v BulkWritableCableRequestStatus)`
+`func (o *SoftwareVersionRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetStatus sets Status field to given value.
 
@@ -344,20 +344,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *SoftwareVersionRequest) GetTags() []BulkWritableCableRequestStatus`
+`func (o *SoftwareVersionRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *SoftwareVersionRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
+`func (o *SoftwareVersionRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *SoftwareVersionRequest) SetTags(v []BulkWritableCableRequestStatus)`
+`func (o *SoftwareVersionRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetTags sets Tags field to given value.
 

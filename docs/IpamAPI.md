@@ -314,7 +314,7 @@ import (
 )
 
 func main() {
-	bulkWritableIPAddressToInterfaceRequest := []openapiclient.BulkWritableIPAddressToInterfaceRequest{*openapiclient.NewBulkWritableIPAddressToInterfaceRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableIPAddressToInterfaceRequest | 
+	bulkWritableIPAddressToInterfaceRequest := []openapiclient.BulkWritableIPAddressToInterfaceRequest{*openapiclient.NewBulkWritableIPAddressToInterfaceRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableIPAddressToInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -382,7 +382,7 @@ import (
 )
 
 func main() {
-	iPAddressToInterfaceRequest := *openapiclient.NewIPAddressToInterfaceRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // IPAddressToInterfaceRequest | 
+	iPAddressToInterfaceRequest := *openapiclient.NewIPAddressToInterfaceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // IPAddressToInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -942,7 +942,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this IP Address Assignment.
-	iPAddressToInterfaceRequest := *openapiclient.NewIPAddressToInterfaceRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // IPAddressToInterfaceRequest | 
+	iPAddressToInterfaceRequest := *openapiclient.NewIPAddressToInterfaceRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // IPAddressToInterfaceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1149,7 +1149,7 @@ import (
 )
 
 func main() {
-	bulkWritableIPAddressRequest := []openapiclient.BulkWritableIPAddressRequest{*openapiclient.NewBulkWritableIPAddressRequest("Id_example", "Address_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableIPAddressRequest | 
+	bulkWritableIPAddressRequest := []openapiclient.BulkWritableIPAddressRequest{*openapiclient.NewBulkWritableIPAddressRequest("Id_example", "Address_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableIPAddressRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1217,7 +1217,7 @@ import (
 )
 
 func main() {
-	iPAddressRequest := *openapiclient.NewIPAddressRequest("Address_example", *openapiclient.NewBulkWritableCableRequestStatus()) // IPAddressRequest | 
+	iPAddressRequest := *openapiclient.NewIPAddressRequest("Address_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // IPAddressRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1460,7 +1460,7 @@ func main() {
 	tenantId := []*string{"Inner_example"} // []*string | Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
 	tenantIdIsnull := true // bool | Tenant (ID) (deprecated, use \"tenant\" filter instead) is null (optional)
 	tenantIdN := []*string{"Inner_example"} // []*string | Exclude Tenant (ID) (deprecated, use \"tenant\" filter instead) (optional)
-	type_ := []openapiclient.IpamIpAddressesListTypeParameterInner{openapiclient.ipam_ip_addresses_list_type_parameter_inner("dhcp")} // []IpamIpAddressesListTypeParameterInner |  (optional)
+	type_ := []string{"Inner_example"} // []string |  (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -1612,7 +1612,7 @@ Name | Type | Description  | Notes
  **tenantId** | **[]string** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
  **tenantIdIsnull** | **bool** | Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) is null | 
  **tenantIdN** | **[]string** | Exclude Tenant (ID) (deprecated, use \&quot;tenant\&quot; filter instead) | 
- **type_** | [**[]IpamIpAddressesListTypeParameterInner**](IpamIpAddressesListTypeParameterInner.md) |  | 
+ **type_** | **[]string** |  | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -1981,7 +1981,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this IP address.
-	iPAddressRequest := *openapiclient.NewIPAddressRequest("Address_example", *openapiclient.NewBulkWritableCableRequestStatus()) // IPAddressRequest | 
+	iPAddressRequest := *openapiclient.NewIPAddressRequest("Address_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // IPAddressRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3119,7 +3119,7 @@ import (
 )
 
 func main() {
-	bulkWritablePrefixLocationAssignmentRequest := []openapiclient.BulkWritablePrefixLocationAssignmentRequest{*openapiclient.NewBulkWritablePrefixLocationAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePrefixLocationAssignmentRequest | 
+	bulkWritablePrefixLocationAssignmentRequest := []openapiclient.BulkWritablePrefixLocationAssignmentRequest{*openapiclient.NewBulkWritablePrefixLocationAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePrefixLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3187,7 +3187,7 @@ import (
 )
 
 func main() {
-	prefixLocationAssignmentRequest := *openapiclient.NewPrefixLocationAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // PrefixLocationAssignmentRequest | 
+	prefixLocationAssignmentRequest := *openapiclient.NewPrefixLocationAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // PrefixLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3571,7 +3571,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix location assignment.
-	prefixLocationAssignmentRequest := *openapiclient.NewPrefixLocationAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // PrefixLocationAssignmentRequest | 
+	prefixLocationAssignmentRequest := *openapiclient.NewPrefixLocationAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // PrefixLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3645,7 +3645,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this IP address.
-	iPAllocationRequest := []openapiclient.IPAllocationRequest{*openapiclient.NewIPAllocationRequest(*openapiclient.NewBulkWritableCableRequestStatus())} // []IPAllocationRequest | 
+	iPAllocationRequest := []openapiclient.IPAllocationRequest{*openapiclient.NewIPAllocationRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []IPAllocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
@@ -3815,7 +3815,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix.
-	prefixLengthRequest := *openapiclient.NewPrefixLengthRequest(int32(123), *openapiclient.NewBulkWritableCableRequestStatus()) // PrefixLengthRequest | 
+	prefixLengthRequest := *openapiclient.NewPrefixLengthRequest(int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // PrefixLengthRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
@@ -4110,7 +4110,7 @@ import (
 )
 
 func main() {
-	bulkWritablePrefixRequest := []openapiclient.BulkWritablePrefixRequest{*openapiclient.NewBulkWritablePrefixRequest("Id_example", "Prefix_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritablePrefixRequest | 
+	bulkWritablePrefixRequest := []openapiclient.BulkWritablePrefixRequest{*openapiclient.NewBulkWritablePrefixRequest("Id_example", "Prefix_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritablePrefixRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4178,7 +4178,7 @@ import (
 )
 
 func main() {
-	writablePrefixRequest := *openapiclient.NewWritablePrefixRequest("Prefix_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePrefixRequest | 
+	writablePrefixRequest := *openapiclient.NewWritablePrefixRequest("Prefix_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePrefixRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4297,7 +4297,7 @@ Name | Type | Description  | Notes
 
 ## IpamPrefixesList
 
-> PaginatedPrefixList IpamPrefixesList(ctx).Ancestors(ancestors).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).MaxDepth(maxDepth).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixAndDescendants(prefixAndDescendants).PrefixExact(prefixExact).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).VpnTunnelEndpoints(vpnTunnelEndpoints).VpnTunnelEndpointsIsnull(vpnTunnelEndpointsIsnull).VpnTunnelEndpointsN(vpnTunnelEndpointsN).VpnTunnelEndpointsNameContains(vpnTunnelEndpointsNameContains).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedPrefixList IpamPrefixesList(ctx).Ancestors(ancestors).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixExact(prefixExact).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).VpnTunnelEndpoints(vpnTunnelEndpoints).VpnTunnelEndpointsIsnull(vpnTunnelEndpointsIsnull).VpnTunnelEndpointsN(vpnTunnelEndpointsN).VpnTunnelEndpointsNameContains(vpnTunnelEndpointsNameContains).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4358,7 +4358,6 @@ func main() {
 	locationN := []string{"Inner_example"} // []string |  (optional)
 	locations := []string{"Inner_example"} // []string |  (optional)
 	locationsN := []string{"Inner_example"} // []string |  (optional)
-	maxDepth := float32(8.14) // float32 | Maximum nesting depth within parent Prefixes (optional)
 	namespace := []string{"Inner_example"} // []string |  (optional)
 	namespaceN := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
@@ -4366,7 +4365,6 @@ func main() {
 	parentIsnull := true // bool | Prefix (ID or prefix string) is null (optional)
 	parentN := []string{"Inner_example"} // []string |  (optional)
 	prefix := []string{"Inner_example"} // []string | Prefix (optional)
-	prefixAndDescendants := []string{"Inner_example"} // []string |  (optional)
 	prefixExact := []string{"Inner_example"} // []string | Prefix (exact, strict) (optional)
 	prefixLength := []int32{int32(123)} // []int32 |  (optional)
 	prefixLengthGt := []int32{int32(123)} // []int32 |  (optional)
@@ -4438,7 +4436,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.IpamAPI.IpamPrefixesList(context.Background()).Ancestors(ancestors).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).MaxDepth(maxDepth).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixAndDescendants(prefixAndDescendants).PrefixExact(prefixExact).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).VpnTunnelEndpoints(vpnTunnelEndpoints).VpnTunnelEndpointsIsnull(vpnTunnelEndpointsIsnull).VpnTunnelEndpointsN(vpnTunnelEndpointsN).VpnTunnelEndpointsNameContains(vpnTunnelEndpointsNameContains).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.IpamAPI.IpamPrefixesList(context.Background()).Ancestors(ancestors).CloudNetworks(cloudNetworks).CloudNetworksIsnull(cloudNetworksIsnull).CloudNetworksN(cloudNetworksN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Contains(contains).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DateAllocated(dateAllocated).DateAllocatedGt(dateAllocatedGt).DateAllocatedGte(dateAllocatedGte).DateAllocatedIsnull(dateAllocatedIsnull).DateAllocatedLt(dateAllocatedLt).DateAllocatedLte(dateAllocatedLte).DateAllocatedN(dateAllocatedN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasRir(hasRir).Id(id).IdN(idN).IpVersion(ipVersion).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Location(location).LocationN(locationN).Locations(locations).LocationsN(locationsN).Namespace(namespace).NamespaceN(namespaceN).Offset(offset).Parent(parent).ParentIsnull(parentIsnull).ParentN(parentN).Prefix(prefix).PrefixExact(prefixExact).PrefixLength(prefixLength).PrefixLengthGt(prefixLengthGt).PrefixLengthGte(prefixLengthGte).PrefixLengthLt(prefixLengthLt).PrefixLengthLte(prefixLengthLte).PrefixLengthN(prefixLengthN).PresentInVrf(presentInVrf).PresentInVrfId(presentInVrfId).Q(q).Rir(rir).RirIsnull(rirIsnull).RirN(rirN).Role(role).RoleIsnull(roleIsnull).RoleN(roleN).Sort(sort).Status(status).StatusN(statusN).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Type_(type_).TypeIc(typeIc).TypeIe(typeIe).TypeIew(typeIew).TypeIre(typeIre).TypeIsw(typeIsw).TypeN(typeN).TypeNic(typeNic).TypeNie(typeNie).TypeNiew(typeNiew).TypeNire(typeNire).TypeNisw(typeNisw).TypeNre(typeNre).TypeRe(typeRe).VlanId(vlanId).VlanIdIsnull(vlanIdIsnull).VlanIdN(vlanIdN).VlanVid(vlanVid).VlanVidGt(vlanVidGt).VlanVidGte(vlanVidGte).VlanVidLt(vlanVidLt).VlanVidLte(vlanVidLte).VlanVidN(vlanVidN).VpnTunnelEndpoints(vpnTunnelEndpoints).VpnTunnelEndpointsIsnull(vpnTunnelEndpointsIsnull).VpnTunnelEndpointsN(vpnTunnelEndpointsN).VpnTunnelEndpointsNameContains(vpnTunnelEndpointsNameContains).Vrfs(vrfs).VrfsIsnull(vrfsIsnull).VrfsN(vrfsN).Within(within).WithinInclude(withinInclude).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `IpamAPI.IpamPrefixesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4500,7 +4498,6 @@ Name | Type | Description  | Notes
  **locationN** | **[]string** |  | 
  **locations** | **[]string** |  | 
  **locationsN** | **[]string** |  | 
- **maxDepth** | **float32** | Maximum nesting depth within parent Prefixes | 
  **namespace** | **[]string** |  | 
  **namespaceN** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
@@ -4508,7 +4505,6 @@ Name | Type | Description  | Notes
  **parentIsnull** | **bool** | Prefix (ID or prefix string) is null | 
  **parentN** | **[]string** |  | 
  **prefix** | **[]string** | Prefix | 
- **prefixAndDescendants** | **[]string** |  | 
  **prefixExact** | **[]string** | Prefix (exact, strict) | 
  **prefixLength** | **[]int32** |  | 
  **prefixLengthGt** | **[]int32** |  | 
@@ -4922,7 +4918,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this prefix.
-	writablePrefixRequest := *openapiclient.NewWritablePrefixRequest("Prefix_example", *openapiclient.NewBulkWritableCableRequestStatus()) // WritablePrefixRequest | 
+	writablePrefixRequest := *openapiclient.NewWritablePrefixRequest("Prefix_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // WritablePrefixRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -7190,7 +7186,7 @@ func main() {
 	nameRe := []string{"Inner_example"} // []string |  (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
 	ports := float32(8.14) // float32 |  (optional)
-	protocol := []openapiclient.IpamServicesListProtocolParameterInner{openapiclient.ipam_services_list_protocol_parameter_inner("tcp")} // []IpamServicesListProtocolParameterInner |  (optional)
+	protocol := []string{"Inner_example"} // []string |  (optional)
 	protocolIc := []string{"Inner_example"} // []string |  (optional)
 	protocolIe := []string{"Inner_example"} // []string |  (optional)
 	protocolIew := []string{"Inner_example"} // []string |  (optional)
@@ -7283,7 +7279,7 @@ Name | Type | Description  | Notes
  **nameRe** | **[]string** |  | 
  **offset** | **int32** | The initial index from which to return the results. | 
  **ports** | **float32** |  | 
- **protocol** | [**[]IpamServicesListProtocolParameterInner**](IpamServicesListProtocolParameterInner.md) |  | 
+ **protocol** | **[]string** |  | 
  **protocolIc** | **[]string** |  | 
  **protocolIe** | **[]string** |  | 
  **protocolIew** | **[]string** |  | 
@@ -7729,7 +7725,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN.
-	vLANAllocationRequest := []openapiclient.VLANAllocationRequest{*openapiclient.NewVLANAllocationRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []VLANAllocationRequest | 
+	vLANAllocationRequest := []openapiclient.VLANAllocationRequest{*openapiclient.NewVLANAllocationRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []VLANAllocationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
 	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
@@ -8937,7 +8933,7 @@ import (
 )
 
 func main() {
-	bulkWritableVLANLocationAssignmentRequest := []openapiclient.BulkWritableVLANLocationAssignmentRequest{*openapiclient.NewBulkWritableVLANLocationAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVLANLocationAssignmentRequest | 
+	bulkWritableVLANLocationAssignmentRequest := []openapiclient.BulkWritableVLANLocationAssignmentRequest{*openapiclient.NewBulkWritableVLANLocationAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVLANLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9005,7 +9001,7 @@ import (
 )
 
 func main() {
-	vLANLocationAssignmentRequest := *openapiclient.NewVLANLocationAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VLANLocationAssignmentRequest | 
+	vLANLocationAssignmentRequest := *openapiclient.NewVLANLocationAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VLANLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9389,7 +9385,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this vlan location assignment.
-	vLANLocationAssignmentRequest := *openapiclient.NewVLANLocationAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VLANLocationAssignmentRequest | 
+	vLANLocationAssignmentRequest := *openapiclient.NewVLANLocationAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VLANLocationAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9596,7 +9592,7 @@ import (
 )
 
 func main() {
-	bulkWritableVLANRequest := []openapiclient.BulkWritableVLANRequest{*openapiclient.NewBulkWritableVLANRequest("Id_example", int32(123), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVLANRequest | 
+	bulkWritableVLANRequest := []openapiclient.BulkWritableVLANRequest{*openapiclient.NewBulkWritableVLANRequest("Id_example", int32(123), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVLANRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -9664,7 +9660,7 @@ import (
 )
 
 func main() {
-	vLANRequest := *openapiclient.NewVLANRequest(int32(123), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // VLANRequest | 
+	vLANRequest := *openapiclient.NewVLANRequest(int32(123), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VLANRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10324,7 +10320,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VLAN.
-	vLANRequest := *openapiclient.NewVLANRequest(int32(123), "Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // VLANRequest | 
+	vLANRequest := *openapiclient.NewVLANRequest(int32(123), "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VLANRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10531,7 +10527,7 @@ import (
 )
 
 func main() {
-	bulkWritableVRFDeviceAssignmentRequest := []openapiclient.BulkWritableVRFDeviceAssignmentRequest{*openapiclient.NewBulkWritableVRFDeviceAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVRFDeviceAssignmentRequest | 
+	bulkWritableVRFDeviceAssignmentRequest := []openapiclient.BulkWritableVRFDeviceAssignmentRequest{*openapiclient.NewBulkWritableVRFDeviceAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVRFDeviceAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10599,7 +10595,7 @@ import (
 )
 
 func main() {
-	vRFDeviceAssignmentRequest := *openapiclient.NewVRFDeviceAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // VRFDeviceAssignmentRequest | 
+	vRFDeviceAssignmentRequest := *openapiclient.NewVRFDeviceAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VRFDeviceAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11055,7 +11051,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-device assignment.
-	vRFDeviceAssignmentRequest := *openapiclient.NewVRFDeviceAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus()) // VRFDeviceAssignmentRequest | 
+	vRFDeviceAssignmentRequest := *openapiclient.NewVRFDeviceAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VRFDeviceAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11262,7 +11258,7 @@ import (
 )
 
 func main() {
-	bulkWritableVRFPrefixAssignmentRequest := []openapiclient.BulkWritableVRFPrefixAssignmentRequest{*openapiclient.NewBulkWritableVRFPrefixAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableVRFPrefixAssignmentRequest | 
+	bulkWritableVRFPrefixAssignmentRequest := []openapiclient.BulkWritableVRFPrefixAssignmentRequest{*openapiclient.NewBulkWritableVRFPrefixAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableVRFPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11330,7 +11326,7 @@ import (
 )
 
 func main() {
-	vRFPrefixAssignmentRequest := *openapiclient.NewVRFPrefixAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VRFPrefixAssignmentRequest | 
+	vRFPrefixAssignmentRequest := *openapiclient.NewVRFPrefixAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VRFPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11714,7 +11710,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this VRF-prefix assignment.
-	vRFPrefixAssignmentRequest := *openapiclient.NewVRFPrefixAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // VRFPrefixAssignmentRequest | 
+	vRFPrefixAssignmentRequest := *openapiclient.NewVRFPrefixAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // VRFPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

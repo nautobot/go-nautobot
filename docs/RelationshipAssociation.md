@@ -13,13 +13,13 @@ Name | Type | Description | Notes
 **DestinationType** | **string** |  | 
 **SourceId** | **string** |  | 
 **DestinationId** | **string** |  | 
-**Relationship** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Relationship** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
 
 ## Methods
 
 ### NewRelationshipAssociation
 
-`func NewRelationshipAssociation(objectType string, display string, url string, naturalSlug string, sourceType string, destinationType string, sourceId string, destinationId string, relationship BulkWritableCableRequestStatus, ) *RelationshipAssociation`
+`func NewRelationshipAssociation(objectType string, display string, url string, naturalSlug string, sourceType string, destinationType string, sourceId string, destinationId string, relationship ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *RelationshipAssociation`
 
 NewRelationshipAssociation instantiates a new RelationshipAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -221,20 +221,20 @@ SetDestinationId sets DestinationId field to given value.
 
 ### GetRelationship
 
-`func (o *RelationshipAssociation) GetRelationship() BulkWritableCableRequestStatus`
+`func (o *RelationshipAssociation) GetRelationship() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetRelationship returns the Relationship field if non-nil, zero value otherwise.
 
 ### GetRelationshipOk
 
-`func (o *RelationshipAssociation) GetRelationshipOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *RelationshipAssociation) GetRelationshipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetRelationshipOk returns a tuple with the Relationship field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationship
 
-`func (o *RelationshipAssociation) SetRelationship(v BulkWritableCableRequestStatus)`
+`func (o *RelationshipAssociation) SetRelationship(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetRelationship sets Relationship field to given value.
 

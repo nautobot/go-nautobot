@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**ControllerManagedDeviceGroup** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
-**WirelessNetwork** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ControllerManagedDeviceGroup** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**WirelessNetwork** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
 **Vlan** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
 ## Methods
@@ -50,20 +50,20 @@ SetId sets Id field to given value.
 
 ### GetControllerManagedDeviceGroup
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroup() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroupOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetControllerManagedDeviceGroup(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetControllerManagedDeviceGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
@@ -75,20 +75,20 @@ HasControllerManagedDeviceGroup returns a boolean if a field has been set.
 
 ### GetWirelessNetwork
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetwork() BulkWritableCableRequestStatus`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetwork() ApprovalWorkflowStageResponseApprovalWorkflowStage`
 
 GetWirelessNetwork returns the WirelessNetwork field if non-nil, zero value otherwise.
 
 ### GetWirelessNetworkOk
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetworkOk() (*BulkWritableCableRequestStatus, bool)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) GetWirelessNetworkOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
 
 GetWirelessNetworkOk returns a tuple with the WirelessNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetWirelessNetwork
 
-`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetWirelessNetwork(v BulkWritableCableRequestStatus)`
+`func (o *PatchedBulkWritableControllerManagedDeviceGroupWirelessNetworkAssignmentRequest) SetWirelessNetwork(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
 
 SetWirelessNetwork sets WirelessNetwork field to given value.
 
