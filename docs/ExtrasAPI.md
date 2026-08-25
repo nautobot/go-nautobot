@@ -26,15 +26,6 @@ Method | HTTP request | Description
 [**ExtrasApprovalWorkflowStageDefinitionsPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsPartialUpdate) | **Patch** /extras/approval-workflow-stage-definitions/{id}/ | 
 [**ExtrasApprovalWorkflowStageDefinitionsRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsRetrieve) | **Get** /extras/approval-workflow-stage-definitions/{id}/ | 
 [**ExtrasApprovalWorkflowStageDefinitionsUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageDefinitionsUpdate) | **Put** /extras/approval-workflow-stage-definitions/{id}/ | 
-[**ExtrasApprovalWorkflowStageResponsesBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesBulkDestroy) | **Delete** /extras/approval-workflow-stage-responses/ | 
-[**ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate) | **Patch** /extras/approval-workflow-stage-responses/ | 
-[**ExtrasApprovalWorkflowStageResponsesBulkUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesBulkUpdate) | **Put** /extras/approval-workflow-stage-responses/ | 
-[**ExtrasApprovalWorkflowStageResponsesCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesCreate) | **Post** /extras/approval-workflow-stage-responses/ | 
-[**ExtrasApprovalWorkflowStageResponsesDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesDestroy) | **Delete** /extras/approval-workflow-stage-responses/{id}/ | 
-[**ExtrasApprovalWorkflowStageResponsesList**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesList) | **Get** /extras/approval-workflow-stage-responses/ | 
-[**ExtrasApprovalWorkflowStageResponsesPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesPartialUpdate) | **Patch** /extras/approval-workflow-stage-responses/{id}/ | 
-[**ExtrasApprovalWorkflowStageResponsesRetrieve**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesRetrieve) | **Get** /extras/approval-workflow-stage-responses/{id}/ | 
-[**ExtrasApprovalWorkflowStageResponsesUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStageResponsesUpdate) | **Put** /extras/approval-workflow-stage-responses/{id}/ | 
 [**ExtrasApprovalWorkflowStagesApproveCreate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesApproveCreate) | **Post** /extras/approval-workflow-stages/{id}/approve/ | 
 [**ExtrasApprovalWorkflowStagesBulkDestroy**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesBulkDestroy) | **Delete** /extras/approval-workflow-stages/ | 
 [**ExtrasApprovalWorkflowStagesBulkPartialUpdate**](ExtrasAPI.md#ExtrasApprovalWorkflowStagesBulkPartialUpdate) | **Patch** /extras/approval-workflow-stages/ | 
@@ -2313,731 +2304,6 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## ExtrasApprovalWorkflowStageResponsesBulkDestroy
-
-> ExtrasApprovalWorkflowStageResponsesBulkDestroy(ctx).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	bulkOperationRequest := []openapiclient.BulkOperationRequest{*openapiclient.NewBulkOperationRequest("Id_example")} // []BulkOperationRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkDestroy(context.Background()).BulkOperationRequest(bulkOperationRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkDestroy``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-}
-```
-
-### Path Parameters
-
-
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesBulkDestroyRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bulkOperationRequest** | [**[]BulkOperationRequest**](BulkOperationRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate
-
-> []ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate(ctx).PatchedBulkWritableApprovalWorkflowStageResponseRequest(patchedBulkWritableApprovalWorkflowStageResponseRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	patchedBulkWritableApprovalWorkflowStageResponseRequest := []openapiclient.PatchedBulkWritableApprovalWorkflowStageResponseRequest{*openapiclient.NewPatchedBulkWritableApprovalWorkflowStageResponseRequest("Id_example")} // []PatchedBulkWritableApprovalWorkflowStageResponseRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate(context.Background()).PatchedBulkWritableApprovalWorkflowStageResponseRequest(patchedBulkWritableApprovalWorkflowStageResponseRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate`: []ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkPartialUpdate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesBulkPartialUpdateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **patchedBulkWritableApprovalWorkflowStageResponseRequest** | [**[]PatchedBulkWritableApprovalWorkflowStageResponseRequest**](PatchedBulkWritableApprovalWorkflowStageResponseRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**[]ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesBulkUpdate
-
-> []ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesBulkUpdate(ctx).BulkWritableApprovalWorkflowStageResponseRequest(bulkWritableApprovalWorkflowStageResponseRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	bulkWritableApprovalWorkflowStageResponseRequest := []openapiclient.BulkWritableApprovalWorkflowStageResponseRequest{*openapiclient.NewBulkWritableApprovalWorkflowStageResponseRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableApprovalWorkflowStageResponseRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkUpdate(context.Background()).BulkWritableApprovalWorkflowStageResponseRequest(bulkWritableApprovalWorkflowStageResponseRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkUpdate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesBulkUpdate`: []ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesBulkUpdate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesBulkUpdateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bulkWritableApprovalWorkflowStageResponseRequest** | [**[]BulkWritableApprovalWorkflowStageResponseRequest**](BulkWritableApprovalWorkflowStageResponseRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**[]ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesCreate
-
-> ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesCreate(ctx).ApprovalWorkflowStageResponseRequest(approvalWorkflowStageResponseRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	approvalWorkflowStageResponseRequest := *openapiclient.NewApprovalWorkflowStageResponseRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ApprovalWorkflowStageResponseRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesCreate(context.Background()).ApprovalWorkflowStageResponseRequest(approvalWorkflowStageResponseRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesCreate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesCreate`: ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesCreate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesCreateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **approvalWorkflowStageResponseRequest** | [**ApprovalWorkflowStageResponseRequest**](ApprovalWorkflowStageResponseRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesDestroy
-
-> ExtrasApprovalWorkflowStageResponsesDestroy(ctx, id).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Response.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesDestroy(context.Background(), id).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesDestroy``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this Approval Workflow Stage Response. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesDestroyRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesList
-
-> PaginatedApprovalWorkflowStageResponseList ExtrasApprovalWorkflowStageResponsesList(ctx).ApprovalWorkflowStage(approvalWorkflowStage).ApprovalWorkflowStageN(approvalWorkflowStageN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-    "time"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	approvalWorkflowStage := []string{"Inner_example"} // []string |  (optional)
-	approvalWorkflowStageN := []string{"Inner_example"} // []string |  (optional)
-	comments := []string{"Inner_example"} // []string |  (optional)
-	commentsIc := []string{"Inner_example"} // []string |  (optional)
-	commentsIe := []string{"Inner_example"} // []string |  (optional)
-	commentsIew := []string{"Inner_example"} // []string |  (optional)
-	commentsIre := []string{"Inner_example"} // []string |  (optional)
-	commentsIsw := []string{"Inner_example"} // []string |  (optional)
-	commentsN := []string{"Inner_example"} // []string |  (optional)
-	commentsNic := []string{"Inner_example"} // []string |  (optional)
-	commentsNie := []string{"Inner_example"} // []string |  (optional)
-	commentsNiew := []string{"Inner_example"} // []string |  (optional)
-	commentsNire := []string{"Inner_example"} // []string |  (optional)
-	commentsNisw := []string{"Inner_example"} // []string |  (optional)
-	commentsNre := []string{"Inner_example"} // []string |  (optional)
-	commentsRe := []string{"Inner_example"} // []string |  (optional)
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
-	idN := []string{"Inner_example"} // []string |  (optional)
-	lastUpdated := []time.Time{time.Now()} // []time.Time |  (optional)
-	lastUpdatedGt := []time.Time{time.Now()} // []time.Time |  (optional)
-	lastUpdatedGte := []time.Time{time.Now()} // []time.Time |  (optional)
-	lastUpdatedIsnull := true // bool |  (optional)
-	lastUpdatedLt := []time.Time{time.Now()} // []time.Time |  (optional)
-	lastUpdatedLte := []time.Time{time.Now()} // []time.Time |  (optional)
-	lastUpdatedN := []time.Time{time.Now()} // []time.Time |  (optional)
-	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	offset := int32(56) // int32 | The initial index from which to return the results. (optional)
-	q := "q_example" // string | Search (optional)
-	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
-	state := []string{"Inner_example"} // []string | User response to this approval workflow stage instance. Eligible values are: Pending, Comment, Approved, Denied. (optional)
-	stateIc := []string{"Inner_example"} // []string |  (optional)
-	stateIe := []string{"Inner_example"} // []string |  (optional)
-	stateIew := []string{"Inner_example"} // []string |  (optional)
-	stateIre := []string{"Inner_example"} // []string |  (optional)
-	stateIsw := []string{"Inner_example"} // []string |  (optional)
-	stateN := []string{"Inner_example"} // []string |  (optional)
-	stateNic := []string{"Inner_example"} // []string |  (optional)
-	stateNie := []string{"Inner_example"} // []string |  (optional)
-	stateNiew := []string{"Inner_example"} // []string |  (optional)
-	stateNire := []string{"Inner_example"} // []string |  (optional)
-	stateNisw := []string{"Inner_example"} // []string |  (optional)
-	stateNre := []string{"Inner_example"} // []string |  (optional)
-	stateRe := []string{"Inner_example"} // []string |  (optional)
-	user := []string{"Inner_example"} // []string |  (optional)
-	userN := []string{"Inner_example"} // []string |  (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesList(context.Background()).ApprovalWorkflowStage(approvalWorkflowStage).ApprovalWorkflowStageN(approvalWorkflowStageN).Comments(comments).CommentsIc(commentsIc).CommentsIe(commentsIe).CommentsIew(commentsIew).CommentsIre(commentsIre).CommentsIsw(commentsIsw).CommentsN(commentsN).CommentsNic(commentsNic).CommentsNie(commentsNie).CommentsNiew(commentsNiew).CommentsNire(commentsNire).CommentsNisw(commentsNisw).CommentsNre(commentsNre).CommentsRe(commentsRe).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).User(user).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesList``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesList`: PaginatedApprovalWorkflowStageResponseList
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesList`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesListRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **approvalWorkflowStage** | **[]string** |  | 
- **approvalWorkflowStageN** | **[]string** |  | 
- **comments** | **[]string** |  | 
- **commentsIc** | **[]string** |  | 
- **commentsIe** | **[]string** |  | 
- **commentsIew** | **[]string** |  | 
- **commentsIre** | **[]string** |  | 
- **commentsIsw** | **[]string** |  | 
- **commentsN** | **[]string** |  | 
- **commentsNic** | **[]string** |  | 
- **commentsNie** | **[]string** |  | 
- **commentsNiew** | **[]string** |  | 
- **commentsNire** | **[]string** |  | 
- **commentsNisw** | **[]string** |  | 
- **commentsNre** | **[]string** |  | 
- **commentsRe** | **[]string** |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
- **idN** | **[]string** |  | 
- **lastUpdated** | [**[]time.Time**](time.Time.md) |  | 
- **lastUpdatedGt** | [**[]time.Time**](time.Time.md) |  | 
- **lastUpdatedGte** | [**[]time.Time**](time.Time.md) |  | 
- **lastUpdatedIsnull** | **bool** |  | 
- **lastUpdatedLt** | [**[]time.Time**](time.Time.md) |  | 
- **lastUpdatedLte** | [**[]time.Time**](time.Time.md) |  | 
- **lastUpdatedN** | [**[]time.Time**](time.Time.md) |  | 
- **limit** | **int32** | Number of results to return per page. | 
- **offset** | **int32** | The initial index from which to return the results. | 
- **q** | **string** | Search | 
- **sort** | **string** | Which field to use when ordering the results. | 
- **state** | **[]string** | User response to this approval workflow stage instance. Eligible values are: Pending, Comment, Approved, Denied. | 
- **stateIc** | **[]string** |  | 
- **stateIe** | **[]string** |  | 
- **stateIew** | **[]string** |  | 
- **stateIre** | **[]string** |  | 
- **stateIsw** | **[]string** |  | 
- **stateN** | **[]string** |  | 
- **stateNic** | **[]string** |  | 
- **stateNie** | **[]string** |  | 
- **stateNiew** | **[]string** |  | 
- **stateNire** | **[]string** |  | 
- **stateNisw** | **[]string** |  | 
- **stateNre** | **[]string** |  | 
- **stateRe** | **[]string** |  | 
- **user** | **[]string** |  | 
- **userN** | **[]string** |  | 
- **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
-
-### Return type
-
-[**PaginatedApprovalWorkflowStageResponseList**](PaginatedApprovalWorkflowStageResponseList.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesPartialUpdate
-
-> ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesPartialUpdate(ctx, id).Format(format).PatchedApprovalWorkflowStageResponseRequest(patchedApprovalWorkflowStageResponseRequest).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Response.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	patchedApprovalWorkflowStageResponseRequest := *openapiclient.NewPatchedApprovalWorkflowStageResponseRequest() // PatchedApprovalWorkflowStageResponseRequest |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesPartialUpdate(context.Background(), id).Format(format).PatchedApprovalWorkflowStageResponseRequest(patchedApprovalWorkflowStageResponseRequest).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesPartialUpdate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesPartialUpdate`: ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesPartialUpdate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this Approval Workflow Stage Response. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesPartialUpdateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **patchedApprovalWorkflowStageResponseRequest** | [**PatchedApprovalWorkflowStageResponseRequest**](PatchedApprovalWorkflowStageResponseRequest.md) |  | 
-
-### Return type
-
-[**ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesRetrieve
-
-> ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesRetrieve(ctx, id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Response.
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-	depth := int32(56) // int32 | Serializer Depth (optional) (default to 1)
-	excludeM2m := true // bool | Exclude many-to-many fields from the response (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesRetrieve(context.Background(), id).Format(format).Depth(depth).ExcludeM2m(excludeM2m).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesRetrieve``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesRetrieve`: ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesRetrieve`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this Approval Workflow Stage Response. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesRetrieveRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
- **depth** | **int32** | Serializer Depth | [default to 1]
- **excludeM2m** | **bool** | Exclude many-to-many fields from the response | 
-
-### Return type
-
-[**ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## ExtrasApprovalWorkflowStageResponsesUpdate
-
-> ApprovalWorkflowStageResponse ExtrasApprovalWorkflowStageResponsesUpdate(ctx, id).ApprovalWorkflowStageResponseRequest(approvalWorkflowStageResponseRequest).Format(format).Execute()
-
-
-
-
-
-### Example
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-	openapiclient "github.com/nautobot/go-nautobot/v3"
-)
-
-func main() {
-	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage Response.
-	approvalWorkflowStageResponseRequest := *openapiclient.NewApprovalWorkflowStageResponseRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ApprovalWorkflowStageResponseRequest | 
-	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
-
-	configuration := openapiclient.NewConfiguration()
-	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStageResponsesUpdate(context.Background(), id).ApprovalWorkflowStageResponseRequest(approvalWorkflowStageResponseRequest).Format(format).Execute()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesUpdate``: %v\n", err)
-		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
-	}
-	// response from `ExtrasApprovalWorkflowStageResponsesUpdate`: ApprovalWorkflowStageResponse
-	fmt.Fprintf(os.Stdout, "Response from `ExtrasAPI.ExtrasApprovalWorkflowStageResponsesUpdate`: %v\n", resp)
-}
-```
-
-### Path Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-**ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**id** | **string** | A UUID string identifying this Approval Workflow Stage Response. | 
-
-### Other Parameters
-
-Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowStageResponsesUpdateRequest struct via the builder pattern
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
-
- **approvalWorkflowStageResponseRequest** | [**ApprovalWorkflowStageResponseRequest**](ApprovalWorkflowStageResponseRequest.md) |  | 
- **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
-
-### Return type
-
-[**ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md)
-
-### Authorization
-
-[cookieAuth](../README.md#cookieAuth), [tokenAuth](../README.md#tokenAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/csv
-- **Accept**: application/json, text/csv
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
 ## ExtrasApprovalWorkflowStagesApproveCreate
 
 > ApprovalWorkflowStage ExtrasApprovalWorkflowStagesApproveCreate(ctx, id).Format(format).Execute()
@@ -3265,7 +2531,7 @@ import (
 )
 
 func main() {
-	bulkWritableApprovalWorkflowStageRequest := []openapiclient.BulkWritableApprovalWorkflowStageRequest{*openapiclient.NewBulkWritableApprovalWorkflowStageRequest("Id_example", *openapiclient.NewApprovalWorkflowStageApprovalWorkflow(), *openapiclient.NewApprovalWorkflowStageApprovalWorkflowStageDefinition())} // []BulkWritableApprovalWorkflowStageRequest | 
+	bulkWritableApprovalWorkflowStageRequest := []openapiclient.BulkWritableApprovalWorkflowStageRequest{*openapiclient.NewBulkWritableApprovalWorkflowStageRequest("Id_example", *openapiclient.NewApprovalWorkflowStageApprovalWorkflow())} // []BulkWritableApprovalWorkflowStageRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3405,7 +2671,7 @@ import (
 )
 
 func main() {
-	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow(), *openapiclient.NewApprovalWorkflowStageApprovalWorkflowStageDefinition()) // ApprovalWorkflowStageRequest | 
+	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow()) // ApprovalWorkflowStageRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3596,7 +2862,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasApprovalWorkflowStagesList
 
-> PaginatedApprovalWorkflowStageList ExtrasApprovalWorkflowStagesList(ctx).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedApprovalWorkflowStageList ExtrasApprovalWorkflowStagesList(ctx).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionIsnull(approvalWorkflowStageDefinitionIsnull).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -3619,6 +2885,7 @@ func main() {
 	approvalWorkflow := []string{"Inner_example"} // []string |  (optional)
 	approvalWorkflowN := []string{"Inner_example"} // []string |  (optional)
 	approvalWorkflowStageDefinition := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowStageDefinitionIsnull := true // bool |  (optional)
 	approvalWorkflowStageDefinitionN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -3655,7 +2922,7 @@ func main() {
 	pendingMyApprovals := true // bool | Filter by user's pending approvals (false returns completed approvals) (optional)
 	q := "q_example" // string | Search (optional)
 	sort := "sort_example" // string | Which field to use when ordering the results. (optional)
-	state := []string{"Inner_example"} // []string | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. (optional)
+	state := []openapiclient.ExtrasApprovalWorkflowStagesListStateParameterInner{openapiclient.extras_approval_workflow_stages_list_state_parameter_inner("Approved")} // []ExtrasApprovalWorkflowStagesListStateParameterInner | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied.   (optional)
 	stateIc := []string{"Inner_example"} // []string |  (optional)
 	stateIe := []string{"Inner_example"} // []string |  (optional)
 	stateIew := []string{"Inner_example"} // []string |  (optional)
@@ -3677,7 +2944,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesList(context.Background()).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowStagesList(context.Background()).ApprovalWorkflow(approvalWorkflow).ApprovalWorkflowN(approvalWorkflowN).ApprovalWorkflowStageDefinition(approvalWorkflowStageDefinition).ApprovalWorkflowStageDefinitionIsnull(approvalWorkflowStageDefinitionIsnull).ApprovalWorkflowStageDefinitionN(approvalWorkflowStageDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DecisionDateDay(decisionDateDay).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).Offset(offset).PendingMyApprovals(pendingMyApprovals).Q(q).Sort(sort).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowStagesList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -3701,6 +2968,7 @@ Name | Type | Description  | Notes
  **approvalWorkflow** | **[]string** |  | 
  **approvalWorkflowN** | **[]string** |  | 
  **approvalWorkflowStageDefinition** | **[]string** |  | 
+ **approvalWorkflowStageDefinitionIsnull** | **bool** |  | 
  **approvalWorkflowStageDefinitionN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -3737,7 +3005,7 @@ Name | Type | Description  | Notes
  **pendingMyApprovals** | **bool** | Filter by user&#39;s pending approvals (false returns completed approvals) | 
  **q** | **string** | Search | 
  **sort** | **string** | Which field to use when ordering the results. | 
- **state** | **[]string** | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | 
+ **state** | [**[]ExtrasApprovalWorkflowStagesListStateParameterInner**](ExtrasApprovalWorkflowStagesListStateParameterInner.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied.   | 
  **stateIc** | **[]string** |  | 
  **stateIe** | **[]string** |  | 
  **stateIew** | **[]string** |  | 
@@ -4101,7 +3369,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow Stage.
-	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow(), *openapiclient.NewApprovalWorkflowStageApprovalWorkflowStageDefinition()) // ApprovalWorkflowStageRequest | 
+	approvalWorkflowStageRequest := *openapiclient.NewApprovalWorkflowStageRequest(*openapiclient.NewApprovalWorkflowStageApprovalWorkflow()) // ApprovalWorkflowStageRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4308,7 +3576,7 @@ import (
 )
 
 func main() {
-	bulkWritableApprovalWorkflowRequest := []openapiclient.BulkWritableApprovalWorkflowRequest{*openapiclient.NewBulkWritableApprovalWorkflowRequest("Id_example", "ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example", *openapiclient.NewApprovalWorkflowApprovalWorkflowDefinition())} // []BulkWritableApprovalWorkflowRequest | 
+	bulkWritableApprovalWorkflowRequest := []openapiclient.BulkWritableApprovalWorkflowRequest{*openapiclient.NewBulkWritableApprovalWorkflowRequest("Id_example", "ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example")} // []BulkWritableApprovalWorkflowRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4448,7 +3716,7 @@ import (
 )
 
 func main() {
-	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example", *openapiclient.NewApprovalWorkflowApprovalWorkflowDefinition()) // ApprovalWorkflowRequest | 
+	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example") // ApprovalWorkflowRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4567,7 +3835,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasApprovalWorkflowsList
 
-> PaginatedApprovalWorkflowList ExtrasApprovalWorkflowsList(ctx).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedApprovalWorkflowList ExtrasApprovalWorkflowsList(ctx).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionIsnull(approvalWorkflowDefinitionIsnull).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -4588,6 +3856,7 @@ import (
 
 func main() {
 	approvalWorkflowDefinition := []string{"Inner_example"} // []string |  (optional)
+	approvalWorkflowDefinitionIsnull := true // bool |  (optional)
 	approvalWorkflowDefinitionN := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
@@ -4599,7 +3868,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
-	currentState := []string{"Inner_example"} // []string | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. (optional)
+	currentState := []openapiclient.ExtrasApprovalWorkflowStagesListStateParameterInner{openapiclient.extras_approval_workflow_stages_list_state_parameter_inner("Approved")} // []ExtrasApprovalWorkflowStagesListStateParameterInner | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled.   (optional)
 	currentStateIc := []string{"Inner_example"} // []string |  (optional)
 	currentStateIe := []string{"Inner_example"} // []string |  (optional)
 	currentStateIew := []string{"Inner_example"} // []string |  (optional)
@@ -4665,7 +3934,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsList(context.Background()).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasApprovalWorkflowsList(context.Background()).ApprovalWorkflowDefinition(approvalWorkflowDefinition).ApprovalWorkflowDefinitionIsnull(approvalWorkflowDefinitionIsnull).ApprovalWorkflowDefinitionN(approvalWorkflowDefinitionN).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).CurrentState(currentState).CurrentStateIc(currentStateIc).CurrentStateIe(currentStateIe).CurrentStateIew(currentStateIew).CurrentStateIre(currentStateIre).CurrentStateIsw(currentStateIsw).CurrentStateN(currentStateN).CurrentStateNic(currentStateNic).CurrentStateNie(currentStateNie).CurrentStateNiew(currentStateNiew).CurrentStateNire(currentStateNire).CurrentStateNisw(currentStateNisw).CurrentStateNre(currentStateNre).CurrentStateRe(currentStateRe).DecisionDate(decisionDate).DecisionDateGt(decisionDateGt).DecisionDateGte(decisionDateGte).DecisionDateIsnull(decisionDateIsnull).DecisionDateLt(decisionDateLt).DecisionDateLte(decisionDateLte).DecisionDateN(decisionDateN).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).ObjectUnderReviewContentType(objectUnderReviewContentType).ObjectUnderReviewContentTypeN(objectUnderReviewContentTypeN).ObjectUnderReviewObjectId(objectUnderReviewObjectId).ObjectUnderReviewObjectIdN(objectUnderReviewObjectIdN).Offset(offset).Q(q).Sort(sort).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).User(user).UserIsnull(userIsnull).UserN(userN).UserName(userName).UserNameIc(userNameIc).UserNameIe(userNameIe).UserNameIew(userNameIew).UserNameIre(userNameIre).UserNameIsw(userNameIsw).UserNameN(userNameN).UserNameNic(userNameNic).UserNameNie(userNameNie).UserNameNiew(userNameNiew).UserNameNire(userNameNire).UserNameNisw(userNameNisw).UserNameNre(userNameNre).UserNameRe(userNameRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasApprovalWorkflowsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -4687,6 +3956,7 @@ Other parameters are passed through a pointer to a apiExtrasApprovalWorkflowsLis
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **approvalWorkflowDefinition** | **[]string** |  | 
+ **approvalWorkflowDefinitionIsnull** | **bool** |  | 
  **approvalWorkflowDefinitionN** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
@@ -4698,7 +3968,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
- **currentState** | **[]string** | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | 
+ **currentState** | [**[]ExtrasApprovalWorkflowStagesListStateParameterInner**](ExtrasApprovalWorkflowStagesListStateParameterInner.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled.   | 
  **currentStateIc** | **[]string** |  | 
  **currentStateIe** | **[]string** |  | 
  **currentStateIew** | **[]string** |  | 
@@ -5106,7 +4376,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this Approval Workflow.
-	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example", *openapiclient.NewApprovalWorkflowApprovalWorkflowDefinition()) // ApprovalWorkflowRequest | 
+	approvalWorkflowRequest := *openapiclient.NewApprovalWorkflowRequest("ObjectUnderReviewContentType_example", "ObjectUnderReviewObjectId_example") // ApprovalWorkflowRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8063,7 +7333,7 @@ import (
 )
 
 func main() {
-	bulkWritableContactAssociationRequest := []openapiclient.BulkWritableContactAssociationRequest{*openapiclient.NewBulkWritableContactAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableContactAssociationRequest | 
+	bulkWritableContactAssociationRequest := []openapiclient.BulkWritableContactAssociationRequest{*openapiclient.NewBulkWritableContactAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8131,7 +7401,7 @@ import (
 )
 
 func main() {
-	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ContactAssociationRequest | 
+	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -8715,7 +7985,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this contact association.
-	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ContactAssociationRequest | 
+	contactAssociationRequest := *openapiclient.NewContactAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // ContactAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10143,7 +9413,7 @@ import (
 )
 
 func main() {
-	bulkWritableCustomFieldChoiceRequest := []openapiclient.BulkWritableCustomFieldChoiceRequest{*openapiclient.NewBulkWritableCustomFieldChoiceRequest("Id_example", "Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCustomFieldChoiceRequest | 
+	bulkWritableCustomFieldChoiceRequest := []openapiclient.BulkWritableCustomFieldChoiceRequest{*openapiclient.NewBulkWritableCustomFieldChoiceRequest("Id_example", "Value_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCustomFieldChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10211,7 +9481,7 @@ import (
 )
 
 func main() {
-	customFieldChoiceRequest := *openapiclient.NewCustomFieldChoiceRequest("Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CustomFieldChoiceRequest | 
+	customFieldChoiceRequest := *openapiclient.NewCustomFieldChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // CustomFieldChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -10626,7 +9896,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this custom field choice.
-	customFieldChoiceRequest := *openapiclient.NewCustomFieldChoiceRequest("Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CustomFieldChoiceRequest | 
+	customFieldChoiceRequest := *openapiclient.NewCustomFieldChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // CustomFieldChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -11046,7 +10316,7 @@ func main() {
 	contentTypesN := []int32{int32(123)} // []int32 |  (optional)
 	dynamicGroups := []string{"Inner_example"} // []string |  (optional)
 	dynamicGroupsN := []string{"Inner_example"} // []string |  (optional)
-	filterLogic := []string{"Inner_example"} // []string | Loose matches any instance of a given string; Exact matches the entire field. (optional)
+	filterLogic := []openapiclient.ExtrasCustomFieldsListFilterLogicParameterInner{openapiclient.extras_custom_fields_list_filter_logic_parameter_inner("disabled")} // []ExtrasCustomFieldsListFilterLogicParameterInner | Loose matches any instance of a given string; Exact matches the entire field.   (optional)
 	filterLogicIc := []string{"Inner_example"} // []string |  (optional)
 	filterLogicIe := []string{"Inner_example"} // []string |  (optional)
 	filterLogicIew := []string{"Inner_example"} // []string |  (optional)
@@ -11138,7 +10408,7 @@ Name | Type | Description  | Notes
  **contentTypesN** | **[]int32** |  | 
  **dynamicGroups** | **[]string** |  | 
  **dynamicGroupsN** | **[]string** |  | 
- **filterLogic** | **[]string** | Loose matches any instance of a given string; Exact matches the entire field. | 
+ **filterLogic** | [**[]ExtrasCustomFieldsListFilterLogicParameterInner**](ExtrasCustomFieldsListFilterLogicParameterInner.md) | Loose matches any instance of a given string; Exact matches the entire field.   | 
  **filterLogicIc** | **[]string** |  | 
  **filterLogicIe** | **[]string** |  | 
  **filterLogicIew** | **[]string** |  | 
@@ -11957,7 +11227,7 @@ import (
 )
 
 func main() {
-	buttonClass := []string{"Inner_example"} // []string | The class of the first link in a group will be used for the dropdown button (optional)
+	buttonClass := []openapiclient.ExtrasCustomLinksListButtonClassParameterInner{openapiclient.extras_custom_links_list_button_class_parameter_inner("danger")} // []ExtrasCustomLinksListButtonClassParameterInner | The class of the first link in a group will be used for the dropdown button   (optional)
 	buttonClassIc := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIe := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIew := []string{"Inner_example"} // []string |  (optional)
@@ -12077,7 +11347,7 @@ Other parameters are passed through a pointer to a apiExtrasCustomLinksListReque
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **buttonClass** | **[]string** | The class of the first link in a group will be used for the dropdown button | 
+ **buttonClass** | [**[]ExtrasCustomLinksListButtonClassParameterInner**](ExtrasCustomLinksListButtonClassParameterInner.md) | The class of the first link in a group will be used for the dropdown button   | 
  **buttonClassIc** | **[]string** |  | 
  **buttonClassIe** | **[]string** |  | 
  **buttonClassIew** | **[]string** |  | 
@@ -12725,7 +11995,7 @@ import (
 )
 
 func main() {
-	bulkWritableDynamicGroupMembershipRequest := []openapiclient.BulkWritableDynamicGroupMembershipRequest{*openapiclient.NewBulkWritableDynamicGroupMembershipRequest("Id_example", openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableDynamicGroupMembershipRequest | 
+	bulkWritableDynamicGroupMembershipRequest := []openapiclient.BulkWritableDynamicGroupMembershipRequest{*openapiclient.NewBulkWritableDynamicGroupMembershipRequest("Id_example", openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableDynamicGroupMembershipRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -12793,7 +12063,7 @@ import (
 )
 
 func main() {
-	dynamicGroupMembershipRequest := *openapiclient.NewDynamicGroupMembershipRequest(openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DynamicGroupMembershipRequest | 
+	dynamicGroupMembershipRequest := *openapiclient.NewDynamicGroupMembershipRequest(openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DynamicGroupMembershipRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13217,7 +12487,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this dynamic group membership.
-	dynamicGroupMembershipRequest := *openapiclient.NewDynamicGroupMembershipRequest(openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // DynamicGroupMembershipRequest | 
+	dynamicGroupMembershipRequest := *openapiclient.NewDynamicGroupMembershipRequest(openapiclient.OperatorEnum("union"), int32(123), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // DynamicGroupMembershipRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -13611,7 +12881,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasDynamicGroupsList
 
-> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedDynamicGroupList ExtrasDynamicGroupsList(ctx).Ancestors(ancestors).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Descendants(descendants).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -13631,6 +12901,7 @@ import (
 )
 
 func main() {
+	ancestors := []string{"Inner_example"} // []string |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
@@ -13643,6 +12914,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
+	descendants := []string{"Inner_example"} // []string |  (optional)
 	description := []string{"Inner_example"} // []string |  (optional)
 	descriptionIc := []string{"Inner_example"} // []string |  (optional)
 	descriptionIe := []string{"Inner_example"} // []string |  (optional)
@@ -13721,7 +12993,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasDynamicGroupsList(context.Background()).Ancestors(ancestors).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).ContentType(contentType).ContentTypeN(contentTypeN).Created(created).CreatedGt(createdGt).CreatedGte(createdGte).CreatedIsnull(createdIsnull).CreatedLt(createdLt).CreatedLte(createdLte).CreatedN(createdN).Descendants(descendants).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).Format(format).GroupType(groupType).GroupTypeIc(groupTypeIc).GroupTypeIe(groupTypeIe).GroupTypeIew(groupTypeIew).GroupTypeIre(groupTypeIre).GroupTypeIsw(groupTypeIsw).GroupTypeN(groupTypeN).GroupTypeNic(groupTypeNic).GroupTypeNie(groupTypeNie).GroupTypeNiew(groupTypeNiew).GroupTypeNire(groupTypeNire).GroupTypeNisw(groupTypeNisw).GroupTypeNre(groupTypeNre).GroupTypeRe(groupTypeRe).Id(id).IdN(idN).LastUpdated(lastUpdated).LastUpdatedGt(lastUpdatedGt).LastUpdatedGte(lastUpdatedGte).LastUpdatedIsnull(lastUpdatedIsnull).LastUpdatedLt(lastUpdatedLt).LastUpdatedLte(lastUpdatedLte).LastUpdatedN(lastUpdatedN).Limit(limit).MemberId(memberId).MemberIdN(memberIdN).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).Tenant(tenant).TenantIsnull(tenantIsnull).TenantN(tenantN).TenantGroup(tenantGroup).TenantGroupIsnull(tenantGroupIsnull).TenantGroupN(tenantGroupN).TenantId(tenantId).TenantIdIsnull(tenantIdIsnull).TenantIdN(tenantIdN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasDynamicGroupsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -13742,6 +13014,7 @@ Other parameters are passed through a pointer to a apiExtrasDynamicGroupsListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **ancestors** | **[]string** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
@@ -13754,6 +13027,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
+ **descendants** | **[]string** |  | 
  **description** | **[]string** |  | 
  **descriptionIc** | **[]string** |  | 
  **descriptionIe** | **[]string** |  | 
@@ -15554,7 +14828,7 @@ func main() {
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 	hasSecretsGroup := true // bool | Has secrets group (optional)
 	headers := []string{"Inner_example"} // []string |  (optional)
-	httpMethod := []string{"Inner_example"} // []string |  (optional)
+	httpMethod := []openapiclient.ExtrasExternalIntegrationsListHttpMethodParameterInner{openapiclient.extras_external_integrations_list_http_method_parameter_inner("DELETE")} // []ExtrasExternalIntegrationsListHttpMethodParameterInner |  (optional)
 	httpMethodIc := []string{"Inner_example"} // []string |  (optional)
 	httpMethodIe := []string{"Inner_example"} // []string |  (optional)
 	httpMethodIew := []string{"Inner_example"} // []string |  (optional)
@@ -15681,7 +14955,7 @@ Name | Type | Description  | Notes
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
  **hasSecretsGroup** | **bool** | Has secrets group | 
  **headers** | **[]string** |  | 
- **httpMethod** | **[]string** |  | 
+ **httpMethod** | [**[]ExtrasExternalIntegrationsListHttpMethodParameterInner**](ExtrasExternalIntegrationsListHttpMethodParameterInner.md) |  | 
  **httpMethodIc** | **[]string** |  | 
  **httpMethodIe** | **[]string** |  | 
  **httpMethodIew** | **[]string** |  | 
@@ -18560,7 +17834,7 @@ import (
 )
 
 func main() {
-	bulkWritableImageAttachmentRequest := []openapiclient.BulkWritableImageAttachmentRequest{*openapiclient.NewBulkWritableImageAttachmentRequest("Id_example", "ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123))} // []BulkWritableImageAttachmentRequest | 
+	bulkWritableImageAttachmentRequest := []openapiclient.BulkWritableImageAttachmentRequest{*openapiclient.NewBulkWritableImageAttachmentRequest("Id_example", "ContentType_example", "ObjectId_example", "TODO")} // []BulkWritableImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -18628,7 +17902,7 @@ import (
 )
 
 func main() {
-	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123)) // ImageAttachmentRequest | 
+	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO") // ImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19039,7 +18313,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this image attachment.
-	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO", int32(123), int32(123)) // ImageAttachmentRequest | 
+	imageAttachmentRequest := *openapiclient.NewImageAttachmentRequest("ContentType_example", "ObjectId_example", "TODO") // ImageAttachmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -19452,7 +18726,7 @@ import (
 )
 
 func main() {
-	buttonClass := []string{"Inner_example"} // []string |  (optional)
+	buttonClass := []openapiclient.ExtrasCustomLinksListButtonClassParameterInner{openapiclient.extras_custom_links_list_button_class_parameter_inner("danger")} // []ExtrasCustomLinksListButtonClassParameterInner |  (optional)
 	buttonClassIc := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIe := []string{"Inner_example"} // []string |  (optional)
 	buttonClassIew := []string{"Inner_example"} // []string |  (optional)
@@ -19561,7 +18835,7 @@ Other parameters are passed through a pointer to a apiExtrasJobButtonsListReques
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **buttonClass** | **[]string** |  | 
+ **buttonClass** | [**[]ExtrasCustomLinksListButtonClassParameterInner**](ExtrasCustomLinksListButtonClassParameterInner.md) |  | 
  **buttonClassIc** | **[]string** |  | 
  **buttonClassIe** | **[]string** |  | 
  **buttonClassIew** | **[]string** |  | 
@@ -20965,7 +20239,7 @@ func main() {
 	jobResult := []string{"Inner_example"} // []string |  (optional)
 	jobResultN := []string{"Inner_example"} // []string |  (optional)
 	limit := int32(56) // int32 | Number of results to return per page. (optional)
-	logLevel := []string{"Inner_example"} // []string |  (optional)
+	logLevel := []openapiclient.ExtrasJobLogsListLogLevelParameterInner{openapiclient.extras_job_logs_list_log_level_parameter_inner("critical")} // []ExtrasJobLogsListLogLevelParameterInner |  (optional)
 	logLevelIc := []string{"Inner_example"} // []string |  (optional)
 	logLevelIe := []string{"Inner_example"} // []string |  (optional)
 	logLevelIew := []string{"Inner_example"} // []string |  (optional)
@@ -21076,7 +20350,7 @@ Name | Type | Description  | Notes
  **jobResult** | **[]string** |  | 
  **jobResultN** | **[]string** |  | 
  **limit** | **int32** | Number of results to return per page. | 
- **logLevel** | **[]string** |  | 
+ **logLevel** | [**[]ExtrasJobLogsListLogLevelParameterInner**](ExtrasJobLogsListLogLevelParameterInner.md) |  | 
  **logLevelIc** | **[]string** |  | 
  **logLevelIe** | **[]string** |  | 
  **logLevelIew** | **[]string** |  | 
@@ -21373,7 +20647,7 @@ import (
 )
 
 func main() {
-	bulkWritableJobQueueAssignmentRequest := []openapiclient.BulkWritableJobQueueAssignmentRequest{*openapiclient.NewBulkWritableJobQueueAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableJobQueueAssignmentRequest | 
+	bulkWritableJobQueueAssignmentRequest := []openapiclient.BulkWritableJobQueueAssignmentRequest{*openapiclient.NewBulkWritableJobQueueAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableJobQueueAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -21441,7 +20715,7 @@ import (
 )
 
 func main() {
-	jobQueueAssignmentRequest := *openapiclient.NewJobQueueAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // JobQueueAssignmentRequest | 
+	jobQueueAssignmentRequest := *openapiclient.NewJobQueueAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // JobQueueAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -21820,7 +21094,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this job queue assignment.
-	jobQueueAssignmentRequest := *openapiclient.NewJobQueueAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // JobQueueAssignmentRequest | 
+	jobQueueAssignmentRequest := *openapiclient.NewJobQueueAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // JobQueueAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -22971,7 +22245,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobResultsList
 
-> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedJobResultList ExtrasJobResultsList(ctx).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).HasJobConsoleEntries(hasJobConsoleEntries).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -23012,6 +22286,7 @@ func main() {
 	dateStartedLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	dateStartedN := []time.Time{time.Now()} // []time.Time |  (optional)
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
+	hasJobConsoleEntries := true // bool | Has Job Console Entries (optional)
 	id := []string{"Inner_example"} // []string | Unique object identifier, either a UUID primary key or a composite key. (optional)
 	idN := []string{"Inner_example"} // []string |  (optional)
 	jobModel := []string{"Inner_example"} // []string |  (optional)
@@ -23063,7 +22338,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobResultsList(context.Background()).DateCreated(dateCreated).DateCreatedGt(dateCreatedGt).DateCreatedGte(dateCreatedGte).DateCreatedLt(dateCreatedLt).DateCreatedLte(dateCreatedLte).DateCreatedN(dateCreatedN).DateDone(dateDone).DateDoneGt(dateDoneGt).DateDoneGte(dateDoneGte).DateDoneIsnull(dateDoneIsnull).DateDoneLt(dateDoneLt).DateDoneLte(dateDoneLte).DateDoneN(dateDoneN).DateStarted(dateStarted).DateStartedGt(dateStartedGt).DateStartedGte(dateStartedGte).DateStartedIsnull(dateStartedIsnull).DateStartedLt(dateStartedLt).DateStartedLte(dateStartedLte).DateStartedN(dateStartedN).Format(format).HasJobConsoleEntries(hasJobConsoleEntries).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).ScheduledJob(scheduledJob).ScheduledJobIsnull(scheduledJobIsnull).ScheduledJobN(scheduledJobN).Sort(sort).Status(status).StatusIc(statusIc).StatusIe(statusIe).StatusIew(statusIew).StatusIre(statusIre).StatusIsw(statusIsw).StatusN(statusN).StatusNic(statusNic).StatusNie(statusNie).StatusNiew(statusNiew).StatusNire(statusNire).StatusNisw(statusNisw).StatusNre(statusNre).StatusRe(statusRe).User(user).UserIsnull(userIsnull).UserN(userN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobResultsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -23105,6 +22380,7 @@ Name | Type | Description  | Notes
  **dateStartedLte** | [**[]time.Time**](time.Time.md) |  | 
  **dateStartedN** | [**[]time.Time**](time.Time.md) |  | 
  **format** | [**CircuitsCircuitTerminationsListFormatParameter**](CircuitsCircuitTerminationsListFormatParameter.md) |  | 
+ **hasJobConsoleEntries** | **bool** | Has Job Console Entries | 
  **id** | **[]string** | Unique object identifier, either a UUID primary key or a composite key. | 
  **idN** | **[]string** |  | 
  **jobModel** | **[]string** |  | 
@@ -23479,7 +22755,7 @@ import (
 )
 
 func main() {
-	bulkWritableJobRequest := []openapiclient.BulkWritableJobRequest{*openapiclient.NewBulkWritableJobRequest("Id_example", "Grouping_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableJobRequest | 
+	bulkWritableJobRequest := []openapiclient.BulkWritableJobRequest{*openapiclient.NewBulkWritableJobRequest("Id_example", "Grouping_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableJobRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -23668,7 +22944,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasJobsList
 
-> PaginatedJobList ExtrasJobsList(ctx).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedJobList ExtrasJobsList(ctx).ConsoleLogDefault(consoleLogDefault).ConsoleLogDefaultOverride(consoleLogDefaultOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -23687,6 +22963,8 @@ import (
 )
 
 func main() {
+	consoleLogDefault := true // bool |  (optional)
+	consoleLogDefaultOverride := true // bool |  (optional)
 	contacts := []string{"Inner_example"} // []string |  (optional)
 	contactsIsnull := true // bool | Contacts (name or ID) is null (optional)
 	contactsN := []string{"Inner_example"} // []string |  (optional)
@@ -23798,7 +23076,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasJobsList(context.Background()).ConsoleLogDefault(consoleLogDefault).ConsoleLogDefaultOverride(consoleLogDefaultOverride).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).DescriptionOverride(descriptionOverride).DryrunDefault(dryrunDefault).DryrunDefaultOverride(dryrunDefaultOverride).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Enabled(enabled).Format(format).Grouping(grouping).GroupingIc(groupingIc).GroupingIe(groupingIe).GroupingIew(groupingIew).GroupingIre(groupingIre).GroupingIsw(groupingIsw).GroupingN(groupingN).GroupingNic(groupingNic).GroupingNie(groupingNie).GroupingNiew(groupingNiew).GroupingNire(groupingNire).GroupingNisw(groupingNisw).GroupingNre(groupingNre).GroupingRe(groupingRe).GroupingOverride(groupingOverride).HasSensitiveVariables(hasSensitiveVariables).HasSensitiveVariablesOverride(hasSensitiveVariablesOverride).Hidden(hidden).HiddenOverride(hiddenOverride).Id(id).IdN(idN).Installed(installed).IsJobButtonReceiver(isJobButtonReceiver).IsJobHookReceiver(isJobHookReceiver).IsSingleton(isSingleton).IsSingletonOverride(isSingletonOverride).JobClassName(jobClassName).JobClassNameIc(jobClassNameIc).JobClassNameIe(jobClassNameIe).JobClassNameIew(jobClassNameIew).JobClassNameIre(jobClassNameIre).JobClassNameIsw(jobClassNameIsw).JobClassNameN(jobClassNameN).JobClassNameNic(jobClassNameNic).JobClassNameNie(jobClassNameNie).JobClassNameNiew(jobClassNameNiew).JobClassNameNire(jobClassNameNire).JobClassNameNisw(jobClassNameNisw).JobClassNameNre(jobClassNameNre).JobClassNameRe(jobClassNameRe).JobQueues(jobQueues).JobQueuesN(jobQueuesN).Limit(limit).ModuleName(moduleName).ModuleNameIc(moduleNameIc).ModuleNameIe(moduleNameIe).ModuleNameIew(moduleNameIew).ModuleNameIre(moduleNameIre).ModuleNameIsw(moduleNameIsw).ModuleNameN(moduleNameN).ModuleNameNic(moduleNameNic).ModuleNameNie(moduleNameNie).ModuleNameNiew(moduleNameNiew).ModuleNameNire(moduleNameNire).ModuleNameNisw(moduleNameNisw).ModuleNameNre(moduleNameNre).ModuleNameRe(moduleNameRe).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).NameOverride(nameOverride).Offset(offset).Q(q).ReadOnly(readOnly).SoftTimeLimit(softTimeLimit).SoftTimeLimitGt(softTimeLimitGt).SoftTimeLimitGte(softTimeLimitGte).SoftTimeLimitLt(softTimeLimitLt).SoftTimeLimitLte(softTimeLimitLte).SoftTimeLimitN(softTimeLimitN).SoftTimeLimitOverride(softTimeLimitOverride).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TimeLimit(timeLimit).TimeLimitGt(timeLimitGt).TimeLimitGte(timeLimitGte).TimeLimitLt(timeLimitLt).TimeLimitLte(timeLimitLte).TimeLimitN(timeLimitN).TimeLimitOverride(timeLimitOverride).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -23819,6 +23097,8 @@ Other parameters are passed through a pointer to a apiExtrasJobsListRequest stru
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **consoleLogDefault** | **bool** |  | 
+ **consoleLogDefaultOverride** | **bool** |  | 
  **contacts** | **[]string** |  | 
  **contactsIsnull** | **bool** | Contacts (name or ID) is null | 
  **contactsN** | **[]string** |  | 
@@ -24724,7 +24004,7 @@ import (
 
 func main() {
 	id := "id_example" // string | Unique object identifier, either a UUID primary key or a composite key.
-	jobRequest := *openapiclient.NewJobRequest("Grouping_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // JobRequest | 
+	jobRequest := *openapiclient.NewJobRequest("Grouping_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // JobRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -24798,7 +24078,7 @@ import (
 
 func main() {
 	name := "name_example" // string | 
-	jobRequest := *openapiclient.NewJobRequest("Grouping_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // JobRequest | 
+	jobRequest := *openapiclient.NewJobRequest("Grouping_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // JobRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -25169,7 +24449,7 @@ import (
 )
 
 func main() {
-	bulkWritableMetadataChoiceRequest := []openapiclient.BulkWritableMetadataChoiceRequest{*openapiclient.NewBulkWritableMetadataChoiceRequest("Id_example", "Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableMetadataChoiceRequest | 
+	bulkWritableMetadataChoiceRequest := []openapiclient.BulkWritableMetadataChoiceRequest{*openapiclient.NewBulkWritableMetadataChoiceRequest("Id_example", "Value_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableMetadataChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -25237,7 +24517,7 @@ import (
 )
 
 func main() {
-	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // MetadataChoiceRequest | 
+	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // MetadataChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -25681,7 +24961,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this metadata choice.
-	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // MetadataChoiceRequest | 
+	metadataChoiceRequest := *openapiclient.NewMetadataChoiceRequest("Value_example", *openapiclient.NewBulkWritableCableRequestStatus()) // MetadataChoiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -26107,7 +25387,7 @@ func main() {
 	createdLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	createdN := []time.Time{time.Now()} // []time.Time |  (optional)
-	dataType := []string{"Inner_example"} // []string | The type of data allowed for any Metadata of this type. (optional)
+	dataType := []openapiclient.ExtrasMetadataTypesListDataTypeParameterInner{openapiclient.extras_metadata_types_list_data_type_parameter_inner("boolean")} // []ExtrasMetadataTypesListDataTypeParameterInner | The type of data allowed for any Metadata of this type.   (optional)
 	dataTypeIc := []string{"Inner_example"} // []string |  (optional)
 	dataTypeIe := []string{"Inner_example"} // []string |  (optional)
 	dataTypeIew := []string{"Inner_example"} // []string |  (optional)
@@ -26209,7 +25489,7 @@ Name | Type | Description  | Notes
  **createdLt** | [**[]time.Time**](time.Time.md) |  | 
  **createdLte** | [**[]time.Time**](time.Time.md) |  | 
  **createdN** | [**[]time.Time**](time.Time.md) |  | 
- **dataType** | **[]string** | The type of data allowed for any Metadata of this type. | 
+ **dataType** | [**[]ExtrasMetadataTypesListDataTypeParameterInner**](ExtrasMetadataTypesListDataTypeParameterInner.md) | The type of data allowed for any Metadata of this type.   | 
  **dataTypeIc** | **[]string** |  | 
  **dataTypeIe** | **[]string** |  | 
  **dataTypeIew** | **[]string** |  | 
@@ -27414,7 +26694,7 @@ import (
 )
 
 func main() {
-	action := []string{"Inner_example"} // []string |  (optional)
+	action := []openapiclient.ExtrasObjectChangesListActionParameterInner{openapiclient.extras_object_changes_list_action_parameter_inner("create")} // []ExtrasObjectChangesListActionParameterInner |  (optional)
 	actionIc := []string{"Inner_example"} // []string |  (optional)
 	actionIe := []string{"Inner_example"} // []string |  (optional)
 	actionIew := []string{"Inner_example"} // []string |  (optional)
@@ -27539,7 +26819,7 @@ Other parameters are passed through a pointer to a apiExtrasObjectChangesListReq
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **action** | **[]string** |  | 
+ **action** | [**[]ExtrasObjectChangesListActionParameterInner**](ExtrasObjectChangesListActionParameterInner.md) |  | 
  **actionIc** | **[]string** |  | 
  **actionIe** | **[]string** |  | 
  **actionIew** | **[]string** |  | 
@@ -27890,7 +27170,7 @@ import (
 )
 
 func main() {
-	bulkWritableObjectMetadataRequest := []openapiclient.BulkWritableObjectMetadataRequest{*openapiclient.NewBulkWritableObjectMetadataRequest("Id_example", "AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableObjectMetadataRequest | 
+	bulkWritableObjectMetadataRequest := []openapiclient.BulkWritableObjectMetadataRequest{*openapiclient.NewBulkWritableObjectMetadataRequest("Id_example", "AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableObjectMetadataRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -27958,7 +27238,7 @@ import (
 )
 
 func main() {
-	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ObjectMetadataRequest | 
+	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ObjectMetadataRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28388,7 +27668,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this object metadata.
-	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ObjectMetadataRequest | 
+	objectMetadataRequest := *openapiclient.NewObjectMetadataRequest("AssignedObjectType_example", "AssignedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ObjectMetadataRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28595,7 +27875,7 @@ import (
 )
 
 func main() {
-	bulkWritableRelationshipAssociationRequest := []openapiclient.BulkWritableRelationshipAssociationRequest{*openapiclient.NewBulkWritableRelationshipAssociationRequest("Id_example", "SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableRelationshipAssociationRequest | 
+	bulkWritableRelationshipAssociationRequest := []openapiclient.BulkWritableRelationshipAssociationRequest{*openapiclient.NewBulkWritableRelationshipAssociationRequest("Id_example", "SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableRelationshipAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -28663,7 +27943,7 @@ import (
 )
 
 func main() {
-	relationshipAssociationRequest := *openapiclient.NewRelationshipAssociationRequest("SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RelationshipAssociationRequest | 
+	relationshipAssociationRequest := *openapiclient.NewRelationshipAssociationRequest("SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RelationshipAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29056,7 +28336,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this relationship association.
-	relationshipAssociationRequest := *openapiclient.NewRelationshipAssociationRequest("SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // RelationshipAssociationRequest | 
+	relationshipAssociationRequest := *openapiclient.NewRelationshipAssociationRequest("SourceType_example", "DestinationType_example", "SourceId_example", "DestinationId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // RelationshipAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -29516,7 +28796,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	type_ := []string{"Inner_example"} // []string | Cardinality of this relationship (optional)
+	type_ := []openapiclient.ExtrasRelationshipsListTypeParameterInner{openapiclient.extras_relationships_list_type_parameter_inner("many-to-many")} // []ExtrasRelationshipsListTypeParameterInner | Cardinality of this relationship   (optional)
 	typeIc := []string{"Inner_example"} // []string |  (optional)
 	typeIe := []string{"Inner_example"} // []string |  (optional)
 	typeIew := []string{"Inner_example"} // []string |  (optional)
@@ -29603,7 +28883,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **type_** | **[]string** | Cardinality of this relationship | 
+ **type_** | [**[]ExtrasRelationshipsListTypeParameterInner**](ExtrasRelationshipsListTypeParameterInner.md) | Cardinality of this relationship   | 
  **typeIc** | **[]string** |  | 
  **typeIe** | **[]string** |  | 
  **typeIew** | **[]string** |  | 
@@ -31855,7 +31135,7 @@ Name | Type | Description  | Notes
 
 ## ExtrasScheduledJobsList
 
-> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedScheduledJobList ExtrasScheduledJobsList(ctx).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -31930,6 +31210,20 @@ func main() {
 	startTimeLt := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeLte := []time.Time{time.Now()} // []time.Time |  (optional)
 	startTimeN := []time.Time{time.Now()} // []time.Time |  (optional)
+	state := []string{"Inner_example"} // []string | Current state of the Scheduled Job (optional)
+	stateIc := []string{"Inner_example"} // []string |  (optional)
+	stateIe := []string{"Inner_example"} // []string |  (optional)
+	stateIew := []string{"Inner_example"} // []string |  (optional)
+	stateIre := []string{"Inner_example"} // []string |  (optional)
+	stateIsw := []string{"Inner_example"} // []string |  (optional)
+	stateN := []string{"Inner_example"} // []string |  (optional)
+	stateNic := []string{"Inner_example"} // []string |  (optional)
+	stateNie := []string{"Inner_example"} // []string |  (optional)
+	stateNiew := []string{"Inner_example"} // []string |  (optional)
+	stateNire := []string{"Inner_example"} // []string |  (optional)
+	stateNisw := []string{"Inner_example"} // []string |  (optional)
+	stateNre := []string{"Inner_example"} // []string |  (optional)
+	stateRe := []string{"Inner_example"} // []string |  (optional)
 	timeZone := []openapiclient.DcimLocationsListTimeZoneParameterInner{openapiclient.dcim_locations_list_time_zone_parameter_inner("Africa/Abidjan")} // []DcimLocationsListTimeZoneParameterInner | Time zone   (optional)
 	timeZoneIc := []string{"Inner_example"} // []string | Time zone (optional)
 	timeZoneIe := []string{"Inner_example"} // []string | Time zone (optional)
@@ -31955,7 +31249,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.ExtrasAPI.ExtrasScheduledJobsList(context.Background()).ApprovalState(approvalState).ApprovalStateIc(approvalStateIc).ApprovalStateIe(approvalStateIe).ApprovalStateIew(approvalStateIew).ApprovalStateIre(approvalStateIre).ApprovalStateIsw(approvalStateIsw).ApprovalStateN(approvalStateN).ApprovalStateNic(approvalStateNic).ApprovalStateNie(approvalStateNie).ApprovalStateNiew(approvalStateNiew).ApprovalStateNire(approvalStateNire).ApprovalStateNisw(approvalStateNisw).ApprovalStateNre(approvalStateNre).ApprovalStateRe(approvalStateRe).Enabled(enabled).Format(format).Id(id).IdN(idN).JobModel(jobModel).JobModelIsnull(jobModelIsnull).JobModelN(jobModelN).JobModelId(jobModelId).JobModelIdIsnull(jobModelIdIsnull).JobModelIdN(jobModelIdN).LastRunAt(lastRunAt).LastRunAtGt(lastRunAtGt).LastRunAtGte(lastRunAtGte).LastRunAtIsnull(lastRunAtIsnull).LastRunAtLt(lastRunAtLt).LastRunAtLte(lastRunAtLte).LastRunAtN(lastRunAtN).Limit(limit).Name(name).NameIc(nameIc).NameIe(nameIe).NameIew(nameIew).NameIre(nameIre).NameIsw(nameIsw).NameN(nameN).NameNic(nameNic).NameNie(nameNie).NameNiew(nameNiew).NameNire(nameNire).NameNisw(nameNisw).NameNre(nameNre).NameRe(nameRe).Offset(offset).Q(q).Sort(sort).StartTime(startTime).StartTimeGt(startTimeGt).StartTimeGte(startTimeGte).StartTimeLt(startTimeLt).StartTimeLte(startTimeLte).StartTimeN(startTimeN).State(state).StateIc(stateIc).StateIe(stateIe).StateIew(stateIew).StateIre(stateIre).StateIsw(stateIsw).StateN(stateN).StateNic(stateNic).StateNie(stateNie).StateNiew(stateNiew).StateNire(stateNire).StateNisw(stateNisw).StateNre(stateNre).StateRe(stateRe).TimeZone(timeZone).TimeZoneIc(timeZoneIc).TimeZoneIe(timeZoneIe).TimeZoneIew(timeZoneIew).TimeZoneIre(timeZoneIre).TimeZoneIsw(timeZoneIsw).TimeZoneN(timeZoneN).TimeZoneNic(timeZoneNic).TimeZoneNie(timeZoneNie).TimeZoneNiew(timeZoneNiew).TimeZoneNire(timeZoneNire).TimeZoneNisw(timeZoneNisw).TimeZoneNre(timeZoneNre).TimeZoneRe(timeZoneRe).TotalRunCount(totalRunCount).TotalRunCountGt(totalRunCountGt).TotalRunCountGte(totalRunCountGte).TotalRunCountLt(totalRunCountLt).TotalRunCountLte(totalRunCountLte).TotalRunCountN(totalRunCountN).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `ExtrasAPI.ExtrasScheduledJobsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -32031,6 +31325,20 @@ Name | Type | Description  | Notes
  **startTimeLt** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeLte** | [**[]time.Time**](time.Time.md) |  | 
  **startTimeN** | [**[]time.Time**](time.Time.md) |  | 
+ **state** | **[]string** | Current state of the Scheduled Job | 
+ **stateIc** | **[]string** |  | 
+ **stateIe** | **[]string** |  | 
+ **stateIew** | **[]string** |  | 
+ **stateIre** | **[]string** |  | 
+ **stateIsw** | **[]string** |  | 
+ **stateN** | **[]string** |  | 
+ **stateNic** | **[]string** |  | 
+ **stateNie** | **[]string** |  | 
+ **stateNiew** | **[]string** |  | 
+ **stateNire** | **[]string** |  | 
+ **stateNisw** | **[]string** |  | 
+ **stateNre** | **[]string** |  | 
+ **stateRe** | **[]string** |  | 
  **timeZone** | [**[]DcimLocationsListTimeZoneParameterInner**](DcimLocationsListTimeZoneParameterInner.md) | Time zone   | 
  **timeZoneIc** | **[]string** | Time zone | 
  **timeZoneIe** | **[]string** | Time zone | 
@@ -32719,7 +32027,7 @@ import (
 )
 
 func main() {
-	bulkWritableSecretsGroupAssociationRequest := []openapiclient.BulkWritableSecretsGroupAssociationRequest{*openapiclient.NewBulkWritableSecretsGroupAssociationRequest("Id_example", openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableSecretsGroupAssociationRequest | 
+	bulkWritableSecretsGroupAssociationRequest := []openapiclient.BulkWritableSecretsGroupAssociationRequest{*openapiclient.NewBulkWritableSecretsGroupAssociationRequest("Id_example", openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableSecretsGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -32787,7 +32095,7 @@ import (
 )
 
 func main() {
-	secretsGroupAssociationRequest := *openapiclient.NewSecretsGroupAssociationRequest(openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SecretsGroupAssociationRequest | 
+	secretsGroupAssociationRequest := *openapiclient.NewSecretsGroupAssociationRequest(openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SecretsGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -33226,7 +32534,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this secrets group association.
-	secretsGroupAssociationRequest := *openapiclient.NewSecretsGroupAssociationRequest(openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // SecretsGroupAssociationRequest | 
+	secretsGroupAssociationRequest := *openapiclient.NewSecretsGroupAssociationRequest(openapiclient.AccessTypeEnum("Generic"), openapiclient.SecretTypeEnum("authentication-key"), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // SecretsGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34883,7 +34191,7 @@ import (
 )
 
 func main() {
-	bulkWritableStaticGroupAssociationRequest := []openapiclient.BulkWritableStaticGroupAssociationRequest{*openapiclient.NewBulkWritableStaticGroupAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableStaticGroupAssociationRequest | 
+	bulkWritableStaticGroupAssociationRequest := []openapiclient.BulkWritableStaticGroupAssociationRequest{*openapiclient.NewBulkWritableStaticGroupAssociationRequest("Id_example", "AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableStaticGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -34951,7 +34259,7 @@ import (
 )
 
 func main() {
-	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // StaticGroupAssociationRequest | 
+	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // StaticGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -35517,7 +34825,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this static group association.
-	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // StaticGroupAssociationRequest | 
+	staticGroupAssociationRequest := *openapiclient.NewStaticGroupAssociationRequest("AssociatedObjectType_example", "AssociatedObjectId_example", *openapiclient.NewBulkWritableCableRequestStatus()) // StaticGroupAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38519,7 +37827,7 @@ import (
 )
 
 func main() {
-	bulkWritableUserSavedViewAssociationRequest := []openapiclient.BulkWritableUserSavedViewAssociationRequest{*openapiclient.NewBulkWritableUserSavedViewAssociationRequest("Id_example", "ViewName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableUserSavedViewAssociationRequest | 
+	bulkWritableUserSavedViewAssociationRequest := []openapiclient.BulkWritableUserSavedViewAssociationRequest{*openapiclient.NewBulkWritableUserSavedViewAssociationRequest("Id_example", "ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableUserSavedViewAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38587,7 +37895,7 @@ import (
 )
 
 func main() {
-	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // UserSavedViewAssociationRequest | 
+	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // UserSavedViewAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -38997,7 +38305,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this user saved view association.
-	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // UserSavedViewAssociationRequest | 
+	userSavedViewAssociationRequest := *openapiclient.NewUserSavedViewAssociationRequest("ViewName_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // UserSavedViewAssociationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

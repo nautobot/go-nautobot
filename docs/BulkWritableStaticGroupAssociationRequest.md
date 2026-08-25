@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AssociatedObjectType** | **string** |  | 
 **AssociatedObjectId** | **string** |  | 
-**DynamicGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**DynamicGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableStaticGroupAssociationRequest
 
-`func NewBulkWritableStaticGroupAssociationRequest(id string, associatedObjectType string, associatedObjectId string, dynamicGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableStaticGroupAssociationRequest`
+`func NewBulkWritableStaticGroupAssociationRequest(id string, associatedObjectType string, associatedObjectId string, dynamicGroup BulkWritableCableRequestStatus, ) *BulkWritableStaticGroupAssociationRequest`
 
 NewBulkWritableStaticGroupAssociationRequest instantiates a new BulkWritableStaticGroupAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -92,20 +92,20 @@ SetAssociatedObjectId sets AssociatedObjectId field to given value.
 
 ### GetDynamicGroup
 
-`func (o *BulkWritableStaticGroupAssociationRequest) GetDynamicGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableStaticGroupAssociationRequest) GetDynamicGroup() BulkWritableCableRequestStatus`
 
 GetDynamicGroup returns the DynamicGroup field if non-nil, zero value otherwise.
 
 ### GetDynamicGroupOk
 
-`func (o *BulkWritableStaticGroupAssociationRequest) GetDynamicGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableStaticGroupAssociationRequest) GetDynamicGroupOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDynamicGroupOk returns a tuple with the DynamicGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDynamicGroup
 
-`func (o *BulkWritableStaticGroupAssociationRequest) SetDynamicGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableStaticGroupAssociationRequest) SetDynamicGroup(v BulkWritableCableRequestStatus)`
 
 SetDynamicGroup sets DynamicGroup field to given value.
 

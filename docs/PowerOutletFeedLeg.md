@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | Pointer to [**PowerOutletFeedLegValue**](PowerOutletFeedLegValue.md) |  | [optional] 
-**Label** | Pointer to [**PowerOutletFeedLegValue**](PowerOutletFeedLegValue.md) |  | [optional] 
+**Value** | Pointer to [**DcimPowerOutletTemplatesListFeedLegParameterInner**](DcimPowerOutletTemplatesListFeedLegParameterInner.md) |  | [optional] 
+**Label** | Pointer to [**DcimPowerOutletTemplatesListFeedLegParameterInner**](DcimPowerOutletTemplatesListFeedLegParameterInner.md) |  | [optional] 
 
 ## Methods
 
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
-`func (o *PowerOutletFeedLeg) GetValue() PowerOutletFeedLegValue`
+`func (o *PowerOutletFeedLeg) GetValue() DcimPowerOutletTemplatesListFeedLegParameterInner`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *PowerOutletFeedLeg) GetValueOk() (*PowerOutletFeedLegValue, bool)`
+`func (o *PowerOutletFeedLeg) GetValueOk() (*DcimPowerOutletTemplatesListFeedLegParameterInner, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *PowerOutletFeedLeg) SetValue(v PowerOutletFeedLegValue)`
+`func (o *PowerOutletFeedLeg) SetValue(v DcimPowerOutletTemplatesListFeedLegParameterInner)`
 
 SetValue sets Value field to given value.
 
@@ -53,20 +53,20 @@ HasValue returns a boolean if a field has been set.
 
 ### GetLabel
 
-`func (o *PowerOutletFeedLeg) GetLabel() PowerOutletFeedLegValue`
+`func (o *PowerOutletFeedLeg) GetLabel() DcimPowerOutletTemplatesListFeedLegParameterInner`
 
 GetLabel returns the Label field if non-nil, zero value otherwise.
 
 ### GetLabelOk
 
-`func (o *PowerOutletFeedLeg) GetLabelOk() (*PowerOutletFeedLegValue, bool)`
+`func (o *PowerOutletFeedLeg) GetLabelOk() (*DcimPowerOutletTemplatesListFeedLegParameterInner, bool)`
 
 GetLabelOk returns a tuple with the Label field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLabel
 
-`func (o *PowerOutletFeedLeg) SetLabel(v PowerOutletFeedLegValue)`
+`func (o *PowerOutletFeedLeg) SetLabel(v DcimPowerOutletTemplatesListFeedLegParameterInner)`
 
 SetLabel sets Label field to given value.
 

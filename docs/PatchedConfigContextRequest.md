@@ -13,17 +13,17 @@ Name | Type | Description | Notes
 **IsActive** | Pointer to **bool** |  | [optional] 
 **Data** | Pointer to **interface{}** |  | [optional] 
 **ConfigContextSchema** | Pointer to [**NullableBulkWritableConfigContextRequestConfigContextSchema**](BulkWritableConfigContextRequestConfigContextSchema.md) |  | [optional] 
-**Locations** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Roles** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**DeviceTypes** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**DeviceRedundancyGroups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Platforms** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**ClusterGroups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Clusters** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**TenantGroups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Tenants** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**DeviceFamilies** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Locations** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Roles** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceTypes** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceRedundancyGroups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Platforms** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**ClusterGroups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Clusters** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**TenantGroups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tenants** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**DeviceFamilies** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -311,20 +311,20 @@ HasConfigContextSchema returns a boolean if a field has been set.
 UnsetConfigContextSchema ensures that no value is present for ConfigContextSchema, not even an explicit nil
 ### GetLocations
 
-`func (o *PatchedConfigContextRequest) GetLocations() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetLocations() []BulkWritableCableRequestStatus`
 
 GetLocations returns the Locations field if non-nil, zero value otherwise.
 
 ### GetLocationsOk
 
-`func (o *PatchedConfigContextRequest) GetLocationsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetLocationsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetLocationsOk returns a tuple with the Locations field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocations
 
-`func (o *PatchedConfigContextRequest) SetLocations(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetLocations(v []BulkWritableCableRequestStatus)`
 
 SetLocations sets Locations field to given value.
 
@@ -336,20 +336,20 @@ HasLocations returns a boolean if a field has been set.
 
 ### GetRoles
 
-`func (o *PatchedConfigContextRequest) GetRoles() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetRoles() []BulkWritableCableRequestStatus`
 
 GetRoles returns the Roles field if non-nil, zero value otherwise.
 
 ### GetRolesOk
 
-`func (o *PatchedConfigContextRequest) GetRolesOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetRolesOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetRolesOk returns a tuple with the Roles field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRoles
 
-`func (o *PatchedConfigContextRequest) SetRoles(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetRoles(v []BulkWritableCableRequestStatus)`
 
 SetRoles sets Roles field to given value.
 
@@ -361,20 +361,20 @@ HasRoles returns a boolean if a field has been set.
 
 ### GetDeviceTypes
 
-`func (o *PatchedConfigContextRequest) GetDeviceTypes() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetDeviceTypes() []BulkWritableCableRequestStatus`
 
 GetDeviceTypes returns the DeviceTypes field if non-nil, zero value otherwise.
 
 ### GetDeviceTypesOk
 
-`func (o *PatchedConfigContextRequest) GetDeviceTypesOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetDeviceTypesOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetDeviceTypesOk returns a tuple with the DeviceTypes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceTypes
 
-`func (o *PatchedConfigContextRequest) SetDeviceTypes(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetDeviceTypes(v []BulkWritableCableRequestStatus)`
 
 SetDeviceTypes sets DeviceTypes field to given value.
 
@@ -386,20 +386,20 @@ HasDeviceTypes returns a boolean if a field has been set.
 
 ### GetDeviceRedundancyGroups
 
-`func (o *PatchedConfigContextRequest) GetDeviceRedundancyGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetDeviceRedundancyGroups() []BulkWritableCableRequestStatus`
 
 GetDeviceRedundancyGroups returns the DeviceRedundancyGroups field if non-nil, zero value otherwise.
 
 ### GetDeviceRedundancyGroupsOk
 
-`func (o *PatchedConfigContextRequest) GetDeviceRedundancyGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetDeviceRedundancyGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetDeviceRedundancyGroupsOk returns a tuple with the DeviceRedundancyGroups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceRedundancyGroups
 
-`func (o *PatchedConfigContextRequest) SetDeviceRedundancyGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetDeviceRedundancyGroups(v []BulkWritableCableRequestStatus)`
 
 SetDeviceRedundancyGroups sets DeviceRedundancyGroups field to given value.
 
@@ -411,20 +411,20 @@ HasDeviceRedundancyGroups returns a boolean if a field has been set.
 
 ### GetPlatforms
 
-`func (o *PatchedConfigContextRequest) GetPlatforms() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetPlatforms() []BulkWritableCableRequestStatus`
 
 GetPlatforms returns the Platforms field if non-nil, zero value otherwise.
 
 ### GetPlatformsOk
 
-`func (o *PatchedConfigContextRequest) GetPlatformsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetPlatformsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetPlatformsOk returns a tuple with the Platforms field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPlatforms
 
-`func (o *PatchedConfigContextRequest) SetPlatforms(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetPlatforms(v []BulkWritableCableRequestStatus)`
 
 SetPlatforms sets Platforms field to given value.
 
@@ -436,20 +436,20 @@ HasPlatforms returns a boolean if a field has been set.
 
 ### GetClusterGroups
 
-`func (o *PatchedConfigContextRequest) GetClusterGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetClusterGroups() []BulkWritableCableRequestStatus`
 
 GetClusterGroups returns the ClusterGroups field if non-nil, zero value otherwise.
 
 ### GetClusterGroupsOk
 
-`func (o *PatchedConfigContextRequest) GetClusterGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetClusterGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetClusterGroupsOk returns a tuple with the ClusterGroups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusterGroups
 
-`func (o *PatchedConfigContextRequest) SetClusterGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetClusterGroups(v []BulkWritableCableRequestStatus)`
 
 SetClusterGroups sets ClusterGroups field to given value.
 
@@ -461,20 +461,20 @@ HasClusterGroups returns a boolean if a field has been set.
 
 ### GetClusters
 
-`func (o *PatchedConfigContextRequest) GetClusters() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetClusters() []BulkWritableCableRequestStatus`
 
 GetClusters returns the Clusters field if non-nil, zero value otherwise.
 
 ### GetClustersOk
 
-`func (o *PatchedConfigContextRequest) GetClustersOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetClustersOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetClustersOk returns a tuple with the Clusters field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusters
 
-`func (o *PatchedConfigContextRequest) SetClusters(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetClusters(v []BulkWritableCableRequestStatus)`
 
 SetClusters sets Clusters field to given value.
 
@@ -486,20 +486,20 @@ HasClusters returns a boolean if a field has been set.
 
 ### GetTenantGroups
 
-`func (o *PatchedConfigContextRequest) GetTenantGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetTenantGroups() []BulkWritableCableRequestStatus`
 
 GetTenantGroups returns the TenantGroups field if non-nil, zero value otherwise.
 
 ### GetTenantGroupsOk
 
-`func (o *PatchedConfigContextRequest) GetTenantGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetTenantGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTenantGroupsOk returns a tuple with the TenantGroups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenantGroups
 
-`func (o *PatchedConfigContextRequest) SetTenantGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetTenantGroups(v []BulkWritableCableRequestStatus)`
 
 SetTenantGroups sets TenantGroups field to given value.
 
@@ -511,20 +511,20 @@ HasTenantGroups returns a boolean if a field has been set.
 
 ### GetTenants
 
-`func (o *PatchedConfigContextRequest) GetTenants() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetTenants() []BulkWritableCableRequestStatus`
 
 GetTenants returns the Tenants field if non-nil, zero value otherwise.
 
 ### GetTenantsOk
 
-`func (o *PatchedConfigContextRequest) GetTenantsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetTenantsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTenantsOk returns a tuple with the Tenants field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenants
 
-`func (o *PatchedConfigContextRequest) SetTenants(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetTenants(v []BulkWritableCableRequestStatus)`
 
 SetTenants sets Tenants field to given value.
 
@@ -536,20 +536,20 @@ HasTenants returns a boolean if a field has been set.
 
 ### GetDeviceFamilies
 
-`func (o *PatchedConfigContextRequest) GetDeviceFamilies() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetDeviceFamilies() []BulkWritableCableRequestStatus`
 
 GetDeviceFamilies returns the DeviceFamilies field if non-nil, zero value otherwise.
 
 ### GetDeviceFamiliesOk
 
-`func (o *PatchedConfigContextRequest) GetDeviceFamiliesOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetDeviceFamiliesOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetDeviceFamiliesOk returns a tuple with the DeviceFamilies field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceFamilies
 
-`func (o *PatchedConfigContextRequest) SetDeviceFamilies(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetDeviceFamilies(v []BulkWritableCableRequestStatus)`
 
 SetDeviceFamilies sets DeviceFamilies field to given value.
 
@@ -561,20 +561,20 @@ HasDeviceFamilies returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedConfigContextRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedConfigContextRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedConfigContextRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedConfigContextRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedConfigContextRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedConfigContextRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

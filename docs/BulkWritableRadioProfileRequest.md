@@ -13,10 +13,10 @@ Name | Type | Description | Notes
 **TxPowerMax** | Pointer to **NullableInt32** |  | [optional] 
 **RegulatoryDomain** | [**RegulatoryDomainEnum**](RegulatoryDomainEnum.md) |  | 
 **RxPowerMin** | Pointer to **NullableInt32** |  | [optional] 
-**SupportedDataRates** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**SupportedDataRates** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -279,20 +279,20 @@ HasRxPowerMin returns a boolean if a field has been set.
 UnsetRxPowerMin ensures that no value is present for RxPowerMin, not even an explicit nil
 ### GetSupportedDataRates
 
-`func (o *BulkWritableRadioProfileRequest) GetSupportedDataRates() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableRadioProfileRequest) GetSupportedDataRates() []BulkWritableCableRequestStatus`
 
 GetSupportedDataRates returns the SupportedDataRates field if non-nil, zero value otherwise.
 
 ### GetSupportedDataRatesOk
 
-`func (o *BulkWritableRadioProfileRequest) GetSupportedDataRatesOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableRadioProfileRequest) GetSupportedDataRatesOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetSupportedDataRatesOk returns a tuple with the SupportedDataRates field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSupportedDataRates
 
-`func (o *BulkWritableRadioProfileRequest) SetSupportedDataRates(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableRadioProfileRequest) SetSupportedDataRates(v []BulkWritableCableRequestStatus)`
 
 SetSupportedDataRates sets SupportedDataRates field to given value.
 
@@ -354,20 +354,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableRadioProfileRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableRadioProfileRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableRadioProfileRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableRadioProfileRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableRadioProfileRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableRadioProfileRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

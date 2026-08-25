@@ -11,12 +11,13 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Queue** | **string** |  | [readonly] 
 **TimeZone** | Pointer to **string** |  | [optional] 
+**State** | [**ScheduledJobState**](ScheduledJobState.md) |  | 
 **Name** | **string** | Human-readable description of this scheduled task | 
 **Task** | **string** | The name of the Celery task that should be run. (Example: \&quot;proj.tasks.import_contacts\&quot;) | 
 **Interval** | [**JobExecutionTypeIntervalChoices**](JobExecutionTypeIntervalChoices.md) |  | 
+**Crontab** | Pointer to **string** | Cronjob syntax string for custom scheduling | [optional] 
 **Args** | Pointer to **interface{}** |  | [optional] 
 **Kwargs** | Pointer to **interface{}** |  | [optional] 
-**CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
 **OneOff** | Pointer to **bool** | If True, the schedule will only run the task a single time | [optional] 
 **StartTime** | **time.Time** | Datetime when the schedule should begin triggering the task to run | 
 **Enabled** | Pointer to **bool** | Set to False to disable the schedule | [optional] 
@@ -24,9 +25,8 @@ Name | Type | Description | Notes
 **TotalRunCount** | Pointer to **int32** | Running count of how many times the schedule has triggered the task | [optional] [readonly] 
 **DateChanged** | **time.Time** | Datetime that this scheduled job was last modified | [readonly] 
 **Description** | Pointer to **string** | Detailed description about the details of this scheduled job | [optional] 
-**ApprovalRequired** | Pointer to **bool** |  | [optional] 
+**CeleryKwargs** | Pointer to **interface{}** |  | [optional] 
 **DecisionDate** | **NullableTime** | Datetime that the schedule was approved or denied | [readonly] 
-**Crontab** | Pointer to **string** | Cronjob syntax string for custom scheduling | [optional] 
 **JobModel** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **JobQueue** | Pointer to [**NullableJobQueueOverride**](JobQueueOverride.md) |  | [optional] 
 **User** | Pointer to [**NullableScheduledJobUser**](ScheduledJobUser.md) |  | [optional] 
@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 
 ### NewScheduledJob
 
-`func NewScheduledJob(objectType string, display string, url string, naturalSlug string, queue string, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, decisionDate NullableTime, ) *ScheduledJob`
+`func NewScheduledJob(objectType string, display string, url string, naturalSlug string, queue string, state ScheduledJobState, name string, task string, interval JobExecutionTypeIntervalChoices, startTime time.Time, lastRunAt NullableTime, dateChanged time.Time, decisionDate NullableTime, ) *ScheduledJob`
 
 NewScheduledJob instantiates a new ScheduledJob object
 This constructor will assign default values to properties that have it defined,
@@ -200,6 +200,26 @@ SetTimeZone sets TimeZone field to given value.
 
 HasTimeZone returns a boolean if a field has been set.
 
+### GetState
+
+`func (o *ScheduledJob) GetState() ScheduledJobState`
+
+GetState returns the State field if non-nil, zero value otherwise.
+
+### GetStateOk
+
+`func (o *ScheduledJob) GetStateOk() (*ScheduledJobState, bool)`
+
+GetStateOk returns a tuple with the State field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetState
+
+`func (o *ScheduledJob) SetState(v ScheduledJobState)`
+
+SetState sets State field to given value.
+
+
 ### GetName
 
 `func (o *ScheduledJob) GetName() string`
@@ -259,6 +279,31 @@ and a boolean to check if the value has been set.
 
 SetInterval sets Interval field to given value.
 
+
+### GetCrontab
+
+`func (o *ScheduledJob) GetCrontab() string`
+
+GetCrontab returns the Crontab field if non-nil, zero value otherwise.
+
+### GetCrontabOk
+
+`func (o *ScheduledJob) GetCrontabOk() (*string, bool)`
+
+GetCrontabOk returns a tuple with the Crontab field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCrontab
+
+`func (o *ScheduledJob) SetCrontab(v string)`
+
+SetCrontab sets Crontab field to given value.
+
+### HasCrontab
+
+`func (o *ScheduledJob) HasCrontab() bool`
+
+HasCrontab returns a boolean if a field has been set.
 
 ### GetArgs
 
@@ -330,41 +375,6 @@ HasKwargs returns a boolean if a field has been set.
 `func (o *ScheduledJob) UnsetKwargs()`
 
 UnsetKwargs ensures that no value is present for Kwargs, not even an explicit nil
-### GetCeleryKwargs
-
-`func (o *ScheduledJob) GetCeleryKwargs() interface{}`
-
-GetCeleryKwargs returns the CeleryKwargs field if non-nil, zero value otherwise.
-
-### GetCeleryKwargsOk
-
-`func (o *ScheduledJob) GetCeleryKwargsOk() (*interface{}, bool)`
-
-GetCeleryKwargsOk returns a tuple with the CeleryKwargs field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCeleryKwargs
-
-`func (o *ScheduledJob) SetCeleryKwargs(v interface{})`
-
-SetCeleryKwargs sets CeleryKwargs field to given value.
-
-### HasCeleryKwargs
-
-`func (o *ScheduledJob) HasCeleryKwargs() bool`
-
-HasCeleryKwargs returns a boolean if a field has been set.
-
-### SetCeleryKwargsNil
-
-`func (o *ScheduledJob) SetCeleryKwargsNil(b bool)`
-
- SetCeleryKwargsNil sets the value for CeleryKwargs to be an explicit nil
-
-### UnsetCeleryKwargs
-`func (o *ScheduledJob) UnsetCeleryKwargs()`
-
-UnsetCeleryKwargs ensures that no value is present for CeleryKwargs, not even an explicit nil
 ### GetOneOff
 
 `func (o *ScheduledJob) GetOneOff() bool`
@@ -535,31 +545,41 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
-### GetApprovalRequired
+### GetCeleryKwargs
 
-`func (o *ScheduledJob) GetApprovalRequired() bool`
+`func (o *ScheduledJob) GetCeleryKwargs() interface{}`
 
-GetApprovalRequired returns the ApprovalRequired field if non-nil, zero value otherwise.
+GetCeleryKwargs returns the CeleryKwargs field if non-nil, zero value otherwise.
 
-### GetApprovalRequiredOk
+### GetCeleryKwargsOk
 
-`func (o *ScheduledJob) GetApprovalRequiredOk() (*bool, bool)`
+`func (o *ScheduledJob) GetCeleryKwargsOk() (*interface{}, bool)`
 
-GetApprovalRequiredOk returns a tuple with the ApprovalRequired field if it's non-nil, zero value otherwise
+GetCeleryKwargsOk returns a tuple with the CeleryKwargs field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetApprovalRequired
+### SetCeleryKwargs
 
-`func (o *ScheduledJob) SetApprovalRequired(v bool)`
+`func (o *ScheduledJob) SetCeleryKwargs(v interface{})`
 
-SetApprovalRequired sets ApprovalRequired field to given value.
+SetCeleryKwargs sets CeleryKwargs field to given value.
 
-### HasApprovalRequired
+### HasCeleryKwargs
 
-`func (o *ScheduledJob) HasApprovalRequired() bool`
+`func (o *ScheduledJob) HasCeleryKwargs() bool`
 
-HasApprovalRequired returns a boolean if a field has been set.
+HasCeleryKwargs returns a boolean if a field has been set.
 
+### SetCeleryKwargsNil
+
+`func (o *ScheduledJob) SetCeleryKwargsNil(b bool)`
+
+ SetCeleryKwargsNil sets the value for CeleryKwargs to be an explicit nil
+
+### UnsetCeleryKwargs
+`func (o *ScheduledJob) UnsetCeleryKwargs()`
+
+UnsetCeleryKwargs ensures that no value is present for CeleryKwargs, not even an explicit nil
 ### GetDecisionDate
 
 `func (o *ScheduledJob) GetDecisionDate() time.Time`
@@ -590,31 +610,6 @@ SetDecisionDate sets DecisionDate field to given value.
 `func (o *ScheduledJob) UnsetDecisionDate()`
 
 UnsetDecisionDate ensures that no value is present for DecisionDate, not even an explicit nil
-### GetCrontab
-
-`func (o *ScheduledJob) GetCrontab() string`
-
-GetCrontab returns the Crontab field if non-nil, zero value otherwise.
-
-### GetCrontabOk
-
-`func (o *ScheduledJob) GetCrontabOk() (*string, bool)`
-
-GetCrontabOk returns a tuple with the Crontab field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCrontab
-
-`func (o *ScheduledJob) SetCrontab(v string)`
-
-SetCrontab sets Crontab field to given value.
-
-### HasCrontab
-
-`func (o *ScheduledJob) HasCrontab() bool`
-
-HasCrontab returns a boolean if a field has been set.
-
 ### GetJobModel
 
 `func (o *ScheduledJob) GetJobModel() ApprovalWorkflowUser`

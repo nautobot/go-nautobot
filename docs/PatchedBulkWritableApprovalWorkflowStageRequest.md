@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | [optional] 
 **ApprovalWorkflow** | Pointer to [**ApprovalWorkflowStageApprovalWorkflow**](ApprovalWorkflowStageApprovalWorkflow.md) |  | [optional] 
-**ApprovalWorkflowStageDefinition** | Pointer to [**ApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
+**ApprovalWorkflowStageDefinition** | Pointer to [**NullableApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -125,6 +125,16 @@ SetApprovalWorkflowStageDefinition sets ApprovalWorkflowStageDefinition field to
 
 HasApprovalWorkflowStageDefinition returns a boolean if a field has been set.
 
+### SetApprovalWorkflowStageDefinitionNil
+
+`func (o *PatchedBulkWritableApprovalWorkflowStageRequest) SetApprovalWorkflowStageDefinitionNil(b bool)`
+
+ SetApprovalWorkflowStageDefinitionNil sets the value for ApprovalWorkflowStageDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowStageDefinition
+`func (o *PatchedBulkWritableApprovalWorkflowStageRequest) UnsetApprovalWorkflowStageDefinition()`
+
+UnsetApprovalWorkflowStageDefinition ensures that no value is present for ApprovalWorkflowStageDefinition, not even an explicit nil
 ### GetCustomFields
 
 `func (o *PatchedBulkWritableApprovalWorkflowStageRequest) GetCustomFields() map[string]interface{}`

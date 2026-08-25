@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **ObjectUnderReviewContentType** | **string** |  | 
 **ObjectUnderReviewObjectId** | **string** |  | 
 **CurrentState** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | [optional] 
-**ApprovalWorkflowDefinition** | [**ApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | 
+**ApprovalWorkflowDefinition** | Pointer to [**NullableApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewApprovalWorkflowRequest
 
-`func NewApprovalWorkflowRequest(objectUnderReviewContentType string, objectUnderReviewObjectId string, approvalWorkflowDefinition ApprovalWorkflowApprovalWorkflowDefinition, ) *ApprovalWorkflowRequest`
+`func NewApprovalWorkflowRequest(objectUnderReviewContentType string, objectUnderReviewObjectId string, ) *ApprovalWorkflowRequest`
 
 NewApprovalWorkflowRequest instantiates a new ApprovalWorkflowRequest object
 This constructor will assign default values to properties that have it defined,
@@ -141,7 +141,22 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowDefinition sets ApprovalWorkflowDefinition field to given value.
 
+### HasApprovalWorkflowDefinition
 
+`func (o *ApprovalWorkflowRequest) HasApprovalWorkflowDefinition() bool`
+
+HasApprovalWorkflowDefinition returns a boolean if a field has been set.
+
+### SetApprovalWorkflowDefinitionNil
+
+`func (o *ApprovalWorkflowRequest) SetApprovalWorkflowDefinitionNil(b bool)`
+
+ SetApprovalWorkflowDefinitionNil sets the value for ApprovalWorkflowDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowDefinition
+`func (o *ApprovalWorkflowRequest) UnsetApprovalWorkflowDefinition()`
+
+UnsetApprovalWorkflowDefinition ensures that no value is present for ApprovalWorkflowDefinition, not even an explicit nil
 ### GetUser
 
 `func (o *ApprovalWorkflowRequest) GetUser() ApprovalWorkflowUser`

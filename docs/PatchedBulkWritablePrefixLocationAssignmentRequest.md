@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**Prefix** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Location** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Prefix** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Location** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -49,20 +49,20 @@ SetId sets Id field to given value.
 
 ### GetPrefix
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetPrefix() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetPrefix() BulkWritableCableRequestStatus`
 
 GetPrefix returns the Prefix field if non-nil, zero value otherwise.
 
 ### GetPrefixOk
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetPrefixOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetPrefixOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetPrefixOk returns a tuple with the Prefix field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrefix
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) SetPrefix(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) SetPrefix(v BulkWritableCableRequestStatus)`
 
 SetPrefix sets Prefix field to given value.
 
@@ -74,20 +74,20 @@ HasPrefix returns a boolean if a field has been set.
 
 ### GetLocation
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetLocation() BulkWritableCableRequestStatus`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritablePrefixLocationAssignmentRequest) SetLocation(v BulkWritableCableRequestStatus)`
 
 SetLocation sets Location field to given value.
 

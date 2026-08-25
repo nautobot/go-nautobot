@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **RearPortPosition** | Pointer to **int32** |  | [optional] 
 **DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**RearPortTemplate** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**RearPortTemplate** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableFrontPortTemplateRequest
 
-`func NewBulkWritableFrontPortTemplateRequest(id string, type_ PortTypeChoices, name string, rearPortTemplate ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableFrontPortTemplateRequest`
+`func NewBulkWritableFrontPortTemplateRequest(id string, type_ PortTypeChoices, name string, rearPortTemplate BulkWritableCableRequestStatus, ) *BulkWritableFrontPortTemplateRequest`
 
 NewBulkWritableFrontPortTemplateRequest instantiates a new BulkWritableFrontPortTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -242,20 +242,20 @@ HasModuleType returns a boolean if a field has been set.
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetRearPortTemplate
 
-`func (o *BulkWritableFrontPortTemplateRequest) GetRearPortTemplate() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableFrontPortTemplateRequest) GetRearPortTemplate() BulkWritableCableRequestStatus`
 
 GetRearPortTemplate returns the RearPortTemplate field if non-nil, zero value otherwise.
 
 ### GetRearPortTemplateOk
 
-`func (o *BulkWritableFrontPortTemplateRequest) GetRearPortTemplateOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableFrontPortTemplateRequest) GetRearPortTemplateOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRearPortTemplateOk returns a tuple with the RearPortTemplate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRearPortTemplate
 
-`func (o *BulkWritableFrontPortTemplateRequest) SetRearPortTemplate(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableFrontPortTemplateRequest) SetRearPortTemplate(v BulkWritableCableRequestStatus)`
 
 SetRearPortTemplate sets RearPortTemplate field to given value.
 

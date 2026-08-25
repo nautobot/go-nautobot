@@ -7,11 +7,11 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Comments** | Pointer to **string** |  | [optional] 
-**ClusterType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**ClusterType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **ClusterGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 
 ### NewClusterRequest
 
-`func NewClusterRequest(name string, clusterType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ClusterRequest`
+`func NewClusterRequest(name string, clusterType BulkWritableCableRequestStatus, ) *ClusterRequest`
 
 NewClusterRequest instantiates a new ClusterRequest object
 This constructor will assign default values to properties that have it defined,
@@ -106,20 +106,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetClusterType
 
-`func (o *ClusterRequest) GetClusterType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ClusterRequest) GetClusterType() BulkWritableCableRequestStatus`
 
 GetClusterType returns the ClusterType field if non-nil, zero value otherwise.
 
 ### GetClusterTypeOk
 
-`func (o *ClusterRequest) GetClusterTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ClusterRequest) GetClusterTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetClusterTypeOk returns a tuple with the ClusterType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetClusterType
 
-`func (o *ClusterRequest) SetClusterType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ClusterRequest) SetClusterType(v BulkWritableCableRequestStatus)`
 
 SetClusterType sets ClusterType field to given value.
 
@@ -231,20 +231,20 @@ HasLocation returns a boolean if a field has been set.
 UnsetLocation ensures that no value is present for Location, not even an explicit nil
 ### GetTags
 
-`func (o *ClusterRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ClusterRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *ClusterRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ClusterRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *ClusterRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ClusterRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

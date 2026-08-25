@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: API Documentation
-  version: 3.0.11 (3.0)
+  version: 3.1.8 (3.1)
   description: Source of truth and network automation platform
   license:
     name: Apache v2 License
@@ -533,6 +533,9 @@ paths:
           items:
             type: string
             title: Termination
+            enum:
+            - A
+            - Z
         explode: true
         style: form
       - in: query
@@ -16468,6 +16471,13 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - cm
+            - ft
+            - in
+            - km
+            - m
+            - mi
         explode: true
         style: form
       - in: query
@@ -18224,6 +18234,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Other
+            - Serial
+            - USB
         explode: true
         style: form
       - in: query
@@ -20375,6 +20389,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Other
+            - Serial
+            - USB
         explode: true
         style: form
       - in: query
@@ -27558,6 +27576,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - ''
+            - active-active
+            - active-passive
         explode: true
         style: form
       - in: query
@@ -29313,8 +29335,13 @@ paths:
           items:
             type: string
             title: Parent/child status
-        description: Parent devices house child devices in device bays. Leave blank
-          if this device type is neither a parent nor a child.
+            enum:
+            - child
+            - parent
+            - parent-child
+        description: |+
+          Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.
+
         explode: true
         style: form
       - in: query
@@ -30994,6 +31021,9 @@ paths:
           items:
             type: string
             title: Rack face
+            enum:
+            - front
+            - rear
         explode: true
         style: form
       - in: query
@@ -33488,6 +33518,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Copper
+            - Fiber Optic
+            - Other
         explode: true
         style: form
       - in: query
@@ -34548,6 +34582,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Copper
+            - Fiber Optic
+            - Other
         explode: true
         style: form
       - in: query
@@ -36341,6 +36379,11 @@ paths:
           items:
             type: string
             title: Redundancy Protocol
+            enum:
+            - carp
+            - glbp
+            - hsrp
+            - vrrp
         explode: true
         style: form
       - in: query
@@ -37616,6 +37659,125 @@ paths:
         schema:
           type: integer
       - in: query
+        name: port_type
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - Copper
+            - Fiber Optic
+            - Other
+        description: |+
+          Physical connector type
+
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nre
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__re
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: q
         schema:
           type: string
@@ -37653,6 +37815,22 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - ATM
+            - Cellular
+            - Coaxial
+            - Ethernet (backplane)
+            - Ethernet (fixed)
+            - Ethernet (modular)
+            - FibreChannel
+            - InfiniBand
+            - Other
+            - PON
+            - SONET
+            - Serial
+            - Stacking
+            - Virtual interfaces
+            - Wireless
         explode: true
         style: form
       - in: query
@@ -39342,6 +39520,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - access
+            - tagged
+            - tagged-all
         explode: true
         style: form
       - in: query
@@ -39653,6 +39835,119 @@ paths:
           type: boolean
       - in: query
         name: parent_interface__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type
+        schema:
+          type: array
+          items:
+            type: string
+        description: Physical connector type
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__ire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__nre
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: port_type__re
         schema:
           type: array
           items:
@@ -43981,6 +44276,11 @@ paths:
             type: number
         explode: true
         style: form
+      - in: query
+        name: max_depth
+        schema:
+          type: number
+        description: Maximum nesting depth within parent Locations
       - in: query
         name: name
         schema:
@@ -54510,7 +54810,13 @@ paths:
           items:
             type: integer
             nullable: true
-        description: Number of breaker poles
+            enum:
+            - 1
+            - 2
+            - 3
+        description: |+
+          Number of breaker poles
+
         explode: true
         style: form
       - in: query
@@ -55218,6 +55524,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - single-phase
+            - three-phase
         explode: true
         style: form
       - in: query
@@ -55346,7 +55655,12 @@ paths:
           type: array
           items:
             type: string
-        description: Physical power distribution redundancy path.
+            enum:
+            - a
+            - b
+        description: |+
+          Physical power distribution redundancy path.
+
         explode: true
         style: form
       - in: query
@@ -55506,6 +55820,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - ac
+            - dc
         explode: true
         style: form
       - in: query
@@ -55659,6 +55976,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - primary
+            - redundant
         explode: true
         style: form
       - in: query
@@ -56502,7 +56822,13 @@ paths:
           type: array
           items:
             type: string
-        description: Phase (for three-phase feeds)
+            enum:
+            - A
+            - B
+            - C
+        description: |+
+          Phase (for three-phase feeds)
+
         explode: true
         style: form
       - in: query
@@ -56989,6 +57315,18 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - California Style
+            - DC
+            - IEC 60309
+            - IEC 60320
+            - IEC 60906-1
+            - ITA/International
+            - NEMA (Locking)
+            - NEMA (Non-locking)
+            - Other
+            - Proprietary
+            - USB
         explode: true
         style: form
       - in: query
@@ -57633,7 +57971,13 @@ paths:
           type: array
           items:
             type: string
-        description: Phase (for three-phase feeds)
+            enum:
+            - A
+            - B
+            - C
+        description: |+
+          Phase (for three-phase feeds)
+
         explode: true
         style: form
       - in: query
@@ -59119,6 +59463,17 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - generator
+            - mdp
+            - mlc
+            - panelboard
+            - pdu
+            - rpp
+            - switchgear
+            - transfer-switch
+            - ups
+            - utility
         explode: true
         style: form
       - in: query
@@ -59251,7 +59606,12 @@ paths:
           type: array
           items:
             type: string
-        description: Physical power distribution redundancy path.
+            enum:
+            - a
+            - b
+        description: |+
+          Physical power distribution redundancy path.
+
         explode: true
         style: form
       - in: query
@@ -60553,6 +60913,18 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - California Style
+            - DC
+            - IEC 60309
+            - IEC 60320
+            - IEC 60906-1
+            - International/ITA
+            - NEMA (Locking)
+            - NEMA (Non-locking)
+            - Other
+            - Proprietary
+            - USB
         explode: true
         style: form
       - in: query
@@ -65013,6 +65385,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - in
+            - mm
         explode: true
         style: form
       - in: query
@@ -66982,6 +67357,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Copper
+            - Fiber Optic
+            - Other
         explode: true
         style: form
       - in: query
@@ -68051,6 +68430,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Copper
+            - Fiber Optic
+            - Other
         explode: true
         style: form
       - in: query
@@ -68962,7 +69345,19 @@ paths:
           type: array
           items:
             type: string
-        description: Hashing algorithm for image file checksum
+            enum:
+            - blake2
+            - blake3
+            - md5
+            - sha1
+            - sha224
+            - sha256
+            - sha3
+            - sha384
+            - sha512
+        description: |+
+          Hashing algorithm for image file checksum
+
         explode: true
         style: form
       - in: query
@@ -75360,720 +75755,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Note'
           description: ''
-  /extras/approval-workflow-stage-responses/:
-    get:
-      operationId: extras_approval_workflow_stage_responses_list
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: approval_workflow_stage
-        schema:
-          type: array
-          items:
-            type: string
-            format: uuid
-        explode: true
-        style: form
-      - in: query
-        name: approval_workflow_stage__n
-        schema:
-          type: array
-          items:
-            type: string
-            format: uuid
-        explode: true
-        style: form
-      - in: query
-        name: comments
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__ic
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__ie
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__iew
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__ire
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__isw
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__n
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__nic
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__nie
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__niew
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__nire
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__nisw
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__nre
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: comments__re
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      - in: query
-        name: id
-        schema:
-          type: array
-          items:
-            type: string
-            format: uuid
-        explode: true
-        style: form
-        description: Unique object identifier, either a UUID primary key or a composite
-          key.
-      - in: query
-        name: id__n
-        schema:
-          type: array
-          items:
-            type: string
-            format: uuid
-        explode: true
-        style: form
-      - in: query
-        name: last_updated
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - in: query
-        name: last_updated__gt
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - in: query
-        name: last_updated__gte
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - in: query
-        name: last_updated__isnull
-        schema:
-          type: boolean
-      - in: query
-        name: last_updated__lt
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - in: query
-        name: last_updated__lte
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - in: query
-        name: last_updated__n
-        schema:
-          type: array
-          items:
-            type: string
-            format: date-time
-        explode: true
-        style: form
-      - name: limit
-        required: false
-        in: query
-        description: Number of results to return per page.
-        schema:
-          type: integer
-      - name: offset
-        required: false
-        in: query
-        description: The initial index from which to return the results.
-        schema:
-          type: integer
-      - in: query
-        name: q
-        schema:
-          type: string
-        description: Search
-      - name: sort
-        required: false
-        in: query
-        description: Which field to use when ordering the results.
-        schema:
-          type: string
-      - in: query
-        name: state
-        schema:
-          type: array
-          items:
-            type: string
-        description: 'User response to this approval workflow stage instance. Eligible
-          values are: Pending, Comment, Approved, Denied.'
-        explode: true
-        style: form
-      - in: query
-        name: state__ic
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__ie
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__iew
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__ire
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__isw
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__n
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__nic
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__nie
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__niew
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__nire
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__nisw
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__nre
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: state__re
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: user
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: user__n
-        schema:
-          type: array
-          items:
-            type: string
-        explode: true
-        style: form
-      - in: query
-        name: depth
-        required: false
-        description: Serializer Depth
-        schema:
-          type: integer
-          minimum: 0
-          maximum: 10
-          default: 1
-      - in: query
-        name: exclude_m2m
-        required: false
-        description: Exclude many-to-many fields from the response
-        schema:
-          type: boolean
-      tags:
-      - extras
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PaginatedApprovalWorkflowStageResponseList'
-            text/csv:
-              schema:
-                $ref: '#/components/schemas/PaginatedApprovalWorkflowStageResponseList'
-          description: ''
-    post:
-      operationId: extras_approval_workflow_stage_responses_create
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      tags:
-      - extras
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ApprovalWorkflowStageResponseRequest'
-          text/csv:
-            schema:
-              $ref: '#/components/schemas/ApprovalWorkflowStageResponseRequest'
-        required: true
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '201':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    put:
-      operationId: extras_approval_workflow_stage_responses_bulk_update
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      tags:
-      - extras
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/BulkWritableApprovalWorkflowStageResponseRequest'
-          text/csv:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/BulkWritableApprovalWorkflowStageResponseRequest'
-        required: true
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    patch:
-      operationId: extras_approval_workflow_stage_responses_bulk_partial_update
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      tags:
-      - extras
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/PatchedBulkWritableApprovalWorkflowStageResponseRequest'
-          text/csv:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/PatchedBulkWritableApprovalWorkflowStageResponseRequest'
-        required: true
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    delete:
-      operationId: extras_approval_workflow_stage_responses_bulk_destroy
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      tags:
-      - extras
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '204':
-          description: No response body
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/BulkOperationRequest'
-          text/csv:
-            schema:
-              type: array
-              items:
-                $ref: '#/components/schemas/BulkOperationRequest'
-        required: true
-  /extras/approval-workflow-stage-responses/{id}/:
-    get:
-      operationId: extras_approval_workflow_stage_responses_retrieve
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      - in: path
-        name: id
-        schema:
-          type: string
-          format: uuid
-        description: A UUID string identifying this Approval Workflow Stage Response.
-        required: true
-      - in: query
-        name: depth
-        required: false
-        description: Serializer Depth
-        schema:
-          type: integer
-          minimum: 0
-          maximum: 10
-          default: 1
-      - in: query
-        name: exclude_m2m
-        required: false
-        description: Exclude many-to-many fields from the response
-        schema:
-          type: boolean
-      tags:
-      - extras
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    put:
-      operationId: extras_approval_workflow_stage_responses_update
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      - in: path
-        name: id
-        schema:
-          type: string
-          format: uuid
-        description: A UUID string identifying this Approval Workflow Stage Response.
-        required: true
-      tags:
-      - extras
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ApprovalWorkflowStageResponseRequest'
-          text/csv:
-            schema:
-              $ref: '#/components/schemas/ApprovalWorkflowStageResponseRequest'
-        required: true
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    patch:
-      operationId: extras_approval_workflow_stage_responses_partial_update
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      - in: path
-        name: id
-        schema:
-          type: string
-          format: uuid
-        description: A UUID string identifying this Approval Workflow Stage Response.
-        required: true
-      tags:
-      - extras
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/PatchedApprovalWorkflowStageResponseRequest'
-          text/csv:
-            schema:
-              $ref: '#/components/schemas/PatchedApprovalWorkflowStageResponseRequest'
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-            text/csv:
-              schema:
-                $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
-          description: ''
-    delete:
-      operationId: extras_approval_workflow_stage_responses_destroy
-      description: ApprovalWorkflowStageResponse viewset.
-      parameters:
-      - in: query
-        name: format
-        schema:
-          type: string
-          enum:
-          - csv
-          - json
-      - in: path
-        name: id
-        schema:
-          type: string
-          format: uuid
-        description: A UUID string identifying this Approval Workflow Stage Response.
-        required: true
-      tags:
-      - extras
-      security:
-      - cookieAuth: []
-      - tokenAuth: []
-      responses:
-        '204':
-          description: No response body
   /extras/approval-workflow-stages/:
     get:
       operationId: extras_approval_workflow_stages_list
@@ -76106,6 +75787,10 @@ paths:
             format: uuid
         explode: true
         style: form
+      - in: query
+        name: approval_workflow_stage_definition__isnull
+        schema:
+          type: boolean
       - in: query
         name: approval_workflow_stage_definition__n
         schema:
@@ -76392,8 +76077,15 @@ paths:
           type: array
           items:
             type: string
-        description: 'State of the approval workflow stage instance. Eligible values
-          are: Pending, Approved, Denied.'
+            enum:
+            - Approved
+            - Canceled
+            - Comment
+            - Denied
+            - Pending
+        description: |+
+          State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied.
+
         explode: true
         style: form
       - in: query
@@ -77081,6 +76773,10 @@ paths:
         explode: true
         style: form
       - in: query
+        name: approval_workflow_definition__isnull
+        schema:
+          type: boolean
+      - in: query
         name: approval_workflow_definition__n
         schema:
           type: array
@@ -77173,8 +76869,15 @@ paths:
           type: array
           items:
             type: string
-        description: 'Current state of the approval workflow. Eligible values are:
-          Pending, Approved, Denied, Canceled.'
+            enum:
+            - Approved
+            - Canceled
+            - Comment
+            - Denied
+            - Pending
+        description: |+
+          Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled.
+
         explode: true
         style: form
       - in: query
@@ -84022,8 +83725,13 @@ paths:
           type: array
           items:
             type: string
-        description: Loose matches any instance of a given string; Exact matches the
-          entire field.
+            enum:
+            - disabled
+            - exact
+            - loose
+        description: |+
+          Loose matches any instance of a given string; Exact matches the entire field.
+
         explode: true
         style: form
       - in: query
@@ -84932,8 +84640,17 @@ paths:
           type: array
           items:
             type: string
-        description: The class of the first link in a group will be used for the dropdown
-          button
+            enum:
+            - danger
+            - default
+            - info
+            - link
+            - primary
+            - success
+            - warning
+        description: |+
+          The class of the first link in a group will be used for the dropdown button
+
         explode: true
         style: form
       - in: query
@@ -86726,6 +86443,14 @@ paths:
         requests.
       parameters:
       - in: query
+        name: ancestors
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: contacts
         schema:
           type: array
@@ -86818,6 +86543,14 @@ paths:
           items:
             type: string
             format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: descendants
+        schema:
+          type: array
+          items:
+            type: string
         explode: true
         style: form
       - in: query
@@ -88856,6 +88589,12 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - DELETE
+            - GET
+            - PATCH
+            - POST
+            - PUT
         explode: true
         style: form
       - in: query
@@ -92770,6 +92509,14 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - danger
+            - default
+            - info
+            - link
+            - primary
+            - success
+            - warning
         explode: true
         style: form
       - in: query
@@ -94901,6 +94648,14 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - critical
+            - debug
+            - error
+            - failure
+            - info
+            - success
+            - warning
         explode: true
         style: form
       - in: query
@@ -97071,6 +96826,11 @@ paths:
           - csv
           - json
       - in: query
+        name: has_job_console_entries
+        schema:
+          type: boolean
+        description: Has Job Console Entries
+      - in: query
         name: id
         schema:
           type: array
@@ -97620,6 +97380,14 @@ paths:
       operationId: extras_jobs_list
       description: Retrieve a list of job objects.
       parameters:
+      - in: query
+        name: console_log_default
+        schema:
+          type: boolean
+      - in: query
+        name: console_log_default_override
+        schema:
+          type: boolean
       - in: query
         name: contacts
         schema:
@@ -100076,7 +99844,22 @@ paths:
           type: array
           items:
             type: string
-        description: The type of data allowed for any Metadata of this type.
+            enum:
+            - boolean
+            - contact-or-team
+            - date
+            - datetime
+            - float
+            - integer
+            - json
+            - markdown
+            - multi-select
+            - select
+            - text
+            - url
+        description: |+
+          The type of data allowed for any Metadata of this type.
+
         explode: true
         style: form
       - in: query
@@ -101710,6 +101493,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - create
+            - delete
+            - update
         explode: true
         style: form
       - in: query
@@ -104080,7 +103867,15 @@ paths:
           type: array
           items:
             type: string
-        description: Cardinality of this relationship
+            enum:
+            - many-to-many
+            - one-to-many
+            - one-to-one
+            - symmetric-many-to-many
+            - symmetric-one-to-one
+        description: |+
+          Cardinality of this relationship
+
         explode: true
         style: form
       - in: query
@@ -106695,6 +106490,119 @@ paths:
           items:
             type: string
             format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: state
+        schema:
+          type: array
+          items:
+            type: string
+        description: Current state of the Scheduled Job
+        explode: true
+        style: form
+      - in: query
+        name: state__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__ire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__nire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__nre
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: state__re
+        schema:
+          type: array
+          items:
+            type: string
         explode: true
         style: form
       - in: query
@@ -116719,6 +116627,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - dhcp
+            - host
+            - slaac
         explode: true
         style: form
       - in: query
@@ -119111,6 +119023,11 @@ paths:
         explode: true
         style: form
       - in: query
+        name: max_depth
+        schema:
+          type: number
+        description: Maximum nesting depth within parent Prefixes
+      - in: query
         name: namespace
         schema:
           type: array
@@ -119160,6 +119077,14 @@ paths:
           items:
             type: string
         description: Prefix
+        explode: true
+        style: form
+      - in: query
+        name: prefix_and_descendants
+        schema:
+          type: array
+          items:
+            type: string
         explode: true
         style: form
       - in: query
@@ -122581,6 +122506,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - tcp
+            - udp
         explode: true
         style: form
       - in: query
@@ -128309,6 +128237,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - client
+            - mutual_tls
+            - server
         explode: true
         style: form
       - in: query
@@ -129833,6 +129765,13 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - custom
+            - dns
+            - http
+            - https
+            - ping
+            - tcp
         explode: true
         style: form
       - in: query
@@ -132575,6 +132514,20 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - custom_load
+            - destination_ip_hash
+            - domain_hash
+            - least_bandwidth
+            - least_connections
+            - least_packets
+            - least_request
+            - least_response_time
+            - round_robin
+            - source_ip_hash
+            - srcip_destip_hash
+            - srcip_srcport_hash
+            - url_hash
         explode: true
         style: form
       - in: query
@@ -134113,6 +134066,11 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - dns
+            - layer2
+            - layer4
+            - layer7
         explode: true
         style: form
       - in: query
@@ -134395,6 +134353,11 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - Any
+            - DNS
+            - Layer 4
+            - Layer 7
         explode: true
         style: form
       - in: query
@@ -134539,6 +134502,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - auto
+            - pool
+            - static
         explode: true
         style: form
       - in: query
@@ -135430,6 +135397,7 @@ paths:
           - tr
           - tt
           - udm
+          - ug
           - uk
           - ur
           - uz
@@ -135582,6 +135550,7 @@ paths:
           - tr
           - tt
           - udm
+          - ug
           - uk
           - ur
           - uz
@@ -135726,6 +135695,7 @@ paths:
           - tr
           - tt
           - udm
+          - ug
           - uk
           - ur
           - uz
@@ -144562,6 +144532,10 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - access
+            - tagged
+            - tagged-all
         explode: true
         style: form
       - in: query
@@ -147183,7 +147157,14 @@ paths:
           type: array
           items:
             type: string
-        description: PSK, RSA, ECDSA, Certificate
+            enum:
+            - Certificate
+            - ECDSA
+            - PSK
+            - RSA
+        description: |+
+          PSK, RSA, ECDSA, Certificate
+
         explode: true
         style: form
       - in: query
@@ -147546,6 +147527,9 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - IKEv1
+            - IKEv2
         explode: true
         style: form
       - in: query
@@ -151748,6 +151732,778 @@ paths:
               schema:
                 $ref: '#/components/schemas/Note'
           description: ''
+  /vpn/vpn-terminations/:
+    get:
+      operationId: vpn_vpn_terminations_list
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: contacts
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: contacts__isnull
+        schema:
+          type: boolean
+        description: Contacts (name or ID) is null
+      - in: query
+        name: contacts__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: created
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__isnull
+        schema:
+          type: boolean
+      - in: query
+        name: created__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: created__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: dynamic_groups
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: dynamic_groups__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: query
+        name: id
+        schema:
+          type: array
+          items:
+            type: string
+            format: uuid
+        explode: true
+        style: form
+        description: Unique object identifier, either a UUID primary key or a composite
+          key.
+      - in: query
+        name: id__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: uuid
+        explode: true
+        style: form
+      - in: query
+        name: interface
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: interface__isnull
+        schema:
+          type: boolean
+        description: Interface (name or ID) is null
+      - in: query
+        name: interface__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: last_updated
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__gte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__isnull
+        schema:
+          type: boolean
+      - in: query
+        name: last_updated__lt
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__lte
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - in: query
+        name: last_updated__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: date-time
+        explode: true
+        style: form
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      - in: query
+        name: q
+        schema:
+          type: string
+        description: Search
+      - name: sort
+        required: false
+        in: query
+        description: Which field to use when ordering the results.
+        schema:
+          type: string
+      - in: query
+        name: tags
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: tags__isnull
+        schema:
+          type: boolean
+      - in: query
+        name: tags__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: teams
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: teams__isnull
+        schema:
+          type: boolean
+        description: Teams (name or ID) is null
+      - in: query
+        name: teams__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vlan
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vlan__isnull
+        schema:
+          type: boolean
+        description: VLAN (VID or ID) is null
+      - in: query
+        name: vlan__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vm_interface
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vm_interface__isnull
+        schema:
+          type: boolean
+        description: VM Interface (name or ID) is null
+      - in: query
+        name: vm_interface__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vpn
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: vpn__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: depth
+        required: false
+        description: Serializer Depth
+        schema:
+          type: integer
+          minimum: 0
+          maximum: 10
+          default: 1
+      - in: query
+        name: exclude_m2m
+        required: false
+        description: Exclude many-to-many fields from the response
+        schema:
+          type: boolean
+      tags:
+      - vpn
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedVPNTerminationList'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/PaginatedVPNTerminationList'
+          description: ''
+    post:
+      operationId: vpn_vpn_terminations_create
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VPNTerminationRequest'
+          text/csv:
+            schema:
+              $ref: '#/components/schemas/VPNTerminationRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    put:
+      operationId: vpn_vpn_terminations_bulk_update
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/BulkWritableVPNTerminationRequest'
+          text/csv:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/BulkWritableVPNTerminationRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    patch:
+      operationId: vpn_vpn_terminations_bulk_partial_update
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/PatchedBulkWritableVPNTerminationRequest'
+          text/csv:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/PatchedBulkWritableVPNTerminationRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    delete:
+      operationId: vpn_vpn_terminations_bulk_destroy
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      tags:
+      - vpn
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/BulkOperationRequest'
+          text/csv:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/BulkOperationRequest'
+        required: true
+  /vpn/vpn-terminations/{id}/:
+    get:
+      operationId: vpn_vpn_terminations_retrieve
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      - in: query
+        name: depth
+        required: false
+        description: Serializer Depth
+        schema:
+          type: integer
+          minimum: 0
+          maximum: 10
+          default: 1
+      - in: query
+        name: exclude_m2m
+        required: false
+        description: Exclude many-to-many fields from the response
+        schema:
+          type: boolean
+      tags:
+      - vpn
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    put:
+      operationId: vpn_vpn_terminations_update
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VPNTerminationRequest'
+          text/csv:
+            schema:
+              $ref: '#/components/schemas/VPNTerminationRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    patch:
+      operationId: vpn_vpn_terminations_partial_update
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PatchedVPNTerminationRequest'
+          text/csv:
+            schema:
+              $ref: '#/components/schemas/PatchedVPNTerminationRequest'
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/VPNTermination'
+          description: ''
+    delete:
+      operationId: vpn_vpn_terminations_destroy
+      description: VPNTermination viewset.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      tags:
+      - vpn
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '204':
+          description: No response body
+  /vpn/vpn-terminations/{id}/notes/:
+    get:
+      operationId: vpn_vpn_terminations_notes_list
+      description: API methods for returning or creating notes on an object.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      - in: query
+        name: depth
+        required: false
+        description: Serializer Depth
+        schema:
+          type: integer
+          minimum: 0
+          maximum: 10
+          default: 1
+      - in: query
+        name: exclude_m2m
+        required: false
+        description: Exclude many-to-many fields from the response
+        schema:
+          type: boolean
+      tags:
+      - vpn
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedNoteList'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/PaginatedNoteList'
+          description: ''
+    post:
+      operationId: vpn_vpn_terminations_notes_create
+      description: API methods for returning or creating notes on an object.
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - csv
+          - json
+      - in: path
+        name: id
+        schema:
+          type: string
+          format: uuid
+        description: A UUID string identifying this VPN Termination.
+        required: true
+      tags:
+      - vpn
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NoteInputRequest'
+          text/csv:
+            schema:
+              $ref: '#/components/schemas/NoteInputRequest'
+        required: true
+      security:
+      - cookieAuth: []
+      - tokenAuth: []
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/Note'
+          description: ''
   /vpn/vpn-tunnel-endpoints/:
     get:
       operationId: vpn_vpn_tunnel_endpoints_list
@@ -153155,6 +153911,16 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - EoIP
+            - GRE
+            - IP-in-IP
+            - IPsec-Transport
+            - IPsec-Tunnel
+            - L2TP
+            - OpenVPN
+            - PPTP
+            - WireGuard
         explode: true
         style: form
       - in: query
@@ -154506,6 +155272,14 @@ paths:
         explode: true
         style: form
       - in: query
+        name: extra_attributes
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
         name: format
         schema:
           type: string
@@ -154754,12 +155528,157 @@ paths:
             format: uuid
         explode: true
         style: form
+      - in: query
+        name: service_type
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - E-LAN
+            - E-Line
+            - E-Tree
+            - EVPN
+            - Other
+            - Tunnel
+            - VPLS
+            - VXLAN
+        description: |+
+          Optional classification of this VPN service, for example IPSec or VXLAN-EVPN.
+
+        explode: true
+        style: form
+      - in: query
+        name: service_type__ic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__ie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__iew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__ire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__isw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__n
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__nic
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__nie
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__niew
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__nire
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__nisw
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__nre
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: service_type__re
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
       - name: sort
         required: false
         in: query
         description: Which field to use when ordering the results.
         schema:
           type: string
+      - in: query
+        name: status
+        schema:
+          type: array
+          items:
+            type: string
+        explode: true
+        style: form
+      - in: query
+        name: status__isnull
+        schema:
+          type: boolean
+      - in: query
+        name: status__n
+        schema:
+          type: array
+          items:
+            type: string
+            format: uuid
+        explode: true
+        style: form
       - in: query
         name: tags
         schema:
@@ -154885,7 +155804,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: VPN ID contains
         explode: true
         style: form
       - in: query
@@ -154903,7 +155822,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: VPN ID ends with
         explode: true
         style: form
       - in: query
@@ -154912,7 +155831,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: VPN ID matches regex
         explode: true
         style: form
       - in: query
@@ -154921,7 +155840,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: VPN ID starts with
         explode: true
         style: form
       - in: query
@@ -154930,7 +155849,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID
         explode: true
         style: form
       - in: query
@@ -154939,7 +155858,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID contains
         explode: true
         style: form
       - in: query
@@ -154948,7 +155867,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID
         explode: true
         style: form
       - in: query
@@ -154957,7 +155876,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID ends with
         explode: true
         style: form
       - in: query
@@ -154966,7 +155885,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID matches regex
         explode: true
         style: form
       - in: query
@@ -154975,7 +155894,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID starts with
         explode: true
         style: form
       - in: query
@@ -154984,7 +155903,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: Exclude VPN ID matches regex
         explode: true
         style: form
       - in: query
@@ -154993,7 +155912,7 @@ paths:
           type: array
           items:
             type: string
-        description: VPN ID
+        description: VPN ID matches regex
         explode: true
         style: form
       - in: query
@@ -157964,6 +158883,14 @@ paths:
           type: array
           items:
             type: string
+            enum:
+            - 802.11a
+            - 802.11ac
+            - 802.11ax
+            - 802.11b
+            - 802.11be
+            - 802.11g
+            - 802.11n
         explode: true
         style: form
       - in: query
@@ -160037,6 +160964,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow definition to which this approval workflow
             belongs.
         user:
@@ -160073,7 +161001,6 @@ components:
           type: object
           additionalProperties: {}
       required:
-      - approval_workflow_definition
       - created
       - decision_date
       - display
@@ -160315,6 +161242,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow definition to which this approval workflow
             belongs.
         user:
@@ -160440,7 +161368,6 @@ components:
                           readOnly: true
                       additionalProperties: true
       required:
-      - approval_workflow_definition
       - object_under_review_content_type
       - object_under_review_object_id
     ApprovalWorkflowStage:
@@ -160472,6 +161399,11 @@ components:
           format: date-time
           readOnly: true
           nullable: true
+        responses:
+          type: array
+          items:
+            $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
+          readOnly: true
         state:
           allOf:
           - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
@@ -160508,6 +161440,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow stage definition to which this stage belongs.
         created:
           type: string
@@ -160528,7 +161461,6 @@ components:
           additionalProperties: {}
       required:
       - approval_workflow
-      - approval_workflow_stage_definition
       - created
       - decision_date
       - display
@@ -160536,6 +161468,7 @@ components:
       - natural_slug
       - notes_url
       - object_type
+      - responses
       - url
     ApprovalWorkflowStageDefinition:
       type: object
@@ -160830,6 +161763,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow stage definition to which this stage belongs.
         custom_fields:
           type: object
@@ -160939,10 +161873,10 @@ components:
                       additionalProperties: true
       required:
       - approval_workflow
-      - approval_workflow_stage_definition
     ApprovalWorkflowStageResponse:
       type: object
-      description: ApprovalWorkflowStageResponse Serializer.
+      description: Nested read representer for ApprovalWorkflowStageResponse; not
+        exposed as its own endpoint.
       properties:
         id:
           type: string
@@ -160956,13 +161890,9 @@ components:
           type: string
           readOnly: true
           description: Human friendly display value
-        url:
-          type: string
-          format: uri
-          readOnly: true
-        natural_slug:
-          type: string
-          example: attribute1_attribute2
+        user:
+          allOf:
+          - $ref: '#/components/schemas/User'
           readOnly: true
         comments:
           type: string
@@ -160971,99 +161901,19 @@ components:
         state:
           allOf:
           - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
+          readOnly: true
           description: 'User response to this approval workflow stage instance. Eligible
             values are: Pending, Comment, Approved, Denied.'
-        approval_workflow_stage:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-        user:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
         last_updated:
           type: string
           format: date-time
           readOnly: true
           nullable: true
       required:
-      - approval_workflow_stage
       - display
       - last_updated
-      - natural_slug
       - object_type
-      - url
-      - user
-    ApprovalWorkflowStageResponseRequest:
-      type: object
-      description: ApprovalWorkflowStageResponse Serializer.
-      properties:
-        id:
-          type: string
-          format: uuid
-        comments:
-          type: string
-          description: User comments to explain the decision that he/she made
-          maxLength: 255
-        state:
-          allOf:
-          - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
-          description: 'User response to this approval workflow stage instance. Eligible
-            values are: Pending, Comment, Approved, Denied.'
-        approval_workflow_stage:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-        user:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-      required:
-      - approval_workflow_stage
+      - state
       - user
     ApprovalWorkflowStateChoices:
       enum:
@@ -161316,6 +162166,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow definition to which this approval workflow
             belongs.
         user:
@@ -161441,7 +162292,6 @@ components:
                           readOnly: true
                       additionalProperties: true
       required:
-      - approval_workflow_definition
       - id
       - object_under_review_content_type
       - object_under_review_object_id
@@ -161647,6 +162497,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow stage definition to which this stage belongs.
         custom_fields:
           type: object
@@ -161756,58 +162607,7 @@ components:
                       additionalProperties: true
       required:
       - approval_workflow
-      - approval_workflow_stage_definition
       - id
-    BulkWritableApprovalWorkflowStageResponseRequest:
-      type: object
-      description: ApprovalWorkflowStageResponse Serializer.
-      properties:
-        id:
-          type: string
-          format: uuid
-        comments:
-          type: string
-          description: User comments to explain the decision that he/she made
-          maxLength: 255
-        state:
-          allOf:
-          - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
-          description: 'User response to this approval workflow stage instance. Eligible
-            values are: Pending, Comment, Approved, Denied.'
-        approval_workflow_stage:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-        user:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-      required:
-      - approval_workflow_stage
-      - id
-      - user
     BulkWritableCableRequest:
       type: object
       description: |-
@@ -166194,6 +166994,9 @@ components:
           title: Move to Advanced tab
           description: Hide this field from the object's primary information tab.
             It will appear in the "Advanced" tab instead.
+        scope_filter:
+          description: A JSON-encoded dictionary of filter parameters defining possible
+            objects that can use this custom field.
       required:
       - content_types
       - id
@@ -168783,11 +169586,6 @@ components:
           minLength: 1
           description: Branch, tag, or commit
           maxLength: 255
-        current_head:
-          type: string
-          description: Commit hash of the most recent fetch from the selected branch.
-            Used for syncing between workers.
-          maxLength: 48
         secrets_group:
           type: object
           properties:
@@ -169496,14 +170294,6 @@ components:
         image:
           type: string
           format: binary
-        image_height:
-          type: integer
-          maximum: 32767
-          minimum: 0
-        image_width:
-          type: integer
-          maximum: 32767
-          minimum: 0
         name:
           type: string
           maxLength: 255
@@ -169511,8 +170301,6 @@ components:
       - content_type
       - id
       - image
-      - image_height
-      - image_width
       - object_id
     BulkWritableInterfaceRedundancyGroupAssociationRequest:
       type: object
@@ -169752,7 +170540,6 @@ components:
       required:
       - id
       - name
-      - protocol
       - status
     BulkWritableInterfaceRequest:
       type: object
@@ -169766,6 +170553,8 @@ components:
           format: uuid
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          $ref: '#/components/schemas/PortTypeChoices'
         mode:
           $ref: '#/components/schemas/InterfaceModeChoices'
         mac_address:
@@ -170105,6 +170894,8 @@ components:
           format: uuid
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          $ref: '#/components/schemas/PortTypeChoices'
         name:
           type: string
           minLength: 1
@@ -171019,6 +171810,10 @@ components:
           type: boolean
           description: Whether this job should fail to run if another instance of
             this job is already running
+        console_log_default:
+          type: boolean
+          description: Whether the job defaults to running with console log argument
+            set to true
         hidden:
           type: boolean
           description: Whether the job defaults to not being shown in the UI
@@ -171046,6 +171841,10 @@ components:
           type: boolean
           description: If set, the configured name will remain even if the underlying
             Job source code changes
+        console_log_default_override:
+          type: boolean
+          description: If set, the configured console log default will remain even
+            if the underlying Job source code changes
         description_override:
           type: boolean
           description: If set, the configured description will remain even if the
@@ -173303,6 +174102,14 @@ components:
         id:
           type: string
           format: uuid
+        front_image:
+          type: string
+          format: binary
+          nullable: true
+        rear_image:
+          type: string
+          format: binary
+          nullable: true
         model:
           type: string
           minLength: 1
@@ -177165,8 +177972,8 @@ components:
         context_processing:
           type: boolean
           description: When enabled, the regular expression value is first processed
-            as a Jinja2 template with access to the context of the data being validated
-            in a variable named <code>object</code>.
+            as a Jinja2 template with access to the object being validated in a variable
+            named <code>obj</code>.
         tags:
           type: array
           items:
@@ -181800,7 +182607,17 @@ components:
           maxLength: 255
         vpn_id:
           type: string
+          title: Identifier
           maxLength: 255
+        service_type:
+          description: Optional classification of this VPN service, for example IPSec
+            or VXLAN-EVPN.
+          oneOf:
+          - $ref: '#/components/schemas/ServiceTypeEnum'
+          - $ref: '#/components/schemas/BlankEnum'
+        extra_attributes:
+          description: Free-form scalar service metadata only; not for references
+            to real Nautobot objects.
         vpn_profile:
           type: object
           properties:
@@ -181834,6 +182651,22 @@ components:
               format: uri
           nullable: true
         tenant:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        status:
           type: object
           properties:
             id:
@@ -181975,6 +182808,202 @@ components:
       required:
       - id
       - name
+    BulkWritableVPNTerminationRequest:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        vpn:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+        vlan:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        vm_interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        relationships:
+          type: object
+          additionalProperties:
+            type: object
+            required:
+            - id
+            - url
+            - label
+            - type
+            properties:
+              id:
+                type: string
+                format: uuid
+                readOnly: true
+              url:
+                type: string
+                format: uri
+                readOnly: true
+              label:
+                type: string
+                readOnly: true
+              type:
+                type: string
+                readOnly: true
+                example: one-to-many
+              source:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              destination:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              peer:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                oneOf:
+                - type: string
+                  format: uuid
+                - type: integer
+              object_type:
+                type: string
+                pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+                example: app_label.modelname
+              url:
+                type: string
+                format: uri
+      required:
+      - id
+      - vpn
     BulkWritableVPNTunnelEndpointRequest:
       type: object
       description: VPNTunnelEndpoint Serializer.
@@ -191156,6 +192185,7 @@ components:
               - integer
               - boolean
               - date
+              - datetime
               - url
               - select
               - multi-select
@@ -191168,6 +192198,7 @@ components:
               - Integer
               - Boolean (true/false)
               - Date
+              - Date/time
               - URL
               - Selection
               - Multiple selection
@@ -191250,6 +192281,9 @@ components:
           title: Move to Advanced tab
           description: Hide this field from the object's primary information tab.
             It will appear in the "Advanced" tab instead.
+        scope_filter:
+          description: A JSON-encoded dictionary of filter parameters defining possible
+            objects that can use this custom field.
         created:
           type: string
           format: date-time
@@ -191386,6 +192420,7 @@ components:
       - integer
       - boolean
       - date
+      - datetime
       - url
       - select
       - multi-select
@@ -191769,13 +192804,13 @@ components:
       - integer
       - boolean
       - date
+      - datetime
       - url
       - select
       - multi-select
       - json
       - markdown
       - contact-or-team
-      - datetime
       - float
       type: string
     Device:
@@ -193190,11 +194225,13 @@ components:
               enum:
               - parent
               - child
+              - parent-child
             label:
               type: string
               enum:
               - Parent
               - Child
+              - Parent and Child
         front_image:
           type: string
           format: uri
@@ -193634,6 +194671,7 @@ components:
       - $ref: '#/components/schemas/NestedVPNPhase1Policy'
       - $ref: '#/components/schemas/NestedVPNPhase2Policy'
       - $ref: '#/components/schemas/NestedVPNProfile'
+      - $ref: '#/components/schemas/NestedVPNTermination'
       - $ref: '#/components/schemas/NestedWirelessNetwork'
       - $ref: '#/components/schemas/NestedSupportedDataRate'
       - $ref: '#/components/schemas/NestedRadioProfile'
@@ -193750,6 +194788,7 @@ components:
           vpn.vpnphase1policy: '#/components/schemas/NestedVPNPhase1Policy'
           vpn.vpnphase2policy: '#/components/schemas/NestedVPNPhase2Policy'
           vpn.vpnprofile: '#/components/schemas/NestedVPNProfile'
+          vpn.vpntermination: '#/components/schemas/NestedVPNTermination'
           wireless.wirelessnetwork: '#/components/schemas/NestedWirelessNetwork'
           wireless.supporteddatarate: '#/components/schemas/NestedSupportedDataRate'
           wireless.radioprofile: '#/components/schemas/NestedRadioProfile'
@@ -195235,9 +196274,9 @@ components:
           maxLength: 255
         current_head:
           type: string
+          readOnly: true
           description: Commit hash of the most recent fetch from the selected branch.
             Used for syncing between workers.
-          maxLength: 48
         secrets_group:
           type: object
           properties:
@@ -195290,6 +196329,7 @@ components:
                 format: uri
       required:
       - created
+      - current_head
       - display
       - last_updated
       - name
@@ -195332,11 +196372,6 @@ components:
           minLength: 1
           description: Branch, tag, or commit
           maxLength: 255
-        current_head:
-          type: string
-          description: Commit hash of the most recent fetch from the selected branch.
-            Used for syncing between workers.
-          maxLength: 48
         secrets_group:
           type: object
           properties:
@@ -196865,12 +197900,10 @@ components:
           format: uri
         image_height:
           type: integer
-          maximum: 32767
-          minimum: 0
+          readOnly: true
         image_width:
           type: integer
-          maximum: 32767
-          minimum: 0
+          readOnly: true
         name:
           type: string
           maxLength: 255
@@ -196906,22 +197939,12 @@ components:
         image:
           type: string
           format: binary
-        image_height:
-          type: integer
-          maximum: 32767
-          minimum: 0
-        image_width:
-          type: integer
-          maximum: 32767
-          minimum: 0
         name:
           type: string
           maxLength: 255
       required:
       - content_type
       - image
-      - image_height
-      - image_width
       - object_id
     IntegrityAlgorithmEnum:
       enum:
@@ -197071,7 +198094,7 @@ components:
               - 64gfc-qsfpp
               - 64gfc-sfpdd
               - 64gfc-sfpp
-              - 128gfc-sfp28
+              - 128gfc-qsfp28
               - infiniband-sdr
               - infiniband-ddr
               - infiniband-qdr
@@ -197264,6 +198287,115 @@ components:
               - Extreme SummitStack-128
               - Extreme SummitStack-256
               - Extreme SummitStack-512
+              - Other
+        port_type:
+          type: object
+          properties:
+            value:
+              type: string
+              enum:
+              - 8p8c
+              - 8p6c
+              - 8p4c
+              - 8p2c
+              - 6p6c
+              - 6p4c
+              - 6p2c
+              - 4p4c
+              - 4p2c
+              - gg45
+              - tera-4p
+              - tera-2p
+              - tera-1p
+              - 110-punch
+              - bnc
+              - f
+              - n
+              - mrj21
+              - fc
+              - lc
+              - lc-pc
+              - lc-upc
+              - lc-apc
+              - lsh
+              - lsh-pc
+              - lsh-upc
+              - lsh-apc
+              - lx5
+              - lx5-pc
+              - lx5-upc
+              - lx5-apc
+              - mpo
+              - mtrj
+              - sc
+              - sc-pc
+              - sc-upc
+              - sc-apc
+              - st
+              - cs
+              - cs-pc
+              - cs-upc
+              - cs-apc
+              - sn
+              - sma-905
+              - sma-906
+              - urm-p2
+              - urm-p4
+              - urm-p8
+              - splice
+              - other
+            label:
+              type: string
+              enum:
+              - 8P8C
+              - 8P6C
+              - 8P4C
+              - 8P2C
+              - 6P6C
+              - 6P4C
+              - 6P2C
+              - 4P4C
+              - 4P2C
+              - GG45
+              - TERA 4P
+              - TERA 2P
+              - TERA 1P
+              - 110 Punch
+              - BNC
+              - F Connector
+              - N Connector
+              - MRJ21
+              - FC
+              - LC
+              - LC/PC
+              - LC/UPC
+              - LC/APC
+              - LSH
+              - LSH/PC
+              - LSH/UPC
+              - LSH/APC
+              - LX.5
+              - LX.5/PC
+              - LX.5/UPC
+              - LX.5/APC
+              - MPO
+              - MTRJ
+              - SC
+              - SC/PC
+              - SC/UPC
+              - SC/APC
+              - ST
+              - CS
+              - CS/PC
+              - CS/UPC
+              - CS/APC
+              - SN
+              - SMA 905
+              - SMA 906
+              - URM-P2
+              - URM-P4
+              - URM-P8
+              - Splice
               - Other
         mode:
           type: object
@@ -197732,7 +198864,6 @@ components:
       - natural_slug
       - notes_url
       - object_type
-      - protocol
       - status
       - url
     InterfaceRedundancyGroupAssociation:
@@ -197987,7 +199118,7 @@ components:
               - 64gfc-qsfpp
               - 64gfc-sfpdd
               - 64gfc-sfpp
-              - 128gfc-sfp28
+              - 128gfc-qsfp28
               - infiniband-sdr
               - infiniband-ddr
               - infiniband-qdr
@@ -198181,6 +199312,115 @@ components:
               - Extreme SummitStack-256
               - Extreme SummitStack-512
               - Other
+        port_type:
+          type: object
+          properties:
+            value:
+              type: string
+              enum:
+              - 8p8c
+              - 8p6c
+              - 8p4c
+              - 8p2c
+              - 6p6c
+              - 6p4c
+              - 6p2c
+              - 4p4c
+              - 4p2c
+              - gg45
+              - tera-4p
+              - tera-2p
+              - tera-1p
+              - 110-punch
+              - bnc
+              - f
+              - n
+              - mrj21
+              - fc
+              - lc
+              - lc-pc
+              - lc-upc
+              - lc-apc
+              - lsh
+              - lsh-pc
+              - lsh-upc
+              - lsh-apc
+              - lx5
+              - lx5-pc
+              - lx5-upc
+              - lx5-apc
+              - mpo
+              - mtrj
+              - sc
+              - sc-pc
+              - sc-upc
+              - sc-apc
+              - st
+              - cs
+              - cs-pc
+              - cs-upc
+              - cs-apc
+              - sn
+              - sma-905
+              - sma-906
+              - urm-p2
+              - urm-p4
+              - urm-p8
+              - splice
+              - other
+            label:
+              type: string
+              enum:
+              - 8P8C
+              - 8P6C
+              - 8P4C
+              - 8P2C
+              - 6P6C
+              - 6P4C
+              - 6P2C
+              - 4P4C
+              - 4P2C
+              - GG45
+              - TERA 4P
+              - TERA 2P
+              - TERA 1P
+              - 110 Punch
+              - BNC
+              - F Connector
+              - N Connector
+              - MRJ21
+              - FC
+              - LC
+              - LC/PC
+              - LC/UPC
+              - LC/APC
+              - LSH
+              - LSH/PC
+              - LSH/UPC
+              - LSH/APC
+              - LX.5
+              - LX.5/PC
+              - LX.5/UPC
+              - LX.5/APC
+              - MPO
+              - MTRJ
+              - SC
+              - SC/PC
+              - SC/UPC
+              - SC/APC
+              - ST
+              - CS
+              - CS/PC
+              - CS/UPC
+              - CS/APC
+              - SN
+              - SMA 905
+              - SMA 906
+              - URM-P2
+              - URM-P4
+              - URM-P8
+              - Splice
+              - Other
         name:
           type: string
           maxLength: 255
@@ -198346,7 +199586,7 @@ components:
       - 64gfc-qsfpp
       - 64gfc-sfpdd
       - 64gfc-sfpp
-      - 128gfc-sfp28
+      - 128gfc-qsfp28
       - infiniband-sdr
       - infiniband-ddr
       - infiniband-qdr
@@ -198988,6 +200228,10 @@ components:
           type: boolean
           description: Whether this job should fail to run if another instance of
             this job is already running
+        console_log_default:
+          type: boolean
+          description: Whether the job defaults to running with console log argument
+            set to true
         hidden:
           type: boolean
           description: Whether the job defaults to not being shown in the UI
@@ -199024,6 +200268,10 @@ components:
           type: boolean
           description: If set, the configured name will remain even if the underlying
             Job source code changes
+        console_log_default_override:
+          type: boolean
+          description: If set, the configured console log default will remain even
+            if the underlying Job source code changes
         description_override:
           type: boolean
           description: If set, the configured description will remain even if the
@@ -200078,6 +201326,10 @@ components:
           type: boolean
           description: Whether this job should fail to run if another instance of
             this job is already running
+        console_log_default:
+          type: boolean
+          description: Whether the job defaults to running with console log argument
+            set to true
         hidden:
           type: boolean
           description: Whether the job defaults to not being shown in the UI
@@ -200105,6 +201357,10 @@ components:
           type: boolean
           description: If set, the configured name will remain even if the underlying
             Job source code changes
+        console_log_default_override:
+          type: boolean
+          description: If set, the configured console log default will remain even
+            if the underlying Job source code changes
         description_override:
           type: boolean
           description: If set, the configured description will remain even if the
@@ -204094,6 +205350,14 @@ components:
           type: string
           example: attribute1_attribute2
           readOnly: true
+        front_image:
+          type: string
+          format: uri
+          nullable: true
+        rear_image:
+          type: string
+          format: uri
+          nullable: true
         model:
           type: string
           maxLength: 255
@@ -204188,6 +205452,14 @@ components:
         id:
           type: string
           format: uuid
+        front_image:
+          type: string
+          format: binary
+          nullable: true
+        rear_image:
+          type: string
+          format: binary
+          nullable: true
         model:
           type: string
           minLength: 1
@@ -204715,7 +205987,8 @@ components:
       - url
     NestedApprovalWorkflowStageResponse:
       type: object
-      description: ApprovalWorkflowStageResponse Serializer.
+      description: Nested read representer for ApprovalWorkflowStageResponse; not
+        exposed as its own endpoint.
       properties:
         id:
           type: string
@@ -207317,6 +208590,25 @@ components:
       required:
       - object_type
       - url
+    NestedVPNTermination:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        object_type:
+          type: string
+          pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+          example: app_label.modelname
+          readOnly: true
+        url:
+          type: string
+          format: uri
+          readOnly: true
+      required:
+      - object_type
+      - url
     NestedVPNTunnel:
       type: object
       description: VPNTunnel Serializer.
@@ -207700,6 +208992,7 @@ components:
       - $ref: '#/components/schemas/NestedVPNPhase1Policy'
       - $ref: '#/components/schemas/NestedVPNPhase2Policy'
       - $ref: '#/components/schemas/NestedVPNProfile'
+      - $ref: '#/components/schemas/NestedVPNTermination'
       - $ref: '#/components/schemas/NestedVPNTunnel'
       - $ref: '#/components/schemas/NestedVPNTunnelEndpoint'
       - $ref: '#/components/schemas/NestedRadioProfile'
@@ -207811,6 +209104,7 @@ components:
           vpn.vpnphase1policy: '#/components/schemas/NestedVPNPhase1Policy'
           vpn.vpnphase2policy: '#/components/schemas/NestedVPNPhase2Policy'
           vpn.vpnprofile: '#/components/schemas/NestedVPNProfile'
+          vpn.vpntermination: '#/components/schemas/NestedVPNTermination'
           vpn.vpntunnel: '#/components/schemas/NestedVPNTunnel'
           vpn.vpntunnelendpoint: '#/components/schemas/NestedVPNTunnelEndpoint'
           wireless.radioprofile: '#/components/schemas/NestedRadioProfile'
@@ -208128,6 +209422,7 @@ components:
       - $ref: '#/components/schemas/NestedVPN'
       - $ref: '#/components/schemas/NestedVPNTunnel'
       - $ref: '#/components/schemas/NestedVPNTunnelEndpoint'
+      - $ref: '#/components/schemas/NestedVPNTermination'
       - $ref: '#/components/schemas/NestedSupportedDataRate'
       - $ref: '#/components/schemas/NestedRadioProfile'
       - $ref: '#/components/schemas/NestedWirelessNetwork'
@@ -208255,6 +209550,7 @@ components:
           vpn.vpn: '#/components/schemas/NestedVPN'
           vpn.vpntunnel: '#/components/schemas/NestedVPNTunnel'
           vpn.vpntunnelendpoint: '#/components/schemas/NestedVPNTunnelEndpoint'
+          vpn.vpntermination: '#/components/schemas/NestedVPNTermination'
           wireless.supporteddatarate: '#/components/schemas/NestedSupportedDataRate'
           wireless.radioprofile: '#/components/schemas/NestedRadioProfile'
           wireless.wirelessnetwork: '#/components/schemas/NestedWirelessNetwork'
@@ -208492,6 +209788,7 @@ components:
       - $ref: '#/components/schemas/NestedVPNPhase1Policy'
       - $ref: '#/components/schemas/NestedVPNPhase2Policy'
       - $ref: '#/components/schemas/NestedVPNProfile'
+      - $ref: '#/components/schemas/NestedVPNTermination'
       - $ref: '#/components/schemas/NestedWirelessNetwork'
       - $ref: '#/components/schemas/NestedSupportedDataRate'
       - $ref: '#/components/schemas/NestedRadioProfile'
@@ -208622,6 +209919,7 @@ components:
           vpn.vpnphase1policy: '#/components/schemas/NestedVPNPhase1Policy'
           vpn.vpnphase2policy: '#/components/schemas/NestedVPNPhase2Policy'
           vpn.vpnprofile: '#/components/schemas/NestedVPNProfile'
+          vpn.vpntermination: '#/components/schemas/NestedVPNTermination'
           wireless.wirelessnetwork: '#/components/schemas/NestedWirelessNetwork'
           wireless.supporteddatarate: '#/components/schemas/NestedSupportedDataRate'
           wireless.radioprofile: '#/components/schemas/NestedRadioProfile'
@@ -208929,29 +210227,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/ApprovalWorkflowStage'
-    PaginatedApprovalWorkflowStageResponseList:
-      type: object
-      required:
-      - count
-      - results
-      properties:
-        count:
-          type: integer
-          example: 123
-        next:
-          type: string
-          nullable: true
-          format: uri
-          example: http://api.example.org/accounts/?offset=400&limit=100
-        previous:
-          type: string
-          nullable: true
-          format: uri
-          example: http://api.example.org/accounts/?offset=200&limit=100
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/ApprovalWorkflowStageResponse'
     PaginatedAvailableIPList:
       type: object
       required:
@@ -212310,6 +213585,29 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/VPNProfilePhase2PolicyAssignment'
+    PaginatedVPNTerminationList:
+      type: object
+      required:
+      - count
+      - results
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/VPNTermination'
     PaginatedVPNTunnelEndpointList:
       type: object
       required:
@@ -212760,6 +214058,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow definition to which this approval workflow
             belongs.
         user:
@@ -213079,6 +214378,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow stage definition to which this stage belongs.
         custom_fields:
           type: object
@@ -213186,52 +214486,6 @@ components:
                           type: string
                           readOnly: true
                       additionalProperties: true
-    PatchedApprovalWorkflowStageResponseRequest:
-      type: object
-      description: ApprovalWorkflowStageResponse Serializer.
-      properties:
-        id:
-          type: string
-          format: uuid
-        comments:
-          type: string
-          description: User comments to explain the decision that he/she made
-          maxLength: 255
-        state:
-          allOf:
-          - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
-          description: 'User response to this approval workflow stage instance. Eligible
-            values are: Pending, Comment, Approved, Denied.'
-        approval_workflow_stage:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-        user:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
     PatchedBulkWritableApprovalWorkflowDefinitionRequest:
       type: object
       description: ApprovalWorkflowDefinition Serializer.
@@ -213395,6 +214649,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow definition to which this approval workflow
             belongs.
         user:
@@ -213718,6 +214973,7 @@ components:
             url:
               type: string
               format: uri
+          nullable: true
           description: Approval workflow stage definition to which this stage belongs.
         custom_fields:
           type: object
@@ -213825,54 +215081,6 @@ components:
                           type: string
                           readOnly: true
                       additionalProperties: true
-      required:
-      - id
-    PatchedBulkWritableApprovalWorkflowStageResponseRequest:
-      type: object
-      description: ApprovalWorkflowStageResponse Serializer.
-      properties:
-        id:
-          type: string
-          format: uuid
-        comments:
-          type: string
-          description: User comments to explain the decision that he/she made
-          maxLength: 255
-        state:
-          allOf:
-          - $ref: '#/components/schemas/ApprovalWorkflowStateChoices'
-          description: 'User response to this approval workflow stage instance. Eligible
-            values are: Pending, Comment, Approved, Denied.'
-        approval_workflow_stage:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
-        user:
-          type: object
-          properties:
-            id:
-              oneOf:
-              - type: string
-                format: uuid
-              - type: integer
-            object_type:
-              type: string
-              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
-              example: app_label.modelname
-            url:
-              type: string
-              format: uri
       required:
       - id
     PatchedBulkWritableCableRequest:
@@ -218202,6 +219410,9 @@ components:
           title: Move to Advanced tab
           description: Hide this field from the object's primary information tab.
             It will appear in the "Advanced" tab instead.
+        scope_filter:
+          description: A JSON-encoded dictionary of filter parameters defining possible
+            objects that can use this custom field.
       required:
       - id
     PatchedBulkWritableCustomLinkRequest:
@@ -220745,11 +221956,6 @@ components:
           minLength: 1
           description: Branch, tag, or commit
           maxLength: 255
-        current_head:
-          type: string
-          description: Commit hash of the most recent fetch from the selected branch.
-            Used for syncing between workers.
-          maxLength: 48
         secrets_group:
           type: object
           properties:
@@ -221449,14 +222655,6 @@ components:
         image:
           type: string
           format: binary
-        image_height:
-          type: integer
-          maximum: 32767
-          minimum: 0
-        image_width:
-          type: integer
-          maximum: 32767
-          minimum: 0
         name:
           type: string
           maxLength: 255
@@ -221708,6 +222906,8 @@ components:
           format: uuid
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          $ref: '#/components/schemas/PortTypeChoices'
         mode:
           $ref: '#/components/schemas/InterfaceModeChoices'
         mac_address:
@@ -222044,6 +223244,8 @@ components:
           format: uuid
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          $ref: '#/components/schemas/PortTypeChoices'
         name:
           type: string
           minLength: 1
@@ -222941,6 +224143,10 @@ components:
           type: boolean
           description: Whether this job should fail to run if another instance of
             this job is already running
+        console_log_default:
+          type: boolean
+          description: Whether the job defaults to running with console log argument
+            set to true
         hidden:
           type: boolean
           description: Whether the job defaults to not being shown in the UI
@@ -222968,6 +224174,10 @@ components:
           type: boolean
           description: If set, the configured name will remain even if the underlying
             Job source code changes
+        console_log_default_override:
+          type: boolean
+          description: If set, the configured console log default will remain even
+            if the underlying Job source code changes
         description_override:
           type: boolean
           description: If set, the configured description will remain even if the
@@ -225196,6 +226406,14 @@ components:
         id:
           type: string
           format: uuid
+        front_image:
+          type: string
+          format: binary
+          nullable: true
+        rear_image:
+          type: string
+          format: binary
+          nullable: true
         model:
           type: string
           minLength: 1
@@ -229014,8 +230232,8 @@ components:
         context_processing:
           type: boolean
           description: When enabled, the regular expression value is first processed
-            as a Jinja2 template with access to the context of the data being validated
-            in a variable named <code>object</code>.
+            as a Jinja2 template with access to the object being validated in a variable
+            named <code>obj</code>.
         tags:
           type: array
           items:
@@ -233578,7 +234796,17 @@ components:
           maxLength: 255
         vpn_id:
           type: string
+          title: Identifier
           maxLength: 255
+        service_type:
+          description: Optional classification of this VPN service, for example IPSec
+            or VXLAN-EVPN.
+          oneOf:
+          - $ref: '#/components/schemas/ServiceTypeEnum'
+          - $ref: '#/components/schemas/BlankEnum'
+        extra_attributes:
+          description: Free-form scalar service metadata only; not for references
+            to real Nautobot objects.
         vpn_profile:
           type: object
           properties:
@@ -233612,6 +234840,217 @@ components:
               format: uri
           nullable: true
         tenant:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        status:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        relationships:
+          type: object
+          additionalProperties:
+            type: object
+            required:
+            - id
+            - url
+            - label
+            - type
+            properties:
+              id:
+                type: string
+                format: uuid
+                readOnly: true
+              url:
+                type: string
+                format: uri
+                readOnly: true
+              label:
+                type: string
+                readOnly: true
+              type:
+                type: string
+                readOnly: true
+                example: one-to-many
+              source:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              destination:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              peer:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                oneOf:
+                - type: string
+                  format: uuid
+                - type: integer
+              object_type:
+                type: string
+                pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+                example: app_label.modelname
+              url:
+                type: string
+                format: uri
+      required:
+      - id
+    PatchedBulkWritableVPNTerminationRequest:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        vpn:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+        vlan:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        vm_interface:
           type: object
           properties:
             id:
@@ -240643,11 +242082,6 @@ components:
           minLength: 1
           description: Branch, tag, or commit
           maxLength: 255
-        current_head:
-          type: string
-          description: Commit hash of the most recent fetch from the selected branch.
-            Used for syncing between workers.
-          maxLength: 48
         secrets_group:
           type: object
           properties:
@@ -241333,14 +242767,6 @@ components:
         image:
           type: string
           format: binary
-        image_height:
-          type: integer
-          maximum: 32767
-          minimum: 0
-        image_width:
-          type: integer
-          maximum: 32767
-          minimum: 0
         name:
           type: string
           maxLength: 255
@@ -242107,6 +243533,10 @@ components:
           type: boolean
           description: Whether this job should fail to run if another instance of
             this job is already running
+        console_log_default:
+          type: boolean
+          description: Whether the job defaults to running with console log argument
+            set to true
         hidden:
           type: boolean
           description: Whether the job defaults to not being shown in the UI
@@ -242134,6 +243564,10 @@ components:
           type: boolean
           description: If set, the configured name will remain even if the underlying
             Job source code changes
+        console_log_default_override:
+          type: boolean
+          description: If set, the configured console log default will remain even
+            if the underlying Job source code changes
         description_override:
           type: boolean
           description: If set, the configured description will remain even if the
@@ -244334,6 +245768,14 @@ components:
         id:
           type: string
           format: uuid
+        front_image:
+          type: string
+          format: binary
+          nullable: true
+        rear_image:
+          type: string
+          format: binary
+          nullable: true
         model:
           type: string
           minLength: 1
@@ -246035,8 +247477,8 @@ components:
         context_processing:
           type: boolean
           description: When enabled, the regular expression value is first processed
-            as a Jinja2 template with access to the context of the data being validated
-            in a variable named <code>object</code>.
+            as a Jinja2 template with access to the object being validated in a variable
+            named <code>obj</code>.
         tags:
           type: array
           items:
@@ -250048,7 +251490,17 @@ components:
           maxLength: 255
         vpn_id:
           type: string
+          title: Identifier
           maxLength: 255
+        service_type:
+          description: Optional classification of this VPN service, for example IPSec
+            or VXLAN-EVPN.
+          oneOf:
+          - $ref: '#/components/schemas/ServiceTypeEnum'
+          - $ref: '#/components/schemas/BlankEnum'
+        extra_attributes:
+          description: Free-form scalar service metadata only; not for references
+            to real Nautobot objects.
         vpn_profile:
           type: object
           properties:
@@ -250082,6 +251534,215 @@ components:
               format: uri
           nullable: true
         tenant:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        status:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        relationships:
+          type: object
+          additionalProperties:
+            type: object
+            required:
+            - id
+            - url
+            - label
+            - type
+            properties:
+              id:
+                type: string
+                format: uuid
+                readOnly: true
+              url:
+                type: string
+                format: uri
+                readOnly: true
+              label:
+                type: string
+                readOnly: true
+              type:
+                type: string
+                readOnly: true
+                example: one-to-many
+              source:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              destination:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              peer:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                oneOf:
+                - type: string
+                  format: uuid
+                - type: integer
+              object_type:
+                type: string
+                pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+                example: app_label.modelname
+              url:
+                type: string
+                format: uri
+    PatchedVPNTerminationRequest:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        vpn:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+        vlan:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        vm_interface:
           type: object
           properties:
             id:
@@ -253413,6 +255074,9 @@ components:
           title: Move to Advanced tab
           description: Hide this field from the object's primary information tab.
             It will appear in the "Advanced" tab instead.
+        scope_filter:
+          description: A JSON-encoded dictionary of filter parameters defining possible
+            objects that can use this custom field.
     PatchedWritableDeviceRedundancyGroupRequest:
       type: object
       description: |-
@@ -254873,6 +256537,11 @@ components:
           - $ref: '#/components/schemas/BlankEnum'
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          description: Physical connector type
+          oneOf:
+          - $ref: '#/components/schemas/PortTypeChoices'
+          - $ref: '#/components/schemas/BlankEnum'
         mgmt_only:
           type: boolean
           title: Management only
@@ -255194,6 +256863,11 @@ components:
           maxLength: 255
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          description: Physical connector type
+          oneOf:
+          - $ref: '#/components/schemas/PortTypeChoices'
+          - $ref: '#/components/schemas/BlankEnum'
         mgmt_only:
           type: boolean
           title: Management only
@@ -263331,8 +265005,8 @@ components:
         context_processing:
           type: boolean
           description: When enabled, the regular expression value is first processed
-            as a Jinja2 template with access to the context of the data being validated
-            in a variable named <code>object</code>.
+            as a Jinja2 template with access to the object being validated in a variable
+            named <code>obj</code>.
         created:
           type: string
           format: date-time
@@ -263408,8 +265082,8 @@ components:
         context_processing:
           type: boolean
           description: When enabled, the regular expression value is first processed
-            as a Jinja2 template with access to the context of the data being validated
-            in a variable named <code>object</code>.
+            as a Jinja2 template with access to the object being validated in a variable
+            named <code>obj</code>.
         tags:
           type: array
           items:
@@ -264854,6 +266528,28 @@ components:
           readOnly: true
         time_zone:
           type: string
+        state:
+          type: object
+          properties:
+            value:
+              type: string
+              enum:
+              - active
+              - pending
+              - denied
+              - canceled
+              - completed
+              - errored
+            label:
+              type: string
+              enum:
+              - Active
+              - Pending Approval
+              - Approval Denied
+              - Approval Canceled
+              - Completed
+              - Errored
+          readOnly: true
         name:
           type: string
           description: Human-readable description of this scheduled task
@@ -264866,9 +266562,13 @@ components:
           maxLength: 201
         interval:
           $ref: '#/components/schemas/JobExecutionTypeIntervalChoices'
+        crontab:
+          type: string
+          title: Custom cronjob
+          description: Cronjob syntax string for custom scheduling
+          maxLength: 255
         args: {}
         kwargs: {}
-        celery_kwargs: {}
         one_off:
           type: boolean
           title: One-off Task
@@ -264904,8 +266604,7 @@ components:
         description:
           type: string
           description: Detailed description about the details of this scheduled job
-        approval_required:
-          type: boolean
+        celery_kwargs: {}
         decision_date:
           type: string
           format: date-time
@@ -264913,11 +266612,6 @@ components:
           nullable: true
           title: Approval/Rejection date/time
           description: Datetime that the schedule was approved or denied
-        crontab:
-          type: string
-          title: Custom cronjob
-          description: Cronjob syntax string for custom scheduling
-          maxLength: 255
         job_model:
           type: object
           properties:
@@ -264979,6 +266673,7 @@ components:
       - object_type
       - queue
       - start_time
+      - state
       - task
       - total_run_count
       - url
@@ -265645,6 +267340,24 @@ components:
       enum:
       - tcp
       - udp
+    ServiceTypeEnum:
+      enum:
+      - ipsec
+      - vpws
+      - vpls
+      - vxlan
+      - vxlan-evpn
+      - mpls-evpn
+      - pbb-evpn
+      - evpn-vpws
+      - epl
+      - evpl
+      - ep-lan
+      - evp-lan
+      - ep-tree
+      - evp-tree
+      - spb
+      type: string
     SoftwareImageFile:
       type: object
       description: |-
@@ -266777,6 +268490,7 @@ components:
       enum:
       - parent
       - child
+      - parent-child
     SupplyEnum:
       type: string
       enum:
@@ -269905,7 +271619,17 @@ components:
           maxLength: 255
         vpn_id:
           type: string
+          title: Identifier
           maxLength: 255
+        service_type:
+          description: Optional classification of this VPN service, for example IPSec
+            or VXLAN-EVPN.
+          oneOf:
+          - $ref: '#/components/schemas/ServiceTypeEnum'
+          - $ref: '#/components/schemas/BlankEnum'
+        extra_attributes:
+          description: Free-form scalar service metadata only; not for references
+            to real Nautobot objects.
         vpn_profile:
           type: object
           properties:
@@ -269939,6 +271663,22 @@ components:
               format: uri
           nullable: true
         tenant:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        status:
           type: object
           properties:
             id:
@@ -271428,7 +273168,17 @@ components:
           maxLength: 255
         vpn_id:
           type: string
+          title: Identifier
           maxLength: 255
+        service_type:
+          description: Optional classification of this VPN service, for example IPSec
+            or VXLAN-EVPN.
+          oneOf:
+          - $ref: '#/components/schemas/ServiceTypeEnum'
+          - $ref: '#/components/schemas/BlankEnum'
+        extra_attributes:
+          description: Free-form scalar service metadata only; not for references
+            to real Nautobot objects.
         vpn_profile:
           type: object
           properties:
@@ -271462,6 +273212,22 @@ components:
               format: uri
           nullable: true
         tenant:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        status:
           type: object
           properties:
             id:
@@ -271602,6 +273368,336 @@ components:
                 format: uri
       required:
       - name
+    VPNTermination:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        object_type:
+          type: string
+          pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+          example: app_label.modelname
+          readOnly: true
+        display:
+          type: string
+          readOnly: true
+          description: Human friendly display value
+        url:
+          type: string
+          format: uri
+          readOnly: true
+        natural_slug:
+          type: string
+          example: attribute1_attribute2
+          readOnly: true
+        assigned_object_type:
+          type: string
+          nullable: true
+          readOnly: true
+        vpn:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+        vlan:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        vm_interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+        last_updated:
+          type: string
+          format: date-time
+          readOnly: true
+          nullable: true
+        notes_url:
+          type: string
+          format: uri
+          readOnly: true
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                oneOf:
+                - type: string
+                  format: uuid
+                - type: integer
+              object_type:
+                type: string
+                pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+                example: app_label.modelname
+              url:
+                type: string
+                format: uri
+      required:
+      - assigned_object_type
+      - created
+      - display
+      - last_updated
+      - natural_slug
+      - notes_url
+      - object_type
+      - url
+      - vpn
+    VPNTerminationRequest:
+      type: object
+      description: Serializer for VPNTermination.
+      properties:
+        id:
+          type: string
+          format: uuid
+        vpn:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+        vlan:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        vm_interface:
+          type: object
+          properties:
+            id:
+              oneOf:
+              - type: string
+                format: uuid
+              - type: integer
+            object_type:
+              type: string
+              pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+              example: app_label.modelname
+            url:
+              type: string
+              format: uri
+          nullable: true
+        custom_fields:
+          type: object
+          additionalProperties: {}
+        relationships:
+          type: object
+          additionalProperties:
+            type: object
+            required:
+            - id
+            - url
+            - label
+            - type
+            properties:
+              id:
+                type: string
+                format: uuid
+                readOnly: true
+              url:
+                type: string
+                format: uri
+                readOnly: true
+              label:
+                type: string
+                readOnly: true
+              type:
+                type: string
+                readOnly: true
+                example: one-to-many
+              source:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              destination:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+              peer:
+                type: object
+                properties:
+                  label:
+                    type: string
+                    readOnly: true
+                  object_type:
+                    type: string
+                    readOnly: true
+                    example: dcim.site
+                  objects:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                        url:
+                          type: string
+                          format: uri
+                          readOnly: true
+                        display:
+                          type: string
+                          readOnly: true
+                      additionalProperties: true
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                oneOf:
+                - type: string
+                  format: uuid
+                - type: integer
+              object_type:
+                type: string
+                pattern: ^[a-z][a-z0-9_]+\.[a-z][a-z0-9_]+$
+                example: app_label.modelname
+              url:
+                type: string
+                format: uri
+      required:
+      - vpn
     VPNTunnel:
       type: object
       description: VPNTunnel Serializer.
@@ -276635,6 +278731,9 @@ components:
           title: Move to Advanced tab
           description: Hide this field from the object's primary information tab.
             It will appear in the "Advanced" tab instead.
+        scope_filter:
+          description: A JSON-encoded dictionary of filter parameters defining possible
+            objects that can use this custom field.
       required:
       - content_types
       - label
@@ -278120,6 +280219,11 @@ components:
           - $ref: '#/components/schemas/BlankEnum'
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          description: Physical connector type
+          oneOf:
+          - $ref: '#/components/schemas/PortTypeChoices'
+          - $ref: '#/components/schemas/BlankEnum'
         mgmt_only:
           type: boolean
           title: Management only
@@ -278445,6 +280549,11 @@ components:
           maxLength: 255
         type:
           $ref: '#/components/schemas/InterfaceTypeChoices'
+        port_type:
+          description: Physical connector type
+          oneOf:
+          - $ref: '#/components/schemas/PortTypeChoices'
+          - $ref: '#/components/schemas/BlankEnum'
         mgmt_only:
           type: boolean
           title: Management only

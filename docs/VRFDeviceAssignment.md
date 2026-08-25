@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Vrf** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Vrf** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualDeviceContext** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 
 ### NewVRFDeviceAssignment
 
-`func NewVRFDeviceAssignment(objectType string, display string, url string, naturalSlug string, vrf ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *VRFDeviceAssignment`
+`func NewVRFDeviceAssignment(objectType string, display string, url string, naturalSlug string, vrf BulkWritableCableRequestStatus, ) *VRFDeviceAssignment`
 
 NewVRFDeviceAssignment instantiates a new VRFDeviceAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -202,20 +202,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetVrf
 
-`func (o *VRFDeviceAssignment) GetVrf() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *VRFDeviceAssignment) GetVrf() BulkWritableCableRequestStatus`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *VRFDeviceAssignment) GetVrfOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *VRFDeviceAssignment) GetVrfOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *VRFDeviceAssignment) SetVrf(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *VRFDeviceAssignment) SetVrf(v BulkWritableCableRequestStatus)`
 
 SetVrf sets Vrf field to given value.
 

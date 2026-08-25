@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**CloudNetwork** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Prefix** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CloudNetwork** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Prefix** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableCloudNetworkPrefixAssignmentRequest
 
-`func NewBulkWritableCloudNetworkPrefixAssignmentRequest(id string, cloudNetwork ApprovalWorkflowStageResponseApprovalWorkflowStage, prefix ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCloudNetworkPrefixAssignmentRequest`
+`func NewBulkWritableCloudNetworkPrefixAssignmentRequest(id string, cloudNetwork BulkWritableCableRequestStatus, prefix BulkWritableCableRequestStatus, ) *BulkWritableCloudNetworkPrefixAssignmentRequest`
 
 NewBulkWritableCloudNetworkPrefixAssignmentRequest instantiates a new BulkWritableCloudNetworkPrefixAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -49,40 +49,40 @@ SetId sets Id field to given value.
 
 ### GetCloudNetwork
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetCloudNetwork() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetCloudNetwork() BulkWritableCableRequestStatus`
 
 GetCloudNetwork returns the CloudNetwork field if non-nil, zero value otherwise.
 
 ### GetCloudNetworkOk
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetCloudNetworkOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetCloudNetworkOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCloudNetworkOk returns a tuple with the CloudNetwork field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCloudNetwork
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) SetCloudNetwork(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) SetCloudNetwork(v BulkWritableCableRequestStatus)`
 
 SetCloudNetwork sets CloudNetwork field to given value.
 
 
 ### GetPrefix
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetPrefix() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetPrefix() BulkWritableCableRequestStatus`
 
 GetPrefix returns the Prefix field if non-nil, zero value otherwise.
 
 ### GetPrefixOk
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetPrefixOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) GetPrefixOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetPrefixOk returns a tuple with the Prefix field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPrefix
 
-`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) SetPrefix(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCloudNetworkPrefixAssignmentRequest) SetPrefix(v BulkWritableCableRequestStatus)`
 
 SetPrefix sets Prefix field to given value.
 

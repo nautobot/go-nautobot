@@ -187,6 +187,8 @@
 
 * `UDM` (value: `"udm"`)
 
+* `UG` (value: `"ug"`)
+
 * `UK` (value: `"uk"`)
 
 * `UR` (value: `"ur"`)

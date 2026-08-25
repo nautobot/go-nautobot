@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | Pointer to [**PowerFeedPowerPathValue**](PowerFeedPowerPathValue.md) |  | [optional] 
+**Value** | Pointer to [**DcimPowerFeedsListPowerPathParameterInner**](DcimPowerFeedsListPowerPathParameterInner.md) |  | [optional] 
 **Label** | Pointer to [**PowerFeedPowerPathLabel**](PowerFeedPowerPathLabel.md) |  | [optional] 
 
 ## Methods
@@ -28,20 +28,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetValue
 
-`func (o *PowerFeedPowerPath) GetValue() PowerFeedPowerPathValue`
+`func (o *PowerFeedPowerPath) GetValue() DcimPowerFeedsListPowerPathParameterInner`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *PowerFeedPowerPath) GetValueOk() (*PowerFeedPowerPathValue, bool)`
+`func (o *PowerFeedPowerPath) GetValueOk() (*DcimPowerFeedsListPowerPathParameterInner, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *PowerFeedPowerPath) SetValue(v PowerFeedPowerPathValue)`
+`func (o *PowerFeedPowerPath) SetValue(v DcimPowerFeedsListPowerPathParameterInner)`
 
 SetValue sets Value field to given value.
 

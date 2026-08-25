@@ -7,18 +7,18 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Units** | **interface{}** | List of rack unit numbers to reserve | 
 **Description** | **string** |  | 
-**Rack** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Rack** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
 **CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewRackReservationRequest
 
-`func NewRackReservationRequest(units interface{}, description string, rack ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *RackReservationRequest`
+`func NewRackReservationRequest(units interface{}, description string, rack BulkWritableCableRequestStatus, ) *RackReservationRequest`
 
 NewRackReservationRequest instantiates a new RackReservationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -110,20 +110,20 @@ SetDescription sets Description field to given value.
 
 ### GetRack
 
-`func (o *RackReservationRequest) GetRack() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *RackReservationRequest) GetRack() BulkWritableCableRequestStatus`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *RackReservationRequest) GetRackOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *RackReservationRequest) GetRackOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *RackReservationRequest) SetRack(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *RackReservationRequest) SetRack(v BulkWritableCableRequestStatus)`
 
 SetRack sets Rack field to given value.
 
@@ -240,20 +240,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *RackReservationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *RackReservationRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *RackReservationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *RackReservationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *RackReservationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *RackReservationRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

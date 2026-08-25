@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
-**Job** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**JobQueue** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Job** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**JobQueue** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableJobQueueAssignmentRequest
 
-`func NewBulkWritableJobQueueAssignmentRequest(id string, job ApprovalWorkflowStageResponseApprovalWorkflowStage, jobQueue ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableJobQueueAssignmentRequest`
+`func NewBulkWritableJobQueueAssignmentRequest(id string, job BulkWritableCableRequestStatus, jobQueue BulkWritableCableRequestStatus, ) *BulkWritableJobQueueAssignmentRequest`
 
 NewBulkWritableJobQueueAssignmentRequest instantiates a new BulkWritableJobQueueAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -49,40 +49,40 @@ SetId sets Id field to given value.
 
 ### GetJob
 
-`func (o *BulkWritableJobQueueAssignmentRequest) GetJob() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableJobQueueAssignmentRequest) GetJob() BulkWritableCableRequestStatus`
 
 GetJob returns the Job field if non-nil, zero value otherwise.
 
 ### GetJobOk
 
-`func (o *BulkWritableJobQueueAssignmentRequest) GetJobOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableJobQueueAssignmentRequest) GetJobOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetJobOk returns a tuple with the Job field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJob
 
-`func (o *BulkWritableJobQueueAssignmentRequest) SetJob(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableJobQueueAssignmentRequest) SetJob(v BulkWritableCableRequestStatus)`
 
 SetJob sets Job field to given value.
 
 
 ### GetJobQueue
 
-`func (o *BulkWritableJobQueueAssignmentRequest) GetJobQueue() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableJobQueueAssignmentRequest) GetJobQueue() BulkWritableCableRequestStatus`
 
 GetJobQueue returns the JobQueue field if non-nil, zero value otherwise.
 
 ### GetJobQueueOk
 
-`func (o *BulkWritableJobQueueAssignmentRequest) GetJobQueueOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableJobQueueAssignmentRequest) GetJobQueueOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetJobQueueOk returns a tuple with the JobQueue field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetJobQueue
 
-`func (o *BulkWritableJobQueueAssignmentRequest) SetJobQueue(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableJobQueueAssignmentRequest) SetJobQueue(v BulkWritableCableRequestStatus)`
 
 SetJobQueue sets JobQueue field to given value.
 

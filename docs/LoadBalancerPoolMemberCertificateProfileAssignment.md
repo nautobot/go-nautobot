@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**LoadBalancerPoolMember** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CertificateProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**LoadBalancerPoolMember** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CertificateProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewLoadBalancerPoolMemberCertificateProfileAssignment
 
-`func NewLoadBalancerPoolMemberCertificateProfileAssignment(objectType string, display string, url string, naturalSlug string, loadBalancerPoolMember ApprovalWorkflowStageResponseApprovalWorkflowStage, certificateProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *LoadBalancerPoolMemberCertificateProfileAssignment`
+`func NewLoadBalancerPoolMemberCertificateProfileAssignment(objectType string, display string, url string, naturalSlug string, loadBalancerPoolMember BulkWritableCableRequestStatus, certificateProfile BulkWritableCableRequestStatus, ) *LoadBalancerPoolMemberCertificateProfileAssignment`
 
 NewLoadBalancerPoolMemberCertificateProfileAssignment instantiates a new LoadBalancerPoolMemberCertificateProfileAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -138,40 +138,40 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetLoadBalancerPoolMember
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetLoadBalancerPoolMember() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetLoadBalancerPoolMember() BulkWritableCableRequestStatus`
 
 GetLoadBalancerPoolMember returns the LoadBalancerPoolMember field if non-nil, zero value otherwise.
 
 ### GetLoadBalancerPoolMemberOk
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetLoadBalancerPoolMemberOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetLoadBalancerPoolMemberOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetLoadBalancerPoolMemberOk returns a tuple with the LoadBalancerPoolMember field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLoadBalancerPoolMember
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) SetLoadBalancerPoolMember(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) SetLoadBalancerPoolMember(v BulkWritableCableRequestStatus)`
 
 SetLoadBalancerPoolMember sets LoadBalancerPoolMember field to given value.
 
 
 ### GetCertificateProfile
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetCertificateProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetCertificateProfile() BulkWritableCableRequestStatus`
 
 GetCertificateProfile returns the CertificateProfile field if non-nil, zero value otherwise.
 
 ### GetCertificateProfileOk
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetCertificateProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) GetCertificateProfileOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCertificateProfileOk returns a tuple with the CertificateProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCertificateProfile
 
-`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) SetCertificateProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *LoadBalancerPoolMemberCertificateProfileAssignment) SetCertificateProfile(v BulkWritableCableRequestStatus)`
 
 SetCertificateProfile sets CertificateProfile field to given value.
 

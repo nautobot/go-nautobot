@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | Pointer to **interface{}** |  | [optional] 
 **ScopedFields** | Pointer to **interface{}** | List of scoped fields, only direct fields on the model | [optional] 
 **AssignedObjectId** | **string** |  | 
-**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 
 ### NewObjectMetadata
 
-`func NewObjectMetadata(objectType string, display string, url string, naturalSlug string, assignedObjectType string, assignedObject NullableObjectMetadataAssignedObject, assignedObjectId string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, ) *ObjectMetadata`
+`func NewObjectMetadata(objectType string, display string, url string, naturalSlug string, assignedObjectType string, assignedObject NullableObjectMetadataAssignedObject, assignedObjectId string, metadataType BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *ObjectMetadata`
 
 NewObjectMetadata instantiates a new ObjectMetadata object
 This constructor will assign default values to properties that have it defined,
@@ -286,20 +286,20 @@ SetAssignedObjectId sets AssignedObjectId field to given value.
 
 ### GetMetadataType
 
-`func (o *ObjectMetadata) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ObjectMetadata) GetMetadataType() BulkWritableCableRequestStatus`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *ObjectMetadata) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ObjectMetadata) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *ObjectMetadata) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ObjectMetadata) SetMetadataType(v BulkWritableCableRequestStatus)`
 
 SetMetadataType sets MetadataType field to given value.
 

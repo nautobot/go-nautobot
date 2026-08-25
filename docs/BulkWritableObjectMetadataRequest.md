@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Value** | Pointer to **interface{}** |  | [optional] 
 **ScopedFields** | Pointer to **interface{}** | List of scoped fields, only direct fields on the model | [optional] 
 **AssignedObjectId** | **string** |  | 
-**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableObjectMetadataRequest
 
-`func NewBulkWritableObjectMetadataRequest(id string, assignedObjectType string, assignedObjectId string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableObjectMetadataRequest`
+`func NewBulkWritableObjectMetadataRequest(id string, assignedObjectType string, assignedObjectId string, metadataType BulkWritableCableRequestStatus, ) *BulkWritableObjectMetadataRequest`
 
 NewBulkWritableObjectMetadataRequest instantiates a new BulkWritableObjectMetadataRequest object
 This constructor will assign default values to properties that have it defined,
@@ -164,20 +164,20 @@ SetAssignedObjectId sets AssignedObjectId field to given value.
 
 ### GetMetadataType
 
-`func (o *BulkWritableObjectMetadataRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableObjectMetadataRequest) GetMetadataType() BulkWritableCableRequestStatus`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *BulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *BulkWritableObjectMetadataRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableObjectMetadataRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
 
 SetMetadataType sets MetadataType field to given value.
 
