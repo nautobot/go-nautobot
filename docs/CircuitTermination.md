@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**Cable** | **map[string]interface{}** |  | [readonly] 
 **CablePeerType** | **NullableString** |  | [readonly] 
 **CablePeer** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
 **ConnectedEndpointType** | **NullableString** |  | [readonly] 
@@ -20,22 +21,21 @@ Name | Type | Description | Notes
 **XconnectId** | Pointer to **string** |  | [optional] 
 **PpInfo** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
-**Circuit** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Circuit** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Location** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ProviderNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **CloudNetwork** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewCircuitTermination
 
-`func NewCircuitTermination(objectType string, display string, url string, naturalSlug string, cablePeerType NullableString, cablePeer NullableCableTermination, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, termSide TermSideEnum, cable NullableCircuitCircuitTerminationA, circuit ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CircuitTermination`
+`func NewCircuitTermination(objectType string, display string, url string, naturalSlug string, cable map[string]interface{}, cablePeerType NullableString, cablePeer NullableCableTermination, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, termSide TermSideEnum, circuit BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *CircuitTermination`
 
 NewCircuitTermination instantiates a new CircuitTermination object
 This constructor will assign default values to properties that have it defined,
@@ -155,6 +155,36 @@ and a boolean to check if the value has been set.
 SetNaturalSlug sets NaturalSlug field to given value.
 
 
+### GetCable
+
+`func (o *CircuitTermination) GetCable() map[string]interface{}`
+
+GetCable returns the Cable field if non-nil, zero value otherwise.
+
+### GetCableOk
+
+`func (o *CircuitTermination) GetCableOk() (*map[string]interface{}, bool)`
+
+GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCable
+
+`func (o *CircuitTermination) SetCable(v map[string]interface{})`
+
+SetCable sets Cable field to given value.
+
+
+### SetCableNil
+
+`func (o *CircuitTermination) SetCableNil(b bool)`
+
+ SetCableNil sets the value for Cable to be an explicit nil
+
+### UnsetCable
+`func (o *CircuitTermination) UnsetCable()`
+
+UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetCablePeerType
 
 `func (o *CircuitTermination) GetCablePeerType() string`
@@ -470,52 +500,22 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
-### GetCable
-
-`func (o *CircuitTermination) GetCable() CircuitCircuitTerminationA`
-
-GetCable returns the Cable field if non-nil, zero value otherwise.
-
-### GetCableOk
-
-`func (o *CircuitTermination) GetCableOk() (*CircuitCircuitTerminationA, bool)`
-
-GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCable
-
-`func (o *CircuitTermination) SetCable(v CircuitCircuitTerminationA)`
-
-SetCable sets Cable field to given value.
-
-
-### SetCableNil
-
-`func (o *CircuitTermination) SetCableNil(b bool)`
-
- SetCableNil sets the value for Cable to be an explicit nil
-
-### UnsetCable
-`func (o *CircuitTermination) UnsetCable()`
-
-UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetCircuit
 
-`func (o *CircuitTermination) GetCircuit() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *CircuitTermination) GetCircuit() BulkWritableCableRequestStatus`
 
 GetCircuit returns the Circuit field if non-nil, zero value otherwise.
 
 ### GetCircuitOk
 
-`func (o *CircuitTermination) GetCircuitOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *CircuitTermination) GetCircuitOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCircuitOk returns a tuple with the Circuit field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCircuit
 
-`func (o *CircuitTermination) SetCircuit(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *CircuitTermination) SetCircuit(v BulkWritableCableRequestStatus)`
 
 SetCircuit sets Circuit field to given value.
 
@@ -687,20 +687,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *CircuitTermination) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *CircuitTermination) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *CircuitTermination) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *CircuitTermination) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *CircuitTermination) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *CircuitTermination) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
@@ -732,20 +732,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *CircuitTermination) GetCustomFields() map[string]interface{}`
+`func (o *CircuitTermination) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *CircuitTermination) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *CircuitTermination) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *CircuitTermination) SetCustomFields(v map[string]interface{})`
+`func (o *CircuitTermination) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

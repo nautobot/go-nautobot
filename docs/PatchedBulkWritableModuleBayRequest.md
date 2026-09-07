@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **ParentDevice** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ParentModule** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleFamily** | Pointer to [**NullableBulkWritableModuleBayRequestModuleFamily**](BulkWritableModuleBayRequestModuleFamily.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -288,20 +288,20 @@ HasModuleFamily returns a boolean if a field has been set.
 UnsetModuleFamily ensures that no value is present for ModuleFamily, not even an explicit nil
 ### GetCustomFields
 
-`func (o *PatchedBulkWritableModuleBayRequest) GetCustomFields() map[string]interface{}`
+`func (o *PatchedBulkWritableModuleBayRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *PatchedBulkWritableModuleBayRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableModuleBayRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *PatchedBulkWritableModuleBayRequest) SetCustomFields(v map[string]interface{})`
+`func (o *PatchedBulkWritableModuleBayRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -338,20 +338,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedBulkWritableModuleBayRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableModuleBayRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedBulkWritableModuleBayRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableModuleBayRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedBulkWritableModuleBayRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableModuleBayRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

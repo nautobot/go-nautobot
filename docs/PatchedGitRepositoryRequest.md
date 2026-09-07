@@ -10,11 +10,10 @@ Name | Type | Description | Notes
 **Slug** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **RemoteUrl** | Pointer to **string** | Only HTTP and HTTPS URLs are presently supported | [optional] 
 **Branch** | Pointer to **string** | Branch, tag, or commit | [optional] 
-**CurrentHead** | Pointer to **string** | Commit hash of the most recent fetch from the selected branch. Used for syncing between workers. | [optional] 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -185,31 +184,6 @@ SetBranch sets Branch field to given value.
 
 HasBranch returns a boolean if a field has been set.
 
-### GetCurrentHead
-
-`func (o *PatchedGitRepositoryRequest) GetCurrentHead() string`
-
-GetCurrentHead returns the CurrentHead field if non-nil, zero value otherwise.
-
-### GetCurrentHeadOk
-
-`func (o *PatchedGitRepositoryRequest) GetCurrentHeadOk() (*string, bool)`
-
-GetCurrentHeadOk returns a tuple with the CurrentHead field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCurrentHead
-
-`func (o *PatchedGitRepositoryRequest) SetCurrentHead(v string)`
-
-SetCurrentHead sets CurrentHead field to given value.
-
-### HasCurrentHead
-
-`func (o *PatchedGitRepositoryRequest) HasCurrentHead() bool`
-
-HasCurrentHead returns a boolean if a field has been set.
-
 ### GetSecretsGroup
 
 `func (o *PatchedGitRepositoryRequest) GetSecretsGroup() ApprovalWorkflowUser`
@@ -247,20 +221,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetCustomFields
 
-`func (o *PatchedGitRepositoryRequest) GetCustomFields() map[string]interface{}`
+`func (o *PatchedGitRepositoryRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *PatchedGitRepositoryRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *PatchedGitRepositoryRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *PatchedGitRepositoryRequest) SetCustomFields(v map[string]interface{})`
+`func (o *PatchedGitRepositoryRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -297,20 +271,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedGitRepositoryRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedGitRepositoryRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedGitRepositoryRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedGitRepositoryRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedGitRepositoryRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedGitRepositoryRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

@@ -7,19 +7,19 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
-**FailoverStrategy** | Pointer to [**BulkWritableDeviceRedundancyGroupRequestFailoverStrategy**](BulkWritableDeviceRedundancyGroupRequestFailoverStrategy.md) |  | [optional] [default to BULKWRITABLEDEVICEREDUNDANCYGROUPREQUESTFAILOVERSTRATEGY_EMPTY]
+**FailoverStrategy** | Pointer to [**PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy**](PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy.md) |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **SecretsGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritableDeviceRedundancyGroupRequest
 
-`func NewWritableDeviceRedundancyGroupRequest(name string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritableDeviceRedundancyGroupRequest`
+`func NewWritableDeviceRedundancyGroupRequest(name string, status BulkWritableCableRequestStatus, ) *WritableDeviceRedundancyGroupRequest`
 
 NewWritableDeviceRedundancyGroupRequest instantiates a new WritableDeviceRedundancyGroupRequest object
 This constructor will assign default values to properties that have it defined,
@@ -106,20 +106,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetFailoverStrategy
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetFailoverStrategy() BulkWritableDeviceRedundancyGroupRequestFailoverStrategy`
+`func (o *WritableDeviceRedundancyGroupRequest) GetFailoverStrategy() PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy`
 
 GetFailoverStrategy returns the FailoverStrategy field if non-nil, zero value otherwise.
 
 ### GetFailoverStrategyOk
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetFailoverStrategyOk() (*BulkWritableDeviceRedundancyGroupRequestFailoverStrategy, bool)`
+`func (o *WritableDeviceRedundancyGroupRequest) GetFailoverStrategyOk() (*PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy, bool)`
 
 GetFailoverStrategyOk returns a tuple with the FailoverStrategy field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFailoverStrategy
 
-`func (o *WritableDeviceRedundancyGroupRequest) SetFailoverStrategy(v BulkWritableDeviceRedundancyGroupRequestFailoverStrategy)`
+`func (o *WritableDeviceRedundancyGroupRequest) SetFailoverStrategy(v PatchedWritableDeviceRedundancyGroupRequestFailoverStrategy)`
 
 SetFailoverStrategy sets FailoverStrategy field to given value.
 
@@ -156,20 +156,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableDeviceRedundancyGroupRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableDeviceRedundancyGroupRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *WritableDeviceRedundancyGroupRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableDeviceRedundancyGroupRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -211,20 +211,20 @@ HasSecretsGroup returns a boolean if a field has been set.
 UnsetSecretsGroup ensures that no value is present for SecretsGroup, not even an explicit nil
 ### GetCustomFields
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetCustomFields() map[string]interface{}`
+`func (o *WritableDeviceRedundancyGroupRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *WritableDeviceRedundancyGroupRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *WritableDeviceRedundancyGroupRequest) SetCustomFields(v map[string]interface{})`
+`func (o *WritableDeviceRedundancyGroupRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -261,20 +261,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableDeviceRedundancyGroupRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritableDeviceRedundancyGroupRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableDeviceRedundancyGroupRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritableDeviceRedundancyGroupRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableDeviceRedundancyGroupRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

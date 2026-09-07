@@ -12,15 +12,15 @@ Name | Type | Description | Notes
 **ValidatedAttributeValue** | Pointer to **string** |  | [optional] 
 **Valid** | **bool** |  | 
 **Message** | Pointer to **string** |  | [optional] 
-**ContentType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**ContentType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewDataComplianceRequest
 
-`func NewDataComplianceRequest(complianceClassName string, objectId string, valid bool, contentType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *DataComplianceRequest`
+`func NewDataComplianceRequest(complianceClassName string, objectId string, valid bool, contentType BulkWritableCableRequestStatus, ) *DataComplianceRequest`
 
 NewDataComplianceRequest instantiates a new DataComplianceRequest object
 This constructor will assign default values to properties that have it defined,
@@ -222,40 +222,40 @@ HasMessage returns a boolean if a field has been set.
 
 ### GetContentType
 
-`func (o *DataComplianceRequest) GetContentType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *DataComplianceRequest) GetContentType() BulkWritableCableRequestStatus`
 
 GetContentType returns the ContentType field if non-nil, zero value otherwise.
 
 ### GetContentTypeOk
 
-`func (o *DataComplianceRequest) GetContentTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *DataComplianceRequest) GetContentTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetContentTypeOk returns a tuple with the ContentType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetContentType
 
-`func (o *DataComplianceRequest) SetContentType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *DataComplianceRequest) SetContentType(v BulkWritableCableRequestStatus)`
 
 SetContentType sets ContentType field to given value.
 
 
 ### GetCustomFields
 
-`func (o *DataComplianceRequest) GetCustomFields() map[string]interface{}`
+`func (o *DataComplianceRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *DataComplianceRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *DataComplianceRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *DataComplianceRequest) SetCustomFields(v map[string]interface{})`
+`func (o *DataComplianceRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

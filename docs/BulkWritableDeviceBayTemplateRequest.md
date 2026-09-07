@@ -8,15 +8,15 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**DeviceType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**DeviceType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableDeviceBayTemplateRequest
 
-`func NewBulkWritableDeviceBayTemplateRequest(id string, name string, deviceType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableDeviceBayTemplateRequest`
+`func NewBulkWritableDeviceBayTemplateRequest(id string, name string, deviceType BulkWritableCableRequestStatus, ) *BulkWritableDeviceBayTemplateRequest`
 
 NewBulkWritableDeviceBayTemplateRequest instantiates a new BulkWritableDeviceBayTemplateRequest object
 This constructor will assign default values to properties that have it defined,
@@ -123,40 +123,40 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetDeviceType
 
-`func (o *BulkWritableDeviceBayTemplateRequest) GetDeviceType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableDeviceBayTemplateRequest) GetDeviceType() BulkWritableCableRequestStatus`
 
 GetDeviceType returns the DeviceType field if non-nil, zero value otherwise.
 
 ### GetDeviceTypeOk
 
-`func (o *BulkWritableDeviceBayTemplateRequest) GetDeviceTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableDeviceBayTemplateRequest) GetDeviceTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDeviceTypeOk returns a tuple with the DeviceType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDeviceType
 
-`func (o *BulkWritableDeviceBayTemplateRequest) SetDeviceType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableDeviceBayTemplateRequest) SetDeviceType(v BulkWritableCableRequestStatus)`
 
 SetDeviceType sets DeviceType field to given value.
 
 
 ### GetCustomFields
 
-`func (o *BulkWritableDeviceBayTemplateRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableDeviceBayTemplateRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableDeviceBayTemplateRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableDeviceBayTemplateRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableDeviceBayTemplateRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableDeviceBayTemplateRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

@@ -6,19 +6,19 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **ObjectTypes** | **[]string** |  | 
+**Actions** | **[]string** | The list of actions granted by this permission | 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **Enabled** | Pointer to **bool** |  | [optional] 
-**Actions** | **interface{}** | The list of actions granted by this permission | 
 **Constraints** | Pointer to **interface{}** | Queryset filter matching the applicable objects of the selected type(s) | [optional] 
-**Groups** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Users** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Groups** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Users** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableObjectPermissionRequest
 
-`func NewBulkWritableObjectPermissionRequest(id string, objectTypes []string, name string, actions interface{}, ) *BulkWritableObjectPermissionRequest`
+`func NewBulkWritableObjectPermissionRequest(id string, objectTypes []string, actions []string, name string, ) *BulkWritableObjectPermissionRequest`
 
 NewBulkWritableObjectPermissionRequest instantiates a new BulkWritableObjectPermissionRequest object
 This constructor will assign default values to properties that have it defined,
@@ -71,6 +71,26 @@ and a boolean to check if the value has been set.
 `func (o *BulkWritableObjectPermissionRequest) SetObjectTypes(v []string)`
 
 SetObjectTypes sets ObjectTypes field to given value.
+
+
+### GetActions
+
+`func (o *BulkWritableObjectPermissionRequest) GetActions() []string`
+
+GetActions returns the Actions field if non-nil, zero value otherwise.
+
+### GetActionsOk
+
+`func (o *BulkWritableObjectPermissionRequest) GetActionsOk() (*[]string, bool)`
+
+GetActionsOk returns a tuple with the Actions field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetActions
+
+`func (o *BulkWritableObjectPermissionRequest) SetActions(v []string)`
+
+SetActions sets Actions field to given value.
 
 
 ### GetName
@@ -143,36 +163,6 @@ SetEnabled sets Enabled field to given value.
 
 HasEnabled returns a boolean if a field has been set.
 
-### GetActions
-
-`func (o *BulkWritableObjectPermissionRequest) GetActions() interface{}`
-
-GetActions returns the Actions field if non-nil, zero value otherwise.
-
-### GetActionsOk
-
-`func (o *BulkWritableObjectPermissionRequest) GetActionsOk() (*interface{}, bool)`
-
-GetActionsOk returns a tuple with the Actions field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetActions
-
-`func (o *BulkWritableObjectPermissionRequest) SetActions(v interface{})`
-
-SetActions sets Actions field to given value.
-
-
-### SetActionsNil
-
-`func (o *BulkWritableObjectPermissionRequest) SetActionsNil(b bool)`
-
- SetActionsNil sets the value for Actions to be an explicit nil
-
-### UnsetActions
-`func (o *BulkWritableObjectPermissionRequest) UnsetActions()`
-
-UnsetActions ensures that no value is present for Actions, not even an explicit nil
 ### GetConstraints
 
 `func (o *BulkWritableObjectPermissionRequest) GetConstraints() interface{}`
@@ -210,20 +200,20 @@ HasConstraints returns a boolean if a field has been set.
 UnsetConstraints ensures that no value is present for Constraints, not even an explicit nil
 ### GetGroups
 
-`func (o *BulkWritableObjectPermissionRequest) GetGroups() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableObjectPermissionRequest) GetGroups() []BulkWritableCableRequestStatus`
 
 GetGroups returns the Groups field if non-nil, zero value otherwise.
 
 ### GetGroupsOk
 
-`func (o *BulkWritableObjectPermissionRequest) GetGroupsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableObjectPermissionRequest) GetGroupsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetGroupsOk returns a tuple with the Groups field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetGroups
 
-`func (o *BulkWritableObjectPermissionRequest) SetGroups(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableObjectPermissionRequest) SetGroups(v []BulkWritableCableRequestStatus)`
 
 SetGroups sets Groups field to given value.
 
@@ -235,20 +225,20 @@ HasGroups returns a boolean if a field has been set.
 
 ### GetUsers
 
-`func (o *BulkWritableObjectPermissionRequest) GetUsers() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableObjectPermissionRequest) GetUsers() []BulkWritableCableRequestStatus`
 
 GetUsers returns the Users field if non-nil, zero value otherwise.
 
 ### GetUsersOk
 
-`func (o *BulkWritableObjectPermissionRequest) GetUsersOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableObjectPermissionRequest) GetUsersOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetUsersOk returns a tuple with the Users field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUsers
 
-`func (o *BulkWritableObjectPermissionRequest) SetUsers(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableObjectPermissionRequest) SetUsers(v []BulkWritableCableRequestStatus)`
 
 SetUsers sets Users field to given value.
 

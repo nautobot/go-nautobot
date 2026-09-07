@@ -18,19 +18,19 @@ Name | Type | Description | Notes
 **UHeight** | Pointer to **int32** |  | [optional] 
 **IsFullDepth** | Pointer to **bool** | Device consumes both front and rear rack faces | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Manufacturer** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Manufacturer** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **DeviceFamily** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewDeviceType
 
-`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
+`func NewDeviceType(objectType string, display string, url string, naturalSlug string, model string, manufacturer BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *DeviceType`
 
 NewDeviceType instantiates a new DeviceType object
 This constructor will assign default values to properties that have it defined,
@@ -392,20 +392,20 @@ HasComments returns a boolean if a field has been set.
 
 ### GetManufacturer
 
-`func (o *DeviceType) GetManufacturer() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *DeviceType) GetManufacturer() BulkWritableCableRequestStatus`
 
 GetManufacturer returns the Manufacturer field if non-nil, zero value otherwise.
 
 ### GetManufacturerOk
 
-`func (o *DeviceType) GetManufacturerOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *DeviceType) GetManufacturerOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetManufacturerOk returns a tuple with the Manufacturer field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetManufacturer
 
-`func (o *DeviceType) SetManufacturer(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *DeviceType) SetManufacturer(v BulkWritableCableRequestStatus)`
 
 SetManufacturer sets Manufacturer field to given value.
 
@@ -527,20 +527,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *DeviceType) GetCustomFields() map[string]interface{}`
+`func (o *DeviceType) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *DeviceType) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *DeviceType) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *DeviceType) SetCustomFields(v map[string]interface{})`
+`func (o *DeviceType) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -552,20 +552,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *DeviceType) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *DeviceType) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *DeviceType) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *DeviceType) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *DeviceType) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *DeviceType) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

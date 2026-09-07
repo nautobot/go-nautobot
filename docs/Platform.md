@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**NetworkDriverMappings** | **interface{}** |  | [readonly] 
+**NetworkDriverMappings** | **map[string]string** | Dictionary of library-specific network drivers, derived from network_driver by the netutils library mapping or the NETWORK_DRIVERS setting. | [readonly] 
 **DeviceCount** | Pointer to **int32** |  | [optional] [readonly] 
 **VirtualMachineCount** | Pointer to **int32** |  | [optional] [readonly] 
 **Name** | **string** |  | 
@@ -21,13 +21,13 @@ Name | Type | Description | Notes
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewPlatform
 
-`func NewPlatform(objectType string, display string, url string, naturalSlug string, networkDriverMappings interface{}, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
+`func NewPlatform(objectType string, display string, url string, naturalSlug string, networkDriverMappings map[string]string, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Platform`
 
 NewPlatform instantiates a new Platform object
 This constructor will assign default values to properties that have it defined,
@@ -149,34 +149,24 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetNetworkDriverMappings
 
-`func (o *Platform) GetNetworkDriverMappings() interface{}`
+`func (o *Platform) GetNetworkDriverMappings() map[string]string`
 
 GetNetworkDriverMappings returns the NetworkDriverMappings field if non-nil, zero value otherwise.
 
 ### GetNetworkDriverMappingsOk
 
-`func (o *Platform) GetNetworkDriverMappingsOk() (*interface{}, bool)`
+`func (o *Platform) GetNetworkDriverMappingsOk() (*map[string]string, bool)`
 
 GetNetworkDriverMappingsOk returns a tuple with the NetworkDriverMappings field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNetworkDriverMappings
 
-`func (o *Platform) SetNetworkDriverMappings(v interface{})`
+`func (o *Platform) SetNetworkDriverMappings(v map[string]string)`
 
 SetNetworkDriverMappings sets NetworkDriverMappings field to given value.
 
 
-### SetNetworkDriverMappingsNil
-
-`func (o *Platform) SetNetworkDriverMappingsNil(b bool)`
-
- SetNetworkDriverMappingsNil sets the value for NetworkDriverMappings to be an explicit nil
-
-### UnsetNetworkDriverMappings
-`func (o *Platform) UnsetNetworkDriverMappings()`
-
-UnsetNetworkDriverMappings ensures that no value is present for NetworkDriverMappings, not even an explicit nil
 ### GetDeviceCount
 
 `func (o *Platform) GetDeviceCount() int32`
@@ -474,20 +464,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *Platform) GetCustomFields() map[string]interface{}`
+`func (o *Platform) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *Platform) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *Platform) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *Platform) SetCustomFields(v map[string]interface{})`
+`func (o *Platform) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

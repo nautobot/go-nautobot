@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
+**Cable** | **map[string]interface{}** |  | [readonly] 
 **CablePeerType** | **NullableString** |  | [readonly] 
 **CablePeer** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
 **Type** | [**FrontPortType**](FrontPortType.md) |  | 
@@ -18,18 +19,17 @@ Name | Type | Description | Notes
 **Positions** | Pointer to **int32** |  | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewRearPort
 
-`func NewRearPort(objectType string, display string, url string, naturalSlug string, cablePeerType NullableString, cablePeer NullableCableTermination, type_ FrontPortType, name string, cable NullableCircuitCircuitTerminationA, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RearPort`
+`func NewRearPort(objectType string, display string, url string, naturalSlug string, cable map[string]interface{}, cablePeerType NullableString, cablePeer NullableCableTermination, type_ FrontPortType, name string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *RearPort`
 
 NewRearPort instantiates a new RearPort object
 This constructor will assign default values to properties that have it defined,
@@ -149,6 +149,36 @@ and a boolean to check if the value has been set.
 SetNaturalSlug sets NaturalSlug field to given value.
 
 
+### GetCable
+
+`func (o *RearPort) GetCable() map[string]interface{}`
+
+GetCable returns the Cable field if non-nil, zero value otherwise.
+
+### GetCableOk
+
+`func (o *RearPort) GetCableOk() (*map[string]interface{}, bool)`
+
+GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCable
+
+`func (o *RearPort) SetCable(v map[string]interface{})`
+
+SetCable sets Cable field to given value.
+
+
+### SetCableNil
+
+`func (o *RearPort) SetCableNil(b bool)`
+
+ SetCableNil sets the value for Cable to be an explicit nil
+
+### UnsetCable
+`func (o *RearPort) UnsetCable()`
+
+UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetCablePeerType
 
 `func (o *RearPort) GetCablePeerType() string`
@@ -394,36 +424,6 @@ HasModule returns a boolean if a field has been set.
 `func (o *RearPort) UnsetModule()`
 
 UnsetModule ensures that no value is present for Module, not even an explicit nil
-### GetCable
-
-`func (o *RearPort) GetCable() CircuitCircuitTerminationA`
-
-GetCable returns the Cable field if non-nil, zero value otherwise.
-
-### GetCableOk
-
-`func (o *RearPort) GetCableOk() (*CircuitCircuitTerminationA, bool)`
-
-GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCable
-
-`func (o *RearPort) SetCable(v CircuitCircuitTerminationA)`
-
-SetCable sets Cable field to given value.
-
-
-### SetCableNil
-
-`func (o *RearPort) SetCableNil(b bool)`
-
- SetCableNil sets the value for Cable to be an explicit nil
-
-### UnsetCable
-`func (o *RearPort) UnsetCable()`
-
-UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetCreated
 
 `func (o *RearPort) GetCreated() time.Time`
@@ -506,20 +506,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *RearPort) GetCustomFields() map[string]interface{}`
+`func (o *RearPort) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *RearPort) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *RearPort) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *RearPort) SetCustomFields(v map[string]interface{})`
+`func (o *RearPort) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -531,20 +531,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *RearPort) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *RearPort) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *RearPort) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *RearPort) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *RearPort) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *RearPort) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

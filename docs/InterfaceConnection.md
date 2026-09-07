@@ -7,17 +7,15 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
-**InterfaceA** | [**Interface**](Interface.md) |  | [readonly] 
+**InterfaceA** | [**Interface**](Interface.md) |  | 
 **InterfaceB** | [**Interface**](Interface.md) |  | 
 **ConnectedEndpointReachable** | **NullableBool** |  | [readonly] 
-**Created** | **NullableTime** |  | [readonly] 
-**LastUpdated** | **NullableTime** |  | [readonly] 
 
 ## Methods
 
 ### NewInterfaceConnection
 
-`func NewInterfaceConnection(objectType string, display string, interfaceA Interface, interfaceB Interface, connectedEndpointReachable NullableBool, created NullableTime, lastUpdated NullableTime, ) *InterfaceConnection`
+`func NewInterfaceConnection(objectType string, display string, interfaceA Interface, interfaceB Interface, connectedEndpointReachable NullableBool, ) *InterfaceConnection`
 
 NewInterfaceConnection instantiates a new InterfaceConnection object
 This constructor will assign default values to properties that have it defined,
@@ -167,66 +165,6 @@ SetConnectedEndpointReachable sets ConnectedEndpointReachable field to given val
 `func (o *InterfaceConnection) UnsetConnectedEndpointReachable()`
 
 UnsetConnectedEndpointReachable ensures that no value is present for ConnectedEndpointReachable, not even an explicit nil
-### GetCreated
-
-`func (o *InterfaceConnection) GetCreated() time.Time`
-
-GetCreated returns the Created field if non-nil, zero value otherwise.
-
-### GetCreatedOk
-
-`func (o *InterfaceConnection) GetCreatedOk() (*time.Time, bool)`
-
-GetCreatedOk returns a tuple with the Created field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCreated
-
-`func (o *InterfaceConnection) SetCreated(v time.Time)`
-
-SetCreated sets Created field to given value.
-
-
-### SetCreatedNil
-
-`func (o *InterfaceConnection) SetCreatedNil(b bool)`
-
- SetCreatedNil sets the value for Created to be an explicit nil
-
-### UnsetCreated
-`func (o *InterfaceConnection) UnsetCreated()`
-
-UnsetCreated ensures that no value is present for Created, not even an explicit nil
-### GetLastUpdated
-
-`func (o *InterfaceConnection) GetLastUpdated() time.Time`
-
-GetLastUpdated returns the LastUpdated field if non-nil, zero value otherwise.
-
-### GetLastUpdatedOk
-
-`func (o *InterfaceConnection) GetLastUpdatedOk() (*time.Time, bool)`
-
-GetLastUpdatedOk returns a tuple with the LastUpdated field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetLastUpdated
-
-`func (o *InterfaceConnection) SetLastUpdated(v time.Time)`
-
-SetLastUpdated sets LastUpdated field to given value.
-
-
-### SetLastUpdatedNil
-
-`func (o *InterfaceConnection) SetLastUpdatedNil(b bool)`
-
- SetLastUpdatedNil sets the value for LastUpdated to be an explicit nil
-
-### UnsetLastUpdated
-`func (o *InterfaceConnection) UnsetLastUpdated()`
-
-UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

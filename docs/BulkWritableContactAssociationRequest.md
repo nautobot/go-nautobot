@@ -9,16 +9,16 @@ Name | Type | Description | Notes
 **AssociatedObjectId** | **string** |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Role** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableContactAssociationRequest
 
-`func NewBulkWritableContactAssociationRequest(id string, associatedObjectType string, associatedObjectId string, role ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableContactAssociationRequest`
+`func NewBulkWritableContactAssociationRequest(id string, associatedObjectType string, associatedObjectId string, role BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, ) *BulkWritableContactAssociationRequest`
 
 NewBulkWritableContactAssociationRequest instantiates a new BulkWritableContactAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -165,60 +165,60 @@ HasTeam returns a boolean if a field has been set.
 UnsetTeam ensures that no value is present for Team, not even an explicit nil
 ### GetRole
 
-`func (o *BulkWritableContactAssociationRequest) GetRole() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableContactAssociationRequest) GetRole() BulkWritableCableRequestStatus`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *BulkWritableContactAssociationRequest) GetRoleOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetRoleOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *BulkWritableContactAssociationRequest) SetRole(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableContactAssociationRequest) SetRole(v BulkWritableCableRequestStatus)`
 
 SetRole sets Role field to given value.
 
 
 ### GetStatus
 
-`func (o *BulkWritableContactAssociationRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableContactAssociationRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableContactAssociationRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableContactAssociationRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableContactAssociationRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetCustomFields
 
-`func (o *BulkWritableContactAssociationRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableContactAssociationRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableContactAssociationRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableContactAssociationRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableContactAssociationRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableContactAssociationRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

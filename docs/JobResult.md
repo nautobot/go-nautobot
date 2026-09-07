@@ -27,17 +27,21 @@ Name | Type | Description | Notes
 **InfoLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
 **WarningLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
 **ErrorLogCount** | Pointer to **NullableInt32** |  | [optional] [readonly] 
+**CanceledByUserName** | **string** |  | [readonly] 
+**CancelType** | Pointer to [**JobResultCancelType**](JobResultCancelType.md) |  | [optional] 
+**DateCanceled** | Pointer to **NullableTime** | Timestamp at which the job was canceled | [optional] 
 **JobModel** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ScheduledJob** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CanceledBy** | Pointer to [**NullableJobResultCanceledBy**](JobResultCanceledBy.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **ComputedFields** | **map[string]interface{}** |  | [readonly] 
 
 ## Methods
 
 ### NewJobResult
 
-`func NewJobResult(objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, computedFields map[string]interface{}, ) *JobResult`
+`func NewJobResult(objectType string, display string, url string, naturalSlug string, status JobResultStatus, name string, dateCreated time.Time, result interface{}, meta interface{}, canceledByUserName string, computedFields map[string]interface{}, ) *JobResult`
 
 NewJobResult instantiates a new JobResult object
 This constructor will assign default values to properties that have it defined,
@@ -732,6 +736,86 @@ HasErrorLogCount returns a boolean if a field has been set.
 `func (o *JobResult) UnsetErrorLogCount()`
 
 UnsetErrorLogCount ensures that no value is present for ErrorLogCount, not even an explicit nil
+### GetCanceledByUserName
+
+`func (o *JobResult) GetCanceledByUserName() string`
+
+GetCanceledByUserName returns the CanceledByUserName field if non-nil, zero value otherwise.
+
+### GetCanceledByUserNameOk
+
+`func (o *JobResult) GetCanceledByUserNameOk() (*string, bool)`
+
+GetCanceledByUserNameOk returns a tuple with the CanceledByUserName field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCanceledByUserName
+
+`func (o *JobResult) SetCanceledByUserName(v string)`
+
+SetCanceledByUserName sets CanceledByUserName field to given value.
+
+
+### GetCancelType
+
+`func (o *JobResult) GetCancelType() JobResultCancelType`
+
+GetCancelType returns the CancelType field if non-nil, zero value otherwise.
+
+### GetCancelTypeOk
+
+`func (o *JobResult) GetCancelTypeOk() (*JobResultCancelType, bool)`
+
+GetCancelTypeOk returns a tuple with the CancelType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCancelType
+
+`func (o *JobResult) SetCancelType(v JobResultCancelType)`
+
+SetCancelType sets CancelType field to given value.
+
+### HasCancelType
+
+`func (o *JobResult) HasCancelType() bool`
+
+HasCancelType returns a boolean if a field has been set.
+
+### GetDateCanceled
+
+`func (o *JobResult) GetDateCanceled() time.Time`
+
+GetDateCanceled returns the DateCanceled field if non-nil, zero value otherwise.
+
+### GetDateCanceledOk
+
+`func (o *JobResult) GetDateCanceledOk() (*time.Time, bool)`
+
+GetDateCanceledOk returns a tuple with the DateCanceled field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDateCanceled
+
+`func (o *JobResult) SetDateCanceled(v time.Time)`
+
+SetDateCanceled sets DateCanceled field to given value.
+
+### HasDateCanceled
+
+`func (o *JobResult) HasDateCanceled() bool`
+
+HasDateCanceled returns a boolean if a field has been set.
+
+### SetDateCanceledNil
+
+`func (o *JobResult) SetDateCanceledNil(b bool)`
+
+ SetDateCanceledNil sets the value for DateCanceled to be an explicit nil
+
+### UnsetDateCanceled
+`func (o *JobResult) UnsetDateCanceled()`
+
+UnsetDateCanceled ensures that no value is present for DateCanceled, not even an explicit nil
 ### GetJobModel
 
 `func (o *JobResult) GetJobModel() ApprovalWorkflowUser`
@@ -837,22 +921,57 @@ HasScheduledJob returns a boolean if a field has been set.
 `func (o *JobResult) UnsetScheduledJob()`
 
 UnsetScheduledJob ensures that no value is present for ScheduledJob, not even an explicit nil
+### GetCanceledBy
+
+`func (o *JobResult) GetCanceledBy() JobResultCanceledBy`
+
+GetCanceledBy returns the CanceledBy field if non-nil, zero value otherwise.
+
+### GetCanceledByOk
+
+`func (o *JobResult) GetCanceledByOk() (*JobResultCanceledBy, bool)`
+
+GetCanceledByOk returns a tuple with the CanceledBy field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCanceledBy
+
+`func (o *JobResult) SetCanceledBy(v JobResultCanceledBy)`
+
+SetCanceledBy sets CanceledBy field to given value.
+
+### HasCanceledBy
+
+`func (o *JobResult) HasCanceledBy() bool`
+
+HasCanceledBy returns a boolean if a field has been set.
+
+### SetCanceledByNil
+
+`func (o *JobResult) SetCanceledByNil(b bool)`
+
+ SetCanceledByNil sets the value for CanceledBy to be an explicit nil
+
+### UnsetCanceledBy
+`func (o *JobResult) UnsetCanceledBy()`
+
+UnsetCanceledBy ensures that no value is present for CanceledBy, not even an explicit nil
 ### GetCustomFields
 
-`func (o *JobResult) GetCustomFields() map[string]interface{}`
+`func (o *JobResult) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *JobResult) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *JobResult) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *JobResult) SetCustomFields(v map[string]interface{})`
+`func (o *JobResult) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

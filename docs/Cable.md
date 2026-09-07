@@ -9,29 +9,33 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**TerminationAType** | **string** |  | 
-**TerminationBType** | **string** |  | 
-**TerminationA** | [**CableTermination**](CableTermination.md) |  | [readonly] 
-**TerminationB** | [**CableTermination**](CableTermination.md) |  | [readonly] 
+**TerminationAType** | Pointer to **NullableString** |  | [optional] 
+**TerminationBType** | Pointer to **NullableString** |  | [optional] 
+**TerminationA** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
+**TerminationB** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
+**TerminationAId** | Pointer to **NullableString** |  | [optional] 
+**TerminationBId** | Pointer to **NullableString** |  | [optional] 
 **LengthUnit** | Pointer to [**CableLengthUnit**](CableLengthUnit.md) |  | [optional] 
 **Type** | Pointer to [**CableType**](CableType.md) |  | [optional] 
-**TerminationAId** | **string** |  | 
-**TerminationBId** | **string** |  | 
+**TotalLanes** | **int32** |  | [readonly] 
+**ConnectedLanes** | **int32** |  | [readonly] 
+**Terminations** | [**map[string]CableTermination**](CableTermination.md) | Terminations on this cable, keyed by side (&#39;a&#39;/&#39;b&#39;) plus 1-indexed connector number. A standard cable has one connector per side (&#39;a1&#39;, &#39;b1&#39;); higher connector numbers (&#39;a2&#39;, &#39;b2&#39;, ...) appear only on breakout cables with multiple connectors per side. Each value is a brief representation (default depth) or the full nested serializer (&#x60;?depth&gt;&#x3D;1&#x60;) of the termination at that connector; polymorphic across Interface / CircuitTermination / ConsolePort / FrontPort / RearPort / PowerPort / PowerOutlet / PowerFeed. Uncabled connectors on breakout cables are represented as &#x60;null&#x60;. | [readonly] 
 **Label** | Pointer to **string** |  | [optional] 
 **Color** | Pointer to **string** | RGB color in hexadecimal (e.g. 00ff00) | [optional] 
 **Length** | Pointer to **NullableInt32** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**CableType** | Pointer to [**NullableBulkWritableCableRequestCableType**](BulkWritableCableRequestCableType.md) |  | [optional] 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewCable
 
-`func NewCable(objectType string, display string, url string, naturalSlug string, terminationAType string, terminationBType string, terminationA CableTermination, terminationB CableTermination, terminationAId string, terminationBId string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cable`
+`func NewCable(objectType string, display string, url string, naturalSlug string, terminationA NullableCableTermination, terminationB NullableCableTermination, totalLanes int32, connectedLanes int32, terminations map[string]*CableTermination, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Cable`
 
 NewCable instantiates a new Cable object
 This constructor will assign default values to properties that have it defined,
@@ -170,7 +174,22 @@ and a boolean to check if the value has been set.
 
 SetTerminationAType sets TerminationAType field to given value.
 
+### HasTerminationAType
 
+`func (o *Cable) HasTerminationAType() bool`
+
+HasTerminationAType returns a boolean if a field has been set.
+
+### SetTerminationATypeNil
+
+`func (o *Cable) SetTerminationATypeNil(b bool)`
+
+ SetTerminationATypeNil sets the value for TerminationAType to be an explicit nil
+
+### UnsetTerminationAType
+`func (o *Cable) UnsetTerminationAType()`
+
+UnsetTerminationAType ensures that no value is present for TerminationAType, not even an explicit nil
 ### GetTerminationBType
 
 `func (o *Cable) GetTerminationBType() string`
@@ -190,7 +209,22 @@ and a boolean to check if the value has been set.
 
 SetTerminationBType sets TerminationBType field to given value.
 
+### HasTerminationBType
 
+`func (o *Cable) HasTerminationBType() bool`
+
+HasTerminationBType returns a boolean if a field has been set.
+
+### SetTerminationBTypeNil
+
+`func (o *Cable) SetTerminationBTypeNil(b bool)`
+
+ SetTerminationBTypeNil sets the value for TerminationBType to be an explicit nil
+
+### UnsetTerminationBType
+`func (o *Cable) UnsetTerminationBType()`
+
+UnsetTerminationBType ensures that no value is present for TerminationBType, not even an explicit nil
 ### GetTerminationA
 
 `func (o *Cable) GetTerminationA() CableTermination`
@@ -211,6 +245,16 @@ and a boolean to check if the value has been set.
 SetTerminationA sets TerminationA field to given value.
 
 
+### SetTerminationANil
+
+`func (o *Cable) SetTerminationANil(b bool)`
+
+ SetTerminationANil sets the value for TerminationA to be an explicit nil
+
+### UnsetTerminationA
+`func (o *Cable) UnsetTerminationA()`
+
+UnsetTerminationA ensures that no value is present for TerminationA, not even an explicit nil
 ### GetTerminationB
 
 `func (o *Cable) GetTerminationB() CableTermination`
@@ -231,6 +275,86 @@ and a boolean to check if the value has been set.
 SetTerminationB sets TerminationB field to given value.
 
 
+### SetTerminationBNil
+
+`func (o *Cable) SetTerminationBNil(b bool)`
+
+ SetTerminationBNil sets the value for TerminationB to be an explicit nil
+
+### UnsetTerminationB
+`func (o *Cable) UnsetTerminationB()`
+
+UnsetTerminationB ensures that no value is present for TerminationB, not even an explicit nil
+### GetTerminationAId
+
+`func (o *Cable) GetTerminationAId() string`
+
+GetTerminationAId returns the TerminationAId field if non-nil, zero value otherwise.
+
+### GetTerminationAIdOk
+
+`func (o *Cable) GetTerminationAIdOk() (*string, bool)`
+
+GetTerminationAIdOk returns a tuple with the TerminationAId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTerminationAId
+
+`func (o *Cable) SetTerminationAId(v string)`
+
+SetTerminationAId sets TerminationAId field to given value.
+
+### HasTerminationAId
+
+`func (o *Cable) HasTerminationAId() bool`
+
+HasTerminationAId returns a boolean if a field has been set.
+
+### SetTerminationAIdNil
+
+`func (o *Cable) SetTerminationAIdNil(b bool)`
+
+ SetTerminationAIdNil sets the value for TerminationAId to be an explicit nil
+
+### UnsetTerminationAId
+`func (o *Cable) UnsetTerminationAId()`
+
+UnsetTerminationAId ensures that no value is present for TerminationAId, not even an explicit nil
+### GetTerminationBId
+
+`func (o *Cable) GetTerminationBId() string`
+
+GetTerminationBId returns the TerminationBId field if non-nil, zero value otherwise.
+
+### GetTerminationBIdOk
+
+`func (o *Cable) GetTerminationBIdOk() (*string, bool)`
+
+GetTerminationBIdOk returns a tuple with the TerminationBId field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTerminationBId
+
+`func (o *Cable) SetTerminationBId(v string)`
+
+SetTerminationBId sets TerminationBId field to given value.
+
+### HasTerminationBId
+
+`func (o *Cable) HasTerminationBId() bool`
+
+HasTerminationBId returns a boolean if a field has been set.
+
+### SetTerminationBIdNil
+
+`func (o *Cable) SetTerminationBIdNil(b bool)`
+
+ SetTerminationBIdNil sets the value for TerminationBId to be an explicit nil
+
+### UnsetTerminationBId
+`func (o *Cable) UnsetTerminationBId()`
+
+UnsetTerminationBId ensures that no value is present for TerminationBId, not even an explicit nil
 ### GetLengthUnit
 
 `func (o *Cable) GetLengthUnit() CableLengthUnit`
@@ -281,44 +405,64 @@ SetType sets Type field to given value.
 
 HasType returns a boolean if a field has been set.
 
-### GetTerminationAId
+### GetTotalLanes
 
-`func (o *Cable) GetTerminationAId() string`
+`func (o *Cable) GetTotalLanes() int32`
 
-GetTerminationAId returns the TerminationAId field if non-nil, zero value otherwise.
+GetTotalLanes returns the TotalLanes field if non-nil, zero value otherwise.
 
-### GetTerminationAIdOk
+### GetTotalLanesOk
 
-`func (o *Cable) GetTerminationAIdOk() (*string, bool)`
+`func (o *Cable) GetTotalLanesOk() (*int32, bool)`
 
-GetTerminationAIdOk returns a tuple with the TerminationAId field if it's non-nil, zero value otherwise
+GetTotalLanesOk returns a tuple with the TotalLanes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTerminationAId
+### SetTotalLanes
 
-`func (o *Cable) SetTerminationAId(v string)`
+`func (o *Cable) SetTotalLanes(v int32)`
 
-SetTerminationAId sets TerminationAId field to given value.
+SetTotalLanes sets TotalLanes field to given value.
 
 
-### GetTerminationBId
+### GetConnectedLanes
 
-`func (o *Cable) GetTerminationBId() string`
+`func (o *Cable) GetConnectedLanes() int32`
 
-GetTerminationBId returns the TerminationBId field if non-nil, zero value otherwise.
+GetConnectedLanes returns the ConnectedLanes field if non-nil, zero value otherwise.
 
-### GetTerminationBIdOk
+### GetConnectedLanesOk
 
-`func (o *Cable) GetTerminationBIdOk() (*string, bool)`
+`func (o *Cable) GetConnectedLanesOk() (*int32, bool)`
 
-GetTerminationBIdOk returns a tuple with the TerminationBId field if it's non-nil, zero value otherwise
+GetConnectedLanesOk returns a tuple with the ConnectedLanes field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetTerminationBId
+### SetConnectedLanes
 
-`func (o *Cable) SetTerminationBId(v string)`
+`func (o *Cable) SetConnectedLanes(v int32)`
 
-SetTerminationBId sets TerminationBId field to given value.
+SetConnectedLanes sets ConnectedLanes field to given value.
+
+
+### GetTerminations
+
+`func (o *Cable) GetTerminations() map[string]*CableTermination`
+
+GetTerminations returns the Terminations field if non-nil, zero value otherwise.
+
+### GetTerminationsOk
+
+`func (o *Cable) GetTerminationsOk() (*map[string]*CableTermination, bool)`
+
+GetTerminationsOk returns a tuple with the Terminations field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTerminations
+
+`func (o *Cable) SetTerminations(v map[string]*CableTermination)`
+
+SetTerminations sets Terminations field to given value.
 
 
 ### GetLabel
@@ -406,22 +550,57 @@ HasLength returns a boolean if a field has been set.
 `func (o *Cable) UnsetLength()`
 
 UnsetLength ensures that no value is present for Length, not even an explicit nil
+### GetCableType
+
+`func (o *Cable) GetCableType() BulkWritableCableRequestCableType`
+
+GetCableType returns the CableType field if non-nil, zero value otherwise.
+
+### GetCableTypeOk
+
+`func (o *Cable) GetCableTypeOk() (*BulkWritableCableRequestCableType, bool)`
+
+GetCableTypeOk returns a tuple with the CableType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCableType
+
+`func (o *Cable) SetCableType(v BulkWritableCableRequestCableType)`
+
+SetCableType sets CableType field to given value.
+
+### HasCableType
+
+`func (o *Cable) HasCableType() bool`
+
+HasCableType returns a boolean if a field has been set.
+
+### SetCableTypeNil
+
+`func (o *Cable) SetCableTypeNil(b bool)`
+
+ SetCableTypeNil sets the value for CableType to be an explicit nil
+
+### UnsetCableType
+`func (o *Cable) UnsetCableType()`
+
+UnsetCableType ensures that no value is present for CableType, not even an explicit nil
 ### GetStatus
 
-`func (o *Cable) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Cable) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *Cable) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Cable) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *Cable) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Cable) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -508,20 +687,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *Cable) GetCustomFields() map[string]interface{}`
+`func (o *Cable) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *Cable) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *Cable) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *Cable) SetCustomFields(v map[string]interface{})`
+`func (o *Cable) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -533,20 +712,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *Cable) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Cable) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Cable) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Cable) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Cable) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Cable) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

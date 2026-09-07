@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **NaturalSlug** | **string** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
 **Type** | [**InterfaceType**](InterfaceType.md) |  | 
+**PortType** | Pointer to [**FrontPortType**](FrontPortType.md) |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -21,7 +22,7 @@ Name | Type | Description | Notes
 **ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
@@ -186,6 +187,31 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
+
+### GetPortType
+
+`func (o *InterfaceTemplate) GetPortType() FrontPortType`
+
+GetPortType returns the PortType field if non-nil, zero value otherwise.
+
+### GetPortTypeOk
+
+`func (o *InterfaceTemplate) GetPortTypeOk() (*FrontPortType, bool)`
+
+GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPortType
+
+`func (o *InterfaceTemplate) SetPortType(v FrontPortType)`
+
+SetPortType sets PortType field to given value.
+
+### HasPortType
+
+`func (o *InterfaceTemplate) HasPortType() bool`
+
+HasPortType returns a boolean if a field has been set.
 
 ### GetName
 
@@ -474,20 +500,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetCustomFields
 
-`func (o *InterfaceTemplate) GetCustomFields() map[string]interface{}`
+`func (o *InterfaceTemplate) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *InterfaceTemplate) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *InterfaceTemplate) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *InterfaceTemplate) SetCustomFields(v map[string]interface{})`
+`func (o *InterfaceTemplate) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

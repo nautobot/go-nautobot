@@ -27,9 +27,6 @@ openapi-generator-cli generate --config /client/development/create-bindings/oapi
 
 rm /client/.travis.yml
 
-echo "Adding missing imports"
-/client/development/create-bindings/scripts/add-missing-imports.sh
-
 echo "Copying READMEs"
 mv /client/README.md /client/docs/README.md
 sed -i 's|docs/||g' /client/docs/README.md

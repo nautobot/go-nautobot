@@ -1169,7 +1169,7 @@ import (
 )
 
 func main() {
-	bulkWritableCloudNetworkPrefixAssignmentRequest := []openapiclient.BulkWritableCloudNetworkPrefixAssignmentRequest{*openapiclient.NewBulkWritableCloudNetworkPrefixAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCloudNetworkPrefixAssignmentRequest | 
+	bulkWritableCloudNetworkPrefixAssignmentRequest := []openapiclient.BulkWritableCloudNetworkPrefixAssignmentRequest{*openapiclient.NewBulkWritableCloudNetworkPrefixAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCloudNetworkPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1237,7 +1237,7 @@ import (
 )
 
 func main() {
-	cloudNetworkPrefixAssignmentRequest := *openapiclient.NewCloudNetworkPrefixAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudNetworkPrefixAssignmentRequest | 
+	cloudNetworkPrefixAssignmentRequest := *openapiclient.NewCloudNetworkPrefixAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudNetworkPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1616,7 +1616,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network prefix assignment.
-	cloudNetworkPrefixAssignmentRequest := *openapiclient.NewCloudNetworkPrefixAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudNetworkPrefixAssignmentRequest | 
+	cloudNetworkPrefixAssignmentRequest := *openapiclient.NewCloudNetworkPrefixAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudNetworkPrefixAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1823,7 +1823,7 @@ import (
 )
 
 func main() {
-	bulkWritableCloudNetworkRequest := []openapiclient.BulkWritableCloudNetworkRequest{*openapiclient.NewBulkWritableCloudNetworkRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCloudNetworkRequest | 
+	bulkWritableCloudNetworkRequest := []openapiclient.BulkWritableCloudNetworkRequest{*openapiclient.NewBulkWritableCloudNetworkRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCloudNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1891,7 +1891,7 @@ import (
 )
 
 func main() {
-	cloudNetworkRequest := *openapiclient.NewCloudNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudNetworkRequest | 
+	cloudNetworkRequest := *openapiclient.NewCloudNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2547,7 +2547,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud network.
-	cloudNetworkRequest := *openapiclient.NewCloudNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudNetworkRequest | 
+	cloudNetworkRequest := *openapiclient.NewCloudNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3669,7 +3669,7 @@ import (
 )
 
 func main() {
-	bulkWritableCloudServiceNetworkAssignmentRequest := []openapiclient.BulkWritableCloudServiceNetworkAssignmentRequest{*openapiclient.NewBulkWritableCloudServiceNetworkAssignmentRequest("Id_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCloudServiceNetworkAssignmentRequest | 
+	bulkWritableCloudServiceNetworkAssignmentRequest := []openapiclient.BulkWritableCloudServiceNetworkAssignmentRequest{*openapiclient.NewBulkWritableCloudServiceNetworkAssignmentRequest("Id_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCloudServiceNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3737,7 +3737,7 @@ import (
 )
 
 func main() {
-	cloudServiceNetworkAssignmentRequest := *openapiclient.NewCloudServiceNetworkAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudServiceNetworkAssignmentRequest | 
+	cloudServiceNetworkAssignmentRequest := *openapiclient.NewCloudServiceNetworkAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudServiceNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4116,7 +4116,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service network assignment.
-	cloudServiceNetworkAssignmentRequest := *openapiclient.NewCloudServiceNetworkAssignmentRequest(*openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudServiceNetworkAssignmentRequest | 
+	cloudServiceNetworkAssignmentRequest := *openapiclient.NewCloudServiceNetworkAssignmentRequest(*openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CloudServiceNetworkAssignmentRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4323,7 +4323,7 @@ import (
 )
 
 func main() {
-	bulkWritableCloudServiceRequest := []openapiclient.BulkWritableCloudServiceRequest{*openapiclient.NewBulkWritableCloudServiceRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCloudServiceRequest | 
+	bulkWritableCloudServiceRequest := []openapiclient.BulkWritableCloudServiceRequest{*openapiclient.NewBulkWritableCloudServiceRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCloudServiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -4391,7 +4391,7 @@ import (
 )
 
 func main() {
-	cloudServiceRequest := *openapiclient.NewCloudServiceRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudServiceRequest | 
+	cloudServiceRequest := *openapiclient.NewCloudServiceRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // CloudServiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -5037,7 +5037,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this cloud service.
-	cloudServiceRequest := *openapiclient.NewCloudServiceRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CloudServiceRequest | 
+	cloudServiceRequest := *openapiclient.NewCloudServiceRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // CloudServiceRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

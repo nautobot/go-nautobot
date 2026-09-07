@@ -10,19 +10,19 @@ Name | Type | Description | Notes
 **CommitRate** | Pointer to **NullableInt32** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Provider** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CircuitType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Provider** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CircuitType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableCircuitRequest
 
-`func NewBulkWritableCircuitRequest(id string, cid string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, provider ApprovalWorkflowStageResponseApprovalWorkflowStage, circuitType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableCircuitRequest`
+`func NewBulkWritableCircuitRequest(id string, cid string, status BulkWritableCableRequestStatus, provider BulkWritableCableRequestStatus, circuitType BulkWritableCableRequestStatus, ) *BulkWritableCircuitRequest`
 
 NewBulkWritableCircuitRequest instantiates a new BulkWritableCircuitRequest object
 This constructor will assign default values to properties that have it defined,
@@ -199,60 +199,60 @@ HasComments returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *BulkWritableCircuitRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCircuitRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableCircuitRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCircuitRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableCircuitRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCircuitRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetProvider
 
-`func (o *BulkWritableCircuitRequest) GetProvider() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCircuitRequest) GetProvider() BulkWritableCableRequestStatus`
 
 GetProvider returns the Provider field if non-nil, zero value otherwise.
 
 ### GetProviderOk
 
-`func (o *BulkWritableCircuitRequest) GetProviderOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCircuitRequest) GetProviderOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetProviderOk returns a tuple with the Provider field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetProvider
 
-`func (o *BulkWritableCircuitRequest) SetProvider(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCircuitRequest) SetProvider(v BulkWritableCableRequestStatus)`
 
 SetProvider sets Provider field to given value.
 
 
 ### GetCircuitType
 
-`func (o *BulkWritableCircuitRequest) GetCircuitType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCircuitRequest) GetCircuitType() BulkWritableCableRequestStatus`
 
 GetCircuitType returns the CircuitType field if non-nil, zero value otherwise.
 
 ### GetCircuitTypeOk
 
-`func (o *BulkWritableCircuitRequest) GetCircuitTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCircuitRequest) GetCircuitTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetCircuitTypeOk returns a tuple with the CircuitType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCircuitType
 
-`func (o *BulkWritableCircuitRequest) SetCircuitType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCircuitRequest) SetCircuitType(v BulkWritableCableRequestStatus)`
 
 SetCircuitType sets CircuitType field to given value.
 
@@ -294,20 +294,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetTags
 
-`func (o *BulkWritableCircuitRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableCircuitRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableCircuitRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableCircuitRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableCircuitRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableCircuitRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
@@ -319,20 +319,20 @@ HasTags returns a boolean if a field has been set.
 
 ### GetCustomFields
 
-`func (o *BulkWritableCircuitRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableCircuitRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableCircuitRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableCircuitRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableCircuitRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableCircuitRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

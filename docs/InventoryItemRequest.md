@@ -13,19 +13,19 @@ Name | Type | Description | Notes
 **AssetTag** | Pointer to **NullableString** | A unique tag used to identify this item | [optional] 
 **Discovered** | Pointer to **bool** | This item was automatically discovered | [optional] 
 **Parent** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Device** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Device** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Manufacturer** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **SoftwareVersion** | Pointer to [**NullableBulkWritableInventoryItemRequestSoftwareVersion**](BulkWritableInventoryItemRequestSoftwareVersion.md) |  | [optional] 
 **SoftwareImageFiles** | Pointer to [**[]SoftwareImageFiles**](SoftwareImageFiles.md) | Override the software image files associated with the software version for this inventory item | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewInventoryItemRequest
 
-`func NewInventoryItemRequest(name string, device ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *InventoryItemRequest`
+`func NewInventoryItemRequest(name string, device BulkWritableCableRequestStatus, ) *InventoryItemRequest`
 
 NewInventoryItemRequest instantiates a new InventoryItemRequest object
 This constructor will assign default values to properties that have it defined,
@@ -282,20 +282,20 @@ HasParent returns a boolean if a field has been set.
 UnsetParent ensures that no value is present for Parent, not even an explicit nil
 ### GetDevice
 
-`func (o *InventoryItemRequest) GetDevice() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *InventoryItemRequest) GetDevice() BulkWritableCableRequestStatus`
 
 GetDevice returns the Device field if non-nil, zero value otherwise.
 
 ### GetDeviceOk
 
-`func (o *InventoryItemRequest) GetDeviceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *InventoryItemRequest) GetDeviceOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDeviceOk returns a tuple with the Device field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDevice
 
-`func (o *InventoryItemRequest) SetDevice(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *InventoryItemRequest) SetDevice(v BulkWritableCableRequestStatus)`
 
 SetDevice sets Device field to given value.
 
@@ -397,20 +397,20 @@ HasSoftwareImageFiles returns a boolean if a field has been set.
 
 ### GetCustomFields
 
-`func (o *InventoryItemRequest) GetCustomFields() map[string]interface{}`
+`func (o *InventoryItemRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *InventoryItemRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *InventoryItemRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *InventoryItemRequest) SetCustomFields(v map[string]interface{})`
+`func (o *InventoryItemRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -447,20 +447,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *InventoryItemRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *InventoryItemRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *InventoryItemRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *InventoryItemRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *InventoryItemRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *InventoryItemRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

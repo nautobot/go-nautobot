@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Get go-nautobot generator code"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: "Start Nautobot and Generator"
         run: |
           cd development
@@ -48,7 +48,7 @@ jobs:
         # ENVs cannot be used directly in job.if. This is a workaround to check
         # if SLACK_WEBHOOK_URL is present.
         if: "${{ env.SLACK_WEBHOOK_URL != '' }}"
-        uses: "slackapi/slack-github-action@v1.17.0"
+        uses: "slackapi/slack-github-action@v4.0.0"
         with:
           payload: |
             {

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **ContentType** | **string** |  | 
+**OutputType** | Pointer to [**ComputedFieldOutputType**](ComputedFieldOutputType.md) |  | [optional] 
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **Grouping** | Pointer to **string** | Human-readable grouping that this computed field belongs to. | [optional] 
 **Label** | **string** | Name of the field as displayed to users | 
@@ -165,6 +166,31 @@ and a boolean to check if the value has been set.
 
 SetContentType sets ContentType field to given value.
 
+
+### GetOutputType
+
+`func (o *ComputedField) GetOutputType() ComputedFieldOutputType`
+
+GetOutputType returns the OutputType field if non-nil, zero value otherwise.
+
+### GetOutputTypeOk
+
+`func (o *ComputedField) GetOutputTypeOk() (*ComputedFieldOutputType, bool)`
+
+GetOutputTypeOk returns a tuple with the OutputType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOutputType
+
+`func (o *ComputedField) SetOutputType(v ComputedFieldOutputType)`
+
+SetOutputType sets OutputType field to given value.
+
+### HasOutputType
+
+`func (o *ComputedField) HasOutputType() bool`
+
+HasOutputType returns a boolean if a field has been set.
 
 ### GetKey
 

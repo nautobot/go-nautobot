@@ -6,24 +6,24 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **Address** | **string** |  | 
-**Namespace** | Pointer to [**BulkWritableIPAddressRequestNamespace**](BulkWritableIPAddressRequestNamespace.md) |  | [optional] 
+**Namespace** | Pointer to [**BulkWritableIPAddressRangeRequestNamespace**](BulkWritableIPAddressRangeRequestNamespace.md) |  | [optional] 
 **Type** | Pointer to [**IPAddressTypeChoices**](IPAddressTypeChoices.md) |  | [optional] 
 **DnsName** | Pointer to **string** | Hostname or FQDN (not case-sensitive) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Parent** | Pointer to [**NullableBulkWritableIPAddressRequestParent**](BulkWritableIPAddressRequestParent.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **NatInside** | Pointer to [**NullableNATInside**](NATInside.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritableIPAddressRequest
 
-`func NewBulkWritableIPAddressRequest(id string, address string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableIPAddressRequest`
+`func NewBulkWritableIPAddressRequest(id string, address string, status BulkWritableCableRequestStatus, ) *BulkWritableIPAddressRequest`
 
 NewBulkWritableIPAddressRequest instantiates a new BulkWritableIPAddressRequest object
 This constructor will assign default values to properties that have it defined,
@@ -80,20 +80,20 @@ SetAddress sets Address field to given value.
 
 ### GetNamespace
 
-`func (o *BulkWritableIPAddressRequest) GetNamespace() BulkWritableIPAddressRequestNamespace`
+`func (o *BulkWritableIPAddressRequest) GetNamespace() BulkWritableIPAddressRangeRequestNamespace`
 
 GetNamespace returns the Namespace field if non-nil, zero value otherwise.
 
 ### GetNamespaceOk
 
-`func (o *BulkWritableIPAddressRequest) GetNamespaceOk() (*BulkWritableIPAddressRequestNamespace, bool)`
+`func (o *BulkWritableIPAddressRequest) GetNamespaceOk() (*BulkWritableIPAddressRangeRequestNamespace, bool)`
 
 GetNamespaceOk returns a tuple with the Namespace field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNamespace
 
-`func (o *BulkWritableIPAddressRequest) SetNamespace(v BulkWritableIPAddressRequestNamespace)`
+`func (o *BulkWritableIPAddressRequest) SetNamespace(v BulkWritableIPAddressRangeRequestNamespace)`
 
 SetNamespace sets Namespace field to given value.
 
@@ -180,20 +180,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetStatus
 
-`func (o *BulkWritableIPAddressRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableIPAddressRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *BulkWritableIPAddressRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableIPAddressRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *BulkWritableIPAddressRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableIPAddressRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -340,20 +340,20 @@ HasNatInside returns a boolean if a field has been set.
 UnsetNatInside ensures that no value is present for NatInside, not even an explicit nil
 ### GetTags
 
-`func (o *BulkWritableIPAddressRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableIPAddressRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableIPAddressRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableIPAddressRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableIPAddressRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableIPAddressRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
@@ -365,20 +365,20 @@ HasTags returns a boolean if a field has been set.
 
 ### GetCustomFields
 
-`func (o *BulkWritableIPAddressRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableIPAddressRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableIPAddressRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableIPAddressRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableIPAddressRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableIPAddressRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

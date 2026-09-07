@@ -218,7 +218,7 @@ import (
 )
 
 func main() {
-	bulkWritableCircuitTerminationRequest := []openapiclient.BulkWritableCircuitTerminationRequest{*openapiclient.NewBulkWritableCircuitTerminationRequest("Id_example", openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCircuitTerminationRequest | 
+	bulkWritableCircuitTerminationRequest := []openapiclient.BulkWritableCircuitTerminationRequest{*openapiclient.NewBulkWritableCircuitTerminationRequest("Id_example", openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -286,7 +286,7 @@ import (
 )
 
 func main() {
-	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitTerminationRequest | 
+	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 
 ## CircuitsCircuitTerminationsList
 
-> PaginatedCircuitTerminationList CircuitsCircuitTerminationsList(ctx).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdN(idN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+> PaginatedCircuitTerminationList CircuitsCircuitTerminationsList(ctx).AvailableForCable(availableForCable).Cable(cable).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdN(idN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 
 
 
@@ -424,9 +424,9 @@ import (
 )
 
 func main() {
+	availableForCable := []string{"Inner_example"} // []string |  (optional)
 	cable := []string{"Inner_example"} // []string | Cable (optional)
-	cableIsnull := true // bool |  (optional)
-	cableN := []string{"Inner_example"} // []string | Cable (optional)
+	cableN := []string{"Inner_example"} // []string | Exclude Cable (optional)
 	circuit := []string{"Inner_example"} // []string |  (optional)
 	circuitN := []string{"Inner_example"} // []string |  (optional)
 	cloudNetwork := []string{"Inner_example"} // []string |  (optional)
@@ -493,7 +493,7 @@ func main() {
 	teams := []string{"Inner_example"} // []string |  (optional)
 	teamsIsnull := true // bool | Teams (name or ID) is null (optional)
 	teamsN := []string{"Inner_example"} // []string |  (optional)
-	termSide := []string{"Inner_example"} // []string |  (optional)
+	termSide := []openapiclient.Termination{openapiclient.Termination("A")} // []Termination |  (optional)
 	termSideIc := []string{"Inner_example"} // []string |  (optional)
 	termSideIe := []string{"Inner_example"} // []string |  (optional)
 	termSideIew := []string{"Inner_example"} // []string |  (optional)
@@ -533,7 +533,7 @@ func main() {
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTerminationsList(context.Background()).Cable(cable).CableIsnull(cableIsnull).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdN(idN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
+	resp, r, err := apiClient.CircuitsAPI.CircuitsCircuitTerminationsList(context.Background()).AvailableForCable(availableForCable).Cable(cable).CableN(cableN).Circuit(circuit).CircuitN(circuitN).CloudNetwork(cloudNetwork).CloudNetworkIsnull(cloudNetworkIsnull).CloudNetworkN(cloudNetworkN).Connected(connected).Contacts(contacts).ContactsIsnull(contactsIsnull).ContactsN(contactsN).Description(description).DescriptionIc(descriptionIc).DescriptionIe(descriptionIe).DescriptionIew(descriptionIew).DescriptionIre(descriptionIre).DescriptionIsw(descriptionIsw).DescriptionN(descriptionN).DescriptionNic(descriptionNic).DescriptionNie(descriptionNie).DescriptionNiew(descriptionNiew).DescriptionNire(descriptionNire).DescriptionNisw(descriptionNisw).DescriptionNre(descriptionNre).DescriptionRe(descriptionRe).DynamicGroups(dynamicGroups).DynamicGroupsN(dynamicGroupsN).Format(format).HasCable(hasCable).Id(id).IdN(idN).Limit(limit).Location(location).LocationIsnull(locationIsnull).LocationN(locationN).Offset(offset).PortSpeed(portSpeed).PortSpeedGt(portSpeedGt).PortSpeedGte(portSpeedGte).PortSpeedIsnull(portSpeedIsnull).PortSpeedLt(portSpeedLt).PortSpeedLte(portSpeedLte).PortSpeedN(portSpeedN).PpInfo(ppInfo).PpInfoIc(ppInfoIc).PpInfoIe(ppInfoIe).PpInfoIew(ppInfoIew).PpInfoIre(ppInfoIre).PpInfoIsw(ppInfoIsw).PpInfoN(ppInfoN).PpInfoNic(ppInfoNic).PpInfoNie(ppInfoNie).PpInfoNiew(ppInfoNiew).PpInfoNire(ppInfoNire).PpInfoNisw(ppInfoNisw).PpInfoNre(ppInfoNre).PpInfoRe(ppInfoRe).ProviderNetwork(providerNetwork).ProviderNetworkIsnull(providerNetworkIsnull).ProviderNetworkN(providerNetworkN).Q(q).Sort(sort).Tags(tags).TagsIsnull(tagsIsnull).TagsN(tagsN).Teams(teams).TeamsIsnull(teamsIsnull).TeamsN(teamsN).TermSide(termSide).TermSideIc(termSideIc).TermSideIe(termSideIe).TermSideIew(termSideIew).TermSideIre(termSideIre).TermSideIsw(termSideIsw).TermSideN(termSideN).TermSideNic(termSideNic).TermSideNie(termSideNie).TermSideNiew(termSideNiew).TermSideNire(termSideNire).TermSideNisw(termSideNisw).TermSideNre(termSideNre).TermSideRe(termSideRe).UpstreamSpeed(upstreamSpeed).UpstreamSpeedGt(upstreamSpeedGt).UpstreamSpeedGte(upstreamSpeedGte).UpstreamSpeedIsnull(upstreamSpeedIsnull).UpstreamSpeedLt(upstreamSpeedLt).UpstreamSpeedLte(upstreamSpeedLte).UpstreamSpeedN(upstreamSpeedN).XconnectId(xconnectId).XconnectIdIc(xconnectIdIc).XconnectIdIe(xconnectIdIe).XconnectIdIew(xconnectIdIew).XconnectIdIre(xconnectIdIre).XconnectIdIsw(xconnectIdIsw).XconnectIdN(xconnectIdN).XconnectIdNic(xconnectIdNic).XconnectIdNie(xconnectIdNie).XconnectIdNiew(xconnectIdNiew).XconnectIdNire(xconnectIdNire).XconnectIdNisw(xconnectIdNisw).XconnectIdNre(xconnectIdNre).XconnectIdRe(xconnectIdRe).Depth(depth).ExcludeM2m(excludeM2m).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `CircuitsAPI.CircuitsCircuitTerminationsList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -554,9 +554,9 @@ Other parameters are passed through a pointer to a apiCircuitsCircuitTermination
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **availableForCable** | **[]string** |  | 
  **cable** | **[]string** | Cable | 
- **cableIsnull** | **bool** |  | 
- **cableN** | **[]string** | Cable | 
+ **cableN** | **[]string** | Exclude Cable | 
  **circuit** | **[]string** |  | 
  **circuitN** | **[]string** |  | 
  **cloudNetwork** | **[]string** |  | 
@@ -623,7 +623,7 @@ Name | Type | Description  | Notes
  **teams** | **[]string** |  | 
  **teamsIsnull** | **bool** | Teams (name or ID) is null | 
  **teamsN** | **[]string** |  | 
- **termSide** | **[]string** |  | 
+ **termSide** | [**[]Termination**](Termination.md) |  | 
  **termSideIc** | **[]string** |  | 
  **termSideIe** | **[]string** |  | 
  **termSideIew** | **[]string** |  | 
@@ -1081,7 +1081,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this circuit termination.
-	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitTerminationRequest | 
+	circuitTerminationRequest := *openapiclient.NewCircuitTerminationRequest(openapiclient.TermSideEnum("A"), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitTerminationRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2189,7 +2189,7 @@ import (
 )
 
 func main() {
-	bulkWritableCircuitRequest := []openapiclient.BulkWritableCircuitRequest{*openapiclient.NewBulkWritableCircuitRequest("Id_example", "Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableCircuitRequest | 
+	bulkWritableCircuitRequest := []openapiclient.BulkWritableCircuitRequest{*openapiclient.NewBulkWritableCircuitRequest("Id_example", "Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableCircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -2257,7 +2257,7 @@ import (
 )
 
 func main() {
-	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitRequest | 
+	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3013,7 +3013,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this circuit.
-	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage(), *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // CircuitRequest | 
+	circuitRequest := *openapiclient.NewCircuitRequest("Cid_example", *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus(), *openapiclient.NewBulkWritableCableRequestStatus()) // CircuitRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3220,7 +3220,7 @@ import (
 )
 
 func main() {
-	bulkWritableProviderNetworkRequest := []openapiclient.BulkWritableProviderNetworkRequest{*openapiclient.NewBulkWritableProviderNetworkRequest("Id_example", "Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage())} // []BulkWritableProviderNetworkRequest | 
+	bulkWritableProviderNetworkRequest := []openapiclient.BulkWritableProviderNetworkRequest{*openapiclient.NewBulkWritableProviderNetworkRequest("Id_example", "Name_example", *openapiclient.NewBulkWritableCableRequestStatus())} // []BulkWritableProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3288,7 +3288,7 @@ import (
 )
 
 func main() {
-	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ProviderNetworkRequest | 
+	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -3960,7 +3960,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this provider network.
-	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewApprovalWorkflowStageResponseApprovalWorkflowStage()) // ProviderNetworkRequest | 
+	providerNetworkRequest := *openapiclient.NewProviderNetworkRequest("Name_example", *openapiclient.NewBulkWritableCableRequestStatus()) // ProviderNetworkRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

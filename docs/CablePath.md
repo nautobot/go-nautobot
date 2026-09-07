@@ -14,6 +14,9 @@ Name | Type | Description | Notes
 **DestinationId** | Pointer to **NullableString** |  | [optional] 
 **IsActive** | Pointer to **bool** |  | [optional] 
 **IsSplit** | Pointer to **bool** |  | [optional] 
+**PeerConnector** | Pointer to **int32** |  | [optional] [default to 1]
+**OriginFansOut** | Pointer to **bool** |  | [optional] 
+**DestinationFansOut** | Pointer to **bool** |  | [optional] 
 
 ## Methods
 
@@ -268,6 +271,81 @@ SetIsSplit sets IsSplit field to given value.
 `func (o *CablePath) HasIsSplit() bool`
 
 HasIsSplit returns a boolean if a field has been set.
+
+### GetPeerConnector
+
+`func (o *CablePath) GetPeerConnector() int32`
+
+GetPeerConnector returns the PeerConnector field if non-nil, zero value otherwise.
+
+### GetPeerConnectorOk
+
+`func (o *CablePath) GetPeerConnectorOk() (*int32, bool)`
+
+GetPeerConnectorOk returns a tuple with the PeerConnector field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPeerConnector
+
+`func (o *CablePath) SetPeerConnector(v int32)`
+
+SetPeerConnector sets PeerConnector field to given value.
+
+### HasPeerConnector
+
+`func (o *CablePath) HasPeerConnector() bool`
+
+HasPeerConnector returns a boolean if a field has been set.
+
+### GetOriginFansOut
+
+`func (o *CablePath) GetOriginFansOut() bool`
+
+GetOriginFansOut returns the OriginFansOut field if non-nil, zero value otherwise.
+
+### GetOriginFansOutOk
+
+`func (o *CablePath) GetOriginFansOutOk() (*bool, bool)`
+
+GetOriginFansOutOk returns a tuple with the OriginFansOut field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOriginFansOut
+
+`func (o *CablePath) SetOriginFansOut(v bool)`
+
+SetOriginFansOut sets OriginFansOut field to given value.
+
+### HasOriginFansOut
+
+`func (o *CablePath) HasOriginFansOut() bool`
+
+HasOriginFansOut returns a boolean if a field has been set.
+
+### GetDestinationFansOut
+
+`func (o *CablePath) GetDestinationFansOut() bool`
+
+GetDestinationFansOut returns the DestinationFansOut field if non-nil, zero value otherwise.
+
+### GetDestinationFansOutOk
+
+`func (o *CablePath) GetDestinationFansOutOk() (*bool, bool)`
+
+GetDestinationFansOutOk returns a tuple with the DestinationFansOut field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDestinationFansOut
+
+`func (o *CablePath) SetDestinationFansOut(v bool)`
+
+SetDestinationFansOut sets DestinationFansOut field to given value.
+
+### HasDestinationFansOut
+
+`func (o *CablePath) HasDestinationFansOut() bool`
+
+HasDestinationFansOut returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

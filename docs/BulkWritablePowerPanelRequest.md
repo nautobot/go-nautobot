@@ -9,17 +9,17 @@ Name | Type | Description | Notes
 **PowerPath** | Pointer to [**PowerPathEnum**](PowerPathEnum.md) |  | [optional] 
 **Name** | **string** |  | 
 **BreakerPositionCount** | Pointer to **NullableInt32** | Total number of breaker positions in the panel (e.g., 42) | [optional] 
-**Location** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Location** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **RackGroup** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewBulkWritablePowerPanelRequest
 
-`func NewBulkWritablePowerPanelRequest(id string, name string, location ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritablePowerPanelRequest`
+`func NewBulkWritablePowerPanelRequest(id string, name string, location BulkWritableCableRequestStatus, ) *BulkWritablePowerPanelRequest`
 
 NewBulkWritablePowerPanelRequest instantiates a new BulkWritablePowerPanelRequest object
 This constructor will assign default values to properties that have it defined,
@@ -161,20 +161,20 @@ HasBreakerPositionCount returns a boolean if a field has been set.
 UnsetBreakerPositionCount ensures that no value is present for BreakerPositionCount, not even an explicit nil
 ### GetLocation
 
-`func (o *BulkWritablePowerPanelRequest) GetLocation() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritablePowerPanelRequest) GetLocation() BulkWritableCableRequestStatus`
 
 GetLocation returns the Location field if non-nil, zero value otherwise.
 
 ### GetLocationOk
 
-`func (o *BulkWritablePowerPanelRequest) GetLocationOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritablePowerPanelRequest) GetLocationOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetLocationOk returns a tuple with the Location field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetLocation
 
-`func (o *BulkWritablePowerPanelRequest) SetLocation(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritablePowerPanelRequest) SetLocation(v BulkWritableCableRequestStatus)`
 
 SetLocation sets Location field to given value.
 
@@ -216,20 +216,20 @@ HasRackGroup returns a boolean if a field has been set.
 UnsetRackGroup ensures that no value is present for RackGroup, not even an explicit nil
 ### GetCustomFields
 
-`func (o *BulkWritablePowerPanelRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritablePowerPanelRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritablePowerPanelRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritablePowerPanelRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritablePowerPanelRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritablePowerPanelRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -266,20 +266,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritablePowerPanelRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritablePowerPanelRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritablePowerPanelRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritablePowerPanelRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritablePowerPanelRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritablePowerPanelRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

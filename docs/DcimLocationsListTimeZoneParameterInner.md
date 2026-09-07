@@ -3,6 +3,8 @@
 ## Enum
 
 
+* `EMPTY` (value: `""`)
+
 * `AFRICA_ABIDJAN` (value: `"Africa/Abidjan"`)
 
 * `AFRICA_ACCRA` (value: `"Africa/Accra"`)

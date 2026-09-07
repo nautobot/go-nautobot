@@ -9,14 +9,14 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**ControllerManagedDeviceGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**RadioProfile** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**ControllerManagedDeviceGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**RadioProfile** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewControllerManagedDeviceGroupRadioProfileAssignment
 
-`func NewControllerManagedDeviceGroupRadioProfileAssignment(objectType string, display string, url string, naturalSlug string, controllerManagedDeviceGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, radioProfile ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ControllerManagedDeviceGroupRadioProfileAssignment`
+`func NewControllerManagedDeviceGroupRadioProfileAssignment(objectType string, display string, url string, naturalSlug string, controllerManagedDeviceGroup BulkWritableCableRequestStatus, radioProfile BulkWritableCableRequestStatus, ) *ControllerManagedDeviceGroupRadioProfileAssignment`
 
 NewControllerManagedDeviceGroupRadioProfileAssignment instantiates a new ControllerManagedDeviceGroupRadioProfileAssignment object
 This constructor will assign default values to properties that have it defined,
@@ -138,40 +138,40 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroup() BulkWritableCableRequestStatus`
 
 GetControllerManagedDeviceGroup returns the ControllerManagedDeviceGroup field if non-nil, zero value otherwise.
 
 ### GetControllerManagedDeviceGroupOk
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetControllerManagedDeviceGroupOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetControllerManagedDeviceGroupOk returns a tuple with the ControllerManagedDeviceGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetControllerManagedDeviceGroup
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetControllerManagedDeviceGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetControllerManagedDeviceGroup(v BulkWritableCableRequestStatus)`
 
 SetControllerManagedDeviceGroup sets ControllerManagedDeviceGroup field to given value.
 
 
 ### GetRadioProfile
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfile() BulkWritableCableRequestStatus`
 
 GetRadioProfile returns the RadioProfile field if non-nil, zero value otherwise.
 
 ### GetRadioProfileOk
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) GetRadioProfileOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRadioProfileOk returns a tuple with the RadioProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRadioProfile
 
-`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetRadioProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ControllerManagedDeviceGroupRadioProfileAssignment) SetRadioProfile(v BulkWritableCableRequestStatus)`
 
 SetRadioProfile sets RadioProfile field to given value.
 

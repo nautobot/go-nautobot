@@ -8,12 +8,15 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
 **VpnId** | Pointer to **string** |  | [optional] 
+**ServiceType** | Pointer to [**BulkWritableVPNRequestServiceType**](BulkWritableVPNRequestServiceType.md) |  | [optional] 
+**ExtraAttributes** | Pointer to **interface{}** | Free-form scalar service metadata only; not for references to real Nautobot objects. | [optional] 
 **VpnProfile** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Status** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -124,6 +127,66 @@ SetVpnId sets VpnId field to given value.
 
 HasVpnId returns a boolean if a field has been set.
 
+### GetServiceType
+
+`func (o *BulkWritableVPNRequest) GetServiceType() BulkWritableVPNRequestServiceType`
+
+GetServiceType returns the ServiceType field if non-nil, zero value otherwise.
+
+### GetServiceTypeOk
+
+`func (o *BulkWritableVPNRequest) GetServiceTypeOk() (*BulkWritableVPNRequestServiceType, bool)`
+
+GetServiceTypeOk returns a tuple with the ServiceType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetServiceType
+
+`func (o *BulkWritableVPNRequest) SetServiceType(v BulkWritableVPNRequestServiceType)`
+
+SetServiceType sets ServiceType field to given value.
+
+### HasServiceType
+
+`func (o *BulkWritableVPNRequest) HasServiceType() bool`
+
+HasServiceType returns a boolean if a field has been set.
+
+### GetExtraAttributes
+
+`func (o *BulkWritableVPNRequest) GetExtraAttributes() interface{}`
+
+GetExtraAttributes returns the ExtraAttributes field if non-nil, zero value otherwise.
+
+### GetExtraAttributesOk
+
+`func (o *BulkWritableVPNRequest) GetExtraAttributesOk() (*interface{}, bool)`
+
+GetExtraAttributesOk returns a tuple with the ExtraAttributes field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetExtraAttributes
+
+`func (o *BulkWritableVPNRequest) SetExtraAttributes(v interface{})`
+
+SetExtraAttributes sets ExtraAttributes field to given value.
+
+### HasExtraAttributes
+
+`func (o *BulkWritableVPNRequest) HasExtraAttributes() bool`
+
+HasExtraAttributes returns a boolean if a field has been set.
+
+### SetExtraAttributesNil
+
+`func (o *BulkWritableVPNRequest) SetExtraAttributesNil(b bool)`
+
+ SetExtraAttributesNil sets the value for ExtraAttributes to be an explicit nil
+
+### UnsetExtraAttributes
+`func (o *BulkWritableVPNRequest) UnsetExtraAttributes()`
+
+UnsetExtraAttributes ensures that no value is present for ExtraAttributes, not even an explicit nil
 ### GetVpnProfile
 
 `func (o *BulkWritableVPNRequest) GetVpnProfile() ApprovalWorkflowUser`
@@ -229,22 +292,57 @@ HasTenant returns a boolean if a field has been set.
 `func (o *BulkWritableVPNRequest) UnsetTenant()`
 
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
+### GetStatus
+
+`func (o *BulkWritableVPNRequest) GetStatus() ApprovalWorkflowUser`
+
+GetStatus returns the Status field if non-nil, zero value otherwise.
+
+### GetStatusOk
+
+`func (o *BulkWritableVPNRequest) GetStatusOk() (*ApprovalWorkflowUser, bool)`
+
+GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetStatus
+
+`func (o *BulkWritableVPNRequest) SetStatus(v ApprovalWorkflowUser)`
+
+SetStatus sets Status field to given value.
+
+### HasStatus
+
+`func (o *BulkWritableVPNRequest) HasStatus() bool`
+
+HasStatus returns a boolean if a field has been set.
+
+### SetStatusNil
+
+`func (o *BulkWritableVPNRequest) SetStatusNil(b bool)`
+
+ SetStatusNil sets the value for Status to be an explicit nil
+
+### UnsetStatus
+`func (o *BulkWritableVPNRequest) UnsetStatus()`
+
+UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetCustomFields
 
-`func (o *BulkWritableVPNRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableVPNRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableVPNRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableVPNRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableVPNRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableVPNRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -281,20 +379,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *BulkWritableVPNRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableVPNRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *BulkWritableVPNRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableVPNRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *BulkWritableVPNRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableVPNRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

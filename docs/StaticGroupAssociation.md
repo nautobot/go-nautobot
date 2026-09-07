@@ -12,17 +12,17 @@ Name | Type | Description | Notes
 **AssociatedObjectType** | **string** |  | 
 **AssociatedObject** | [**DynamicGroupAssociatedObject**](DynamicGroupAssociatedObject.md) |  | [readonly] 
 **AssociatedObjectId** | **string** |  | 
-**DynamicGroup** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**DynamicGroup** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewStaticGroupAssociation
 
-`func NewStaticGroupAssociation(objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObject DynamicGroupAssociatedObject, associatedObjectId string, dynamicGroup ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *StaticGroupAssociation`
+`func NewStaticGroupAssociation(objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObject DynamicGroupAssociatedObject, associatedObjectId string, dynamicGroup BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *StaticGroupAssociation`
 
 NewStaticGroupAssociation instantiates a new StaticGroupAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -204,20 +204,20 @@ SetAssociatedObjectId sets AssociatedObjectId field to given value.
 
 ### GetDynamicGroup
 
-`func (o *StaticGroupAssociation) GetDynamicGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *StaticGroupAssociation) GetDynamicGroup() BulkWritableCableRequestStatus`
 
 GetDynamicGroup returns the DynamicGroup field if non-nil, zero value otherwise.
 
 ### GetDynamicGroupOk
 
-`func (o *StaticGroupAssociation) GetDynamicGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *StaticGroupAssociation) GetDynamicGroupOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDynamicGroupOk returns a tuple with the DynamicGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDynamicGroup
 
-`func (o *StaticGroupAssociation) SetDynamicGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *StaticGroupAssociation) SetDynamicGroup(v BulkWritableCableRequestStatus)`
 
 SetDynamicGroup sets DynamicGroup field to given value.
 
@@ -304,20 +304,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *StaticGroupAssociation) GetCustomFields() map[string]interface{}`
+`func (o *StaticGroupAssociation) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *StaticGroupAssociation) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *StaticGroupAssociation) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *StaticGroupAssociation) SetCustomFields(v map[string]interface{})`
+`func (o *StaticGroupAssociation) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

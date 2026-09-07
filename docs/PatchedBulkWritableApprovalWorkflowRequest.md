@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **ObjectUnderReviewContentType** | Pointer to **string** |  | [optional] 
 **ObjectUnderReviewObjectId** | Pointer to **string** |  | [optional] 
 **CurrentState** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | [optional] 
-**ApprovalWorkflowDefinition** | Pointer to [**ApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
+**ApprovalWorkflowDefinition** | Pointer to [**NullableApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
@@ -152,6 +152,16 @@ SetApprovalWorkflowDefinition sets ApprovalWorkflowDefinition field to given val
 
 HasApprovalWorkflowDefinition returns a boolean if a field has been set.
 
+### SetApprovalWorkflowDefinitionNil
+
+`func (o *PatchedBulkWritableApprovalWorkflowRequest) SetApprovalWorkflowDefinitionNil(b bool)`
+
+ SetApprovalWorkflowDefinitionNil sets the value for ApprovalWorkflowDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowDefinition
+`func (o *PatchedBulkWritableApprovalWorkflowRequest) UnsetApprovalWorkflowDefinition()`
+
+UnsetApprovalWorkflowDefinition ensures that no value is present for ApprovalWorkflowDefinition, not even an explicit nil
 ### GetUser
 
 `func (o *PatchedBulkWritableApprovalWorkflowRequest) GetUser() ApprovalWorkflowUser`
@@ -189,20 +199,20 @@ HasUser returns a boolean if a field has been set.
 UnsetUser ensures that no value is present for User, not even an explicit nil
 ### GetCustomFields
 
-`func (o *PatchedBulkWritableApprovalWorkflowRequest) GetCustomFields() map[string]interface{}`
+`func (o *PatchedBulkWritableApprovalWorkflowRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *PatchedBulkWritableApprovalWorkflowRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *PatchedBulkWritableApprovalWorkflowRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *PatchedBulkWritableApprovalWorkflowRequest) SetCustomFields(v map[string]interface{})`
+`func (o *PatchedBulkWritableApprovalWorkflowRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

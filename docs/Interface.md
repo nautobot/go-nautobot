@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **ObjectType** | **string** |  | [readonly] 
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
+**Cable** | **map[string]interface{}** |  | [readonly] 
 **CablePeerType** | **NullableString** |  | [readonly] 
 **CablePeer** | [**NullableCableTermination**](CableTermination.md) |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
@@ -15,6 +16,7 @@ Name | Type | Description | Notes
 **ConnectedEndpoint** | [**NullablePathEndpoint**](PathEndpoint.md) |  | [readonly] 
 **ConnectedEndpointReachable** | **NullableBool** |  | [readonly] 
 **Type** | [**InterfaceType**](InterfaceType.md) |  | 
+**PortType** | Pointer to [**FrontPortType**](FrontPortType.md) |  | [optional] 
 **Mode** | Pointer to [**InterfaceMode**](InterfaceMode.md) |  | [optional] 
 **MacAddress** | Pointer to **NullableString** |  | [optional] 
 **IpAddressCount** | Pointer to **int32** |  | [optional] [readonly] 
@@ -26,10 +28,10 @@ Name | Type | Description | Notes
 **Enabled** | Pointer to **bool** |  | [optional] 
 **Mtu** | Pointer to **NullableInt32** |  | [optional] 
 **MgmtOnly** | Pointer to **bool** | This interface is used only for out-of-band management | [optional] 
+**BreakoutPosition** | Pointer to **NullableInt32** | For a child interface of a breakout-cable trunk, the position on the parent interface&#39;s trunk connector that this child interface maps to. | [optional] 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Module** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Cable** | [**NullableCircuitCircuitTerminationA**](CircuitCircuitTerminationA.md) |  | 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Role** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ParentInterface** | Pointer to [**NullableBulkWritableInterfaceRequestParentInterface**](BulkWritableInterfaceRequestParentInterface.md) |  | [optional] 
 **Bridge** | Pointer to [**NullableBridgeInterface**](BridgeInterface.md) |  | [optional] 
@@ -39,14 +41,14 @@ Name | Type | Description | Notes
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewInterface
 
-`func NewInterface(objectType string, display string, url string, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, name string, cable NullableCircuitCircuitTerminationA, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
+`func NewInterface(objectType string, display string, url string, cable map[string]interface{}, cablePeerType NullableString, cablePeer NullableCableTermination, naturalSlug string, connectedEndpointType NullableString, connectedEndpoint NullablePathEndpoint, connectedEndpointReachable NullableBool, type_ InterfaceType, name string, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Interface`
 
 NewInterface instantiates a new Interface object
 This constructor will assign default values to properties that have it defined,
@@ -146,6 +148,36 @@ and a boolean to check if the value has been set.
 SetUrl sets Url field to given value.
 
 
+### GetCable
+
+`func (o *Interface) GetCable() map[string]interface{}`
+
+GetCable returns the Cable field if non-nil, zero value otherwise.
+
+### GetCableOk
+
+`func (o *Interface) GetCableOk() (*map[string]interface{}, bool)`
+
+GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetCable
+
+`func (o *Interface) SetCable(v map[string]interface{})`
+
+SetCable sets Cable field to given value.
+
+
+### SetCableNil
+
+`func (o *Interface) SetCableNil(b bool)`
+
+ SetCableNil sets the value for Cable to be an explicit nil
+
+### UnsetCable
+`func (o *Interface) UnsetCable()`
+
+UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetCablePeerType
 
 `func (o *Interface) GetCablePeerType() string`
@@ -335,6 +367,31 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
+
+### GetPortType
+
+`func (o *Interface) GetPortType() FrontPortType`
+
+GetPortType returns the PortType field if non-nil, zero value otherwise.
+
+### GetPortTypeOk
+
+`func (o *Interface) GetPortTypeOk() (*FrontPortType, bool)`
+
+GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPortType
+
+`func (o *Interface) SetPortType(v FrontPortType)`
+
+SetPortType sets PortType field to given value.
+
+### HasPortType
+
+`func (o *Interface) HasPortType() bool`
+
+HasPortType returns a boolean if a field has been set.
 
 ### GetMode
 
@@ -636,6 +693,41 @@ SetMgmtOnly sets MgmtOnly field to given value.
 
 HasMgmtOnly returns a boolean if a field has been set.
 
+### GetBreakoutPosition
+
+`func (o *Interface) GetBreakoutPosition() int32`
+
+GetBreakoutPosition returns the BreakoutPosition field if non-nil, zero value otherwise.
+
+### GetBreakoutPositionOk
+
+`func (o *Interface) GetBreakoutPositionOk() (*int32, bool)`
+
+GetBreakoutPositionOk returns a tuple with the BreakoutPosition field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetBreakoutPosition
+
+`func (o *Interface) SetBreakoutPosition(v int32)`
+
+SetBreakoutPosition sets BreakoutPosition field to given value.
+
+### HasBreakoutPosition
+
+`func (o *Interface) HasBreakoutPosition() bool`
+
+HasBreakoutPosition returns a boolean if a field has been set.
+
+### SetBreakoutPositionNil
+
+`func (o *Interface) SetBreakoutPositionNil(b bool)`
+
+ SetBreakoutPositionNil sets the value for BreakoutPosition to be an explicit nil
+
+### UnsetBreakoutPosition
+`func (o *Interface) UnsetBreakoutPosition()`
+
+UnsetBreakoutPosition ensures that no value is present for BreakoutPosition, not even an explicit nil
 ### GetDevice
 
 `func (o *Interface) GetDevice() ApprovalWorkflowUser`
@@ -706,52 +798,22 @@ HasModule returns a boolean if a field has been set.
 `func (o *Interface) UnsetModule()`
 
 UnsetModule ensures that no value is present for Module, not even an explicit nil
-### GetCable
-
-`func (o *Interface) GetCable() CircuitCircuitTerminationA`
-
-GetCable returns the Cable field if non-nil, zero value otherwise.
-
-### GetCableOk
-
-`func (o *Interface) GetCableOk() (*CircuitCircuitTerminationA, bool)`
-
-GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCable
-
-`func (o *Interface) SetCable(v CircuitCircuitTerminationA)`
-
-SetCable sets Cable field to given value.
-
-
-### SetCableNil
-
-`func (o *Interface) SetCableNil(b bool)`
-
- SetCableNil sets the value for Cable to be an explicit nil
-
-### UnsetCable
-`func (o *Interface) UnsetCable()`
-
-UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetStatus
 
-`func (o *Interface) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Interface) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *Interface) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Interface) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *Interface) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Interface) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -1048,20 +1110,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *Interface) GetCustomFields() map[string]interface{}`
+`func (o *Interface) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *Interface) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *Interface) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *Interface) SetCustomFields(v map[string]interface{})`
+`func (o *Interface) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -1073,20 +1135,20 @@ HasCustomFields returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *Interface) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Interface) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Interface) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Interface) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Interface) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Interface) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

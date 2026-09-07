@@ -17,16 +17,16 @@ Name | Type | Description | Notes
 **RearPortPosition** | Pointer to **int32** |  | [optional] 
 **DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**RearPortTemplate** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**RearPortTemplate** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewFrontPortTemplate
 
-`func NewFrontPortTemplate(objectType string, display string, url string, naturalSlug string, notesUrl string, type_ FrontPortType, name string, rearPortTemplate ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, ) *FrontPortTemplate`
+`func NewFrontPortTemplate(objectType string, display string, url string, naturalSlug string, notesUrl string, type_ FrontPortType, name string, rearPortTemplate BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, ) *FrontPortTemplate`
 
 NewFrontPortTemplate instantiates a new FrontPortTemplate object
 This constructor will assign default values to properties that have it defined,
@@ -353,20 +353,20 @@ HasModuleType returns a boolean if a field has been set.
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetRearPortTemplate
 
-`func (o *FrontPortTemplate) GetRearPortTemplate() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *FrontPortTemplate) GetRearPortTemplate() BulkWritableCableRequestStatus`
 
 GetRearPortTemplate returns the RearPortTemplate field if non-nil, zero value otherwise.
 
 ### GetRearPortTemplateOk
 
-`func (o *FrontPortTemplate) GetRearPortTemplateOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *FrontPortTemplate) GetRearPortTemplateOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRearPortTemplateOk returns a tuple with the RearPortTemplate field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRearPortTemplate
 
-`func (o *FrontPortTemplate) SetRearPortTemplate(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *FrontPortTemplate) SetRearPortTemplate(v BulkWritableCableRequestStatus)`
 
 SetRearPortTemplate sets RearPortTemplate field to given value.
 
@@ -433,20 +433,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetCustomFields
 
-`func (o *FrontPortTemplate) GetCustomFields() map[string]interface{}`
+`func (o *FrontPortTemplate) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *FrontPortTemplate) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *FrontPortTemplate) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *FrontPortTemplate) SetCustomFields(v map[string]interface{})`
+`func (o *FrontPortTemplate) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

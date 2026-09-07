@@ -7,6 +7,8 @@
 
 * `DYNAMIC_SET` (value: `"dynamic-set"`)
 
+* `NULL` (value: `"null"`)
+
 * `STATIC` (value: `"static"`)
 
 

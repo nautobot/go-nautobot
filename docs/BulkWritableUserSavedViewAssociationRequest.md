@@ -6,14 +6,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **ViewName** | **string** |  | 
-**SavedView** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**User** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**SavedView** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**User** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewBulkWritableUserSavedViewAssociationRequest
 
-`func NewBulkWritableUserSavedViewAssociationRequest(id string, viewName string, savedView ApprovalWorkflowStageResponseApprovalWorkflowStage, user ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableUserSavedViewAssociationRequest`
+`func NewBulkWritableUserSavedViewAssociationRequest(id string, viewName string, savedView BulkWritableCableRequestStatus, user BulkWritableCableRequestStatus, ) *BulkWritableUserSavedViewAssociationRequest`
 
 NewBulkWritableUserSavedViewAssociationRequest instantiates a new BulkWritableUserSavedViewAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -70,40 +70,40 @@ SetViewName sets ViewName field to given value.
 
 ### GetSavedView
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) GetSavedView() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableUserSavedViewAssociationRequest) GetSavedView() BulkWritableCableRequestStatus`
 
 GetSavedView returns the SavedView field if non-nil, zero value otherwise.
 
 ### GetSavedViewOk
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) GetSavedViewOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableUserSavedViewAssociationRequest) GetSavedViewOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetSavedViewOk returns a tuple with the SavedView field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSavedView
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) SetSavedView(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableUserSavedViewAssociationRequest) SetSavedView(v BulkWritableCableRequestStatus)`
 
 SetSavedView sets SavedView field to given value.
 
 
 ### GetUser
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) GetUser() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableUserSavedViewAssociationRequest) GetUser() BulkWritableCableRequestStatus`
 
 GetUser returns the User field if non-nil, zero value otherwise.
 
 ### GetUserOk
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) GetUserOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableUserSavedViewAssociationRequest) GetUserOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetUserOk returns a tuple with the User field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUser
 
-`func (o *BulkWritableUserSavedViewAssociationRequest) SetUser(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableUserSavedViewAssociationRequest) SetUser(v BulkWritableCableRequestStatus)`
 
 SetUser sets User field to given value.
 

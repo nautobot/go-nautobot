@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **ContentType** | **string** |  | 
+**OutputType** | Pointer to [**OutputTypeEnum**](OutputTypeEnum.md) |  | [optional] 
 **Key** | Pointer to **string** | Internal field name. Please use underscores rather than dashes in this key. | [optional] 
 **Grouping** | Pointer to **string** | Human-readable grouping that this computed field belongs to. | [optional] 
 **Label** | **string** | Name of the field as displayed to users | 
@@ -73,6 +74,31 @@ and a boolean to check if the value has been set.
 
 SetContentType sets ContentType field to given value.
 
+
+### GetOutputType
+
+`func (o *BulkWritableComputedFieldRequest) GetOutputType() OutputTypeEnum`
+
+GetOutputType returns the OutputType field if non-nil, zero value otherwise.
+
+### GetOutputTypeOk
+
+`func (o *BulkWritableComputedFieldRequest) GetOutputTypeOk() (*OutputTypeEnum, bool)`
+
+GetOutputTypeOk returns a tuple with the OutputType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetOutputType
+
+`func (o *BulkWritableComputedFieldRequest) SetOutputType(v OutputTypeEnum)`
+
+SetOutputType sets OutputType field to given value.
+
+### HasOutputType
+
+`func (o *BulkWritableComputedFieldRequest) HasOutputType() bool`
+
+HasOutputType returns a boolean if a field has been set.
 
 ### GetKey
 

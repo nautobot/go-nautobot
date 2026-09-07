@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
 **Weight** | Pointer to **int32** | Higher weights appear later in the list | [optional] 
-**VpnProfile** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**VpnPhase1Policy** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**VpnProfile** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**VpnPhase1Policy** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
@@ -82,20 +82,20 @@ HasWeight returns a boolean if a field has been set.
 
 ### GetVpnProfile
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnProfile() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnProfile() BulkWritableCableRequestStatus`
 
 GetVpnProfile returns the VpnProfile field if non-nil, zero value otherwise.
 
 ### GetVpnProfileOk
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnProfileOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnProfileOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetVpnProfileOk returns a tuple with the VpnProfile field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVpnProfile
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetVpnProfile(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetVpnProfile(v BulkWritableCableRequestStatus)`
 
 SetVpnProfile sets VpnProfile field to given value.
 
@@ -107,20 +107,20 @@ HasVpnProfile returns a boolean if a field has been set.
 
 ### GetVpnPhase1Policy
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnPhase1Policy() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnPhase1Policy() BulkWritableCableRequestStatus`
 
 GetVpnPhase1Policy returns the VpnPhase1Policy field if non-nil, zero value otherwise.
 
 ### GetVpnPhase1PolicyOk
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnPhase1PolicyOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetVpnPhase1PolicyOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetVpnPhase1PolicyOk returns a tuple with the VpnPhase1Policy field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVpnPhase1Policy
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetVpnPhase1Policy(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetVpnPhase1Policy(v BulkWritableCableRequestStatus)`
 
 SetVpnPhase1Policy sets VpnPhase1Policy field to given value.
 
@@ -132,20 +132,20 @@ HasVpnPhase1Policy returns a boolean if a field has been set.
 
 ### GetCustomFields
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetCustomFields() map[string]interface{}`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetCustomFields(v map[string]interface{})`
+`func (o *PatchedVPNProfilePhase1PolicyAssignmentRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

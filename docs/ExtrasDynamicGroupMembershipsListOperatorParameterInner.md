@@ -7,6 +7,8 @@
 
 * `INTERSECTION` (value: `"intersection"`)
 
+* `NULL` (value: `"null"`)
+
 * `UNION` (value: `"union"`)
 
 

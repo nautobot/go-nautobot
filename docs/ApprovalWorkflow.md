@@ -14,18 +14,18 @@ Name | Type | Description | Notes
 **ObjectUnderReviewObjectId** | **string** |  | 
 **CurrentState** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | Current state of the approval workflow. Eligible values are: Pending, Approved, Denied, Canceled. | [optional] 
 **UserName** | **string** |  | [readonly] 
-**ApprovalWorkflowDefinition** | [**ApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | 
+**ApprovalWorkflowDefinition** | Pointer to [**NullableApprovalWorkflowApprovalWorkflowDefinition**](ApprovalWorkflowApprovalWorkflowDefinition.md) |  | [optional] 
 **User** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewApprovalWorkflow
 
-`func NewApprovalWorkflow(objectType string, display string, url string, naturalSlug string, objectUnderReviewContentType string, decisionDate NullableTime, objectUnderReviewObjectId string, userName string, approvalWorkflowDefinition ApprovalWorkflowApprovalWorkflowDefinition, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflow`
+`func NewApprovalWorkflow(objectType string, display string, url string, naturalSlug string, objectUnderReviewContentType string, decisionDate NullableTime, objectUnderReviewObjectId string, userName string, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflow`
 
 NewApprovalWorkflow instantiates a new ApprovalWorkflow object
 This constructor will assign default values to properties that have it defined,
@@ -279,7 +279,22 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowDefinition sets ApprovalWorkflowDefinition field to given value.
 
+### HasApprovalWorkflowDefinition
 
+`func (o *ApprovalWorkflow) HasApprovalWorkflowDefinition() bool`
+
+HasApprovalWorkflowDefinition returns a boolean if a field has been set.
+
+### SetApprovalWorkflowDefinitionNil
+
+`func (o *ApprovalWorkflow) SetApprovalWorkflowDefinitionNil(b bool)`
+
+ SetApprovalWorkflowDefinitionNil sets the value for ApprovalWorkflowDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowDefinition
+`func (o *ApprovalWorkflow) UnsetApprovalWorkflowDefinition()`
+
+UnsetApprovalWorkflowDefinition ensures that no value is present for ApprovalWorkflowDefinition, not even an explicit nil
 ### GetUser
 
 `func (o *ApprovalWorkflow) GetUser() ApprovalWorkflowUser`
@@ -397,20 +412,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *ApprovalWorkflow) GetCustomFields() map[string]interface{}`
+`func (o *ApprovalWorkflow) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *ApprovalWorkflow) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *ApprovalWorkflow) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *ApprovalWorkflow) SetCustomFields(v map[string]interface{})`
+`func (o *ApprovalWorkflow) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

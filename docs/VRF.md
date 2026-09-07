@@ -13,13 +13,13 @@ Name | Type | Description | Notes
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Namespace** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Namespace** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
@@ -262,20 +262,20 @@ HasStatus returns a boolean if a field has been set.
 UnsetStatus ensures that no value is present for Status, not even an explicit nil
 ### GetNamespace
 
-`func (o *VRF) GetNamespace() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *VRF) GetNamespace() BulkWritableCableRequestStatus`
 
 GetNamespace returns the Namespace field if non-nil, zero value otherwise.
 
 ### GetNamespaceOk
 
-`func (o *VRF) GetNamespaceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *VRF) GetNamespaceOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetNamespaceOk returns a tuple with the Namespace field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetNamespace
 
-`func (o *VRF) SetNamespace(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *VRF) SetNamespace(v BulkWritableCableRequestStatus)`
 
 SetNamespace sets Namespace field to given value.
 
@@ -382,20 +382,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *VRF) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *VRF) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *VRF) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *VRF) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *VRF) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *VRF) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
@@ -427,20 +427,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *VRF) GetCustomFields() map[string]interface{}`
+`func (o *VRF) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *VRF) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *VRF) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *VRF) SetCustomFields(v map[string]interface{})`
+`func (o *VRF) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

@@ -16,20 +16,19 @@ Name | Type | Description | Notes
 **BreakerPosition** | Pointer to **NullableInt32** | Starting circuit breaker position in panel | [optional] 
 **BreakerPoleCount** | Pointer to [**NullableBreakerPoleCountEnum**](BreakerPoleCountEnum.md) | Number of breaker poles | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
-**Cable** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **PowerPanel** | [**BulkWritablePowerFeedRequestPowerPanel**](BulkWritablePowerFeedRequestPowerPanel.md) |  | 
 **DestinationPanel** | Pointer to [**NullableBulkWritablePowerFeedRequestDestinationPanel**](BulkWritablePowerFeedRequestDestinationPanel.md) |  | [optional] 
 **Rack** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritablePowerFeedRequest
 
-`func NewWritablePowerFeedRequest(name string, powerPanel BulkWritablePowerFeedRequestPowerPanel, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritablePowerFeedRequest`
+`func NewWritablePowerFeedRequest(name string, powerPanel BulkWritablePowerFeedRequestPowerPanel, status BulkWritableCableRequestStatus, ) *WritablePowerFeedRequest`
 
 NewWritablePowerFeedRequest instantiates a new WritablePowerFeedRequest object
 This constructor will assign default values to properties that have it defined,
@@ -359,41 +358,6 @@ SetComments sets Comments field to given value.
 
 HasComments returns a boolean if a field has been set.
 
-### GetCable
-
-`func (o *WritablePowerFeedRequest) GetCable() ApprovalWorkflowUser`
-
-GetCable returns the Cable field if non-nil, zero value otherwise.
-
-### GetCableOk
-
-`func (o *WritablePowerFeedRequest) GetCableOk() (*ApprovalWorkflowUser, bool)`
-
-GetCableOk returns a tuple with the Cable field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetCable
-
-`func (o *WritablePowerFeedRequest) SetCable(v ApprovalWorkflowUser)`
-
-SetCable sets Cable field to given value.
-
-### HasCable
-
-`func (o *WritablePowerFeedRequest) HasCable() bool`
-
-HasCable returns a boolean if a field has been set.
-
-### SetCableNil
-
-`func (o *WritablePowerFeedRequest) SetCableNil(b bool)`
-
- SetCableNil sets the value for Cable to be an explicit nil
-
-### UnsetCable
-`func (o *WritablePowerFeedRequest) UnsetCable()`
-
-UnsetCable ensures that no value is present for Cable, not even an explicit nil
 ### GetPowerPanel
 
 `func (o *WritablePowerFeedRequest) GetPowerPanel() BulkWritablePowerFeedRequestPowerPanel`
@@ -486,40 +450,40 @@ HasRack returns a boolean if a field has been set.
 UnsetRack ensures that no value is present for Rack, not even an explicit nil
 ### GetStatus
 
-`func (o *WritablePowerFeedRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritablePowerFeedRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *WritablePowerFeedRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritablePowerFeedRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *WritablePowerFeedRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritablePowerFeedRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetCustomFields
 
-`func (o *WritablePowerFeedRequest) GetCustomFields() map[string]interface{}`
+`func (o *WritablePowerFeedRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *WritablePowerFeedRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *WritablePowerFeedRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *WritablePowerFeedRequest) SetCustomFields(v map[string]interface{})`
+`func (o *WritablePowerFeedRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -556,20 +520,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritablePowerFeedRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritablePowerFeedRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritablePowerFeedRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritablePowerFeedRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritablePowerFeedRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritablePowerFeedRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Display** | **string** | Human friendly display value | [readonly] 
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
-**TaskQueues** | **interface{}** |  | [readonly] 
+**TaskQueues** | **[]string** |  | [readonly] 
 **TaskQueuesOverride** | **bool** |  | [readonly] 
 **ModuleName** | **string** | Dotted name of the Python module providing this job | [readonly] 
 **JobClassName** | **string** | Name of the Python class providing this job | [readonly] 
@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **IsJobButtonReceiver** | **bool** | Whether this job is a job button receiver | [readonly] 
 **HasSensitiveVariables** | Pointer to **bool** | Whether this job contains sensitive variables | [optional] 
 **IsSingleton** | Pointer to **bool** | Whether this job should fail to run if another instance of this job is already running | [optional] 
+**ConsoleLogDefault** | Pointer to **bool** | Whether the job defaults to running with console log argument set to true | [optional] 
 **Hidden** | Pointer to **bool** | Whether the job defaults to not being shown in the UI | [optional] 
 **DryrunDefault** | Pointer to **bool** | Whether the job defaults to running with dryrun argument set to true | [optional] 
 **ReadOnly** | **bool** | Set to true if the job does not make any changes to the environment | [readonly] 
@@ -30,6 +31,7 @@ Name | Type | Description | Notes
 **SupportsDryrun** | **bool** | If supported, allows the job to bypass approval when running with dryrun argument set to true | [readonly] 
 **GroupingOverride** | Pointer to **bool** | If set, the configured grouping will remain even if the underlying Job source code changes | [optional] 
 **NameOverride** | Pointer to **bool** | If set, the configured name will remain even if the underlying Job source code changes | [optional] 
+**ConsoleLogDefaultOverride** | Pointer to **bool** | If set, the configured console log default will remain even if the underlying Job source code changes | [optional] 
 **DescriptionOverride** | Pointer to **bool** | If set, the configured description will remain even if the underlying Job source code changes | [optional] 
 **DryrunDefaultOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **HiddenOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
@@ -39,18 +41,18 @@ Name | Type | Description | Notes
 **JobQueuesOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **DefaultJobQueueOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
 **IsSingletonOverride** | Pointer to **bool** | If set, the configured value will remain even if the underlying Job source code changes | [optional] 
-**DefaultJobQueue** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**DefaultJobQueue** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewJob
 
-`func NewJob(objectType string, display string, url string, naturalSlug string, taskQueues interface{}, taskQueuesOverride bool, moduleName string, jobClassName string, grouping string, name string, installed bool, isJobHookReceiver bool, isJobButtonReceiver bool, readOnly bool, supportsDryrun bool, defaultJobQueue ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Job`
+`func NewJob(objectType string, display string, url string, naturalSlug string, taskQueues []string, taskQueuesOverride bool, moduleName string, jobClassName string, grouping string, name string, installed bool, isJobHookReceiver bool, isJobButtonReceiver bool, readOnly bool, supportsDryrun bool, defaultJobQueue BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *Job`
 
 NewJob instantiates a new Job object
 This constructor will assign default values to properties that have it defined,
@@ -172,34 +174,24 @@ SetNaturalSlug sets NaturalSlug field to given value.
 
 ### GetTaskQueues
 
-`func (o *Job) GetTaskQueues() interface{}`
+`func (o *Job) GetTaskQueues() []string`
 
 GetTaskQueues returns the TaskQueues field if non-nil, zero value otherwise.
 
 ### GetTaskQueuesOk
 
-`func (o *Job) GetTaskQueuesOk() (*interface{}, bool)`
+`func (o *Job) GetTaskQueuesOk() (*[]string, bool)`
 
 GetTaskQueuesOk returns a tuple with the TaskQueues field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTaskQueues
 
-`func (o *Job) SetTaskQueues(v interface{})`
+`func (o *Job) SetTaskQueues(v []string)`
 
 SetTaskQueues sets TaskQueues field to given value.
 
 
-### SetTaskQueuesNil
-
-`func (o *Job) SetTaskQueuesNil(b bool)`
-
- SetTaskQueuesNil sets the value for TaskQueues to be an explicit nil
-
-### UnsetTaskQueues
-`func (o *Job) UnsetTaskQueues()`
-
-UnsetTaskQueues ensures that no value is present for TaskQueues, not even an explicit nil
 ### GetTaskQueuesOverride
 
 `func (o *Job) GetTaskQueuesOverride() bool`
@@ -460,6 +452,31 @@ SetIsSingleton sets IsSingleton field to given value.
 
 HasIsSingleton returns a boolean if a field has been set.
 
+### GetConsoleLogDefault
+
+`func (o *Job) GetConsoleLogDefault() bool`
+
+GetConsoleLogDefault returns the ConsoleLogDefault field if non-nil, zero value otherwise.
+
+### GetConsoleLogDefaultOk
+
+`func (o *Job) GetConsoleLogDefaultOk() (*bool, bool)`
+
+GetConsoleLogDefaultOk returns a tuple with the ConsoleLogDefault field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleLogDefault
+
+`func (o *Job) SetConsoleLogDefault(v bool)`
+
+SetConsoleLogDefault sets ConsoleLogDefault field to given value.
+
+### HasConsoleLogDefault
+
+`func (o *Job) HasConsoleLogDefault() bool`
+
+HasConsoleLogDefault returns a boolean if a field has been set.
+
 ### GetHidden
 
 `func (o *Job) GetHidden() bool`
@@ -649,6 +666,31 @@ SetNameOverride sets NameOverride field to given value.
 `func (o *Job) HasNameOverride() bool`
 
 HasNameOverride returns a boolean if a field has been set.
+
+### GetConsoleLogDefaultOverride
+
+`func (o *Job) GetConsoleLogDefaultOverride() bool`
+
+GetConsoleLogDefaultOverride returns the ConsoleLogDefaultOverride field if non-nil, zero value otherwise.
+
+### GetConsoleLogDefaultOverrideOk
+
+`func (o *Job) GetConsoleLogDefaultOverrideOk() (*bool, bool)`
+
+GetConsoleLogDefaultOverrideOk returns a tuple with the ConsoleLogDefaultOverride field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetConsoleLogDefaultOverride
+
+`func (o *Job) SetConsoleLogDefaultOverride(v bool)`
+
+SetConsoleLogDefaultOverride sets ConsoleLogDefaultOverride field to given value.
+
+### HasConsoleLogDefaultOverride
+
+`func (o *Job) HasConsoleLogDefaultOverride() bool`
+
+HasConsoleLogDefaultOverride returns a boolean if a field has been set.
 
 ### GetDescriptionOverride
 
@@ -877,20 +919,20 @@ HasIsSingletonOverride returns a boolean if a field has been set.
 
 ### GetDefaultJobQueue
 
-`func (o *Job) GetDefaultJobQueue() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Job) GetDefaultJobQueue() BulkWritableCableRequestStatus`
 
 GetDefaultJobQueue returns the DefaultJobQueue field if non-nil, zero value otherwise.
 
 ### GetDefaultJobQueueOk
 
-`func (o *Job) GetDefaultJobQueueOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Job) GetDefaultJobQueueOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetDefaultJobQueueOk returns a tuple with the DefaultJobQueue field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetDefaultJobQueue
 
-`func (o *Job) SetDefaultJobQueue(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Job) SetDefaultJobQueue(v BulkWritableCableRequestStatus)`
 
 SetDefaultJobQueue sets DefaultJobQueue field to given value.
 
@@ -957,20 +999,20 @@ SetLastUpdated sets LastUpdated field to given value.
 UnsetLastUpdated ensures that no value is present for LastUpdated, not even an explicit nil
 ### GetTags
 
-`func (o *Job) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *Job) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *Job) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *Job) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *Job) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *Job) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
@@ -1002,20 +1044,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *Job) GetCustomFields() map[string]interface{}`
+`func (o *Job) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *Job) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *Job) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *Job) SetCustomFields(v map[string]interface{})`
+`func (o *Job) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

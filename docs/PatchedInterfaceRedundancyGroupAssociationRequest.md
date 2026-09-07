@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
 **Priority** | Pointer to **int32** |  | [optional] 
-**InterfaceRedundancyGroup** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
-**Interface** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**InterfaceRedundancyGroup** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
+**Interface** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -80,20 +80,20 @@ HasPriority returns a boolean if a field has been set.
 
 ### GetInterfaceRedundancyGroup
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceRedundancyGroup() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceRedundancyGroup() BulkWritableCableRequestStatus`
 
 GetInterfaceRedundancyGroup returns the InterfaceRedundancyGroup field if non-nil, zero value otherwise.
 
 ### GetInterfaceRedundancyGroupOk
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceRedundancyGroupOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceRedundancyGroupOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetInterfaceRedundancyGroupOk returns a tuple with the InterfaceRedundancyGroup field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInterfaceRedundancyGroup
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) SetInterfaceRedundancyGroup(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) SetInterfaceRedundancyGroup(v BulkWritableCableRequestStatus)`
 
 SetInterfaceRedundancyGroup sets InterfaceRedundancyGroup field to given value.
 
@@ -105,20 +105,20 @@ HasInterfaceRedundancyGroup returns a boolean if a field has been set.
 
 ### GetInterface
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterface() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterface() BulkWritableCableRequestStatus`
 
 GetInterface returns the Interface field if non-nil, zero value otherwise.
 
 ### GetInterfaceOk
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) GetInterfaceOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetInterfaceOk returns a tuple with the Interface field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetInterface
 
-`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) SetInterface(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedInterfaceRedundancyGroupAssociationRequest) SetInterface(v BulkWritableCableRequestStatus)`
 
 SetInterface sets Interface field to given value.
 

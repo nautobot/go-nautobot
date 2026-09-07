@@ -10,19 +10,20 @@ Name | Type | Description | Notes
 **Url** | **string** |  | [readonly] 
 **NaturalSlug** | **string** |  | [readonly] 
 **DecisionDate** | **NullableTime** |  | [readonly] 
+**Responses** | [**[]ApprovalWorkflowStageResponse**](ApprovalWorkflowStageResponse.md) |  | [readonly] 
 **State** | Pointer to [**ApprovalWorkflowStateChoices**](ApprovalWorkflowStateChoices.md) | State of the approval workflow stage instance. Eligible values are: Pending, Approved, Denied. | [optional] 
 **ApprovalWorkflow** | [**ApprovalWorkflowStageApprovalWorkflow**](ApprovalWorkflowStageApprovalWorkflow.md) |  | 
-**ApprovalWorkflowStageDefinition** | [**ApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | 
+**ApprovalWorkflowStageDefinition** | Pointer to [**NullableApprovalWorkflowStageApprovalWorkflowStageDefinition**](ApprovalWorkflowStageApprovalWorkflowStageDefinition.md) |  | [optional] 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewApprovalWorkflowStage
 
-`func NewApprovalWorkflowStage(objectType string, display string, url string, naturalSlug string, decisionDate NullableTime, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, approvalWorkflowStageDefinition ApprovalWorkflowStageApprovalWorkflowStageDefinition, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflowStage`
+`func NewApprovalWorkflowStage(objectType string, display string, url string, naturalSlug string, decisionDate NullableTime, responses []ApprovalWorkflowStageResponse, approvalWorkflow ApprovalWorkflowStageApprovalWorkflow, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ApprovalWorkflowStage`
 
 NewApprovalWorkflowStage instantiates a new ApprovalWorkflowStage object
 This constructor will assign default values to properties that have it defined,
@@ -172,6 +173,26 @@ SetDecisionDate sets DecisionDate field to given value.
 `func (o *ApprovalWorkflowStage) UnsetDecisionDate()`
 
 UnsetDecisionDate ensures that no value is present for DecisionDate, not even an explicit nil
+### GetResponses
+
+`func (o *ApprovalWorkflowStage) GetResponses() []ApprovalWorkflowStageResponse`
+
+GetResponses returns the Responses field if non-nil, zero value otherwise.
+
+### GetResponsesOk
+
+`func (o *ApprovalWorkflowStage) GetResponsesOk() (*[]ApprovalWorkflowStageResponse, bool)`
+
+GetResponsesOk returns a tuple with the Responses field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetResponses
+
+`func (o *ApprovalWorkflowStage) SetResponses(v []ApprovalWorkflowStageResponse)`
+
+SetResponses sets Responses field to given value.
+
+
 ### GetState
 
 `func (o *ApprovalWorkflowStage) GetState() ApprovalWorkflowStateChoices`
@@ -236,7 +257,22 @@ and a boolean to check if the value has been set.
 
 SetApprovalWorkflowStageDefinition sets ApprovalWorkflowStageDefinition field to given value.
 
+### HasApprovalWorkflowStageDefinition
 
+`func (o *ApprovalWorkflowStage) HasApprovalWorkflowStageDefinition() bool`
+
+HasApprovalWorkflowStageDefinition returns a boolean if a field has been set.
+
+### SetApprovalWorkflowStageDefinitionNil
+
+`func (o *ApprovalWorkflowStage) SetApprovalWorkflowStageDefinitionNil(b bool)`
+
+ SetApprovalWorkflowStageDefinitionNil sets the value for ApprovalWorkflowStageDefinition to be an explicit nil
+
+### UnsetApprovalWorkflowStageDefinition
+`func (o *ApprovalWorkflowStage) UnsetApprovalWorkflowStageDefinition()`
+
+UnsetApprovalWorkflowStageDefinition ensures that no value is present for ApprovalWorkflowStageDefinition, not even an explicit nil
 ### GetCreated
 
 `func (o *ApprovalWorkflowStage) GetCreated() time.Time`
@@ -319,20 +355,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *ApprovalWorkflowStage) GetCustomFields() map[string]interface{}`
+`func (o *ApprovalWorkflowStage) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *ApprovalWorkflowStage) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *ApprovalWorkflowStage) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *ApprovalWorkflowStage) SetCustomFields(v map[string]interface{})`
+`func (o *ApprovalWorkflowStage) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

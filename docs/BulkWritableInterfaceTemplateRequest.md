@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | 
 **Type** | [**InterfaceTypeChoices**](InterfaceTypeChoices.md) |  | 
+**PortType** | Pointer to [**PortTypeChoices**](PortTypeChoices.md) |  | [optional] 
 **Name** | **string** |  | 
 **Label** | Pointer to **string** | Physical label | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **Duplex** | Pointer to [**BulkWritableInterfaceTemplateRequestDuplex**](BulkWritableInterfaceTemplateRequestDuplex.md) |  | [optional] 
 **DeviceType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **ModuleType** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
 
 ## Methods
@@ -75,6 +76,31 @@ and a boolean to check if the value has been set.
 
 SetType sets Type field to given value.
 
+
+### GetPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) GetPortType() PortTypeChoices`
+
+GetPortType returns the PortType field if non-nil, zero value otherwise.
+
+### GetPortTypeOk
+
+`func (o *BulkWritableInterfaceTemplateRequest) GetPortTypeOk() (*PortTypeChoices, bool)`
+
+GetPortTypeOk returns a tuple with the PortType field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) SetPortType(v PortTypeChoices)`
+
+SetPortType sets PortType field to given value.
+
+### HasPortType
+
+`func (o *BulkWritableInterfaceTemplateRequest) HasPortType() bool`
+
+HasPortType returns a boolean if a field has been set.
 
 ### GetName
 
@@ -303,20 +329,20 @@ HasModuleType returns a boolean if a field has been set.
 UnsetModuleType ensures that no value is present for ModuleType, not even an explicit nil
 ### GetCustomFields
 
-`func (o *BulkWritableInterfaceTemplateRequest) GetCustomFields() map[string]interface{}`
+`func (o *BulkWritableInterfaceTemplateRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *BulkWritableInterfaceTemplateRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *BulkWritableInterfaceTemplateRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *BulkWritableInterfaceTemplateRequest) SetCustomFields(v map[string]interface{})`
+`func (o *BulkWritableInterfaceTemplateRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

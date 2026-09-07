@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **AssignedObjectType** | Pointer to **string** |  | [optional] 
 **Value** | Pointer to **interface{}** |  | [optional] 
-**ScopedFields** | Pointer to **interface{}** | List of scoped fields, only direct fields on the model | [optional] 
+**ScopedFields** | Pointer to **[]string** | List of scoped fields, only direct fields on the model | [optional] 
 **AssignedObjectId** | Pointer to **string** |  | [optional] 
-**MetadataType** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**MetadataType** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
@@ -114,20 +114,20 @@ HasValue returns a boolean if a field has been set.
 UnsetValue ensures that no value is present for Value, not even an explicit nil
 ### GetScopedFields
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) GetScopedFields() interface{}`
+`func (o *PatchedBulkWritableObjectMetadataRequest) GetScopedFields() []string`
 
 GetScopedFields returns the ScopedFields field if non-nil, zero value otherwise.
 
 ### GetScopedFieldsOk
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) GetScopedFieldsOk() (*interface{}, bool)`
+`func (o *PatchedBulkWritableObjectMetadataRequest) GetScopedFieldsOk() (*[]string, bool)`
 
 GetScopedFieldsOk returns a tuple with the ScopedFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetScopedFields
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) SetScopedFields(v interface{})`
+`func (o *PatchedBulkWritableObjectMetadataRequest) SetScopedFields(v []string)`
 
 SetScopedFields sets ScopedFields field to given value.
 
@@ -137,16 +137,6 @@ SetScopedFields sets ScopedFields field to given value.
 
 HasScopedFields returns a boolean if a field has been set.
 
-### SetScopedFieldsNil
-
-`func (o *PatchedBulkWritableObjectMetadataRequest) SetScopedFieldsNil(b bool)`
-
- SetScopedFieldsNil sets the value for ScopedFields to be an explicit nil
-
-### UnsetScopedFields
-`func (o *PatchedBulkWritableObjectMetadataRequest) UnsetScopedFields()`
-
-UnsetScopedFields ensures that no value is present for ScopedFields, not even an explicit nil
 ### GetAssignedObjectId
 
 `func (o *PatchedBulkWritableObjectMetadataRequest) GetAssignedObjectId() string`
@@ -174,20 +164,20 @@ HasAssignedObjectId returns a boolean if a field has been set.
 
 ### GetMetadataType
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedBulkWritableObjectMetadataRequest) GetMetadataType() BulkWritableCableRequestStatus`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedBulkWritableObjectMetadataRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *PatchedBulkWritableObjectMetadataRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedBulkWritableObjectMetadataRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
 
 SetMetadataType sets MetadataType field to given value.
 

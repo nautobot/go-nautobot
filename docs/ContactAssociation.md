@@ -13,18 +13,18 @@ Name | Type | Description | Notes
 **AssociatedObjectId** | **string** |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
-**Role** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Role** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Created** | **NullableTime** |  | [readonly] 
 **LastUpdated** | **NullableTime** |  | [readonly] 
 **NotesUrl** | **string** |  | [readonly] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 
 ## Methods
 
 ### NewContactAssociation
 
-`func NewContactAssociation(objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObjectId string, role ApprovalWorkflowStageResponseApprovalWorkflowStage, status ApprovalWorkflowStageResponseApprovalWorkflowStage, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ContactAssociation`
+`func NewContactAssociation(objectType string, display string, url string, naturalSlug string, associatedObjectType string, associatedObjectId string, role BulkWritableCableRequestStatus, status BulkWritableCableRequestStatus, created NullableTime, lastUpdated NullableTime, notesUrl string, ) *ContactAssociation`
 
 NewContactAssociation instantiates a new ContactAssociation object
 This constructor will assign default values to properties that have it defined,
@@ -256,40 +256,40 @@ HasTeam returns a boolean if a field has been set.
 UnsetTeam ensures that no value is present for Team, not even an explicit nil
 ### GetRole
 
-`func (o *ContactAssociation) GetRole() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ContactAssociation) GetRole() BulkWritableCableRequestStatus`
 
 GetRole returns the Role field if non-nil, zero value otherwise.
 
 ### GetRoleOk
 
-`func (o *ContactAssociation) GetRoleOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ContactAssociation) GetRoleOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRoleOk returns a tuple with the Role field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRole
 
-`func (o *ContactAssociation) SetRole(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ContactAssociation) SetRole(v BulkWritableCableRequestStatus)`
 
 SetRole sets Role field to given value.
 
 
 ### GetStatus
 
-`func (o *ContactAssociation) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ContactAssociation) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *ContactAssociation) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ContactAssociation) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *ContactAssociation) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ContactAssociation) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
@@ -376,20 +376,20 @@ SetNotesUrl sets NotesUrl field to given value.
 
 ### GetCustomFields
 
-`func (o *ContactAssociation) GetCustomFields() map[string]interface{}`
+`func (o *ContactAssociation) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *ContactAssociation) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *ContactAssociation) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *ContactAssociation) SetCustomFields(v map[string]interface{})`
+`func (o *ContactAssociation) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 

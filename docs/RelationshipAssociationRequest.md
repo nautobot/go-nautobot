@@ -9,13 +9,13 @@ Name | Type | Description | Notes
 **DestinationType** | **string** |  | 
 **SourceId** | **string** |  | 
 **DestinationId** | **string** |  | 
-**Relationship** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Relationship** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 
 ## Methods
 
 ### NewRelationshipAssociationRequest
 
-`func NewRelationshipAssociationRequest(sourceType string, destinationType string, sourceId string, destinationId string, relationship ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *RelationshipAssociationRequest`
+`func NewRelationshipAssociationRequest(sourceType string, destinationType string, sourceId string, destinationId string, relationship BulkWritableCableRequestStatus, ) *RelationshipAssociationRequest`
 
 NewRelationshipAssociationRequest instantiates a new RelationshipAssociationRequest object
 This constructor will assign default values to properties that have it defined,
@@ -137,20 +137,20 @@ SetDestinationId sets DestinationId field to given value.
 
 ### GetRelationship
 
-`func (o *RelationshipAssociationRequest) GetRelationship() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *RelationshipAssociationRequest) GetRelationship() BulkWritableCableRequestStatus`
 
 GetRelationship returns the Relationship field if non-nil, zero value otherwise.
 
 ### GetRelationshipOk
 
-`func (o *RelationshipAssociationRequest) GetRelationshipOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *RelationshipAssociationRequest) GetRelationshipOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRelationshipOk returns a tuple with the Relationship field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRelationship
 
-`func (o *RelationshipAssociationRequest) SetRelationship(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *RelationshipAssociationRequest) SetRelationship(v BulkWritableCableRequestStatus)`
 
 SetRelationship sets Relationship field to given value.
 

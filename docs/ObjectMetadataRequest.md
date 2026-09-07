@@ -7,9 +7,9 @@ Name | Type | Description | Notes
 **Id** | Pointer to **string** |  | [optional] 
 **AssignedObjectType** | **string** |  | 
 **Value** | Pointer to **interface{}** |  | [optional] 
-**ScopedFields** | Pointer to **interface{}** | List of scoped fields, only direct fields on the model | [optional] 
+**ScopedFields** | Pointer to **[]string** | List of scoped fields, only direct fields on the model | [optional] 
 **AssignedObjectId** | **string** |  | 
-**MetadataType** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**MetadataType** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Contact** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **Team** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 
 ### NewObjectMetadataRequest
 
-`func NewObjectMetadataRequest(assignedObjectType string, assignedObjectId string, metadataType ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *ObjectMetadataRequest`
+`func NewObjectMetadataRequest(assignedObjectType string, assignedObjectId string, metadataType BulkWritableCableRequestStatus, ) *ObjectMetadataRequest`
 
 NewObjectMetadataRequest instantiates a new ObjectMetadataRequest object
 This constructor will assign default values to properties that have it defined,
@@ -114,20 +114,20 @@ HasValue returns a boolean if a field has been set.
 UnsetValue ensures that no value is present for Value, not even an explicit nil
 ### GetScopedFields
 
-`func (o *ObjectMetadataRequest) GetScopedFields() interface{}`
+`func (o *ObjectMetadataRequest) GetScopedFields() []string`
 
 GetScopedFields returns the ScopedFields field if non-nil, zero value otherwise.
 
 ### GetScopedFieldsOk
 
-`func (o *ObjectMetadataRequest) GetScopedFieldsOk() (*interface{}, bool)`
+`func (o *ObjectMetadataRequest) GetScopedFieldsOk() (*[]string, bool)`
 
 GetScopedFieldsOk returns a tuple with the ScopedFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetScopedFields
 
-`func (o *ObjectMetadataRequest) SetScopedFields(v interface{})`
+`func (o *ObjectMetadataRequest) SetScopedFields(v []string)`
 
 SetScopedFields sets ScopedFields field to given value.
 
@@ -137,16 +137,6 @@ SetScopedFields sets ScopedFields field to given value.
 
 HasScopedFields returns a boolean if a field has been set.
 
-### SetScopedFieldsNil
-
-`func (o *ObjectMetadataRequest) SetScopedFieldsNil(b bool)`
-
- SetScopedFieldsNil sets the value for ScopedFields to be an explicit nil
-
-### UnsetScopedFields
-`func (o *ObjectMetadataRequest) UnsetScopedFields()`
-
-UnsetScopedFields ensures that no value is present for ScopedFields, not even an explicit nil
 ### GetAssignedObjectId
 
 `func (o *ObjectMetadataRequest) GetAssignedObjectId() string`
@@ -169,20 +159,20 @@ SetAssignedObjectId sets AssignedObjectId field to given value.
 
 ### GetMetadataType
 
-`func (o *ObjectMetadataRequest) GetMetadataType() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *ObjectMetadataRequest) GetMetadataType() BulkWritableCableRequestStatus`
 
 GetMetadataType returns the MetadataType field if non-nil, zero value otherwise.
 
 ### GetMetadataTypeOk
 
-`func (o *ObjectMetadataRequest) GetMetadataTypeOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *ObjectMetadataRequest) GetMetadataTypeOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetMetadataTypeOk returns a tuple with the MetadataType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetMetadataType
 
-`func (o *ObjectMetadataRequest) SetMetadataType(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *ObjectMetadataRequest) SetMetadataType(v BulkWritableCableRequestStatus)`
 
 SetMetadataType sets MetadataType field to given value.
 

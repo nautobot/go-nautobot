@@ -62,11 +62,11 @@ services:
   #     - "nautobot-server celery worker -B -l $$NAUTOBOT_LOG_LEVEL"  # $$ because of docker-compose
   #   <<: *nautobot-base
   db:
-    image: "postgres:17-alpine"
+    image: "postgres:18-alpine"
     env_file:
       - "nautobot_dev.env"
     volumes:
-      - "postgres_data:/var/lib/postgresql/data"
+      - "postgres_data:/var/lib/postgresql"
     # ports:
     #   - "127.0.0.1:5432:5432"
     healthcheck:
@@ -75,7 +75,7 @@ services:
       timeout: "5s"
       retries: 10
   redis:
-    image: "redis:6-alpine"
+    image: "redis:8-alpine"
     command:
       - "sh"
       - "-c"  # this is to evaluate the $REDIS_PASSWORD from the env

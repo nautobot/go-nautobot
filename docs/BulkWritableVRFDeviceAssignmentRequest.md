@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | 
 **Rd** | Pointer to **NullableString** | Unique route distinguisher (as defined in RFC 4364) | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
-**Vrf** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
+**Vrf** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
 **Device** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualMachine** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **VirtualDeviceContext** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 
 ### NewBulkWritableVRFDeviceAssignmentRequest
 
-`func NewBulkWritableVRFDeviceAssignmentRequest(id string, vrf ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *BulkWritableVRFDeviceAssignmentRequest`
+`func NewBulkWritableVRFDeviceAssignmentRequest(id string, vrf BulkWritableCableRequestStatus, ) *BulkWritableVRFDeviceAssignmentRequest`
 
 NewBulkWritableVRFDeviceAssignmentRequest instantiates a new BulkWritableVRFDeviceAssignmentRequest object
 This constructor will assign default values to properties that have it defined,
@@ -113,20 +113,20 @@ HasName returns a boolean if a field has been set.
 
 ### GetVrf
 
-`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVrf() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVrf() BulkWritableCableRequestStatus`
 
 GetVrf returns the Vrf field if non-nil, zero value otherwise.
 
 ### GetVrfOk
 
-`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *BulkWritableVRFDeviceAssignmentRequest) GetVrfOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetVrfOk returns a tuple with the Vrf field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetVrf
 
-`func (o *BulkWritableVRFDeviceAssignmentRequest) SetVrf(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *BulkWritableVRFDeviceAssignmentRequest) SetVrf(v BulkWritableCableRequestStatus)`
 
 SetVrf sets Vrf field to given value.
 

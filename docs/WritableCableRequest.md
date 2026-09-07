@@ -5,25 +5,27 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**TerminationAType** | **string** |  | 
-**TerminationBType** | **string** |  | 
-**TerminationAId** | **string** |  | 
-**TerminationBId** | **string** |  | 
-**Type** | Pointer to [**PatchedWritableCableRequestType**](PatchedWritableCableRequestType.md) |  | [optional] 
+**TerminationAType** | Pointer to **NullableString** |  | [optional] 
+**TerminationBType** | Pointer to **NullableString** |  | [optional] 
+**TerminationAId** | Pointer to **NullableString** |  | [optional] 
+**TerminationBId** | Pointer to **NullableString** |  | [optional] 
+**LengthUnit** | Pointer to [**LengthUnitEnum**](LengthUnitEnum.md) |  | [optional] 
+**Type** | Pointer to [**CableTypeChoices**](CableTypeChoices.md) |  | [optional] 
+**Terminations** | Pointer to [**map[string]PatchedWritableCableRequestTerminationsValue**](PatchedWritableCableRequestTerminationsValue.md) | Terminations to apply, keyed by side (&#39;a&#39;/&#39;b&#39;) plus 1-indexed connector number. A standard cable has one connector per side (&#39;a1&#39;, &#39;b1&#39;); higher connector numbers (&#39;a2&#39;, &#39;b2&#39;, ...) apply only to breakout cables with multiple connectors per side. Each value is either &#x60;null&#x60; (delete the existing termination at this connector) or an &#x60;{\&quot;object_type\&quot;: \&quot;&lt;app.model&gt;\&quot;, \&quot;id\&quot;: \&quot;&lt;uuid&gt;\&quot;}&#x60; reference to the termination to plug in. Connectors omitted from the payload are left untouched (PATCH-style merge semantics). | [optional] 
 **Label** | Pointer to **string** |  | [optional] 
 **Color** | Pointer to **string** | RGB color in hexadecimal (e.g. 00ff00) | [optional] 
 **Length** | Pointer to **NullableInt32** |  | [optional] 
-**LengthUnit** | Pointer to [**PatchedWritableCableRequestLengthUnit**](PatchedWritableCableRequestLengthUnit.md) |  | [optional] 
-**Status** | [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CableType** | Pointer to [**NullableBulkWritableCableRequestCableType**](BulkWritableCableRequestCableType.md) |  | [optional] 
+**Status** | [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
 ### NewWritableCableRequest
 
-`func NewWritableCableRequest(terminationAType string, terminationBType string, terminationAId string, terminationBId string, status ApprovalWorkflowStageResponseApprovalWorkflowStage, ) *WritableCableRequest`
+`func NewWritableCableRequest(status BulkWritableCableRequestStatus, ) *WritableCableRequest`
 
 NewWritableCableRequest instantiates a new WritableCableRequest object
 This constructor will assign default values to properties that have it defined,
@@ -82,7 +84,22 @@ and a boolean to check if the value has been set.
 
 SetTerminationAType sets TerminationAType field to given value.
 
+### HasTerminationAType
 
+`func (o *WritableCableRequest) HasTerminationAType() bool`
+
+HasTerminationAType returns a boolean if a field has been set.
+
+### SetTerminationATypeNil
+
+`func (o *WritableCableRequest) SetTerminationATypeNil(b bool)`
+
+ SetTerminationATypeNil sets the value for TerminationAType to be an explicit nil
+
+### UnsetTerminationAType
+`func (o *WritableCableRequest) UnsetTerminationAType()`
+
+UnsetTerminationAType ensures that no value is present for TerminationAType, not even an explicit nil
 ### GetTerminationBType
 
 `func (o *WritableCableRequest) GetTerminationBType() string`
@@ -102,7 +119,22 @@ and a boolean to check if the value has been set.
 
 SetTerminationBType sets TerminationBType field to given value.
 
+### HasTerminationBType
 
+`func (o *WritableCableRequest) HasTerminationBType() bool`
+
+HasTerminationBType returns a boolean if a field has been set.
+
+### SetTerminationBTypeNil
+
+`func (o *WritableCableRequest) SetTerminationBTypeNil(b bool)`
+
+ SetTerminationBTypeNil sets the value for TerminationBType to be an explicit nil
+
+### UnsetTerminationBType
+`func (o *WritableCableRequest) UnsetTerminationBType()`
+
+UnsetTerminationBType ensures that no value is present for TerminationBType, not even an explicit nil
 ### GetTerminationAId
 
 `func (o *WritableCableRequest) GetTerminationAId() string`
@@ -122,7 +154,22 @@ and a boolean to check if the value has been set.
 
 SetTerminationAId sets TerminationAId field to given value.
 
+### HasTerminationAId
 
+`func (o *WritableCableRequest) HasTerminationAId() bool`
+
+HasTerminationAId returns a boolean if a field has been set.
+
+### SetTerminationAIdNil
+
+`func (o *WritableCableRequest) SetTerminationAIdNil(b bool)`
+
+ SetTerminationAIdNil sets the value for TerminationAId to be an explicit nil
+
+### UnsetTerminationAId
+`func (o *WritableCableRequest) UnsetTerminationAId()`
+
+UnsetTerminationAId ensures that no value is present for TerminationAId, not even an explicit nil
 ### GetTerminationBId
 
 `func (o *WritableCableRequest) GetTerminationBId() string`
@@ -142,23 +189,63 @@ and a boolean to check if the value has been set.
 
 SetTerminationBId sets TerminationBId field to given value.
 
+### HasTerminationBId
+
+`func (o *WritableCableRequest) HasTerminationBId() bool`
+
+HasTerminationBId returns a boolean if a field has been set.
+
+### SetTerminationBIdNil
+
+`func (o *WritableCableRequest) SetTerminationBIdNil(b bool)`
+
+ SetTerminationBIdNil sets the value for TerminationBId to be an explicit nil
+
+### UnsetTerminationBId
+`func (o *WritableCableRequest) UnsetTerminationBId()`
+
+UnsetTerminationBId ensures that no value is present for TerminationBId, not even an explicit nil
+### GetLengthUnit
+
+`func (o *WritableCableRequest) GetLengthUnit() LengthUnitEnum`
+
+GetLengthUnit returns the LengthUnit field if non-nil, zero value otherwise.
+
+### GetLengthUnitOk
+
+`func (o *WritableCableRequest) GetLengthUnitOk() (*LengthUnitEnum, bool)`
+
+GetLengthUnitOk returns a tuple with the LengthUnit field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetLengthUnit
+
+`func (o *WritableCableRequest) SetLengthUnit(v LengthUnitEnum)`
+
+SetLengthUnit sets LengthUnit field to given value.
+
+### HasLengthUnit
+
+`func (o *WritableCableRequest) HasLengthUnit() bool`
+
+HasLengthUnit returns a boolean if a field has been set.
 
 ### GetType
 
-`func (o *WritableCableRequest) GetType() PatchedWritableCableRequestType`
+`func (o *WritableCableRequest) GetType() CableTypeChoices`
 
 GetType returns the Type field if non-nil, zero value otherwise.
 
 ### GetTypeOk
 
-`func (o *WritableCableRequest) GetTypeOk() (*PatchedWritableCableRequestType, bool)`
+`func (o *WritableCableRequest) GetTypeOk() (*CableTypeChoices, bool)`
 
 GetTypeOk returns a tuple with the Type field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetType
 
-`func (o *WritableCableRequest) SetType(v PatchedWritableCableRequestType)`
+`func (o *WritableCableRequest) SetType(v CableTypeChoices)`
 
 SetType sets Type field to given value.
 
@@ -167,6 +254,31 @@ SetType sets Type field to given value.
 `func (o *WritableCableRequest) HasType() bool`
 
 HasType returns a boolean if a field has been set.
+
+### GetTerminations
+
+`func (o *WritableCableRequest) GetTerminations() map[string]PatchedWritableCableRequestTerminationsValue`
+
+GetTerminations returns the Terminations field if non-nil, zero value otherwise.
+
+### GetTerminationsOk
+
+`func (o *WritableCableRequest) GetTerminationsOk() (*map[string]PatchedWritableCableRequestTerminationsValue, bool)`
+
+GetTerminationsOk returns a tuple with the Terminations field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetTerminations
+
+`func (o *WritableCableRequest) SetTerminations(v map[string]PatchedWritableCableRequestTerminationsValue)`
+
+SetTerminations sets Terminations field to given value.
+
+### HasTerminations
+
+`func (o *WritableCableRequest) HasTerminations() bool`
+
+HasTerminations returns a boolean if a field has been set.
 
 ### GetLabel
 
@@ -253,67 +365,77 @@ HasLength returns a boolean if a field has been set.
 `func (o *WritableCableRequest) UnsetLength()`
 
 UnsetLength ensures that no value is present for Length, not even an explicit nil
-### GetLengthUnit
+### GetCableType
 
-`func (o *WritableCableRequest) GetLengthUnit() PatchedWritableCableRequestLengthUnit`
+`func (o *WritableCableRequest) GetCableType() BulkWritableCableRequestCableType`
 
-GetLengthUnit returns the LengthUnit field if non-nil, zero value otherwise.
+GetCableType returns the CableType field if non-nil, zero value otherwise.
 
-### GetLengthUnitOk
+### GetCableTypeOk
 
-`func (o *WritableCableRequest) GetLengthUnitOk() (*PatchedWritableCableRequestLengthUnit, bool)`
+`func (o *WritableCableRequest) GetCableTypeOk() (*BulkWritableCableRequestCableType, bool)`
 
-GetLengthUnitOk returns a tuple with the LengthUnit field if it's non-nil, zero value otherwise
+GetCableTypeOk returns a tuple with the CableType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetLengthUnit
+### SetCableType
 
-`func (o *WritableCableRequest) SetLengthUnit(v PatchedWritableCableRequestLengthUnit)`
+`func (o *WritableCableRequest) SetCableType(v BulkWritableCableRequestCableType)`
 
-SetLengthUnit sets LengthUnit field to given value.
+SetCableType sets CableType field to given value.
 
-### HasLengthUnit
+### HasCableType
 
-`func (o *WritableCableRequest) HasLengthUnit() bool`
+`func (o *WritableCableRequest) HasCableType() bool`
 
-HasLengthUnit returns a boolean if a field has been set.
+HasCableType returns a boolean if a field has been set.
 
+### SetCableTypeNil
+
+`func (o *WritableCableRequest) SetCableTypeNil(b bool)`
+
+ SetCableTypeNil sets the value for CableType to be an explicit nil
+
+### UnsetCableType
+`func (o *WritableCableRequest) UnsetCableType()`
+
+UnsetCableType ensures that no value is present for CableType, not even an explicit nil
 ### GetStatus
 
-`func (o *WritableCableRequest) GetStatus() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableCableRequest) GetStatus() BulkWritableCableRequestStatus`
 
 GetStatus returns the Status field if non-nil, zero value otherwise.
 
 ### GetStatusOk
 
-`func (o *WritableCableRequest) GetStatusOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableCableRequest) GetStatusOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetStatusOk returns a tuple with the Status field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetStatus
 
-`func (o *WritableCableRequest) SetStatus(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableCableRequest) SetStatus(v BulkWritableCableRequestStatus)`
 
 SetStatus sets Status field to given value.
 
 
 ### GetCustomFields
 
-`func (o *WritableCableRequest) GetCustomFields() map[string]interface{}`
+`func (o *WritableCableRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *WritableCableRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *WritableCableRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *WritableCableRequest) SetCustomFields(v map[string]interface{})`
+`func (o *WritableCableRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -350,20 +472,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *WritableCableRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *WritableCableRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *WritableCableRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *WritableCableRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *WritableCableRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *WritableCableRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 

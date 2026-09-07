@@ -951,7 +951,7 @@ import (
 )
 
 func main() {
-	bulkWritableObjectPermissionRequest := []openapiclient.BulkWritableObjectPermissionRequest{*openapiclient.NewBulkWritableObjectPermissionRequest("Id_example", []string{"ObjectTypes_example"}, "Name_example", interface{}(123))} // []BulkWritableObjectPermissionRequest | 
+	bulkWritableObjectPermissionRequest := []openapiclient.BulkWritableObjectPermissionRequest{*openapiclient.NewBulkWritableObjectPermissionRequest("Id_example", []string{"ObjectTypes_example"}, []string{"Actions_example"}, "Name_example")} // []BulkWritableObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1019,7 +1019,7 @@ import (
 )
 
 func main() {
-	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", interface{}(123)) // ObjectPermissionRequest | 
+	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, []string{"Actions_example"}, "Name_example") // ObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()
@@ -1464,7 +1464,7 @@ import (
 
 func main() {
 	id := "38400000-8cf0-11bd-b23e-10b96e4ef00d" // string | A UUID string identifying this permission.
-	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, "Name_example", interface{}(123)) // ObjectPermissionRequest | 
+	objectPermissionRequest := *openapiclient.NewObjectPermissionRequest([]string{"ObjectTypes_example"}, []string{"Actions_example"}, "Name_example") // ObjectPermissionRequest | 
 	format := openapiclient.circuits_circuit_terminations_list_format_parameter("csv") // CircuitsCircuitTerminationsListFormatParameter |  (optional)
 
 	configuration := openapiclient.NewConfiguration()

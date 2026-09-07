@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | Pointer to [**DeviceRedundancyGroupFailoverStrategyValue**](DeviceRedundancyGroupFailoverStrategyValue.md) |  | [optional] 
-**Label** | Pointer to [**DeviceRedundancyGroupFailoverStrategyLabel**](DeviceRedundancyGroupFailoverStrategyLabel.md) |  | [optional] 
+**Value** | Pointer to [**DeviceRedundancyGroupFailoverStrategyValue**](DeviceRedundancyGroupFailoverStrategyValue.md) |  | [optional] [default to DEVICEREDUNDANCYGROUPFAILOVERSTRATEGYVALUE_EMPTY]
+**Label** | Pointer to [**DeviceRedundancyGroupFailoverStrategyLabel**](DeviceRedundancyGroupFailoverStrategyLabel.md) |  | [optional] [default to DEVICEREDUNDANCYGROUPFAILOVERSTRATEGYLABEL_UNSPECIFIED]
 
 ## Methods
 

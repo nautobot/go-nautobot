@@ -5,14 +5,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | Pointer to **string** |  | [optional] 
-**Units** | Pointer to **interface{}** | List of rack unit numbers to reserve | [optional] 
+**Units** | Pointer to **[]int32** | List of rack unit numbers to reserve | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**Rack** | Pointer to [**ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Rack** | Pointer to [**BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableApprovalWorkflowUser**](ApprovalWorkflowUser.md) |  | [optional] 
 **User** | Pointer to [**BulkWritableRackReservationRequestUser**](BulkWritableRackReservationRequestUser.md) |  | [optional] 
-**CustomFields** | Pointer to **map[string]interface{}** |  | [optional] 
+**CustomFields** | Pointer to **map[string]interface{}** | Custom field data for this object, keyed by each applicable Custom Field&#39;s &#x60;key&#x60;. Value types vary with the custom field&#39;s type (text, integer, boolean, date, URL, JSON, select, multi-select); undefined values are &#x60;null&#x60;. On write, the payload is merged with existing values (PATCH-style: keys omitted from the payload are left untouched), and keys that do not correspond to a defined custom field are ignored. | [optional] 
 **Relationships** | Pointer to [**map[string]ApprovalWorkflowDefinitionRequestRelationshipsValue**](ApprovalWorkflowDefinitionRequestRelationshipsValue.md) |  | [optional] 
-**Tags** | Pointer to [**[]ApprovalWorkflowStageResponseApprovalWorkflowStage**](ApprovalWorkflowStageResponseApprovalWorkflowStage.md) |  | [optional] 
+**Tags** | Pointer to [**[]BulkWritableCableRequestStatus**](BulkWritableCableRequestStatus.md) |  | [optional] 
 
 ## Methods
 
@@ -60,20 +60,20 @@ HasId returns a boolean if a field has been set.
 
 ### GetUnits
 
-`func (o *PatchedRackReservationRequest) GetUnits() interface{}`
+`func (o *PatchedRackReservationRequest) GetUnits() []int32`
 
 GetUnits returns the Units field if non-nil, zero value otherwise.
 
 ### GetUnitsOk
 
-`func (o *PatchedRackReservationRequest) GetUnitsOk() (*interface{}, bool)`
+`func (o *PatchedRackReservationRequest) GetUnitsOk() (*[]int32, bool)`
 
 GetUnitsOk returns a tuple with the Units field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetUnits
 
-`func (o *PatchedRackReservationRequest) SetUnits(v interface{})`
+`func (o *PatchedRackReservationRequest) SetUnits(v []int32)`
 
 SetUnits sets Units field to given value.
 
@@ -83,16 +83,6 @@ SetUnits sets Units field to given value.
 
 HasUnits returns a boolean if a field has been set.
 
-### SetUnitsNil
-
-`func (o *PatchedRackReservationRequest) SetUnitsNil(b bool)`
-
- SetUnitsNil sets the value for Units to be an explicit nil
-
-### UnsetUnits
-`func (o *PatchedRackReservationRequest) UnsetUnits()`
-
-UnsetUnits ensures that no value is present for Units, not even an explicit nil
 ### GetDescription
 
 `func (o *PatchedRackReservationRequest) GetDescription() string`
@@ -120,20 +110,20 @@ HasDescription returns a boolean if a field has been set.
 
 ### GetRack
 
-`func (o *PatchedRackReservationRequest) GetRack() ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedRackReservationRequest) GetRack() BulkWritableCableRequestStatus`
 
 GetRack returns the Rack field if non-nil, zero value otherwise.
 
 ### GetRackOk
 
-`func (o *PatchedRackReservationRequest) GetRackOk() (*ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedRackReservationRequest) GetRackOk() (*BulkWritableCableRequestStatus, bool)`
 
 GetRackOk returns a tuple with the Rack field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRack
 
-`func (o *PatchedRackReservationRequest) SetRack(v ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedRackReservationRequest) SetRack(v BulkWritableCableRequestStatus)`
 
 SetRack sets Rack field to given value.
 
@@ -205,20 +195,20 @@ HasUser returns a boolean if a field has been set.
 
 ### GetCustomFields
 
-`func (o *PatchedRackReservationRequest) GetCustomFields() map[string]interface{}`
+`func (o *PatchedRackReservationRequest) GetCustomFields() map[string]*interface{}`
 
 GetCustomFields returns the CustomFields field if non-nil, zero value otherwise.
 
 ### GetCustomFieldsOk
 
-`func (o *PatchedRackReservationRequest) GetCustomFieldsOk() (*map[string]interface{}, bool)`
+`func (o *PatchedRackReservationRequest) GetCustomFieldsOk() (*map[string]*interface{}, bool)`
 
 GetCustomFieldsOk returns a tuple with the CustomFields field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetCustomFields
 
-`func (o *PatchedRackReservationRequest) SetCustomFields(v map[string]interface{})`
+`func (o *PatchedRackReservationRequest) SetCustomFields(v map[string]*interface{})`
 
 SetCustomFields sets CustomFields field to given value.
 
@@ -255,20 +245,20 @@ HasRelationships returns a boolean if a field has been set.
 
 ### GetTags
 
-`func (o *PatchedRackReservationRequest) GetTags() []ApprovalWorkflowStageResponseApprovalWorkflowStage`
+`func (o *PatchedRackReservationRequest) GetTags() []BulkWritableCableRequestStatus`
 
 GetTags returns the Tags field if non-nil, zero value otherwise.
 
 ### GetTagsOk
 
-`func (o *PatchedRackReservationRequest) GetTagsOk() (*[]ApprovalWorkflowStageResponseApprovalWorkflowStage, bool)`
+`func (o *PatchedRackReservationRequest) GetTagsOk() (*[]BulkWritableCableRequestStatus, bool)`
 
 GetTagsOk returns a tuple with the Tags field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTags
 
-`func (o *PatchedRackReservationRequest) SetTags(v []ApprovalWorkflowStageResponseApprovalWorkflowStage)`
+`func (o *PatchedRackReservationRequest) SetTags(v []BulkWritableCableRequestStatus)`
 
 SetTags sets Tags field to given value.
 
